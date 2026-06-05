@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat Voyage Gallery</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202124;
+      --muted: #61666d;
+      --line: #d8dde3;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --accent: #276f86;
+      --active: #1f596a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    header,
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 40px 0 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .filters {
+      padding: 22px 0 8px;
+      display: grid;
+      gap: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .filter-row {
+      display: grid;
+      grid-template-columns: 86px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .filter-label {
+      padding-top: 7px;
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    button {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+      padding: 6px 10px;
+    }
+
+    button[aria-pressed="true"] {
+      border-color: var(--active);
+      background: var(--active);
+      color: #fff;
+    }
+
+    .count {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    section {
+      padding: 32px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section.is-hidden,
+    figure.is-hidden,
+    .empty.is-hidden {
+      display: none;
+    }
+
+    h2 {
+      margin: 0 0 6px;
+      font-size: 1.35rem;
+      letter-spacing: 0;
+    }
+
+    .meta {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+    }
+
+    figure {
+      margin: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 9 / 18;
+      object-fit: cover;
+      background: #eef1f3;
+    }
+
+    figcaption {
+      padding: 10px 11px 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    figcaption strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .tags {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .empty {
+      padding: 26px 0 40px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    @media (max-width: 640px) {
+      .filter-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chat Voyage</h1>
+    <p class="intro">Daily fashion image sets for original adult Japanese characters, organized by date, theme, fashion category, image style, and place.</p>
+  </header>
+
+  <main>
+    <div class="filters" aria-label="Gallery filters">
+      <div class="filter-row">
+        <div class="filter-label">Style</div>
+        <div class="filter-buttons" data-filter-group="style">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="3d-cg-fashion">3D CG</button>
+          <button type="button" data-filter="anime-editorial">Anime</button>
+          <button type="button" data-filter="fashion-illustration">Fashion Illustration</button>
+          <button type="button" data-filter="semi-real-editorial">Semi Real</button>
+          <button type="button" data-filter="pbr-fashion-3d">PBR 3D</button>
+          <button type="button" data-filter="game-cinematic-3d">Game Cinematic 3D</button>
+          <button type="button" data-filter="doll-like-3d">Doll-like 3D</button>
+          <button type="button" data-filter="anime-cel-polished">Cel Anime</button>
+          <button type="button" data-filter="anime-soft-cinematic">Soft Anime</button>
+          <button type="button" data-filter="anime-fashion-magazine">Anime Magazine</button>
+          <button type="button" data-filter="runway-board-illustration">Runway Board</button>
+          <button type="button" data-filter="marker-sketch">Marker Sketch</button>
+          <button type="button" data-filter="watercolor-couture">Watercolor Couture</button>
+          <button type="button" data-filter="digital-magazine-painting">Digital Painting</button>
+          <button type="button" data-filter="soft-real-fashion-art">Soft Real Art</button>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-label">Place</div>
+        <div class="filter-buttons" data-filter-group="place">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="tokyo">Tokyo</button>
+          <button type="button" data-filter="seoul">Seoul</button>
+          <button type="button" data-filter="bangkok">Bangkok</button>
+          <button type="button" data-filter="lisbon">Lisbon</button>
+          <button type="button" data-filter="yokohama">Yokohama</button>
+          <button type="button" data-filter="sapporo">Sapporo</button>
+          <button type="button" data-filter="kanazawa">Kanazawa</button>
+          <button type="button" data-filter="fukuoka">Fukuoka</button>
+          <button type="button" data-filter="unspecified">Unspecified</button>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-label">Category</div>
+        <div class="filter-buttons" data-filter-group="category">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="street">Street</button>
+          <button type="button" data-filter="mode">Mode</button>
+          <button type="button" data-filter="night">Night</button>
+          <button type="button" data-filter="resort">Resort</button>
+          <button type="button" data-filter="office">Office</button>
+          <button type="button" data-filter="weekend">Weekend</button>
+          <button type="button" data-filter="date">Date</button>
+          <button type="button" data-filter="formal">Formal</button>
+          <button type="button" data-filter="travel">Travel</button>
+          <button type="button" data-filter="active">Active</button>
+          <button type="button" data-filter="club">Club</button>
+          <button type="button" data-filter="lounge">Lounge</button>
+          <button type="button" data-filter="theater">Theater</button>
+          <button type="button" data-filter="gallery">Gallery</button>
+          <button type="button" data-filter="ceremony">Ceremony</button>
+          <button type="button" data-filter="home">Home</button>
+          <button type="button" data-filter="swim">Swim</button>
+          <button type="button" data-filter="outerwear">Outerwear</button>
+          <button type="button" data-filter="dance">Dance</button>
+          <button type="button" data-filter="market">Market</button>
+          <button type="button" data-filter="transit">Transit</button>
+        </div>
+      </div>
+
+      <p class="count" aria-live="polite">Showing <span id="visible-count">59</span> / <span id="total-count">59</span></p>
+    </div>
+
+    <p class="empty is-hidden">No images match the selected filters.</p>
+
+    <section data-set>
+      <h2>2026-06-05 Seoul Dynamic Crop Remake</h2>
+      <p class="meta"><a href="logs/generation-2026-06.md">Log</a> - dynamic crop remake; full-body optional, with floor-sit, jump, reach, and close crop. <a href="assets/2026-06-05-seoul-dynamic-crop-remake-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="anime-fashion-magazine" data-place="seoul" data-category="transit"><img src="assets/daily/2026-06-05-seoul-dynamic-crop-remake/01-transit-floor-sit-fan.png" alt="Adult 18-19 subway transit look seated with fan"><figcaption><strong>01 Transit floor sit</strong><span class="tags">Anime Magazine / Seoul / transit / floor-sit</span></figcaption></figure>
+        <figure data-style="marker-sketch" data-place="seoul" data-category="market"><img src="assets/daily/2026-06-05-seoul-dynamic-crop-remake/02-market-jump-motion-wide.png" alt="Adult early 20s market look jumping over a puddle"><figcaption><strong>02 Market jump motion</strong><span class="tags">Marker Sketch / Seoul / market / jump-motion</span></figcaption></figure>
+        <figure data-style="game-cinematic-3d" data-place="seoul" data-category="club"><img src="assets/daily/2026-06-05-seoul-dynamic-crop-remake/03-club-stretching-reach-crop.png" alt="Adult early 20s club look with stretching reach"><figcaption><strong>03 Club stretching reach</strong><span class="tags">Game Cinematic 3D / Seoul / club / stretching-reach</span></figcaption></figure>
+        <figure data-style="watercolor-couture" data-place="seoul" data-category="gallery"><img src="assets/daily/2026-06-05-seoul-dynamic-crop-remake/04-gallery-back-close-crop.png" alt="Adult late 20s gallery look in back three-quarter close crop"><figcaption><strong>04 Gallery back close crop</strong><span class="tags">Watercolor Couture / Seoul / gallery / back-three-quarter</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-06-05 Seoul Pose Diverse Remake</h2>
+      <p class="meta"><a href="logs/generation-2026-06.md">Log</a> - pose-diverse remake with side profile, jump motion, leaning, and close crop. <a href="assets/2026-06-05-seoul-pose-diverse-remake-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="anime-fashion-magazine" data-place="seoul" data-category="transit"><img src="assets/daily/2026-06-05-seoul-pose-diverse-remake/01-transit-subway-left-profile.png" alt="Adult 18-19 subway transit look, left profile with fan"><figcaption><strong>01 Transit left profile</strong><span class="tags">Anime Magazine / Seoul / transit / using-object</span></figcaption></figure>
+        <figure data-style="marker-sketch" data-place="seoul" data-category="market"><img src="assets/daily/2026-06-05-seoul-pose-diverse-remake/02-market-jump-motion.png" alt="Adult early 20s market look in jump motion"><figcaption><strong>02 Market jump motion</strong><span class="tags">Marker Sketch / Seoul / market / jump-motion</span></figcaption></figure>
+        <figure data-style="game-cinematic-3d" data-place="seoul" data-category="club"><img src="assets/daily/2026-06-05-seoul-pose-diverse-remake/03-club-leaning-down.png" alt="Adult early 20s club look leaning down"><figcaption><strong>03 Club leaning down</strong><span class="tags">Game Cinematic 3D / Seoul / club / leaning-wall</span></figcaption></figure>
+        <figure data-style="watercolor-couture" data-place="seoul" data-category="gallery"><img src="assets/daily/2026-06-05-seoul-pose-diverse-remake/04-gallery-back-three-quarter-crop.png" alt="Adult late 20s gallery look in back three-quarter crop"><figcaption><strong>04 Gallery back crop</strong><span class="tags">Watercolor Couture / Seoul / gallery / back-three-quarter</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-06-05 Seoul Indie Youth Culture</h2>
+      <p class="meta"><a href="logs/generation-2026-06.md">Log</a> - young adult Seoul indie set before pose/crop remakes. <a href="assets/2026-06-05-seoul-indie-youth-culture-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="anime-fashion-magazine" data-place="seoul" data-category="transit"><img src="assets/daily/2026-06-05-seoul-indie-youth-culture/01-transit-subway-anime-magazine.png" alt="Adult 18-19 subway transit look in anime fashion magazine style"><figcaption><strong>01 Transit subway</strong><span class="tags">Anime Magazine / Seoul / transit / 18-19-adult</span></figcaption></figure>
+        <figure data-style="marker-sketch" data-place="seoul" data-category="market"><img src="assets/daily/2026-06-05-seoul-indie-youth-culture/02-market-hongdae-marker-sketch.png" alt="Adult early 20s Hongdae market look in marker sketch style"><figcaption><strong>02 Market Hongdae</strong><span class="tags">Marker Sketch / Seoul / market / 20-24</span></figcaption></figure>
+        <figure data-style="game-cinematic-3d" data-place="seoul" data-category="club"><img src="assets/daily/2026-06-05-seoul-indie-youth-culture/03-club-basement-game-3d.png" alt="Adult early 20s basement club look in game cinematic 3D style"><figcaption><strong>03 Club basement</strong><span class="tags">Game Cinematic 3D / Seoul / club / 20-24</span></figcaption></figure>
+        <figure data-style="watercolor-couture" data-place="seoul" data-category="gallery"><img src="assets/daily/2026-06-05-seoul-indie-youth-culture/04-gallery-euljiro-watercolor.png" alt="Adult late 20s Euljiro gallery look in watercolor couture style"><figcaption><strong>04 Gallery Euljiro</strong><span class="tags">Watercolor Couture / Seoul / gallery / 25-29</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-06-04 Tokyo Indie Youth Culture V2</h2>
+      <p class="meta"><a href="logs/generation-2026-06.md">Log</a> - remake with broader young adult sources and explicit age bands. <a href="assets/2026-06-04-tokyo-indie-youth-culture-v2-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="anime-cel-polished" data-place="tokyo" data-category="market"><img src="assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/01-market-vintage-lane-cel-anime.png" alt="Adult 18-19 Japanese vintage market look"><figcaption><strong>01 Market vintage lane</strong><span class="tags">Cel Anime / Tokyo / market / 18-19-adult</span></figcaption></figure>
+        <figure data-style="doll-like-3d" data-place="tokyo" data-category="club"><img src="assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/02-club-livehouse-doll-3d.png" alt="Adult early 20s live-house club look"><figcaption><strong>02 Club livehouse</strong><span class="tags">Doll-like 3D / Tokyo / club / 20-24</span></figcaption></figure>
+        <figure data-style="runway-board-illustration" data-place="tokyo" data-category="gallery"><img src="assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/03-gallery-zine-runway-board.png" alt="Adult late 20s zine gallery remake fashion look"><figcaption><strong>03 Gallery zine remake</strong><span class="tags">Runway Board / Tokyo / gallery / 25-29</span></figcaption></figure>
+        <figure data-style="soft-real-fashion-art" data-place="tokyo" data-category="home"><img src="assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/04-home-after-live-soft-real.png" alt="Adult early 30s after-live home fashion look"><figcaption><strong>04 Home after live</strong><span class="tags">Soft Real Art / Tokyo / home / 30-34</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-06-04 Bangkok Monsoon Design Night</h2>
+      <p class="meta"><a href="logs/generation-2026-06.md">Log</a> - date-seeded mixed categories and styles: transit, gallery, lounge, and dance. <a href="assets/2026-06-04-bangkok-monsoon-design-night-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="marker-sketch" data-place="bangkok" data-category="transit"><img src="assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/01-transit-rail-platform-marker-sketch.png" alt="Transit rail platform fashion marker sketch in Bangkok after rain"><figcaption><strong>01 Transit rail platform</strong><span class="tags">Marker Sketch / Bangkok / transit</span></figcaption></figure>
+        <figure data-style="pbr-fashion-3d" data-place="bangkok" data-category="gallery"><img src="assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/02-gallery-riverside-warehouse-pbr-3d.png" alt="Gallery riverside warehouse fashion look in PBR 3D style"><figcaption><strong>02 Gallery riverside warehouse</strong><span class="tags">PBR 3D / Bangkok / gallery</span></figcaption></figure>
+        <figure data-style="anime-soft-cinematic" data-place="bangkok" data-category="lounge"><img src="assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/03-lounge-listening-bar-soft-anime.png" alt="Lounge listening bar look in soft cinematic anime style"><figcaption><strong>03 Lounge listening bar</strong><span class="tags">Soft Anime / Bangkok / lounge</span></figcaption></figure>
+        <figure data-style="digital-magazine-painting" data-place="bangkok" data-category="dance"><img src="assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/04-dance-rain-studio-digital-painting.png" alt="Dance studio fashion look in digital magazine painting style"><figcaption><strong>04 Dance rain studio</strong><span class="tags">Digital Painting / Bangkok / dance</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-06-03 Lisbon Nightlife Mixed Styles</h2>
+      <p class="meta"><a href="logs/generation-2026-06.md">Log</a> - nightlife set across 3D CG, anime editorial, fashion illustration, and semi-real editorial image categories. <a href="assets/2026-06-03-lisbon-nightlife-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="3d-cg-fashion" data-place="lisbon" data-category="night"><img src="assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/01-night-rooftop-satin-3d.png" alt="Night rooftop satin look in true 3D CG fashion style"><figcaption><strong>01 Night rooftop satin</strong><span class="tags">3D CG / Lisbon / night</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="lisbon" data-category="formal"><img src="assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/02-formal-fado-lace-anime.png" alt="Formal fado lace look in high-definition anime editorial style"><figcaption><strong>02 Formal fado lace</strong><span class="tags">Anime / Lisbon / formal</span></figcaption></figure>
+        <figure data-style="fashion-illustration" data-place="lisbon" data-category="date"><img src="assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/03-date-hotel-lounge-illustration.png" alt="Date hotel lounge look in traditional fashion illustration style"><figcaption><strong>03 Date hotel lounge</strong><span class="tags">Fashion Illustration / Lisbon / date</span></figcaption></figure>
+        <figure data-style="semi-real-editorial" data-place="lisbon" data-category="travel"><img src="assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/04-travel-dawn-terminal-semi-real.png" alt="Travel dawn terminal look in semi-real digital editorial style"><figcaption><strong>04 Travel dawn terminal</strong><span class="tags">Semi Real / Lisbon / travel</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-05-31 Sapporo Lilac Tram Literary Prep</h2>
+      <p class="meta"><a href="logs/generation-2026-05.md">Log</a> - traditional fashion illustrations: office, weekend, date, and active. <a href="assets/2026-05-31-sapporo-lilac-tram-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="fashion-illustration" data-place="sapporo" data-category="office"><img src="assets/daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/01-office-tram-stop-tailoring.png" alt="Office tailoring fashion illustration at a lilac tram stop"><figcaption><strong>01 Office tram-stop tailoring</strong><span class="tags">Fashion Illustration / Sapporo / office</span></figcaption></figure>
+        <figure data-style="fashion-illustration" data-place="sapporo" data-category="weekend"><img src="assets/daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/02-weekend-book-cafe-denim.png" alt="Weekend denim fashion illustration outside a book cafe"><figcaption><strong>02 Weekend book-cafe denim</strong><span class="tags">Fashion Illustration / Sapporo / weekend</span></figcaption></figure>
+        <figure data-style="fashion-illustration" data-place="sapporo" data-category="date"><img src="assets/daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/03-date-botanical-lilac-dress.png" alt="Date lilac dress fashion illustration in a botanical garden"><figcaption><strong>03 Date botanical lilac dress</strong><span class="tags">Fashion Illustration / Sapporo / date</span></figcaption></figure>
+        <figure data-style="fashion-illustration" data-place="sapporo" data-category="active"><img src="assets/daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/04-active-park-utility.png" alt="Active utility fashion illustration on a park path"><figcaption><strong>04 Active park utility</strong><span class="tags">Fashion Illustration / Sapporo / active</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-05-31 Yokohama Burgundy Theater 3D</h2>
+      <p class="meta"><a href="notes/2026-05-31-yokohama-burgundy-theater-3d.md">Notes</a> - true 3D CG burgundy theater set: street, mode, night, and resort. <a href="assets/2026-05-31-yokohama-burgundy-theater-3d-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="3d-cg-fashion" data-place="yokohama" data-category="street"><img src="assets/daily/2026-05-31-yokohama-burgundy-theater-3d/01-street-red-brick-knit-bow-3d.png" alt="Street burgundy knit bow 3D look at Yokohama red brick theater"><figcaption><strong>01 Street red-brick knit bow</strong><span class="tags">3D CG / Yokohama / street</span></figcaption></figure>
+        <figure data-style="3d-cg-fashion" data-place="yokohama" data-category="mode"><img src="assets/daily/2026-05-31-yokohama-burgundy-theater-3d/02-mode-brick-gallery-tailoring-3d.png" alt="Mode gallery tailoring 3D look in a Yokohama brick gallery"><figcaption><strong>02 Mode brick-gallery tailoring</strong><span class="tags">3D CG / Yokohama / mode</span></figcaption></figure>
+        <figure data-style="3d-cg-fashion" data-place="yokohama" data-category="night"><img src="assets/daily/2026-05-31-yokohama-burgundy-theater-3d/03-night-red-brick-velvet-3d.png" alt="Night red brick velvet 3D look in Yokohama after rain"><figcaption><strong>03 Night red-brick velvet</strong><span class="tags">3D CG / Yokohama / night</span></figcaption></figure>
+        <figure data-style="3d-cg-fashion" data-place="yokohama" data-category="resort"><img src="assets/daily/2026-05-31-yokohama-burgundy-theater-3d/04-resort-harbor-terrace-knit-3d.png" alt="Resort harbor terrace knit 3D look in Yokohama"><figcaption><strong>04 Resort harbor-terrace knit</strong><span class="tags">3D CG / Yokohama / resort</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-05-27 Kanazawa Verdigris Craft Modern</h2>
+      <p class="meta"><a href="notes/2026-05-27-kanazawa-verdigris-craft-modern.md">Notes</a> - rainy workwear, lacquer mode, velvet night, and ryokan terrace styling. <a href="assets/2026-05-27-kanazawa-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="anime-editorial" data-place="kanazawa" data-category="street"><img src="assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/01-street-rain-workwear-verdigris.png" alt="Street rain workwear verdigris look"><figcaption><strong>01 Street rain workwear</strong><span class="tags">Anime / Kanazawa / street</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="kanazawa" data-category="mode"><img src="assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/02-mode-lacquer-museum-verdigris.png" alt="Mode lacquer museum verdigris look"><figcaption><strong>02 Mode lacquer museum</strong><span class="tags">Anime / Kanazawa / mode</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="kanazawa" data-category="night"><img src="assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/03-night-velvet-teahouse-verdigris.png" alt="Night velvet teahouse verdigris look"><figcaption><strong>03 Night velvet teahouse</strong><span class="tags">Anime / Kanazawa / night</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="kanazawa" data-category="resort"><img src="assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/04-resort-ryokan-terrace-verdigris.png" alt="Resort ryokan terrace verdigris look"><figcaption><strong>04 Resort ryokan terrace</strong><span class="tags">Anime / Kanazawa / resort</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-05-27 Yokohama Burgundy Theater Romance</h2>
+      <p class="meta"><a href="notes/2026-05-27-yokohama-burgundy-theater-romance.md">Notes</a> - inferred metadata from filenames: red brick knit bow, brick gallery tailoring, jazz lounge velvet, and harbor terrace knit. <a href="assets/2026-05-27-yokohama-burgundy-theater-romance-album.html">Album</a></p>
+      <div class="grid">
+        <figure data-style="anime-editorial" data-place="yokohama" data-category="street"><img src="assets/daily/2026-05-27-yokohama-burgundy-theater-romance/01-red-brick-knit-bow.png" alt="Yokohama red brick knit bow romance look"><figcaption><strong>01 Red brick knit bow</strong><span class="tags">Anime / Yokohama / street / inferred</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="yokohama" data-category="mode"><img src="assets/daily/2026-05-27-yokohama-burgundy-theater-romance/02-brick-gallery-tailoring.png" alt="Yokohama brick gallery tailoring romance look"><figcaption><strong>02 Brick gallery tailoring</strong><span class="tags">Anime / Yokohama / mode / inferred</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="yokohama" data-category="lounge"><img src="assets/daily/2026-05-27-yokohama-burgundy-theater-romance/03-jazz-lounge-velvet.png" alt="Yokohama jazz lounge velvet romance look"><figcaption><strong>03 Jazz lounge velvet</strong><span class="tags">Anime / Yokohama / lounge / inferred</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="yokohama" data-category="resort"><img src="assets/daily/2026-05-27-yokohama-burgundy-theater-romance/04-harbor-terrace-knit.png" alt="Yokohama harbor terrace knit romance look"><figcaption><strong>04 Harbor terrace knit</strong><span class="tags">Anime / Yokohama / resort / inferred</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-05-24 Fukuoka Coral Urban Resort</h2>
+      <p class="meta"><a href="notes/2026-05-24-fukuoka-coral-urban-resort.md">Notes</a> - sporty mesh, linen mode, satin night, and crochet beach styling</p>
+      <div class="grid">
+        <figure data-style="anime-editorial" data-place="fukuoka" data-category="street"><img src="assets/daily/2026-05-24-fukuoka-coral-urban-resort/01-street-sport-mesh-coral.png" alt="Street sport mesh coral look"><figcaption><strong>01 Street sport mesh coral</strong><span class="tags">Anime / Fukuoka / street</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="fukuoka" data-category="mode"><img src="assets/daily/2026-05-24-fukuoka-coral-urban-resort/02-mode-linen-gallery-coral.png" alt="Mode linen gallery coral look"><figcaption><strong>02 Mode linen gallery</strong><span class="tags">Anime / Fukuoka / mode</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="fukuoka" data-category="night"><img src="assets/daily/2026-05-24-fukuoka-coral-urban-resort/03-night-satin-riverside-coral.png" alt="Night satin riverside coral look"><figcaption><strong>03 Night satin riverside</strong><span class="tags">Anime / Fukuoka / night</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="fukuoka" data-category="resort"><img src="assets/daily/2026-05-24-fukuoka-coral-urban-resort/04-resort-crochet-beach-coral.png" alt="Resort crochet beach coral look"><figcaption><strong>04 Resort crochet beach</strong><span class="tags">Anime / Fukuoka / resort</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-05-16 CELFORD / Regina / Noela Separates</h2>
+      <p class="meta"><a href="notes/2026-05-16-celford-regina-noela.md">Notes</a> - four-image refined feminine separates set</p>
+      <div class="grid">
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="street"><img src="assets/daily/2026-05-16-celford-regina-noela/01-street-separates.png" alt="Street separates look"><figcaption><strong>01 Street separates</strong><span class="tags">Anime / unspecified / street</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="mode"><img src="assets/daily/2026-05-16-celford-regina-noela/02-mode-separates.png" alt="Mode separates look"><figcaption><strong>02 Mode separates</strong><span class="tags">Anime / unspecified / mode</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="night"><img src="assets/daily/2026-05-16-celford-regina-noela/03-night-separates.png" alt="Night separates look"><figcaption><strong>03 Night separates</strong><span class="tags">Anime / unspecified / night</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="resort"><img src="assets/daily/2026-05-16-celford-regina-noela/04-resort-separates.png" alt="Resort separates look"><figcaption><strong>04 Resort separates</strong><span class="tags">Anime / unspecified / resort</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-05-16 Daily Fashion Set</h2>
+      <p class="meta"><a href="notes/2026-05-16-daily-fashion-set.md">Notes</a> - earlier four-image daily variation set</p>
+      <div class="grid">
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="street"><img src="assets/daily/2026-05-16-daily-fashion-set/01-street-layered-casual.png" alt="Layered street casual look"><figcaption><strong>01 Street layered casual</strong><span class="tags">Anime / unspecified / street</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="mode"><img src="assets/daily/2026-05-16-daily-fashion-set/02-mode-urban-separates.png" alt="Urban mode separates look"><figcaption><strong>02 Mode urban separates</strong><span class="tags">Anime / unspecified / mode</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="night"><img src="assets/daily/2026-05-16-daily-fashion-set/03-night-navy-dress.png" alt="Navy night dress look"><figcaption><strong>03 Night navy dress</strong><span class="tags">Anime / unspecified / night</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="resort"><img src="assets/daily/2026-05-16-daily-fashion-set/04-resort-cream-separates.png" alt="Cream resort separates look"><figcaption><strong>04 Resort cream separates</strong><span class="tags">Anime / unspecified / resort</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section data-set>
+      <h2>2026-05-10 First Set and Regenerations</h2>
+      <p class="meta"><a href="notes/2026-05-10-first-set-regenerations.md">Notes</a> - initial four-image set plus three regenerated variants</p>
+      <div class="grid">
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="street"><img src="assets/daily/2026-05-10-first-set-regenerations/01-street-casual.png" alt="Street casual look"><figcaption><strong>01 Street casual</strong><span class="tags">Anime / unspecified / street</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="mode"><img src="assets/daily/2026-05-10-first-set-regenerations/02-mode-gallery.png" alt="Mode gallery look"><figcaption><strong>02 Mode gallery</strong><span class="tags">Anime / unspecified / mode</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="night"><img src="assets/daily/2026-05-10-first-set-regenerations/03-night-dress.png" alt="Night dress look"><figcaption><strong>03 Night dress</strong><span class="tags">Anime / unspecified / night</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="resort"><img src="assets/daily/2026-05-10-first-set-regenerations/04-resort-day.png" alt="Resort day look"><figcaption><strong>04 Resort day</strong><span class="tags">Anime / unspecified / resort</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="mode"><img src="assets/daily/2026-05-10-first-set-regenerations/05-mode-gallery-regenerated.png" alt="Regenerated mode gallery look"><figcaption><strong>05 Mode regenerated</strong><span class="tags">Anime / unspecified / mode</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="night"><img src="assets/daily/2026-05-10-first-set-regenerations/06-night-dress-regenerated.png" alt="Regenerated night dress look"><figcaption><strong>06 Night regenerated</strong><span class="tags">Anime / unspecified / night</span></figcaption></figure>
+        <figure data-style="anime-editorial" data-place="unspecified" data-category="resort"><img src="assets/daily/2026-05-10-first-set-regenerations/07-resort-day-regenerated.png" alt="Regenerated resort day look"><figcaption><strong>07 Resort regenerated</strong><span class="tags">Anime / unspecified / resort</span></figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const filters = {
+      style: "all",
+      place: "all",
+      category: "all"
+    };
+
+    const figures = Array.from(document.querySelectorAll("figure[data-style]"));
+    const sections = Array.from(document.querySelectorAll("section[data-set]"));
+    const visibleCount = document.getElementById("visible-count");
+    const totalCount = document.getElementById("total-count");
+    const empty = document.querySelector(".empty");
+
+    totalCount.textContent = figures.length;
+
+    function matches(figure) {
+      return Object.entries(filters).every(([key, value]) => {
+        return value === "all" || figure.dataset[key] === value;
+      });
+    }
+
+    function applyFilters() {
+      let count = 0;
+
+      figures.forEach((figure) => {
+        const visible = matches(figure);
+        figure.classList.toggle("is-hidden", !visible);
+        if (visible) count += 1;
+      });
+
+      sections.forEach((section) => {
+        const hasVisibleFigure = Boolean(section.querySelector("figure:not(.is-hidden)"));
+        section.classList.toggle("is-hidden", !hasVisibleFigure);
+      });
+
+      visibleCount.textContent = count;
+      empty.classList.toggle("is-hidden", count !== 0);
+    }
+
+    document.querySelectorAll("[data-filter-group]").forEach((group) => {
+      group.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-filter]");
+        if (!button) return;
+
+        const key = group.dataset.filterGroup;
+        filters[key] = button.dataset.filter;
+
+        group.querySelectorAll("button").forEach((candidate) => {
+          candidate.setAttribute("aria-pressed", String(candidate === button));
+        });
+
+        applyFilters();
+      });
+    });
+
+    applyFilters();
+  </script>
+</body>
+</html>
