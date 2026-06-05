@@ -1,5 +1,79 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-06 Tokyo Daikanyama Rainy Lowrise Walk
+
+- Images: 4 final images
+- Generated on: 2026-06-06, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/`
+- Album: `assets/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk-album.html`
+- Note: `notes/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk.md`
+- City / place language: Tokyo Daikanyama, specifically T-SITE, Log Road Daikanyama, the slope near Kyu Asakura House, and a Sarugakucho / Daikanyama listening lounge
+- Common mood: humid early-summer greenery, paper, wood, wet stone, rainwear, and warm night lamps
+- Lucky color: moss green
+- Categories: `weekend`, `outerwear`, `date`, `lounge`
+- Age bands: `20-24`, `25-29`, `25-29`, `20-24`
+- Pose families: `using-object`, `walking-stride`, `over-shoulder`, `seated-side`
+- Style presets: `anime-cel-polished`, `marker-sketch`, `pbr-fashion-3d`, `soft-real-fashion-art`
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, and a light web/source scan were used.
+- Source scan: current references were used as place and mood signals only, not as designs to copy.
+  - FUDGE: https://fudge.jp/
+  - NYLON JAPAN fashion: https://www.nylon.jp/fashion/
+  - FASHIONSNAP street style: https://www.fashionsnap.com/streetstyle/2026-05-08/499200/
+  - GO TOKYO Daikanyama: https://www.gotokyo.org/en/story/walks-and-tours/daikanyama/index.html
+  - GO TOKYO Log Road Daikanyama: https://www.gotokyo.org/es/spot/289/index.html
+  - Japan Guide Daikanyama: https://www.japan-guide.com/e/e3007_daikanyama.html
+
+### Final Files
+
+- `01-weekend-tsite-bookshop-cel-anime.png`
+  - Source file: `ig_0f06d167100f3fca016a234738b29881918f060d80e532bd5a.png`
+  - Primary category: `weekend`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `rain`, `weekend`, `bookshop`, `denim`, `knit`, `moss-green`, `anime-cel-polished`
+  - Place: Daikanyama T-SITE-style bookstore courtyard after rain
+  - Person: adult Japanese woman, early 20s, short airy dark bob, slim-natural build, curious bookshop expression
+  - Fashion: moss-green cropped cotton cardigan, ivory rib tank, dark indigo barrel-leg jeans, smoke-gray rain flats, ivory canvas tote, clear vinyl book cover
+  - Pose family: `using-object`; face left; left-profile three-quarter; eye-level side; knee-up crop
+  - Result: accepted. Concrete bookstore courtyard setting, adult styling, and no-readable-text gates passed.
+- `02-outerwear-log-road-marker-sketch.png`
+  - Source file: `ig_0f06d167100f3fca016a234812e48c8191b6c026f548f286f5.png`
+  - Primary category: `outerwear`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `rain`, `outerwear`, `technical`, `shorts`, `socks`, `moss-green`, `marker-sketch`
+  - Place: Log Road Daikanyama walkway after rain
+  - Person: adult Japanese woman, late 20s, low ponytail, tall lean build, composed design-shop buyer mood
+  - Fashion: taupe translucent technical trench with moss-green storm flap, white tee, black tailored Bermuda shorts, sheer charcoal knee socks, square-toe loafers
+  - Pose family: `walking-stride`; face camera; front-to-right three-quarter; low diagonal; full-body crop
+  - Result: accepted. Marker sketch and outerwear silhouette are readable.
+- `03-date-kyu-asakura-slope-pbr-3d.png`
+  - Source file: `ig_0f06d167100f3fca016a2348e96ef48191b47ad2e382d8ddc2.png`
+  - Primary category: `date`
+  - Target age band: `25-29`
+  - Style family: `3d-cg`
+  - Style preset: `pbr-fashion-3d`
+  - Secondary tags: `rain`, `date`, `old-residence`, `linen`, `pleats`, `moss-green`, `pbr-fashion-3d`
+  - Place: wet stone slope near Kyu Asakura House in Daikanyama
+  - Person: adult Japanese woman, late 20s, half-up long hair, warm adult date expression
+  - Fashion: moss-green back-tie sleeveless blouse, ivory asymmetric midi skirt, charcoal linen jacket carried over one arm, smoke-gray ankle socks, cream low-heeled sandals
+  - Pose family: `over-shoulder`; back-three-quarter; low diagonal; knee-up crop
+  - Result: accepted with note. The image is photo-adjacent, but passes adult-original-character, concrete-place, no-logo, and garment-readability gates.
+- `04-lounge-sarugakucho-record-soft-real.png`
+  - Source file: `ig_0f06d167100f3fca016a234a86643c8191b31621374da9f696.png`
+  - Primary category: `lounge`
+  - Target age band: `20-24`
+  - Style family: `semi-real-digital`
+  - Style preset: `soft-real-fashion-art`
+  - Secondary tags: `rain`, `lounge`, `record`, `knit`, `satin`, `moss-green`, `soft-real-fashion-art`
+  - Place: Sarugakucho / Daikanyama small listening lounge after rain
+  - Person: adult Japanese woman, early 20s, wavy shoulder-length hair, natural build, relaxed music-and-design crowd expression
+  - Fashion: charcoal ribbed sleeveless high-neck knit top, moss-green open-weave cardigan, black satin bias midi skirt, gray sheer knee socks, dark brown low mule sandals
+  - Pose family: `seated-side`; face down; right-profile; side high camera; knee-up crop
+  - Result: accepted with note. The image is photo-adjacent, but the styling remains adult, non-erotic, and garment-focused.
+
 ## 2026-06-05 Tokyo Ginza Craft Jazz Rain
 
 - Images: 4 final images
