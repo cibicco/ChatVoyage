@@ -7,10 +7,13 @@ Use this checklist after every daily image generation or reorganization.
 - Choose the Asia/Tokyo date seed unless the user specifies another date.
 - Read the relevant prompt presets:
   - `prompts/daily-fashion-template.md`
+  - `prompts/parameter-checklist.md`
   - `prompts/style-presets.md`
   - `prompts/category-presets.md`
   - `prompts/age-presets.md`
   - `prompts/pose-presets.md`
+- Fill the required generation parameters from
+  `prompts/parameter-checklist.md` before prompting.
 - Select four categories from `category-presets.md`; do not default to
   Street / Mode / Night / Resort unless that fits the day.
 - Select image style presets from `style-presets.md`.
@@ -23,6 +26,7 @@ Use this checklist after every daily image generation or reorganization.
 - Keep four separate images; do not make a collage.
 - Add or update a human-readable note in `notes/YYYY-MM-DD-theme.md`.
 - Add detailed LLM/Codex reuse information to `logs/generation-YYYY-MM.md`.
+  Use the after-generation fields in `prompts/parameter-checklist.md`.
 - Add an album page under `assets/YYYY-MM-DD-theme-album.html` when the set is
   intended to be browsed independently.
 - Add the set to `index.html` with:

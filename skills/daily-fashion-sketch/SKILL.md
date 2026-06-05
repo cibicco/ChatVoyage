@@ -16,6 +16,7 @@ single four-panel collage.
    `/Users/allegro/Applications/ChatVoyage`.
 3. Read Chat Voyage prompt presets when present:
    - `prompts/daily-fashion-template.md`
+   - `prompts/parameter-checklist.md`
    - `prompts/style-presets.md`
    - `prompts/category-presets.md`
    - `prompts/age-presets.md`
@@ -40,6 +41,7 @@ single four-panel collage.
    - one shared visual style or two to four mixed styles from `style-presets.md`
    - four target age bands and pose families
    - the variation axes across all four images
+   - the required parameter map from `prompts/parameter-checklist.md`
 8. Build four separate prompts using [prompt-architecture.md](references/prompt-architecture.md) and the Chat Voyage presets. Mix at least three influence systems in every look: garment structure, mood/source tags, and visual expression.
 9. Before generation, briefly show the common mood, lucky color, city theme, selected categories, selected styles, pose plan, and source links if web was used. Then generate the four images.
 10. Inspect each result against the quality gates. Regenerate only the failing image with a targeted correction if needed.
