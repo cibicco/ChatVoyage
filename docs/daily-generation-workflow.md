@@ -49,6 +49,13 @@ The command should report zero errors. It checks:
 
 ## Skill Maintenance
 
-When the workflow changes in a way that future agents should repeat, update
-`/Users/allegro/.codex/skills/daily-fashion-sketch/SKILL.md` instead of relying
-only on project-local notes.
+When the workflow changes in a way that future agents should repeat, update the
+project-tracked copy first:
+
+- `skills/daily-fashion-sketch/SKILL.md`
+- `skills/daily-fashion-sketch/agents/openai.yaml`
+
+Then sync the same content to the installed Codex skill location:
+
+- `/Users/allegro/.codex/skills/daily-fashion-sketch/SKILL.md`
+- `/Users/allegro/.codex/skills/daily-fashion-sketch/agents/openai.yaml`

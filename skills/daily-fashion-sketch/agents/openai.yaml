@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily Fashion Image"
+  short_description: "Chat Voyage向けに日付seedの4枚ファッション画像を生成・整理"
+  default_prompt: "Use $daily-fashion-sketch to generate and organize a four-image Chat Voyage daily fashion set."
