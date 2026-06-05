@@ -1,5 +1,75 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-05 Tokyo Ginza Craft Jazz Rain
+
+- Images: 4 final images
+- Generated on: 2026-06-05, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-05-tokyo-ginza-craft-jazz-rain/`
+- Album: `assets/2026-06-05-tokyo-ginza-craft-jazz-rain-album.html`
+- Note: `notes/2026-06-05-tokyo-ginza-craft-jazz-rain.md`
+- City / place language: Tokyo Ginza / Kyobashi office arcade, craft gallery, jazz lounge, and rainy transit
+- Common mood: early-summer rain, craft-gallery restraint, office polish, and quiet night music
+- Lucky color: glass blue
+- Categories: `office`, `gallery`, `lounge`, `transit`
+- Age bands: `25-29`, `25-29`, `20-24`, `18-19-adult`
+- Pose families: `close-crop-upper`, `walking-stride`, `seated-side`, `adjusting-jacket`
+- Style presets: `semi-real-editorial`, `runway-board-illustration`, `anime-soft-cinematic`, `pbr-fashion-3d`
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets and a light web/source scan were used.
+- Source scan: current references were used as mood and trend signals only, not as designs to copy.
+  - FUDGE: https://fudge.jp/
+  - FUDGE fashion: https://fudge.jp/fashion/
+  - FASHIONSNAP street style: https://www.fashionsnap.com/streetstyle/2026-04-20/497737/
+  - NYLON JAPAN fashion: https://www.nylon.jp/fashion/news/
+  - GINZA SIX renewal context: https://www.fashionsnap.com/article/2026-03-06/ginza-six-renewal-2026/
+  - Tokyo jazz-club fashion event context: https://www.wallpaper.com/fashion-beauty/miu-miu-club-tokyo-japan
+
+### Final Files
+
+- `01-office-rain-arcade-semi-real.png`
+  - Source file: `ig_0f06d167100f3fca016a22b083b4b48191b9501caad5ea0761.png`
+  - Primary category: `office`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `semi-real-editorial`
+  - Secondary tags: `rain`, `office`, `tailoring`, `knit`, `glass-blue`, `semi-real-editorial`
+  - Place: Ginza office-building arcade after rain
+  - Fashion: oyster-gray sleeveless longline blazer, glass-blue rib knit shell, charcoal wrap skirt, slingback pumps, structured tote
+  - Pose family: `close-crop-upper` / `using-object`; face left; body three-quarter; crop knee-up
+  - Result: accepted with note. The image is photo-adjacent, but passes adult-original-character, no-logo, and garment-readability gates.
+- `02-gallery-organza-runway-board.png`
+  - Source file: `ig_0f06d167100f3fca016a22b11ef6788191b9fad7e24488cb83.png`
+  - Primary category: `gallery`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `gallery`, `craft`, `organza`, `wide-trousers`, `glass-blue`, `runway-board-illustration`
+  - Place: Kyobashi / Ginza craft exhibition interior
+  - Fashion: glass-blue translucent organza long vest, ivory high-neck blouse, black wide cropped trousers, silver belt, pointed flats
+  - Pose family: `walking-stride`; face camera; body front-to-right three-quarter; full-body crop
+  - Result: accepted. The illustration style and garment construction are clear.
+- `03-lounge-jazz-cardigan-soft-anime.png`
+  - Source file: `ig_0f06d167100f3fca016a22b194350c819181674c76cf4b6c18.png`
+  - Primary category: `lounge`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-soft-cinematic`
+  - Secondary tags: `night`, `lounge`, `jazz`, `satin`, `mohair`, `glass-blue`, `anime-soft-cinematic`
+  - Place: quiet Ginza listening bar / jazz lounge after rain
+  - Fashion: black satin slip dress with opaque lining, glass-blue mohair cardigan, sheer mesh underlayer, silver chain belt, tights, kitten-heel mules
+  - Pose family: `seated-side`; face down-right; side high camera; knee-up crop
+  - Result: accepted. Exposure is adult fashion styling and non-erotic.
+- `04-transit-rain-shell-pbr-3d.png`
+  - Source file: `ig_0f06d167100f3fca016a22b27eeef481919f962984f3da2c36.png`
+  - Primary category: `transit`
+  - Target age band: `18-19-adult`
+  - Style family: `3d-cg`
+  - Style preset: `pbr-fashion-3d`
+  - Secondary tags: `rain`, `transit`, `technical`, `nylon`, `glass-blue`, `pbr-fashion-3d`
+  - Place: Tokyo subway concourse / taxi-stand transition near Ginza
+  - Fashion: translucent smoke-gray rain shell with glass-blue taped seams, high-neck rib tank, black nylon balloon shorts over opaque cycling shorts, socks, waterproof sneakers, crossbody pouch, rolling suitcase
+  - Pose family: `adjusting-jacket`; over-shoulder; back three-quarter; low diagonal; knee-up crop
+  - Result: accepted with note. The render is photo-adjacent, but the person reads as an adult young woman and the transit styling is garment-focused.
+
 ## 2026-06-05 Seoul Dynamic Crop Remake
 
 - Images: 4 final images
