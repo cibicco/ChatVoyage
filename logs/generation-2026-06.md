@@ -1,5 +1,89 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-06 Tokyo Aoyama Omotesando Age Tone Remake
+
+- Images: 4 final images
+- Generated on: 2026-06-06, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/`
+- Album: `assets/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake-album.html`
+- Note: `notes/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake.md`
+- City / place language: Tokyo Aoyama / Omotesando / Jingumae, specifically Commune Aoyama terrace, Spiral Garden / Minami-Aoyama, a Minami-Aoyama listening bar near Kotto-dori, and a Jingumae side street near Cat Street
+- Common mood: wet concrete, gallery glass, terrace light, record-bar warmth, and post-rain street movement
+- Lucky color: moss green
+- Lucky color age tone: `18-19-adult` fresh clear matcha moss; `20-24` washed acidic or electric moss; `25-29` deep smoky satin / mineral moss
+- Categories: `market`, `gallery`, `lounge`, `dance`
+- Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
+- Exposure plan: moderate, open-back layered, refined lounge open, active mesh / midriff
+- Pose families: `crouching-market`, `over-shoulder`, `seated-side`, `dance-motion`
+- Style presets: `anime-cel-polished`, `marker-sketch`, `pbr-fashion-3d`, `digital-magazine-painting`
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, and a light web/source scan were used.
+- Source scan: current references were used as place and mood signals only, not as designs to copy.
+  - FUDGE: https://fudge.jp/
+  - NYLON JAPAN fashion: https://www.nylon.jp/fashion/
+  - FASHIONSNAP street style: https://www.fashionsnap.com/streetstyle/2026-05-08/499200/
+  - Tokyo Art Beat Spiral: https://www.tokyoartbeat.com/en/venues/-/7A6A4D90
+  - GTN Magazine Cat Street: https://www.gtn.co.jp/magazine/en_us/article52/
+  - Japan Experience Cat Street: https://www.japan-experience.com/all-about-japan/tokyo/attractions-excursions/cat-street-tokyo
+
+### Final Files
+
+- `01-market-commune-fresh-moss-cel-anime.png`
+  - Source file: `ig_090043582eaf02d1016a2420411ba481918766763d5d1a6ec7.png`
+  - Primary category: `market`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `rain`, `market`, `terrace`, `sheer`, `fresh-moss`, `anime-cel-polished`
+  - Place: Commune Aoyama-style outdoor terrace after rain
+  - Person: adult Japanese young woman, realistic youthful adult face, short soft black bob, petite natural build, adult city-market context
+  - Fashion: high-neck cream sleeveless rib tank, sheer short-sleeve mint-moss camp shirt, gray cargo mini skirt over opaque black bike shorts, silver rain sandals, glossy moss pouch, clear vinyl tote
+  - Lucky color tone for age: fresh clear matcha moss, brighter and cleaner for `18-19-adult`
+  - Exposure balance: moderate adult fashion exposure through bare arms and shorter hem with bike shorts; neckline regenerated to be high and modest
+  - Pose family: `crouching-market`; face down-left; body three-quarter; high diagonal camera; full-body / low crop
+  - Result: accepted after one targeted regeneration. Adult styling, age guardrail, no-logo, and garment-readability gates passed.
+- `02-gallery-spiral-open-back-marker.png`
+  - Source file: `ig_090043582eaf02d1016a241e8d398c8191bbbe3c06369c45e3.png`
+  - Primary category: `gallery`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `rain`, `gallery`, `open-back`, `sheer`, `acidic-moss`, `marker-sketch`
+  - Place: Spiral Garden / Minami-Aoyama gallery atrium after rain
+  - Person: adult Japanese woman, early 20s, angular bob with clipped side, slim natural build, design-event expression
+  - Fashion: washed moss open-back halter vest, transparent ivory long-sleeve mesh layer, charcoal wide pleated culottes, silver slingback sandals, translucent clutch
+  - Lucky color tone for age: washed acidic moss, brighter and more experimental for `20-24`
+  - Exposure balance: open-back adult gallery styling with sheer sleeves, covered front, visible upper back and shoulders
+  - Pose family: `over-shoulder`; face over-shoulder; body back-three-quarter; eye-level side; knee-up crop
+  - Result: accepted. Age-tone difference, back construction, marker sketch, and concrete gallery setting are readable.
+- `03-lounge-minami-aoyama-smoky-moss-3d.png`
+  - Source file: `ig_090043582eaf02d1016a241ed769888191b337d950e0608edc.png`
+  - Primary category: `lounge`
+  - Target age band: `25-29`
+  - Style family: `3d-cg`
+  - Style preset: `pbr-fashion-3d`
+  - Secondary tags: `rain`, `lounge`, `record`, `satin`, `smoky-moss`, `pbr-fashion-3d`
+  - Place: Minami-Aoyama listening bar near Kotto-dori after rain
+  - Person: adult Japanese woman, late 20s, sleek low bun, composed music-listener expression, polished adult presence
+  - Fashion: deep olive satin camisole, cropped charcoal summer blazer, black fluid bias midi skirt with slit, sheer smoke-gray knee socks, low-heeled open-toe mules, deep moss satin drawstring bag
+  - Lucky color tone for age: deep smoky satin moss and mineral-green jewelry, restrained for `25-29`
+  - Exposure balance: refined adult lounge exposure through camisole neckline, one bare shoulder, lower-leg slit, and open-toe sandals
+  - Pose family: `seated-side`; face down; right-profile; eye-level side; knee-up crop
+  - Result: accepted with note. The image is photo-adjacent despite the PBR prompt, but passes adult-original-character, garment-readability, no-logo, and no-readable-text gates.
+- `04-dance-jingumae-electric-moss-digital.png`
+  - Source file: `ig_090043582eaf02d1016a241f9554e88191b9ac528cd0324e65.png`
+  - Primary category: `dance`
+  - Target age band: `20-24`
+  - Style family: `semi-real-digital`
+  - Style preset: `digital-magazine-painting`
+  - Secondary tags: `rain`, `dance`, `mesh`, `active`, `electric-moss`, `digital-magazine-painting`
+  - Place: Jingumae side street near Cat Street after a dance workshop
+  - Person: adult Japanese woman, early 20s, athletic natural build, long loose high ponytail, focused post-rehearsal expression
+  - Fashion: cropped sheer electric moss mesh dance jacket, matte black square-neck sport top, high-waist charcoal wrap parachute pants with side slit, silver-gray dance sneakers, translucent moss legwarmer, reflective crossbody pouch
+  - Lucky color tone for age: electric washed moss, kinetic and playful for `20-24`
+  - Exposure balance: active adult fashion exposure through midriff line, arms, mesh layer, and moving side-slit pant
+  - Pose family: `dance-motion`; face right; three-quarter twist; low diagonal camera; wide-action full-body crop
+  - Result: accepted. Motion, active exposure, and electric `20-24` moss tone are clear.
+
 ## 2026-06-06 Tokyo Daikanyama Rainy Lowrise Walk
 
 - Images: 4 final images
