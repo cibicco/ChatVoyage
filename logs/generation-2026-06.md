@@ -1,5 +1,94 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-07 Kobe Hydrangea Port Sunday
+
+- Images: 4 final images
+- Generated on: 2026-06-07, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-07-kobe-hydrangea-port-sunday/`
+- Album: `assets/2026-06-07-kobe-hydrangea-port-sunday-album.html`
+- Note: `notes/2026-06-07-kobe-hydrangea-port-sunday.md`
+- City / place language: Kobe, specifically Motomachi Shopping Street arcade, Kitano Ijinkan-gai slope, Meriken Park waterfront lounge terrace, and Nunobiki Herb Gardens
+- Common mood: after-rain reflections, sea breeze, hydrangeas, old Western-style streets, harbor blue hour, and hillside garden air
+- Lucky color: hydrangea blue
+- Lucky color age tone: `18-19-adult` fresh periwinkle hydrangea; `20-24` vivid lilac-blue or airy lilac hydrangea; `25-29` smoky indigo hydrangea
+- Climate fit: humid June Kobe after light rain; breathable cotton, linen, mesh, camisoles with opaque lining, open shirts, carried light layers, flat sandals, and walking-friendly shoes
+- Categories: `market`, `gallery`, `lounge`, `resort`
+- Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
+- Exposure plan: moderate shopping look, open-back gallery layer, refined waterfront camisole, airy resort-day slip dress
+- Pose families: `using-object`, `over-shoulder`, `seated-side`, `stretching-reach`
+- Style presets: `anime-fashion-magazine`, `marker-sketch`, `pbr-fashion-3d`, `watercolor-couture`
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, and a light web/source scan were used.
+- Source scan: current references were used as place, climate, and mood signals only, not as designs to copy.
+  - VISIT KOBE Motomachi: https://www.feel-kobe.jp/en/attractions/detail_1049.html
+  - Kobe Motomachi Shopping Street: https://www.kobe-motomachi.or.jp/about-us/en/
+  - Kobe Nunobiki Herb Gardens: https://www.kobeherb.com/en/
+  - Kobe Night View Guide Nunobiki: https://www.feel-kobe.jp/kobe-yakei/en/spots/nunobiki-herb-gardens/
+  - Weather Atlas Kobe June: https://www.weather-atlas.com/en/japan/kobe-weather-june
+  - FASHIONSNAP street style: https://www.fashionsnap.com/streetstyle/2026-05-08/499200/
+
+### Final Files
+
+- `01-market-motomachi-periwinkle-anime.png`
+  - Source file: `ig_090043582eaf02d1016a24a055bc8c819180bca26b35b290c9.png`
+  - Primary category: `market`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `rain`, `market`, `arcade`, `hydrangea-blue`, `cotton`, `anime-fashion-magazine`
+  - Place: Motomachi Shopping Street arcade after a light shower
+  - Person: adult Japanese young woman, realistic youthful adult face, short airy black bob, petite natural build, calm weekend shopping expression
+  - Fashion: white scoop-neck cotton tank, open short-sleeve periwinkle seersucker shirt, pale gray utility skort over opaque fitted shorts, silver flat waterproof sandals, thin socks, glossy hydrangea-blue phone pouch, clear umbrella
+  - Lucky color tone for age: fresh periwinkle hydrangea, clear and light for `18-19-adult`
+  - Exposure balance: moderate adult fashion exposure through scoop neckline, bare arms, and shorter skort with opaque shorts
+  - Comfort naturalness: cotton tank, open seersucker shirt, skort, flat sandals, and umbrella suit a humid covered arcade after rain
+  - Pose family: `using-object`; face left/down; body left-profile three-quarter; eye-level side; full-body crop
+  - Result: accepted. Adult styling, humid-weather comfort, no-logo, and no-readable-text gates passed.
+- `02-gallery-kitano-lilac-marker.png`
+  - Source file: `ig_090043582eaf02d1016a24a0b61910819193ede412362443b5.png`
+  - Primary category: `gallery`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `rain`, `gallery`, `kitano`, `open-back`, `linen`, `lilac-blue`, `marker-sketch`
+  - Place: Kitano Ijinkan-gai slope near a Western-style house after rain
+  - Person: adult Japanese woman, early 20s, angular jaw-length dark bob with hair clip, slim natural build, design-walk expression
+  - Fashion: vivid lilac-blue open-back linen blend top, airy white mesh bolero carried over one forearm, charcoal wrap culotte shorts, translucent pale-lilac rain sandals, clear pouch, silver hoops
+  - Lucky color tone for age: vivid lilac-blue hydrangea, experimental and young adult for `20-24`
+  - Exposure balance: open-back and bare-shoulder adult gallery styling, balanced by structured top and culotte shorts
+  - Comfort naturalness: linen blend top, carried mesh bolero, culotte shorts, and rain sandals suit humid Kitano slopes after rain
+  - Pose family: `over-shoulder`; face over-shoulder; body back-three-quarter; eye-level diagonal; knee-up crop
+  - Result: accepted. Open-back construction and Kitano setting are readable.
+- `03-lounge-meriken-smoky-indigo-3d.png`
+  - Source file: `ig_090043582eaf02d1016a24a11a2a948191bbb26ba310690761.png`
+  - Primary category: `lounge`
+  - Target age band: `25-29`
+  - Style family: `3d-cg`
+  - Style preset: `pbr-fashion-3d`
+  - Secondary tags: `rain`, `lounge`, `waterfront`, `satin`, `smoky-indigo`, `pbr-fashion-3d`
+  - Place: Meriken Park waterfront lounge terrace at blue hour after rain
+  - Person: adult Japanese woman, late 20s, sleek low twist bun, composed harbor-lounge expression, polished adult presence
+  - Fashion: smoky indigo satin camisole with opaque lining, lightweight ivory linen blazer draped on chair, black sheer-over-opaque bias midi skirt with slit, smoke-gray sheer ankle socks, low-heeled open-toe mules, smoky-hydrangea satin bag, mineral-blue earrings
+  - Lucky color tone for age: smoky indigo hydrangea, restrained and polished for `25-29`
+  - Exposure balance: refined adult lounge exposure through square neckline, bare shoulders, lower-leg slit, and open-toe shoes
+  - Comfort naturalness: camisole, draped linen blazer, slit skirt, sheer socks, and mules fit a warm humid waterfront terrace with sea breeze
+  - Pose family: `seated-side`; face down-right; right-profile; eye-level side; knee-up crop
+  - Result: accepted with note. The image is photo-adjacent despite the PBR prompt, but passes adult-original-character, climate comfort, garment-readability, no-logo, and no-readable-text gates.
+- `04-resort-nunobiki-watercolor.png`
+  - Source file: `ig_090043582eaf02d1016a24a1eb187c81918a3ccdc5c30ccf62.png`
+  - Primary category: `resort`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `watercolor-couture`
+  - Secondary tags: `rain`, `resort`, `garden`, `linen`, `hydrangea-blue`, `watercolor-couture`
+  - Place: Nunobiki Herb Gardens terrace path after light rain
+  - Person: adult Japanese woman, early 20s, long dark low ponytail, natural athletic build, relaxed herb-garden day-trip expression
+  - Fashion: pale hydrangea-blue linen slip dress with opaque lining and side tie, sheer white open camp shirt tied loosely at waist, flat strappy walking sandals, woven mini bag with blue scarf, silver anklet
+  - Lucky color tone for age: airy lilac-hydrangea blue, playful and light for `20-24`
+  - Exposure balance: natural resort-day exposure through camisole straps, bare arms, lower-leg movement, and sandals
+  - Comfort naturalness: linen, opaque lining, open shirt, flat walking sandals, and woven bag fit humid hillside garden paths and sea-breeze day-trip movement
+  - Pose family: `stretching-reach`; face right/up; body three-quarter; low diagonal; wide-action full-body crop
+  - Result: accepted. Watercolor style, garden setting, and climate-natural resort styling are clear.
+
 ## 2026-06-06 Tokyo Aoyama Omotesando Age Tone Remake
 
 - Images: 4 final images
