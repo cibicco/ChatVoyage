@@ -40,6 +40,8 @@ single four-panel collage.
    - four selected fashion categories from `category-presets.md`
    - one shared visual style or two to four mixed styles from `style-presets.md`
    - four target age bands and pose families
+   - age-based tone choices for the lucky color
+   - an exposure plan that varies covered, moderate, open, and layered styling
    - the variation axes across all four images
    - the required parameter map from `prompts/parameter-checklist.md`
 8. Build four separate prompts using [prompt-architecture.md](references/prompt-architecture.md) and the Chat Voyage presets. Mix at least three influence systems in every look: garment structure, mood/source tags, and visual expression.
@@ -80,6 +82,7 @@ Vary more than color. Across the four prompts, explicitly vary:
 - material and texture
 - shoes and legwear
 - exposure balance
+- lucky-color tone by age band
 - styling attitude
 - time of day and background
 - visual style preset when the user asks for mixed style exploration
@@ -90,6 +93,12 @@ Keep sensual, night, resort, or swimwear elements tasteful and editorial.
 Exposure is allowed when it is clearly fashion styling, runway, club, resort,
 swim, dance, sheer layering, cutouts, lingerie-inspired layering, or evening
 wear. Treat it as garment-focused styling, not erotic display.
+
+Do not overcorrect into consistently covered looks. If the daily theme is rain,
+outerwear, transit, or low-key city walking, still consider adult fashion
+constructions such as sleeveless inner layers, sheer shells, open backs,
+shorter hems with legwear, carried jackets, sandals, or dance/resort/night
+details where the category supports them.
 
 Full-body is allowed but not required. Use knee-up, waist-up, close-up detail,
 wide-action, seated, back three-quarter, jumping, reaching, leaning, or object
@@ -108,6 +117,10 @@ Before accepting the set, check:
   prompt presets when working in that project.
 - The shared daily mood is present but subtle.
 - The lucky color appears in each image, with different intensity or placement.
+- The lucky color tone reflects the target age band, not only the shared daily
+  color name.
+- Exposure balance is intentionally varied and does not collapse into four
+  similarly covered long-layer looks unless the user asks for that.
 - No single source, brand look, celebrity outfit, or reference image is reproduced.
 - Backgrounds support the outfit context without overpowering the figure.
 - No visible text, watermark, logo imitation, or brand mark is requested.

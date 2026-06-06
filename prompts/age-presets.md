@@ -26,6 +26,27 @@ Use fashion context, confident adult styling, and clear garment construction.
 It is acceptable for the person to look young in a realistic Japanese young
 adult way; do not turn youthfulness into childishness or underage framing.
 
+Do not treat low exposure as the default quality gate. Across a four-image set,
+plan at least one more open or skin-visible fashion construction when it fits
+the category, weather, and adult context. Rain, transit, and outerwear themes
+can still include sleeveless inner layers, sheer rain shells, open-back tops,
+shorter hems with legwear, sandal styling, or carried outer layers.
+
+## Age-Based Color Tone
+
+When a daily set uses one lucky color, vary its tone by target age band as well
+as by placement. Record the tone decision in logs when practical.
+
+- `18-19-adult`: clearer, fresher, sportier, candy, glossy, or small pop tones;
+  keep the styling adult and avoid teen-idol cues.
+- `20-24`: brighter street, experimental, sheer, washed, acidic, digital, or
+  playful tones that still read as real clothing.
+- `25-29`: deeper, dustier, smoky, mineral, polished, satin, leather, tailored,
+  or restrained tones.
+
+These are defaults, not stereotypes. The category and place can override them,
+but the prompt should make the choice explicit.
+
 ## Avoid Rules
 
 - no school uniforms
