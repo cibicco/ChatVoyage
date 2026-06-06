@@ -11,6 +11,7 @@
 - Common mood: wet concrete, gallery glass, terrace light, record-bar warmth, and post-rain street movement
 - Lucky color: moss green
 - Lucky color age tone: `18-19-adult` fresh clear matcha moss; `20-24` washed acidic or electric moss; `25-29` deep smoky satin / mineral moss
+- Climate fit: early-summer Tokyo humidity after rain; use breathable sleeveless or sheer layers, sandals, carried outerwear, and movement-friendly clothes rather than forced heavy coverage
 - Categories: `market`, `gallery`, `lounge`, `dance`
 - Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
 - Exposure plan: moderate, open-back layered, refined lounge open, active mesh / midriff
@@ -36,9 +37,10 @@
   - Secondary tags: `rain`, `market`, `terrace`, `sheer`, `fresh-moss`, `anime-cel-polished`
   - Place: Commune Aoyama-style outdoor terrace after rain
   - Person: adult Japanese young woman, realistic youthful adult face, short soft black bob, petite natural build, adult city-market context
-  - Fashion: high-neck cream sleeveless rib tank, sheer short-sleeve mint-moss camp shirt, gray cargo mini skirt over opaque black bike shorts, silver rain sandals, glossy moss pouch, clear vinyl tote
+  - Fashion: cream sleeveless rib tank, sheer short-sleeve mint-moss camp shirt, gray cargo mini skirt over opaque black bike shorts, silver rain sandals, glossy moss pouch, clear vinyl tote
   - Lucky color tone for age: fresh clear matcha moss, brighter and cleaner for `18-19-adult`
-  - Exposure balance: moderate adult fashion exposure through bare arms and shorter hem with bike shorts; neckline regenerated to be high and modest
+  - Exposure balance: moderate adult fashion exposure through bare arms and shorter hem with bike shorts; the image was regenerated to reduce overemphasis on cleavage, but future prompts should avoid treating high necklines as the default safety fix
+  - Comfort naturalness: sleeveless rib fabric, sheer short-sleeve shirt, bike shorts, and sandals fit humid post-rain Tokyo better than heavy layers
   - Pose family: `crouching-market`; face down-left; body three-quarter; high diagonal camera; full-body / low crop
   - Result: accepted after one targeted regeneration. Adult styling, age guardrail, no-logo, and garment-readability gates passed.
 - `02-gallery-spiral-open-back-marker.png`
@@ -53,6 +55,7 @@
   - Fashion: washed moss open-back halter vest, transparent ivory long-sleeve mesh layer, charcoal wide pleated culottes, silver slingback sandals, translucent clutch
   - Lucky color tone for age: washed acidic moss, brighter and more experimental for `20-24`
   - Exposure balance: open-back adult gallery styling with sheer sleeves, covered front, visible upper back and shoulders
+  - Comfort naturalness: airy open back, mesh sleeves, culottes, and sandals suit a humid gallery day after rain
   - Pose family: `over-shoulder`; face over-shoulder; body back-three-quarter; eye-level side; knee-up crop
   - Result: accepted. Age-tone difference, back construction, marker sketch, and concrete gallery setting are readable.
 - `03-lounge-minami-aoyama-smoky-moss-3d.png`
@@ -67,6 +70,7 @@
   - Fashion: deep olive satin camisole, cropped charcoal summer blazer, black fluid bias midi skirt with slit, sheer smoke-gray knee socks, low-heeled open-toe mules, deep moss satin drawstring bag
   - Lucky color tone for age: deep smoky satin moss and mineral-green jewelry, restrained for `25-29`
   - Exposure balance: refined adult lounge exposure through camisole neckline, one bare shoulder, lower-leg slit, and open-toe sandals
+  - Comfort naturalness: camisole, carried/light blazer, slit skirt, sheer socks, and open-toe mules fit a warm indoor listening bar
   - Pose family: `seated-side`; face down; right-profile; eye-level side; knee-up crop
   - Result: accepted with note. The image is photo-adjacent despite the PBR prompt, but passes adult-original-character, garment-readability, no-logo, and no-readable-text gates.
 - `04-dance-jingumae-electric-moss-digital.png`
@@ -81,6 +85,7 @@
   - Fashion: cropped sheer electric moss mesh dance jacket, matte black square-neck sport top, high-waist charcoal wrap parachute pants with side slit, silver-gray dance sneakers, translucent moss legwarmer, reflective crossbody pouch
   - Lucky color tone for age: electric washed moss, kinetic and playful for `20-24`
   - Exposure balance: active adult fashion exposure through midriff line, arms, mesh layer, and moving side-slit pant
+  - Comfort naturalness: mesh, cropped top, loose parachute pants, sneakers, and asymmetrical legwear fit post-rehearsal movement in humid night air
   - Pose family: `dance-motion`; face right; three-quarter twist; low diagonal camera; wide-action full-body crop
   - Result: accepted. Motion, active exposure, and electric `20-24` moss tone are clear.
 

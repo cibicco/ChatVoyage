@@ -15,6 +15,9 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
   the outfit prompt.
 - Keep visible outfit variety across silhouette, fabric, color, setting, and styling.
 - Use date seed, weather or seasonal mood, and light current fashion references as inspiration.
+- Keep clothing natural for the city, season, weather, temperature, venue, and
+  activity; do not force coverage that makes the person look physically
+  uncomfortable.
 - Brand names may be used only as loose mood references; do not reproduce logos, readable marks, exact products, or source-photo compositions.
 
 ## Category Selection
@@ -88,6 +91,7 @@ Optional outfit direction:
 Fashion direction:
 - mood references: {brand-or-editorial-mood, not exact products}
 - season/weather cue: {seasonal cue}
+- climate and comfort logic: {temperature, humidity, venue, movement, and why the outfit would be wearable}
 - outfit focus: {silhouette, garment types, fabric, color accents}
 - setting: {city/gallery/night waterfront/resort terrace/etc.}
 
@@ -104,6 +108,8 @@ Constraints:
 - exposure is allowed when it is clearly fashion styling, runway, club,
   resort, swim, dance, sheer layering, cutouts, lingerie-inspired layering, or
   evening wear; keep it adult, tasteful, garment-focused, and non-erotic
+- do not use high necklines, heavy layers, long sleeves, or closed shoes as a
+  default safety fix when they do not fit the climate, venue, or activity
 - one complete standalone image, not a collage
 - full-body is not mandatory; use knee-up, waist-up, close-up-detail, or
   wide-action crops when they better express pose, garment detail, or mood

@@ -13,6 +13,7 @@ place_language: four scene/place directions, one per image when possible
 common_mood: one subtle shared mood
 lucky_color: one shared color, varied by placement and intensity
 lucky_color_age_tone: how the same lucky color shifts by age band
+climate_fit: weather, temperature, humidity, venue, and activity comfort notes
 fashion_category: four slugs from prompts/category-presets.md
 style_preset: one shared slug or four slugs from prompts/style-presets.md
 style_family: family for each selected style preset
@@ -26,6 +27,7 @@ crop: one per image
 person_language: adult character notes, varied across all four images
 fashion_language: garment structure, silhouette, material, shoes, legwear, accessories
 exposure_plan: covered, moderate, open, or layered exposure balance for each image
+comfort_naturalness: why the outfit is plausible for the weather, place, and activity
 variation_axes: what differs across the four images beyond color
 avoid_rules: no logos, readable brand text, exact product/source-photo copy, celebrity copy, school-uniform cues, teen-idol styling, childlike framing
 source_notes: local references read, missing references, and web/source links when used
@@ -49,6 +51,7 @@ fashion_language: garment list, construction, materials, texture, proportion, sh
 lucky_color_use: where the daily lucky color appears
 lucky_color_tone_for_age: brightness, saturation, material, and placement for the selected age band
 exposure_balance: how skin, sheer layers, hem length, neckline, sleeve, or cutout choices support the category without erotic framing
+comfort_naturalness: breathable fabric, seasonal weight, movement, footwear, and layering logic
 source_mood_tags: broad influence tags, never exact copying
 constraints: safety, originality, no text/logo, one standalone image, not a collage
 ```
@@ -67,6 +70,7 @@ city_place_language
 common_mood
 lucky_color
 lucky_color_age_tone
+climate_fit
 categories
 age_bands
 exposure_plan
@@ -86,6 +90,7 @@ final_files:
   fashion_language
   lucky_color_tone_for_age
   exposure_balance
+  comfort_naturalness
   pose_family
   result_note
 ```
@@ -113,6 +118,7 @@ theme
 common_mood
 lucky_color
 lucky_color_age_tone
+climate_fit
 selected_categories
 age_bands
 exposure_plan
@@ -141,6 +147,10 @@ quality or exception notes
   use tasteful adult fashion exposure such as sleeveless cuts, open backs,
   sheer layering, shorter hems, waist detail, sandals, or dance/resort/night
   construction when appropriate.
+- Outfit coverage must feel natural for the climate and activity. Do not force
+  high necklines, heavy layers, long sleeves, or closed shoes just to reduce
+  exposure; choose breathable adult fashion that fits the city, season,
+  temperature, venue, and movement.
 - No image depends on a copied source look, readable logo, brand mark, or
   celebrity likeness.
 - `python3 scripts/validate_gallery.py` reports `errors: 0`.
