@@ -1,5 +1,117 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-08 Taipei Guava Specific Places V2
+
+- Images: 4 final images
+- Generated on: 2026-06-08, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-08-taipei-guava-specific-places-v2/`
+- Album: `assets/2026-06-08-taipei-guava-specific-places-v2-album.html`
+- Note: `notes/2026-06-08-taipei-guava-specific-places-v2.md`
+- City / place language: Taipei, specifically Dadaocheng Dihua Street arcade, Huashan 1914 Creative Park red-brick courtyard, Treasure Hill Artist Village hillside stairs and Xindian River terrace, and Ximending pedestrian alley
+- Common mood: warm rain, wet tile, old arcades, red brick, hillside river air, neon reflections, and guava-pink city light
+- Lucky color: guava pink
+- Lucky color age tone: `18-19-adult` fresh guava soda pink; `20-24` vivid or neon guava rose; `25-29` smoky rose-guava
+- Climate fit: hot humid June Taipei after rain; breathable tanks, linen, seersucker, open shirts, camisoles with opaque lining, mesh layers, sandals, mules, sneakers, and carried or draped light layers
+- Categories: `market`, `gallery`, `lounge`, `club`
+- Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
+- Exposure plan: natural warm-weather market tank and open shirt, open-back gallery top, refined lounge camisole, breathable night mesh movement
+- Pose families: `crouching-market`, `over-shoulder`, `seated-side`, `dance-motion`
+- Style presets: `anime-cel-polished`, `marker-sketch`, `soft-real-fashion-art`, `anime-soft-cinematic`
+- Prompt version: `v2-short-generation`
+- Prompt shape: short image prompts, detailed monthly log and visual inspection
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, `prompts/generation-prompt-v2.md`, and a light web/source scan were used.
+- Source scan: current references were used as place, climate, and mood signals only, not as designs to copy.
+  - Taipei Travel Dihua Street area: https://www.travel.taipei/en/attraction/details/1686
+  - Taipei Travel Huashan 1914: https://www.travel.taipei/en/media/audio-guide/details/423
+  - Taipei Travel Treasure Hill Artist Village: https://www.travel.taipei/en/attraction/details/613
+  - Taipei Travel The Red House: https://www.travel.taipei/en/attraction/details/503
+  - Weather Atlas Taipei June: https://www.weather-atlas.com/en/taiwan/taipei-weather-june
+
+### Final Files
+
+- `01-market-dihua-dadaocheng-guava-anime.png`
+  - Source file: `ig_01cabbb50c4459a2016a2658c8d35081999d1d9f8df2a25b02.png`
+  - Primary category: `market`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `rain`, `market`, `dadaocheng`, `dihua-street`, `seersucker`, `guava-pink`, `anime-cel-polished`
+  - Place: Dadaocheng Dihua Street arcade near fabric stalls after rain
+  - Person: adult Japanese-centered young woman, realistic young adult proportions, casual market browsing expression
+  - Fashion: ivory square-neck cotton tank, open lightweight guava-pink seersucker shirt, charcoal skort over black bike shorts, flat rain sandals, clear umbrella, translucent tote
+  - Lucky color tone for age: fresh guava soda pink, light and clear for `18-19-adult`
+  - Exposure balance: warm-weather adult tank and open shirt, bare arms and shorter skort with opaque shorts; not forced into high-neck coverage
+  - Comfort naturalness: square-neck tank, open seersucker, skort, bike shorts, and sandals fit hot humid covered arcades after rain
+  - Pose family: `crouching-market`; face left; body three-quarter; diagonal market crop
+  - Generated prompt summary: short standalone prompt for an adult 18-19 Dadaocheng Dihua Street market look with square-neck tank, open guava seersucker shirt, skort, sandals, clear umbrella, and no text/logos.
+  - Visual check: matches fabric-stall arcade, umbrella, guava shirt, skort, sandals, humid rain setting, and adult market styling. The first generated variant was rejected because the chest opening was stronger than planned for the age band. The accepted version still has visible warm-weather openness, but it is more natural than forcing a high-neck garment in humid Taipei.
+  - Result: accepted with note. Climate comfort, adult styling, and no-logo/no-readable-text gates passed; neckline openness is documented rather than hidden.
+- `02-gallery-huashan-1914-open-back-marker.png`
+  - Source file: `ig_01cabbb50c4459a2016a2653c66400819983e306f781e8c1d3.png`
+  - Primary category: `gallery`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `rain`, `gallery`, `huashan-1914`, `open-back`, `linen`, `guava-pink`, `marker-sketch`
+  - Place: Huashan 1914 Creative Park red-brick warehouse courtyard after rain
+  - Person: adult Japanese-centered woman, early 20s, composed gallery-walk expression
+  - Fashion: vivid guava open-back linen halter top, thin white mesh bolero carried over one arm, charcoal pleated culotte shorts, flat rain sandals, white tote, silver ear cuff
+  - Lucky color tone for age: vivid guava rose, experimental and young adult for `20-24`
+  - Exposure balance: open-back adult gallery styling, balanced by structured culotte shorts and carried mesh layer
+  - Comfort naturalness: linen, carried bolero, culotte shorts, and sandals fit hot humid creative-park walking
+  - Pose family: `over-shoulder`; face looking back; body back-three-quarter; eye-level diagonal
+  - Generated prompt summary: short standalone prompt for an adult 20-24 Huashan 1914 gallery walk in marker sketch style with open-back guava linen halter, carried mesh bolero, culotte shorts, tote, and no text/logos.
+  - Visual check: matches red-brick creative park, wet courtyard, marker sketch language, back detail, guava color, and carried layer. The venue is recognizable by architectural cues rather than signage, which is correct under no-readable-text constraints.
+  - Result: accepted. Place specificity, open-back construction, and humid-weather comfort are readable.
+- `03-lounge-treasure-hill-smoky-guava-soft-real.png`
+  - Source file: `ig_01cabbb50c4459a2016a2654a2d6848199b2a0149f328fd078.png`
+  - Primary category: `lounge`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `soft-real-fashion-art`
+  - Secondary tags: `rain`, `lounge`, `treasure-hill`, `riverside`, `satin`, `smoky-guava`, `soft-real-fashion-art`
+  - Place: Treasure Hill Artist Village hillside stairs and quiet Xindian River terrace after rain
+  - Person: adult Japanese-centered woman, late 20s, composed and polished
+  - Fashion: smoky guava satin camisole with opaque lining, pale linen blazer draped on shoulders, black sheer-over-opaque midi skirt, low block-heel mules, small smoky rose leather bag
+  - Lucky color tone for age: smoky rose-guava, restrained and polished for `25-29`
+  - Exposure balance: refined adult lounge exposure through camisole neckline, bare lower leg, open mules, and loose draped blazer
+  - Comfort naturalness: satin camisole, draped linen blazer, sheer-over-opaque skirt, and mules fit a humid warm evening on riverside steps
+  - Pose family: `seated-side`; face angled down; body side/three-quarter; steps and shoes visible
+  - Generated prompt summary: short standalone prompt for an adult 25-29 Treasure Hill Artist Village lounge look in soft-real fashion art with smoky guava satin camisole, linen blazer, black sheer-over-opaque skirt, mules, and no text/logos.
+  - Visual check: matches hillside stairs, river backdrop, seated pose, smoky guava satin, draped blazer, and warm rain setting. The result is photo-adjacent rather than strongly painterly, so the style deviation is recorded.
+  - Result: accepted with note. The image is more semi-real/photo-adjacent than requested but passes place, age, garment, climate, and no-logo/no-readable-text gates.
+- `04-club-ximending-guava-neon-anime.png`
+  - Source file: `ig_01cabbb50c4459a2016a265849113081998041869ad2629657.png`
+  - Primary category: `club`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-soft-cinematic`
+  - Secondary tags: `rain`, `club`, `ximending`, `neon`, `mesh`, `guava-pink`, `anime-soft-cinematic`
+  - Place: Ximending pedestrian alley on a humid June night, with wet pavement and soft neon reflections
+  - Person: adult Japanese-centered woman, early 20s, mid-turn street-club expression
+  - Fashion: vivid guava open mesh shirt, black square-neck tank, charcoal wide wrap pants, flat sneakers, small belt pouch
+  - Lucky color tone for age: neon guava rose, bright and playful for `20-24`
+  - Exposure balance: adult night styling through mesh layer, black tank, bare upper back/shoulder, movement, and wide pants; breathable rather than overcovered
+  - Comfort naturalness: mesh shirt, tank, wrap pants, sneakers, and hands-free pouch fit warm humid night movement
+  - Pose family: `dance-motion`; mid-turn; over-shoulder look; dynamic street crop
+  - Generated prompt summary: very short standalone prompt for an adult 20-24 Ximending pedestrian alley club look in soft cinematic anime style with guava mesh shirt, black tank, wrap pants, sneakers, and no readable signs.
+  - Visual check: matches Ximending-like neon pedestrian lane, wet pavement, mid-turn movement, guava mesh layer, black tank, wrap pants, and warm-weather night styling. It avoids readable signs and logos. Earlier Red House-specific versions failed; the accepted prompt kept Ximending concrete but removed venue overload.
+  - Result: accepted. This completes the original `club` category without changing to `home`.
+
+### Generation Notes
+
+This run directly tested the `v2-short-generation` hypothesis. The concrete
+Taipei places were named in the planning layer, but the image prompts stayed
+short. The fourth image showed the clearest instability: Red House-specific
+night club prompts failed, while a shorter Ximending pedestrian-alley prompt
+succeeded.
+
+The first market image was also regenerated after inspection because the chest
+opening was too strong for the planned `18-19-adult` market look. The accepted
+image still uses a breathable adult tank and open shirt instead of unnatural
+high-neck coverage, because humid Taipei clothing should remain physically
+plausible.
+
 ## 2026-06-08 Taipei Guava Rain Creative Walk
 
 - Images: 4 final images
