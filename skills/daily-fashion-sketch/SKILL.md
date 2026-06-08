@@ -17,6 +17,7 @@ single four-panel collage.
 3. Read Chat Voyage prompt presets when present:
    - `prompts/daily-fashion-template.md`
    - `prompts/parameter-checklist.md`
+   - `prompts/generation-prompt-v2.md`
    - `prompts/style-presets.md`
    - `prompts/category-presets.md`
    - `prompts/age-presets.md`
@@ -47,10 +48,13 @@ single four-panel collage.
    - the variation axes across all four images
    - the required parameter map from `prompts/parameter-checklist.md`
 8. Build four separate prompts using [prompt-architecture.md](references/prompt-architecture.md) and the Chat Voyage presets. Mix at least three influence systems in every look: garment structure, mood/source tags, and visual expression.
-9. Before generation, briefly show the common mood, lucky color, city theme, selected categories, selected styles, pose plan, and source links if web was used. Then generate the four images.
-10. Inspect each result against the quality gates. Regenerate only the failing image with a targeted correction if needed.
-11. Save accepted images under `assets/daily/YYYY-MM-DD-theme/`, then update the monthly log, notes, album, and `index.html`.
-12. Run `python3 scripts/validate_gallery.py` from the Chat Voyage root when that script exists.
+9. If the full prompt is likely to be unstable, use
+   `prompts/generation-prompt-v2.md`: keep the image-generation prompt short,
+   and record the full parameter map plus visual check in the monthly log.
+10. Before generation, briefly show the common mood, lucky color, city theme, selected categories, selected styles, pose plan, and source links if web was used. Then generate the four images.
+11. Inspect each result against the quality gates. Regenerate only the failing image with a targeted correction if needed. When using prompt v2, record prompt summaries and visual checks for accepted images.
+12. Save accepted images under `assets/daily/YYYY-MM-DD-theme/`, then update the monthly log, notes, album, and `index.html`.
+13. Run `python3 scripts/validate_gallery.py` from the Chat Voyage root when that script exists.
 
 ## Reference Reading
 

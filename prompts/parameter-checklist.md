@@ -31,6 +31,8 @@ comfort_naturalness: why the outfit is plausible for the weather, place, and act
 variation_axes: what differs across the four images beyond color
 avoid_rules: no logos, readable brand text, exact product/source-photo copy, celebrity copy, school-uniform cues, teen-idol styling, childlike framing
 source_notes: local references read, missing references, and web/source links when used
+prompt_version: prompt workflow version, such as v1-full-detail or v2-short-generation
+prompt_shape: how much detail went into the image prompt versus the log
 save_path: assets/daily/YYYY-MM-DD-theme/
 ```
 
@@ -54,6 +56,7 @@ exposure_balance: how skin, sheer layers, hem length, neckline, sleeve, or cutou
 comfort_naturalness: breathable fabric, seasonal weight, movement, footwear, and layering logic
 source_mood_tags: broad influence tags, never exact copying
 constraints: safety, originality, no text/logo, one standalone image, not a collage
+generated_prompt_summary: compact summary of the prompt actually sent
 ```
 
 ## Required After Generation
@@ -77,6 +80,8 @@ exposure_plan
 pose_families
 style_presets
 source_scan_or_missing_reference_note
+prompt_version
+prompt_shape
 final_files:
   filename
   source_file
@@ -92,6 +97,8 @@ final_files:
   exposure_balance
   comfort_naturalness
   pose_family
+  generated_prompt_summary
+  visual_check
   result_note
 ```
 
@@ -127,6 +134,7 @@ style_presets
 saved_path
 one-line result for each final image
 quality or exception notes
+prompt_version and any generation stability notes
 ```
 
 ## Acceptance Check
@@ -153,4 +161,7 @@ quality or exception notes
   temperature, venue, and movement.
 - No image depends on a copied source look, readable logo, brand mark, or
   celebrity likeness.
+- The log records the prompt workflow version. If using
+  `v2-short-generation`, the log also records the prompt summary and visual
+  check for each final image.
 - `python3 scripts/validate_gallery.py` reports `errors: 0`.

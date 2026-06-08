@@ -14,6 +14,9 @@ Use this checklist after every daily image generation or reorganization.
   - `prompts/pose-presets.md`
 - Fill the required generation parameters from
   `prompts/parameter-checklist.md` before prompting.
+- If full-detail prompts are unstable, switch to
+  `prompts/generation-prompt-v2.md`: keep the image prompt short and record
+  the detailed design plus visual check in the monthly log.
 - Select four categories from `category-presets.md`; do not default to
   Street / Mode / Night / Resort unless that fits the day.
 - Select image style presets from `style-presets.md`.
@@ -27,6 +30,8 @@ Use this checklist after every daily image generation or reorganization.
 - Add or update a human-readable note in `notes/YYYY-MM-DD-theme.md`.
 - Add detailed LLM/Codex reuse information to `logs/generation-YYYY-MM.md`.
   Use the after-generation fields in `prompts/parameter-checklist.md`.
+- Record `prompt_version`, prompt summary, visual check, and any prompt
+  shortening or category changes when using prompt v2.
 - Add an album page under `assets/YYYY-MM-DD-theme-album.html` when the set is
   intended to be browsed independently.
 - Add the set to `index.html` with:

@@ -25,6 +25,8 @@ Record operational details that help future generation:
 - selected primary category for each image
 - secondary tags for each image: weather, season, fashion direction, place, materials, and visual style
 - missing reference files or source-scan notes
+- prompt workflow version, such as `v1-full-detail` or `v2-short-generation`
+- for `v2-short-generation`, the short prompt summary and visual check for each accepted image
 
 Keep human-facing theme summaries in `notes/`. Keep detailed implementation and reuse records here.
 
@@ -37,3 +39,10 @@ Keep human-facing theme summaries in `notes/`. Keep detailed implementation and 
 - Pose family: {one slug from prompts/pose-presets.md}
 - Secondary tags: {weather}, {season}, {fashion direction}, {place}, {materials}, {visual style preset}
 ```
+
+## Prompt Version Tracking
+
+Use `prompt_version: v2-short-generation` when image generation is unstable or
+the full checklist creates overloaded prompts. In that workflow, keep the
+image prompt short and record the detailed design, inspection notes, and any
+deviations in the monthly log.

@@ -17,6 +17,8 @@
 - Exposure plan: moderate market look, open-back gallery layer, refined lounge camisole, airy balcony slip dress
 - Pose families: `crouching-market`, `over-shoulder`, `seated-side`, `stretching-reach`
 - Style presets: `anime-cel-polished`, `marker-sketch`, `soft-real-fashion-art`, `watercolor-couture`
+- Prompt version: `v2-short-generation`
+- Prompt shape: short image prompts, detailed monthly log and visual inspection
 - Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, and a light web/source scan were used.
 - Source scan: current references were used as place, climate, and mood signals only, not as designs to copy.
   - Taipei Tourism Ximending: https://www.taipeitourism.org/ximending-guide/
@@ -40,6 +42,8 @@
   - Exposure balance: moderate adult fashion exposure through scoop neckline, bare arms, and shorter skort with opaque shorts
   - Comfort naturalness: cotton tank, open seersucker shirt, skort, and flat sandals fit humid covered arcades after rain
   - Pose family: `crouching-market`; face down-left; body three-quarter; high diagonal; low full-body crop
+  - Generated prompt summary: short standalone prompt for an adult 18-19 Dihua Street market look in cel-shaded anime style with cotton tank, open guava shirt, skort, sandals, pouch, umbrella, and no text/logos.
+  - Visual check: matches the market arcade, umbrella, guava shirt, skort, sandals, humid rain setting, and adult styling. The exact Dihua identity is inferred from old arcade/market cues rather than explicit signage, which is acceptable because readable signs were avoided.
   - Result: accepted. Adult styling, humid-weather comfort, garment-readability, no-logo, and no-readable-text gates passed.
 - `02-gallery-huashan-open-back-marker.png`
   - Source file: `ig_090043582eaf02d1016a263e06a2b481919985347b64c3f500.png`
@@ -55,6 +59,8 @@
   - Exposure balance: open-back and bare-shoulder adult gallery styling, balanced by structured top and culotte shorts
   - Comfort naturalness: linen top, carried mesh bolero, culotte shorts, and rain sandals suit humid creative-park walking
   - Pose family: `over-shoulder`; face over-shoulder; body back-three-quarter; eye-level diagonal; knee-up crop
+  - Generated prompt summary: short standalone prompt for an adult 20-24 Huashan 1914 gallery walk in marker sketch style with open-back guava linen top, carried mesh bolero, culotte shorts, clear pouch, and no text/logos.
+  - Visual check: matches open-back construction, carried mesh layer, guava tone, rain-wet creative/gallery entrance mood, and marker-sketch language. The scene reads as brick gallery street frontage more than a specific named venue, acceptable under no-signage constraints.
   - Result: accepted. Open-back construction, marker sketch, and brick creative-park setting are readable.
 - `03-lounge-riverside-smoky-guava-soft-real.png`
   - Source file: `ig_090043582eaf02d1016a2640cf1ed88191b07ec1ca1183ef60.png`
@@ -70,6 +76,8 @@
   - Exposure balance: refined adult lounge exposure through camisole neckline, bare shoulders, lower-leg slit, and open-toe shoes
   - Comfort naturalness: camisole, draped linen blazer, slit skirt, sheer socks, and mules fit a warm humid riverside lounge
   - Pose family: `seated-side`; face side/down; right-profile; eye-level side; knee-up crop
+  - Generated prompt summary: shortened prompt for an adult 25-29 quiet Taipei riverside lounge look in soft-real fashion art with smoky guava camisole, draped linen blazer, sheer-over-opaque skirt, mules, and no text/logos.
+  - Visual check: matches late-20s lounge styling, smoky rose-guava satin, draped blazer, seated pose, and warm riverside-night mood. It is photo-adjacent despite the soft-real prompt, so it is accepted with note.
   - Result: accepted with note. The image is photo-adjacent, but passes adult-original-character, climate comfort, garment-readability, no-logo, and no-readable-text gates.
 - `04-home-balcony-guava-watercolor.png`
   - Source file: `ig_090043582eaf02d1016a26445667148191ab752ec489605882.png`
@@ -85,6 +93,8 @@
   - Exposure balance: natural balcony and night-market-prep exposure through camisole straps, bare arms, lower-leg movement, and sandals
   - Comfort naturalness: linen, opaque lining, open shirt, and flat sandals fit humid balcony air before a night market
   - Pose family: `stretching-reach`; tying hair; body three-quarter; balcony high angle; full-body crop
+  - Generated prompt summary: shortened prompt for an adult 20-24 Taipei apartment balcony look before a night market in watercolor couture style with guava linen slip dress, sheer tied camp shirt, flat sandals, and no text/logos.
+  - Visual check: matches balcony setting, hair-tying reach pose, watercolor style, guava dress, sheer shirt, sandals, and humid evening context. The category changed from planned `club` to `home` to complete the set with a natural, stable scene.
   - Result: accepted. Watercolor style, warm-weather clothing, and home-before-outing context are clear.
 
 ### Generation Notes
@@ -93,6 +103,10 @@ The image service was unstable during this run. Several richer prompts failed
 with server errors. The set was completed by shortening prompts and changing
 the fourth concept from `club` to `home`, keeping the same Taipei humidity and
 guava-pink direction while avoiding an over-busy night-street prompt.
+
+This run is the first tracked trial of `v2-short-generation`: design remains
+fully specified in the log, while the actual image prompts stay compact. Visual
+checks were added after inspecting the saved images against the log.
 
 ## 2026-06-07 Kobe Hydrangea Port Sunday
 
