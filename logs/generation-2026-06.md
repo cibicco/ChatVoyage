@@ -1,5 +1,99 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-08 Taipei Guava Rain Creative Walk
+
+- Images: 4 final images
+- Generated on: 2026-06-08, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-08-taipei-guava-rain-creative-walk/`
+- Album: `assets/2026-06-08-taipei-guava-rain-creative-walk-album.html`
+- Note: `notes/2026-06-08-taipei-guava-rain-creative-walk.md`
+- City / place language: Taipei, specifically Dihua Street market arcade, Huashan 1914 Creative Park, a riverside lounge, and a small apartment balcony before a night market
+- Common mood: warm rain, tile floors, old arcades, brick studios, river lights, balcony plants, and guava-pink city glow
+- Lucky color: guava pink
+- Lucky color age tone: `18-19-adult` fresh guava soda pink; `20-24` vivid guava rose; `25-29` smoky rose-guava
+- Climate fit: humid June Taipei after rain; breathable cotton, seersucker, linen, mesh, camisoles with opaque lining, open shirts, sandals, and carried light layers
+- Categories: `market`, `gallery`, `lounge`, `home`
+- Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
+- Exposure plan: moderate market look, open-back gallery layer, refined lounge camisole, airy balcony slip dress
+- Pose families: `crouching-market`, `over-shoulder`, `seated-side`, `stretching-reach`
+- Style presets: `anime-cel-polished`, `marker-sketch`, `soft-real-fashion-art`, `watercolor-couture`
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, and a light web/source scan were used.
+- Source scan: current references were used as place, climate, and mood signals only, not as designs to copy.
+  - Taipei Tourism Ximending: https://www.taipeitourism.org/ximending-guide/
+  - Weather2Visit Taipei June: https://www.weather2visit.com/asia/taiwan/taipei-june.htm
+  - NYLON JAPAN Fashion: https://www.nylon.jp/fashion/
+  - FASHIONSNAP street style: https://www.fashionsnap.com/streetstyle/2026-04-22/498182/
+
+### Final Files
+
+- `01-market-dihua-guava-anime.png`
+  - Source file: `ig_090043582eaf02d1016a263d35d3948191b922f94b8d36d714.png`
+  - Primary category: `market`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `rain`, `market`, `arcade`, `cotton`, `guava-pink`, `anime-cel-polished`
+  - Place: Dihua Street-style covered market arcade after rain
+  - Person: adult Japanese young woman, realistic youthful adult face, short airy black bob, petite natural build, calm market browsing expression
+  - Fashion: ivory scoop-neck cotton tank, open short-sleeve guava-pink seersucker shirt, dove-gray skort over opaque fitted shorts, flat silver walking sandals, glossy guava-pink pouch, clear tote
+  - Lucky color tone for age: fresh guava soda pink, clear and light for `18-19-adult`
+  - Exposure balance: moderate adult fashion exposure through scoop neckline, bare arms, and shorter skort with opaque shorts
+  - Comfort naturalness: cotton tank, open seersucker shirt, skort, and flat sandals fit humid covered arcades after rain
+  - Pose family: `crouching-market`; face down-left; body three-quarter; high diagonal; low full-body crop
+  - Result: accepted. Adult styling, humid-weather comfort, garment-readability, no-logo, and no-readable-text gates passed.
+- `02-gallery-huashan-open-back-marker.png`
+  - Source file: `ig_090043582eaf02d1016a263e06a2b481919985347b64c3f500.png`
+  - Primary category: `gallery`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `rain`, `gallery`, `huashan`, `open-back`, `linen`, `guava-pink`, `marker-sketch`
+  - Place: Huashan 1914-style brick creative park entrance after rain
+  - Person: adult Japanese woman, early 20s, jaw-length dark bob with hair clip, slim natural build, design-walk expression
+  - Fashion: vivid guava open-back linen blend top, airy white mesh bolero carried over one forearm, charcoal wrap culotte shorts, translucent rain sandals, clear pouch, silver hoops
+  - Lucky color tone for age: vivid guava rose, experimental and young adult for `20-24`
+  - Exposure balance: open-back and bare-shoulder adult gallery styling, balanced by structured top and culotte shorts
+  - Comfort naturalness: linen top, carried mesh bolero, culotte shorts, and rain sandals suit humid creative-park walking
+  - Pose family: `over-shoulder`; face over-shoulder; body back-three-quarter; eye-level diagonal; knee-up crop
+  - Result: accepted. Open-back construction, marker sketch, and brick creative-park setting are readable.
+- `03-lounge-riverside-smoky-guava-soft-real.png`
+  - Source file: `ig_090043582eaf02d1016a2640cf1ed88191b07ec1ca1183ef60.png`
+  - Primary category: `lounge`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `soft-real-fashion-art`
+  - Secondary tags: `rain`, `lounge`, `riverside`, `satin`, `smoky-guava`, `soft-real-fashion-art`
+  - Place: quiet Taipei riverside lounge after rain
+  - Person: adult Japanese woman, late 20s, sleek low bun, composed lounge expression, polished adult presence
+  - Fashion: smoky rose-guava satin camisole with opaque lining, ivory linen blazer draped on chair, black sheer-over-opaque midi skirt with slit, sheer gray ankle socks, low open-toe mules, smoky guava satin bag
+  - Lucky color tone for age: smoky rose-guava, restrained and polished for `25-29`
+  - Exposure balance: refined adult lounge exposure through camisole neckline, bare shoulders, lower-leg slit, and open-toe shoes
+  - Comfort naturalness: camisole, draped linen blazer, slit skirt, sheer socks, and mules fit a warm humid riverside lounge
+  - Pose family: `seated-side`; face side/down; right-profile; eye-level side; knee-up crop
+  - Result: accepted with note. The image is photo-adjacent, but passes adult-original-character, climate comfort, garment-readability, no-logo, and no-readable-text gates.
+- `04-home-balcony-guava-watercolor.png`
+  - Source file: `ig_090043582eaf02d1016a26445667148191ab752ec489605882.png`
+  - Primary category: `home`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `watercolor-couture`
+  - Secondary tags: `rain`, `home`, `balcony`, `linen`, `guava-pink`, `watercolor-couture`
+  - Place: small Taipei apartment balcony before going to a night market
+  - Person: adult Japanese woman, early 20s, hair being tied up, relaxed evening expression
+  - Fashion: vivid guava-pink linen slip dress with opaque lining, sheer white open camp shirt tied at waist, flat strappy sandals, woven mini bag, silver anklet
+  - Lucky color tone for age: vivid guava pink, warm and playful for `20-24`
+  - Exposure balance: natural balcony and night-market-prep exposure through camisole straps, bare arms, lower-leg movement, and sandals
+  - Comfort naturalness: linen, opaque lining, open shirt, and flat sandals fit humid balcony air before a night market
+  - Pose family: `stretching-reach`; tying hair; body three-quarter; balcony high angle; full-body crop
+  - Result: accepted. Watercolor style, warm-weather clothing, and home-before-outing context are clear.
+
+### Generation Notes
+
+The image service was unstable during this run. Several richer prompts failed
+with server errors. The set was completed by shortening prompts and changing
+the fourth concept from `club` to `home`, keeping the same Taipei humidity and
+guava-pink direction while avoiding an over-busy night-street prompt.
+
 ## 2026-06-07 Kobe Hydrangea Port Sunday
 
 - Images: 4 final images
