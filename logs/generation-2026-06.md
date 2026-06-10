@@ -1,5 +1,114 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-10 Fukuoka Yuzu Rain Riverside
+
+- Images: 4 final images
+- Generated on: 2026-06-11, Asia/Tokyo, for date seed 2026-06-10
+- Saved in: `assets/daily/2026-06-10-fukuoka-yuzu-rain-riverside/`
+- Album: `assets/2026-06-10-fukuoka-yuzu-rain-riverside-album.html`
+- Note: `notes/2026-06-10-fukuoka-yuzu-rain-riverside.md`
+- City / place language: Fukuoka, specifically Ohori Park lakeside path, Fukuoka Art Museum near Ohori Park, Fukuoka Castle ruins / Maizuru Park, and Nakasu riverside yatai lights
+- Common mood: humid rainy Fukuoka, wet stone paths, lake reflections, museum concrete, mossy castle walls, warm river lights, and yuzu-yellow accents
+- Lucky color: yuzu yellow
+- Lucky color age tone: `18-19-adult` fresh lemon-yuzu; `20-24` vivid yuzu or light mesh yellow; `25-29` smoky ochre-yuzu
+- Climate fit: warm humid June Fukuoka after rain; breathable tanks, linen shirts, open backs, mesh layers, sandals, mules, sneakers, carried umbrellas, and draped light layers
+- Categories: `weekend`, `gallery`, `resort`, `lounge`
+- Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
+- Exposure plan: natural warm-weather tank and open shirt, open-back gallery halter, refined camisole with draped blazer, breathable night mesh layer
+- Pose families: `walking-stride`, `over-shoulder`, `seated-side`, `leaning-wall`
+- Style presets: `anime-fashion-magazine`, `marker-sketch`, `soft-real-fashion-art`, `anime-soft-cinematic`
+- Prompt version: `v2-short-generation`
+- Prompt shape: short image prompts, detailed monthly log and visual inspection
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, `prompts/generation-prompt-v2.md`, and a light web/source scan were used.
+- Source scan: current references were used as place, climate, and mood signals only, not as designs to copy.
+  - Fukuoka Art Museum / Yokanavi: https://yokanavi.com/spots/26815
+  - Fukuoka Castle / Yokanavi: https://yokanavi.com/fukuokacastle
+  - Fukuoka yatai / Yokanavi: https://yokanavi.com/yatai/235018/
+  - Weather Atlas Fukuoka June: https://www.weather-atlas.com/en/japan/fukuoka-weather-june
+
+### Final Files
+
+- `01-weekend-ohori-yuzu-anime.png`
+  - Source file: `ig_01cabbb50c4459a2016a29dc08366c8199b21e8cea01f9f77b.png`
+  - Primary category: `weekend`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `rain`, `weekend`, `ohori-park`, `lake`, `linen`, `lemon-yuzu`, `anime-fashion-magazine`
+  - Place: Ohori Park lakeside path after rain, with wet stone walkway and willow trees
+  - Person: adult Japanese-centered young woman, clearly adult young casual styling
+  - Fashion: lemon-yuzu square-neck rib tank, open ivory short-sleeve linen shirt, slate gray utility skort over black bike shorts, waterproof flat sandals, clear umbrella, small yellow pouch
+  - Lucky color tone for age: fresh lemon-yuzu, clear and light for `18-19-adult`
+  - Exposure balance: natural warm-weather tank, open shirt, bare arms, skort, and sandals; the chest opening is not treated as wrong by itself because the climate and scene support it
+  - Comfort naturalness: breathable tank, open linen shirt, skort, sandals, and umbrella fit humid rainy Fukuoka park walking
+  - Pose family: `walking-stride`; face left; full-body park path crop
+  - Generated prompt summary: short prompt for an adult 18-19 Ohori Park rainy weekend walk in anime magazine style with yuzu tank, open linen shirt, skort, sandals, clear umbrella, and no text/logos.
+  - Visual check: matches lake path, rain, umbrella, yuzu tank, open shirt, skort, sandals, and adult casual styling. The neckline draws some attention in the composition, but the clothing is climate-natural; no high-neck correction was applied.
+  - Result: accepted with note. Climate naturalness, adult styling, no-logo, and no-readable-text gates passed.
+- `02-gallery-art-museum-open-back-marker.png`
+  - Source file: `ig_01cabbb50c4459a2016a29dd5fb3808199922e68180eda4aed.png`
+  - Primary category: `gallery`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `rain`, `gallery`, `fukuoka-art-museum`, `open-back`, `linen`, `yuzu-yellow`, `marker-sketch`
+  - Place: Fukuoka Art Museum near Ohori Park after rain
+  - Person: adult Japanese-centered woman, early 20s, composed gallery-walk expression
+  - Fashion: vivid yuzu-yellow open-back linen halter, sheer white mesh bolero carried over one arm, charcoal pleated culotte shorts, silver flat sandals, clear tote
+  - Lucky color tone for age: vivid yuzu, experimental and young adult for `20-24`
+  - Exposure balance: open-back adult gallery styling, balanced by culotte shorts and carried mesh layer
+  - Comfort naturalness: open-back linen, carried bolero, culotte shorts, and sandals fit warm humid museum walking after rain
+  - Pose family: `over-shoulder`; body back-three-quarter; eye-level rainy gallery crop
+  - Generated prompt summary: shortened prompt for an adult 20-24 Fukuoka Art Museum gallery look in marker sketch style with open-back yuzu halter, carried mesh bolero, culotte shorts, sandals, and no text/logos.
+  - Visual check: matches rainy museum-adjacent exterior, open-back yuzu top, carried layer, marker sketch language, and no readable signage. First richer prompt failed; shortened prompt succeeded.
+  - Result: accepted. Open-back construction, place mood, and climate comfort are readable.
+- `03-resort-castle-ruins-smoky-yuzu-soft-real.png`
+  - Source file: `ig_01cabbb50c4459a2016a29ddf1d5b081999bfb3bf7293f60cd.png`
+  - Primary category: `resort`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `soft-real-fashion-art`
+  - Secondary tags: `rain`, `resort`, `fukuoka-castle-ruins`, `maizuru-park`, `satin`, `smoky-yuzu`, `soft-real-fashion-art`
+  - Place: Fukuoka Castle ruins stone wall and Maizuru Park greenery after rain
+  - Person: adult Japanese-centered woman, late 20s, composed and polished
+  - Fashion: smoky ochre-yuzu satin camisole with opaque lining, light beige linen blazer draped on shoulders, black sheer-over-opaque midi skirt, low block-heel mules, compact gold-yellow bag
+  - Lucky color tone for age: smoky ochre-yuzu, restrained and polished for `25-29`
+  - Exposure balance: refined adult resort exposure through camisole neckline, bare lower leg, open mules, and draped blazer
+  - Comfort naturalness: satin camisole, draped linen blazer, sheer-over-opaque skirt, and mules fit a warm humid rainy garden/ruins setting
+  - Pose family: `seated-side`; face angled down; shoes and stone steps visible
+  - Generated prompt summary: short prompt for an adult 25-29 Fukuoka Castle ruins rainy resort look in soft-real fashion art with smoky yuzu camisole, draped linen blazer, black sheer-over-opaque skirt, mules, and no text/logos.
+  - Visual check: matches castle stone wall, wet steps, smoky yuzu satin, draped blazer, seated pose, and humid rain context. It is more photo-adjacent than strongly painterly, so the style deviation is recorded.
+  - Result: accepted with note. Place, adult age band, garment readability, and climate logic pass.
+- `04-lounge-nakasu-yatai-river-anime.png`
+  - Source file: `ig_01cabbb50c4459a2016a29de9f52048199a49e10f0b82f8e20.png`
+  - Primary category: `lounge`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-soft-cinematic`
+  - Secondary tags: `rain`, `lounge`, `nakasu`, `yatai`, `river`, `mesh`, `yuzu-yellow`, `anime-soft-cinematic`
+  - Place: Nakasu riverside on a rainy humid June night, with yatai lights reflected on the river
+  - Person: adult Japanese-centered woman, early 20s, quiet night-out expression
+  - Fashion: bright yuzu mesh short shirt, black square-neck tank, dark wide wrap pants, flat sneakers, small crossbody pouch
+  - Lucky color tone for age: bright yuzu mesh, playful and night-ready for `20-24`
+  - Exposure balance: adult night styling through mesh layer, black tank, shoulder/back visibility, and wide pants; breathable rather than overcovered
+  - Comfort naturalness: mesh shirt, tank, wide pants, sneakers, and hands-free pouch fit warm humid rainy river walking
+  - Pose family: `leaning-wall`; over-shoulder; railing interaction; full-body night crop
+  - Generated prompt summary: shortened prompt for an adult 20-24 Nakasu riverside lounge look in soft cinematic anime style with yuzu mesh shirt, black tank, wrap pants, sneakers, yatai river lights, and no text/logos.
+  - Visual check: matches rainy river, warm yatai-like lights, railing pose, yuzu mesh layer, black tank, and no readable signs. The yatai detail is atmospheric rather than text-based, which avoids logo/sign problems.
+  - Result: accepted. Night setting, climate-natural exposure, and no-readable-text gates passed.
+
+### Generation Notes
+
+Image generation was partially recovered but unstable. The first image
+succeeded immediately. Richer prompts for the second and fourth images failed
+with server errors and succeeded after shortening. The third image succeeded
+but leaned photo-adjacent despite the `soft-real-fashion-art` request.
+
+This run applies the climate-natural exposure rule: open necklines, tanks,
+open backs, mesh, sandals, and carried or draped layers are acceptable when
+they fit warm humid Fukuoka. Moderation is handled by pose, crop, hand
+placement, and scene context, not by forcing high-neck or heavy clothing.
+
 ## 2026-06-08 Taipei Guava Specific Places V2
 
 - Images: 4 final images
