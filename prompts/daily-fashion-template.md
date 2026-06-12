@@ -14,6 +14,8 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
 - Select a pose family from `pose-presets.md` for each image before writing
   the outfit prompt.
 - Keep visible outfit variety across silhouette, fabric, color, setting, and styling.
+- Use `prompts/persona-presets.md` so each person reads as bright, sociable,
+  lively, fashion-aware, interested in clothes, and intentionally stylish.
 - Use date seed, weather or seasonal mood, and light current fashion references as inspiration.
 - Keep clothing natural for the city, season, weather, temperature, venue, and
   activity; do not force coverage that makes the person look physically
@@ -55,7 +57,7 @@ Use the selected category slug as each filename prefix. Existing sets using
    `marker-sketch`, or `digital-magazine-painting`.
 3. Person direction: target age band from `age-presets.md`, hairstyle, build,
    expression, character mood, life scene, silhouette logic, material logic,
-   and accessory logic.
+   accessory logic, persona direction, and fashion focal point.
 4. Pose direction: pose family, face direction, body direction, camera angle,
    and hand placement from `pose-presets.md`.
 5. Optional person detail: age impression, hairstyle, build, expression, and
@@ -83,6 +85,9 @@ Visual style:
 
 Optional person direction:
 - target_age_band: {18-19-adult | 20-24 | 25-29}
+- persona: bright, sociable, lively, fashion-aware, interested in styling,
+  aware of her own charm without erotic framing
+- fashion focal point: {color | accessory | fabric | silhouette | shoes | bag | hair accessory | jewelry | layering | fabric movement}
 - {age impression, hairstyle, build, expression, character mood}
 
 Pose direction:
@@ -103,6 +108,8 @@ Fashion direction:
 - climate and comfort logic: {city, season, time of day, weather, temperature band, humidity, indoor/outdoor, wind or air conditioning, rain intensity, venue norms, movement, and why the outfit would be wearable}
 - age-band life scene: {adult life context for this age band}
 - age-band silhouette/material/accessory logic: {what differs by age beyond color tone}
+- persona direction: {how brightness, sociability, confidence, and fashion interest show up}
+- fashion focal point: {one or two distinctive styling details, not everything loud at once}
 - avoid recent formula: {recent repeated formula this image does not use}
 - outfit focus: {silhouette, garment types, fabric, color accents}
 - setting: {city/gallery/night waterfront/resort terrace/etc.}
@@ -112,6 +119,8 @@ Constraints:
 - no readable brand text
 - no exact commercial product copy
 - no celebrity or source-photo reproduction
+- no blank mannequin expression; the person should show adult social energy,
+  fashion interest, and intentional styling
 - no school uniforms, sailor-uniform cues, teen-idol styling, childlike faces,
   or implication that the person is a minor
 - realistic youthful Japanese adult features are allowed; the problem is
@@ -146,6 +155,7 @@ For every final image, record:
 - place: city and scene type
 - climate context: city, season, time, weather, humidity, venue, and activity
 - age-band life scene and silhouette logic
+- persona direction and fashion focal point
 - avoid recent formula
 - fashion language: garment structure, materials, color accents, shoes, and accessories
 - person language: age impression, hair, build, pose, and expression

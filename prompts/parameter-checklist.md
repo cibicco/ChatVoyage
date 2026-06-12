@@ -18,6 +18,7 @@ fashion_category: four slugs from prompts/category-presets.md
 style_preset: one shared slug or four slugs from prompts/style-presets.md
 style_family: family for each selected style preset
 target_age_band: four values from prompts/age-presets.md
+persona_direction: bright, sociable, lively, fashion-aware, fashion-interested adult charm direction from prompts/persona-presets.md
 pose_family: four values from prompts/pose-presets.md
 face_direction: one per image
 body_direction: one per image
@@ -26,6 +27,7 @@ hand_placement: one per image
 crop: one per image
 person_language: adult character notes, varied across all four images
 fashion_language: garment structure, silhouette, material, shoes, legwear, accessories
+fashion_focal_point: one or two distinctive styling details per image
 exposure_plan: covered, moderate, open, or layered exposure balance for each image
 comfort_naturalness: why the outfit is plausible for the weather, place, and activity
 variation_axes: what differs across the four images beyond color
@@ -50,9 +52,11 @@ target_age_band: age band
 style_family: broad style family
 style_preset: exact style preset slug
 person_language: age impression, hairstyle, build, expression, adult context
+persona_direction: how brightness, sociability, self-awareness, and fashion interest appear
 pose_language: pose family, face direction, body direction, camera angle, hand placement, crop
 scene_language: city, place, time/weather, background support
 fashion_language: garment list, construction, materials, texture, proportion, shoes, legwear, accessories
+fashion_focal_point: chosen styling point such as color, accessory, fabric, silhouette, shoes, bag, jewelry, hair accessory, layering, or fabric movement
 lucky_color_use: where the daily lucky color appears
 lucky_color_tone_for_age: brightness, saturation, material, and placement for the selected age band
 exposure_balance: how skin, sheer layers, hem length, neckline, sleeve, or cutout choices support the category without erotic framing
@@ -85,6 +89,7 @@ lucky_color_age_tone
 climate_fit
 categories
 age_bands
+persona_direction
 exposure_plan
 pose_families
 style_presets
@@ -104,7 +109,9 @@ final_files:
   secondary_tags
   place
   person_language
+  persona_direction
   fashion_language
+  fashion_focal_point
   lucky_color_tone_for_age
   exposure_balance
   comfort_naturalness
@@ -144,6 +151,7 @@ lucky_color_age_tone
 climate_fit
 selected_categories
 age_bands
+persona_direction
 exposure_plan
 pose_families
 style_presets
@@ -158,6 +166,13 @@ recent-set repetition notes and any intentional repeats
 
 - Four separate images exist under the project save path.
 - The four people are visibly different adults.
+- Each person reads as bright, sociable, lively, fashion-aware, interested in
+  clothes, and intentionally stylish, with adult charm expressed through
+  posture, expression, gesture, outfit completion, color, fabric, silhouette,
+  accessories, or scene behavior rather than erotic framing.
+- Each image has one or two clear fashion focal points, such as accessory,
+  fabric, silhouette, color placement, shoes, bag, jewelry, hair accessory,
+  layering, or fabric movement.
 - Category, style, age, pose, and crop choices match preset vocabulary.
 - The set varies silhouette, garment construction, material, shoes or legwear,
   exposure balance, setting, pose, and camera direction.

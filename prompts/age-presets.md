@@ -8,12 +8,27 @@ albums when practical. All characters must be adult.
 - `18-19-adult`: adult college-age or young working adult styling. University
   settings are allowed. A soft youthful face, petite build, round facial
   features, natural makeup, and gentle expression are allowed when the styling
-  and context still read as adult. Avoid school-uniform cues, child body
-  proportions, childlike styling, and underage framing.
+  and context still read as adult. The persona should feel bright, sociable,
+  fashion-interested, and confidently adult, with playful but non-teen-idol
+  styling details. Avoid school-uniform cues, child body proportions,
+  childlike styling, and underage framing.
 - `20-24`: university, early career, street, cafe, market, club, active, and
-  experimental fashion.
+  experimental fashion. The persona can be more exploratory, social, lively,
+  and willing to use distinctive color, accessories, texture, asymmetry, or
+  unexpected silhouette.
 - `25-29`: office, gallery, lounge, date, travel, mode, and polished daily
-  fashion.
+  fashion. The persona should feel self-possessed, fashion-literate, aware of
+  her charm, and edited rather than blank or over-armored.
+
+## Core Persona Across Ages
+
+All age bands share a bright, sociable, lively, fashion-aware baseline. The
+character should seem interested in clothes and capable of choosing a
+distinctive fashion point, whether that point is color, accessory, fabric,
+silhouette, shoes, bag, hair accessory, jewelry, layering, or fabric movement.
+She can be aware of her own charm, but the image should express this through
+adult confidence, styling, posture, and social energy rather than erotic
+framing.
 
 ## Exposure Rule
 

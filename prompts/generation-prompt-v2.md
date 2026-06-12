@@ -23,9 +23,11 @@ prompt_version: v2-short-generation
 image_number: 01-04
 place: city and one concrete scene
 person: adult Japanese-centered character and age band
+persona: bright, sociable, lively, fashion-aware, intentionally stylish, aware of her charm without erotic framing
 style: exact style preset in natural language
 pose: one readable pose
 outfit: 4-7 core garments/accessories
+fashion_focal_point: one or two distinctive styling details
 climate: one sentence about comfort and weather
 avoid_recent_formula: not the recent repeated formula; name the different silhouette, action, or setting
 constraints: no text, no logos, original adult, standalone image
@@ -44,6 +46,7 @@ Inspect each accepted image and record:
 prompt_version: v2-short-generation
 prompt_shape: short prompt, detailed log
 generated_prompt_summary: one sentence describing the prompt actually used
+persona_and_focal_point: how the accepted image shows fashion interest and the chosen styling detail
 avoid_recent_formula: the repeated formula that was avoided
 visual_check:
   matches: what the image clearly matches

@@ -9,6 +9,7 @@ Use this checklist after every daily image generation or reorganization.
   - `prompts/daily-fashion-template.md`
   - `prompts/parameter-checklist.md`
   - `prompts/repetition-guardrails.md`
+  - `prompts/persona-presets.md`
   - `prompts/generation-prompt-v2.md`
   - `prompts/style-presets.md`
   - `prompts/category-presets.md`
@@ -24,6 +25,12 @@ Use this checklist after every daily image generation or reorganization.
   venue norms, and activity. Do not default to one warm-weather formula.
 - Vary age bands by life scene, silhouette, material, and accessories, not only
   by color tone or face age.
+- Define how the core persona appears in each image: bright, sociable, lively,
+  fashion-aware, intentionally stylish, and aware of her charm without erotic
+  framing.
+- Choose one or two fashion focal points per image, such as color, accessory,
+  fabric, silhouette, shoes, bag, jewelry, hair accessory, layering, or fabric
+  movement.
 - If full-detail prompts are unstable, switch to
   `prompts/generation-prompt-v2.md`: keep the image prompt short, include one
   anti-repeat instruction per image, and record the detailed design plus visual
@@ -48,6 +55,7 @@ Use this checklist after every daily image generation or reorganization.
 - Record recent-set repetition notes, cooldown formulas, category rotation
   reason, climate context, age-band life scene, age-band silhouette, and the
   anti-repeat instruction for each accepted image.
+- Record the persona direction and fashion focal point for each accepted image.
 - Add an album page under `assets/YYYY-MM-DD-theme-album.html` when the set is
   intended to be browsed independently.
 - Add the set to `index.html` with:

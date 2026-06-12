@@ -19,6 +19,7 @@ single four-panel collage.
    - `prompts/parameter-checklist.md`
    - `prompts/generation-prompt-v2.md`
    - `prompts/repetition-guardrails.md`
+   - `prompts/persona-presets.md`
    - `prompts/style-presets.md`
    - `prompts/category-presets.md`
    - `prompts/age-presets.md`
@@ -42,6 +43,7 @@ single four-panel collage.
    - four selected fashion categories from `category-presets.md`
    - one shared visual style or two to four mixed styles from `style-presets.md`
    - four target age bands and pose families
+   - a persona direction from `prompts/persona-presets.md`
    - age-based tone choices for the lucky color
    - an exposure plan that varies covered, moderate, open, and layered styling
    - climate and comfort logic so the outfit is natural for the weather,
@@ -84,10 +86,18 @@ styling, school-uniform cues, sailor-uniform cues, teen-idol styling, and
 identical face/body/hair patterns. University settings are allowed for adult
 characters.
 
+The default persona is bright, sociable, lively, fashion-aware, interested in
+clothes, and good at choosing distinctive styling details. She should seem
+aware of her own charm without being framed erotically. Express that through
+posture, expression, gesture, outfit completion, color, fabric, silhouette,
+accessories, and scene behavior. Prefer light, mobile, fashionable styling over
+heavy clothing used only to make the image feel safe.
+
 Vary more than color. Across the four prompts, explicitly vary:
 
 - silhouette and garment construction
 - life scene and activity by age band
+- personality expression and fashion focal point
 - length and proportion
 - material and texture
 - shoes and legwear
@@ -138,6 +148,8 @@ Before accepting the set, check:
 
 - Four separate images were generated.
 - The four women are visibly different people.
+- Each woman reads as a lively fashion-aware adult with a chosen styling focal
+  point, not a neutral mannequin wearing clothes.
 - The four looks are not color swaps of the same outfit.
 - The set is not a repeat of the last three to five accepted daily sets with
   only the city and lucky color changed.

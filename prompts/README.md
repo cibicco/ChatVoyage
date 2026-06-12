@@ -8,6 +8,9 @@ Keep prompts specific enough to force visible fashion variation, but avoid exact
 
 - `daily-fashion-template.md`: shared scaffold for four-image daily sets.
 - `age-presets.md`: adult age-band vocabulary and guardrails, including 18-19 adult handling.
+- `persona-presets.md`: default character persona for bright, sociable, fashion-aware daily subjects.
+- `repetition-guardrails.md`: recent-set comparison and anti-template rules.
+- `generation-prompt-v2.md`: short-prompt workflow with detailed logging and anti-repeat fields.
 - `category-presets.md`: reusable category vocabulary; select four categories for each daily set.
 - `pose-presets.md`: pose, face direction, body direction, camera angle, and hand-placement vocabulary.
 - `style-presets.md`: reusable visual style switches, separate from daily theme and outfit instructions.
