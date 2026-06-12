@@ -1,5 +1,117 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-12 Nagoya Gardenia Rain Arcade
+
+- Images: 4 final images
+- Generated on: 2026-06-12, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-12-nagoya-gardenia-rain-arcade/`
+- Album: `assets/2026-06-12-nagoya-gardenia-rain-arcade-album.html`
+- Note: `notes/2026-06-12-nagoya-gardenia-rain-arcade.md`
+- City / place language: Nagoya, specifically Oasis 21 / Hisaya-odori Park, Aichi Arts Center area, Shikemichi canal townscape, and Osu shopping district covered arcade
+- Common mood: humid June rain, glass roofs, wet pavement, white plaster walls, warm arcade lights, and gardenia-white accents
+- Lucky color: gardenia white
+- Lucky color age tone: `18-19-adult` clear fresh gardenia white; `20-24` glossy, satin, or mesh gardenia white; `25-29` mineral gardenia white with restrained silver styling
+- Climate fit: warm humid June Nagoya after rain; breathable tanks, sleeveless shells, open shirts, camisoles, mesh, sandals, mules, sneakers, and tied rain shells are natural for the places and movement
+- Categories: `transit`, `gallery`, `date`, `active`
+- Age bands: `18-19-adult`, `25-29`, `20-24`, `20-24`
+- Exposure plan: natural warm-weather transit tank, sleeveless gallery tailoring, date camisole with open cardigan, athletic mesh layer for arcade movement
+- Pose families: `using-object`, `walking-stride`, `seated-side`, `stretching-reach`
+- Style presets: `anime-fashion-magazine`, `runway-board-illustration`, `soft-real-fashion-art`, `game-cinematic-3d`
+- Prompt version: `v2-short-generation`
+- Prompt shape: short image prompts, detailed monthly log and visual inspection
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, `prompts/generation-prompt-v2.md`, and a light web/place source scan were used.
+- Source scan: current references were used as place, climate, and mood signals only, not as designs to copy.
+  - Nagoya Convention & Visitors Bureau: https://www.nagoya-info.jp/en/
+  - Oasis 21: https://www.sakaepark.co.jp/en/
+  - Aichi Arts Center: https://www.aac.pref.aichi.jp/
+  - Weather Atlas Nagoya June: https://www.weather-atlas.com/en/japan/nagoya-weather-june
+
+### Final Files
+
+- `01-transit-oasis-gardenia-anime.png`
+  - Source file: `ig_0180e2aaa6928a53016a2bd76329e08191bfe29deec83084b1.png`
+  - Primary category: `transit`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `rain`, `transit`, `oasis-21`, `hisaya-odori`, `gardenia-white`, `umbrella`, `anime-fashion-magazine`
+  - Place: Oasis 21 / Hisaya-odori Park area after rain, with glass roof reflections and wet pavement
+  - Person: adult Japanese-centered young woman, clearly adult casual transit styling
+  - Fashion: clear gardenia-white square-neck rib tank, open pale mint short-sleeve shirt, charcoal utility mini skirt over black bike shorts, flat waterproof sandals, compact translucent pouch
+  - Lucky color tone for age: fresh clear gardenia white for `18-19-adult`
+  - Exposure balance: warm-weather adult tank, open shirt, bare arms, skirt with opaque bike shorts, and sandals; attention is distributed by umbrella and IC-card interaction
+  - Comfort naturalness: breathable tank, open shirt, sandals, and umbrella fit humid rainy Nagoya transit walking
+  - Pose family: `using-object`; face left; body three-quarter; eye-level knee-up crop
+  - Generated prompt summary: short prompt for an adult 18-19 Nagoya Oasis 21 rainy transit look with gardenia-white tank, open shirt, skirt over bike shorts, sandals, clear umbrella, IC-card gesture, and no text/logos.
+  - Visual check: matches rain, glass-roof plaza, umbrella, transit object interaction, gardenia-white tank, open shirt, and adult casual styling. The neckline is open but climate-natural and not framed as the sole focus.
+  - Result: accepted. Age, climate, no-logo, no-readable-text, and outfit readability gates passed.
+- `02-gallery-aichi-arts-mineral-white-runway.png`
+  - Source file: `ig_0180e2aaa6928a53016a2bd81fb1e081919dc331fb428af038.png`
+  - Primary category: `gallery`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `rain`, `gallery`, `aichi-arts-center`, `linen`, `mineral-white`, `silver`, `runway-board-illustration`
+  - Place: Aichi Arts Center area after rain, with glass facade and museum-like plaza
+  - Person: adult Japanese-centered woman, late 20s, polished gallery-walk expression
+  - Fashion: mineral gardenia-white asymmetric linen vest, smoke-gray sleeveless knit shell, navy wide culotte trousers, silver low-heel mules, compact sculptural shoulder bag
+  - Lucky color tone for age: mineral gardenia white, restrained and polished for `25-29`
+  - Exposure balance: sleeveless tailoring with full-length wide trousers and refined mules; open arms are natural for humid rain
+  - Comfort naturalness: sleeveless knit, linen vest, culottes, and mules fit warm humid gallery walking better than heavy coverage
+  - Pose family: `walking-stride`; face camera; body front three-quarter; diagonal full-body crop
+  - Generated prompt summary: short prompt for an adult 25-29 Aichi Arts Center gallery look in runway-board illustration style with mineral-white linen vest, sleeveless knit, navy culottes, silver mules, and no text/logos.
+  - Visual check: matches gallery plaza, mineral-white vest, sleeveless shell, wide trousers, and rainy reflections. The output is more finished than a pure runway board but retains construction-line and minimal-background qualities.
+  - Result: accepted with style note.
+- `03-date-shikemichi-satin-soft-real.png`
+  - Source file: `ig_0180e2aaa6928a53016a2bd89e49908191a40e31ac6818c330.png`
+  - Primary category: `date`
+  - Target age band: `20-24`
+  - Style family: `semi-real-digital`
+  - Style preset: `soft-real-fashion-art`
+  - Secondary tags: `rain`, `date`, `shikemichi`, `canal`, `satin`, `gardenia-white`, `soft-real-fashion-art`
+  - Place: Shikemichi old townscape near the canal after rain, with white plaster walls and wet stone street
+  - Person: adult Japanese-centered woman, early 20s, calm date-walk expression
+  - Fashion: warm gardenia-white satin camisole with opaque lining, cropped black linen cardigan worn open, soft olive wrap skirt with side tie, cream low block-heel sandals, tiny pearl earrings
+  - Lucky color tone for age: warm satin gardenia white, softly luminous for `20-24`
+  - Exposure balance: camisole, bare shoulders, sandals, and open cardigan are balanced by seated map-reading pose and long wrap skirt
+  - Comfort naturalness: camisole, open cardigan, skirt, and sandals fit humid warm evening walking and sitting by the canal
+  - Pose family: `seated-side`; face down; body side three-quarter; high camera knee-up crop
+  - Generated prompt summary: short prompt for an adult 20-24 Shikemichi rainy date look in soft-real fashion art with gardenia-white satin camisole, open cardigan, olive wrap skirt, sandals, folded map, and no text/logos.
+  - Visual check: matches canal townscape, white plaster walls, wet stones, map interaction, satin camisole, open cardigan, wrap skirt, and visible sandals.
+  - Result: accepted. Climate-natural exposure and place specificity passed.
+- `04-active-osu-arcade-cg-style-note.png`
+  - Source file: `ig_0180e2aaa6928a53016a2bda735a7481919f63cd2b2da687c8.png`
+  - Primary category: `active`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `game-cinematic-3d`
+  - Secondary tags: `rain`, `active`, `osu`, `covered-arcade`, `mesh`, `gardenia-white`, `cobalt`, `game-cinematic-3d`
+  - Place: Osu shopping district covered arcade after rain, with wet pavement and warm shop lights
+  - Person: adult Japanese-centered woman, early 20s, energetic adult street-dance pose
+  - Fashion: glossy gardenia-white cropped mesh zip vest over black opaque sports bra top, cobalt nylon track pants with side snaps, white chunky sneakers, small waist pouch, thin rain shell tied at hip
+  - Lucky color tone for age: glossy mesh gardenia white, sporty and bright for `20-24`
+  - Exposure balance: athletic adult fashion through cropped mesh, opaque sports top, side-snap pants, and movement; active category supports visible skin without erotic framing
+  - Comfort naturalness: mesh vest, sports top, nylon pants, sneakers, and tied rain shell fit humid covered-arcade movement
+  - Pose family: `stretching-reach`; face over-shoulder; body back-three-quarter; low diagonal wide-action crop
+  - Generated prompt summary: initial short prompt for an adult 20-24 Osu arcade active look in game-cinematic 3D style was regenerated because the result was too photographic; accepted regeneration emphasized unmistakable stylized CG, no text/logos, and no mascot figures.
+  - Visual check: matches Osu-like covered arcade, wet pavement, gardenia-white mesh vest, black sports top, cobalt nylon pants, sneakers, and dynamic reach pose. The image remains more photo-adjacent than ideal for `game-cinematic-3d`, so the style deviation is recorded instead of hidden.
+  - Result: accepted with explicit style-deviation note after one targeted regeneration.
+
+### Generation Notes
+
+This run used `v2-short-generation`. The prompts stayed short, and the log
+records the parameter map plus visual checks. The first three images passed
+without regeneration. The fourth image was regenerated once because the
+original result was too photographic for `game-cinematic-3d`; the accepted
+version still has a style deviation, but garment, place, age, climate, and
+no-readable-text gates passed.
+
+The climate-natural exposure rule was applied directly. Warm humid Nagoya
+supports tanks, camisoles, sleeveless shells, mesh, sandals, mules, sneakers,
+open shirts, and tied rain shells. No neckline, sleeve, or layer was changed
+only to reduce skin visibility when the clothing already fit the venue and
+weather.
+
 ## 2026-06-10 Fukuoka Yuzu Rain Riverside
 
 - Images: 4 final images
