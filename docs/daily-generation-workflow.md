@@ -8,17 +8,30 @@ Use this checklist after every daily image generation or reorganization.
 - Read the relevant prompt presets:
   - `prompts/daily-fashion-template.md`
   - `prompts/parameter-checklist.md`
+  - `prompts/repetition-guardrails.md`
+  - `prompts/generation-prompt-v2.md`
   - `prompts/style-presets.md`
   - `prompts/category-presets.md`
   - `prompts/age-presets.md`
   - `prompts/pose-presets.md`
 - Fill the required generation parameters from
   `prompts/parameter-checklist.md` before prompting.
+- Scan the last three to five daily notes or monthly log entries and write down
+  repeated category, pose, garment, background, crop, and lucky-color placement
+  formulas before choosing the new set.
+- Decide climate fit from city, season, time of day, weather, temperature band,
+  humidity, indoor/outdoor conditions, wind or air conditioning, rain intensity,
+  venue norms, and activity. Do not default to one warm-weather formula.
+- Vary age bands by life scene, silhouette, material, and accessories, not only
+  by color tone or face age.
 - If full-detail prompts are unstable, switch to
-  `prompts/generation-prompt-v2.md`: keep the image prompt short and record
-  the detailed design plus visual check in the monthly log.
+  `prompts/generation-prompt-v2.md`: keep the image prompt short, include one
+  anti-repeat instruction per image, and record the detailed design plus visual
+  check in the monthly log.
 - Select four categories from `category-presets.md`; do not default to
   Street / Mode / Night / Resort unless that fits the day.
+- Do not repeat `market` / `gallery` / `lounge` / `transit` or another recent
+  category quartet by habit. If repeated, log why the repeat is necessary.
 - Select image style presets from `style-presets.md`.
 - Select age bands and pose families before writing image prompts.
 - If web/source checks are used, record the sources in the monthly log.
@@ -32,6 +45,9 @@ Use this checklist after every daily image generation or reorganization.
   Use the after-generation fields in `prompts/parameter-checklist.md`.
 - Record `prompt_version`, prompt summary, visual check, and any prompt
   shortening or category changes when using prompt v2.
+- Record recent-set repetition notes, cooldown formulas, category rotation
+  reason, climate context, age-band life scene, age-band silhouette, and the
+  anti-repeat instruction for each accepted image.
 - Add an album page under `assets/YYYY-MM-DD-theme-album.html` when the set is
   intended to be browsed independently.
 - Add the set to `index.html` with:

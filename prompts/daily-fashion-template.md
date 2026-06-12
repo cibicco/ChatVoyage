@@ -18,6 +18,14 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
 - Keep clothing natural for the city, season, weather, temperature, venue, and
   activity; do not force coverage that makes the person look physically
   uncomfortable.
+- Before prompting, compare the last three to five recent sets and avoid
+  repeating their category, pose, garment, background, crop, and lucky-color
+  placement formulas unless the repeat is intentional and logged.
+- Climate-natural clothing must be decided from city, season, time of day,
+  weather, temperature band, humidity, indoor/outdoor conditions, wind or air
+  conditioning, rain intensity, venue norms, and activity. Do not default to
+  tanks, camisoles, open shirts, mesh, and sandals only because the weather is
+  warm or humid.
 - Brand names may be used only as loose mood references; do not reproduce logos, readable marks, exact products, or source-photo compositions.
 
 ## Category Selection
@@ -46,7 +54,8 @@ Use the selected category slug as each filename prefix. Existing sets using
    `style-presets.md`, such as `anime-editorial`, `pbr-fashion-3d`,
    `marker-sketch`, or `digital-magazine-painting`.
 3. Person direction: target age band from `age-presets.md`, hairstyle, build,
-   expression, and character mood.
+   expression, character mood, life scene, silhouette logic, material logic,
+   and accessory logic.
 4. Pose direction: pose family, face direction, body direction, camera angle,
    and hand placement from `pose-presets.md`.
 5. Optional person detail: age impression, hairstyle, build, expression, and
@@ -91,7 +100,10 @@ Optional outfit direction:
 Fashion direction:
 - mood references: {brand-or-editorial-mood, not exact products}
 - season/weather cue: {seasonal cue}
-- climate and comfort logic: {temperature, humidity, venue, movement, and why the outfit would be wearable}
+- climate and comfort logic: {city, season, time of day, weather, temperature band, humidity, indoor/outdoor, wind or air conditioning, rain intensity, venue norms, movement, and why the outfit would be wearable}
+- age-band life scene: {adult life context for this age band}
+- age-band silhouette/material/accessory logic: {what differs by age beyond color tone}
+- avoid recent formula: {recent repeated formula this image does not use}
 - outfit focus: {silhouette, garment types, fabric, color accents}
 - setting: {city/gallery/night waterfront/resort terrace/etc.}
 
@@ -110,6 +122,11 @@ Constraints:
   evening wear; keep it adult, tasteful, garment-focused, and non-erotic
 - do not use high necklines, heavy layers, long sleeves, or closed shoes as a
   default safety fix when they do not fit the climate, venue, or activity
+- do not use tanks, camisoles, open shirts, mesh, or sandals as a default
+  climate fix when the city, time, rain, venue, air conditioning, or activity
+  would support another natural silhouette
+- do not repeat the recent successful formulas with only a city or lucky-color
+  change
 - one complete standalone image, not a collage
 - full-body is not mandatory; use knee-up, waist-up, close-up-detail, or
   wide-action crops when they better express pose, garment detail, or mood
@@ -127,6 +144,9 @@ For every final image, record:
 - style preset: exact style preset slug
 - pose family: selected pose family from `pose-presets.md`
 - place: city and scene type
+- climate context: city, season, time, weather, humidity, venue, and activity
+- age-band life scene and silhouette logic
+- avoid recent formula
 - fashion language: garment structure, materials, color accents, shoes, and accessories
 - person language: age impression, hair, build, pose, and expression
 - result: accepted, regenerated, or accepted with note

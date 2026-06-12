@@ -18,6 +18,7 @@ single four-panel collage.
    - `prompts/daily-fashion-template.md`
    - `prompts/parameter-checklist.md`
    - `prompts/generation-prompt-v2.md`
+   - `prompts/repetition-guardrails.md`
    - `prompts/style-presets.md`
    - `prompts/category-presets.md`
    - `prompts/age-presets.md`
@@ -46,11 +47,13 @@ single four-panel collage.
    - climate and comfort logic so the outfit is natural for the weather,
      venue, temperature, and activity
    - the variation axes across all four images
+   - a recent-set repetition check using `prompts/repetition-guardrails.md`
    - the required parameter map from `prompts/parameter-checklist.md`
 8. Build four separate prompts using [prompt-architecture.md](references/prompt-architecture.md) and the Chat Voyage presets. Mix at least three influence systems in every look: garment structure, mood/source tags, and visual expression.
 9. If the full prompt is likely to be unstable, use
    `prompts/generation-prompt-v2.md`: keep the image-generation prompt short,
-   and record the full parameter map plus visual check in the monthly log.
+   include one anti-repeat instruction per image, and record the full parameter
+   map plus visual check in the monthly log.
 10. Before generation, briefly show the common mood, lucky color, city theme, selected categories, selected styles, pose plan, and source links if web was used. Then generate the four images.
 11. Inspect each result against the quality gates. Regenerate only the failing image with a targeted correction if needed. When using prompt v2, record prompt summaries and visual checks for accepted images.
 12. Save accepted images under `assets/daily/YYYY-MM-DD-theme/`, then update the monthly log, notes, album, and `index.html`.
@@ -84,11 +87,13 @@ characters.
 Vary more than color. Across the four prompts, explicitly vary:
 
 - silhouette and garment construction
+- life scene and activity by age band
 - length and proportion
 - material and texture
 - shoes and legwear
 - exposure balance
 - lucky-color tone by age band
+- lucky-color placement by garment type, not only color of a repeated garment
 - styling attitude
 - time of day and background
 - visual style preset when the user asks for mixed style exploration
@@ -108,10 +113,20 @@ details where the category supports them.
 
 Do not solve adult/age guardrails by forcing unnatural coverage. Necklines,
 sleeves, fabric weight, footwear, and layering should be plausible for the
-city, season, temperature, humidity, venue, and activity. In warm or humid
-weather, prefer breathable adult fashion choices over default high-neck tops,
-heavy layers, long sleeves, or closed shoes when those would make the person
-look physically uncomfortable.
+city, season, temperature, humidity, venue, time of day, weather intensity,
+wind or air conditioning, and activity. Do not reduce climate naturalness to a
+single warm-weather formula. In warm or humid weather, breathable adult fashion
+choices may include tanks, camisoles, open shirts, mesh, and sandals, but also
+cotton tees, buttoned short-sleeve shirts, airy shirt dresses, sleeveless
+tailoring, light jumpsuits, cropped trousers, washable skirts, technical rain
+pants, sneakers, mules, thin cardigans for air-conditioned interiors, or
+compact outer layers.
+
+Age bands must differ by more than color tone. For each target age band, vary
+the life scene, silhouette, material logic, accessory logic, and styling
+attitude. Do not repeatedly assign the same role such as young market casual,
+early-20s open-back gallery, late-20s seated camisole lounge, and early-20s
+mesh transit unless that repeat is intentional and logged.
 
 Full-body is allowed but not required. Use knee-up, waist-up, close-up detail,
 wide-action, seated, back three-quarter, jumping, reaching, leaning, or object
@@ -124,8 +139,12 @@ Before accepting the set, check:
 - Four separate images were generated.
 - The four women are visibly different people.
 - The four looks are not color swaps of the same outfit.
+- The set is not a repeat of the last three to five accepted daily sets with
+  only the city and lucky color changed.
 - Four primary categories were selected intentionally. Do not default to
   Street / Mode / Night / Resort unless they genuinely fit the day.
+- Recent category, garment, pose, crop, and background formulas were checked
+  and any repeated formula was avoided or explicitly justified.
 - Selected `data-style` and `data-category` values exist in the Chat Voyage
   prompt presets when working in that project.
 - The shared daily mood is present but subtle.
@@ -136,6 +155,9 @@ Before accepting the set, check:
   similarly covered long-layer looks unless the user asks for that.
 - The outfit feels natural for the weather, temperature, venue, and movement;
   the person is not being forced into coverage that fights the scene.
+- Climate fit reflects city, season, time of day, rain intensity, indoor or
+  outdoor setting, wind or air conditioning, venue norms, and activity instead
+  of defaulting to tanks, camisoles, mesh, open shirts, and sandals.
 - No single source, brand look, celebrity outfit, or reference image is reproduced.
 - Backgrounds support the outfit context without overpowering the figure.
 - No visible text, watermark, logo imitation, or brand mark is requested.
