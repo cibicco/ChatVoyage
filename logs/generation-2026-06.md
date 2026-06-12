@@ -1,5 +1,111 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-13 Kyoto Hydrangea Rain Walk
+
+- Images: 4 final images
+- Generated on: 2026-06-13, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-13-kyoto-hydrangea-rain-walk/`
+- Album: `assets/2026-06-13-kyoto-hydrangea-rain-walk-album.html`
+- Note: `notes/2026-06-13-kyoto-hydrangea-rain-walk.md`
+- City / place language: Kyoto, specifically Nishiki Market covered arcade, Kyoto City KYOCERA Museum of Art / Okazaki Park, Pontocho opening toward the Kamo River, and Kyoto Station Building skyway / grand stair area
+- Common mood: humid June rain, covered arcades, wet museum plazas, river stones, station glass, and hydrangea-blue accents
+- Lucky color: hydrangea blue
+- Lucky color age tone: `18-19-adult` fresh soda hydrangea blue; `20-24` vivid translucent or electric hydrangea blue; `25-29` smoky indigo hydrangea blue
+- Climate fit: warm humid June Kyoto after rain; breathable tanks, open shirts, linen halters, mesh layers, camisoles with opaque lining, sandals, sneakers, and light rain shells are natural for the places and movement
+- Categories: `market`, `gallery`, `lounge`, `transit`
+- Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
+- Exposure plan: market tank with open shirt and skort-over-bike-shorts, gallery open-back halter with carried bolero, lounge satin camisole with draped blazer, transit tank with mesh jacket and rain shell
+- Pose families: `crouching-market`, `over-shoulder`, `seated-side`, `adjusting-jacket`
+- Style presets: `anime-cel-polished`, `marker-sketch`, `soft-real-fashion-art`, `anime-soft-cinematic`
+- Prompt version: `v2-short-generation`
+- Prompt shape: short image prompts, detailed monthly log and visual inspection
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/parameter-checklist.md`, `prompts/generation-prompt-v2.md`, and a light web/place source scan were used.
+- Source scan: current references were used as place, climate, and mood signals only, not as designs to copy.
+  - Kyoto City KYOCERA Museum of Art: https://kyotocity-kyocera.museum/en/
+  - Kyoto City Official Travel Guide: https://kyoto.travel/en/
+  - Kyoto Station Building: https://www.kyoto-station-building.co.jp/en/
+  - Weather Atlas Kyoto June: https://www.weather-atlas.com/en/japan/kyoto-weather-june
+
+### Final Files
+
+- `01-market-nishiki-hydrangea-cel-anime.png`
+  - Source file: `ig_0180e2aaa6928a53016a2c50ca8ee88191bdac6535845ee1fc.png`
+  - Primary category: `market`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `rain`, `market`, `nishiki-market`, `covered-arcade`, `hydrangea-blue`, `seersucker`, `anime-cel-polished`
+  - Place: Nishiki Market covered arcade after rain, with wet floor and stall lights
+  - Person: adult Japanese-centered young woman, clearly adult casual market styling
+  - Fashion: fresh soda hydrangea-blue open seersucker short-sleeve shirt, ivory square-neck rib tank, charcoal skort over black bike shorts, flat rain sandals, translucent tote
+  - Lucky color tone for age: fresh soda hydrangea blue for `18-19-adult`
+  - Exposure balance: tank, open shirt, bare arms, skort, opaque bike shorts, and sandals; crouching crop shows more leg but the market action and bike shorts keep it garment-focused
+  - Comfort naturalness: open shirt, tank, skort, bike shorts, sandals, and tote fit humid covered-market browsing
+  - Pose family: `crouching-market`; face left; body three-quarter; diagonal knee-up crop
+  - Generated prompt summary: short prompt for an adult 18-19 Nishiki Market rainy market look in polished cel anime with hydrangea-blue open shirt, ivory tank, skort over bike shorts, rain sandals, clear tote, and no text/logos.
+  - Visual check: matches covered arcade, wrapped snack interaction, rainy floor, hydrangea shirt, tank, skort, bike shorts, sandals, and adult casual styling. The low pose makes legs prominent but does not fail the climate or age guardrails.
+  - Result: accepted with crop note.
+- `02-gallery-kyocera-museum-open-back-marker.png`
+  - Source file: `ig_0180e2aaa6928a53016a2c5178c03881919b9bdacca81f64ef.png`
+  - Primary category: `gallery`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `rain`, `gallery`, `kyocera-museum`, `okazaki-park`, `open-back`, `linen`, `hydrangea-blue`, `marker-sketch`
+  - Place: Kyoto City KYOCERA Museum of Art / Okazaki Park plaza after rain
+  - Person: adult Japanese-centered woman, early 20s, composed gallery-walk expression
+  - Fashion: vivid translucent hydrangea-blue open-back linen halter, sheer white mesh bolero carried on one arm, charcoal pleated culotte shorts, silver flat sandals, slim white tote
+  - Lucky color tone for age: vivid translucent hydrangea blue for `20-24`
+  - Exposure balance: open-back adult gallery styling, balanced by knee-length culotte shorts and carried mesh layer
+  - Comfort naturalness: open-back linen, carried bolero, culottes, and sandals fit humid museum walking after rain
+  - Pose family: `over-shoulder`; body back-three-quarter; face looking back; eye-level knee-up crop
+  - Generated prompt summary: short prompt for an adult 20-24 Kyoto City KYOCERA Museum gallery look in marker sketch style with open-back hydrangea-blue linen halter, carried mesh bolero, culotte shorts, tote, and no text/logos.
+  - Visual check: matches museum plaza, rainy reflections, marker sketch treatment, open-back halter, carried bolero, tote, and no readable signage.
+  - Result: accepted. The open back is climate-natural and category-appropriate.
+- `03-lounge-pontocho-kamo-river-soft-real.png`
+  - Source file: `ig_0180e2aaa6928a53016a2c51d66f548191b9568f860cbc44bb.png`
+  - Primary category: `lounge`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `soft-real-fashion-art`
+  - Secondary tags: `rain`, `lounge`, `pontocho`, `kamo-river`, `satin`, `smoky-indigo`, `hydrangea-blue`, `soft-real-fashion-art`
+  - Place: Pontocho alley opening toward the Kamo River after rain, with warm lantern reflections and riverside railing
+  - Person: adult Japanese-centered woman, late 20s, polished quiet night-out expression
+  - Fashion: smoky indigo hydrangea-blue satin camisole with opaque lining, light black linen blazer draped on shoulders, ivory sheer-over-opaque midi skirt, silver low block-heel sandals, small smoky blue clutch
+  - Lucky color tone for age: smoky indigo hydrangea blue for `25-29`
+  - Exposure balance: refined camisole neckline, bare lower leg, sandals, and draped blazer; adult lounge styling, not erotic framing
+  - Comfort naturalness: camisole, linen blazer, airy midi skirt, and sandals fit humid warm riverside evening
+  - Pose family: `seated-side`; face down; body side three-quarter; high camera knee-up crop
+  - Generated prompt summary: short prompt for an adult 25-29 Pontocho / Kamo River rainy lounge look in soft-real fashion art with smoky hydrangea satin camisole, draped black linen blazer, ivory sheer-over-opaque skirt, silver sandals, clutch, and no text/logos.
+  - Visual check: matches riverside evening, wet stones, warm lantern glow, smoky blue satin, draped blazer, translucent skirt, visible sandals, and adult seated pose.
+  - Result: accepted.
+- `04-transit-kyoto-station-blue-rain-anime.png`
+  - Source file: `ig_0180e2aaa6928a53016a2c5282692881918b1471fe1ebea1d2.png`
+  - Primary category: `transit`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-soft-cinematic`
+  - Secondary tags: `rain`, `transit`, `kyoto-station`, `glass`, `mesh`, `electric-hydrangea`, `anime-soft-cinematic`
+  - Place: Kyoto Station Building skyway and grand stair area after rain
+  - Person: adult Japanese-centered woman, early 20s, travel-day expression
+  - Fashion: electric hydrangea-blue mesh short jacket, black opaque scoop-neck tank, slate gray parachute pants, white platform sneakers, compact silver crossbody pouch, clear rain shell half unzipped, compact suitcase
+  - Lucky color tone for age: electric hydrangea blue, clear and technical for `20-24`
+  - Exposure balance: tank and mesh jacket with full parachute pants and sneakers; practical transit exposure
+  - Comfort naturalness: mesh jacket, tank, light rain shell, parachute pants, sneakers, and suitcase fit humid rainy station movement
+  - Pose family: `adjusting-jacket`; face right; body front three-quarter; low diagonal full-body crop
+  - Generated prompt summary: short prompt for an adult 20-24 Kyoto Station rainy transit look in soft cinematic anime with electric hydrangea mesh jacket, black tank, rain shell, parachute pants, sneakers, suitcase, and no text/logos.
+  - Visual check: matches station glass structure, rainy floor, suitcase, clear rain shell, hydrangea-blue mesh jacket, black tank, parachute pants, and sneakers.
+  - Result: accepted.
+
+### Generation Notes
+
+This run used `v2-short-generation`; all four images succeeded without
+regeneration. The set intentionally keeps exposure decisions tied to climate
+and activity rather than treating coverage as a generic safety fix. Kyoto's
+humid June rain supports open shirts, tanks, open backs, camisoles with opaque
+lining, sandals, mesh, and light rain shells when the scene and pose make them
+practical.
+
 ## 2026-06-12 Nagoya Gardenia Rain Arcade
 
 - Images: 4 final images
