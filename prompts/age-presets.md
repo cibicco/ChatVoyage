@@ -30,22 +30,28 @@ She can be aware of her own charm, but the image should express this through
 adult confidence, styling, posture, and social energy rather than erotic
 framing.
 
-## Exposure Rule
+## Clothing Naturalness And Skin Visibility
 
-Exposure is allowed when it is clearly fashion styling: runway, club, resort,
-swim, dance, sheer layering, cutouts, lingerie-inspired layering, or evening
-wear. Keep it adult, tasteful, garment-focused, and non-erotic.
+Skin visibility is not a problem by itself, and low skin visibility is not a
+quality goal by itself. Judge the outfit by whether the garment construction,
+neckline, sleeves, hem, fabric weight, footwear, and layering feel natural for
+the city, season, weather, temperature, venue, time of day, and activity.
+Runway, club, resort, swim, dance, sheer layering, cutouts, lingerie-inspired
+layering, and evening wear can all be valid when they fit the scene and remain
+garment-focused.
 
-For `18-19-adult`, avoid sexualized framing even when the outfit has exposure.
+For `18-19-adult`, avoid sexualized framing while still allowing natural adult
+fashion choices for the scene.
 Use fashion context, confident adult styling, and clear garment construction.
 It is acceptable for the person to look young in a realistic Japanese young
 adult way; do not turn youthfulness into childishness or underage framing.
 
-Do not treat low exposure as the default quality gate. Across a four-image set,
-plan at least one more open or skin-visible fashion construction when it fits
-the category, weather, and adult context. Rain, transit, and outerwear themes
-can still include sleeveless inner layers, sheer rain shells, open-back tops,
-shorter hems with legwear, sandal styling, or carried outer layers.
+Do not treat low skin visibility as the default quality gate or high skin
+visibility as a default failure. Across a four-image set, vary clothing
+construction naturally: rain, transit, and outerwear themes can still include
+sleeveless inner layers, sheer rain shells, open-back tops, shorter hems with
+legwear, sandal styling, or carried outer layers when those choices fit the
+scene.
 
 Do not solve age guardrails by forcing unnaturally covered clothing. Neckline,
 sleeve, hem, fabric weight, and layering should fit the city, season, weather,

@@ -42,11 +42,13 @@ venue_norms:
 activity:
 ```
 
-Then choose fabric weight, sleeve, neckline, hem, footwear, and layering. Warm
-humid weather may support open clothing, but it can also support cotton tees,
-short-sleeve shirts buttoned normally, airy shirt dresses, sleeveless tailoring,
-light jumpsuits, cropped trousers, washable skirts, technical rain pants,
-thin cardigans in air-conditioned interiors, or compact outer layers.
+Then choose fabric weight, sleeve, neckline, hem, footwear, and layering. The
+goal is natural dress for the situation, not reducing or increasing visible
+skin. Warm humid weather may support open clothing, but it can also support
+cotton tees, short-sleeve shirts buttoned normally, airy shirt dresses,
+sleeveless tailoring, light jumpsuits, cropped trousers, washable skirts,
+technical rain pants, thin cardigans in air-conditioned interiors, or compact
+outer layers.
 
 ## Age-Band Differentiation
 

@@ -45,7 +45,8 @@ single four-panel collage.
    - four target age bands and pose families
    - a persona direction from `prompts/persona-presets.md`
    - age-based tone choices for the lucky color
-   - an exposure plan that varies covered, moderate, open, and layered styling
+   - a skin/coverage comfort plan that varies garment openness, airflow,
+     coverage, and layering according to scene needs
    - climate and comfort logic so the outfit is natural for the weather,
      venue, temperature, and activity
    - the variation axes across all four images
@@ -104,7 +105,7 @@ Vary more than color. Across the four prompts, explicitly vary:
 - length and proportion
 - material and texture
 - shoes and legwear
-- exposure balance
+- skin/coverage comfort
 - lucky-color tone by age band
 - lucky-color placement by garment type, not only color of a repeated garment
 - styling attitude
@@ -113,16 +114,18 @@ Vary more than color. Across the four prompts, explicitly vary:
 - pose family, face direction, body direction, camera angle, hand placement,
   and crop
 
-Keep sensual, night, resort, or swimwear elements tasteful and editorial.
-Exposure is allowed when it is clearly fashion styling, runway, club, resort,
-swim, dance, sheer layering, cutouts, lingerie-inspired layering, or evening
-wear. Treat it as garment-focused styling, not erotic display.
+Keep sensual, night, resort, or swimwear elements tasteful and editorial. Skin
+visibility is not a problem by itself, and low skin visibility is not a quality
+goal by itself. Judge whether the garment construction, neckline, sleeves, hem,
+fabric weight, footwear, and layering feel natural for the city, season,
+weather, temperature, venue, time of day, and activity.
 
-Do not overcorrect into consistently covered looks. If the daily theme is rain,
-outerwear, transit, or low-key city walking, still consider adult fashion
-constructions such as sleeveless inner layers, sheer shells, open backs,
-shorter hems with legwear, carried jackets, sandals, or dance/resort/night
-details where the category supports them.
+Do not overcorrect into consistently covered looks, and do not force openness
+where it fights the scene. If the daily theme is rain, outerwear, transit, or
+low-key city walking, still consider adult fashion constructions such as
+sleeveless inner layers, sheer shells, open backs, shorter hems with legwear,
+carried jackets, sandals, or dance/resort/night details where the category
+supports them.
 
 Do not solve adult/age guardrails by forcing unnatural coverage. Necklines,
 sleeves, fabric weight, footwear, and layering should be plausible for the
@@ -174,8 +177,10 @@ Before accepting the set, check:
 - The lucky color appears in each image, with different intensity or placement.
 - The lucky color tone reflects the target age band, not only the shared daily
   color name.
-- Exposure balance is intentionally varied and does not collapse into four
-  similarly covered long-layer looks unless the user asks for that.
+- Skin visibility, airflow, and coverage are intentionally varied because
+  garment construction, climate, venue, and activity vary. Do not collapse into
+  four similarly covered long-layer looks unless the user asks for that, and do
+  not force openness where it would be unnatural.
 - The outfit feels natural for the weather, temperature, venue, and movement;
   the person is not being forced into coverage that fights the scene.
 - Climate fit reflects city, season, time of day, rain intensity, indoor or

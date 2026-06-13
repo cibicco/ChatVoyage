@@ -1604,7 +1604,7 @@ photo-adjacent despite illustration/3D prompts.
 - Categories: `office`, `ceremony`, `dance`, `home`
 - Age bands: `20-24`, `25-29`, `18-19-adult`, `25-29`
 - Persona direction: selected adult trait mixes anchored in fashion interest, social ease, self-awareness, and distinct styling details
-- Exposure plan: sleeveless tailoring, moderate ceremony dress, open active dance midriff, relaxed square-neck home knit
+- Skin/coverage comfort plan: sleeveless tailoring, a ceremony dress with light movement, dancewear built for rehearsal, and a relaxed square-neck home knit; visible skin is not the issue by itself, only whether the outfit is natural for the place and action
 - Pose families: `using-object`, `walking-stride`, `dance-motion`, `floor-sit`
 - Style presets: `anime-fashion-magazine`, `semi-real-editorial`, `marker-sketch`, `pbr-fashion-3d`
 - Source scan / reference note: local project reference files were not present in the workspace; prompts, local presets, repetition guardrails, and recent logs were used. Place names are setting language only; no exact signage, commercial marks, or copied interiors were requested.
@@ -1629,7 +1629,7 @@ photo-adjacent despite illustration/3D prompts.
   - Fashion: pale linen sleeveless waistcoat, ribbed scoop-neck tee, cropped wide trousers, mamey-coral belt tab, low slingback loafers, small hoops, compact shoulder bag
   - Fashion focal point: waistcoat-trouser proportion and small coral belt accent
   - Lucky color tone for age: clear enamel-like coral as a small polished accent
-  - Exposure balance: bare arms and scoop neck are natural with tailored office coverage
+  - Skin/coverage comfort: bare arms and scoop neck are natural with tailored office coverage
   - Comfort naturalness: warm morning and airy indoor library; linen tailoring and cropped trousers fit walking and research
   - Climate context: warm early-June Mexico City at altitude, indoor concrete library, morning movement
   - Age-band life scene: early-career creative research in a public library
@@ -1653,7 +1653,7 @@ photo-adjacent despite illustration/3D prompts.
   - Fashion: tea-length asymmetric wrap dress in mineral cream, mamey-coral satin under-panel, sculpted capelet, low-heel slingback pumps, small clutch, restrained gold jewelry
   - Fashion focal point: moving wrap panel and coral satin reveal; polished pumps and jewelry
   - Lucky color tone for age: warm satin coral in a restrained under-panel
-  - Exposure balance: moderate covered ceremony shape with light sleeves and leg movement
+  - Skin/coverage comfort: ceremony shape with light sleeves and leg movement fits the courtyard reception
   - Comfort naturalness: shaded courtyard, breathable dress movement, low heels suitable for stone floor
   - Climate context: warm early-June Mexico City late afternoon, outdoor courtyard shade, social walking
   - Age-band life scene: late-20s design-event or courtyard reception guest
@@ -1677,7 +1677,7 @@ photo-adjacent despite illustration/3D prompts.
   - Fashion: cropped boxy cotton tee, wrap skort over fitted dance shorts, translucent warm-up shirt tied at waist, mamey-coral hair ribbon, coral sock trim, lightweight dance sneakers
   - Fashion focal point: wrap skort movement and coral hair ribbon/sock trim
   - Lucky color tone for age: glossy sporty coral pop in ribbon and socks
-  - Exposure balance: open midriff and legs are activewear context, not erotic framing
+  - Skin/coverage comfort: cropped tee, wrap skort, and visible legs are natural activewear for rehearsal movement
   - Comfort naturalness: warm early evening rehearsal; cotton, skort, tied layer, and sneakers fit dance movement
   - Climate context: early evening indoor studio with open windows, warm Mexico City air, active movement
   - Age-band life scene: adult dance student after class, practical movement
@@ -1702,7 +1702,7 @@ photo-adjacent despite illustration/3D prompts.
   - Fashion: square-neck sleeveless knit shell, high-waist barrel trousers, open-weave mamey-coral wrap scarf at hips, perforated ankle boots, chunky ring, tape measure
   - Fashion focal point: hip-draped coral wrap scarf and perforated summer boots with trousers
   - Lucky color tone for age: warmer mineral coral as open-weave textile
-  - Exposure balance: square-neck sleeveless knit is natural for a warm rooftop textile fitting
+  - Skin/coverage comfort: square-neck sleeveless knit is natural for a warm rooftop textile fitting
   - Comfort naturalness: warm night, breezy rooftop and indoor-outdoor home work; cotton trousers and perforated boots are plausible without default sandals
   - Climate context: warm early-June Mexico City night, rooftop apartment, textile work, seated movement
   - Age-band life scene: late-20s stylist hosting a small home fitting

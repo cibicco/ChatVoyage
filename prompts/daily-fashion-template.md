@@ -18,8 +18,8 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
   lively, fashion-aware, interested in clothes, and intentionally stylish.
 - Use date seed, weather or seasonal mood, and light current fashion references as inspiration.
 - Keep clothing natural for the city, season, weather, temperature, venue, and
-  activity; do not force coverage that makes the person look physically
-  uncomfortable.
+  activity; do not force either coverage or openness when it would make the
+  person or outfit feel physically uncomfortable.
 - Before prompting, compare the last three to five recent sets and avoid
   repeating their category, pose, garment, background, crop, and lucky-color
   placement formulas unless the repeat is intentional and logged.
@@ -126,9 +126,9 @@ Constraints:
 - realistic youthful Japanese adult features are allowed; the problem is
   underage framing, not looking young
 - university settings are allowed for adult characters
-- exposure is allowed when it is clearly fashion styling, runway, club,
-  resort, swim, dance, sheer layering, cutouts, lingerie-inspired layering, or
-  evening wear; keep it adult, tasteful, garment-focused, and non-erotic
+- skin visibility is not a problem by itself; judge whether neckline, sleeve,
+  hem, fabric, footwear, and layering are natural for the city, venue, weather,
+  age band, and activity
 - do not use high necklines, heavy layers, long sleeves, or closed shoes as a
   default guardrail fix when they do not fit the climate, venue, or activity
 - do not use tanks, camisoles, open shirts, mesh, or sandals as a default

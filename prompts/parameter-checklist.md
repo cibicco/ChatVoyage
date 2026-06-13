@@ -30,7 +30,7 @@ movement_readability: for dynamic, vehicle, waterside, stair, bridge, or platfor
 person_language: adult character notes, varied across all four images
 fashion_language: garment structure, silhouette, material, shoes, legwear, accessories
 fashion_focal_point: one or two distinctive styling details per image
-exposure_plan: covered, moderate, open, or layered exposure balance for each image
+skin_coverage_comfort_plan: how neckline, sleeve, hem, skin visibility, airflow, fabric weight, and layering fit the scene without forcing either coverage or openness
 comfort_naturalness: why the outfit is plausible for the weather, place, and activity
 variation_axes: what differs across the four images beyond color
 avoid_rules: no logos, readable brand text, exact product/source-photo copy, celebrity copy, school-uniform cues, teen-idol styling, childlike framing
@@ -63,7 +63,7 @@ fashion_language: garment list, construction, materials, texture, proportion, sh
 fashion_focal_point: chosen styling point such as color, accessory, fabric, silhouette, shoes, bag, jewelry, hair accessory, layering, or fabric movement
 lucky_color_use: where the daily lucky color appears
 lucky_color_tone_for_age: brightness, saturation, material, and placement for the selected age band
-exposure_balance: how skin, sheer layers, hem length, neckline, sleeve, or cutout choices support the category without erotic framing
+skin_coverage_comfort: how skin visibility, sheer layers, hem length, neckline, sleeve, or cutout choices feel natural for the category, climate, venue, and action
 comfort_naturalness: breathable fabric, seasonal weight, movement, footwear, and layering logic
 climate_context: city, season, weather, temperature band, humidity, time of day, indoor/outdoor, wind or air conditioning, rain intensity, venue norms, and activity
 age_band_life_scene: what this age band is doing in adult life, not only how old she looks
@@ -94,7 +94,7 @@ climate_fit
 categories
 age_bands
 persona_direction
-exposure_plan
+skin_coverage_comfort_plan
 pose_families
 style_presets
 source_scan_or_missing_reference_note
@@ -118,7 +118,7 @@ final_files:
   fashion_language
   fashion_focal_point
   lucky_color_tone_for_age
-  exposure_balance
+  skin_coverage_comfort
   comfort_naturalness
   climate_context
   age_band_life_scene
@@ -158,7 +158,7 @@ climate_fit
 selected_categories
 age_bands
 persona_direction
-exposure_plan
+skin_coverage_comfort_plan
 pose_families
 movement_readability_notes
 style_presets
@@ -198,14 +198,13 @@ recent-set repetition notes and any intentional repeats
   the image should show what she is doing, where her weight is, and why the
   action fits the scene. Avoid only unintended ambiguity such as accidental
   falling, unexplained leaping away from a vehicle, or unclear body mechanics.
-- Exposure balance is intentionally varied across the set. Do not let rainy,
-  outerwear, or low-key themes collapse all looks into long, covered layers;
-  use tasteful adult fashion exposure such as sleeveless cuts, open backs,
-  sheer layering, shorter hems, waist detail, sandals, or dance/resort/night
-  construction when appropriate.
+- Skin visibility and coverage are intentionally varied across the set because
+  garment construction, climate, and activity vary. Do not let rainy, outerwear,
+  or low-key themes collapse all looks into long, covered layers, and do not
+  force openness where the venue or activity would make it unnatural.
 - Outfit coverage must feel natural for the climate and activity. Do not force
   high necklines, heavy layers, long sleeves, or closed shoes just to reduce
-  exposure; choose breathable adult fashion that fits the city, season,
+  visible skin; choose breathable adult fashion that fits the city, season,
   temperature, venue, and movement.
 - Climate naturalness is specific to city, season, time of day, weather,
   temperature band, humidity, rain intensity, indoor/outdoor conditions, wind
