@@ -1,5 +1,143 @@
 # ChatVoyage Generation Log - 2026-06
 
+## 2026-06-11 Nagasaki Pearl Apricot Harbor Balance
+
+- Images: 4 final images
+- Generated on: 2026-06-13, Asia/Tokyo, for date seed 2026-06-11
+- Saved in: `assets/daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/`
+- Album: `assets/2026-06-11-nagasaki-pearl-apricot-harbor-balance-album.html`
+- Note: `notes/2026-06-11-nagasaki-pearl-apricot-harbor-balance.md`
+- City / place language: Nagasaki, specifically Dejima canal boardwalk, Megane Bridge stone canal edge, Glover Garden hillside path, and Nagasaki harbor boat edge
+- Common mood: wet stone, harbor breeze, chosen balance, social charm
+- Lucky color: pearl apricot
+- Lucky color age tone: `18-19-adult` glossy fresh apricot; `20-24` sheer or metallic pearl apricot; `25-29` smoky watercolor apricot
+- Climate fit: humid Nagasaki June with light rain or harbor breeze; breathable knits, sleeveless tailoring, wrap layers, cropped trousers, half pants, pumps, and ventilated boots fit short outdoor movement
+- Categories: `weekend`, `mode`, `date`, `active`
+- Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
+- Persona direction: selected adult trait mixes anchored in fashion interest and charm
+- Exposure plan: moderate bare arms and legs, open tailoring, wrapped layers over trousers, active crop with bike shorts
+- Pose families: `using-object`, `walking-stride`, `walking-stride`, `dance-motion`
+- Movement readability notes: image 02 and image 04 intentionally include risk/balance; the acceptance criterion is clear action, weight, gaze, foot placement, and hand use, not simple safety
+- Style presets: `anime-fashion-magazine`, `digital-magazine-painting`, `watercolor-couture`, `3d-cg-fashion`
+- Source scan / reference note: local project reference files were not present in the workspace; prompts and recent Chat Voyage logs were used
+- Recent set scan: recent sets repeatedly used `market`, `gallery`, `lounge`, `transit`, wet reflections, open-back gallery poses, seated lounge compositions, and mesh/transit formulas
+- Cooldown formulas: tank + open shirt + skort; open-back gallery over-shoulder; seated camisole lounge; black tank + mesh/rain shell + wide pants; ambiguous ferry jump
+- Category rotation reason: `weekend`, `mode`, `date`, and `active` were selected to avoid the recent warm-weather default quartet and to test intentional balance
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-weekend-dejima-wrap-half-pants.png`
+  - Source file: `ig_02c3a68c3867558e016a2cafe5f6fc8191a06221afcd118d9f.png`
+  - Primary category: `weekend`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `weekend`, `dejima`, `canal`, `half-pants`, `wrap-panel`, `slingback-pumps`, `pearl-apricot`
+  - Place: Nagasaki Dejima canal boardwalk after light June rain
+  - Person: adult Japanese-centered young woman with short black bob and bright expression
+  - Persona: fashion-aware, map-checking, comfortable being seen
+  - Persona traits: personable, bright, playful, curious
+  - Fashion: pearl-apricot short-sleeve knit polo, charcoal city half pants, ivory wrap apron panel, sheer ankle socks, low slingback pumps, compact crossbody pouch
+  - Fashion focal point: half pants plus wrap apron panel; slingback pumps with sheer socks
+  - Lucky color tone for age: glossy fresh apricot
+  - Exposure balance: moderate bare arms and legs, adult casual styling
+  - Comfort naturalness: breathable knit, half pants, bare forearms, and low pumps fit a humid canal walk
+  - Climate context: humid Nagasaki June after rain, outdoor boardwalk, wet stone, short walking distance
+  - Age-band life scene: adult young weekend canal walk and map check
+  - Age-band silhouette: half pants plus wrap panel, not skort formula
+  - Avoid recent formula: not market crouch, not tank plus open shirt plus skort, not wet-reflection-only background
+  - Pose family: `using-object`; face left; body three-quarter; eye-level; knee-up/full-body
+  - Movement readability: clear canal-side pause while checking a map, one hand on rail and one foot on curb
+  - Generated prompt summary: short prompt for an 18-19-adult Dejima weekend look with half pants, wrap panel, slingback pumps, map interaction, and no logos/text.
+  - Visual check: outfit, map, canal rail, wet stone, wrap panel, and pumps are readable. The output is more photo-adjacent than the requested anime-fashion-magazine style.
+  - Result: accepted with style-deviation note.
+- `02-mode-megane-bridge-balance.png`
+  - Source file: `ig_02c3a68c3867558e016a2cb0539e888191b24ad6fab4a209bf.png`
+  - Primary category: `mode`
+  - Target age band: `20-24`
+  - Style family: `semi-real-digital`
+  - Style preset: `digital-magazine-painting`
+  - Secondary tags: `mode`, `megane-bridge`, `stone-edge`, `balance`, `wrap-panel`, `cropped-trousers`, `summer-boots`
+  - Place: Nagasaki Megane Bridge stone canal edge
+  - Person: adult Japanese-centered woman in her early 20s with controlled gaze
+  - Persona: fashion-aware, self-possessed, intentionally alluring through balance and styling
+  - Persona traits: daring, sensual, self-possessed, sharp
+  - Fashion: sleeveless ivory tailored vest, asymmetrical pearl-apricot wrap skirt panel over cropped slate trousers, slim metallic belt, ventilated open-toe ankle boots, sculptural ear cuff, folded fan
+  - Fashion focal point: wrap skirt panel over cropped trousers; summer cutout ankle boots
+  - Lucky color tone for age: sheer metallic pearl apricot
+  - Exposure balance: open arms and sleeveless tailoring, garment-focused
+  - Comfort naturalness: sleeveless tailoring, cropped trousers, and ventilated boots fit warm humid late afternoon by water
+  - Climate context: humid late afternoon, canal-side stone, outdoor bridge area
+  - Age-band life scene: early-20s experimental mode walk near a landmark bridge
+  - Age-band silhouette: sculptural wrap panel over trousers, not open-back gallery
+  - Avoid recent formula: not open-back gallery over-shoulder, not camisole lounge, not mesh rain shell transit
+  - Pose family: `walking-stride`; face camera; body left-profile; low diagonal; full-body
+  - Movement readability: intentional stone-edge balance with foot placement, arms, gaze, and weight clearly showing control
+  - Generated prompt summary: short prompt for a 20-24 Megane Bridge mode look balancing on a stone edge with wrap panel, cropped trousers, ventilated boots, and no logos/text.
+  - Visual check: balance action, stone edge, bridge, wrap panel, trousers, boots, and folded fan are readable; the action reads as chosen risk.
+  - Result: accepted.
+- `03-date-glover-wrap-dress-watercolor.png`
+  - Source file: `ig_02c3a68c3867558e016a2cb0cc54b48191b07514581d2ff73a.png`
+  - Primary category: `date`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `watercolor-couture`
+  - Secondary tags: `date`, `glover-garden`, `slope`, `wrap-dress`, `cropped-trousers`, `low-pumps`, `pearl-apricot`
+  - Place: Nagasaki Glover Garden hillside path at early evening
+  - Person: adult Japanese-centered late-20s woman with refined warm expression
+  - Persona: fashion-aware, relaxed, personable, quietly confident
+  - Persona traits: elegant, personable, relaxed, quietly confident
+  - Fashion: smoky pearl-apricot wrap dress over ivory cropped trousers, opaque-lined camisole, waist tie, pearl earrings, low block-heel pumps, woven mini bag, bouquet
+  - Fashion focal point: wrap dress over cropped trousers; low block-heel pumps for a slope walk
+  - Lucky color tone for age: smoky watercolor apricot
+  - Exposure balance: open arms and neckline, softened by wrap layer and trousers
+  - Comfort naturalness: light linen/watercolor fabric logic, cropped trousers, and low heels fit a humid garden date and hillside walk
+  - Climate context: warm humid Nagasaki evening, harbor breeze, garden slope
+  - Age-band life scene: late-20s garden date / harbor-view walk
+  - Age-band silhouette: wrap dress over trousers, polished but light
+  - Avoid recent formula: not seated lounge, not satin camisole plus draped blazer, not rain shell transit
+  - Pose family: `walking-stride`; face right; body three-quarter; eye-level; full-body
+  - Movement readability: intentional uphill walk with front foot weight and hand lifting the wrap hem
+  - Generated prompt summary: short prompt for a 25-29 Glover Garden date look with wrap dress over trousers, bouquet, low pumps, and no logos/text.
+  - Visual check: watercolor style, hill path, harbor view, wrap dress, trousers, bouquet, woven bag, and low pumps are readable.
+  - Result: accepted.
+- `04-active-harbor-boat-edge-balance.png`
+  - Source file: `ig_02c3a68c3867558e016a2cb160dfe08191b1eab42e4497e6e2.png`
+  - Primary category: `active`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `3d-cg-fashion`
+  - Secondary tags: `active`, `harbor`, `boat-edge`, `balance`, `wrap-skort`, `bike-shorts`, `summer-boots`, `pearl-apricot`
+  - Place: Nagasaki harbor, small moored boat deck edge
+  - Person: adult Japanese-centered early-20s woman with ponytail and lively grin
+  - Persona: fashion-aware, daring, sociable, mischievous, confident in motion
+  - Persona traits: lively, daring, sociable, a little mischievous
+  - Fashion: cropped white technical half-zip tee, pearl-apricot nylon wrap skort over fitted bike shorts, lightweight utility belt, ventilated summer ankle boots with sneaker soles, waterproof wrist pouch, silver hoops
+  - Fashion focal point: wrap skort over bike shorts; summer ankle boots with sneaker soles
+  - Lucky color tone for age: sporty pearl-apricot nylon
+  - Exposure balance: active crop and legs visible, garment-focused and movement-based
+  - Comfort naturalness: technical tee, skort, bike shorts, and ventilated boots fit humid harbor movement
+  - Climate context: breezy humid Nagasaki harbor afternoon, outdoor boat deck, water and harbor cranes
+  - Age-band life scene: early-20s active harbor outing
+  - Age-band silhouette: technical crop, wrap skort, bike shorts, and summer boots, not wide pants transit
+  - Avoid recent formula: not black tank plus mesh shell and wide pants, not station transit, not ambiguous ferry jump
+  - Pose family: `dance-motion`; face over-shoulder; body back-three-quarter; low diagonal wide-action
+  - Movement readability: deliberate boat-edge balance with one boot planted on the deck edge, arms out, cap-brim hand, and gaze back; it reads as chosen balance rather than falling or jumping away
+  - Generated prompt summary: short prompt for a 20-24 Nagasaki harbor active look balancing on a moored boat edge with wrap skort, bike shorts, summer boots, and no logos/text.
+  - Visual check: boat edge, water, harbor cranes, wrap skort, bike shorts, boots, and balance action are readable. The output is photo-adjacent rather than true 3D CG.
+  - Result: accepted with style-deviation note. The movement readability target passes.
+
+### Generation Notes
+
+This run specifically tests the corrected movement rule. Image 02 and image 04
+include risky balance, but the action is accepted because the body mechanics and
+intent are readable. The set also tests selectable persona traits rather than a
+single bright/sociable baseline, and expands shoes beyond sandals into pumps
+and summer boots. The main residual weakness is style compliance: image 01 and
+image 04 lean photographic despite non-photo style prompts.
+
 ## 2026-06-13 Kyoto Hydrangea Rain Walk
 
 - Images: 4 final images
