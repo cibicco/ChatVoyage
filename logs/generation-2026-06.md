@@ -1722,3 +1722,137 @@ salon mood. It uses Mexico City places, keeps the setting mostly interior or
 semi-private, and varies age-band roles by actual adult life scene. The main
 residual weakness is image 04's style compliance: the project records it as
 `pbr-fashion-3d`, but visually it still leans photo-adjacent.
+
+## 2026-06-03 Helsinki Cloudberry Daytime Remake
+
+- Images: 4 final images
+- Generated on: 2026-06-13, Asia/Tokyo, for date seed 2026-06-03
+- Saved in: `assets/daily/2026-06-03-helsinki-cloudberry-daytime-remake/`
+- Album: `assets/2026-06-03-helsinki-cloudberry-daytime-remake-album.html`
+- Note: `notes/2026-06-03-helsinki-cloudberry-daytime-remake.md`
+- City / place language: Helsinki, specifically an Oodi-style maker library, Arabia-style ceramics studio, Kallio black-box theater entrance, and Kalasatama indoor climbing gym
+- Common mood: pale Nordic daylight, cool early-summer air, craft, movement, and sociable self-possession
+- Lucky color: cloudberry amber
+- Lucky color age tone: `18-19-adult` glossy small accessory amber; `20-24` clear sporty or experimental amber; `25-29` polished leather or mineral amber
+- Climate fit: early June Helsinki can be mild and breezy; clothing uses cotton shirts, fine knits, compact outerwear, trousers, leggings, sneakers, loafers, boots, and activity-specific climbing shoes according to venue and movement
+- Categories: `weekend`, `mode`, `outerwear`, `active`
+- Age bands: `18-19-adult`, `25-29`, `20-24`, `20-24`
+- Persona direction: selected adult trait mixes anchored in fashion interest, craft context, movement, and self-aware styling
+- Skin/coverage comfort plan: maker-library cotton and denim, studio sleeveless tailoring over fine knit, breezy theater compact outerwear, and climbing activewear; each outfit is judged by place and activity, not by reducing or increasing visible skin
+- Pose families: `using-object`, `standing-front`, `adjusting-jacket`, `stretching-reach`
+- Style presets: `anime-cel-polished`, `runway-board-illustration`, `watercolor-couture`, `game-cinematic-3d`
+- Source scan / reference note: local project reference files were not present in the workspace. Local presets, recent logs, and light city/climate context were used. Setting names are broad place language only, not copied signage or exact interiors.
+- Recent set scan: existing 2026-06-03 Lisbon is nightlife/rooftop/fado/hotel lounge/pre-dawn terminal; recent added sets include Vienna interiors and Mexico City creative weekday. June still has many Japan/rain/water/market-gallery-lounge-transit formulas.
+- Cooldown formulas: Lisbon nightlife rooftop, hotel lounge, fado formal interior, pre-dawn travel terminal, warm-weather tank/open-shirt/sandal formula, open-back gallery, seated lounge camisole
+- Category rotation reason: `weekend`, `mode`, `outerwear`, and `active` create maker, studio, theater-arrival, and climbing scenes without repeating the existing Lisbon date or the 6/2 Mexico City category set
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-weekend-oodi-maker-utility-anime.png`
+  - Source file: `ig_064504293bdc6095016a2d5446f2848191bd3b064d0c16d6be.png`
+  - Primary category: `weekend`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `weekend`, `helsinki`, `oodi`, `maker-library`, `utility`, `denim`, `cloudberry-amber`
+  - Place: Helsinki, Oodi-style public library terrace and maker area, late morning
+  - Person: adult Japanese-centered 18-19 woman, student-maker on a free day
+  - Persona traits: bright, curious, personable, fashion-aware
+  - Fashion: boxy cotton short-sleeve shirt, wrapped utility mini-apron, cropped barrel jeans, cloudberry-amber enamel hair clip, light socks, city sneakers, compact crossbody pouch
+  - Fashion focal point: utility apron over barrel jeans and amber hair clip
+  - Lucky color tone for age: glossy small amber accessory
+  - Skin/coverage comfort: cotton shirt, cropped denim, socks, and sneakers fit mild indoor-outdoor maker-library movement
+  - Comfort naturalness: mild and breezy Helsinki late morning; the outfit is practical without forcing coverage or openness
+  - Climate context: early June Helsinki, public library interior/terrace, walking and tool-pouch interaction
+  - Age-band life scene: adult student-maker on a free day
+  - Age-band silhouette: playful utility apron over barrel jeans
+  - Avoid recent formula: not Lisbon nightlife, not hotel lounge, not market crouch, not tank-open-shirt-sandal formula
+  - Pose family: `using-object`; face left; body three-quarter; eye-level; knee-up
+  - Movement readability: sketchbook and tool-pouch clipping action are clear
+  - Generated prompt summary: short prompt for an adult 18-19 Helsinki Oodi maker-library look with cotton shirt, utility apron, barrel jeans, amber hair clip, and sketchbook.
+  - Visual check: maker/library setting, utility apron, denim, hair clip, and object action are readable.
+  - Result: accepted.
+- `02-mode-arabia-studio-runway-board.png`
+  - Source file: `ig_064504293bdc6095016a2d5611dbdc8191857e325c66b5964c.png`
+  - Rejected source kept in: `assets/rejected/2026-06-03-helsinki-cloudberry-daytime-remake/02-mode-arabia-studio-photo-adjacent-rejected.png`
+  - Primary category: `mode`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `mode`, `helsinki`, `arabia`, `ceramics-studio`, `canvas-vest`, `obi-belt`, `cloudberry-amber`
+  - Place: Helsinki, Arabia-style ceramics studio and showroom, afternoon
+  - Person: adult Japanese-centered late-20s woman, visiting textile-and-ceramic designer
+  - Persona traits: self-possessed, sharp, quietly confident, fashion-aware
+  - Fashion: sleeveless long-line canvas vest with sculptural side tabs, fine merino mock-layer tee, tapered cream trousers, cloudberry-amber leather obi belt, square-toe loafers, cuff bracelet
+  - Fashion focal point: long canvas vest side tabs and amber obi belt
+  - Lucky color tone for age: polished leather amber
+  - Skin/coverage comfort: sleeveless tailoring over fine knit, trousers, and loafers fit a mild studio afternoon
+  - Comfort naturalness: edited studio workwear, neither forced closed nor forced open
+  - Climate context: mild early-June Helsinki, indoor ceramics studio, standing and tray-holding action
+  - Age-band life scene: late-20s designer visiting a ceramics studio
+  - Age-band silhouette: architectural long vest over tapered trousers
+  - Avoid recent formula: not Lisbon satin nightlife, not Vienna salon dress, not Mexico City wrap ceremony
+  - Pose family: `standing-front`; face camera; body front; full-body
+  - Movement readability: ceramic tray hold is clear and stable
+  - Generated prompt summary: regenerated short prompt for a runway-board illustration of a late-20s Helsinki ceramics studio mode look with canvas vest, amber obi belt, tray, and loafers.
+  - Visual check: the accepted result reads as fashion illustration with construction callouts, garment structure, tray, and amber belt. The first candidate was too photo-adjacent and was rejected.
+  - Result: accepted after one regeneration.
+- `03-outerwear-kallio-theater-cape-trench-watercolor.png`
+  - Source file: `ig_064504293bdc6095016a2d554db2b0819181d0e53ae6ba5bdd.png`
+  - Primary category: `outerwear`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `watercolor-couture`
+  - Secondary tags: `outerwear`, `helsinki`, `kallio`, `theater`, `cape-trench`, `leggings`, `ankle-boots`, `cloudberry-amber`
+  - Place: Helsinki, Kallio black-box theater entrance before early evening rehearsal
+  - Person: adult Japanese-centered early-20s woman, assistant stage designer arriving with garment bag
+  - Persona traits: sociable, mischievous, experimental, fashion-aware
+  - Fashion: short technical trench with cape back, amber translucent rain visor clipped to bag strap, ribbed knit tank under buttoned short-sleeve overshirt, pleated knee skirt over thin leggings, light ankle boots
+  - Fashion focal point: cape-back trench movement and amber visor accessory
+  - Lucky color tone for age: clear experimental amber accessory
+  - Skin/coverage comfort: compact trench, leggings, and boots fit breezy theater arrival while inner layers remain light for indoors
+  - Comfort naturalness: early evening cool wind and theater arrival make the outerwear useful rather than a guardrail
+  - Climate context: mild/cool early-June Helsinki evening, outdoor theater steps, walking and garment-bag arrival
+  - Age-band life scene: early-20s stage-design assistant arriving for rehearsal
+  - Age-band silhouette: cape-back trench over skirt and leggings
+  - Avoid recent formula: not lounge seated camisole, not wet reflective street, not open-back gallery
+  - Pose family: `adjusting-jacket`; face over-shoulder; body back-three-quarter; diagonal knee-up
+  - Movement readability: collar adjustment and garment-bag carry are clear
+  - Generated prompt summary: short prompt for a Kallio theater outerwear look with cape trench, pleated skirt over leggings, amber visor accessory, ankle boots, and garment bag.
+  - Visual check: watercolor style, theater arrival, trench movement, leggings, boots, and garment bag are readable.
+  - Result: accepted.
+- `04-active-kalasatama-climbing-game-cinematic-note.png`
+  - Source file: `ig_064504293bdc6095016a2d55a87b5c8191b03bdec675bfdaf7.png`
+  - Primary category: `active`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `game-cinematic-3d`
+  - Secondary tags: `active`, `helsinki`, `kalasatama`, `climbing`, `wrap-skort`, `bike-shorts`, `chalk-bag`, `cloudberry-amber`
+  - Place: Helsinki, Kalasatama indoor climbing gym on a long bright evening
+  - Person: adult Japanese-centered early-20s woman, casual friend-group climber
+  - Persona traits: lively, daring, relaxed, fashion-aware
+  - Fashion: fitted short-sleeve performance top, wrap-panel climbing skort over matte bike shorts, cropped overshirt tied at waist, cloudberry-amber chalk bag and carabiner, climbing shoes, thin wristband
+  - Fashion focal point: wrap-panel skort over bike shorts and amber chalk-bag hardware
+  - Lucky color tone for age: sporty clear amber
+  - Skin/coverage comfort: fitted top, shorts layer, tied overshirt, and climbing shoes are natural for indoor climbing movement
+  - Comfort naturalness: indoor climbing is warm and active; the outfit was not altered to hide or emphasize skin
+  - Climate context: early June Helsinki evening, indoor climbing gym, active movement
+  - Age-band life scene: early-20s friend-group climbing session
+  - Age-band silhouette: climbing-specific skort and bike-shorts layer
+  - Avoid recent formula: not dance studio ribbon, not waterfront balance, not transit mesh shell
+  - Pose family: `stretching-reach`; face down; body left-profile; low diagonal wide-action
+  - Movement readability: strap/chalk-bag reach and bouldering setting are clear
+  - Generated prompt summary: short prompt for a Kalasatama climbing look with performance top, wrap skort over bike shorts, tied overshirt, amber chalk bag, and climbing shoes.
+  - Visual check: climbing gym, active pose, wrap skort, chalk bag, and shoes are readable. It is more photo-adjacent than the requested game-cinematic 3D.
+  - Result: accepted with style-deviation note.
+
+### Generation Notes
+
+This run adds a 2026-06-03 remake while preserving the original Lisbon set. The
+new set moves away from nightlife and terminal/lounge formulas into Helsinki
+daytime craft and movement scenes. Clothing naturalness is evaluated by mild
+Nordic weather, indoor/outdoor transitions, venue norms, and activity rather
+than by visible skin amount. The main residual weakness is style compliance on
+image 04, which leans photo-adjacent despite the game-cinematic 3D prompt.
