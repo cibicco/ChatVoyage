@@ -1588,3 +1588,137 @@ fashion grammar also shifts away from rainy streets, water, market/gallery/
 lounge/transit repetition, and warm-weather mesh/open-shirt formulas. The main
 residual weakness is style compliance on images 01 and 04, both of which lean
 photo-adjacent despite illustration/3D prompts.
+
+## 2026-06-02 Mexico City Mamey Coral Creative Weekday
+
+- Images: 4 final images
+- Generated on: 2026-06-13, Asia/Tokyo, for date seed 2026-06-02
+- Saved in: `assets/daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/`
+- Album: `assets/2026-06-02-mexico-city-mamey-coral-creative-weekday-album.html`
+- Note: `notes/2026-06-02-mexico-city-mamey-coral-creative-weekday.md`
+- City / place language: Mexico City, specifically a Biblioteca Vasconcelos-style library interior, a San Angel courtyard reception, a Roma Norte contemporary dance studio, and a Coyoacan rooftop apartment textile corner
+- Common mood: color, altitude light, social confidence, and purposeful adult movement
+- Lucky color: mamey coral
+- Lucky color age tone: `18-19-adult` glossy and sporty coral ribbon/sock pop; `20-24` clear enamel or ribbon coral accents; `25-29` warmer satin, mineral, or open-weave coral
+- Climate fit: early June Mexico City at altitude, warm daytime, possible rainy-season afternoons, cooler interiors and breezy night rooftops; comfort is decided by venue and activity rather than a single warm-weather formula
+- Categories: `office`, `ceremony`, `dance`, `home`
+- Age bands: `20-24`, `25-29`, `18-19-adult`, `25-29`
+- Persona direction: selected adult trait mixes anchored in fashion interest, social ease, self-awareness, and distinct styling details
+- Exposure plan: sleeveless tailoring, moderate ceremony dress, open active dance midriff, relaxed square-neck home knit
+- Pose families: `using-object`, `walking-stride`, `dance-motion`, `floor-sit`
+- Style presets: `anime-fashion-magazine`, `semi-real-editorial`, `marker-sketch`, `pbr-fashion-3d`
+- Source scan / reference note: local project reference files were not present in the workspace; prompts, local presets, repetition guardrails, and recent logs were used. Place names are setting language only; no exact signage, commercial marks, or copied interiors were requested.
+- Recent set scan: June sets lean heavily Japan, outdoor, rain-after-street, water/river/harbor, market/gallery/lounge/transit, and warm-weather open-shirt/mesh formulas
+- Cooldown formulas: rainy outdoor market/gallery/lounge/transit quartet; waterfront balance; open-back gallery; seated lounge camisole; tank/open shirt/skort/sandals; night waterfront
+- Category rotation reason: `office`, `ceremony`, `dance`, and `home` create work, formal-social, active, and private-studio variety while avoiding recent defaults
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-office-vasconcelos-linen-waistcoat-anime.png`
+  - Source file: `ig_064504293bdc6095016a2d4256bfec81918457c4fa8f1b84c7.png`
+  - Primary category: `office`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `office`, `mexico-city`, `vasconcelos`, `library`, `linen`, `waistcoat`, `mamey-coral`
+  - Place: Mexico City, Biblioteca Vasconcelos-style library interior, warm weekday morning
+  - Person: adult Japanese-centered early-20s woman, dark hair in a loose bun, curious library work context
+  - Persona traits: sociable, curious, sharp, fashion-aware
+  - Fashion: pale linen sleeveless waistcoat, ribbed scoop-neck tee, cropped wide trousers, mamey-coral belt tab, low slingback loafers, small hoops, compact shoulder bag
+  - Fashion focal point: waistcoat-trouser proportion and small coral belt accent
+  - Lucky color tone for age: clear enamel-like coral as a small polished accent
+  - Exposure balance: bare arms and scoop neck are natural with tailored office coverage
+  - Comfort naturalness: warm morning and airy indoor library; linen tailoring and cropped trousers fit walking and research
+  - Climate context: warm early-June Mexico City at altitude, indoor concrete library, morning movement
+  - Age-band life scene: early-career creative research in a public library
+  - Age-band silhouette: sleeveless waistcoat with cropped trousers, not tank/open-shirt/skort
+  - Avoid recent formula: not rain market, not gallery over-shoulder, not open shirt over tank with sandals
+  - Pose family: `using-object`; face left; body three-quarter; eye-level; requested knee-up, output closer to full-body crop
+  - Movement readability: clear notebook and shoulder-bag adjustment
+  - Generated prompt summary: short prompt for a 20-24 Mexico City library office look with linen waistcoat, cropped trousers, notebook, and coral belt tab.
+  - Visual check: library, waistcoat, trousers, notebook, bag, and adult work context are readable. Crop is wider than requested and coral placement is small.
+  - Result: accepted with minor crop/color-placement note.
+- `02-ceremony-san-angel-wrap-dress-semi-real.png`
+  - Source file: `ig_064504293bdc6095016a2d42f54860819186e56a7be78d19c4.png`
+  - Primary category: `ceremony`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `semi-real-editorial`
+  - Secondary tags: `ceremony`, `mexico-city`, `san-angel`, `courtyard`, `wrap-dress`, `satin`, `slingback-pumps`
+  - Place: Mexico City, San Angel courtyard reception in late-afternoon shade
+  - Person: adult Japanese-centered late-20s woman, polished reception guest with soft smile
+  - Persona traits: elegant, self-possessed, personable, fashion-aware
+  - Fashion: tea-length asymmetric wrap dress in mineral cream, mamey-coral satin under-panel, sculpted capelet, low-heel slingback pumps, small clutch, restrained gold jewelry
+  - Fashion focal point: moving wrap panel and coral satin reveal; polished pumps and jewelry
+  - Lucky color tone for age: warm satin coral in a restrained under-panel
+  - Exposure balance: moderate covered ceremony shape with light sleeves and leg movement
+  - Comfort naturalness: shaded courtyard, breathable dress movement, low heels suitable for stone floor
+  - Climate context: warm early-June Mexico City late afternoon, outdoor courtyard shade, social walking
+  - Age-band life scene: late-20s design-event or courtyard reception guest
+  - Age-band silhouette: tea-length wrap dress and capelet, not satin camisole lounge
+  - Avoid recent formula: not theater foyer satin camisole, not hotel lounge seated pose, not wet pavement reflections
+  - Pose family: `walking-stride`; face camera; body left-profile; low diagonal; full-body
+  - Movement readability: clear walking stride and deliberate skirt-panel lift
+  - Generated prompt summary: short prompt for a 25-29 San Angel courtyard ceremony look with asymmetric wrap dress, coral under-panel, clutch, and pumps.
+  - Visual check: courtyard, wrap dress, coral under-panel, pumps, clutch, and adult ceremony mood are readable.
+  - Result: accepted.
+- `03-dance-roma-norte-wrap-skort-marker.png`
+  - Source file: `ig_064504293bdc6095016a2d4371d0b88191bbc49d50c42d8f1f.png`
+  - Primary category: `dance`
+  - Target age band: `18-19-adult`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `dance`, `mexico-city`, `roma-norte`, `studio`, `wrap-skort`, `cotton`, `dance-sneakers`, `mamey-coral`
+  - Place: Mexico City, Roma Norte contemporary dance rehearsal studio, early evening
+  - Person: adult Japanese-centered 18-19 woman, ponytail with ribbon, lively rehearsal context
+  - Persona traits: bright, lively, playful, daring, fashion-aware
+  - Fashion: cropped boxy cotton tee, wrap skort over fitted dance shorts, translucent warm-up shirt tied at waist, mamey-coral hair ribbon, coral sock trim, lightweight dance sneakers
+  - Fashion focal point: wrap skort movement and coral hair ribbon/sock trim
+  - Lucky color tone for age: glossy sporty coral pop in ribbon and socks
+  - Exposure balance: open midriff and legs are activewear context, not erotic framing
+  - Comfort naturalness: warm early evening rehearsal; cotton, skort, tied layer, and sneakers fit dance movement
+  - Climate context: early evening indoor studio with open windows, warm Mexico City air, active movement
+  - Age-band life scene: adult dance student after class, practical movement
+  - Age-band silhouette: sporty wrap skort over shorts, distinct from library tailoring and ceremony dress
+  - Avoid recent formula: not waterfront balance, not club mesh-and-sandal look, not seated lounge
+  - Pose family: `dance-motion`; face right; body front with torso twist; high side; wide-action
+  - Movement readability: one foot planted, one heel lifted, arms separated, intentional dance turn
+  - Generated prompt summary: short prompt for an adult 18-19 Roma Norte dance studio look with wrap skort, cropped tee, tied warm-up shirt, ribbon, and dance sneakers.
+  - Visual check: marker-sketch style, dance studio, wrap skort, ribbon, sneakers, and planted-foot motion are readable.
+  - Result: accepted.
+- `04-home-coyoacan-textile-floor-pbr-note.png`
+  - Source file: `ig_064504293bdc6095016a2d45468e8c819181e7a34d22697338.png`
+  - Rejected source kept in: `assets/rejected/2026-06-02-mexico-city-mamey-coral-creative-weekday/04-home-coyoacan-textile-floor-photo-adjacent-rejected.png`
+  - Primary category: `home`
+  - Target age band: `25-29`
+  - Style family: `3d-cg`
+  - Style preset: `pbr-fashion-3d`
+  - Secondary tags: `home`, `mexico-city`, `coyoacan`, `rooftop`, `textile`, `barrel-trousers`, `perforated-boots`, `mamey-coral`
+  - Place: Mexico City, Coyoacan rooftop apartment textile corner at night
+  - Person: adult Japanese-centered late-20s woman, relaxed independent stylist in a home fitting context
+  - Persona traits: relaxed, quietly confident, self-possessed, fashion-aware
+  - Fashion: square-neck sleeveless knit shell, high-waist barrel trousers, open-weave mamey-coral wrap scarf at hips, perforated ankle boots, chunky ring, tape measure
+  - Fashion focal point: hip-draped coral wrap scarf and perforated summer boots with trousers
+  - Lucky color tone for age: warmer mineral coral as open-weave textile
+  - Exposure balance: square-neck sleeveless knit is natural for a warm rooftop textile fitting
+  - Comfort naturalness: warm night, breezy rooftop and indoor-outdoor home work; cotton trousers and perforated boots are plausible without default sandals
+  - Climate context: warm early-June Mexico City night, rooftop apartment, textile work, seated movement
+  - Age-band life scene: late-20s stylist hosting a small home fitting
+  - Age-band silhouette: sleeveless knit with barrel trousers and hip scarf, not lounge camisole or sofa portrait
+  - Avoid recent formula: not cocktail lounge seated-side camisole, not private sofa portrait, not night waterfront
+  - Pose family: `floor-sit`; face down; body right-profile; diagonal eye-level
+  - Movement readability: clear fabric measuring and pinning action on the floor
+  - Generated prompt summary: short prompt for a 25-29 Coyoacan rooftop home fitting look with knit shell, barrel trousers, coral wrap scarf, perforated boots, and tape measure.
+  - Visual check: rooftop textile setting, measuring action, scarf, trousers, and perforated boots are readable. The image remains photo-adjacent despite a targeted PBR 3D regeneration.
+  - Result: accepted with style-deviation note after one regeneration.
+
+### Generation Notes
+
+This run fills the missing 2026-06-02 date and continues the anti-repetition
+course from the previous Vienna set without repeating Vienna's European indoor
+salon mood. It uses Mexico City places, keeps the setting mostly interior or
+semi-private, and varies age-band roles by actual adult life scene. The main
+residual weakness is image 04's style compliance: the project records it as
+`pbr-fashion-3d`, but visually it still leans photo-adjacent.
