@@ -103,8 +103,9 @@
   - Generated prompt summary: short prompt for a 25-29 Glover Garden date look with wrap dress over trousers, bouquet, low pumps, and no logos/text.
   - Visual check: watercolor style, hill path, harbor view, wrap dress, trousers, bouquet, woven bag, and low pumps are readable.
   - Result: accepted.
-- `04-active-harbor-boat-edge-balance.png`
-  - Source file: `ig_02c3a68c3867558e016a2cb160dfe08191b1eab42e4497e6e2.png`
+- `04-active-harbor-boat-edge-balance-v2.png`
+  - Source file: `ig_02c3a68c3867558e016a2cb5bf07288191976f56dea55b8923.png`
+  - Rejected prior file: `assets/rejected/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-extra-arm-rejected.png` from `ig_02c3a68c3867558e016a2cb160dfe08191b1eab42e4497e6e2.png`; rejected because the first accepted candidate visibly had an extra arm / duplicated arm anatomy.
   - Primary category: `active`
   - Target age band: `20-24`
   - Style family: `3d-cg`
@@ -125,9 +126,9 @@
   - Avoid recent formula: not black tank plus mesh shell and wide pants, not station transit, not ambiguous ferry jump
   - Pose family: `dance-motion`; face over-shoulder; body back-three-quarter; low diagonal wide-action
   - Movement readability: deliberate boat-edge balance with one boot planted on the deck edge, arms out, cap-brim hand, and gaze back; it reads as chosen balance rather than falling or jumping away
-  - Generated prompt summary: short prompt for a 20-24 Nagasaki harbor active look balancing on a moored boat edge with wrap skort, bike shorts, summer boots, and no logos/text.
-  - Visual check: boat edge, water, harbor cranes, wrap skort, bike shorts, boots, and balance action are readable. The output is photo-adjacent rather than true 3D CG.
-  - Result: accepted with style-deviation note. The movement readability target passes.
+  - Generated prompt summary: targeted anatomy regeneration for a 20-24 Nagasaki harbor active look balancing on a moored boat edge, with exactly two arms, wrap skort, bike shorts, summer boots, and no logos/text.
+  - Visual check: boat edge, water, harbor cranes, wrap skort, bike shorts, boots, and balance action are readable. The regenerated figure has two readable arms and no duplicated hand. The output is still photo-adjacent rather than true 3D CG.
+  - Result: accepted with style-deviation note after anatomy regeneration. The movement readability target passes.
 
 ### Generation Notes
 
@@ -136,7 +137,9 @@ include risky balance, but the action is accepted because the body mechanics and
 intent are readable. The set also tests selectable persona traits rather than a
 single bright/sociable baseline, and expands shoes beyond sandals into pumps
 and summer boots. The main residual weakness is style compliance: image 01 and
-image 04 lean photographic despite non-photo style prompts.
+image 04 lean photographic despite non-photo style prompts. The first image 04
+candidate was later rejected after review because it had an extra-arm anatomy
+failure; the indexed image is the regenerated v2.
 
 ## 2026-06-13 Kyoto Hydrangea Rain Walk
 
