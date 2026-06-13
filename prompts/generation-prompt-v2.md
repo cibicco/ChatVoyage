@@ -26,6 +26,7 @@ person: adult Japanese-centered character and age band
 persona: bright, sociable, lively, fashion-aware, intentionally stylish, aware of her charm without erotic framing
 style: exact style preset in natural language
 pose: one readable pose
+movement: one clear, safe action when the scene involves vehicles, water, stairs, platforms, or strong motion
 outfit: 4-7 core garments/accessories
 fashion_focal_point: one or two distinctive styling details
 climate: one sentence about comfort and weather
@@ -48,6 +49,7 @@ prompt_shape: short prompt, detailed log
 generated_prompt_summary: one sentence describing the prompt actually used
 persona_and_focal_point: how the accepted image shows fashion interest and the chosen styling detail
 avoid_recent_formula: the repeated formula that was avoided
+movement_readability: whether the action reads as normal, safe, and intentional in the setting
 visual_check:
   matches: what the image clearly matches
   deviations: what changed or is weaker than planned

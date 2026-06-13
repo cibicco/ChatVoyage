@@ -66,6 +66,27 @@ If the weather, time, venue, or activity calls for more coverage, keep the
 styling light through fabric, shape, color, motion, or accessory editing rather
 than forcing bulk.
 
+## Bottoms And Shoes
+
+The characters do wear pants and half pants. Do not narrow them into only
+skirts, skorts, sandals, or open warm-weather tops.
+
+At the same time, skirts and wrapped constructions may often feel closer to
+their taste. Use this as a preference, not a uniform:
+
+- wrap skirts, sarong-like panels, apron skirts, asymmetric skirts, skorts, and
+  wrapped dresses
+- wide trousers, cropped trousers, barrel jeans, utility pants, culottes,
+  tailored shorts, city half pants, and light jumpsuits
+- pumps, slingback pumps, low heels, loafers, mules, sandals, sneakers, flats,
+  and boots when the climate and activity support them
+
+Summer shoes can include boots or pumps if they are plausible for the city,
+weather, and movement: short boots, open or perforated leather, mesh panels,
+light soles, slingbacks, low heels, or indoor/air-conditioned venue logic.
+Avoid heavy winter boots, closed formal shoes, or fragile heels when they fight
+humidity, rain, stairs, boats, long walks, or the character's activity.
+
 ## Age-Band Expression
 
 Apply the core persona differently by age band:

@@ -141,6 +141,10 @@ mesh transit unless that repeat is intentional and logged.
 Full-body is allowed but not required. Use knee-up, waist-up, close-up detail,
 wide-action, seated, back three-quarter, jumping, reaching, leaning, or object
 interaction crops when they better express pose variety and fashion detail.
+For boats, ferries, trains, buses, stations, piers, bridges, water edges,
+stairs, or platforms, dynamic motion must read as a clear safe action. Do not
+accept an image that can read as jumping off, falling, running out of a vehicle,
+or leaving a safe surface just because the outfit itself is successful.
 
 ## Quality Gates
 
@@ -175,6 +179,8 @@ Before accepting the set, check:
 - No visible text, watermark, logo imitation, or brand mark is requested.
 - Poses do not all face the same direction, and the set does not collapse into
   four standing three-quarter views.
+- Dynamic travel, vehicle, waterside, stair, pier, bridge, or platform actions
+  read as normal and safe for the place.
 - Logs, notes, album/index references, and validation are updated when the user
   asks for a reusable Chat Voyage set.
 

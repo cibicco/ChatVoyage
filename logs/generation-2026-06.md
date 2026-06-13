@@ -338,9 +338,10 @@ weather.
   - Age-band silhouette: one-piece utility jumpsuit, not black tank plus mesh jacket and wide pants
   - Avoid recent formula: not station transit, not black tank plus mesh/rain shell, not umbrella wet-floor composition
   - Pose family: `jump-motion`; face over-shoulder; diagonal wide-action full-body crop
+  - Movement readability: intended as a lively step up onto the ferry deck, but the final pose can read as jumping away from the ferry or leaving a safe surface.
   - Generated prompt summary: short prompt for a 20-24 Miyajima ferry travel look in PBR fashion 3D style with vermilion utility jumpsuit, woven hat cord, deck sneakers, duffel, and no text/logos.
-  - Visual check: matches ferry deck, Setouchi water, jumpsuit, hat cord, duffel, sneakers, and lively travel motion. The result is more photo-adjacent than ideal for `pbr-fashion-3d`.
-  - Result: accepted with style-deviation note.
+  - Visual check: matches ferry deck, Setouchi water, jumpsuit, hat cord, duffel, sneakers, and lively travel motion. The result is more photo-adjacent than ideal for `pbr-fashion-3d`, and the ferry action is ambiguous enough that it should not be treated as a successful movement pattern.
+  - Result: accepted with style-deviation and action-readability notes. Future ferry, pier, boat, or waterside images should use a grounded gangway/deck step, railing hold, pier walk, map check, or bag-strap adjustment instead of ambiguous jump-motion.
 
 ### Generation Notes
 

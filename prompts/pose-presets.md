@@ -41,12 +41,31 @@ Default four-image mix:
 04: dance-motion, stretching-reach, or back-three-quarter / face over-shoulder or down / dynamic angle
 ```
 
+## Movement Safety And Readability
+
+Dynamic motion must be immediately readable as a normal action in the chosen
+place. If the viewer would ask "what is she doing?", the pose needs a clearer
+action description or a regeneration.
+
+For boats, ferries, trains, buses, stations, stairs, platforms, piers, bridges,
+and water edges, avoid poses that can read as jumping off, falling, running out
+of a vehicle, or leaving a safe surface. Prefer a clear, grounded action:
+
+- stepping onto a gangway, deck, platform, pier, or stair with one foot planted
+- walking along a pier or deck while holding a rail, strap, ticket, hat, or bag
+- leaning on a railing, adjusting a jacket or bag strap, checking a map, or
+  turning safely on deck
+- using a compact `jump-motion` only when the surface and direction are clear,
+  such as a small hop on a dry plaza or a stair step away from edges
+
 ## Avoid Rules
 
 - Do not let all four images face the same direction.
 - Do not use four standing three-quarter poses in one set.
 - Do not hide shoes or hands in every image.
 - Do not sacrifice garment readability for extreme action.
+- Do not accept dynamic travel, vehicle, or waterside poses that look unsafe or
+  ambiguous, even if the outfit itself is successful.
 - Full-body is useful but not required. Use knee-up, waist-up, close-up detail,
   or wide-action crops when that better serves pose variety and fashion detail.
 - If a pose fails, regenerate only that image with a targeted pose correction.

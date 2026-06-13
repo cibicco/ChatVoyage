@@ -25,6 +25,7 @@ body_direction: one per image
 camera_angle: one per image
 hand_placement: one per image
 crop: one per image
+movement_readability: for dynamic, vehicle, waterside, stair, or platform scenes, what the person is doing and why it reads as safe and normal
 person_language: adult character notes, varied across all four images
 fashion_language: garment structure, silhouette, material, shoes, legwear, accessories
 fashion_focal_point: one or two distinctive styling details per image
@@ -54,6 +55,7 @@ style_preset: exact style preset slug
 person_language: age impression, hairstyle, build, expression, adult context
 persona_direction: how brightness, sociability, self-awareness, and fashion interest appear
 pose_language: pose family, face direction, body direction, camera angle, hand placement, crop
+movement_readability: clear action and safety logic, especially for boats, ferries, trains, buses, stations, stairs, platforms, piers, bridges, and water edges
 scene_language: city, place, time/weather, background support
 fashion_language: garment list, construction, materials, texture, proportion, shoes, legwear, accessories
 fashion_focal_point: chosen styling point such as color, accessory, fabric, silhouette, shoes, bag, jewelry, hair accessory, layering, or fabric movement
@@ -120,6 +122,7 @@ final_files:
   age_band_silhouette
   avoid_recent_formula
   pose_family
+  movement_readability
   generated_prompt_summary
   visual_check
   result_note
@@ -154,6 +157,7 @@ age_bands
 persona_direction
 exposure_plan
 pose_families
+movement_readability_notes
 style_presets
 saved_path
 one-line result for each final image
@@ -184,6 +188,10 @@ recent-set repetition notes and any intentional repeats
   category calls for it.
 - The age bands differ by life scene, silhouette, materials, accessories, and
   styling attitude, not only by color tone or face age.
+- Dynamic actions are readable and safe for the setting. Vehicle, ferry,
+  waterside, stair, platform, pier, bridge, and station scenes must not look
+  like jumping off, falling, running out of a vehicle, or leaving a safe
+  surface.
 - Exposure balance is intentionally varied across the set. Do not let rainy,
   outerwear, or low-key themes collapse all looks into long, covered layers;
   use tasteful adult fashion exposure such as sleeveless cuts, open backs,
