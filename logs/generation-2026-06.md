@@ -218,6 +218,139 @@ open shirts, and tied rain shells. No neckline, sleeve, or layer was changed
 only to reduce skin visibility when the clothing already fit the venue and
 weather.
 
+## 2026-06-11 Hiroshima Momiji Light Social
+
+- Images: 4 final images
+- Generated on: 2026-06-13, Asia/Tokyo, for date seed 2026-06-11
+- Saved in: `assets/daily/2026-06-11-hiroshima-momiji-light-social/`
+- Album: `assets/2026-06-11-hiroshima-momiji-light-social-album.html`
+- Note: `notes/2026-06-11-hiroshima-momiji-light-social.md`
+- City / place language: Hiroshima, specifically Hatchobori / Hondori office walk, JMS Aster Plaza-style theater lobby, a Kyobashi River apartment balcony, and the Miyajima ferry approach
+- Common mood: post-rain river city, streetcar rails, theater glass, home balcony social energy, Setouchi ferry air, and momiji-vermilion focal details
+- Lucky color: momiji vermilion
+- Lucky color age tone: `18-19-adult` bright red-orange; `20-24` vivid vermilion; `25-29` lacquered momiji-vermilion as a restrained accent
+- Climate fit: humid June Hiroshima after rain; context was split by office street walk plus air conditioning, theater interior, home balcony river breeze, and ferry movement
+- Categories: `office`, `theater`, `home`, `travel`
+- Category rotation reason: intentionally avoids the recent `market` / `gallery` / `lounge` / `transit` pattern
+- Age bands: `25-29`, `20-24`, `18-19-adult`, `20-24`
+- Persona direction: bright, sociable, lively, fashion-aware, interested in clothes, intentionally stylish, and aware of her own charm without erotic framing
+- Exposure plan: shirt dress and vest, tee under sleeveless overdress, cropped polo with loose jeans, short-sleeve underlayer and utility jumpsuit
+- Pose families: `hands-in-pocket`, `using-object`, `close-crop-upper`, `jump-motion`
+- Style presets: `semi-real-editorial`, `fashion-illustration`, `anime-editorial`, `pbr-fashion-3d`
+- Prompt version: `v2-short-generation`
+- Prompt shape: short image prompts with explicit persona, fashion focal point, and anti-repeat instruction
+- Reference note: project reference files named in the skill were not present in this repo; prompt presets, `prompts/persona-presets.md`, `prompts/repetition-guardrails.md`, and a light web/place source scan were used.
+- Source scan: current references were used as place, climate, and mood signals only, not as designs to copy.
+  - Dive Hiroshima: https://dive-hiroshima.com/en/
+  - Orizuru Tower: https://www.orizurutower.jp/en/
+  - Weather Atlas Hiroshima June: https://www.weather-atlas.com/en/japan/hiroshima-weather-june
+- Recent-set scan: Kyoto, Nagoya, Fukuoka, and Taipei repeated `market` / `gallery` / `lounge` / `transit`, tank plus open shirt, open-back halter plus carried bolero, satin camisole plus draped blazer, black tank plus mesh/rain shell and wide pants, wet-reflection backgrounds, and seated-side lounge or over-shoulder gallery crops.
+- Cooldown formulas: tank + open shirt + skort; open-back halter + carried bolero; satin camisole + draped blazer + seated lounge; black tank + mesh/rain shell + wide pants; station transit; rain set made entirely of wet pavement reflections.
+
+### Final Files
+
+- `01-office-hatchobori-shirt-dress-semi-real.png`
+  - Source file: `ig_0180e2aaa6928a53016a2c9be9f14481919e1786fea17de402.png`
+  - Primary category: `office`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `semi-real-editorial`
+  - Secondary tags: `rain`, `office`, `hatchobori`, `hondori`, `streetcar`, `shirt-dress`, `momiji-vermilion`, `semi-real-editorial`
+  - Place: Hiroshima Hatchobori / Hondori office walk after light rain, with streetcar rails and trees
+  - Person: adult Japanese-centered woman, late 20s, bright self-possessed office-walk expression
+  - Persona: sociable and fashion-aware through direct smile, relaxed hands-in-pocket posture, crisp outfit completion, and a deliberate brooch accent
+  - Fashion: airy ivory short-sleeve shirt dress with asymmetric wrap waist, cropped charcoal linen vest, lacquer momiji-vermilion resin brooch, smoke-gray sheer ankle socks, square-toe ivory loafers, slim graphite work tote
+  - Fashion focal point: sculptural wrap waist and vermilion brooch
+  - Lucky color tone for age: lacquered momiji-vermilion, restrained and polished for `25-29`
+  - Exposure balance: covered but light; shape, fabric, and leg/ankle styling keep it mobile rather than heavy
+  - Comfort naturalness: shirt dress and vest suit humid rain plus office air conditioning; socks and loafers fit workday walking
+  - Climate context: humid June Hiroshima, light rain, outdoor office street walk with indoor air conditioning
+  - Age-band life scene: late-20s office-adjacent workday
+  - Age-band silhouette: polished shirt dress with wrap waist, not camisole lounge or market casual
+  - Avoid recent formula: not tank plus open shirt, not skort, not market crouch
+  - Pose family: `hands-in-pocket`; face camera; body front three-quarter; full-body crop
+  - Generated prompt summary: short prompt for a 25-29 Hiroshima office walk in semi-real editorial style with ivory wrap shirt dress, cropped vest, momiji brooch, sheer socks, loafers, and no logos/text.
+  - Visual check: matches office walk, streetcar context, brooch, wrap dress, bright expression, and anti-repeat target. Some wet reflection remains but the garment formula is different.
+  - Result: accepted.
+- `02-theater-aster-plaza-origami-dress-illustration.png`
+  - Source file: `ig_0180e2aaa6928a53016a2c9c8a85408191b68eda9a3e93db70.png`
+  - Primary category: `theater`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `fashion-illustration`
+  - Secondary tags: `theater`, `aster-plaza`, `river`, `origami-pleats`, `momiji-vermilion`, `fashion-illustration`
+  - Place: Hiroshima theater lobby before an evening performance, with river district through glass
+  - Person: adult Japanese-centered woman, early 20s, laughing toward a friend with blank theater tickets
+  - Persona: social, lively, and fashion-interested through laughter, ticket gesture, hair barrette, and dramatic pleated overdress
+  - Fashion: vermilion-red origami-pleated sleeveless overdress over fitted cream short-sleeve tee, ink-black cropped flare trousers, metallic red hair barrette, pearl ear cuff, black slingback flats, tiny box bag
+  - Fashion focal point: origami pleats and hair barrette
+  - Lucky color tone for age: vivid vermilion, experimental and social for `20-24`
+  - Exposure balance: light arms and neckline, but built around tee-under-dress layering and trousers rather than open-back styling
+  - Comfort naturalness: indoor theater air conditioning supports a tee and overdress combination with cropped trousers
+  - Climate context: humid June evening outside, air-conditioned theater lobby inside
+  - Age-band life scene: early-20s performance outing with friends
+  - Age-band silhouette: asymmetric pleated overdress over trousers, not open-back gallery
+  - Avoid recent formula: not open-back halter, not carried bolero, not over-shoulder gallery crop
+  - Pose family: `using-object`; body left-profile; side camera knee-up crop
+  - Generated prompt summary: short prompt for a 20-24 Hiroshima theater look in fashion illustration style with vermilion origami overdress, cream tee, flare trousers, blank tickets, red barrette, and no text/logos.
+  - Visual check: matches theater lobby, social smile, tickets, pleated overdress, hair accessory, and no readable posters. The set clearly differs from recent gallery formulas.
+  - Result: accepted.
+- `03-home-kyobashi-river-scarf-anime.png`
+  - Source file: `ig_0180e2aaa6928a53016a2c9d22dba88191970b88d5e65b3126.png`
+  - Primary category: `home`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-editorial`
+  - Secondary tags: `home`, `kyobashi-river`, `balcony`, `rugby-polo`, `scarf`, `hoop-earrings`, `momiji-vermilion`, `anime-editorial`
+  - Place: small Hiroshima apartment balcony near Kyobashi River on a cloudy humid afternoon
+  - Person: adult Japanese-centered young woman, first-apartment energy, smiling during a video call
+  - Persona: bright, sociable, and fashion-aware through video-call gesture, smile, scarf adjustment, earrings, and ring
+  - Fashion: cropped vermilion-and-cream rugby polo, high-waist light wash barrel jeans, glossy red hoop earrings, striped neck scarf, canvas slip-on shoes partly visible, chunky translucent ring
+  - Fashion focal point: striped scarf and bold earrings
+  - Lucky color tone for age: bright red-orange, playful but adult for `18-19-adult`
+  - Exposure balance: midriff is visible, but the setting, polo, jeans, and video-call action keep it fashion/social rather than sexualized
+  - Comfort naturalness: cotton polo and loose jeans fit humid balcony air with fan and river breeze
+  - Climate context: humid cloudy afternoon, home balcony, river breeze, fan nearby
+  - Age-band life scene: adult first-apartment social call
+  - Age-band silhouette: cropped polo plus barrel jeans and scarf, not tank/open-shirt/skort
+  - Avoid recent formula: not camisole with draped blazer, not seated lounge looking down, not wet pavement background
+  - Pose family: `close-crop-upper`; face right; body front three-quarter
+  - Generated prompt summary: short prompt for an 18-19 adult Hiroshima balcony home look in anime editorial style with cropped rugby polo, barrel jeans, striped scarf, hoop earrings, video-call energy, and no text/logos.
+  - Visual check: matches balcony, river view, video call, scarf, earrings, red striped polo, barrel jeans, lively adult expression. This is the clearest persona test image.
+  - Result: accepted.
+- `04-travel-miyajima-ferry-jumpsuit-3d-note.png`
+  - Source file: `ig_0180e2aaa6928a53016a2c9dfca6b48191a35a66aa6d51b7e4.png`
+  - Primary category: `travel`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `pbr-fashion-3d`
+  - Secondary tags: `travel`, `miyajima`, `ferry`, `setouchi`, `utility-jumpsuit`, `woven-hat`, `momiji-vermilion`, `pbr-fashion-3d`
+  - Place: Miyajima ferry approach on a bright overcast Setouchi day after rain
+  - Person: adult Japanese-centered woman, early 20s, lively travel movement
+  - Persona: bright and confident through over-shoulder smile, step-up motion, duffel strap, hat cord, and charm bracelet
+  - Fashion: sleeveless vermilion utility jumpsuit with cropped wide legs and cinched drawcord waist, ivory ribbed short-sleeve underlayer, woven bucket hat with red cord, white low-profile deck sneakers, compact navy duffel, enamel charm bracelet
+  - Fashion focal point: utility jumpsuit silhouette and woven hat cord
+  - Lucky color tone for age: vivid travel vermilion, adventurous for `20-24`
+  - Exposure balance: arms visible but outfit is built around full jumpsuit coverage, hat, sneakers, and travel movement
+  - Comfort naturalness: light jumpsuit, short-sleeve underlayer, sneakers, and duffel fit humid ferry travel
+  - Climate context: humid Setouchi day after rain, outdoor ferry deck, breeze and movement
+  - Age-band life scene: early-20s day trip / ferry travel
+  - Age-band silhouette: one-piece utility jumpsuit, not black tank plus mesh jacket and wide pants
+  - Avoid recent formula: not station transit, not black tank plus mesh/rain shell, not umbrella wet-floor composition
+  - Pose family: `jump-motion`; face over-shoulder; diagonal wide-action full-body crop
+  - Generated prompt summary: short prompt for a 20-24 Miyajima ferry travel look in PBR fashion 3D style with vermilion utility jumpsuit, woven hat cord, deck sneakers, duffel, and no text/logos.
+  - Visual check: matches ferry deck, Setouchi water, jumpsuit, hat cord, duffel, sneakers, and lively travel motion. The result is more photo-adjacent than ideal for `pbr-fashion-3d`.
+  - Result: accepted with style-deviation note.
+
+### Generation Notes
+
+This run tested the newly added persona and repetition guardrails. The result
+does reduce the visual repetition: category sequence, garment formulas,
+life-scene roles, and focal styling details all differ from the Kyoto/Nagoya/
+Fukuoka/Taipei pattern. The fourth image still shows the known style-drift
+problem for `pbr-fashion-3d`, but it passes the anti-repeat, persona, place,
+age-band, and climate checks.
+
 ## 2026-06-10 Fukuoka Yuzu Rain Riverside
 
 - Images: 4 final images
