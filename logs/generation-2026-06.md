@@ -1856,3 +1856,136 @@ daytime craft and movement scenes. Clothing naturalness is evaluated by mild
 Nordic weather, indoor/outdoor transitions, venue norms, and activity rather
 than by visible skin amount. The main residual weakness is style compliance on
 image 04, which leans photo-adjacent despite the game-cinematic 3D prompt.
+
+## 2026-06-14 Melbourne Wattle Winter Layers
+
+- Images: 4 final images
+- Generated on: 2026-06-14, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-14-melbourne-wattle-winter-layers/`
+- Album: `assets/2026-06-14-melbourne-wattle-winter-layers-album.html`
+- Note: `notes/2026-06-14-melbourne-wattle-winter-layers.md`
+- City / place language: Melbourne, specifically a Degraves Street-style laneway, Royal Exhibition Building-style civic hall, Collingwood warehouse rehearsal room, and Cinema Nova-style independent cinema lobby
+- Common mood: Melbourne winter Sunday, cafe steam, public architecture, rehearsal warmth, and pre-film glow
+- Lucky color: wattle gold
+- Lucky color age tone: `18-19-adult` and `20-24` use clearer enamel/tape gold accents; `25-29` uses sculptural brooch or satin scarf gold
+- Climate fit: Melbourne June winter supports wool coats, merino knits, tights, trousers, boots, low pumps, and light rehearsal layers; clothing is chosen for temperature, venue, and movement rather than skin visibility
+- Categories: `street`, `formal`, `dance`, `date`
+- Age bands: `20-24`, `25-29`, `18-19-adult`, `25-29`
+- Persona direction: selected adult trait mixes anchored in fashion interest, winter city movement, ceremony polish, rehearsal energy, and film-date warmth
+- Skin/coverage comfort plan: winter laneway coat and trousers, indoor ceremony merino and tights, cool rehearsal merino and leg warmers, cinema knit/pinafore/tights; each outfit is natural for activity and weather
+- Pose families: `walking-stride`, `standing-front`, `dance-motion`, `leaning-wall`
+- Style presets: `anime-soft-cinematic`, `digital-magazine-painting`, `marker-sketch`, `semi-real-editorial`
+- Source scan / reference note: local project reference files were not present in the workspace. Local presets, recent logs, and light Melbourne place/climate context were used. Setting names are broad place language only, not copied signage or exact interiors.
+- Recent set scan: recent additions emphasize Helsinki maker/climbing, Mexico City creative weekday, Vienna indoor salon, and many earlier Japan/rain/water/market-gallery-lounge-transit sets
+- Cooldown formulas: market/gallery/lounge/transit quartet, waterfront balance, open-back gallery, seated lounge camisole, warm-weather tank/open-shirt/sandal formula, craft-studio tool action, climbing-specific activewear
+- Category rotation reason: `street`, `formal`, `dance`, and `date` give a winter city balance without returning to the recent default quartet or repeating Helsinki's `weekend/mode/outerwear/active`
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-street-degraves-laneway-winter-anime-note.png`
+  - Source file: `ig_064504293bdc6095016a2dcd15c6f081918dbd14c4aa2ae1fa.png`
+  - Primary category: `street`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-soft-cinematic`
+  - Secondary tags: `street`, `melbourne`, `degraves`, `laneway`, `winter`, `wool`, `wrap-skirt`, `wattle-gold`
+  - Place: Melbourne, Degraves Street-style laneway on a cool June Sunday morning
+  - Person: adult Japanese-centered early-20s woman, early-career illustrator meeting friends
+  - Persona traits: sociable, curious, playful, fashion-aware
+  - Fashion: cropped charcoal wool car coat, ribbed cream knit polo, asymmetric wrap skirt over straight black trousers, wattle-gold enamel scarf ring, thin socks, polished ankle boots, compact satchel
+  - Fashion focal point: wrap skirt over trousers and small wattle-gold scarf ring
+  - Lucky color tone for age: clear enamel gold accent
+  - Skin/coverage comfort: wool coat, knit, trousers, socks, and boots are natural for a cool winter laneway walk
+  - Comfort naturalness: winter layers are warm without becoming bulky; the outfit is not adjusted around visible skin
+  - Climate context: Melbourne winter morning, outdoor laneway, walking and coffee-cup action
+  - Age-band life scene: early-career illustrator meeting friends before a city walk
+  - Age-band silhouette: winter coat plus wrap skirt over trousers
+  - Avoid recent formula: not Helsinki maker apron, not Mexico City sleeveless tailoring, not Lisbon nightlife satin
+  - Pose family: `walking-stride`; face camera; body right-profile; diagonal eye-level full-body
+  - Movement readability: laneway walking and takeaway-cup hold are clear
+  - Generated prompt summary: short prompt for a 20-24 Melbourne laneway street look with wool coat, knit polo, wrap skirt over trousers, scarf ring, boots, and cup.
+  - Visual check: winter laneway, coat, trousers, scarf ring, satchel, boots, and walking action are readable. It is slightly photo-adjacent for anime-soft-cinematic.
+  - Result: accepted with style-deviation note.
+- `02-formal-royal-exhibition-brooch-digital.png`
+  - Source file: `ig_064504293bdc6095016a2dcd79fc388191b1d6856311e5c3b3.png`
+  - Primary category: `formal`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `digital-magazine-painting`
+  - Secondary tags: `formal`, `melbourne`, `royal-exhibition`, `winter`, `merino`, `brooch`, `wattle-gold`
+  - Place: Melbourne, Royal Exhibition Building-style civic hall during a winter design ceremony
+  - Person: adult Japanese-centered late-20s woman, design award guest
+  - Persona traits: elegant, self-possessed, personable, fashion-aware
+  - Fashion: deep ink merino column dress over thin thermal underlayer, cropped cream wool bolero jacket, wattle-gold sculptural brooch, sheer smoke tights, square-toe low pumps, structured clutch
+  - Fashion focal point: sculptural gold brooch and winter column-dress layering
+  - Lucky color tone for age: polished sculptural gold
+  - Skin/coverage comfort: merino, tights, bolero, and low pumps fit an indoor winter ceremony with cold outdoor arrival
+  - Comfort naturalness: dress-up layering is warm and polished without forcing heaviness
+  - Climate context: Melbourne winter afternoon, civic hall interior, standing and program/brooch gesture
+  - Age-band life scene: late-20s design award guest
+  - Age-band silhouette: merino column dress with cropped wool bolero
+  - Avoid recent formula: not Vienna concert satin, not Lisbon fado lace, not Mexico City courtyard wrap dress
+  - Pose family: `standing-front`; face left; body front; low eye-level full-body
+  - Movement readability: program hold and brooch touch are clear
+  - Generated prompt summary: short prompt for a 25-29 Royal Exhibition formal look with merino column dress, bolero, gold brooch, tights, low pumps, and program.
+  - Visual check: civic hall, formal winter dress, brooch, tights, low pumps, clutch, and program are readable.
+  - Result: accepted.
+- `03-dance-collingwood-winter-rehearsal-marker.png`
+  - Source file: `ig_064504293bdc6095016a2dce1e365481919d26c3ac57900456.png`
+  - Primary category: `dance`
+  - Target age band: `18-19-adult`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `dance`, `melbourne`, `collingwood`, `warehouse`, `winter`, `leg-warmers`, `wattle-gold`
+  - Place: Melbourne, Collingwood warehouse rehearsal room on a winter afternoon
+  - Person: adult Japanese-centered 18-19 woman, contemporary-jazz rehearsal student
+  - Persona traits: bright, daring, lively, fashion-aware
+  - Fashion: fitted merino long-sleeve dance top, cropped quilted vest tied open, wrap-panel wide dance pants with wattle-gold side tape, soft leg warmers, black dance sneakers, small hoops
+  - Fashion focal point: wrap-panel dance pants with gold side tape and winter leg warmers
+  - Lucky color tone for age: clear sporty gold tape accent
+  - Skin/coverage comfort: merino top, light vest, leg warmers, and dance sneakers are natural for a cool rehearsal room before movement warms up
+  - Comfort naturalness: practice clothes support motion and winter temperature without forcing openness or coverage
+  - Climate context: Melbourne winter afternoon, indoor rehearsal room, active movement
+  - Age-band life scene: adult dance student at casual rehearsal
+  - Age-band silhouette: wide wrap-panel dance pants and leg warmers rather than cropped tee/skort
+  - Avoid recent formula: not Helsinki climbing skort, not Mexico City cropped tee dance, not club mesh styling
+  - Pose family: `dance-motion`; face right; body front with torso twist; high side wide-action
+  - Movement readability: one foot planted, one knee lifted, separated arms, and rehearsal room setting are clear
+  - Generated prompt summary: short prompt for an adult 18-19 Collingwood winter rehearsal look with merino top, quilted vest, wrap dance pants, gold tape, leg warmers, and sneakers.
+  - Visual check: marker-sketch style, rehearsal room, winter dance layers, gold side tape, leg warmers, and dynamic pose are readable.
+  - Result: accepted.
+- `04-date-cinema-nova-winter-semi-real-note.png`
+  - Source file: `ig_064504293bdc6095016a2dce7ffda48191bbca61d44929d2a3.png`
+  - Primary category: `date`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `semi-real-editorial`
+  - Secondary tags: `date`, `melbourne`, `cinema`, `winter`, `pinafore`, `mary-jane-pumps`, `wattle-gold`
+  - Place: Melbourne, Cinema Nova-style independent cinema lobby before a winter evening film
+  - Person: adult Japanese-centered late-20s woman, film date after work
+  - Persona traits: quietly confident, warm, self-possessed, fashion-aware
+  - Fashion: ribbed turtleneck, sleeveless wool pinafore dress, cropped leather jacket carried over one arm, wattle-gold satin hair scarf, opaque tights, patent low-heel Mary Janes, structured handbag
+  - Fashion focal point: satin wattle-gold hair scarf with wool pinafore and Mary Janes
+  - Lucky color tone for age: polished satin gold accessory
+  - Skin/coverage comfort: knit, tights, wool dress, carried jacket, and closed low heels fit winter evening cinema without bulky outerwear indoors
+  - Comfort naturalness: the outfit is warm but not heavy, and the carried jacket makes the indoor/outdoor transition plausible
+  - Climate context: Melbourne winter evening, cinema lobby, standing and glove-adjustment action
+  - Age-band life scene: late-20s film date after work
+  - Age-band silhouette: wool pinafore over turtleneck with tights and Mary Janes
+  - Avoid recent formula: not hotel lounge camisole, not riverside night, not home textile floor-sit
+  - Pose family: `leaning-wall`; face over-shoulder; body three-quarter; side eye-level knee-up
+  - Movement readability: glove adjustment and handbag rest are clear
+  - Generated prompt summary: short prompt for a 25-29 Cinema Nova winter date look with ribbed turtleneck, wool pinafore, carried leather jacket, gold scarf, tights, Mary Janes, and glove gesture.
+  - Visual check: cinema lobby, winter knit/pinafore, scarf, tights, Mary Janes, and glove gesture are readable. It leans photo-adjacent but still fits semi-real editorial.
+  - Result: accepted with style-deviation note.
+
+### Generation Notes
+
+This run adds the 2026-06-14 daily set and deliberately uses Southern
+Hemisphere winter to widen the month. The category and clothing plan avoids
+recent warm-weather and craft/active formulas. Clothing naturalness is judged
+by Melbourne winter, indoor/outdoor transitions, and activity: wool, merino,
+tights, trousers, leg warmers, boots, and low pumps are used because the scenes
+call for them, not as an age or skin-visibility correction.
