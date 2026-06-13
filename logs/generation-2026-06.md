@@ -1454,3 +1454,137 @@ checks were added after inspecting the saved images against the log.
 - The fashion differs by garment structure, material, exposure balance, shoes, and setting.
 - No logo, readable brand text, exact product-copy instruction, or single-reference reproduction was used.
 - Original generated files remain under the Codex generated-images directory; selected files were copied into ChatVoyage.
+
+## 2026-06-01 Vienna Celadon Indoor Salon
+
+- Images: 4 final images
+- Generated on: 2026-06-13, Asia/Tokyo, for date seed 2026-06-01
+- Saved in: `assets/daily/2026-06-01-vienna-celadon-indoor-salon/`
+- Album: `assets/2026-06-01-vienna-celadon-indoor-salon-album.html`
+- Note: `notes/2026-06-01-vienna-celadon-indoor-salon.md`
+- City / place language: Vienna, specifically a Looshaus-style office lobby near Michaelerplatz, a Palais Ferstel-style glass-roof arcade reception, a Musikverein-style golden concert foyer, and a Josefstadt Altbau apartment salon
+- Common mood: polished interiors, brass, parquet, filtered light, quiet conversation
+- Lucky color: celadon pistachio
+- Lucky color age tone: `20-24` polished or fresh celadon-pistachio; `25-29` smoky or tailored pistachio
+- Climate fit: mild early-June Vienna, mostly indoor, light air conditioning, seated or standing social movement; no rain, waterfront, bridge, or outdoor market dependence
+- Categories: `office`, `formal`, `theater`, `home`
+- Age bands: `25-29`, `20-24`, `25-29`, `20-24`
+- Persona direction: selected adult trait mixes anchored in fashion interest, polish, and indoor social presence
+- Exposure plan: tailored bare arms, wrap blouse, square-neck evening dress, home knit with tank and leggings
+- Pose families: `close-crop-upper`, `using-object`, `adjusting-jacket`, `floor-sit`
+- Style presets: `runway-board-illustration`, `anime-editorial`, `watercolor-couture`, `doll-like-3d`
+- Source scan / reference note: local project reference files were not present in the workspace; prompts and recent Chat Voyage logs were used. Venue names are used as broad setting language, not exact signage or copied interiors.
+- Recent set scan: June sets lean heavily Japan, outdoor, rain-after-street, water/river/harbor, gallery/lounge/transit, and warm-weather open-shirt/mesh formulas
+- Cooldown formulas: rainy outdoor market/gallery/lounge/transit quartet; waterfront balance; open-back gallery; seated lounge camisole; black tank plus mesh/rain shell
+- Category rotation reason: `office`, `formal`, `theater`, and `home` create indoor, cultural, and private-room variety while avoiding the recent warm-weather street pattern
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-office-looshaus-waistcoat-runway-note.png`
+  - Source file: `ig_02c3a68c3867558e016a2cc55bc9ec8191820279c2ae7ec6c9.png`
+  - Primary category: `office`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `office`, `vienna`, `looshaus`, `lobby`, `tailoring`, `waistcoat`, `celadon-pistachio`
+  - Place: Vienna, Looshaus-style modernist office lobby near Michaelerplatz, Monday morning
+  - Person: adult Japanese-centered late-20s woman, neat short dark hair, refined office context
+  - Persona traits: self-possessed, sharp, quietly confident, fashion-aware
+  - Fashion: celadon-pistachio sleeveless long waistcoat, ivory short-sleeve rib shell, charcoal cropped cigarette trousers, sheer gray socks, low black slingback pumps, brass watch, structured mini tote
+  - Fashion focal point: long waistcoat over cropped trousers; slingback pumps with sheer socks
+  - Lucky color tone for age: tailored polished celadon
+  - Exposure balance: bare arms through sleeveless tailoring, otherwise polished office coverage
+  - Comfort naturalness: indoor office lobby with light air conditioning; sleeveless tailoring over short-sleeve shell is plausible for mild June
+  - Climate context: mild early-June Vienna morning, indoor lobby, stationary/arrival movement
+  - Age-band life scene: late-20s office arrival and portfolio check
+  - Age-band silhouette: long waistcoat over cropped trousers, not tank/open-shirt/skort
+  - Avoid recent formula: not rainy outdoor market, not waterfront balance, not mesh transit, not open-back gallery
+  - Pose family: `close-crop-upper`; face left; body three-quarter; eye-level; knee-up
+  - Movement readability: clear morning work arrival, portfolio check, and belt adjustment
+  - Generated prompt summary: short prompt for a 25-29 Vienna office lobby look with celadon long waistcoat, cropped trousers, slingback pumps, portfolio, and no logos/text.
+  - Visual check: indoor office/lobby, portfolio, waistcoat, cropped trousers, and pumps are readable. It is photo-adjacent and not a clean runway-board illustration.
+  - Result: accepted with style-deviation note.
+- `02-formal-palais-ferstel-wrap-anime.png`
+  - Source file: `ig_02c3a68c3867558e016a2cc5de0f4c819186df41cb83073a93.png`
+  - Primary category: `formal`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-editorial`
+  - Secondary tags: `formal`, `vienna`, `palais-ferstel`, `arcade`, `wrap-blouse`, `skirt-over-trousers`, `beaded-pouch`
+  - Place: Vienna, Palais Ferstel-style glass-roof arcade during a late-afternoon small reception
+  - Person: adult Japanese-centered early-20s woman, long dark hair pinned with one barrette
+  - Persona traits: personable, elegant, sociable, curious
+  - Fashion: pale celadon wrap blouse with asymmetric side tie, cream tea-length pleated skirt layered over narrow ivory trousers, pistachio glass-bead pouch, pearl hair barrette, low champagne kitten-heel pumps
+  - Fashion focal point: wrap blouse plus skirt-over-trousers silhouette; glass-bead pouch
+  - Lucky color tone for age: polished pale celadon with small glassy pistachio accessory
+  - Exposure balance: covered but light, with open neck and soft blouse drape
+  - Comfort naturalness: indoor arcade reception with filtered light; light blouse and pumps fit a dressy event
+  - Climate context: mild late-afternoon indoor Vienna reception, glass-roof arcade
+  - Age-band life scene: early-20s reception conversation
+  - Age-band silhouette: wrap blouse and skirt over trousers, not open-back gallery
+  - Avoid recent formula: not seated lounge camisole, not open-back gallery, not wet street reflection, not boat or water edge
+  - Pose family: `using-object`; face camera; body right-profile; high diagonal knee-up
+  - Movement readability: clear reception pause, turning with coffee cup and pouch
+  - Generated prompt summary: short prompt for a 20-24 Palais Ferstel-style formal reception look with wrap blouse, skirt over trousers, pouch, cup, and no logos/text.
+  - Visual check: indoor reception, cup gesture, wrap blouse, skirt-over-trousers, pouch, and formal mood are readable.
+  - Result: accepted.
+- `03-theater-musikverein-satin-watercolor.png`
+  - Source file: `ig_02c3a68c3867558e016a2cc66c0bb48191a3758b20701cf2f7.png`
+  - Primary category: `theater`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `watercolor-couture`
+  - Secondary tags: `theater`, `vienna`, `musikverein`, `foyer`, `satin`, `organza`, `mary-jane-pumps`
+  - Place: Vienna, Musikverein-style golden concert hall foyer before an evening performance
+  - Person: adult Japanese-centered late-20s woman with composed evening expression
+  - Persona traits: sensual, self-possessed, elegant, quietly confident
+  - Fashion: smoky pistachio satin column dress with square neckline and side drape, cropped ivory organza evening jacket, sheer black knee-high socks, black satin Mary Jane pumps, gold hoops, narrow cuff
+  - Fashion focal point: square-neck satin column dress with side drape; sheer socks with Mary Jane pumps
+  - Lucky color tone for age: smoky satin pistachio
+  - Exposure balance: square neckline and bare arms under light jacket, adult eveningwear
+  - Comfort naturalness: indoor evening foyer; satin dress and lightweight organza jacket fit a concert setting
+  - Climate context: mild Vienna evening, indoor concert foyer
+  - Age-band life scene: late-20s pre-concert theater outing
+  - Age-band silhouette: satin column dress, not draped blazer lounge
+  - Avoid recent formula: not satin camisole plus draped blazer, not lounge seated pose, not rainy riverside night, not open-back gallery
+  - Pose family: `adjusting-jacket`; face right; body three-quarter; eye-level full-body
+  - Movement readability: clear pre-concert jacket adjustment while holding a blank folded program
+  - Generated prompt summary: short prompt for a 25-29 Musikverein-style theater look with satin column dress, organza jacket, Mary Janes, program, and no logos/text.
+  - Visual check: golden foyer, watercolor finish, satin dress, organza jacket, program, and theater styling are readable.
+  - Result: accepted.
+- `04-home-josefstadt-record-doll-3d-note.png`
+  - Source file: `ig_02c3a68c3867558e016a2cc6c42f848191bdf32f493c4e5d06.png`
+  - Primary category: `home`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `doll-like-3d`
+  - Secondary tags: `home`, `vienna`, `josefstadt`, `altbau`, `record`, `wrap-shorts`, `leggings`, `ballet-flats`
+  - Place: Vienna, quiet Altbau apartment salon in Josefstadt at night
+  - Person: adult Japanese-centered early-20s woman, soft wavy dark hair, relaxed creative-room context
+  - Persona traits: relaxed, playful, personable, a little mischievous
+  - Fashion: pistachio ribbed cropped cardigan, ivory square-neck tank with opaque lining, cocoa satin wrap shorts over black soft leggings, cream ankle socks, soft indoor ballet flats, enamel ring, loose hair ribbon
+  - Fashion focal point: satin wrap shorts over leggings; indoor ballet flats and hair ribbon
+  - Lucky color tone for age: soft playful pistachio knit
+  - Exposure balance: home knit and tank with leggings, relaxed but not lingerie-coded
+  - Comfort naturalness: mild Vienna night indoors; soft knit, leggings, socks, and flats fit private room movement
+  - Climate context: night indoors, apartment salon, parquet floor, reading lamp, record shelf
+  - Age-band life scene: early-20s apartment music selection at night
+  - Age-band silhouette: wrap shorts over leggings, not balcony/night-market or lounge camisole
+  - Avoid recent formula: not balcony before night market, not lounge seated camisole, not harbor or bridge balance, not wet pavement background
+  - Pose family: `floor-sit`; face slightly toward camera; body front-three-quarter; high diagonal crop
+  - Movement readability: clear indoor record selection on the parquet floor
+  - Generated prompt summary: short prompt for a 20-24 Josefstadt apartment home look with cropped cardigan, wrap shorts over leggings, ballet flats, record selection, and no logos/text.
+  - Visual check: apartment interior, floor-sit record action, wrap shorts, leggings, flats, and home styling are readable. It is photo-adjacent rather than clearly doll-like 3D.
+  - Result: accepted with style-deviation note.
+
+### Generation Notes
+
+This run fills the missing 2026-06-01 date while reducing current-month
+duplication. It intentionally chooses a non-Japanese city and mostly indoor
+settings, with morning / late afternoon / evening / night separation. The
+fashion grammar also shifts away from rainy streets, water, market/gallery/
+lounge/transit repetition, and warm-weather mesh/open-shirt formulas. The main
+residual weakness is style compliance on images 01 and 04, both of which lean
+photo-adjacent despite illustration/3D prompts.
