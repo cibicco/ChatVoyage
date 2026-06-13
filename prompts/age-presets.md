@@ -47,7 +47,7 @@ the category, weather, and adult context. Rain, transit, and outerwear themes
 can still include sleeveless inner layers, sheer rain shells, open-back tops,
 shorter hems with legwear, sandal styling, or carried outer layers.
 
-Do not solve age safety by forcing unnaturally covered clothing. Neckline,
+Do not solve age guardrails by forcing unnaturally covered clothing. Neckline,
 sleeve, hem, fabric weight, and layering should fit the city, season, weather,
 temperature, venue, and the person's activity. In humid or warm weather, use
 natural adult choices such as breathable tanks, scoop or square necklines,

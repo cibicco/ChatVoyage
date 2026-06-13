@@ -101,7 +101,7 @@
 
 This run used `v2-short-generation`; all four images succeeded without
 regeneration. The set intentionally keeps exposure decisions tied to climate
-and activity rather than treating coverage as a generic safety fix. Kyoto's
+and activity rather than treating coverage as a generic guardrail fix. Kyoto's
 humid June rain supports open shirts, tanks, open backs, camisoles with opaque
 lining, sandals, mesh, and light rain shells when the scene and pose make them
 practical.
@@ -338,10 +338,10 @@ weather.
   - Age-band silhouette: one-piece utility jumpsuit, not black tank plus mesh jacket and wide pants
   - Avoid recent formula: not station transit, not black tank plus mesh/rain shell, not umbrella wet-floor composition
   - Pose family: `jump-motion`; face over-shoulder; diagonal wide-action full-body crop
-  - Movement readability: intended as a lively step up onto the ferry deck, but the final pose can read as jumping away from the ferry or leaving a safe surface.
+  - Movement readability: intended as a lively step up onto the ferry deck, but the final pose can read as jumping away from the ferry rather than an intentional ferry-deck action.
   - Generated prompt summary: short prompt for a 20-24 Miyajima ferry travel look in PBR fashion 3D style with vermilion utility jumpsuit, woven hat cord, deck sneakers, duffel, and no text/logos.
   - Visual check: matches ferry deck, Setouchi water, jumpsuit, hat cord, duffel, sneakers, and lively travel motion. The result is more photo-adjacent than ideal for `pbr-fashion-3d`, and the ferry action is ambiguous enough that it should not be treated as a successful movement pattern.
-  - Result: accepted with style-deviation and action-readability notes. Future ferry, pier, boat, or waterside images should use a grounded gangway/deck step, railing hold, pier walk, map check, or bag-strap adjustment instead of ambiguous jump-motion.
+  - Result: accepted with style-deviation and action-readability notes. Future ferry, pier, boat, or waterside images should make the action legible through body weight, gaze, foot placement, and hand use: gangway/deck step, boat-edge balance, railing hold, pier walk, map check, or bag-strap adjustment instead of ambiguous jump-motion.
 
 ### Generation Notes
 
@@ -809,7 +809,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese young woman, realistic youthful adult face, short soft black bob, petite natural build, adult city-market context
   - Fashion: cream sleeveless rib tank, sheer short-sleeve mint-moss camp shirt, gray cargo mini skirt over opaque black bike shorts, silver rain sandals, glossy moss pouch, clear vinyl tote
   - Lucky color tone for age: fresh clear matcha moss, brighter and cleaner for `18-19-adult`
-  - Exposure balance: moderate adult fashion exposure through bare arms and shorter hem with bike shorts; the image was regenerated to reduce overemphasis on cleavage, but future prompts should avoid treating high necklines as the default safety fix
+  - Exposure balance: moderate adult fashion exposure through bare arms and shorter hem with bike shorts; the image was regenerated to reduce overemphasis on cleavage, but future prompts should avoid treating high necklines as the default guardrail fix
   - Comfort naturalness: sleeveless rib fabric, sheer short-sleeve shirt, bike shorts, and sandals fit humid post-rain Tokyo better than heavy layers
   - Pose family: `crouching-market`; face down-left; body three-quarter; high diagonal camera; full-body / low crop
   - Result: accepted after one targeted regeneration. Adult styling, age guardrail, no-logo, and garment-readability gates passed.

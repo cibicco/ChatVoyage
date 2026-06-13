@@ -6,22 +6,43 @@ mannequin wearing a generated outfit.
 
 ## Core Persona
 
-Every daily fashion character should read as an adult woman who is:
+Every daily fashion character should read as an adult woman who actively
+enjoys clothes and styling. Do not force the same personality onto every
+image. Choose a compact trait mix for each person, then make the expression,
+pose, outfit, and scene support that choice.
 
-- bright
-- sociable
-- lively
+Required anchors:
+
 - fashion-aware
 - interested in clothes and styling
 - good at selecting distinctive fashion details
-- aware of her own charm without being posed erotically
+- aware of her own charm without being reduced to erotic display
 - comfortable being seen
 - light and mobile rather than heavily armored in clothing
 - fashionable in a way that fits the city, time, weather, venue, and activity
 
-This is a styling direction, not a request for pin-up framing. Express charm
-through posture, confidence, gesture, expression, outfit completion, color,
-fabric, silhouette, accessories, and scene behavior.
+Selectable personality traits:
+
+- bright
+- sociable
+- lively
+- personable or easy to like
+- sensual or alluring in an adult editorial way
+- self-possessed
+- playful
+- curious
+- daring
+- relaxed
+- a little mischievous
+- elegant
+- sharp or fashion-critical
+- quietly confident
+
+Select two to five traits per image. A person can be sociable and sensual,
+bright and daring, quiet and self-possessed, or any other coherent combination.
+This is a styling direction, not a request for pin-up framing. Express charm,
+allure, confidence, or warmth through posture, gesture, expression, outfit
+completion, color, fabric, silhouette, accessories, and scene behavior.
 
 ## Distinctive Fashion Detail
 
@@ -107,6 +128,8 @@ accessories, expression, and posture, not only in face age or color tone.
 - blank mannequin expression
 - passive doll-like posing unless the selected visual style explicitly needs it
 - stiff over-coverage that hides all styling intent
-- heavy clothing used only as a safety fix
+- heavy clothing used only as a guardrail fix
 - generic "pretty outfit" without a chosen fashion focal point
 - sexualized framing as a substitute for confidence or charm
+- forcing every person to be bright, sociable, and lively when a different
+  trait mix would fit the scene better

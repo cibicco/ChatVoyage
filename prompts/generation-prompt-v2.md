@@ -11,7 +11,7 @@ and any differences between prompt intent and final image.
 
 Short does not mean generic. Each short prompt must include one distinctive
 garment construction, one concrete life action, and one anti-repeat instruction
-so it does not fall back to a recent safe template.
+so it does not fall back to a recent familiar template.
 
 ## Before Generation
 
@@ -23,10 +23,10 @@ prompt_version: v2-short-generation
 image_number: 01-04
 place: city and one concrete scene
 person: adult Japanese-centered character and age band
-persona: bright, sociable, lively, fashion-aware, intentionally stylish, aware of her charm without erotic framing
+persona: selected adult trait mix, fashion-aware, intentionally stylish, aware of her charm without automatic erotic framing
 style: exact style preset in natural language
 pose: one readable pose
-movement: one clear, safe action when the scene involves vehicles, water, stairs, platforms, or strong motion
+movement: one clear intentional action, including chosen risk or balance when the scene involves vehicles, water, stairs, bridges, platforms, or strong motion
 outfit: 4-7 core garments/accessories
 fashion_focal_point: one or two distinctive styling details
 climate: one sentence about comfort and weather
@@ -35,7 +35,7 @@ constraints: no text, no logos, original adult, standalone image
 ```
 
 Avoid packing every checklist field into the image prompt. Do not include long
-lists of internal bookkeeping fields, source links, or repeated safety prose.
+lists of internal bookkeeping fields, source links, or repeated guardrail prose.
 Do include the anti-repeat line. If it makes the prompt too long, shorten
 source mood and internal notes first, not the anti-repeat line.
 
@@ -47,9 +47,9 @@ Inspect each accepted image and record:
 prompt_version: v2-short-generation
 prompt_shape: short prompt, detailed log
 generated_prompt_summary: one sentence describing the prompt actually used
-persona_and_focal_point: how the accepted image shows fashion interest and the chosen styling detail
+persona_and_focal_point: how the accepted image shows the selected traits, fashion interest, and chosen styling detail
 avoid_recent_formula: the repeated formula that was avoided
-movement_readability: whether the action reads as normal, safe, and intentional in the setting
+movement_readability: whether the action reads as intentional, physically coherent, and character-driven in the setting
 visual_check:
   matches: what the image clearly matches
   deviations: what changed or is weaker than planned

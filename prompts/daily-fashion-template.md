@@ -130,7 +130,7 @@ Constraints:
   resort, swim, dance, sheer layering, cutouts, lingerie-inspired layering, or
   evening wear; keep it adult, tasteful, garment-focused, and non-erotic
 - do not use high necklines, heavy layers, long sleeves, or closed shoes as a
-  default safety fix when they do not fit the climate, venue, or activity
+  default guardrail fix when they do not fit the climate, venue, or activity
 - do not use tanks, camisoles, open shirts, mesh, or sandals as a default
   climate fix when the city, time, rain, venue, air conditioning, or activity
   would support another natural silhouette

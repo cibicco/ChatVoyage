@@ -86,12 +86,15 @@ styling, school-uniform cues, sailor-uniform cues, teen-idol styling, and
 identical face/body/hair patterns. University settings are allowed for adult
 characters.
 
-The default persona is bright, sociable, lively, fashion-aware, interested in
-clothes, and good at choosing distinctive styling details. She should seem
-aware of her own charm without being framed erotically. Express that through
-posture, expression, gesture, outfit completion, color, fabric, silhouette,
-accessories, and scene behavior. Prefer light, mobile, fashionable styling over
-heavy clothing used only to make the image feel safe.
+The persona should be selected per image, not forced into one fixed type.
+Every character should be fashion-aware, interested in clothes, good at
+choosing distinctive styling details, and aware of her own charm without being
+reduced to erotic display. Then choose two to five traits such as bright,
+sociable, personable, sensual, lively, self-possessed, playful, curious,
+daring, relaxed, elegant, sharp, or quietly confident. Express the selected
+traits through posture, expression, gesture, outfit completion, color, fabric,
+silhouette, accessories, and scene behavior. Prefer light, mobile, fashionable
+styling over heavy clothing used only as a guardrail.
 
 Vary more than color. Across the four prompts, explicitly vary:
 
@@ -142,9 +145,13 @@ Full-body is allowed but not required. Use knee-up, waist-up, close-up detail,
 wide-action, seated, back three-quarter, jumping, reaching, leaning, or object
 interaction crops when they better express pose variety and fashion detail.
 For boats, ferries, trains, buses, stations, piers, bridges, water edges,
-stairs, or platforms, dynamic motion must read as a clear safe action. Do not
-accept an image that can read as jumping off, falling, running out of a vehicle,
-or leaving a safe surface just because the outfit itself is successful.
+stairs, or platforms, dynamic motion must read as a clear intentional action.
+Risk and balance are allowed when chosen by the character: walking along a boat
+edge, balancing on a narrow bridge, stepping over a gap, or turning on a wet
+pier can work when body language, weight, gaze, and foot placement are legible.
+Do not accept an image that looks like accidental falling, unexplained leaping
+away from a vehicle, or unclear body mechanics just because the outfit itself
+is successful.
 
 ## Quality Gates
 
@@ -152,8 +159,8 @@ Before accepting the set, check:
 
 - Four separate images were generated.
 - The four women are visibly different people.
-- Each woman reads as a lively fashion-aware adult with a chosen styling focal
-  point, not a neutral mannequin wearing clothes.
+- Each woman reads as a fashion-aware adult with selected personality traits
+  and a chosen styling focal point, not a neutral mannequin wearing clothes.
 - The four looks are not color swaps of the same outfit.
 - The set is not a repeat of the last three to five accepted daily sets with
   only the city and lucky color changed.
@@ -180,7 +187,8 @@ Before accepting the set, check:
 - Poses do not all face the same direction, and the set does not collapse into
   four standing three-quarter views.
 - Dynamic travel, vehicle, waterside, stair, pier, bridge, or platform actions
-  read as normal and safe for the place.
+  read as intentional and physically coherent for the place. Risky or balancing
+  actions are allowed when they read as the character's choice.
 - Logs, notes, album/index references, and validation are updated when the user
   asks for a reusable Chat Voyage set.
 

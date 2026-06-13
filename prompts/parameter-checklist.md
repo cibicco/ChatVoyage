@@ -18,14 +18,15 @@ fashion_category: four slugs from prompts/category-presets.md
 style_preset: one shared slug or four slugs from prompts/style-presets.md
 style_family: family for each selected style preset
 target_age_band: four values from prompts/age-presets.md
-persona_direction: bright, sociable, lively, fashion-aware, fashion-interested adult charm direction from prompts/persona-presets.md
+persona_direction: selected adult trait mix from prompts/persona-presets.md, anchored in fashion awareness and charm
+persona_traits: two to five traits per image, such as personable, sociable, sensual, bright, daring, relaxed, elegant, playful, or self-possessed
 pose_family: four values from prompts/pose-presets.md
 face_direction: one per image
 body_direction: one per image
 camera_angle: one per image
 hand_placement: one per image
 crop: one per image
-movement_readability: for dynamic, vehicle, waterside, stair, or platform scenes, what the person is doing and why it reads as safe and normal
+movement_readability: for dynamic, vehicle, waterside, stair, bridge, or platform scenes, what the person is doing, where her weight is, and whether any risk is intentional
 person_language: adult character notes, varied across all four images
 fashion_language: garment structure, silhouette, material, shoes, legwear, accessories
 fashion_focal_point: one or two distinctive styling details per image
@@ -53,9 +54,10 @@ target_age_band: age band
 style_family: broad style family
 style_preset: exact style preset slug
 person_language: age impression, hairstyle, build, expression, adult context
-persona_direction: how brightness, sociability, self-awareness, and fashion interest appear
+persona_direction: how the selected traits, self-awareness, charm, and fashion interest appear
+persona_traits: the selected trait mix for this image
 pose_language: pose family, face direction, body direction, camera angle, hand placement, crop
-movement_readability: clear action and safety logic, especially for boats, ferries, trains, buses, stations, stairs, platforms, piers, bridges, and water edges
+movement_readability: clear action, weight, intention, and optional chosen risk, especially for boats, ferries, trains, buses, stations, stairs, platforms, piers, bridges, and water edges
 scene_language: city, place, time/weather, background support
 fashion_language: garment list, construction, materials, texture, proportion, shoes, legwear, accessories
 fashion_focal_point: chosen styling point such as color, accessory, fabric, silhouette, shoes, bag, jewelry, hair accessory, layering, or fabric movement
@@ -70,7 +72,7 @@ age_band_material_logic: why the material choice fits this age band, scene, and 
 age_band_accessory_logic: how shoes, bag, jewelry, eyewear, umbrella, or object use differs by age band
 avoid_recent_formula: one recent successful formula this image intentionally does not repeat
 source_mood_tags: broad influence tags, never exact copying
-constraints: safety, originality, no text/logo, one standalone image, not a collage
+constraints: originality, no text/logo, adult character, coherent action, one standalone image, not a collage
 generated_prompt_summary: compact summary of the prompt actually sent
 ```
 
@@ -112,6 +114,7 @@ final_files:
   place
   person_language
   persona_direction
+  persona_traits
   fashion_language
   fashion_focal_point
   lucky_color_tone_for_age
@@ -170,10 +173,12 @@ recent-set repetition notes and any intentional repeats
 
 - Four separate images exist under the project save path.
 - The four people are visibly different adults.
-- Each person reads as bright, sociable, lively, fashion-aware, interested in
-  clothes, and intentionally stylish, with adult charm expressed through
-  posture, expression, gesture, outfit completion, color, fabric, silhouette,
-  accessories, or scene behavior rather than erotic framing.
+- Each person reads as fashion-aware, interested in clothes, and intentionally
+  stylish, with a selected adult trait mix such as personable, sociable,
+  sensual, bright, daring, relaxed, elegant, playful, or self-possessed. Adult
+  charm is expressed through posture, expression, gesture, outfit completion,
+  color, fabric, silhouette, accessories, or scene behavior rather than
+  automatic erotic framing.
 - Each image has one or two clear fashion focal points, such as accessory,
   fabric, silhouette, color placement, shoes, bag, jewelry, hair accessory,
   layering, or fabric movement.
@@ -188,10 +193,11 @@ recent-set repetition notes and any intentional repeats
   category calls for it.
 - The age bands differ by life scene, silhouette, materials, accessories, and
   styling attitude, not only by color tone or face age.
-- Dynamic actions are readable and safe for the setting. Vehicle, ferry,
-  waterside, stair, platform, pier, bridge, and station scenes must not look
-  like jumping off, falling, running out of a vehicle, or leaving a safe
-  surface.
+- Dynamic actions are readable and intentional for the setting. Risky or
+  balancing actions are allowed when they are clearly chosen by the character:
+  the image should show what she is doing, where her weight is, and why the
+  action fits the scene. Avoid only unintended ambiguity such as accidental
+  falling, unexplained leaping away from a vehicle, or unclear body mechanics.
 - Exposure balance is intentionally varied across the set. Do not let rainy,
   outerwear, or low-key themes collapse all looks into long, covered layers;
   use tasteful adult fashion exposure such as sleeveless cuts, open backs,
