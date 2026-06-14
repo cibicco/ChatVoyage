@@ -52,7 +52,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
       gap: 16px;
     }
     figure {
@@ -66,8 +66,7 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      object-fit: contain;
       background: #eef1f3;
     }
     figcaption { padding: 12px; }
@@ -89,6 +88,36 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+    .image-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+    .open-image {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.86rem;
+    }
+    @media (max-width: 480px) {
+      main {
+        width: min(100% - 20px, 1120px);
+        padding: 22px 0 34px;
+      }
+      nav {
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      dl {
+        grid-template-columns: 72px 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -102,31 +131,43 @@
     <p class="intro">Four 2026-06-09 v2-short-generation images across Marrakech courtyard shade, Guéliz design showroom, Dar el Bacha-style museum reception, and a private riad rooftop.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-09-marrakech-saffron-courtyard-design/01-weekend-le-jardin-secret-fan-anime-note.png" alt="Adult 18-19 Marrakech Le Jardin Secret-style weekend look with cotton shirt, saffron wrap panel, fan, and sketchbook">
+        <a class="image-link" href="daily/2026-06-09-marrakech-saffron-courtyard-design/01-weekend-le-jardin-secret-fan-anime-note.png">
+          <img src="daily/2026-06-09-marrakech-saffron-courtyard-design/01-weekend-le-jardin-secret-fan-anime-note.png" alt="Adult 18-19 Marrakech Le Jardin Secret-style weekend look with cotton shirt, saffron wrap panel, fan, and sketchbook" loading="eager" decoding="async">
+        </a>
         <figcaption>
           <h2>01 Weekend - Le Jardin Secret</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>weekend</dd><dt>Style</dt><dd>anime-cel-polished</dd><dt>Pose</dt><dd>using-object</dd></dl>
+          <a class="open-image" href="daily/2026-06-09-marrakech-saffron-courtyard-design/01-weekend-le-jardin-secret-fan-anime-note.png">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-09-marrakech-saffron-courtyard-design/02-mode-gueliz-showroom-vest-runway.png" alt="Adult early 20s Marrakech Guéliz showroom mode look with long linen vest, barrel trousers, and saffron belt tabs">
+        <a class="image-link" href="daily/2026-06-09-marrakech-saffron-courtyard-design/02-mode-gueliz-showroom-vest-runway.png">
+          <img src="daily/2026-06-09-marrakech-saffron-courtyard-design/02-mode-gueliz-showroom-vest-runway.png" alt="Adult early 20s Marrakech Guéliz showroom mode look with long linen vest, barrel trousers, and saffron belt tabs" loading="lazy" decoding="async">
+        </a>
         <figcaption>
           <h2>02 Mode - Guéliz Showroom</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>mode</dd><dt>Style</dt><dd>runway-board-illustration</dd><dt>Pose</dt><dd>hands-in-pocket</dd></dl>
+          <a class="open-image" href="daily/2026-06-09-marrakech-saffron-courtyard-design/02-mode-gueliz-showroom-vest-runway.png">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-09-marrakech-saffron-courtyard-design/03-formal-dar-el-bacha-sash-watercolor.png" alt="Adult late 20s Marrakech Dar el Bacha-style formal courtyard look with wrap dress, sheer jacket, and saffron sash">
+        <a class="image-link" href="daily/2026-06-09-marrakech-saffron-courtyard-design/03-formal-dar-el-bacha-sash-watercolor.png">
+          <img src="daily/2026-06-09-marrakech-saffron-courtyard-design/03-formal-dar-el-bacha-sash-watercolor.png" alt="Adult late 20s Marrakech Dar el Bacha-style formal courtyard look with wrap dress, sheer jacket, and saffron sash" loading="lazy" decoding="async">
+        </a>
         <figcaption>
           <h2>03 Formal - Dar el Bacha</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>formal</dd><dt>Style</dt><dd>watercolor-couture</dd><dt>Pose</dt><dd>adjusting-jacket</dd></dl>
+          <a class="open-image" href="daily/2026-06-09-marrakech-saffron-courtyard-design/03-formal-dar-el-bacha-sash-watercolor.png">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-09-marrakech-saffron-courtyard-design/04-travel-riad-rooftop-jumpsuit-digital-note.png" alt="Adult early 20s Marrakech riad rooftop travel look with sleeveless utility jumpsuit, saffron scarf, and perforated boots">
+        <a class="image-link" href="daily/2026-06-09-marrakech-saffron-courtyard-design/04-travel-riad-rooftop-jumpsuit-digital-note.png">
+          <img src="daily/2026-06-09-marrakech-saffron-courtyard-design/04-travel-riad-rooftop-jumpsuit-digital-note.png" alt="Adult early 20s Marrakech riad rooftop travel look with sleeveless utility jumpsuit, saffron scarf, and perforated boots" loading="lazy" decoding="async">
+        </a>
         <figcaption>
           <h2>04 Travel - Riad Rooftop</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>travel</dd><dt>Style</dt><dd>digital-magazine-painting</dd><dt>Pose</dt><dd>floor-sit</dd></dl>
+          <a class="open-image" href="daily/2026-06-09-marrakech-saffron-courtyard-design/04-travel-riad-rooftop-jumpsuit-digital-note.png">Open image</a>
         </figcaption>
       </figure>
     </div>
