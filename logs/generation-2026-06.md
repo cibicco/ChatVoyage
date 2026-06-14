@@ -2123,3 +2123,138 @@ recent warm-weather and craft/active formulas. Clothing naturalness is judged
 by Melbourne winter, indoor/outdoor transitions, and activity: wool, merino,
 tights, trousers, leg warmers, boots, and low pumps are used because the scenes
 call for them, not as an age or skin-visibility correction.
+
+## 2026-06-15 Berlin Linden Green Culture Motion
+
+- Images: 4 final images
+- Generated on: 2026-06-15, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-15-berlin-linden-green-culture-motion/`
+- Album: `assets/2026-06-15-berlin-linden-green-culture-motion-album.html`
+- Note: `notes/2026-06-15-berlin-linden-green-culture-motion.md`
+- City / place language: Berlin, specifically a design archive reading desk, Hamburger Bahnhof-style contemporary museum hall, Kreuzberg club soundcheck room, and Tempelhofer Feld former-airport runway park
+- Local activity space plan: archive/workspace, museum hall, club/music room, and outdoor former-airport runway park; no generic room/cafe/bar-only fallback
+- Common mood: Berlin Monday culture route, practical work focus, museum scale, club soundcheck energy, and open-air movement
+- Lucky color: linden green
+- Lucky color age tone: clear sporty linden for `18-19-adult`, acidic or digital linden for `20-24`, mineral restrained linden for `25-29`
+- Climate fit: mild to warm Berlin June supports breathable tailoring, carried layers, sleeveless or short-sleeve garments, city half pants, light boots, sneakers, and active cotton according to venue and movement
+- Categories: `office`, `mode`, `club`, `active`
+- Age bands: `25-29`, `20-24`, `20-24`, `18-19-adult`
+- Persona direction: selected adult trait mixes anchored in fashion interest, social ease, self-awareness, and distinctive styling details
+- Skin/coverage comfort plan: archive sleeveless waistcoat over cotton tee, museum sleeveless tunic with carried cardigan, club short-sleeve shirt over opaque inner, and active cropped polo with half pants; skin visibility follows garment and activity needs rather than a correction target
+- Pose families: `using-object`, `walking-stride`, `leaning-wall`, `jump-motion`
+- Style presets: `runway-board-illustration`, `anime-fashion-magazine`, `game-cinematic-3d`, `marker-sketch`
+- Source scan / reference note: local project reference files were not present in the workspace. Local presets, recent logs, and light Berlin climate/place context were used: Berlin climate, Hamburger Bahnhof, Tempelhofer Feld, and Kreuzberg club culture. Setting names are broad place language only, not copied signage or exact interiors.
+- Recent set scan: recent additions emphasize Melbourne winter layers, Marrakech dry courtyard/showroom, Helsinki maker/climbing, Mexico City creative weekday, and repeated Japan/rain/water/market-gallery-lounge-transit formulas
+- Cooldown formulas: market/gallery/lounge/transit quartet, open-back gallery crop, seated satin lounge, warm-weather tank/open-shirt/skort/sandal formula, waterfront or rain reflection place logic, climbing skort activewear
+- Category rotation reason: `office`, `mode`, `club`, and `active` create a Berlin culture/activity route without returning to the recent default quartet or repeating Melbourne's winter `street/formal/dance/date`
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-office-design-archive-linen-runway.png`
+  - Source file: `ig_076dbdb286366f7a016a2f368291e08191a46c6472b581ebcb.png`
+  - Primary category: `office`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `office`, `berlin`, `design-archive`, `linen-waistcoat`, `barrel-trousers`, `linden-green`
+  - Place: Berlin, design archive reading desk on a mild June workday
+  - Person: adult Japanese-centered late-20s woman, design researcher
+  - Persona traits: self-possessed, personable, quietly confident, fashion-aware
+  - Fashion: mineral-white sleeveless linen waistcoat over fine short-sleeve cotton tee, cropped charcoal barrel trousers, smoke-gray slingback low pumps, slim metal cuff, structured document pouch, linden-green acrylic ruler
+  - Fashion focal point: waistcoat construction and linden-green ruler
+  - Lucky color tone for age: restrained mineral linden accessory
+  - Skin/coverage comfort: sleeveless tailoring over a tee, cropped trousers, and slingbacks fit a warm indoor archive day
+  - Comfort naturalness: breathable work tailoring, not over-closed and not exposure-led
+  - Climate context: Berlin early summer, indoor archive, mild/warm, standing and folio handling
+  - Age-band life scene: late-20s design researcher at work
+  - Age-band silhouette: polished sleeveless waistcoat and barrel trousers
+  - Avoid recent formula: not market crouch, not open-back gallery, not camisole lounge, not wet transit shell
+  - Pose family: `using-object`; face left; body three-quarter; knee-up
+  - Movement readability: folio/ruler handling is clear
+  - Generated prompt summary: short prompt for a late-20s Berlin design archive office look with linen waistcoat, barrel trousers, slingback pumps, pouch, and linden ruler.
+  - Visual check: archive, work tailoring, ruler, pouch, trousers, shoes, and adult composure are readable.
+  - Result: accepted.
+- `02-mode-hamburger-bahnhof-half-pants-anime.png`
+  - Source file: `ig_076dbdb286366f7a016a2f385f3b98819190f9f7708278784c.png`
+  - First candidate rejected: photo-adjacent for the requested anime style
+  - Primary category: `mode`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `mode`, `berlin`, `hamburger-bahnhof`, `half-pants`, `tunic`, `sheer-panel`, `linden-green`
+  - Place: Berlin, Hamburger Bahnhof-style contemporary museum hall
+  - Person: adult Japanese-centered early-20s woman, experimental museum-goer
+  - Persona traits: experimental, sociable, sharp, fashion-aware
+  - Fashion: asymmetrical sleeveless tunic, sheer smoke-gray long overskirt panel over tailored city half pants, acidic linden-green translucent belt, carried cropped utility cardigan, pale socks, black perforated summer ankle boots
+  - Fashion focal point: tunic-over-half-pants silhouette and linden belt
+  - Lucky color tone for age: acidic digital linden belt
+  - Skin/coverage comfort: sleeveless tailoring, half pants, carried layer, and perforated boots fit a mild museum day with indoor climate control
+  - Comfort naturalness: visible arms and legs are part of the museum-mode silhouette, not forced exposure
+  - Climate context: Berlin early summer, indoor museum hall, walking and leaflet action
+  - Age-band life scene: early-20s experimental culture outing
+  - Age-band silhouette: sleeveless tunic, sheer panel, and half pants
+  - Avoid recent formula: not open-back gallery crop, not simple tank and skort, not lounge satin
+  - Pose family: `walking-stride`; face camera; body left-profile; full-body
+  - Movement readability: museum walking and leaflet hold are clear
+  - Generated prompt summary: regenerated short prompt for an anime magazine Berlin museum mode look with tunic, half pants, sheer panel, linden belt, carried cardigan, socks, and perforated boots.
+  - Visual check: anime style, former-station museum hall, walking pose, tunic, half pants, belt, and boots are readable.
+  - Result: accepted after one regeneration.
+- `03-club-kreuzberg-soundcheck-cg-note.png`
+  - Source file: `ig_076dbdb286366f7a016a2f38c507208191b45db1eea9618326.png`
+  - First candidate rejected: too photo-adjacent for the requested 3D style
+  - Primary category: `club`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `game-cinematic-3d`
+  - Secondary tags: `club`, `berlin`, `kreuzberg`, `soundcheck`, `wrap-skirt`, `trousers`, `linden-green`
+  - Place: Berlin, Kreuzberg club soundcheck room, warm June night
+  - Person: adult Japanese-centered early-20s woman, club friend-group sound-tech helper
+  - Persona traits: lively, daring, sociable, fashion-aware
+  - Fashion: metallic graphite short-sleeve camp shirt over opaque bandeau, black utility wrap skirt over matte slim trousers, linden-green cable-tie bracelet, translucent earplug case, light perforated ankle boots
+  - Fashion focal point: wrap skirt over trousers and sound-tech linden accessories
+  - Lucky color tone for age: digital neon linden accessories
+  - Skin/coverage comfort: short sleeves, opaque inner, trousers, and light boots fit a ventilated club soundcheck room
+  - Comfort naturalness: club outfit is mobile and practical for cables and equipment; openness is limited to the shirt/inner construction
+  - Climate context: Berlin early summer night, indoor club, soundcheck cable action
+  - Age-band life scene: early-20s music-event participant helping with soundcheck
+  - Age-band silhouette: metallic short-sleeve shirt, wrap skirt, and trousers
+  - Avoid recent formula: not satin lounge, not black tank plus mesh rain shell, not transit platform
+  - Pose family: `leaning-wall`; face down; body right-profile; low diagonal
+  - Movement readability: cable-plug hold and leaning weight are clear
+  - Generated prompt summary: regenerated short prompt for a Berlin club soundcheck look with metallic shirt, opaque bandeau, utility wrap skirt over trousers, linden cable accessories, and cable action.
+  - Visual check: club soundcheck room, cable action, wrap-over-trouser silhouette, linden accessories, boots, and hands are readable. It remains more photo-adjacent than ideal for `game-cinematic-3d`.
+  - Result: accepted with style-deviation note.
+- `04-active-tempelhofer-field-longboard-marker.png`
+  - Source file: `ig_076dbdb286366f7a016a2f37e2bf288191832ef091d206a369.png`
+  - Primary category: `active`
+  - Target age band: `18-19-adult`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `active`, `berlin`, `tempelhofer-feld`, `longboard`, `rugby-polo`, `half-pants`, `linden-green`
+  - Place: Berlin, Tempelhofer Feld former-airport runway park, bright mild June afternoon
+  - Person: adult Japanese-centered 18-19 woman, sociable longboard beginner with adult styling
+  - Persona traits: bright, playful, sociable, fashion-aware
+  - Fashion: cropped buttoned short-sleeve rugby polo, lightweight city half pants with wrapped apron panel, linden-green belt pouch, ribbed sport socks, low-profile sneakers, small hoop earrings, hair clip
+  - Fashion focal point: wrapped half-pants construction and sporty linden pouch
+  - Lucky color tone for age: clear sporty linden pouch and wheels
+  - Skin/coverage comfort: cropped polo, half pants, socks, and sneakers fit warm outdoor active movement; midriff visibility is natural for the scene rather than age-coded
+  - Comfort naturalness: cotton and half pants support wind and motion without forcing a tank/cami formula
+  - Climate context: Berlin early summer, outdoor runway park, wind and longboard push-off
+  - Age-band life scene: adult young friend-group park activity
+  - Age-band silhouette: rugby polo and wrapped half pants rather than tank/skort/sandals
+  - Avoid recent formula: not young market tank/skort/sandals, not climbing skort, not dance rehearsal layers
+  - Pose family: `jump-motion`; face right; body front twist; wide-action
+  - Movement readability: planted foot on longboard, pushing foot, balanced arms, and open runway setting are clear
+  - Generated prompt summary: short prompt for an adult 18-19 Tempelhofer Feld active look with cropped rugby polo, wrapped half pants, linden pouch, socks, sneakers, and longboard action.
+  - Visual check: marker-sketch style, runway park, longboard motion, wrapped half pants, pouch, socks, sneakers, and adult social energy are readable.
+  - Result: accepted.
+
+### Generation Notes
+
+This run adds the 2026-06-15 daily set and deliberately moves away from recent
+Japan/rain/waterfront imagery. Clothing naturalness is evaluated by Berlin
+early-summer weather, venue norms, indoor climate, and activity: visible skin
+appears where the garment and motion call for it, and covered pieces appear
+where work, museum, or club utility makes them natural.
