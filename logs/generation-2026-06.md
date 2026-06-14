@@ -602,6 +602,140 @@ open backs, mesh, sandals, and carried or draped layers are acceptable when
 they fit warm humid Fukuoka. Moderation is handled by pose, crop, hand
 placement, and scene context, not by forcing high-neck or heavy clothing.
 
+## 2026-06-09 Marrakech Saffron Courtyard Design
+
+- Images: 4 final images
+- Generated on: 2026-06-14, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-09-marrakech-saffron-courtyard-design/`
+- Album: `assets/2026-06-09-marrakech-saffron-courtyard-design-album.html`
+- Note: `notes/2026-06-09-marrakech-saffron-courtyard-design.md`
+- City / place language: Marrakech, specifically Le Jardin Secret-style courtyard shade, a Guéliz contemporary design showroom, a Dar el Bacha-style museum courtyard reception, and a private riad rooftop
+- Local activity space plan: the set uses courtyard garden, design showroom, museum/courtyard reception, and riad rooftop as locally characteristic activity spaces rather than generic rooms, cafes, bars, or interchangeable interiors
+- Common mood: dry heat, tile shade, contemporary craft, travel polish, and sociable self-possession
+- Lucky color: saffron marigold
+- Lucky color age tone: `18-19-adult` glossy fresh accessory and fan-edge saffron; `20-24` brighter tailoring tabs or printed scarf; `25-29` smoky satin or polished restrained saffron
+- Climate fit: hot dry June Marrakech; clothing varies by shade, interior cooling, reception norms, and rooftop evening movement, using breathable cotton, linen, silk-linen, organza, cropped trousers, mules, loafers, slingbacks, perforated boots, and carried light layers
+- Categories: `weekend`, `mode`, `formal`, `travel`
+- Age bands: `18-19-adult`, `20-24`, `25-29`, `20-24`
+- Persona direction: selected adult trait mixes anchored in fashion interest, sociable travel behavior, design literacy, polished reception charm, and relaxed self-possession
+- Skin/coverage comfort plan: skin visibility is not treated as a problem or target. The `18-19-adult` look is not made more open because of age; young-adult energy comes from glossy color, fan/sketchbook behavior, and playful wrap-over-trouser proportion. All outfits are judged by heat, shade, venue, time, and action.
+- Pose families: `using-object`, `hands-in-pocket`, `adjusting-jacket`, `floor-sit`
+- Style presets: `anime-cel-polished`, `runway-board-illustration`, `watercolor-couture`, `digital-magazine-painting`
+- Source scan / reference note: local project reference files were not present in the workspace. Local presets, recent logs, and light Marrakech place/climate context were used. Setting names are broad place language only, not copied signage or exact interiors.
+- Recent set scan: recent additions include Singapore humid design walk, Melbourne winter layers, Helsinki craft/climbing, Mexico City creative weekday, and many Japan rain/water/market-gallery-lounge-transit formulas
+- Cooldown formulas: Japan rain and wet-pavement reflections, market/gallery/lounge/transit quartet, open-back gallery crop, seated lounge camisole, warm-weather tank/open-shirt/sandal formula, waterfront balance, generic interior cafe/bar
+- Category rotation reason: `weekend`, `mode`, `formal`, and `travel` create courtyard, showroom, museum reception, and rooftop travel scenes without repeating the recent default quartet or the June Japan/rain/water pattern
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-weekend-le-jardin-secret-fan-anime-note.png`
+  - Source file: `ig_0c0e10b5b12b91b2016a2de407d55081919497a581ac48b62a.png`
+  - Primary category: `weekend`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `weekend`, `marrakech`, `le-jardin-secret`, `courtyard`, `cotton`, `wrap-panel`, `saffron-marigold`
+  - Place: Marrakech, Le Jardin Secret-style shaded courtyard, dry hot morning
+  - Person: adult Japanese-centered 18-19 woman, bright young traveler sketching in shade
+  - Persona traits: bright, personable, curious, fashion-aware
+  - Fashion: short-sleeve white cotton shirt, saffron-marigold wrap skirt panel over cropped cream trousers, fan, sketchbook, woven mini bag, glossy mules, hair clip, gold-toned earrings
+  - Fashion focal point: wrap panel over cropped trousers plus fan and hair clip color
+  - Lucky color tone for age: glossy fresh saffron on fan edge, hair clip, and wrap panel
+  - Skin/coverage comfort: cotton shirt, open collar, cropped trousers, mules, and shaded courtyard seating are natural for dry heat; age is not expressed by forcing more skin
+  - Comfort naturalness: wearable for a hot shaded morning and sketchbook/fan use
+  - Climate context: Marrakech June dry heat, shaded courtyard, seated/object interaction
+  - Age-band life scene: adult 18-19 traveler on a design/courtyard morning
+  - Age-band silhouette: playful wrap panel over cropped trousers, not a teen-idol or exposure-led look
+  - Avoid recent formula: not rainy Japan market crouch, not tank/open-shirt/skort/sandal, not wet waterfront
+  - Pose family: `using-object`; planned face left, body three-quarter, eye-level knee-up; final reads as seated object interaction
+  - Movement readability: fan and sketchbook use are clear
+  - Generated prompt summary: short prompt for an adult 18-19 Marrakech shaded courtyard look with cotton shirt, saffron wrap panel, cropped trousers, mules, fan, and sketchbook.
+  - Visual check: courtyard shade, fan, sketchbook, wrap panel, cropped trousers, mules, and adult styling are readable. It deviates from the planned knee-up crop into a seated pose.
+  - Result: accepted with pose-deviation note.
+- `02-mode-gueliz-showroom-vest-runway.png`
+  - Source file: `ig_0c0e10b5b12b91b2016a2de44048e481919c4267bed53f9ca4.png`
+  - Primary category: `mode`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `mode`, `marrakech`, `gueliz`, `showroom`, `linen`, `barrel-trousers`, `saffron-marigold`
+  - Place: Marrakech, Guéliz contemporary design showroom, hot afternoon with indoor cooling
+  - Person: adult Japanese-centered early-20s woman, experimental design-shop visitor
+  - Persona traits: sociable, sharp, experimental, fashion-aware
+  - Fashion: sleeveless long-line linen vest with side vents, compact white knit tee, dusty stone barrel trousers, saffron-marigold belt tabs, square-toe loafers, slim cuff bracelet, small shoulder pouch
+  - Fashion focal point: side-vent vest and saffron belt tabs
+  - Lucky color tone for age: brighter tailored saffron tabs
+  - Skin/coverage comfort: sleeveless tailoring over a tee and trousers fits hot outdoor arrival plus a cooler showroom
+  - Comfort naturalness: design-showroom tailoring avoids both beachwear and heavy office armor
+  - Climate context: Marrakech June afternoon, indoor design showroom, standing/hands-in-pocket
+  - Age-band life scene: early-20s design showroom visit
+  - Age-band silhouette: architectural long vest over barrel trousers
+  - Avoid recent formula: not open-back gallery crop, not craft apron, not tank/open-shirt warm-weather formula
+  - Pose family: `hands-in-pocket`; face camera; body front; low eye-level full-body
+  - Movement readability: showroom stance and garment-rack context are stable and clear
+  - Generated prompt summary: short prompt for a Guéliz showroom mode look with sleeveless long vest, tee, barrel trousers, saffron belt tabs, loafers, and pouch.
+  - Visual check: runway-board style, showroom swatches/garment rack, vest, trousers, loafers, and saffron tabs are readable.
+  - Result: accepted.
+- `03-formal-dar-el-bacha-sash-watercolor.png`
+  - Source file: `ig_0c0e10b5b12b91b2016a2de4a08b30819195a662e1eb955997.png`
+  - Primary category: `formal`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `watercolor-couture`
+  - Secondary tags: `formal`, `marrakech`, `dar-el-bacha`, `museum`, `courtyard`, `organza`, `saffron-marigold`
+  - Place: Marrakech, Dar el Bacha-style museum courtyard reception, late afternoon
+  - Person: adult Japanese-centered late-20s woman, polished reception guest
+  - Persona traits: elegant, self-possessed, personable, adult editorial charm, fashion-aware
+  - Fashion: pale clay silk-linen wrap dress, sheer cropped organza jacket, smoky saffron-marigold satin sash, low slingback pumps, sculptural earrings, compact clutch, blank program card
+  - Fashion focal point: smoky saffron sash and transparent cropped jacket
+  - Lucky color tone for age: smoky satin saffron
+  - Skin/coverage comfort: square/open back view, light silk-linen, sheer jacket, and slingbacks are natural for a hot shaded reception; it is not accepted or rejected based on skin amount
+  - Comfort naturalness: polished but breathable formalwear for a courtyard museum event
+  - Climate context: Marrakech dry late afternoon, shaded museum courtyard, reception movement
+  - Age-band life scene: late-20s formal design/culture reception guest
+  - Age-band silhouette: refined wrap dress and sash with sheer jacket
+  - Avoid recent formula: not hotel lounge camisole, not Vienna satin theater dress, not riverside night look
+  - Pose family: `adjusting-jacket`; face right; body back-three-quarter; diagonal knee-up/full-body hybrid
+  - Movement readability: jacket adjustment and blank program card are clear
+  - Generated prompt summary: short prompt for a Dar el Bacha-style formal courtyard look with wrap dress, sheer jacket, saffron sash, slingbacks, clutch, and program card.
+  - Visual check: watercolor style, museum courtyard, sash, sheer jacket, slingbacks, clutch, and reception context are readable.
+  - Result: accepted.
+- `04-travel-riad-rooftop-jumpsuit-digital-note.png`
+  - Source file: `ig_0c0e10b5b12b91b2016a2de53b659c8191bd5ff12fac55cb46.png`
+  - Primary category: `travel`
+  - Target age band: `20-24`
+  - Style family: `semi-real-digital`
+  - Style preset: `digital-magazine-painting`
+  - Secondary tags: `travel`, `marrakech`, `riad-rooftop`, `jumpsuit`, `scarf`, `perforated-boots`, `saffron-marigold`
+  - Place: Marrakech, private riad rooftop before evening
+  - Person: adult Japanese-centered early-20s woman, relaxed traveler tying a scarf to a bag
+  - Persona traits: relaxed, sociable, playful, a little daring, fashion-aware
+  - Fashion: light sleeveless utility jumpsuit, cropped airy overshirt carried/tied at waist, saffron-marigold printed scarf on bag handle, perforated summer ankle boots, stacked bracelets, soft bucket bag
+  - Fashion focal point: utility jumpsuit plus scarf-tied travel bag and perforated boots
+  - Lucky color tone for age: bright printed saffron scarf
+  - Skin/coverage comfort: sleeveless jumpsuit, carried light layer, and perforated boots fit a dry rooftop evening and short dinner transition
+  - Comfort naturalness: travel-ready and breathable without reducing heat logic to sandals only
+  - Climate context: Marrakech dry evening rooftop, light breeze, scarf-tying travel-bag action
+  - Age-band life scene: early-20s traveler preparing to go out
+  - Age-band silhouette: relaxed utility jumpsuit and perforated boots
+  - Avoid recent formula: not transit terminal arrival, not lounge seated camisole, not waterfront balance
+  - Pose family: `floor-sit`; face down; body left-profile; high diagonal knee-up
+  - Movement readability: scarf tying and bag preparation are clear
+  - Generated prompt summary: short prompt for a riad rooftop travel look with utility jumpsuit, carried overshirt, saffron scarf, perforated boots, bracelets, and bag.
+  - Visual check: rooftop, city distance, jumpsuit, scarf, bag, boots, and tying action are readable. It is photo-adjacent rather than strongly digital magazine painting.
+  - Result: accepted with style-deviation note.
+
+### Generation Notes
+
+This run fills 2026-06-09 and deliberately uses a dry, non-Japan, locally
+specific Marrakech set. It avoids recent rain, wet pavement, waterfront,
+market/gallery/lounge/transit, and generic interior formulas. Clothing
+naturalness is judged by heat, shade, indoor cooling, museum/design/riad venue
+norms, and activity. The `18-19-adult` look is not made more open by default;
+age reads through proportion, glossy accessory color, and social travel action.
+
 ## 2026-06-08 Taipei Guava Specific Places V2
 
 - Images: 4 final images
