@@ -9,11 +9,12 @@ It is the compact parameter map for Chat Voyage daily fashion generation.
 date_seed: YYYY-MM-DD, usually Asia/Tokyo
 theme: daily theme or short concept
 city: primary city
-place_language: four scene/place directions, one per image when possible
+place_language: four concrete scene/place directions, one per image when possible; include locally specific indoor or activity spaces when relevant, not only generic rooms, offices, cafes, bars, or restaurants
 common_mood: one subtle shared mood
 lucky_color: one shared color, varied by placement and intensity
 lucky_color_age_tone: how the same lucky color shifts by age band
 climate_fit: weather, temperature, humidity, venue, and activity comfort notes
+local_activity_space_plan: how the set uses city-specific places, including museums, art museums, galleries, clubs, live houses, theaters, cinemas, libraries, ateliers, sports facilities, public halls, stations, markets, covered arcades, cafes, bars, rooms, workspaces, restaurants, terraces, or streets as appropriate
 fashion_category: four slugs from prompts/category-presets.md
 style_preset: one shared slug or four slugs from prompts/style-presets.md
 style_family: family for each selected style preset
@@ -58,14 +59,14 @@ persona_direction: how the selected traits, self-awareness, charm, and fashion i
 persona_traits: the selected trait mix for this image
 pose_language: pose family, face direction, body direction, camera angle, hand placement, crop
 movement_readability: clear action, weight, intention, and optional chosen risk, especially for boats, ferries, trains, buses, stations, stairs, platforms, piers, bridges, and water edges
-scene_language: city, place, time/weather, background support
+scene_language: city, specific place, time/weather, background support; indoor scenes should name the kind of local activity space, not collapse to generic rooms or cafes
 fashion_language: garment list, construction, materials, texture, proportion, shoes, legwear, accessories
 fashion_focal_point: chosen styling point such as color, accessory, fabric, silhouette, shoes, bag, jewelry, hair accessory, layering, or fabric movement
 lucky_color_use: where the daily lucky color appears
 lucky_color_tone_for_age: brightness, saturation, material, and placement for the selected age band
 skin_coverage_comfort: how skin visibility, sheer layers, hem length, neckline, sleeve, or cutout choices feel natural for the category, climate, venue, and action
 comfort_naturalness: breathable fabric, seasonal weight, movement, footwear, and layering logic
-climate_context: city, season, weather, temperature band, humidity, time of day, indoor/outdoor, wind or air conditioning, rain intensity, venue norms, and activity
+climate_context: city, season, weather, temperature band, humidity, time of day, indoor/outdoor, wind or air conditioning, rain intensity, venue norms, local activity space, and activity
 age_band_life_scene: what this age band is doing in adult life, not only how old she looks
 age_band_silhouette: how the silhouette differs from the other age bands and recent sets
 age_band_material_logic: why the material choice fits this age band, scene, and climate
@@ -87,6 +88,7 @@ saved_in
 album
 note
 city_place_language
+local_activity_space_plan
 common_mood
 lucky_color
 lucky_color_age_tone
@@ -193,6 +195,11 @@ recent-set repetition notes and any intentional repeats
   category calls for it.
 - The age bands differ by life scene, silhouette, materials, accessories, and
   styling attitude, not only by color tone or face age.
+- Places are concrete and locally characteristic. Indoor scenes are not limited
+  to ordinary rooms, work, meals, cafes, or bars; they can include museums, art
+  museums, galleries, clubs, live houses, theaters, cinemas, libraries,
+  ateliers, sports facilities, public halls, stations, markets, or covered
+  arcades when those spaces fit the city, time, and category.
 - Dynamic actions are readable and intentional for the setting. Risky or
   balancing actions are allowed when they are clearly chosen by the character:
   the image should show what she is doing, where her weight is, and why the

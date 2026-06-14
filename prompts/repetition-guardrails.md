@@ -15,6 +15,7 @@ entries and list the repeated patterns. Check at least:
 - outer-layer formula
 - shoe formula
 - background formula
+- generic interior formula versus locally specific activity space
 - crop and camera formula
 - age-band role assignment
 - lucky-color placement
@@ -35,6 +36,7 @@ temperature_band:
 humidity:
 time_of_day:
 indoor_or_outdoor:
+local_activity_space:
 wind_or_air_conditioning:
 rain_intensity:
 walking_or_stationary:
@@ -101,6 +103,23 @@ labels:
 
 The category choice should change garment construction and life scene, not
 only the background.
+
+## Local Place Specificity
+
+Do not treat indoor variety as only ordinary rooms, work, meals, cafes, or
+bars. Use local activity spaces when they fit the date and category:
+
+- museums, art museums, galleries, design centers, public halls, libraries, and
+  archives
+- clubs, live houses, listening rooms, theaters, cinemas, rehearsal studios,
+  and performance foyers
+- sports facilities, dance studios, climbing gyms, pools, baths, stations,
+  markets, covered arcades, and transit halls
+
+The place should feel characteristic of the city or region, not a generic
+interior with the city name attached. The local place choice should also affect
+outfit construction, footwear, layer logic, pose, object interaction, and
+time-of-day behavior.
 
 ## Prompt V2 Anti-Template Rule
 

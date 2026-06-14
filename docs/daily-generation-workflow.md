@@ -23,6 +23,11 @@ Use this checklist after every daily image generation or reorganization.
 - Decide climate fit from city, season, time of day, weather, temperature band,
   humidity, indoor/outdoor conditions, wind or air conditioning, rain intensity,
   venue norms, and activity. Do not default to one warm-weather formula.
+- Include locally specific indoor or activity spaces when they fit the set.
+  Indoor is not limited to rooms, work, meals, cafes, or bars; use museums, art
+  museums, galleries, clubs, live houses, theaters, cinemas, libraries,
+  ateliers, sports facilities, public halls, stations, markets, covered
+  arcades, or similar local places when they are characteristic of the city.
 - Vary age bands by life scene, silhouette, material, and accessories, not only
   by color tone or face age.
 - Define how the core persona appears in each image: bright, sociable, lively,

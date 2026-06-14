@@ -28,6 +28,12 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
   conditioning, rain intensity, venue norms, and activity. Do not default to
   tanks, camisoles, open shirts, mesh, and sandals only because the weather is
   warm or humid.
+- Treat indoor scenes broadly. Indoor does not mean only rooms, offices,
+  meals, cafes, or bars; it can also mean locally specific activity spaces such
+  as museums, art museums, galleries, clubs, live houses, theaters, cinemas,
+  libraries, ateliers, sports facilities, public halls, stations, markets, or
+  covered arcades. Choose places that are characteristic of the city or region
+  rather than generic interiors.
 - Brand names may be used only as loose mood references; do not reproduce logos, readable marks, exact products, or source-photo compositions.
 
 ## Category Selection
@@ -51,7 +57,9 @@ Use the selected category slug as each filename prefix. Existing sets using
 
 ## Input Layers
 
-1. Daily direction: date seed, city, weather, seasonal mood, and fashion language.
+1. Daily direction: date seed, city, weather, seasonal mood, place language,
+   and fashion language. Place language should include concrete local settings,
+   including locally specific indoor or activity spaces when they fit the day.
 2. Visual style: choose a style family and exact preset from
    `style-presets.md`, such as `anime-editorial`, `pbr-fashion-3d`,
    `marker-sketch`, or `digital-magazine-painting`.
@@ -112,7 +120,10 @@ Fashion direction:
 - fashion focal point: {one or two distinctive styling details, not everything loud at once}
 - avoid recent formula: {recent repeated formula this image does not use}
 - outfit focus: {silhouette, garment types, fabric, color accents}
-- setting: {city/gallery/night waterfront/resort terrace/etc.}
+- setting: {specific city place; include locally characteristic indoor or
+  activity spaces such as museum, art museum, club, theater, library, atelier,
+  station, market hall, covered arcade, sports facility, cafe, bar, room,
+  workplace, restaurant, terrace, or street when appropriate}
 
 Constraints:
 - no logos
@@ -129,6 +140,10 @@ Constraints:
 - skin visibility is not a problem by itself; judge whether neckline, sleeve,
   hem, fabric, footwear, and layering are natural for the city, venue, weather,
   age band, and activity
+- indoor settings should be concrete local places, not only generic rooms,
+  offices, meals, cafes, or bars; museums, art museums, clubs, live houses,
+  theaters, libraries, ateliers, sports facilities, public halls, stations,
+  markets, and covered arcades can be used when characteristic of the city
 - do not use high necklines, heavy layers, long sleeves, or closed shoes as a
   default guardrail fix when they do not fit the climate, venue, or activity
 - do not use tanks, camisoles, open shirts, mesh, or sandals as a default
@@ -152,7 +167,8 @@ For every final image, record:
 - style family: broad family from `style-presets.md`
 - style preset: exact style preset slug
 - pose family: selected pose family from `pose-presets.md`
-- place: city and scene type
+- place: city and specific local scene type, including any locally distinctive
+  indoor/activity space when relevant
 - climate context: city, season, time, weather, humidity, venue, and activity
 - age-band life scene and silhouette logic
 - persona direction and fashion focal point

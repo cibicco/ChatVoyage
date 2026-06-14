@@ -49,6 +49,11 @@ single four-panel collage.
      coverage, and layering according to scene needs
    - climate and comfort logic so the outfit is natural for the weather,
      venue, temperature, and activity
+   - a local place plan that treats indoor scenes broadly: not only rooms,
+     work, meals, cafes, or bars, but also city-specific activity spaces such
+     as museums, art museums, galleries, clubs, live houses, theaters, cinemas,
+     libraries, ateliers, sports facilities, public halls, stations, markets,
+     and covered arcades when they fit the set
    - the variation axes across all four images
    - a recent-set repetition check using `prompts/repetition-guardrails.md`
    - the required parameter map from `prompts/parameter-checklist.md`
@@ -110,6 +115,8 @@ Vary more than color. Across the four prompts, explicitly vary:
 - lucky-color placement by garment type, not only color of a repeated garment
 - styling attitude
 - time of day and background
+- local place type, including city-specific indoor or activity spaces when
+  relevant rather than only generic rooms, offices, cafes, bars, or restaurants
 - visual style preset when the user asks for mixed style exploration
 - pose family, face direction, body direction, camera angle, hand placement,
   and crop
@@ -143,6 +150,14 @@ the life scene, silhouette, material logic, accessory logic, and styling
 attitude. Do not repeatedly assign the same role such as young market casual,
 early-20s open-back gallery, late-20s seated camisole lounge, and early-20s
 mesh transit unless that repeat is intentional and logged.
+
+Indoor and activity scenes should be locally specific. Indoor does not mean
+only ordinary rooms, work, meals, cafes, or bars. Use city- or region-specific
+activity spaces such as museums, art museums, galleries, clubs, live houses,
+theaters, cinemas, libraries, ateliers, sports facilities, public halls,
+stations, markets, covered arcades, baths, or performance foyers when they fit
+the date and category. The place should affect outfit construction, footwear,
+layering, pose, object interaction, and time-of-day behavior.
 
 Full-body is allowed but not required. Use knee-up, waist-up, close-up detail,
 wide-action, seated, back three-quarter, jumping, reaching, leaning, or object
@@ -186,6 +201,8 @@ Before accepting the set, check:
 - Climate fit reflects city, season, time of day, rain intensity, indoor or
   outdoor setting, wind or air conditioning, venue norms, and activity instead
   of defaulting to tanks, camisoles, mesh, open shirts, and sandals.
+- Indoor or activity places are concrete and locally characteristic, not only
+  generic rooms, work, meals, cafes, bars, or interchangeable interiors.
 - No single source, brand look, celebrity outfit, or reference image is reproduced.
 - Backgrounds support the outfit context without overpowering the figure.
 - No visible text, watermark, logo imitation, or brand mark is requested.
