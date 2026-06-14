@@ -236,6 +236,134 @@ Fashion language:
 - Old source files were not treated as automatically current; current source scan corrected their freshness.
 - No logo, readable brand text, exact product-copy instruction, or single-reference reproduction was used.
 
+## 2026-05-28 Singapore Mango-Lime Design Walk
+
+- Images: 4 final images
+- Generated on: 2026-06-14, Asia/Tokyo
+- Saved in: `assets/daily/2026-05-28-singapore-mango-lime-design-walk/`
+- Album: `assets/2026-05-28-singapore-mango-lime-design-walk-album.html`
+- Note: `notes/2026-05-28-singapore-mango-lime-design-walk.md`
+- City / place language: Singapore, specifically Tiong Bahru art-deco breezeway, National Design Centre-style design office atrium, Esplanade-style performance foyer, and Joo Chiat shophouse five-foot-way
+- Common mood: humid design city, shaded arcades, citrus brightness, and social polish
+- Lucky color: mango-lime
+- Lucky color age tone: `18-19-adult` fresh glossy citrus details; `20-24` brighter beaded or experimental accents; `25-29` restrained silk, lacquer, or tailored citrus accents
+- Climate fit: Singapore humidity and indoor air conditioning are both considered; outfits use breathable cotton, linen tailoring, organza, shirt-dress construction, socks, sneakers, low pumps, mules, and sandals according to venue and action
+- Categories: `weekend`, `office`, `theater`, `date`
+- Age bands: `18-19-adult`, `25-29`, `20-24`, `25-29`
+- Persona direction: fashion-aware adult women with selected trait mixes anchored in social confidence, design polish, performance-night energy, and quiet evening charm
+- Skin/coverage comfort plan: clothing naturalness is judged by humidity, shade, air conditioning, evening movement, venue norms, and activity, not by visible skin amount
+- Pose families: `walking-stride`, `using-object`, `adjusting-jacket`, `leaning-wall`
+- Style presets: `anime-fashion-magazine`, `runway-board-illustration`, `watercolor-couture`, `semi-real-editorial`
+- Source scan / reference note: local project reference files were not present in the workspace. Local presets, recent logs, and light Singapore place context were used. Setting names are broad place language only, not copied signage or exact interiors.
+- Recent set scan: surrounding May sets include Fukuoka coral urban resort, Kanazawa rainy craft modern, Yokohama burgundy theater/harbor, and Sapporo literary tram. The new set avoids the old street/mode/night/resort quartet and recent rain/waterfront/velvet/ryokan/theater-brick formulas.
+- Cooldown formulas: market/gallery/lounge/transit quartet, rain-reflection street, tank/open-shirt/sandal formula, waterfront resort, hotel lounge camisole, copied theater-brick burgundy styling
+- Category rotation reason: `weekend`, `office`, `theater`, and `date` give a humid city design balance without repeating the 5/24 resort system or 5/27 rainy craft/night system
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-weekend-tiong-bahru-camp-shirt-anime.png`
+  - Source file: `ig_0c0e10b5b12b91b2016a2e4726d2088191b5c47b1cb785bb85.png`
+  - Primary category: `weekend`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `weekend`, `singapore`, `tiong-bahru`, `camp-shirt`, `half-pants`, `mango-lime`
+  - Place: Singapore, Tiong Bahru-style shaded art-deco breezeway, humid late morning
+  - Person: adult Japanese-centered 18-19 woman, bright weekend walker
+  - Persona traits: bright, sociable, playful, fashion-aware
+  - Fashion: short-sleeve cotton camp shirt, mango-lime buttons, asymmetric wrap skort over city half-pants, ribbed socks, low-profile sneakers, citrus hair clip, compact crossbody pouch
+  - Fashion focal point: wrap skort over half-pants and glossy citrus details
+  - Lucky color tone for age: fresh glossy citrus button and hair-clip accents
+  - Skin/coverage comfort: cotton, half-pants, socks, and sneakers fit humid shaded walking without forcing a tank or sandals
+  - Comfort naturalness: wearable for hot late-morning Singapore street movement
+  - Climate context: humid Singapore, shaded outdoor arcade, walking with a blank iced drink
+  - Age-band life scene: adult young weekend cafe walk
+  - Age-band silhouette: playful skort-over-half-pants layering
+  - Avoid recent formula: not rainy Japan market crouch, not open shirt plus tank plus sandals, not waterfront reflections
+  - Pose family: `walking-stride`; face camera; body right-profile; diagonal eye-level full-body
+  - Movement readability: walking, drink hold, and bag-strap gesture are clear
+  - Generated prompt summary: short prompt for an adult 18-19 Tiong Bahru weekend look with camp shirt, wrap skort, half-pants, sneakers, blank drink, and citrus hair clip.
+  - Visual check: art-deco breezeway, walking pose, camp shirt, wrap skort, sneakers, drink, and citrus details are readable.
+  - Result: accepted.
+- `02-office-design-centre-waistcoat-runway.png`
+  - Source file: `ig_0c0e10b5b12b91b2016a2e4776b3dc8191bd26bedf6c61c022.png`
+  - Primary category: `office`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `office`, `singapore`, `design-centre`, `waistcoat`, `tailoring`, `mango-lime`
+  - Place: Singapore, National Design Centre-style office atrium, humid noon outside and cool interior
+  - Person: adult Japanese-centered late-20s woman, design professional reviewing materials
+  - Persona traits: self-possessed, sharp, personable, polished, fashion-aware
+  - Fashion: sleeveless oyster linen waistcoat, fine short-sleeve knit top, charcoal tapered trousers, mango-lime pocket square, slingback low pumps, slim watch, structured tote
+  - Fashion focal point: sleeveless waistcoat tailoring and restrained citrus pocket square
+  - Lucky color tone for age: controlled tailored citrus accent
+  - Skin/coverage comfort: sleeveless tailoring over a fine knit and trousers fits indoor air conditioning and humid outdoor transition
+  - Comfort naturalness: work-adjacent rather than beachwear or heavy office armor
+  - Climate context: humid Singapore noon, air-conditioned design atrium, swatch review
+  - Age-band life scene: late-20s design professional
+  - Age-band silhouette: polished waistcoat and tapered trouser line
+  - Avoid recent formula: not gallery open-back crop, not lounge camisole, not craft apron
+  - Pose family: `using-object`; face left; body front; eye-level full-body
+  - Movement readability: clipboard and fabric swatch interaction are clear
+  - Generated prompt summary: short prompt for a late-20s Singapore design office look with sleeveless waistcoat, tapered trousers, clipboard, pumps, and pocket square.
+  - Visual check: runway-board style, office atrium, tailoring, swatches, pumps, tote, and mango-lime pocket square are readable.
+  - Result: accepted.
+- `03-theater-esplanade-organza-watercolor.png`
+  - Source file: `ig_0c0e10b5b12b91b2016a2e47c0248c8191b96f3b74e01c26b3.png`
+  - Primary category: `theater`
+  - Target age band: `20-24`
+  - Style family: `fashion-illustration`
+  - Style preset: `watercolor-couture`
+  - Secondary tags: `theater`, `singapore`, `esplanade`, `organza`, `bias-skirt`, `mango-lime`
+  - Place: Singapore, Esplanade-style performance foyer before an evening program
+  - Person: adult Japanese-centered early-20s woman, sociable performance-goer
+  - Persona traits: lively, sociable, elegant, a little daring, fashion-aware
+  - Fashion: fitted square-neck rib top, cropped translucent organza jacket, ink navy bias-cut midi skirt, mango-lime beaded bag strap, low satin mules, asymmetric earrings
+  - Fashion focal point: translucent jacket and beaded citrus bag strap
+  - Lucky color tone for age: brighter beaded experimental accent
+  - Skin/coverage comfort: light organza, square neckline, midi skirt, and mules fit humid evening and cool foyer conditions
+  - Comfort naturalness: dressed for a performance foyer without forcing high necks or heavy layers
+  - Climate context: humid evening outside, cool performance interior, pre-show standing and jacket adjustment
+  - Age-band life scene: early-20s performance night
+  - Age-band silhouette: rib top plus bias midi skirt and transparent cropped jacket
+  - Avoid recent formula: not riverside night satin, not lounge camisole seated pose, not rain-reflection street
+  - Pose family: `adjusting-jacket`; face right; body back-three-quarter; diagonal knee-up
+  - Movement readability: jacket adjustment and blank ticket envelope are clear
+  - Generated prompt summary: short prompt for an early-20s Esplanade theater look with organza jacket, rib top, bias skirt, beaded bag strap, mules, and ticket envelope.
+  - Visual check: watercolor style, performance foyer, jacket adjustment, bias skirt, bag strap, and mules are readable. The waterfront appears through the glass, but the primary scene remains the foyer.
+  - Result: accepted.
+- `04-date-joo-chiat-shirt-dress-semi-real-note.png`
+  - Source file: `ig_0c0e10b5b12b91b2016a2e487646cc81918b1fa79aa175291c.png`
+  - Primary category: `date`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `semi-real-editorial`
+  - Secondary tags: `date`, `singapore`, `joo-chiat`, `shirt-dress`, `sandal`, `mango-lime`
+  - Place: Singapore, Joo Chiat-style shophouse five-foot-way before dinner
+  - Person: adult Japanese-centered late-20s woman, relaxed evening date
+  - Persona traits: relaxed, sensual in an adult editorial way, personable, quietly confident, fashion-aware
+  - Fashion: sleeveless square-neck washed cotton shirt dress, mango-lime lacquer belt, carried sheer short-sleeve layer, slim anklet, low block-heel sandals, woven clutch
+  - Fashion focal point: shirt dress with lacquer belt and sandal gesture
+  - Lucky color tone for age: restrained lacquer citrus belt
+  - Skin/coverage comfort: cotton dress, natural square neckline, sandals, and carried layer are plausible for humid evening dinner
+  - Comfort naturalness: not a forced coverage correction; the outfit suits the venue and heat
+  - Climate context: humid Singapore evening, covered shophouse walkway, leaning and shoe adjustment
+  - Age-band life scene: late-20s dinner date after work or travel
+  - Age-band silhouette: edited square-neck shirt dress with long line and side slit
+  - Avoid recent formula: not hotel lounge camisole, not waterfront resort, not seated balcony/home scene
+  - Pose family: `leaning-wall`; face over-shoulder; body three-quarter; side eye-level knee-up
+  - Movement readability: leaning and shoe/sandal adjustment read as intentional; the original fastening action is looser than planned
+  - Generated prompt summary: short prompt for a late-20s Joo Chiat date look with square-neck shirt dress, lacquer belt, carried sheer layer, sandals, and woven clutch.
+  - Visual check: shophouse walkway, shirt dress, belt, carried layer, clutch, sandals, and leaning action are readable. The image is photo-adjacent rather than strongly semi-real digital art.
+  - Result: accepted with style and pose notes.
+
+### Generation Notes
+
+This run fills 2026-05-28 and deliberately uses a humid non-Japan city without returning to market/gallery/lounge/transit defaults. Clothing is chosen from Singapore's heat, shade, indoor air conditioning, performance venue norms, and evening street movement. Skin visibility is not treated as a problem or a target; garment naturalness and fashion readability are the acceptance criteria.
+
 ## 2026-05-31 Yokohama Burgundy Theater 3D
 
 - Images: 4 final images
