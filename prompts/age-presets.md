@@ -8,10 +8,11 @@ albums when practical. All characters must be adult.
 - `18-19-adult`: adult college-age or young working adult styling. University
   settings are allowed. A soft youthful face, petite build, round facial
   features, natural makeup, and gentle expression are allowed when the styling
-  and context still read as adult. The persona should feel bright, sociable,
-  fashion-interested, and confidently adult, with playful but non-teen-idol
-  styling details. Avoid school-uniform cues, child body proportions,
-  childlike styling, and underage framing.
+  and context still read as adult. The persona should feel like an adult with
+  her own day, preferences, comfort, and social context; she may be bright,
+  quiet, practical, daring, sociable, reserved, playful, or polished. Avoid
+  school-uniform cues, child body proportions, childlike styling, and underage
+  framing.
 - `20-24`: university, early career, street, cafe, market, club, active, and
   experimental fashion. The persona can be more exploratory, social, lively,
   and willing to use distinctive color, accessories, texture, asymmetry, or
@@ -22,13 +23,14 @@ albums when practical. All characters must be adult.
 
 ## Core Persona Across Ages
 
-All age bands share a bright, sociable, lively, fashion-aware baseline. The
-character should seem interested in clothes and capable of choosing a
-distinctive fashion point, whether that point is color, accessory, fabric,
-silhouette, shoes, bag, hair accessory, jewelry, layering, or fabric movement.
-She can be aware of her own charm, but the image should express this through
-adult confidence, styling, posture, and social energy rather than erotic
-framing.
+All age bands share agency and fashion awareness, not a single personality.
+The character should seem capable of choosing a distinctive fashion point,
+whether that point is color, accessory, fabric, silhouette, shoes, legwear,
+bag, hair accessory, jewelry, layering, or fabric movement. She can be aware
+of her own appeal or simply dressed for comfort, mood, work, pleasure,
+movement, weather, or social life. The image should express this through
+adult context, styling, posture, gesture, and scene behavior rather than
+automatic erotic framing or automatic sanitizing.
 
 ## Clothing Naturalness And Skin Visibility
 
@@ -57,7 +59,8 @@ For `18-19-adult`, do not convert adult young styling into automatic coverage.
 Mini skirts, short skorts, bare legs, socks, sandals, cropped tops, open shirts,
 or playful legwear can be natural when the body proportions, context, pose,
 and outfit read as adult fashion rather than underage framing. The check is
-adult context and garment-focused composition, not skin amount.
+adult context, garment-focused composition, and the person's situated activity,
+not skin amount or an assumption that youth must be either hidden or displayed.
 
 Do not solve age guardrails by forcing unnaturally covered clothing. Neckline,
 sleeve, hem, fabric weight, and layering should fit the city, season, weather,

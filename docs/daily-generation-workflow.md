@@ -30,9 +30,10 @@ Use this checklist after every daily image generation or reorganization.
   arcades, or similar local places when they are characteristic of the city.
 - Vary age bands by life scene, silhouette, material, and accessories, not only
   by color tone or face age.
-- Define how the core persona appears in each image: bright, sociable, lively,
-  fashion-aware, intentionally stylish, and aware of her charm without erotic
-  framing.
+- Define how the person appears in each image: her adult life context, mood,
+  comfort, boundaries, social situation, fashion awareness, and reason for
+  wearing the outfit that day. Do not justify openness or coverage only by
+  youth, liveliness, sensuality, or modesty.
 - Choose one or two fashion focal points per image, such as color, accessory,
   fabric, silhouette, shoes, bag, jewelry, hair accessory, layering, or fabric
   movement.

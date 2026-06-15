@@ -19,8 +19,8 @@ fashion_category: four slugs from prompts/category-presets.md
 style_preset: one shared slug or four slugs from prompts/style-presets.md
 style_family: family for each selected style preset
 target_age_band: four values from prompts/age-presets.md
-persona_direction: selected adult trait mix from prompts/persona-presets.md, anchored in fashion awareness and charm
-persona_traits: two to five traits per image, such as personable, sociable, sensual, bright, daring, relaxed, elegant, playful, or self-possessed
+persona_direction: selected adult life-and-trait direction from prompts/persona-presets.md, anchored in agency, fashion awareness, comfort, context, and presentation
+persona_traits: two to five traits per image, such as personable, sociable, sensual, bright, quiet, practical, daring, relaxed, elegant, playful, reserved, or self-possessed
 pose_family: four values from prompts/pose-presets.md
 face_direction: one per image
 body_direction: one per image
@@ -56,7 +56,7 @@ target_age_band: age band
 style_family: broad style family
 style_preset: exact style preset slug
 person_language: age impression, hairstyle, build, expression, adult context
-persona_direction: how the selected traits, self-awareness, charm, and fashion interest appear
+persona_direction: how the selected traits, agency, self-awareness, comfort, boundaries, social context, and fashion interest appear
 persona_traits: the selected trait mix for this image
 pose_language: pose family, face direction, body direction, camera angle, hand placement, crop
 movement_readability: clear action, weight, intention, and optional chosen risk, especially for boats, ferries, trains, buses, stations, stairs, platforms, piers, bridges, and water edges
@@ -181,10 +181,11 @@ recent-set repetition notes and any intentional repeats
 - The four people are visibly different adults.
 - Each person reads as fashion-aware, interested in clothes, and intentionally
   stylish, with a selected adult trait mix such as personable, sociable,
-  sensual, bright, daring, relaxed, elegant, playful, or self-possessed. Adult
-  charm is expressed through posture, expression, gesture, outfit completion,
-  color, fabric, silhouette, accessories, or scene behavior rather than
-  automatic erotic framing.
+  sensual, bright, quiet, practical, daring, relaxed, elegant, playful,
+  reserved, or self-possessed. Adult presentation is expressed through
+  posture, expression, gesture, outfit completion, color, fabric, silhouette,
+  accessories, context, or scene behavior rather than automatic erotic framing
+  or automatic sanitizing.
 - Each image has one or two clear fashion focal points, such as accessory,
   fabric, silhouette, color placement, shoes, bag, jewelry, hair accessory,
   layering, or fabric movement.
@@ -216,6 +217,10 @@ recent-set repetition notes and any intentional repeats
   garment construction, climate, and activity vary. Do not let rainy, outerwear,
   or low-key themes collapse all looks into long, covered layers, and do not
   force openness where the venue or activity would make it unnatural.
+- Clothing openness or coverage is not justified by youth, liveliness,
+  sensuality, or modesty alone. Judge it as part of human life: weather,
+  comfort, movement, place, social context, taste, work, rest, play, travel,
+  ceremony, and the person's own presentation.
 - Outfit coverage must feel natural for the climate and activity. Do not force
   high necklines, heavy layers, long sleeves, or closed shoes just to reduce
   visible skin; choose breathable adult fashion that fits the city, season,

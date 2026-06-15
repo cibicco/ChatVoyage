@@ -110,14 +110,17 @@ identical face/body/hair patterns. University settings are allowed for adult
 characters.
 
 The persona should be selected per image, not forced into one fixed type.
-Every character should be fashion-aware, interested in clothes, good at
-choosing distinctive styling details, and aware of her own charm without being
-reduced to erotic display. Then choose two to five traits such as bright,
-sociable, personable, sensual, lively, self-possessed, playful, curious,
-daring, relaxed, elegant, sharp, or quietly confident. Express the selected
-traits through posture, expression, gesture, outfit completion, color, fabric,
-silhouette, accessories, and scene behavior. Prefer light, mobile, fashionable
-styling over heavy clothing used only as a guardrail.
+Every character should have ordinary human agency: a day, a place to be, a
+body, preferences, comfort, boundaries, mood, social context, and reasons for
+what she wears. She should be fashion-aware and capable of choosing
+distinctive styling details without being reduced to erotic display or
+sanitized coverage. Then choose two to five traits such as bright, quiet,
+sociable, personable, sensual, practical, self-possessed, playful, curious,
+daring, relaxed, elegant, reserved, sharp, or quietly confident. Express the
+selected traits through posture, expression, gesture, outfit completion,
+color, fabric, silhouette, accessories, context, and scene behavior. Prefer
+light, mobile, fashionable styling over heavy clothing used only as a
+guardrail.
 
 Vary more than color. Across the four prompts, explicitly vary:
 
@@ -149,6 +152,11 @@ open shirts, camisoles, mesh, sandals, miniskirts, short skorts, shorts, bare
 legs, socks, tights, bike shorts, and visible leg styling are all valid adult
 fashion choices when the full outfit, pose, scene, age band, and activity make
 them natural. Cool down repeated full formulas, not garment categories.
+
+Do not justify clothing openness or coverage only through youth, liveliness,
+sensuality, or modesty. Ground it in human life: weather, comfort, movement,
+venue, social context, taste, work, rest, play, travel, ceremony, and the
+person's own presentation for that day.
 
 Do not overcorrect into consistently covered looks, and do not force openness
 where it fights the scene. If the daily theme is rain, outerwear, transit, or

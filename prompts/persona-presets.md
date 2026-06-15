@@ -1,22 +1,24 @@
 # Daily Fashion Persona Presets
 
 Use this as the default person direction for Chat Voyage daily fashion sets.
-The person should feel like someone who actively enjoys clothes, not a neutral
-mannequin wearing a generated outfit.
+The person should feel like someone who actively lives in clothes, not a
+neutral mannequin wearing a generated outfit.
 
 ## Core Persona
 
-Every daily fashion character should read as an adult woman who actively
-enjoys clothes and styling. Do not force the same personality onto every
-image. Choose a compact trait mix for each person, then make the expression,
-pose, outfit, and scene support that choice.
+Every daily fashion character should read as an adult woman with ordinary
+human agency: she has a place to be, a mood, a body, a day, preferences, and
+reasons for choosing what she wears. Do not force the same personality onto
+every image. Choose a compact life-and-trait direction for each person, then
+make the expression, pose, outfit, and scene support that choice.
 
 Required anchors:
 
 - fashion-aware
 - interested in clothes and styling
 - good at selecting distinctive fashion details
-- aware of her own charm without being reduced to erotic display
+- allowed to be aware of her own appeal, comfort, boundaries, and presentation
+  without being reduced to erotic display
 - comfortable being seen
 - light and mobile rather than heavily armored in clothing
 - fashionable in a way that fits the city, time, weather, venue, and activity
@@ -43,6 +45,14 @@ bright and daring, quiet and self-possessed, or any other coherent combination.
 This is a styling direction, not a request for pin-up framing. Express charm,
 allure, confidence, or warmth through posture, gesture, expression, outfit
 completion, color, fabric, silhouette, accessories, and scene behavior.
+
+Do not justify a garment only by saying that the person is young, bright,
+lively, sociable, or sensual. A miniskirt, open shirt, camisole, bare legs,
+tights, boots, or any other styling choice should be justified by the whole
+human situation: weather, movement, venue, comfort, taste, social context,
+errand, work, play, rest, ceremony, travel, or the person's own presentation
+for that day. The point is not to sanitize or eroticize ordinary life; it is to
+let clothing belong to a person doing something.
 
 ## Distinctive Fashion Detail
 
@@ -121,13 +131,17 @@ do not avoid legwear just to make an outfit feel lighter.
 
 Apply the core persona differently by age band:
 
-- `18-19-adult`: bright adult young energy, practical movement, approachable
-  social confidence, playful but not teen-idol-coded detail.
-- `20-24`: experimental and sociable, more willing to try unusual color,
-  asymmetry, mixed textures, music/gallery/street influences, or distinctive
-  accessories.
-- `25-29`: self-possessed and polished, fashion-literate, refined charm,
-  sharper editing, stronger fabric choices, and intentional accessories.
+- `18-19-adult`: adult young life context such as campus-adjacent errands,
+  first-job days, friends, hobbies, local events, practice, travel, or rest.
+  Styling can be casual, polished, daring, quiet, practical, or playful without
+  becoming teen-idol-coded.
+- `20-24`: early adult life context such as work, study, nightlife, gallery,
+  music, active, cafe, travel, dating, or household routines. Styling can be
+  experimental, ordinary, sensual, sporty, minimal, social, or reserved.
+- `25-29`: adult life context such as work, design events, restaurants,
+  theater, travel, home, errands, friends, dates, or quiet night scenes.
+  Styling can be polished, relaxed, sensual, sharp, playful, practical, or
+  understated.
 
 Age-band differences should appear in silhouette, life scene, material,
 accessories, expression, and posture, not only in face age or color tone.
@@ -142,3 +156,5 @@ accessories, expression, and posture, not only in face age or color tone.
 - sexualized framing as a substitute for confidence or charm
 - forcing every person to be bright, sociable, and lively when a different
   trait mix would fit the scene better
+- treating clothing coverage or openness as a moral correction rather than a
+  situated human choice

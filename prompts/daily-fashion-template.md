@@ -14,8 +14,9 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
 - Select a pose family from `pose-presets.md` for each image before writing
   the outfit prompt.
 - Keep visible outfit variety across silhouette, fabric, color, setting, and styling.
-- Use `prompts/persona-presets.md` so each person reads as bright, sociable,
-  lively, fashion-aware, interested in clothes, and intentionally stylish.
+- Use `prompts/persona-presets.md` so each person reads as an adult with her
+  own day, preferences, body comfort, social context, fashion awareness, and
+  intentional styling.
 - Use date seed, weather or seasonal mood, and light current fashion references as inspiration.
 - Keep clothing natural for the city, season, weather, temperature, venue, and
   activity; do not force either coverage or openness when it would make the
@@ -97,8 +98,9 @@ Visual style:
 
 Optional person direction:
 - target_age_band: {18-19-adult | 20-24 | 25-29}
-- persona: bright, sociable, lively, fashion-aware, interested in styling,
-  aware of her own charm without erotic framing
+- persona: selected adult trait mix from persona-presets, fashion-aware,
+  situated in a specific day and activity, not reduced to erotic framing or
+  sanitized coverage
 - fashion focal point: {color | accessory | fabric | silhouette | shoes | bag | hair accessory | jewelry | layering | fabric movement}
 - {age impression, hairstyle, build, expression, character mood}
 
@@ -120,7 +122,8 @@ Fashion direction:
 - climate and comfort logic: {city, season, time of day, weather, temperature band, humidity, indoor/outdoor, wind or air conditioning, rain intensity, venue norms, movement, and why the outfit would be wearable}
 - age-band life scene: {adult life context for this age band}
 - age-band silhouette/material/accessory logic: {what differs by age beyond color tone}
-- persona direction: {how brightness, sociability, confidence, and fashion interest show up}
+- persona direction: {how the person's mood, agency, social context, comfort,
+  confidence, boundaries, and fashion interest show up}
 - fashion focal point: {one or two distinctive styling details, not everything loud at once}
 - avoid recent formula: {recent repeated full formula this image does not use;
   do not ban ordinary garments by themselves}
@@ -139,7 +142,7 @@ Constraints:
 - no exact commercial product copy
 - no celebrity or source-photo reproduction
 - no blank mannequin expression; the person should show adult social energy,
-  fashion interest, and intentional styling
+  fashion interest, situated purpose, and intentional styling
 - no school uniforms, sailor-uniform cues, teen-idol styling, childlike faces,
   or implication that the person is a minor
 - realistic youthful Japanese adult features are allowed; the problem is
@@ -148,6 +151,9 @@ Constraints:
 - skin visibility is not a problem by itself; judge whether neckline, sleeve,
   hem, fabric, footwear, and layering are natural for the city, venue, weather,
   age band, and activity
+- do not justify clothing openness or coverage only through youth, brightness,
+  liveliness, sensuality, or modesty; ground it in the person's actual
+  situation, comfort, taste, movement, venue, and activity
 - indoor settings should be concrete local places, not only generic rooms,
   offices, meals, cafes, or bars; museums, art museums, clubs, live houses,
   theaters, libraries, ateliers, sports facilities, public halls, stations,
