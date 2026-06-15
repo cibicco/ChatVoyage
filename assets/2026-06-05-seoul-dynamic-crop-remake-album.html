@@ -12,14 +12,14 @@
       --line: #d9dde2;
       --paper: #fbfaf7;
       --panel: #ffffff;
-      --accent: #236c7d;
+      --accent: #276f86;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
       line-height: 1.5;
     }
     main {
@@ -52,8 +52,9 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
+      align-items: start;
     }
     figure {
       margin: 0;
@@ -62,32 +63,28 @@
       border-radius: 8px;
       overflow: hidden;
     }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      
-      max-height: 82vh;
-      object-fit: contain;
-      background: #eef1f3;
-    }
-
     .image-link {
       display: block;
       background: #eef1f3;
     }
-    .open-image,
-    .open {
-      display: inline-block;
-      margin-top: 10px;
-      font-size: 0.9rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 82vh;
+      object-fit: contain;
+      background: #eef1f3;
     }
-
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
       font-size: 1rem;
       letter-spacing: 0;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
     }
     dl {
       display: grid;
@@ -102,7 +99,15 @@
       font-weight: 600;
     }
     dd { margin: 0; }
-
+    .tag {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .open-image {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
     @media (max-width: 720px) {
       main {
         width: min(100% - 18px, 480px);
@@ -133,7 +138,7 @@
         <figcaption>
           <h2>01 Transit - Floor Sit</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>transit</dd><dt>Pose</dt><dd>floor-sit / using-object</dd><dt>Crop</dt><dd>knee-up</dd></dl>
-                  <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/01-transit-floor-sit-fan.webp">Open image</a>
+          <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/01-transit-floor-sit-fan.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
@@ -141,7 +146,7 @@
         <figcaption>
           <h2>02 Market - Jump Motion</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>market</dd><dt>Pose</dt><dd>jump-motion</dd><dt>Crop</dt><dd>wide-action</dd></dl>
-                  <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/02-market-jump-motion-wide.webp">Open image</a>
+          <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/02-market-jump-motion-wide.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
@@ -149,7 +154,7 @@
         <figcaption>
           <h2>03 Club - Stretching Reach</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>club</dd><dt>Pose</dt><dd>stretching-reach</dd><dt>Crop</dt><dd>waist-up</dd></dl>
-                  <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/03-club-stretching-reach-crop.webp">Open image</a>
+          <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/03-club-stretching-reach-crop.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
@@ -157,7 +162,7 @@
         <figcaption>
           <h2>04 Gallery - Back Crop</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>gallery</dd><dt>Pose</dt><dd>back-three-quarter</dd><dt>Crop</dt><dd>close-up detail</dd></dl>
-                  <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/04-gallery-back-close-crop.webp">Open image</a>
+          <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/04-gallery-back-close-crop.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

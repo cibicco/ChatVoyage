@@ -12,14 +12,14 @@
       --line: #d9dde2;
       --paper: #fbfaf7;
       --panel: #ffffff;
-      --accent: #236c7d;
+      --accent: #276f86;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
       line-height: 1.5;
     }
     main {
@@ -52,8 +52,9 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
+      align-items: start;
     }
     figure {
       margin: 0;
@@ -62,32 +63,28 @@
       border-radius: 8px;
       overflow: hidden;
     }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      
-      max-height: 82vh;
-      object-fit: contain;
-      background: #eef1f3;
-    }
-
     .image-link {
       display: block;
       background: #eef1f3;
     }
-    .open-image,
-    .open {
-      display: inline-block;
-      margin-top: 10px;
-      font-size: 0.9rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 82vh;
+      object-fit: contain;
+      background: #eef1f3;
     }
-
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
       font-size: 1rem;
       letter-spacing: 0;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
     }
     dl {
       display: grid;
@@ -102,7 +99,15 @@
       font-weight: 600;
     }
     dd { margin: 0; }
-
+    .tag {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .open-image {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
     @media (max-width: 720px) {
       main {
         width: min(100% - 18px, 480px);
@@ -134,7 +139,7 @@
         <figcaption>
           <h2>01 Weekend - Dejima Canal</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>weekend</dd><dt>Style</dt><dd>anime-fashion-magazine</dd><dt>Pose</dt><dd>using-object</dd></dl>
-                  <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/01-weekend-dejima-wrap-half-pants.webp">Open image</a>
+          <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/01-weekend-dejima-wrap-half-pants.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
@@ -142,7 +147,7 @@
         <figcaption>
           <h2>02 Mode - Megane Bridge</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>mode</dd><dt>Style</dt><dd>digital-magazine-painting</dd><dt>Pose</dt><dd>walking-stride balance</dd></dl>
-                  <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/02-mode-megane-bridge-balance.webp">Open image</a>
+          <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/02-mode-megane-bridge-balance.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
@@ -150,7 +155,7 @@
         <figcaption>
           <h2>03 Date - Glover Garden</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>date</dd><dt>Style</dt><dd>watercolor-couture</dd><dt>Pose</dt><dd>walking-stride</dd></dl>
-                  <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/03-date-glover-wrap-dress-watercolor.webp">Open image</a>
+          <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/03-date-glover-wrap-dress-watercolor.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
@@ -158,7 +163,7 @@
         <figcaption>
           <h2>04 Active - Harbor Boat Edge V2</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>active</dd><dt>Style</dt><dd>3d-cg-fashion</dd><dt>Pose</dt><dd>dance-motion balance</dd></dl>
-                  <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-v2.webp">Open image</a>
+          <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-v2.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

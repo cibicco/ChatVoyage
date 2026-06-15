@@ -70,7 +70,10 @@ Use this checklist after every daily image generation or reorganization.
 - Use album markup that works on mobile: `object-fit: contain`, direct image
   links, `loading` / `decoding` attributes, and an `Open image` link for each
   image.
-- Normalize existing or newly edited album pages when needed:
+- Rebuild existing or newly edited album pages with the current shared
+  template when needed:
+  `python3 scripts/rebuild_album_pages.py`
+- For a small compatibility cleanup without full template rebuild, run:
   `python3 scripts/normalize_album_pages.py`
 - Add the set to `index.html` with:
   - `data-style`

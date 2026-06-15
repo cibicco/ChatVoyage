@@ -70,11 +70,14 @@ single four-panel collage.
     `index.html` plus album pages at the WebP files. Keep PNG originals only as
     source material unless the user explicitly asks to delete them.
 13. Update the monthly log, notes, album, and `index.html`. Album pages should
-    be mobile-friendly: use `object-fit: contain`, direct image links,
-    `loading` / `decoding` attributes, and an `Open image` link for each image.
+    use the current shared album template: mobile-friendly layout,
+    `object-fit: contain`, direct image links, `loading` / `decoding`
+    attributes, and an `Open image` link for each image.
 14. When old pages or bulk edits are involved, run
     `python3 scripts/switch_daily_refs_to_webp.py` and
-    `python3 scripts/normalize_album_pages.py`.
+    `python3 scripts/rebuild_album_pages.py`. Use
+    `python3 scripts/normalize_album_pages.py` only for a small compatibility
+    cleanup when a full rebuild is not appropriate.
 15. Rebuild the album-level browser with `python3 scripts/build_album_index.py`
     when album links change.
 16. Run `python3 scripts/validate_gallery.py` from the Chat Voyage root when that script exists.

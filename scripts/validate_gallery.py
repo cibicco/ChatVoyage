@@ -141,6 +141,10 @@ def validate() -> list[str]:
             if "daily/" in ref and Path(ref).suffix.lower() in IMAGE_SUFFIXES and Path(ref).suffix.lower() != ".webp":
                 non_webp_daily_refs.append(f"{html.relative_to(ROOT)} -> {ref}")
         if html in album_files:
+            if "<header" in text:
+                errors.append(f"album uses legacy header layout: {html.relative_to(ROOT)}")
+            if 'class="open"' in text:
+                errors.append(f"album uses legacy open link class: {html.relative_to(ROOT)}")
             if "object-fit: cover" in text:
                 errors.append(f"album uses object-fit: cover: {html.relative_to(ROOT)}")
             if "image-link" not in text or "Open image" not in text:
