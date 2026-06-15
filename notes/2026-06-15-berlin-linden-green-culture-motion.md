@@ -16,14 +16,16 @@
 - Movement readability notes: folio/ruler handling, museum walk, cable-plug soundcheck action, and longboard push-off are all legible intentional actions
 - Style presets: `runway-board-illustration`, `anime-fashion-magazine`, `game-cinematic-3d`, `marker-sketch`
 - Saved path: `assets/daily/2026-06-15-berlin-linden-green-culture-motion/`
+- Display format: WebP converted from generated PNG sources; PNG originals are
+  retained as source material.
 - Prompt version: `v2-short-generation`
 
 ## Results
 
-- `01-office-design-archive-linen-runway.png`: accepted. Berlin design archive, sleeveless linen waistcoat over cotton tee, cropped barrel trousers, slingback low pumps, document pouch, and linden-green ruler create a polished work/archive look.
-- `02-mode-hamburger-bahnhof-half-pants-anime.png`: accepted after regenerating the photo-adjacent first candidate. Hamburger Bahnhof-style museum hall, sleeveless tunic, sheer overskirt panel over city half pants, linden belt, carried utility cardigan, socks, and perforated ankle boots create an experimental early-20s mode look.
-- `03-club-kreuzberg-soundcheck-cg-note.png`: accepted with style note. Kreuzberg club soundcheck room, metallic short-sleeve shirt, opaque bandeau, utility wrap skirt over trousers, linden cable-tie bracelet, earplug case, cable action, and perforated boots create a club-tech look. The result remains more photo-adjacent than ideal for `game-cinematic-3d`.
-- `04-active-tempelhofer-field-longboard-marker.png`: accepted. Tempelhofer Feld runway park, cropped rugby polo, wrapped half pants, linden belt pouch, ribbed socks, sneakers, and longboard push-off create a bright active `18-19-adult` look. The midriff visibility is natural for the outdoor active scene rather than used as an age cue.
+- `01-office-design-archive-linen-runway.webp`: accepted. Berlin design archive, sleeveless linen waistcoat over cotton tee, cropped barrel trousers, slingback low pumps, document pouch, and linden-green ruler create a polished work/archive look.
+- `02-mode-hamburger-bahnhof-half-pants-anime.webp`: accepted after regenerating the photo-adjacent first candidate. Hamburger Bahnhof-style museum hall, sleeveless tunic, sheer overskirt panel over city half pants, linden belt, carried utility cardigan, socks, and perforated ankle boots create an experimental early-20s mode look.
+- `03-club-kreuzberg-soundcheck-cg-note.webp`: accepted with style note. Kreuzberg club soundcheck room, metallic short-sleeve shirt, opaque bandeau, utility wrap skirt over trousers, linden cable-tie bracelet, earplug case, cable action, and perforated boots create a club-tech look. The result remains more photo-adjacent than ideal for `game-cinematic-3d`.
+- `04-active-tempelhofer-field-longboard-marker.webp`: accepted. Tempelhofer Feld runway park, cropped rugby polo, wrapped half pants, linden belt pouch, ribbed socks, sneakers, and longboard push-off create a bright active `18-19-adult` look. The midriff visibility is natural for the outdoor active scene rather than used as an age cue.
 
 ## Quality Notes
 

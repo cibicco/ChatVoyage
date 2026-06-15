@@ -64,8 +64,17 @@ single four-panel collage.
    map plus visual check in the monthly log.
 10. Before generation, briefly show the common mood, lucky color, city theme, selected categories, selected styles, pose plan, and source links if web was used. Then generate the four images.
 11. Inspect each result against the quality gates. Regenerate only the failing image with a targeted correction if needed. When using prompt v2, record prompt summaries and visual checks for accepted images.
-12. Save accepted images under `assets/daily/YYYY-MM-DD-theme/`, then update the monthly log, notes, album, and `index.html`.
-13. Run `python3 scripts/validate_gallery.py` from the Chat Voyage root when that script exists.
+12. Save accepted display images under `assets/daily/YYYY-MM-DD-theme/` as
+    WebP by default. If the image tool produced PNG files, use
+    `python3 scripts/convert_daily_images_to_webp.py <folder>` and point
+    `index.html` plus album pages at the WebP files. Keep PNG originals only as
+    source material unless the user explicitly asks to delete them.
+13. Update the monthly log, notes, album, and `index.html`. Album pages should
+    be mobile-friendly: use `object-fit: contain`, direct image links,
+    `loading` / `decoding` attributes, and an `Open image` link for each image.
+14. Rebuild the album-level browser with `python3 scripts/build_album_index.py`
+    when album links change.
+15. Run `python3 scripts/validate_gallery.py` from the Chat Voyage root when that script exists.
 
 ## Reference Reading
 
@@ -211,7 +220,7 @@ Before accepting the set, check:
 - Dynamic travel, vehicle, waterside, stair, pier, bridge, or platform actions
   read as intentional and physically coherent for the place. Risky or balancing
   actions are allowed when they read as the character's choice.
-- Logs, notes, album/index references, and validation are updated when the user
+- Logs, notes, album/index references, album-level browsing, and validation are updated when the user
   asks for a reusable Chat Voyage set.
 
 ## Final Response Shape

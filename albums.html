@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat Voyage Albums</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202124;
+      --muted: #61666d;
+      --line: #d8dde3;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --accent: #276f86;
+      --active: #1f596a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    header, main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 34px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .intro {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+    }
+    .filters {
+      display: grid;
+      gap: 12px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .filter-row {
+      display: grid;
+      grid-template-columns: 86px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+    .filter-label {
+      padding-top: 7px;
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 650;
+      text-transform: uppercase;
+    }
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    button {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+      padding: 6px 10px;
+    }
+    button[aria-pressed="true"] {
+      border-color: var(--active);
+      background: var(--active);
+      color: #fff;
+    }
+    .count {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      padding: 24px 0 44px;
+    }
+    .album-card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-width: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: #eef1f3;
+    }
+    .strip img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      background: #eef1f3;
+    }
+    .content {
+      display: grid;
+      gap: 9px;
+      padding: 14px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: #fafbfc;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 2px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .is-hidden { display: none; }
+    @media (max-width: 640px) {
+      header, main {
+        width: min(100% - 18px, 520px);
+      }
+      .filter-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .albums {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Gallery</a>
+    </nav>
+    <h1>Chat Voyage Albums</h1>
+    <p class="intro">Album-level browsing for daily fashion sets. Use this page when the gallery has too many individual images and you want to move by set.</p>
+  </header>
+  <main>
+    <div class="filters" aria-label="Album filters">
+      <div class="filter-row">
+        <div class="filter-label">Place</div>
+        <div class="filter-buttons" data-filter-group="place">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="bangkok">Bangkok</button>
+          <button type="button" data-filter="berlin">Berlin</button>
+          <button type="button" data-filter="fukuoka">Fukuoka</button>
+          <button type="button" data-filter="helsinki">Helsinki</button>
+          <button type="button" data-filter="hiroshima">Hiroshima</button>
+          <button type="button" data-filter="kanazawa">Kanazawa</button>
+          <button type="button" data-filter="kobe">Kobe</button>
+          <button type="button" data-filter="kyoto">Kyoto</button>
+          <button type="button" data-filter="lisbon">Lisbon</button>
+          <button type="button" data-filter="marrakech">Marrakech</button>
+          <button type="button" data-filter="melbourne">Melbourne</button>
+          <button type="button" data-filter="mexico-city">Mexico-City</button>
+          <button type="button" data-filter="nagasaki">Nagasaki</button>
+          <button type="button" data-filter="nagoya">Nagoya</button>
+          <button type="button" data-filter="sapporo">Sapporo</button>
+          <button type="button" data-filter="seoul">Seoul</button>
+          <button type="button" data-filter="singapore">Singapore</button>
+          <button type="button" data-filter="taipei">Taipei</button>
+          <button type="button" data-filter="tokyo">Tokyo</button>
+          <button type="button" data-filter="vienna">Vienna</button>
+          <button type="button" data-filter="yokohama">Yokohama</button>
+        </div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">Category</div>
+        <div class="filter-buttons" data-filter-group="category">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="active">Active</button>
+          <button type="button" data-filter="ceremony">Ceremony</button>
+          <button type="button" data-filter="club">Club</button>
+          <button type="button" data-filter="dance">Dance</button>
+          <button type="button" data-filter="date">Date</button>
+          <button type="button" data-filter="formal">Formal</button>
+          <button type="button" data-filter="gallery">Gallery</button>
+          <button type="button" data-filter="home">Home</button>
+          <button type="button" data-filter="lounge">Lounge</button>
+          <button type="button" data-filter="market">Market</button>
+          <button type="button" data-filter="mode">Mode</button>
+          <button type="button" data-filter="night">Night</button>
+          <button type="button" data-filter="office">Office</button>
+          <button type="button" data-filter="outerwear">Outerwear</button>
+          <button type="button" data-filter="resort">Resort</button>
+          <button type="button" data-filter="street">Street</button>
+          <button type="button" data-filter="theater">Theater</button>
+          <button type="button" data-filter="transit">Transit</button>
+          <button type="button" data-filter="travel">Travel</button>
+          <button type="button" data-filter="weekend">Weekend</button>
+        </div>
+      </div>
+      <p class="count" aria-live="polite">Showing <span id="visible-count">28</span> / <span id="total-count">28</span> albums</p>
+    </div>
+    <div class="albums">
+      <article class="album-card" data-place="berlin" data-category="active club mode office">
+        <a class="strip" href="assets/2026-06-15-berlin-linden-green-culture-motion-album.html" aria-label="2026-06-15 Berlin Linden Green Culture Motion album">
+        <img src="assets/daily/2026-06-15-berlin-linden-green-culture-motion/01-office-design-archive-linen-runway.webp" alt="Adult late 20s Berlin design archive office look with linen waistcoat and linden green ruler" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-15-berlin-linden-green-culture-motion/02-mode-hamburger-bahnhof-half-pants-anime.webp" alt="Adult early 20s Berlin Hamburger Bahnhof mode look with tunic, half pants, and linden green belt" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-15-berlin-linden-green-culture-motion/03-club-kreuzberg-soundcheck-cg-note.webp" alt="Adult early 20s Berlin Kreuzberg club soundcheck look with utility wrap skirt and linden green sound-tech accessories" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-15-berlin-linden-green-culture-motion/04-active-tempelhofer-field-longboard-marker.webp" alt="Adult 18-19 Berlin Tempelhofer Feld active look with rugby polo, wrapped half pants, and linden green pouch" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-15 Berlin Linden Green Culture Motion</h2>
+          <p class="meta">early-summer Berlin culture-motion set across a design archive, Hamburger Bahnhof-style museum hall, Kreuzberg club soundcheck, and Tempelhofer Feld runway park.</p>
+          <div class="tags">
+        <span class="tag">berlin</span>
+        <span class="tag">active</span>
+        <span class="tag">club</span>
+        <span class="tag">mode</span>
+        <span class="tag">office</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-15-berlin-linden-green-culture-motion-album.html">Open album</a>
+            <a href="notes/2026-06-15-berlin-linden-green-culture-motion.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="melbourne" data-category="dance date formal street">
+        <a class="strip" href="assets/2026-06-14-melbourne-wattle-winter-layers-album.html" aria-label="2026-06-14 Melbourne Wattle Winter Layers album">
+        <img src="assets/daily/2026-06-14-melbourne-wattle-winter-layers/01-street-degraves-laneway-winter-anime-note.png" alt="Adult early 20s Melbourne Degraves laneway street look with wool coat and wattle gold scarf ring" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-14-melbourne-wattle-winter-layers/02-formal-royal-exhibition-brooch-digital.png" alt="Adult late 20s Melbourne Royal Exhibition formal look with merino dress and wattle gold brooch" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-14-melbourne-wattle-winter-layers/03-dance-collingwood-winter-rehearsal-marker.png" alt="Adult 18-19 Melbourne Collingwood rehearsal look with wrap-panel dance pants and wattle gold side tape" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-14-melbourne-wattle-winter-layers/04-date-cinema-nova-winter-semi-real-note.png" alt="Adult late 20s Melbourne Cinema Nova date look with wool pinafore and wattle gold satin hair scarf" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-14 Melbourne Wattle Winter Layers</h2>
+          <p class="meta">winter city-layer set across a Degraves-style laneway, Royal Exhibition Building-style ceremony, Collingwood rehearsal room, and Cinema Nova-style lobby.</p>
+          <div class="tags">
+        <span class="tag">melbourne</span>
+        <span class="tag">dance</span>
+        <span class="tag">date</span>
+        <span class="tag">formal</span>
+        <span class="tag">street</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-14-melbourne-wattle-winter-layers-album.html">Open album</a>
+            <a href="notes/2026-06-14-melbourne-wattle-winter-layers.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="kyoto" data-category="gallery lounge market transit">
+        <a class="strip" href="assets/2026-06-13-kyoto-hydrangea-rain-walk-album.html" aria-label="2026-06-13 Kyoto Hydrangea Rain Walk album">
+        <img src="assets/daily/2026-06-13-kyoto-hydrangea-rain-walk/01-market-nishiki-hydrangea-cel-anime.png" alt="Adult 18-19 Nishiki Market rainy look with hydrangea blue open shirt and skort" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-13-kyoto-hydrangea-rain-walk/02-gallery-kyocera-museum-open-back-marker.png" alt="Adult early 20s Kyoto City KYOCERA Museum gallery look with hydrangea blue open-back halter" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-13-kyoto-hydrangea-rain-walk/03-lounge-pontocho-kamo-river-soft-real.png" alt="Adult late 20s Pontocho Kamo River lounge look with smoky hydrangea satin camisole" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-13-kyoto-hydrangea-rain-walk/04-transit-kyoto-station-blue-rain-anime.png" alt="Adult early 20s Kyoto Station rainy transit look with hydrangea blue mesh jacket" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-13 Kyoto Hydrangea Rain Walk</h2>
+          <p class="meta">humid Kyoto rain set across Nishiki Market, Kyoto City KYOCERA Museum of Art, Pontocho / Kamo River, and Kyoto Station Building.</p>
+          <div class="tags">
+        <span class="tag">kyoto</span>
+        <span class="tag">gallery</span>
+        <span class="tag">lounge</span>
+        <span class="tag">market</span>
+        <span class="tag">transit</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-13-kyoto-hydrangea-rain-walk-album.html">Open album</a>
+            <a href="notes/2026-06-13-kyoto-hydrangea-rain-walk.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="nagoya" data-category="active date gallery transit">
+        <a class="strip" href="assets/2026-06-12-nagoya-gardenia-rain-arcade-album.html" aria-label="2026-06-12 Nagoya Gardenia Rain Arcade album">
+        <img src="assets/daily/2026-06-12-nagoya-gardenia-rain-arcade/01-transit-oasis-gardenia-anime.png" alt="Adult 18-19 Nagoya Oasis 21 rainy transit look with gardenia white tank and open shirt" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-12-nagoya-gardenia-rain-arcade/02-gallery-aichi-arts-mineral-white-runway.png" alt="Adult late 20s Aichi Arts Center gallery look with mineral gardenia white vest" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-12-nagoya-gardenia-rain-arcade/03-date-shikemichi-satin-soft-real.png" alt="Adult early 20s Shikemichi rainy date look with gardenia white satin camisole" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-12-nagoya-gardenia-rain-arcade/04-active-osu-arcade-cg-style-note.png" alt="Adult early 20s Osu covered arcade active look with gardenia white mesh vest and cobalt pants" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-12 Nagoya Gardenia Rain Arcade</h2>
+          <p class="meta">humid Nagoya set across Oasis 21 / Hisaya-odori Park, Aichi Arts Center, Shikemichi, and Osu shopping district.</p>
+          <div class="tags">
+        <span class="tag">nagoya</span>
+        <span class="tag">active</span>
+        <span class="tag">date</span>
+        <span class="tag">gallery</span>
+        <span class="tag">transit</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-12-nagoya-gardenia-rain-arcade-album.html">Open album</a>
+            <a href="notes/2026-06-12-nagoya-gardenia-rain-arcade.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="nagasaki" data-category="active date mode weekend">
+        <a class="strip" href="assets/2026-06-11-nagasaki-pearl-apricot-harbor-balance-album.html" aria-label="2026-06-11 Nagasaki Pearl Apricot Harbor Balance album">
+        <img src="assets/daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/01-weekend-dejima-wrap-half-pants.png" alt="Adult 18-19 Nagasaki Dejima weekend look with wrap apron panel, half pants, and slingback pumps" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/02-mode-megane-bridge-balance.png" alt="Adult early 20s Megane Bridge mode look balancing on a stone edge with wrap panel and cropped trousers" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/03-date-glover-wrap-dress-watercolor.png" alt="Adult late 20s Glover Garden date look with wrap dress over cropped trousers and low pumps" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-v2.png" alt="Adult early 20s Nagasaki harbor active look balancing on a boat edge with wrap skort and summer boots" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-11 Nagasaki Pearl Apricot Harbor Balance</h2>
+          <p class="meta">new motion/persona test across Dejima canal, Megane Bridge, Glover Garden, and Nagasaki harbor boat edge.</p>
+          <div class="tags">
+        <span class="tag">nagasaki</span>
+        <span class="tag">active</span>
+        <span class="tag">date</span>
+        <span class="tag">mode</span>
+        <span class="tag">weekend</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-11-nagasaki-pearl-apricot-harbor-balance-album.html">Open album</a>
+            <a href="notes/2026-06-11-nagasaki-pearl-apricot-harbor-balance.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="hiroshima" data-category="home office theater travel">
+        <a class="strip" href="assets/2026-06-11-hiroshima-momiji-light-social-album.html" aria-label="2026-06-11 Hiroshima Momiji Light Social album">
+        <img src="assets/daily/2026-06-11-hiroshima-momiji-light-social/01-office-hatchobori-shirt-dress-semi-real.png" alt="Adult late 20s Hiroshima office look with ivory shirt dress and momiji vermilion brooch" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-11-hiroshima-momiji-light-social/02-theater-aster-plaza-origami-dress-illustration.png" alt="Adult early 20s Hiroshima theater look with vermilion origami pleated overdress" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-11-hiroshima-momiji-light-social/03-home-kyobashi-river-scarf-anime.png" alt="Adult 18-19 Hiroshima apartment balcony home look with striped scarf and red earrings" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-11-hiroshima-momiji-light-social/04-travel-miyajima-ferry-jumpsuit-3d-note.png" alt="Adult early 20s Miyajima ferry travel look with vermilion utility jumpsuit and woven hat" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-11 Hiroshima Momiji Light Social</h2>
+          <p class="meta">anti-repeat persona test across Hatchobori / Hondori, a theater lobby, a Kyobashi River apartment balcony, and the Miyajima ferry approach.</p>
+          <div class="tags">
+        <span class="tag">hiroshima</span>
+        <span class="tag">home</span>
+        <span class="tag">office</span>
+        <span class="tag">theater</span>
+        <span class="tag">travel</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-11-hiroshima-momiji-light-social-album.html">Open album</a>
+            <a href="notes/2026-06-11-hiroshima-momiji-light-social.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="fukuoka" data-category="gallery lounge resort weekend">
+        <a class="strip" href="assets/2026-06-10-fukuoka-yuzu-rain-riverside-album.html" aria-label="2026-06-10 Fukuoka Yuzu Rain Riverside album">
+        <img src="assets/daily/2026-06-10-fukuoka-yuzu-rain-riverside/01-weekend-ohori-yuzu-anime.png" alt="Adult 18-19 Ohori Park rainy weekend look with lemon-yuzu tank and open linen shirt" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-10-fukuoka-yuzu-rain-riverside/02-gallery-art-museum-open-back-marker.png" alt="Adult early 20s open-back gallery look by Fukuoka Art Museum in marker sketch style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-10-fukuoka-yuzu-rain-riverside/03-resort-castle-ruins-smoky-yuzu-soft-real.png" alt="Adult late 20s Fukuoka Castle ruins rainy resort look with smoky yuzu satin" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-10-fukuoka-yuzu-rain-riverside/04-lounge-nakasu-yatai-river-anime.png" alt="Adult early 20s Nakasu riverside lounge look with yuzu mesh layer and yatai lights" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-10 Fukuoka Yuzu Rain Riverside</h2>
+          <p class="meta">rainy Fukuoka set across Ohori Park, Fukuoka Art Museum, Fukuoka Castle ruins, and Nakasu riverside yatai lights.</p>
+          <div class="tags">
+        <span class="tag">fukuoka</span>
+        <span class="tag">gallery</span>
+        <span class="tag">lounge</span>
+        <span class="tag">resort</span>
+        <span class="tag">weekend</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-10-fukuoka-yuzu-rain-riverside-album.html">Open album</a>
+            <a href="notes/2026-06-10-fukuoka-yuzu-rain-riverside.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="marrakech" data-category="formal mode travel weekend">
+        <a class="strip" href="assets/2026-06-09-marrakech-saffron-courtyard-design-album.html" aria-label="2026-06-09 Marrakech Saffron Courtyard Design album">
+        <img src="assets/daily/2026-06-09-marrakech-saffron-courtyard-design/01-weekend-le-jardin-secret-fan-anime-note.png" alt="Adult 18-19 Marrakech Le Jardin Secret-style weekend look with cotton shirt, saffron wrap panel, fan, and sketchbook" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-09-marrakech-saffron-courtyard-design/02-mode-gueliz-showroom-vest-runway.png" alt="Adult early 20s Marrakech Gueliz showroom mode look with long linen vest, barrel trousers, and saffron belt tabs" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-09-marrakech-saffron-courtyard-design/03-formal-dar-el-bacha-sash-watercolor.png" alt="Adult late 20s Marrakech Dar el Bacha-style formal courtyard look with wrap dress, sheer jacket, and saffron sash" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-09-marrakech-saffron-courtyard-design/04-travel-riad-rooftop-jumpsuit-digital-note.png" alt="Adult early 20s Marrakech riad rooftop travel look with sleeveless utility jumpsuit, saffron scarf, and perforated boots" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-09 Marrakech Saffron Courtyard Design</h2>
+          <p class="meta">dry-heat Marrakech set across Le Jardin Secret-style courtyard shade, a Guéliz design showroom, a Dar el Bacha-style museum courtyard, and a private riad rooftop.</p>
+          <div class="tags">
+        <span class="tag">marrakech</span>
+        <span class="tag">formal</span>
+        <span class="tag">mode</span>
+        <span class="tag">travel</span>
+        <span class="tag">weekend</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-09-marrakech-saffron-courtyard-design-album.html">Open album</a>
+            <a href="notes/2026-06-09-marrakech-saffron-courtyard-design.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="taipei" data-category="club gallery lounge market">
+        <a class="strip" href="assets/2026-06-08-taipei-guava-specific-places-v2-album.html" aria-label="2026-06-08 Taipei Guava Specific Places V2 album">
+        <img src="assets/daily/2026-06-08-taipei-guava-specific-places-v2/01-market-dihua-dadaocheng-guava-anime.png" alt="Adult 18-19 Dadaocheng Dihua Street market look with fresh guava pink open shirt" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-08-taipei-guava-specific-places-v2/02-gallery-huashan-1914-open-back-marker.png" alt="Adult early 20s open-back gallery walk at Huashan 1914 in marker sketch style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-08-taipei-guava-specific-places-v2/03-lounge-treasure-hill-smoky-guava-soft-real.png" alt="Adult late 20s Treasure Hill Artist Village lounge look with smoky guava satin accents" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-08-taipei-guava-specific-places-v2/04-club-ximending-guava-neon-anime.png" alt="Adult early 20s Ximending humid night club look with guava mesh movement" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-08 Taipei Guava Specific Places V2</h2>
+          <p class="meta">v2-short-generation remake with concrete Taipei places: Dadaocheng Dihua Street, Huashan 1914, Treasure Hill Artist Village, and Ximending.</p>
+          <div class="tags">
+        <span class="tag">taipei</span>
+        <span class="tag">club</span>
+        <span class="tag">gallery</span>
+        <span class="tag">lounge</span>
+        <span class="tag">market</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-08-taipei-guava-specific-places-v2-album.html">Open album</a>
+            <a href="notes/2026-06-08-taipei-guava-specific-places-v2.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="taipei" data-category="gallery home lounge market">
+        <a class="strip" href="assets/2026-06-08-taipei-guava-rain-creative-walk-album.html" aria-label="2026-06-08 Taipei Guava Rain Creative Walk album">
+        <img src="assets/daily/2026-06-08-taipei-guava-rain-creative-walk/01-market-dihua-guava-anime.png" alt="Adult 18-19 Dihua Street market look with fresh guava pink accents" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-08-taipei-guava-rain-creative-walk/02-gallery-huashan-open-back-marker.png" alt="Adult early 20s open-back gallery walk at Huashan 1914 in marker sketch style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-08-taipei-guava-rain-creative-walk/03-lounge-riverside-smoky-guava-soft-real.png" alt="Adult late 20s Taipei riverside lounge look with smoky rose-guava satin accents" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-08-taipei-guava-rain-creative-walk/04-home-balcony-guava-watercolor.png" alt="Adult early 20s Taipei balcony look before a night market in watercolor couture style" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-08 Taipei Guava Rain Creative Walk</h2>
+          <p class="meta">humid Taipei creative walk across Dihua Street, Huashan 1914, a riverside lounge, and a balcony before a night market.</p>
+          <div class="tags">
+        <span class="tag">taipei</span>
+        <span class="tag">gallery</span>
+        <span class="tag">home</span>
+        <span class="tag">lounge</span>
+        <span class="tag">market</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-08-taipei-guava-rain-creative-walk-album.html">Open album</a>
+            <a href="notes/2026-06-08-taipei-guava-rain-creative-walk.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="kobe" data-category="gallery lounge market resort">
+        <a class="strip" href="assets/2026-06-07-kobe-hydrangea-port-sunday-album.html" aria-label="2026-06-07 Kobe Hydrangea Port Sunday album">
+        <img src="assets/daily/2026-06-07-kobe-hydrangea-port-sunday/01-market-motomachi-periwinkle-anime.png" alt="Adult 18-19 market look in Motomachi Shopping Street with periwinkle hydrangea accents" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-07-kobe-hydrangea-port-sunday/02-gallery-kitano-lilac-marker.png" alt="Adult early 20s open-back gallery walk on Kitano Ijinkan slope in marker sketch style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-07-kobe-hydrangea-port-sunday/03-lounge-meriken-smoky-indigo-3d.png" alt="Adult late 20s waterfront lounge look at Meriken Park with smoky indigo hydrangea accents" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-07-kobe-hydrangea-port-sunday/04-resort-nunobiki-watercolor.png" alt="Adult early 20s resort day-trip look at Nunobiki Herb Gardens in watercolor couture style" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-07 Kobe Hydrangea Port Sunday</h2>
+          <p class="meta">humid Kobe port-town Sunday across Motomachi arcade, Kitano slope, Meriken Park waterfront, and Nunobiki Herb Gardens.</p>
+          <div class="tags">
+        <span class="tag">kobe</span>
+        <span class="tag">gallery</span>
+        <span class="tag">lounge</span>
+        <span class="tag">market</span>
+        <span class="tag">resort</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-07-kobe-hydrangea-port-sunday-album.html">Open album</a>
+            <a href="notes/2026-06-07-kobe-hydrangea-port-sunday.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="tokyo" data-category="dance gallery lounge market">
+        <a class="strip" href="assets/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake-album.html" aria-label="2026-06-06 Tokyo Aoyama Omotesando Age Tone Remake album">
+        <img src="assets/daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/01-market-commune-fresh-moss-cel-anime.png" alt="Adult 18-19 market look at Commune Aoyama with fresh matcha moss accents" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/02-gallery-spiral-open-back-marker.png" alt="Adult early 20s open-back gallery look at Spiral Garden in marker sketch style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/03-lounge-minami-aoyama-smoky-moss-3d.png" alt="Adult late 20s lounge look in a Minami-Aoyama listening bar with smoky moss satin accents" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/04-dance-jingumae-electric-moss-digital.png" alt="Adult early 20s dance look on a Jingumae side street with electric moss mesh layers" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-06 Tokyo Aoyama Omotesando Age Tone Remake</h2>
+          <p class="meta">moss-green remake with explicit age-tone and exposure variation across Commune Aoyama, Spiral Garden, Minami-Aoyama lounge, and Jingumae dance street.</p>
+          <div class="tags">
+        <span class="tag">tokyo</span>
+        <span class="tag">dance</span>
+        <span class="tag">gallery</span>
+        <span class="tag">lounge</span>
+        <span class="tag">market</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake-album.html">Open album</a>
+            <a href="notes/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="tokyo" data-category="date lounge outerwear weekend">
+        <a class="strip" href="assets/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk-album.html" aria-label="2026-06-06 Tokyo Daikanyama Rainy Lowrise Walk album">
+        <img src="assets/daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/01-weekend-tsite-bookshop-cel-anime.png" alt="Adult early 20s weekend look at a Daikanyama T-SITE style bookstore courtyard" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/02-outerwear-log-road-marker-sketch.png" alt="Adult late 20s outerwear look walking through Log Road Daikanyama after rain" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/03-date-kyu-asakura-slope-pbr-3d.png" alt="Adult late 20s date look on a wet stone slope near Kyu Asakura House" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/04-lounge-sarugakucho-record-soft-real.png" alt="Adult early 20s lounge look in a Sarugakucho listening lounge after rain" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-06 Tokyo Daikanyama Rainy Lowrise Walk</h2>
+          <p class="meta">concrete Daikanyama places: T-SITE, Log Road, Kyu Asakura House slope, and Sarugakucho listening lounge.</p>
+          <div class="tags">
+        <span class="tag">tokyo</span>
+        <span class="tag">date</span>
+        <span class="tag">lounge</span>
+        <span class="tag">outerwear</span>
+        <span class="tag">weekend</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk-album.html">Open album</a>
+            <a href="notes/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="tokyo" data-category="gallery lounge office transit">
+        <a class="strip" href="assets/2026-06-05-tokyo-ginza-craft-jazz-rain-album.html" aria-label="2026-06-05 Tokyo Ginza Craft Jazz Rain album">
+        <img src="assets/daily/2026-06-05-tokyo-ginza-craft-jazz-rain/01-office-rain-arcade-semi-real.png" alt="Adult late 20s Tokyo office look in a rain arcade with glass blue knit" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-tokyo-ginza-craft-jazz-rain/02-gallery-organza-runway-board.png" alt="Adult late 20s Tokyo gallery look with translucent glass blue organza vest" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-tokyo-ginza-craft-jazz-rain/03-lounge-jazz-cardigan-soft-anime.png" alt="Adult early 20s Tokyo jazz lounge look in soft cinematic anime style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-tokyo-ginza-craft-jazz-rain/04-transit-rain-shell-pbr-3d.png" alt="Adult 18-19 Tokyo transit look with translucent rain shell and suitcase" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-05 Tokyo Ginza Craft Jazz Rain</h2>
+          <p class="meta">rain-polished Ginza / Kyobashi office, gallery, lounge, and transit looks with glass-blue accents.</p>
+          <div class="tags">
+        <span class="tag">tokyo</span>
+        <span class="tag">gallery</span>
+        <span class="tag">lounge</span>
+        <span class="tag">office</span>
+        <span class="tag">transit</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-05-tokyo-ginza-craft-jazz-rain-album.html">Open album</a>
+            <a href="notes/2026-06-05-tokyo-ginza-craft-jazz-rain.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="seoul" data-category="club gallery market transit">
+        <a class="strip" href="assets/2026-06-05-seoul-dynamic-crop-remake-album.html" aria-label="2026-06-05 Seoul Dynamic Crop Remake album">
+        <img src="assets/daily/2026-06-05-seoul-dynamic-crop-remake/01-transit-floor-sit-fan.png" alt="Adult 18-19 subway transit look seated with fan" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-dynamic-crop-remake/02-market-jump-motion-wide.png" alt="Adult early 20s market look jumping over a puddle" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-dynamic-crop-remake/03-club-stretching-reach-crop.png" alt="Adult early 20s club look with stretching reach" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-dynamic-crop-remake/04-gallery-back-close-crop.png" alt="Adult late 20s gallery look in back three-quarter close crop" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-05 Seoul Dynamic Crop Remake</h2>
+          <p class="meta">dynamic crop remake; full-body optional, with floor-sit, jump, reach, and close crop.</p>
+          <div class="tags">
+        <span class="tag">seoul</span>
+        <span class="tag">club</span>
+        <span class="tag">gallery</span>
+        <span class="tag">market</span>
+        <span class="tag">transit</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-05-seoul-dynamic-crop-remake-album.html">Open album</a>
+            <a href="logs/generation-2026-06.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="seoul" data-category="club gallery market transit">
+        <a class="strip" href="assets/2026-06-05-seoul-pose-diverse-remake-album.html" aria-label="2026-06-05 Seoul Pose Diverse Remake album">
+        <img src="assets/daily/2026-06-05-seoul-pose-diverse-remake/01-transit-subway-left-profile.png" alt="Adult 18-19 subway transit look, left profile with fan" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-pose-diverse-remake/02-market-jump-motion.png" alt="Adult early 20s market look in jump motion" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-pose-diverse-remake/03-club-leaning-down.png" alt="Adult early 20s club look leaning down" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-pose-diverse-remake/04-gallery-back-three-quarter-crop.png" alt="Adult late 20s gallery look in back three-quarter crop" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-05 Seoul Pose Diverse Remake</h2>
+          <p class="meta">pose-diverse remake with side profile, jump motion, leaning, and close crop.</p>
+          <div class="tags">
+        <span class="tag">seoul</span>
+        <span class="tag">club</span>
+        <span class="tag">gallery</span>
+        <span class="tag">market</span>
+        <span class="tag">transit</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-05-seoul-pose-diverse-remake-album.html">Open album</a>
+            <a href="logs/generation-2026-06.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="seoul" data-category="club gallery market transit">
+        <a class="strip" href="assets/2026-06-05-seoul-indie-youth-culture-album.html" aria-label="2026-06-05 Seoul Indie Youth Culture album">
+        <img src="assets/daily/2026-06-05-seoul-indie-youth-culture/01-transit-subway-anime-magazine.png" alt="Adult 18-19 subway transit look in anime fashion magazine style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-indie-youth-culture/02-market-hongdae-marker-sketch.png" alt="Adult early 20s Hongdae market look in marker sketch style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-indie-youth-culture/03-club-basement-game-3d.png" alt="Adult early 20s basement club look in game cinematic 3D style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-05-seoul-indie-youth-culture/04-gallery-euljiro-watercolor.png" alt="Adult late 20s Euljiro gallery look in watercolor couture style" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-05 Seoul Indie Youth Culture</h2>
+          <p class="meta">young adult Seoul indie set before pose/crop remakes.</p>
+          <div class="tags">
+        <span class="tag">seoul</span>
+        <span class="tag">club</span>
+        <span class="tag">gallery</span>
+        <span class="tag">market</span>
+        <span class="tag">transit</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-05-seoul-indie-youth-culture-album.html">Open album</a>
+            <a href="logs/generation-2026-06.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="tokyo" data-category="club gallery home market">
+        <a class="strip" href="assets/2026-06-04-tokyo-indie-youth-culture-v2-album.html" aria-label="2026-06-04 Tokyo Indie Youth Culture V2 album">
+        <img src="assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/01-market-vintage-lane-cel-anime.png" alt="Adult 18-19 Japanese vintage market look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/02-club-livehouse-doll-3d.png" alt="Adult early 20s live-house club look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/03-gallery-zine-runway-board.png" alt="Adult late 20s zine gallery remake fashion look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/04-home-after-live-soft-real.png" alt="Adult early 30s after-live home fashion look" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-04 Tokyo Indie Youth Culture V2</h2>
+          <p class="meta">remake with broader young adult sources and explicit age bands.</p>
+          <div class="tags">
+        <span class="tag">tokyo</span>
+        <span class="tag">club</span>
+        <span class="tag">gallery</span>
+        <span class="tag">home</span>
+        <span class="tag">market</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-04-tokyo-indie-youth-culture-v2-album.html">Open album</a>
+            <a href="logs/generation-2026-06.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="bangkok" data-category="dance gallery lounge transit">
+        <a class="strip" href="assets/2026-06-04-bangkok-monsoon-design-night-album.html" aria-label="2026-06-04 Bangkok Monsoon Design Night album">
+        <img src="assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/01-transit-rail-platform-marker-sketch.png" alt="Transit rail platform fashion marker sketch in Bangkok after rain" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/02-gallery-riverside-warehouse-pbr-3d.png" alt="Gallery riverside warehouse fashion look in PBR 3D style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/03-lounge-listening-bar-soft-anime.png" alt="Lounge listening bar look in soft cinematic anime style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/04-dance-rain-studio-digital-painting.png" alt="Dance studio fashion look in digital magazine painting style" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-04 Bangkok Monsoon Design Night</h2>
+          <p class="meta">date-seeded mixed categories and styles: transit, gallery, lounge, and dance.</p>
+          <div class="tags">
+        <span class="tag">bangkok</span>
+        <span class="tag">dance</span>
+        <span class="tag">gallery</span>
+        <span class="tag">lounge</span>
+        <span class="tag">transit</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-04-bangkok-monsoon-design-night-album.html">Open album</a>
+            <a href="logs/generation-2026-06.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="helsinki" data-category="active mode outerwear weekend">
+        <a class="strip" href="assets/2026-06-03-helsinki-cloudberry-daytime-remake-album.html" aria-label="2026-06-03 Helsinki Cloudberry Daytime Remake album">
+        <img src="assets/daily/2026-06-03-helsinki-cloudberry-daytime-remake/01-weekend-oodi-maker-utility-anime.png" alt="Adult 18-19 Helsinki Oodi maker-library weekend look with utility apron and cloudberry amber hair clip" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-03-helsinki-cloudberry-daytime-remake/02-mode-arabia-studio-runway-board.png" alt="Adult late 20s Helsinki ceramics studio mode look with canvas vest and cloudberry amber obi belt" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-03-helsinki-cloudberry-daytime-remake/03-outerwear-kallio-theater-cape-trench-watercolor.png" alt="Adult early 20s Kallio theater outerwear look with cape-back trench and amber visor accessory" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-03-helsinki-cloudberry-daytime-remake/04-active-kalasatama-climbing-game-cinematic-note.png" alt="Adult early 20s Kalasatama climbing gym active look with wrap skort and cloudberry amber chalk bag" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-03 Helsinki Cloudberry Daytime Remake</h2>
+          <p class="meta">daytime remake across an Oodi-style maker library, Arabia-style ceramics studio, Kallio theater arrival, and Kalasatama indoor climbing gym.</p>
+          <div class="tags">
+        <span class="tag">helsinki</span>
+        <span class="tag">active</span>
+        <span class="tag">mode</span>
+        <span class="tag">outerwear</span>
+        <span class="tag">weekend</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-03-helsinki-cloudberry-daytime-remake-album.html">Open album</a>
+            <a href="notes/2026-06-03-helsinki-cloudberry-daytime-remake.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="lisbon" data-category="date formal night travel">
+        <a class="strip" href="assets/2026-06-03-lisbon-nightlife-album.html" aria-label="2026-06-03 Lisbon Nightlife Mixed Styles album">
+        <img src="assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/01-night-rooftop-satin-3d.png" alt="Night rooftop satin look in true 3D CG fashion style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/02-formal-fado-lace-anime.png" alt="Formal fado lace look in high-definition anime editorial style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/03-date-hotel-lounge-illustration.png" alt="Date hotel lounge look in traditional fashion illustration style" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/04-travel-dawn-terminal-semi-real.png" alt="Travel dawn terminal look in semi-real digital editorial style" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-03 Lisbon Nightlife Mixed Styles</h2>
+          <p class="meta">nightlife set across 3D CG, anime editorial, fashion illustration, and semi-real editorial image categories.</p>
+          <div class="tags">
+        <span class="tag">lisbon</span>
+        <span class="tag">date</span>
+        <span class="tag">formal</span>
+        <span class="tag">night</span>
+        <span class="tag">travel</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-03-lisbon-nightlife-album.html">Open album</a>
+            <a href="logs/generation-2026-06.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="mexico-city" data-category="ceremony dance home office">
+        <a class="strip" href="assets/2026-06-02-mexico-city-mamey-coral-creative-weekday-album.html" aria-label="2026-06-02 Mexico City Mamey Coral Creative Weekday album">
+        <img src="assets/daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/01-office-vasconcelos-linen-waistcoat-anime.png" alt="Adult early 20s Mexico City library office look with linen waistcoat and mamey coral belt tab" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/02-ceremony-san-angel-wrap-dress-semi-real.png" alt="Adult late 20s San Angel courtyard ceremony look with wrap dress and mamey coral satin under-panel" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/03-dance-roma-norte-wrap-skort-marker.png" alt="Adult 18-19 Mexico City dance studio look with wrap skort and mamey coral ribbon" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/04-home-coyoacan-textile-floor-pbr-note.png" alt="Adult late 20s Coyoacan rooftop textile fitting look with coral wrap scarf and perforated boots" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-02 Mexico City Mamey Coral Creative Weekday</h2>
+          <p class="meta">creative weekday set across a Biblioteca Vasconcelos-style library, San Angel courtyard reception, Roma Norte dance studio, and Coyoacan rooftop textile corner.</p>
+          <div class="tags">
+        <span class="tag">mexico-city</span>
+        <span class="tag">ceremony</span>
+        <span class="tag">dance</span>
+        <span class="tag">home</span>
+        <span class="tag">office</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-02-mexico-city-mamey-coral-creative-weekday-album.html">Open album</a>
+            <a href="notes/2026-06-02-mexico-city-mamey-coral-creative-weekday.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="vienna" data-category="formal home office theater">
+        <a class="strip" href="assets/2026-06-01-vienna-celadon-indoor-salon-album.html" aria-label="2026-06-01 Vienna Celadon Indoor Salon album">
+        <img src="assets/daily/2026-06-01-vienna-celadon-indoor-salon/01-office-looshaus-waistcoat-runway-note.png" alt="Adult late 20s Vienna office look with celadon waistcoat and slingback pumps" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-01-vienna-celadon-indoor-salon/02-formal-palais-ferstel-wrap-anime.png" alt="Adult early 20s Vienna formal reception look with wrap blouse and skirt over trousers" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-01-vienna-celadon-indoor-salon/03-theater-musikverein-satin-watercolor.png" alt="Adult late 20s Vienna theater look with smoky pistachio satin dress and organza jacket" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-06-01-vienna-celadon-indoor-salon/04-home-josefstadt-record-doll-3d-note.png" alt="Adult early 20s Vienna apartment home look with wrap shorts, leggings, and ballet flats" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-06-01 Vienna Celadon Indoor Salon</h2>
+          <p class="meta">indoor-heavy non-Japan set across Looshaus-style office lobby, Palais Ferstel arcade, Musikverein-style foyer, and Josefstadt apartment salon.</p>
+          <div class="tags">
+        <span class="tag">vienna</span>
+        <span class="tag">formal</span>
+        <span class="tag">home</span>
+        <span class="tag">office</span>
+        <span class="tag">theater</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-06-01-vienna-celadon-indoor-salon-album.html">Open album</a>
+            <a href="notes/2026-06-01-vienna-celadon-indoor-salon.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="sapporo" data-category="active date office weekend">
+        <a class="strip" href="assets/2026-05-31-sapporo-lilac-tram-album.html" aria-label="2026-05-31 Sapporo Lilac Tram Literary Prep album">
+        <img src="assets/daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/01-office-tram-stop-tailoring.png" alt="Office tailoring fashion illustration at a lilac tram stop" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/02-weekend-book-cafe-denim.png" alt="Weekend denim fashion illustration outside a book cafe" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/03-date-botanical-lilac-dress.png" alt="Date lilac dress fashion illustration in a botanical garden" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/04-active-park-utility.png" alt="Active utility fashion illustration on a park path" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-05-31 Sapporo Lilac Tram Literary Prep</h2>
+          <p class="meta">traditional fashion illustrations: office, weekend, date, and active.</p>
+          <div class="tags">
+        <span class="tag">sapporo</span>
+        <span class="tag">active</span>
+        <span class="tag">date</span>
+        <span class="tag">office</span>
+        <span class="tag">weekend</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-05-31-sapporo-lilac-tram-album.html">Open album</a>
+            <a href="logs/generation-2026-05.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="yokohama" data-category="mode night resort street">
+        <a class="strip" href="assets/2026-05-31-yokohama-burgundy-theater-3d-album.html" aria-label="2026-05-31 Yokohama Burgundy Theater 3D album">
+        <img src="assets/daily/2026-05-31-yokohama-burgundy-theater-3d/01-street-red-brick-knit-bow-3d.png" alt="Street burgundy knit bow 3D look at Yokohama red brick theater" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-31-yokohama-burgundy-theater-3d/02-mode-brick-gallery-tailoring-3d.png" alt="Mode gallery tailoring 3D look in a Yokohama brick gallery" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-31-yokohama-burgundy-theater-3d/03-night-red-brick-velvet-3d.png" alt="Night red brick velvet 3D look in Yokohama after rain" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-31-yokohama-burgundy-theater-3d/04-resort-harbor-terrace-knit-3d.png" alt="Resort harbor terrace knit 3D look in Yokohama" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-05-31 Yokohama Burgundy Theater 3D</h2>
+          <p class="meta">true 3D CG burgundy theater set: street, mode, night, and resort.</p>
+          <div class="tags">
+        <span class="tag">yokohama</span>
+        <span class="tag">mode</span>
+        <span class="tag">night</span>
+        <span class="tag">resort</span>
+        <span class="tag">street</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-05-31-yokohama-burgundy-theater-3d-album.html">Open album</a>
+            <a href="notes/2026-05-31-yokohama-burgundy-theater-3d.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="singapore" data-category="date office theater weekend">
+        <a class="strip" href="assets/2026-05-28-singapore-mango-lime-design-walk-album.html" aria-label="2026-05-28 Singapore Mango-Lime Design Walk album">
+        <img src="assets/daily/2026-05-28-singapore-mango-lime-design-walk/01-weekend-tiong-bahru-camp-shirt-anime.png" alt="Adult 18-19 Singapore Tiong Bahru weekend look with camp shirt, wrap skort, half-pants, and mango-lime hair clip" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-28-singapore-mango-lime-design-walk/02-office-design-centre-waistcoat-runway.png" alt="Adult late 20s Singapore design office look with sleeveless waistcoat, tapered trousers, and mango-lime pocket square" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-28-singapore-mango-lime-design-walk/03-theater-esplanade-organza-watercolor.png" alt="Adult early 20s Singapore Esplanade theater look with organza jacket, bias skirt, and mango-lime beaded bag strap" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-28-singapore-mango-lime-design-walk/04-date-joo-chiat-shirt-dress-semi-real-note.png" alt="Adult late 20s Singapore Joo Chiat date look with square-neck shirt dress, mango-lime belt, and sandal gesture" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-05-28 Singapore Mango-Lime Design Walk</h2>
+          <p class="meta">humid Singapore design-city set across Tiong Bahru, a design office atrium, an Esplanade-style performance foyer, and Joo Chiat.</p>
+          <div class="tags">
+        <span class="tag">singapore</span>
+        <span class="tag">date</span>
+        <span class="tag">office</span>
+        <span class="tag">theater</span>
+        <span class="tag">weekend</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-05-28-singapore-mango-lime-design-walk-album.html">Open album</a>
+            <a href="notes/2026-05-28-singapore-mango-lime-design-walk.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="kanazawa" data-category="mode night resort street">
+        <a class="strip" href="assets/2026-05-27-kanazawa-album.html" aria-label="2026-05-27 Kanazawa Verdigris Craft Modern album">
+        <img src="assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/01-street-rain-workwear-verdigris.png" alt="Street rain workwear verdigris look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/02-mode-lacquer-museum-verdigris.png" alt="Mode lacquer museum verdigris look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/03-night-velvet-teahouse-verdigris.png" alt="Night velvet teahouse verdigris look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/04-resort-ryokan-terrace-verdigris.png" alt="Resort ryokan terrace verdigris look" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-05-27 Kanazawa Verdigris Craft Modern</h2>
+          <p class="meta">rainy workwear, lacquer mode, velvet night, and ryokan terrace styling.</p>
+          <div class="tags">
+        <span class="tag">kanazawa</span>
+        <span class="tag">mode</span>
+        <span class="tag">night</span>
+        <span class="tag">resort</span>
+        <span class="tag">street</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-05-27-kanazawa-album.html">Open album</a>
+            <a href="notes/2026-05-27-kanazawa-verdigris-craft-modern.md">Notes</a>
+          </div>
+        </div>
+      </article>
+      <article class="album-card" data-place="yokohama" data-category="lounge mode resort street">
+        <a class="strip" href="assets/2026-05-27-yokohama-burgundy-theater-romance-album.html" aria-label="2026-05-27 Yokohama Burgundy Theater Romance album">
+        <img src="assets/daily/2026-05-27-yokohama-burgundy-theater-romance/01-red-brick-knit-bow.png" alt="Yokohama red brick knit bow romance look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-27-yokohama-burgundy-theater-romance/02-brick-gallery-tailoring.png" alt="Yokohama brick gallery tailoring romance look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-27-yokohama-burgundy-theater-romance/03-jazz-lounge-velvet.png" alt="Yokohama jazz lounge velvet romance look" loading="lazy" decoding="async">
+        <img src="assets/daily/2026-05-27-yokohama-burgundy-theater-romance/04-harbor-terrace-knit.png" alt="Yokohama harbor terrace knit romance look" loading="lazy" decoding="async">
+        </a>
+        <div class="content">
+          <h2>2026-05-27 Yokohama Burgundy Theater Romance</h2>
+          <p class="meta">inferred metadata from filenames: red brick knit bow, brick gallery tailoring, jazz lounge velvet, and harbor terrace knit.</p>
+          <div class="tags">
+        <span class="tag">yokohama</span>
+        <span class="tag">lounge</span>
+        <span class="tag">mode</span>
+        <span class="tag">resort</span>
+        <span class="tag">street</span>
+          </div>
+          <div class="links">
+            <a href="assets/2026-05-27-yokohama-burgundy-theater-romance-album.html">Open album</a>
+            <a href="notes/2026-05-27-yokohama-burgundy-theater-romance.md">Notes</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <script>
+    const state = { place: "all", category: "all" };
+    const cards = Array.from(document.querySelectorAll(".album-card"));
+    const visibleCount = document.getElementById("visible-count");
+    const totalCount = document.getElementById("total-count");
+    totalCount.textContent = cards.length;
+    function matches(card) {
+      return Object.entries(state).every(([key, value]) => {
+        if (value === "all") return true;
+        return (card.dataset[key] || "").split(" ").includes(value);
+      });
+    }
+    function update() {
+      let visible = 0;
+      cards.forEach((card) => {
+        const show = matches(card);
+        card.classList.toggle("is-hidden", !show);
+        if (show) visible += 1;
+      });
+      visibleCount.textContent = visible;
+    }
+    document.querySelectorAll("[data-filter-group]").forEach((group) => {
+      const key = group.dataset.filterGroup;
+      group.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-filter]");
+        if (!button) return;
+        state[key] = button.dataset.filter;
+        group.querySelectorAll("button").forEach((item) => {
+          item.setAttribute("aria-pressed", String(item === button));
+        });
+        update();
+      });
+    });
+  </script>
+</body>
+</html>

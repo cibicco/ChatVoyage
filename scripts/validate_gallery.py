@@ -80,10 +80,15 @@ def validate() -> list[str]:
     errors: list[str] = []
     parser = read_index()
 
-    daily_images = {
+    all_daily_images = {
         p.resolve()
         for p in (ROOT / "assets" / "daily").glob("*/*")
         if p.suffix.lower() in IMAGE_SUFFIXES
+    }
+    daily_images = {
+        p
+        for p in all_daily_images
+        if p.suffix.lower() == ".webp" or p.with_suffix(".webp").resolve() not in all_daily_images
     }
     index_daily_refs = {
         local_target(ROOT, ref)
@@ -117,7 +122,8 @@ def validate() -> list[str]:
     if missing_categories := sorted(index_categories - category_presets):
         errors.append(f"categories missing from prompts/category-presets.md: {missing_categories}")
 
-    html_files = [ROOT / "index.html", *sorted((ROOT / "assets").glob("*-album.html"))]
+    album_files = sorted((ROOT / "assets").glob("*-album.html"))
+    html_files = [ROOT / "index.html", ROOT / "albums.html", *album_files]
     missing_refs: list[str] = []
     for html in html_files:
         refs = RefParser()
@@ -134,8 +140,10 @@ def validate() -> list[str]:
         errors.append("missing local refs: " + ", ".join(missing_refs))
 
     print(f"daily_images: {len(daily_images)}")
+    print(f"daily_source_images: {len(all_daily_images)}")
     print(f"index_figures: {len(parser.figures)}")
-    print(f"album_pages: {len(html_files) - 1}")
+    print(f"album_index: {(ROOT / 'albums.html').exists()}")
+    print(f"album_pages: {len(album_files)}")
     print(f"index_styles: {sorted(index_styles)}")
     print(f"index_categories: {sorted(index_categories)}")
     print(f"errors: {len(errors)}")

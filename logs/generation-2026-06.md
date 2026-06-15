@@ -2129,6 +2129,9 @@ call for them, not as an age or skin-visibility correction.
 - Images: 4 final images
 - Generated on: 2026-06-15, Asia/Tokyo
 - Saved in: `assets/daily/2026-06-15-berlin-linden-green-culture-motion/`
+- Display format: WebP converted from generated PNG sources with
+  `scripts/convert_daily_images_to_webp.py --quality 82`; PNG originals are
+  retained as source material and are not referenced by the gallery.
 - Album: `assets/2026-06-15-berlin-linden-green-culture-motion-album.html`
 - Note: `notes/2026-06-15-berlin-linden-green-culture-motion.md`
 - City / place language: Berlin, specifically a design archive reading desk, Hamburger Bahnhof-style contemporary museum hall, Kreuzberg club soundcheck room, and Tempelhofer Feld former-airport runway park
@@ -2152,7 +2155,7 @@ call for them, not as an age or skin-visibility correction.
 
 ### Final Files
 
-- `01-office-design-archive-linen-runway.png`
+- `01-office-design-archive-linen-runway.webp`
   - Source file: `ig_076dbdb286366f7a016a2f368291e08191a46c6472b581ebcb.png`
   - Primary category: `office`
   - Target age band: `25-29`
@@ -2176,7 +2179,7 @@ call for them, not as an age or skin-visibility correction.
   - Generated prompt summary: short prompt for a late-20s Berlin design archive office look with linen waistcoat, barrel trousers, slingback pumps, pouch, and linden ruler.
   - Visual check: archive, work tailoring, ruler, pouch, trousers, shoes, and adult composure are readable.
   - Result: accepted.
-- `02-mode-hamburger-bahnhof-half-pants-anime.png`
+- `02-mode-hamburger-bahnhof-half-pants-anime.webp`
   - Source file: `ig_076dbdb286366f7a016a2f385f3b98819190f9f7708278784c.png`
   - First candidate rejected: photo-adjacent for the requested anime style
   - Primary category: `mode`
@@ -2201,7 +2204,7 @@ call for them, not as an age or skin-visibility correction.
   - Generated prompt summary: regenerated short prompt for an anime magazine Berlin museum mode look with tunic, half pants, sheer panel, linden belt, carried cardigan, socks, and perforated boots.
   - Visual check: anime style, former-station museum hall, walking pose, tunic, half pants, belt, and boots are readable.
   - Result: accepted after one regeneration.
-- `03-club-kreuzberg-soundcheck-cg-note.png`
+- `03-club-kreuzberg-soundcheck-cg-note.webp`
   - Source file: `ig_076dbdb286366f7a016a2f38c507208191b45db1eea9618326.png`
   - First candidate rejected: too photo-adjacent for the requested 3D style
   - Primary category: `club`
@@ -2226,7 +2229,7 @@ call for them, not as an age or skin-visibility correction.
   - Generated prompt summary: regenerated short prompt for a Berlin club soundcheck look with metallic shirt, opaque bandeau, utility wrap skirt over trousers, linden cable accessories, and cable action.
   - Visual check: club soundcheck room, cable action, wrap-over-trouser silhouette, linden accessories, boots, and hands are readable. It remains more photo-adjacent than ideal for `game-cinematic-3d`.
   - Result: accepted with style-deviation note.
-- `04-active-tempelhofer-field-longboard-marker.png`
+- `04-active-tempelhofer-field-longboard-marker.webp`
   - Source file: `ig_076dbdb286366f7a016a2f37e2bf288191832ef091d206a369.png`
   - Primary category: `active`
   - Target age band: `18-19-adult`

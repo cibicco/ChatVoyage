@@ -50,7 +50,11 @@ Use this checklist after every daily image generation or reorganization.
 
 ## After Generation
 
-- Save final images under `assets/daily/YYYY-MM-DD-theme/`.
+- Save final display images under `assets/daily/YYYY-MM-DD-theme/` as WebP
+  by default. Use `python3 scripts/convert_daily_images_to_webp.py <folder>`
+  after generation when the image tool produced PNG files. Keep generated PNG
+  originals only when they are needed as source material; do not delete
+  originals unless the user explicitly asks.
 - Keep four separate images; do not make a collage.
 - Add or update a human-readable note in `notes/YYYY-MM-DD-theme.md`.
 - Add detailed LLM/Codex reuse information to `logs/generation-YYYY-MM.md`.
@@ -63,12 +67,17 @@ Use this checklist after every daily image generation or reorganization.
 - Record the persona direction and fashion focal point for each accepted image.
 - Add an album page under `assets/YYYY-MM-DD-theme-album.html` when the set is
   intended to be browsed independently.
+- Use album markup that works on mobile: `object-fit: contain`, direct image
+  links, `loading` / `decoding` attributes, and an `Open image` link for each
+  image.
 - Add the set to `index.html` with:
   - `data-style`
   - `data-place`
   - `data-category`
   - note link
-  - album link when available
+- album link when available
+- Rebuild the album-level browser when album links change:
+  `python3 scripts/build_album_index.py`
 
 ## Validation
 
