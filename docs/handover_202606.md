@@ -1,5 +1,48 @@
 # handover_202606
 
+## 2026-06-16 Album product rebuild
+
+### 背景/目的
+ユーザから「アルバムそのものがイマイチ」「33件のアルバムHTMLという構成そのものはいいのか」と指摘があり、個別HTMLテンプレート改善ではなくアルバムのプロダクト構成を見直した。
+
+### 判断
+- 33個の個別HTMLを主導線にする構成は不採用。静的サイトとしては動くが、正本が分散し、遷移がファイル設計都合に寄り、テンプレート更新時の差分も大きすぎる。
+- 主導線は `album.html?set=...` の単一ビューアに統一。
+- `assets/*-album.html` は削除せず、旧リンク互換のリダイレクトページとして残す。
+
+### 変更内容
+- `album.html` を追加。単一のアルバムビューア shell。
+- `assets/album-data.js` を追加。33セット / 135画像の構造化データ。
+- `assets/album-page.js` をデータ駆動ビューアとして作り直し。
+- `assets/album-page.css` を単一ビューア用に更新。
+- `albums.html` と `index.html` のアルバムリンクを `album.html?set=...` に統一。
+- 既存 `assets/*-album.html` 33件は `../album.html?set=...` への legacy redirect に変更。
+- `scripts/build_album_catalog.py` を追加。album shell / data JS / album browser / legacy redirect / index link をまとめて生成する正本。
+- `scripts/build_album_index.py`, `scripts/rebuild_album_pages.py`, `scripts/backfill_missing_album_pages.py`, `scripts/normalize_album_pages.py` は新ビルダーへの互換ラッパーに変更。
+- `scripts/validate_gallery.py` を単一ビューア構成の検証に更新。
+- `docs/daily-generation-workflow.md` と `skills/daily-fashion-sketch/SKILL.md` を新しいアルバム運用へ更新。
+- installed skill copy `/Users/allegro/.codex/skills/daily-fashion-sketch/SKILL.md` は repo copy と同期済み。
+
+### 検証
+実施済み:
+
+```sh
+python3 scripts/build_album_catalog.py
+node --check assets/album-page.js
+node --check assets/album-browser.js
+python3 scripts/validate_gallery.py
+git diff --check
+```
+
+結果:
+- `build_album_catalog.py`: `albums: 33`, `changed: 0`
+- album data: 33 albums / 135 images / 33 unique slugs / non-WebP data refs 0
+- `validate_gallery.py`: `errors: 0`
+- repo copy と installed copy の `daily-fashion-sketch/SKILL.md` は `cmp` 一致
+
+### 未実施
+- ローカルURLの実ブラウザ視覚確認。今回のセッションでは local `file://` / `127.0.0.1` 表示がツールポリシーで使えなかったため未実施。
+
 ## 2026-06-05 Chat Voyage gallery / metadata / daily workflow closeout
 
 ### 背景/目的

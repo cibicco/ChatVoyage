@@ -68,20 +68,19 @@ single four-panel collage.
 12. Save accepted display images under `assets/daily/YYYY-MM-DD-theme/` as
     WebP by default. If the image tool produced PNG files, use
     `python3 scripts/convert_daily_images_to_webp.py <folder>` and point
-    `index.html` plus album pages at the WebP files. This project no longer
-    keeps PNG copies after WebP conversion; remove generated PNG files once the
-    matching WebP files and gallery references are verified.
-13. Update the monthly log, notes, album, and `index.html`. Album pages should
-    use the current shared album template: mobile-friendly layout,
-    `object-fit: contain`, direct image links, `loading` / `decoding`
-    attributes, and an `Open image` link for each image.
+    `index.html` plus the album catalog at the WebP files. This project no
+    longer keeps PNG copies after WebP conversion; remove generated PNG files
+    once the matching WebP files and gallery references are verified.
+13. Update the monthly log, notes, album catalog, and `index.html`.
+    `index.html` album links should use `album.html?set=YYYY-MM-DD-theme`.
+    The product-facing album view is the unified `album.html` shell backed by
+    `assets/album-data.js`; legacy `assets/YYYY-MM-DD-theme-album.html` files
+    are compatibility redirects only.
 14. When old pages or bulk edits are involved, run
     `python3 scripts/switch_daily_refs_to_webp.py` and
-    `python3 scripts/rebuild_album_pages.py`. Use
-    `python3 scripts/normalize_album_pages.py` only for a small compatibility
-    cleanup when a full rebuild is not appropriate.
-15. Rebuild the album-level browser with `python3 scripts/build_album_index.py`
-    when album links change.
+    `python3 scripts/build_album_catalog.py`.
+15. Rebuild the album catalog with `python3 scripts/build_album_catalog.py`
+    whenever album links, set metadata, or image references change.
 16. Run `python3 scripts/validate_gallery.py` from the Chat Voyage root when that script exists.
 
 ## Reference Reading

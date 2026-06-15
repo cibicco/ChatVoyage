@@ -42,7 +42,8 @@ def main() -> int:
     targets = [
         ROOT / "index.html",
         ROOT / "albums.html",
-        *sorted((ROOT / "assets").glob("*-album.html")),
+        ROOT / "album.html",
+        ROOT / "assets" / "album-data.js",
         *sorted((ROOT / "notes").glob("*.md")),
         *sorted((ROOT / "logs").glob("generation-*.md")),
     ]

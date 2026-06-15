@@ -66,27 +66,21 @@ Use this checklist after every daily image generation or reorganization.
   reason, climate context, age-band life scene, age-band silhouette, and the
   anti-repeat instruction for each accepted image.
 - Record the persona direction and fashion focal point for each accepted image.
-- Add an album page under `assets/YYYY-MM-DD-theme-album.html` for every
-  `section[data-set]` in `index.html`. The album browser is product-facing and
-  should not silently omit older sets.
-- Use album markup that works on mobile: `object-fit: contain`, direct image
-  links, `loading` / `decoding` attributes, and an `Open image` link for each
-  image.
-- Rebuild existing or newly edited album pages with the current shared
-  template when needed:
-  `python3 scripts/rebuild_album_pages.py`
-- For a small compatibility cleanup without full template rebuild, run:
-  `python3 scripts/normalize_album_pages.py`
+- Add the set to `index.html` with an `album.html?set=YYYY-MM-DD-theme`
+  album link. The product-facing album view is the unified `album.html` shell
+  backed by `assets/album-data.js`, not a separate full HTML page per set.
+- Rebuild the album catalog after every `index.html` album change:
+  `python3 scripts/build_album_catalog.py`
+- The legacy `assets/YYYY-MM-DD-theme-album.html` files are compatibility
+  redirects only. Do not hand-edit them as album content.
 - Add the set to `index.html` with:
   - `data-style`
   - `data-place`
   - `data-category`
   - note link
-- album link
-- If old sections are missing album links, backfill pages and index links:
-  `python3 scripts/backfill_missing_album_pages.py`
-- Rebuild the album-level browser when album links change:
-  `python3 scripts/build_album_index.py`
+- album link using `album.html?set=...`
+- If old sections are missing album links, run the unified catalog builder:
+  `python3 scripts/build_album_catalog.py`
 - If references were bulk-edited or old PNG references remain, switch display
   references to WebP where matching files exist:
   `python3 scripts/switch_daily_refs_to_webp.py`
@@ -102,9 +96,10 @@ python3 scripts/validate_gallery.py
 The command should report zero errors. It checks:
 
 - every image under `assets/daily/` is represented in `index.html`
-- local album/index links and image references exist
+- local album/index links, image references, and the album data file exist
 - HTML display references use WebP when a WebP display copy exists
-- album pages use non-cropping image display and direct image links
+- the unified album shell has data-driven image viewing, thumbnail navigation,
+  and direct image links
 - every `index.html` set has an album link
 - the album browser exposes style filtering, sorting, view switching, active
   filters, and linked CSS/JS assets

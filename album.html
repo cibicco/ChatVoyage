@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f7">
+  <title>Chat Voyage Album</title>
+  <link rel="stylesheet" href="assets/album-page.css">
+</head>
+<body>
+  <a class="skip-link" href="#images">Skip to images</a>
+  <header class="album-header">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Gallery</a>
+      <a href="albums.html">Albums</a>
+    </nav>
+    <div class="album-tools">
+      <label class="album-select-field" for="album-select">
+        <span>Album</span>
+        <select id="album-select"></select>
+      </label>
+    </div>
+    <p class="eyebrow">Chat Voyage Album</p>
+    <div class="title-block">
+      <h1 id="album-title">Album</h1>
+      <dl class="album-stats" aria-label="Album summary">
+        <div><dt>Date</dt><dd id="album-date"></dd></div>
+        <div><dt>Images</dt><dd id="album-count"></dd></div>
+        <div><dt>Place</dt><dd id="album-place"></dd></div>
+      </dl>
+    </div>
+    <p class="intro" id="album-summary"></p>
+  </header>
+
+  <main class="album-viewer" data-album-viewer>
+    <section class="viewer" aria-label="Selected image">
+      <div class="stage">
+        <a class="stage-link" data-stage-link href="#">
+          <img class="stage-image" data-stage-image alt="" loading="eager" decoding="async">
+        </a>
+      </div>
+      <aside class="viewer-panel">
+        <p class="viewer-count"><span data-current-image>1</span> / <span data-total-images>0</span></p>
+        <div class="viewer-caption" data-viewer-caption></div>
+        <div class="viewer-actions">
+          <button type="button" data-album-prev aria-label="Previous image">&lt;</button>
+          <button type="button" data-album-next aria-label="Next image">&gt;</button>
+          <a class="open-image" data-open-image href="#">Open image</a>
+          <a class="notes-link" data-notes-link href="#" hidden>Notes</a>
+        </div>
+        <div class="album-neighbors" aria-label="Nearby albums">
+          <a data-prev-album href="#"></a>
+          <a data-next-album href="#"></a>
+        </div>
+      </aside>
+    </section>
+
+    <div class="thumbnail-strip" data-thumbnail-strip role="list" aria-label="Album thumbnails"></div>
+
+    <section class="overview" id="images" aria-label="Images">
+      <div class="section-heading">
+        <h2>Images</h2>
+        <p data-image-total></p>
+      </div>
+      <div class="grid" data-image-grid></div>
+    </section>
+  </main>
+  <script src="assets/album-data.js"></script>
+  <script src="assets/album-page.js"></script>
+</body>
+</html>

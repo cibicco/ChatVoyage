@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from html.parser import HTMLParser
+import json
 from pathlib import Path
 import re
 import sys
@@ -58,7 +59,7 @@ class GalleryParser(HTMLParser):
             ref = data.get("href") or data.get("src")
             if ref and not ref.startswith(("http://", "https://", "#", "mailto:")):
                 self.refs.append(ref)
-            if self._in_section and ref and ref.endswith("-album.html"):
+            if self._in_section and ref and is_album_ref(ref):
                 self._section_album = True
 
     def handle_endtag(self, tag: str) -> None:
@@ -100,7 +101,12 @@ def read_index() -> GalleryParser:
 
 
 def local_target(base: Path, ref: str) -> Path:
-    return (base / ref.split("#", 1)[0]).resolve()
+    clean_ref = ref.split("#", 1)[0].split("?", 1)[0]
+    return (base / clean_ref).resolve()
+
+
+def is_album_ref(ref: str) -> bool:
+    return ref.endswith("-album.html") or ref.startswith("album.html?set=")
 
 
 def preset_values(path: Path, pattern: str) -> set[str]:
@@ -169,7 +175,8 @@ def validate() -> list[str]:
         errors.append(f"categories missing from prompts/category-presets.md: {missing_categories}")
 
     album_files = sorted((ROOT / "assets").glob("*-album.html"))
-    html_files = [ROOT / "index.html", ROOT / "albums.html", *album_files]
+    album_shell = ROOT / "album.html"
+    html_files = [ROOT / "index.html", ROOT / "albums.html", album_shell, *album_files]
     missing_refs: list[str] = []
     non_webp_daily_refs: list[str] = []
     for html in html_files:
@@ -186,17 +193,27 @@ def validate() -> list[str]:
                 missing_refs.append(f"{html.relative_to(ROOT)} -> {ref}")
             if "daily/" in ref and Path(ref).suffix.lower() in IMAGE_SUFFIXES and Path(ref).suffix.lower() != ".webp":
                 non_webp_daily_refs.append(f"{html.relative_to(ROOT)} -> {ref}")
-        if html in album_files:
-            if "<header" in text:
-                errors.append(f"album uses legacy header layout: {html.relative_to(ROOT)}")
-            if 'class="open"' in text:
-                errors.append(f"album uses legacy open link class: {html.relative_to(ROOT)}")
-            if "object-fit: cover" in text:
-                errors.append(f"album uses object-fit: cover: {html.relative_to(ROOT)}")
-            if "image-link" not in text or "Open image" not in text:
-                errors.append(f"album missing direct image links: {html.relative_to(ROOT)}")
-            if "../albums.html" not in text:
-                errors.append(f"album missing Albums navigation: {html.relative_to(ROOT)}")
+        if html == album_shell:
+            required_album_page_features = [
+                'assets/album-page.css',
+                'assets/album-data.js',
+                'assets/album-page.js',
+                'data-album-viewer',
+                'id="album-select"',
+                'data-stage-image',
+                'data-thumbnail-strip',
+                'data-image-grid',
+            ]
+            for feature in required_album_page_features:
+                if feature not in text:
+                    errors.append(f"album shell missing feature marker: {feature}")
+        elif html in album_files:
+            if "data-legacy-album" not in text:
+                errors.append(f"legacy album missing marker: {html.relative_to(ROOT)}")
+            if "../album.html?set=" not in text:
+                errors.append(f"legacy album missing canonical viewer redirect: {html.relative_to(ROOT)}")
+            if "daily/" in text:
+                errors.append(f"legacy album embeds daily images: {html.relative_to(ROOT)}")
         elif html.name == "albums.html":
             required_album_browser_features = [
                 'data-filter-group="style"',
@@ -205,10 +222,53 @@ def validate() -> list[str]:
                 'id="active-filters"',
                 'assets/album-browser.css',
                 'assets/album-browser.js',
+                'album.html?set=',
             ]
             for feature in required_album_browser_features:
                 if feature not in text:
                     errors.append(f"album browser missing feature marker: {feature}")
+            if re.search(r'href="assets/[^"]+-album\.html"', text):
+                errors.append("album browser links to legacy album html")
+        elif html.name == "index.html":
+            if re.search(r'href="assets/[^"]+-album\.html"', text):
+                errors.append("index links to legacy album html")
+
+    data_path = ROOT / "assets" / "album-data.js"
+    if not data_path.exists():
+        errors.append("missing album data file: assets/album-data.js")
+    else:
+        data_text = data_path.read_text(encoding="utf-8")
+        match = re.match(r"window\.CHAT_VOYAGE_ALBUMS = (.*);\s*$", data_text, flags=re.DOTALL)
+        if not match:
+            errors.append("album data file has unexpected format")
+        else:
+            try:
+                album_data = json.loads(match.group(1))
+            except json.JSONDecodeError as exc:
+                errors.append(f"album data JSON parse failed: {exc}")
+                album_data = []
+            slugs = [album.get("slug") for album in album_data]
+            if len(slugs) != len(set(slugs)):
+                errors.append("album data contains duplicate slugs")
+            if len(album_data) != len([section for section in parser.sections if section["figures"]]):
+                errors.append(f"album data count mismatch: data={len(album_data)} index_sections={len(parser.sections)}")
+            data_image_count = sum(int(album.get("imageCount", 0)) for album in album_data)
+            if data_image_count != len(daily_images):
+                errors.append(f"album data image count mismatch: data={data_image_count} daily={len(daily_images)}")
+            bad_hrefs = [album.get("href") for album in album_data if not str(album.get("href", "")).startswith("album.html?set=")]
+            if bad_hrefs:
+                errors.append(f"album data has non-canonical hrefs: {bad_hrefs}")
+            for album in album_data:
+                for image in album.get("images", []):
+                    src = str(image.get("src", ""))
+                    if not src:
+                        errors.append(f"album data image missing src: {album.get('slug')}")
+                        continue
+                    target = local_target(ROOT, src)
+                    if not target.exists():
+                        missing_refs.append(f"assets/album-data.js -> {src}")
+                    if Path(src).suffix.lower() in IMAGE_SUFFIXES and Path(src).suffix.lower() != ".webp":
+                        non_webp_daily_refs.append(f"assets/album-data.js -> {src}")
     if missing_refs:
         errors.append("missing local refs: " + ", ".join(missing_refs))
     if non_webp_daily_refs:
@@ -218,7 +278,8 @@ def validate() -> list[str]:
     print(f"daily_source_images: {len(all_daily_images)}")
     print(f"index_figures: {len(parser.figures)}")
     print(f"album_index: {(ROOT / 'albums.html').exists()}")
-    print(f"album_pages: {len(album_files)}")
+    print(f"album_shell: {album_shell.exists()}")
+    print(f"legacy_album_pages: {len(album_files)}")
     print(f"index_styles: {sorted(index_styles)}")
     print(f"index_categories: {sorted(index_categories)}")
     print(f"errors: {len(errors)}")

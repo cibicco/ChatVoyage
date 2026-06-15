@@ -3,9 +3,9 @@
   --ink: #202124;
   --muted: #5f6865;
   --line: #d8ddd9;
-  --paper: #f5f4ef;
-  --panel: #fffefa;
-  --panel-alt: #edf3f0;
+  --paper: #f4f6f7;
+  --panel: #ffffff;
+  --panel-alt: #e8eef0;
   --accent: #116977;
   --accent-strong: #0d5360;
   --warm: #b45535;
@@ -101,7 +101,7 @@ select:focus-visible {
 
 h1 {
   margin: 0;
-  font-size: clamp(2.1rem, 5vw, 4.4rem);
+  font-size: 3.6rem;
   line-height: 0.95;
   letter-spacing: 0;
 }
@@ -421,6 +421,10 @@ h2 a:hover {
 }
 
 .summary {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   margin: 0;
   color: var(--muted);
   font-size: 0.92rem;
@@ -496,6 +500,10 @@ h2 a:hover {
     align-items: start;
   }
 
+  h1 {
+    font-size: 2.7rem;
+  }
+
   .stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -518,6 +526,10 @@ h2 a:hover {
 
   .page-header {
     padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   .stats {
