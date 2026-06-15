@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from html import escape
+from html import escape, unescape
 from html.parser import HTMLParser
 from pathlib import Path
 import re
@@ -147,6 +147,14 @@ def normalize_text(value: str) -> str:
     return " ".join(value.split())
 
 
+def unescape_stable(value: str) -> str:
+    previous = None
+    while value != previous:
+        previous = value
+        value = unescape(value)
+    return value
+
+
 def normalize_caption(caption: str, src: str) -> str:
     caption = re.sub(
         r"\s*<a\s+class=\"(?:open|open-image)\"\s+href=\"[^\"]+\">Open image</a>\s*",
@@ -181,7 +189,7 @@ def normalize_links(page: AlbumPage) -> list[Link]:
 def render_page(page: AlbumPage) -> str:
     title = normalize_text(page.document_title) or f"{normalize_text(page.heading)} - Chat Voyage"
     heading = normalize_text(page.heading) or title.replace(" - Chat Voyage", "")
-    intro = page.intro
+    intro = unescape_stable(page.intro)
     links = "\n".join(
         f'      <a href="{escape(link.href)}">{escape(link.label)}</a>' for link in normalize_links(page)
     )

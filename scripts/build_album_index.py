@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Chat Voyage album index from index.html."""
+"""Build the Chat Voyage album browser from index.html."""
 
 from __future__ import annotations
 
@@ -11,6 +11,13 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+SPECIAL_LABEL_PARTS = {
+    "3d": "3D",
+    "cg": "CG",
+    "pbr": "PBR",
+    "v2": "V2",
+}
 
 
 @dataclass
@@ -52,7 +59,7 @@ class IndexParser(HTMLParser):
             self._in_h2 = True
         elif self._in_section and tag == "p" and data.get("class") == "meta":
             self._in_meta = True
-        elif self._in_section and tag == "a":
+        elif self._in_section and tag == "a" and self._current:
             href = data.get("href") or ""
             if href.endswith("-album.html"):
                 self._current.album_href = href
@@ -101,355 +108,251 @@ class IndexParser(HTMLParser):
             self._current.meta_text += (" " if self._current.meta_text else "") + text
 
 
+def labelize(value: str) -> str:
+    return " ".join(SPECIAL_LABEL_PARTS.get(part, part.capitalize()) for part in value.split("-"))
+
+
+def album_date(title: str) -> str:
+    match = re.match(r"^(\d{4}-\d{2}-\d{2})", title)
+    return match.group(1) if match else ""
+
+
+def album_month(title: str) -> str:
+    date = album_date(title)
+    return date[:7] if date else ""
+
+
+def album_places(album: Album) -> list[str]:
+    values = sorted({fig.place for fig in album.figures if fig.place})
+    return values or ["unspecified"]
+
+
+def album_categories(album: Album) -> list[str]:
+    return sorted({fig.category for fig in album.figures if fig.category})
+
+
+def album_styles(album: Album) -> list[str]:
+    return sorted({fig.style for fig in album.figures if fig.style})
+
+
+def filter_button(value: str, label: str | None = None, pressed: bool = False, count: int = 0) -> str:
+    label = label or labelize(value)
+    return (
+        f'          <button type="button" data-filter="{escape(value)}" '
+        f'aria-pressed="{str(pressed).lower()}">'
+        f'<span class="filter-text">{escape(label)}</span>'
+        f'<span class="filter-count">{count}</span></button>'
+    )
+
+
 def build_html(albums: list[Album]) -> str:
-    places = sorted({fig.place for album in albums for fig in album.figures if fig.place})
-    categories = sorted({fig.category for album in albums for fig in album.figures if fig.category})
-    months = sorted({album.title[:7] for album in albums if re.match(r"^\d{4}-\d{2}", album.title)}, reverse=True)
-    cards = "\n".join(render_card(album) for album in albums)
+    places = sorted({place for album in albums for place in album_places(album)})
+    categories = sorted({category for album in albums for category in album_categories(album)})
+    styles = sorted({style for album in albums for style in album_styles(album)})
+    months = sorted({album_month(album.title) for album in albums if album_month(album.title)}, reverse=True)
+    total_images = sum(len(album.figures) for album in albums)
+    total_places = len(places)
+    latest_date = album_date(albums[0].title) if albums else ""
+
     month_buttons = "\n".join(
-        f'          <button type="button" data-filter="{escape(month)}">{escape(month)}</button>'
+        filter_button(month, month, count=sum(1 for album in albums if album_month(album.title) == month))
         for month in months
     )
     place_buttons = "\n".join(
-        f'          <button type="button" data-filter="{escape(place)}">{escape(place.title())}</button>'
+        filter_button(place, count=sum(1 for album in albums if place in album_places(album)))
         for place in places
     )
     category_buttons = "\n".join(
-        f'          <button type="button" data-filter="{escape(category)}">{escape(category.title())}</button>'
+        filter_button(category, count=sum(1 for album in albums if category in album_categories(album)))
         for category in categories
     )
+    style_buttons = "\n".join(
+        filter_button(style, count=sum(1 for album in albums if style in album_styles(album)))
+        for style in styles
+    )
+    cards = "\n".join(render_card(album, is_latest=(index == 0), index=index) for index, album in enumerate(albums))
+
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
   <title>Chat Voyage Albums</title>
-  <style>
-    :root {{
-      color-scheme: light;
-      --ink: #202124;
-      --muted: #61666d;
-      --line: #d8dde3;
-      --paper: #fbfaf7;
-      --panel: #ffffff;
-      --accent: #276f86;
-      --active: #1f596a;
-    }}
-    * {{ box-sizing: border-box; }}
-    body {{
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.5;
-    }}
-    header, main {{
-      width: min(1180px, calc(100% - 32px));
-      margin: 0 auto;
-    }}
-    header {{
-      padding: 34px 0 22px;
-      border-bottom: 1px solid var(--line);
-    }}
-    nav {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-bottom: 18px;
-      color: var(--muted);
-    }}
-    h1 {{
-      margin: 0 0 8px;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.05;
-      letter-spacing: 0;
-    }}
-    .intro {{
-      max-width: 760px;
-      margin: 0;
-      color: var(--muted);
-    }}
-    .filters {{
-      display: grid;
-      gap: 12px;
-      padding: 18px 0;
-      border-bottom: 1px solid var(--line);
-    }}
-    .filter-row {{
-      display: grid;
-      grid-template-columns: 86px 1fr;
-      gap: 10px;
-      align-items: start;
-    }}
-    .filter-label {{
-      padding-top: 7px;
-      color: var(--muted);
-      font-size: 0.86rem;
-      font-weight: 650;
-      text-transform: uppercase;
-    }}
-    .filter-buttons {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }}
-    .search {{
-      width: min(100%, 420px);
-      min-height: 36px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--panel);
-      color: var(--ink);
-      font: inherit;
-      font-size: 0.95rem;
-      padding: 7px 10px;
-    }}
-    .search-controls {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-    }}
-    button {{
-      min-height: 34px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--panel);
-      color: var(--ink);
-      font: inherit;
-      font-size: 0.9rem;
-      cursor: pointer;
-      padding: 6px 10px;
-    }}
-    button[aria-pressed="true"] {{
-      border-color: var(--active);
-      background: var(--active);
-      color: #fff;
-    }}
-    .count {{
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }}
-    .albums {{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      padding: 24px 0 44px;
-    }}
-    .album-card {{
-      display: grid;
-      grid-template-rows: auto 1fr;
-      min-width: 0;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      overflow: hidden;
-    }}
-    .strip {{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      background: #eef1f3;
-    }}
-    .strip img {{
-      display: block;
-      width: 100%;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
-      background: #eef1f3;
-    }}
-    .content {{
-      display: grid;
-      gap: 9px;
-      padding: 14px;
-    }}
-    h2 {{
-      margin: 0;
-      font-size: 1.02rem;
-      line-height: 1.25;
-      letter-spacing: 0;
-    }}
-    .meta {{
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }}
-    .tags {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      color: var(--muted);
-      font-size: 0.82rem;
-    }}
-    .tag {{
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 2px 8px;
-      background: #fafbfc;
-    }}
-    .links {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 2px;
-    }}
-    a {{
-      color: var(--accent);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }}
-    .is-hidden {{ display: none; }}
-    @media (max-width: 640px) {{
-      header, main {{
-        width: min(100% - 18px, 520px);
-      }}
-      .filter-row {{
-        grid-template-columns: 1fr;
-        gap: 6px;
-      }}
-      .albums {{
-        grid-template-columns: 1fr;
-        gap: 14px;
-      }}
-    }}
-  </style>
+  <link rel="stylesheet" href="assets/album-browser.css">
 </head>
 <body>
-  <header>
-    <nav>
+  <a class="skip-link" href="#albums">Skip to albums</a>
+  <header class="page-header">
+    <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Gallery</a>
+      <a href="albums.html" aria-current="page">Albums</a>
     </nav>
-    <h1>Chat Voyage Albums</h1>
-    <p class="intro">Album-level browsing for daily fashion sets. Use this page when the gallery has too many individual images and you want to move by set.</p>
-  </header>
-  <main>
-    <div class="filters" aria-label="Album filters">
-      <div class="filter-row">
-        <div class="filter-label">Search</div>
-        <div class="search-controls">
-          <input class="search" type="search" id="album-search" placeholder="City, theme, category">
-          <button type="button" id="reset-filters">Reset</button>
-        </div>
+    <div class="masthead">
+      <div>
+        <p class="eyebrow">Chat Voyage</p>
+        <h1>Albums</h1>
       </div>
-      <div class="filter-row">
+      <dl class="stats" aria-label="Album summary">
+        <div><dt>Albums</dt><dd>{len(albums)}</dd></div>
+        <div><dt>Images</dt><dd>{total_images}</dd></div>
+        <div><dt>Places</dt><dd>{total_places}</dd></div>
+        <div><dt>Latest</dt><dd>{escape(latest_date)}</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <main class="album-browser" data-album-app data-view="grid">
+    <section class="controls" aria-label="Album controls">
+      <div class="control-row control-row-main">
+        <label class="search-field" for="album-search">
+          <span>Search</span>
+          <input type="search" id="album-search" placeholder="City, theme, style, category">
+        </label>
+        <label class="select-field" for="album-sort">
+          <span>Sort</span>
+          <select id="album-sort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="city">City</option>
+            <option value="title">Title</option>
+            <option value="images">Image count</option>
+          </select>
+        </label>
+        <div class="view-toggle" aria-label="View mode">
+          <button type="button" data-view-option="grid" aria-pressed="true">Grid</button>
+          <button type="button" data-view-option="list" aria-pressed="false">List</button>
+        </div>
+        <button class="reset-button" type="button" id="reset-filters">Reset</button>
+      </div>
+
+      <div class="filter-row" data-filter-group="month">
         <div class="filter-label">Month</div>
-        <div class="filter-buttons" data-filter-group="month">
-          <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <div class="filter-buttons">
+{filter_button("all", "All", pressed=True, count=len(albums))}
 {month_buttons}
         </div>
       </div>
-      <div class="filter-row">
+      <div class="filter-row" data-filter-group="place">
         <div class="filter-label">Place</div>
-        <div class="filter-buttons" data-filter-group="place">
-          <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <div class="filter-buttons">
+{filter_button("all", "All", pressed=True, count=len(albums))}
 {place_buttons}
         </div>
       </div>
-      <div class="filter-row">
+      <div class="filter-row" data-filter-group="category">
         <div class="filter-label">Category</div>
-        <div class="filter-buttons" data-filter-group="category">
-          <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <div class="filter-buttons">
+{filter_button("all", "All", pressed=True, count=len(albums))}
 {category_buttons}
         </div>
       </div>
-      <p class="count" aria-live="polite">Showing <span id="visible-count">{len(albums)}</span> / <span id="total-count">{len(albums)}</span> albums</p>
-    </div>
-    <div class="albums">
+      <div class="filter-row" data-filter-group="style">
+        <div class="filter-label">Style</div>
+        <div class="filter-buttons">
+{filter_button("all", "All", pressed=True, count=len(albums))}
+{style_buttons}
+        </div>
+      </div>
+
+      <div class="result-bar">
+        <p class="count" aria-live="polite"><span id="visible-count">{len(albums)}</span> / <span id="total-count">{len(albums)}</span> albums</p>
+        <div class="active-filters" id="active-filters" aria-label="Active filters"></div>
+      </div>
+    </section>
+
+    <p class="empty-state" id="empty-state" hidden>No albums match the current filters.</p>
+    <section class="albums" id="albums" aria-label="Album results">
 {cards}
-    </div>
+    </section>
   </main>
-  <script>
-    const state = {{ month: "all", place: "all", category: "all", query: "" }};
-    const cards = Array.from(document.querySelectorAll(".album-card"));
-    const search = document.getElementById("album-search");
-    const reset = document.getElementById("reset-filters");
-    const visibleCount = document.getElementById("visible-count");
-    const totalCount = document.getElementById("total-count");
-    totalCount.textContent = cards.length;
-    function matches(card) {{
-      return Object.entries(state).every(([key, value]) => {{
-        if (key === "query") {{
-          return !value || (card.dataset.search || "").includes(value);
-        }}
-        if (value === "all") return true;
-        return (card.dataset[key] || "").split(" ").includes(value);
-      }});
-    }}
-    function update() {{
-      state.query = search.value.trim().toLowerCase();
-      let visible = 0;
-      cards.forEach((card) => {{
-        const show = matches(card);
-        card.classList.toggle("is-hidden", !show);
-        if (show) visible += 1;
-      }});
-      visibleCount.textContent = visible;
-    }}
-    document.querySelectorAll("[data-filter-group]").forEach((group) => {{
-      const key = group.dataset.filterGroup;
-      group.addEventListener("click", (event) => {{
-        const button = event.target.closest("button[data-filter]");
-        if (!button) return;
-        state[key] = button.dataset.filter;
-        group.querySelectorAll("button").forEach((item) => {{
-          item.setAttribute("aria-pressed", String(item === button));
-        }});
-        update();
-      }});
-    }});
-    search.addEventListener("input", () => {{
-      state.query = search.value.trim().toLowerCase();
-      update();
-    }});
-    reset.addEventListener("click", () => {{
-      state.month = "all";
-      state.place = "all";
-      state.category = "all";
-      search.value = "";
-      document.querySelectorAll("[data-filter-group]").forEach((group) => {{
-        group.querySelectorAll("button").forEach((button) => {{
-          button.setAttribute("aria-pressed", String(button.dataset.filter === "all"));
-        }});
-      }});
-      update();
-    }});
-  </script>
+
+  <script src="assets/album-browser.js"></script>
 </body>
 </html>
 """
 
 
-def render_card(album: Album) -> str:
-    places = sorted({fig.place for fig in album.figures if fig.place})
-    categories = sorted({fig.category for fig in album.figures if fig.category})
+def render_card(album: Album, *, is_latest: bool, index: int) -> str:
+    places = album_places(album)
+    categories = album_categories(album)
+    styles = album_styles(album)
     meta = album.meta_text.lstrip("- ").strip()
-    month = album.title[:7] if re.match(r"^\d{4}-\d{2}", album.title) else ""
-    search = " ".join([album.title, meta, *places, *categories]).lower()
-    thumbs = "\n".join(
-        f'        <img src="{escape(fig.src)}" alt="{escape(fig.alt)}" loading="lazy" decoding="async">'
-        for fig in album.figures[:4]
-    )
-    tags = "\n".join(
-        f'        <span class="tag">{escape(value)}</span>'
-        for value in [*places, *categories]
-    )
-    notes = f'<a href="{escape(album.notes_href)}">Notes</a>' if album.notes_href else ""
-    return f"""      <article class="album-card" data-month="{escape(month)}" data-place="{escape(' '.join(places))}" data-category="{escape(' '.join(categories))}" data-search="{escape(search)}">
-        <a class="strip" href="{escape(album.album_href)}" aria-label="{escape(album.title)} album">
+    date = album_date(album.title)
+    month = album_month(album.title)
+    city = labelize(places[0])
+    image_count = len(album.figures)
+    search = " ".join(
+        [
+            album.title,
+            meta,
+            *places,
+            *categories,
+            *styles,
+            *[fig.alt for fig in album.figures if fig.alt],
+        ]
+    ).lower()
+    badges = render_badges(album, is_latest=is_latest)
+    thumbs = "\n".join(render_thumb(fig, album.title) for fig in album.figures[:4])
+    category_tags = "\n".join(render_tag(category, "category") for category in categories)
+    style_tags = "\n".join(render_tag(style, "style") for style in styles)
+    place_tags = "\n".join(render_tag(place, "place") for place in places)
+    notes = f'<a class="secondary-link" href="{escape(album.notes_href)}">Notes</a>' if album.notes_href else ""
+    title = escape(album.title)
+    meta_html = f'<p class="summary">{escape(meta)}</p>' if meta else ""
+
+    return f"""      <article class="album-card" data-index="{index}" data-title="{title.lower()}" data-date="{escape(date)}" data-month="{escape(month)}" data-city="{escape(city.lower())}" data-place="{escape(' '.join(places))}" data-category="{escape(' '.join(categories))}" data-style="{escape(' '.join(styles))}" data-image-count="{image_count}" data-search="{escape(search)}">
+        <a class="thumb-grid" href="{escape(album.album_href)}" aria-label="{title} album">
 {thumbs}
         </a>
-        <div class="content">
-          <h2>{escape(album.title)}</h2>
-          <p class="meta">{escape(meta)}</p>
-          <div class="tags">
-{tags}
+        <div class="album-content">
+          <div class="album-kicker">
+            <span>{escape(date)}</span>
+            <span>{escape(city)}</span>
+            <span>{image_count} images</span>
           </div>
-          <div class="links">
-            <a href="{escape(album.album_href)}">Open album</a>
+          <div class="title-row">
+            <h2><a href="{escape(album.album_href)}">{title}</a></h2>
+{badges}
+          </div>
+{meta_html}
+          <div class="tag-groups" aria-label="Album metadata">
+            <div class="tag-group">{place_tags}</div>
+            <div class="tag-group">{category_tags}</div>
+            <div class="tag-group">{style_tags}</div>
+          </div>
+          <div class="album-actions">
+            <a class="primary-link" href="{escape(album.album_href)}">Open album</a>
             {notes}
           </div>
         </div>
       </article>"""
+
+
+def render_thumb(fig: Figure, album_title: str) -> str:
+    alt = fig.alt or f"{album_title} image"
+    return (
+        f'          <img src="{escape(fig.src)}" alt="{escape(alt)}" '
+        'loading="lazy" decoding="async">'
+    )
+
+
+def render_tag(value: str, kind: str) -> str:
+    return f'<span class="tag tag-{kind}">{escape(labelize(value))}</span>'
+
+
+def render_badges(album: Album, *, is_latest: bool) -> str:
+    badges: list[str] = []
+    title = album.title.lower()
+    if is_latest:
+        badges.append("Latest")
+    if "remake" in title or " v2" in title or "-v2" in title or "regeneration" in title:
+        badges.append("Remake")
+    if len(album.figures) != 4:
+        badges.append(f"{len(album.figures)} images")
+    if not badges:
+        return ""
+    return '<div class="badges">' + "".join(f'<span class="badge">{escape(badge)}</span>' for badge in badges) + "</div>"
 
 
 def main() -> int:

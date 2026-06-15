@@ -17,6 +17,7 @@ class GalleryParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
         self.figures: list[dict[str, str | None]] = []
+        self.sections: list[dict[str, int | bool | str]] = []
         self.filters: dict[str, set[str]] = {
             "style": set(),
             "place": set(),
@@ -24,14 +25,28 @@ class GalleryParser(HTMLParser):
         }
         self.refs: list[str] = []
         self._filter_group: str | None = None
+        self._in_section = False
+        self._section_title = ""
+        self._section_figures = 0
+        self._section_album = False
+        self._in_h2 = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         data = dict(attrs)
+        if tag == "section" and "data-set" in data:
+            self._in_section = True
+            self._section_title = ""
+            self._section_figures = 0
+            self._section_album = False
+        elif self._in_section and tag == "h2":
+            self._in_h2 = True
         if tag == "div" and data.get("data-filter-group"):
             self._filter_group = data["data-filter-group"]
         if tag == "button" and self._filter_group and data.get("data-filter"):
             self.filters.setdefault(self._filter_group, set()).add(data["data-filter"])
         if tag == "figure" and data.get("data-style"):
+            if self._in_section:
+                self._section_figures += 1
             self.figures.append(
                 {
                     "style": data.get("data-style"),
@@ -43,10 +58,27 @@ class GalleryParser(HTMLParser):
             ref = data.get("href") or data.get("src")
             if ref and not ref.startswith(("http://", "https://", "#", "mailto:")):
                 self.refs.append(ref)
+            if self._in_section and ref and ref.endswith("-album.html"):
+                self._section_album = True
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "div":
             self._filter_group = None
+        elif tag == "h2":
+            self._in_h2 = False
+        elif tag == "section" and self._in_section:
+            self.sections.append(
+                {
+                    "title": self._section_title,
+                    "figures": self._section_figures,
+                    "album": self._section_album,
+                }
+            )
+            self._in_section = False
+
+    def handle_data(self, data: str) -> None:
+        if self._in_h2:
+            self._section_title += data
 
 
 class RefParser(HTMLParser):
@@ -112,6 +144,14 @@ def validate() -> list[str]:
     if len(parser.figures) != len(daily_images):
         errors.append(f"figure count mismatch: index={len(parser.figures)} daily={len(daily_images)}")
 
+    missing_album_sections = [
+        f"{section['title']} ({section['figures']} figures)"
+        for section in parser.sections
+        if section["figures"] and not section["album"]
+    ]
+    if missing_album_sections:
+        errors.append("index sections missing album links: " + ", ".join(missing_album_sections))
+
     for group in ("style", "place", "category"):
         data_values = {f[group] for f in parser.figures if f.get(group)}
         filter_values = parser.filters.get(group, set()) - {"all"}
@@ -157,6 +197,18 @@ def validate() -> list[str]:
                 errors.append(f"album missing direct image links: {html.relative_to(ROOT)}")
             if "../albums.html" not in text:
                 errors.append(f"album missing Albums navigation: {html.relative_to(ROOT)}")
+        elif html.name == "albums.html":
+            required_album_browser_features = [
+                'data-filter-group="style"',
+                'id="album-sort"',
+                'data-view-option="grid"',
+                'id="active-filters"',
+                'assets/album-browser.css',
+                'assets/album-browser.js',
+            ]
+            for feature in required_album_browser_features:
+                if feature not in text:
+                    errors.append(f"album browser missing feature marker: {feature}")
     if missing_refs:
         errors.append("missing local refs: " + ", ".join(missing_refs))
     if non_webp_daily_refs:

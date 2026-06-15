@@ -66,8 +66,9 @@ Use this checklist after every daily image generation or reorganization.
   reason, climate context, age-band life scene, age-band silhouette, and the
   anti-repeat instruction for each accepted image.
 - Record the persona direction and fashion focal point for each accepted image.
-- Add an album page under `assets/YYYY-MM-DD-theme-album.html` when the set is
-  intended to be browsed independently.
+- Add an album page under `assets/YYYY-MM-DD-theme-album.html` for every
+  `section[data-set]` in `index.html`. The album browser is product-facing and
+  should not silently omit older sets.
 - Use album markup that works on mobile: `object-fit: contain`, direct image
   links, `loading` / `decoding` attributes, and an `Open image` link for each
   image.
@@ -81,7 +82,9 @@ Use this checklist after every daily image generation or reorganization.
   - `data-place`
   - `data-category`
   - note link
-- album link when available
+- album link
+- If old sections are missing album links, backfill pages and index links:
+  `python3 scripts/backfill_missing_album_pages.py`
 - Rebuild the album-level browser when album links change:
   `python3 scripts/build_album_index.py`
 - If references were bulk-edited or old PNG references remain, switch display
@@ -102,6 +105,9 @@ The command should report zero errors. It checks:
 - local album/index links and image references exist
 - HTML display references use WebP when a WebP display copy exists
 - album pages use non-cropping image display and direct image links
+- every `index.html` set has an album link
+- the album browser exposes style filtering, sorting, view switching, active
+  filters, and linked CSS/JS assets
 - `data-style`, `data-place`, and `data-category` values have filter buttons
 - index style/category values exist in the prompt preset files
 
