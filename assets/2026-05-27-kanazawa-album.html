@@ -90,9 +90,22 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 18;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #e8ebe5;
+    }
+
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
     }
 
     figcaption {
@@ -115,6 +128,20 @@
       color: var(--accent);
       font-weight: 600;
     }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
@@ -123,6 +150,7 @@
     <p class="meta">雨の金沢、工芸感のあるワークウェアと静かなモード。ラッキーカラーは緑青グリーン。4枚は別人物・別服・別シーンの単独画像。</p>
     <nav aria-label="Related pages">
       <a href="../index.html">Main Gallery</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-05-27-kanazawa-verdigris-craft-modern.md">Notes</a>
       <a href="../logs/generation-2026-05.md">Generation Log</a>
       <a href="daily/2026-05-27-kanazawa-verdigris-craft-modern/">Image Folder</a>
@@ -132,34 +160,38 @@
   <main>
     <div class="grid">
       <figure>
-        <img src="daily/2026-05-27-kanazawa-verdigris-craft-modern/01-street-rain-workwear-verdigris.png" alt="Street rain workwear verdigris look">
+        <a class="image-link" href="daily/2026-05-27-kanazawa-verdigris-craft-modern/01-street-rain-workwear-verdigris.webp"><img src="daily/2026-05-27-kanazawa-verdigris-craft-modern/01-street-rain-workwear-verdigris.webp" alt="Street rain workwear verdigris look" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Street Rain Workwear</h2>
           <p><span class="tag">街服</span> 透け感のある雨アノラック、ワッフルニット、バレル型カーペンターパンツ。</p>
+                  <a class="open-image" href="daily/2026-05-27-kanazawa-verdigris-craft-modern/01-street-rain-workwear-verdigris.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-05-27-kanazawa-verdigris-craft-modern/02-mode-lacquer-museum-verdigris.png" alt="Mode lacquer museum verdigris look">
+        <a class="image-link" href="daily/2026-05-27-kanazawa-verdigris-craft-modern/02-mode-lacquer-museum-verdigris.webp"><img src="daily/2026-05-27-kanazawa-verdigris-craft-modern/02-mode-lacquer-museum-verdigris.webp" alt="Mode lacquer museum verdigris look" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Mode Lacquer Museum</h2>
           <p><span class="tag">モード</span> 漆黒のロングベスト、白ポプリン、プリーツスカート、緑青ベルト。</p>
+                  <a class="open-image" href="daily/2026-05-27-kanazawa-verdigris-craft-modern/02-mode-lacquer-museum-verdigris.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-05-27-kanazawa-verdigris-craft-modern/03-night-velvet-teahouse-verdigris.png" alt="Night velvet teahouse verdigris look">
+        <a class="image-link" href="daily/2026-05-27-kanazawa-verdigris-craft-modern/03-night-velvet-teahouse-verdigris.webp"><img src="daily/2026-05-27-kanazawa-verdigris-craft-modern/03-night-velvet-teahouse-verdigris.webp" alt="Night velvet teahouse verdigris look" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Night Velvet Teahouse</h2>
           <p><span class="tag">夜</span> ベルベットのラップドレス、サテンジャケット、絹スカーフベルト。</p>
+                  <a class="open-image" href="daily/2026-05-27-kanazawa-verdigris-craft-modern/03-night-velvet-teahouse-verdigris.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-05-27-kanazawa-verdigris-craft-modern/04-resort-ryokan-terrace-verdigris.png" alt="Resort ryokan terrace verdigris look">
+        <a class="image-link" href="daily/2026-05-27-kanazawa-verdigris-craft-modern/04-resort-ryokan-terrace-verdigris.webp"><img src="daily/2026-05-27-kanazawa-verdigris-craft-modern/04-resort-ryokan-terrace-verdigris.webp" alt="Resort ryokan terrace verdigris look" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Resort Ryokan Terrace</h2>
           <p><span class="tag">リゾート</span> 緑青のニットスイムボディ、透かし織りリネンシャツ、巻きキュロット。</p>
+                  <a class="open-image" href="daily/2026-05-27-kanazawa-verdigris-craft-modern/04-resort-ryokan-terrace-verdigris.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

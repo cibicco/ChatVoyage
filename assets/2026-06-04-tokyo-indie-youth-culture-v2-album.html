@@ -76,9 +76,22 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
+    }
+
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
     }
 
     figcaption { padding: 12px; }
@@ -104,12 +117,27 @@
     }
 
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="daily/2026-06-04-tokyo-indie-youth-culture-v2/">Image Folder</a>
     </nav>
 
@@ -118,7 +146,7 @@
 
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-04-tokyo-indie-youth-culture-v2/01-market-vintage-lane-cel-anime.png" alt="Adult 18-19 Japanese vintage market look">
+        <a class="image-link" href="daily/2026-06-04-tokyo-indie-youth-culture-v2/01-market-vintage-lane-cel-anime.webp"><img src="daily/2026-06-04-tokyo-indie-youth-culture-v2/01-market-vintage-lane-cel-anime.webp" alt="Adult 18-19 Japanese vintage market look" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Market - Vintage Lane</h2>
           <dl>
@@ -127,11 +155,12 @@
             <dt>Style</dt><dd>anime-cel-polished</dd>
             <dt>Place</dt><dd>Tokyo vintage market</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-04-tokyo-indie-youth-culture-v2/01-market-vintage-lane-cel-anime.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-04-tokyo-indie-youth-culture-v2/02-club-livehouse-doll-3d.png" alt="Adult early 20s live-house club look">
+        <a class="image-link" href="daily/2026-06-04-tokyo-indie-youth-culture-v2/02-club-livehouse-doll-3d.webp"><img src="daily/2026-06-04-tokyo-indie-youth-culture-v2/02-club-livehouse-doll-3d.webp" alt="Adult early 20s live-house club look" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Club - Livehouse</h2>
           <dl>
@@ -140,11 +169,12 @@
             <dt>Style</dt><dd>doll-like-3d</dd>
             <dt>Place</dt><dd>Tokyo live-house lobby</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-04-tokyo-indie-youth-culture-v2/02-club-livehouse-doll-3d.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-04-tokyo-indie-youth-culture-v2/03-gallery-zine-runway-board.png" alt="Adult late 20s zine gallery remake fashion look">
+        <a class="image-link" href="daily/2026-06-04-tokyo-indie-youth-culture-v2/03-gallery-zine-runway-board.webp"><img src="daily/2026-06-04-tokyo-indie-youth-culture-v2/03-gallery-zine-runway-board.webp" alt="Adult late 20s zine gallery remake fashion look" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Gallery - Zine Remake</h2>
           <dl>
@@ -153,11 +183,12 @@
             <dt>Style</dt><dd>runway-board-illustration</dd>
             <dt>Place</dt><dd>Shimokitazawa zine gallery</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-04-tokyo-indie-youth-culture-v2/03-gallery-zine-runway-board.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-04-tokyo-indie-youth-culture-v2/04-home-after-live-soft-real.png" alt="Adult early 30s after-live home fashion look">
+        <a class="image-link" href="daily/2026-06-04-tokyo-indie-youth-culture-v2/04-home-after-live-soft-real.webp"><img src="daily/2026-06-04-tokyo-indie-youth-culture-v2/04-home-after-live-soft-real.webp" alt="Adult early 30s after-live home fashion look" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Home - After Live</h2>
           <dl>
@@ -166,6 +197,7 @@
             <dt>Style</dt><dd>soft-real-fashion-art</dd>
             <dt>Place</dt><dd>Tokyo apartment</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-04-tokyo-indie-youth-culture-v2/04-home-after-live-soft-real.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

@@ -15,15 +15,42 @@
     .intro { max-width: 760px; margin: 0; color: var(--muted); }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 30px 0 44px; }
     figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-    img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 18; object-fit: cover; background: #eef1f3; }
+    img { display: block; width: 100%; height: auto;  object-fit: contain; background: #eef1f3; }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 10px 11px 12px; color: var(--muted); font-size: .9rem; }
     a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <nav>
       <a href="../index.html">Main Gallery</a>
+      <a href="../albums.html">Albums</a>
       <a href="../logs/generation-2026-05.md">Generation Log</a>
       <a href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/">Image Folder</a>
     </nav>
@@ -32,10 +59,14 @@
   </header>
   <main>
     <div class="grid">
-      <figure><img src="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/01-office-tram-stop-tailoring.png" alt="Office tailoring fashion illustration at a lilac tram stop"><figcaption>01 Office - Tram Stop Tailoring</figcaption></figure>
-      <figure><img src="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/02-weekend-book-cafe-denim.png" alt="Weekend denim fashion illustration outside a book cafe"><figcaption>02 Weekend - Book Cafe Denim</figcaption></figure>
-      <figure><img src="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/03-date-botanical-lilac-dress.png" alt="Date lilac dress fashion illustration in a botanical garden"><figcaption>03 Date - Botanical Lilac Dress</figcaption></figure>
-      <figure><img src="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/04-active-park-utility.png" alt="Active utility fashion illustration on a park path"><figcaption>04 Active - Park Utility</figcaption></figure>
+      <figure><a class="image-link" href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/01-office-tram-stop-tailoring.webp"><img src="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/01-office-tram-stop-tailoring.webp" alt="Office tailoring fashion illustration at a lilac tram stop" loading="lazy" decoding="async"></a><figcaption>01 Office - Tram Stop Tailoring          <a class="open-image" href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/01-office-tram-stop-tailoring.webp">Open image</a>
+        </figcaption></figure>
+      <figure><a class="image-link" href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/02-weekend-book-cafe-denim.webp"><img src="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/02-weekend-book-cafe-denim.webp" alt="Weekend denim fashion illustration outside a book cafe" loading="lazy" decoding="async"></a><figcaption>02 Weekend - Book Cafe Denim          <a class="open-image" href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/02-weekend-book-cafe-denim.webp">Open image</a>
+        </figcaption></figure>
+      <figure><a class="image-link" href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/03-date-botanical-lilac-dress.webp"><img src="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/03-date-botanical-lilac-dress.webp" alt="Date lilac dress fashion illustration in a botanical garden" loading="lazy" decoding="async"></a><figcaption>03 Date - Botanical Lilac Dress          <a class="open-image" href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/03-date-botanical-lilac-dress.webp">Open image</a>
+        </figcaption></figure>
+      <figure><a class="image-link" href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/04-active-park-utility.webp"><img src="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/04-active-park-utility.webp" alt="Active utility fashion illustration on a park path" loading="lazy" decoding="async"></a><figcaption>04 Active - Park Utility          <a class="open-image" href="daily/2026-05-31-sapporo-lilac-tram-literary-prep-fashion-illustration/04-active-park-utility.webp">Open image</a>
+        </figcaption></figure>
     </div>
   </main>
 </body>

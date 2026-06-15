@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-10-fukuoka-yuzu-rain-riverside.md">Notes</a>
       <a href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-10 v2-short-generation images anchored in Ohori Park, Fukuoka Art Museum, Fukuoka Castle ruins, and Nakasu riverside yatai lights, using yuzu yellow differently by adult age band while keeping clothes natural for humid June rain.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-10-fukuoka-yuzu-rain-riverside/01-weekend-ohori-yuzu-anime.png" alt="Adult 18-19 Ohori Park rainy weekend look with lemon-yuzu tank and open linen shirt">
+        <a class="image-link" href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/01-weekend-ohori-yuzu-anime.webp"><img src="daily/2026-06-10-fukuoka-yuzu-rain-riverside/01-weekend-ohori-yuzu-anime.webp" alt="Adult 18-19 Ohori Park rainy weekend look with lemon-yuzu tank and open linen shirt" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Weekend - Ohori Park</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>weekend</dd><dt>Style</dt><dd>anime-fashion-magazine</dd><dt>Pose</dt><dd>walking-stride</dd></dl>
+                  <a class="open-image" href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/01-weekend-ohori-yuzu-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-10-fukuoka-yuzu-rain-riverside/02-gallery-art-museum-open-back-marker.png" alt="Adult early 20s open-back gallery look by Fukuoka Art Museum in marker sketch style">
+        <a class="image-link" href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/02-gallery-art-museum-open-back-marker.webp"><img src="daily/2026-06-10-fukuoka-yuzu-rain-riverside/02-gallery-art-museum-open-back-marker.webp" alt="Adult early 20s open-back gallery look by Fukuoka Art Museum in marker sketch style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Gallery - Fukuoka Art Museum</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>gallery</dd><dt>Style</dt><dd>marker-sketch</dd><dt>Pose</dt><dd>over-shoulder</dd></dl>
+                  <a class="open-image" href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/02-gallery-art-museum-open-back-marker.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-10-fukuoka-yuzu-rain-riverside/03-resort-castle-ruins-smoky-yuzu-soft-real.png" alt="Adult late 20s Fukuoka Castle ruins rainy resort look with smoky yuzu satin">
+        <a class="image-link" href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/03-resort-castle-ruins-smoky-yuzu-soft-real.webp"><img src="daily/2026-06-10-fukuoka-yuzu-rain-riverside/03-resort-castle-ruins-smoky-yuzu-soft-real.webp" alt="Adult late 20s Fukuoka Castle ruins rainy resort look with smoky yuzu satin" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Resort - Fukuoka Castle Ruins</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>resort</dd><dt>Style</dt><dd>soft-real-fashion-art</dd><dt>Pose</dt><dd>seated-side</dd></dl>
+                  <a class="open-image" href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/03-resort-castle-ruins-smoky-yuzu-soft-real.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-10-fukuoka-yuzu-rain-riverside/04-lounge-nakasu-yatai-river-anime.png" alt="Adult early 20s Nakasu riverside lounge look with yuzu mesh layer and yatai lights">
+        <a class="image-link" href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/04-lounge-nakasu-yatai-river-anime.webp"><img src="daily/2026-06-10-fukuoka-yuzu-rain-riverside/04-lounge-nakasu-yatai-river-anime.webp" alt="Adult early 20s Nakasu riverside lounge look with yuzu mesh layer and yatai lights" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Lounge - Nakasu Riverside</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>lounge</dd><dt>Style</dt><dd>anime-soft-cinematic</dd><dt>Pose</dt><dd>leaning-wall</dd></dl>
+                  <a class="open-image" href="daily/2026-06-10-fukuoka-yuzu-rain-riverside/04-lounge-nakasu-yatai-river-anime.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

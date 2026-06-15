@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,43 +102,62 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="daily/2026-05-31-yokohama-burgundy-theater-3d/">Image Folder</a>
     </nav>
     <h1>Yokohama Burgundy Theater 3D</h1>
     <p class="intro">Four true 3D CG fashion renders for Yokohama after rain: red brick, gallery interiors, theater light, and harbor terrace styling anchored by burgundy knit theater romance.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-05-31-yokohama-burgundy-theater-3d/01-street-red-brick-knit-bow-3d.png" alt="Street burgundy knit bow 3D look at Yokohama red brick theater">
+        <a class="image-link" href="daily/2026-05-31-yokohama-burgundy-theater-3d/01-street-red-brick-knit-bow-3d.webp"><img src="daily/2026-05-31-yokohama-burgundy-theater-3d/01-street-red-brick-knit-bow-3d.webp" alt="Street burgundy knit bow 3D look at Yokohama red brick theater" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Street - Red Brick Knit Bow</h2>
           <dl><dt>Category</dt><dd>street</dd><dt>Style</dt><dd>3d-cg-fashion</dd><dt>Place</dt><dd>Yokohama red brick theater</dd></dl>
+                  <a class="open-image" href="daily/2026-05-31-yokohama-burgundy-theater-3d/01-street-red-brick-knit-bow-3d.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-05-31-yokohama-burgundy-theater-3d/02-mode-brick-gallery-tailoring-3d.png" alt="Mode gallery tailoring 3D look in a Yokohama brick gallery">
+        <a class="image-link" href="daily/2026-05-31-yokohama-burgundy-theater-3d/02-mode-brick-gallery-tailoring-3d.webp"><img src="daily/2026-05-31-yokohama-burgundy-theater-3d/02-mode-brick-gallery-tailoring-3d.webp" alt="Mode gallery tailoring 3D look in a Yokohama brick gallery" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Mode - Brick Gallery Tailoring</h2>
           <dl><dt>Category</dt><dd>mode</dd><dt>Style</dt><dd>3d-cg-fashion</dd><dt>Place</dt><dd>Yokohama brick gallery</dd></dl>
+                  <a class="open-image" href="daily/2026-05-31-yokohama-burgundy-theater-3d/02-mode-brick-gallery-tailoring-3d.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-05-31-yokohama-burgundy-theater-3d/03-night-red-brick-velvet-3d.png" alt="Night red brick velvet 3D look in Yokohama after rain">
+        <a class="image-link" href="daily/2026-05-31-yokohama-burgundy-theater-3d/03-night-red-brick-velvet-3d.webp"><img src="daily/2026-05-31-yokohama-burgundy-theater-3d/03-night-red-brick-velvet-3d.webp" alt="Night red brick velvet 3D look in Yokohama after rain" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Night - Red Brick Velvet</h2>
           <dl><dt>Category</dt><dd>night</dd><dt>Style</dt><dd>3d-cg-fashion</dd><dt>Place</dt><dd>Yokohama night arcade</dd></dl>
+                  <a class="open-image" href="daily/2026-05-31-yokohama-burgundy-theater-3d/03-night-red-brick-velvet-3d.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-05-31-yokohama-burgundy-theater-3d/04-resort-harbor-terrace-knit-3d.png" alt="Resort harbor terrace knit 3D look in Yokohama">
+        <a class="image-link" href="daily/2026-05-31-yokohama-burgundy-theater-3d/04-resort-harbor-terrace-knit-3d.webp"><img src="daily/2026-05-31-yokohama-burgundy-theater-3d/04-resort-harbor-terrace-knit-3d.webp" alt="Resort harbor terrace knit 3D look in Yokohama" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Resort - Harbor Terrace Knit</h2>
           <dl><dt>Category</dt><dd>resort</dd><dt>Style</dt><dd>3d-cg-fashion</dd><dt>Place</dt><dd>Yokohama harbor terrace</dd></dl>
+                  <a class="open-image" href="daily/2026-05-31-yokohama-burgundy-theater-3d/04-resort-harbor-terrace-knit-3d.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

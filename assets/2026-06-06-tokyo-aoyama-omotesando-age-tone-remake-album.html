@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake.md">Notes</a>
       <a href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-06 remake images anchored in concrete Aoyama / Omotesando places, using moss green differently by adult age band and varying exposure balance across market, gallery, lounge, and dance styling.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/01-market-commune-fresh-moss-cel-anime.png" alt="Adult 18-19 market look at Commune Aoyama with fresh matcha moss accents">
+        <a class="image-link" href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/01-market-commune-fresh-moss-cel-anime.webp"><img src="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/01-market-commune-fresh-moss-cel-anime.webp" alt="Adult 18-19 market look at Commune Aoyama with fresh matcha moss accents" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Market - Commune Aoyama</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>market</dd><dt>Style</dt><dd>anime-cel-polished</dd><dt>Pose</dt><dd>crouching-market</dd></dl>
+                  <a class="open-image" href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/01-market-commune-fresh-moss-cel-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/02-gallery-spiral-open-back-marker.png" alt="Adult early 20s open-back gallery look at Spiral Garden in marker sketch style">
+        <a class="image-link" href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/02-gallery-spiral-open-back-marker.webp"><img src="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/02-gallery-spiral-open-back-marker.webp" alt="Adult early 20s open-back gallery look at Spiral Garden in marker sketch style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Gallery - Spiral Garden</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>gallery</dd><dt>Style</dt><dd>marker-sketch</dd><dt>Pose</dt><dd>over-shoulder</dd></dl>
+                  <a class="open-image" href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/02-gallery-spiral-open-back-marker.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/03-lounge-minami-aoyama-smoky-moss-3d.png" alt="Adult late 20s lounge look in a Minami-Aoyama listening bar with smoky moss satin accents">
+        <a class="image-link" href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/03-lounge-minami-aoyama-smoky-moss-3d.webp"><img src="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/03-lounge-minami-aoyama-smoky-moss-3d.webp" alt="Adult late 20s lounge look in a Minami-Aoyama listening bar with smoky moss satin accents" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Lounge - Minami-Aoyama</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>lounge</dd><dt>Style</dt><dd>pbr-fashion-3d</dd><dt>Pose</dt><dd>seated-side</dd></dl>
+                  <a class="open-image" href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/03-lounge-minami-aoyama-smoky-moss-3d.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/04-dance-jingumae-electric-moss-digital.png" alt="Adult early 20s dance look on a Jingumae side street with electric moss mesh layers">
+        <a class="image-link" href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/04-dance-jingumae-electric-moss-digital.webp"><img src="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/04-dance-jingumae-electric-moss-digital.webp" alt="Adult early 20s dance look on a Jingumae side street with electric moss mesh layers" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Dance - Jingumae</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>dance</dd><dt>Style</dt><dd>digital-magazine-painting</dd><dt>Pose</dt><dd>dance-motion</dd></dl>
+                  <a class="open-image" href="daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/04-dance-jingumae-electric-moss-digital.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

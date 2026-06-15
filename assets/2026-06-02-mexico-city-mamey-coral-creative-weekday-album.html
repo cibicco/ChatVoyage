@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-02-mexico-city-mamey-coral-creative-weekday.md">Notes</a>
       <a href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-02 v2-short-generation images filling a missing date with Mexico City library, courtyard, dance studio, and rooftop textile scenes while avoiding recent rain, waterfront, market, gallery, lounge, and transit formulas.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/01-office-vasconcelos-linen-waistcoat-anime.png" alt="Adult early 20s Mexico City library office look with linen waistcoat and mamey coral belt tab">
+        <a class="image-link" href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/01-office-vasconcelos-linen-waistcoat-anime.webp"><img src="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/01-office-vasconcelos-linen-waistcoat-anime.webp" alt="Adult early 20s Mexico City library office look with linen waistcoat and mamey coral belt tab" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Office - Vasconcelos Library</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>office</dd><dt>Style</dt><dd>anime-fashion-magazine</dd><dt>Pose</dt><dd>using-object</dd></dl>
+                  <a class="open-image" href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/01-office-vasconcelos-linen-waistcoat-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/02-ceremony-san-angel-wrap-dress-semi-real.png" alt="Adult late 20s San Angel courtyard ceremony look with wrap dress and mamey coral satin under-panel">
+        <a class="image-link" href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/02-ceremony-san-angel-wrap-dress-semi-real.webp"><img src="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/02-ceremony-san-angel-wrap-dress-semi-real.webp" alt="Adult late 20s San Angel courtyard ceremony look with wrap dress and mamey coral satin under-panel" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Ceremony - San Angel Courtyard</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>ceremony</dd><dt>Style</dt><dd>semi-real-editorial</dd><dt>Pose</dt><dd>walking-stride</dd></dl>
+                  <a class="open-image" href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/02-ceremony-san-angel-wrap-dress-semi-real.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/03-dance-roma-norte-wrap-skort-marker.png" alt="Adult 18-19 Mexico City dance studio look with wrap skort and mamey coral ribbon">
+        <a class="image-link" href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/03-dance-roma-norte-wrap-skort-marker.webp"><img src="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/03-dance-roma-norte-wrap-skort-marker.webp" alt="Adult 18-19 Mexico City dance studio look with wrap skort and mamey coral ribbon" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Dance - Roma Norte Studio</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>dance</dd><dt>Style</dt><dd>marker-sketch</dd><dt>Pose</dt><dd>dance-motion</dd></dl>
+                  <a class="open-image" href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/03-dance-roma-norte-wrap-skort-marker.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/04-home-coyoacan-textile-floor-pbr-note.png" alt="Adult late 20s Coyoacan rooftop textile fitting look with coral wrap scarf and perforated boots">
+        <a class="image-link" href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/04-home-coyoacan-textile-floor-pbr-note.webp"><img src="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/04-home-coyoacan-textile-floor-pbr-note.webp" alt="Adult late 20s Coyoacan rooftop textile fitting look with coral wrap scarf and perforated boots" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Home - Coyoacan Textile Corner</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>home</dd><dt>Style</dt><dd>pbr-fashion-3d</dd><dt>Pose</dt><dd>floor-sit</dd></dl>
+                  <a class="open-image" href="daily/2026-06-02-mexico-city-mamey-coral-creative-weekday/04-home-coyoacan-textile-floor-pbr-note.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

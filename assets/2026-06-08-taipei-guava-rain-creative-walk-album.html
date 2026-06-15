@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-08-taipei-guava-rain-creative-walk.md">Notes</a>
       <a href="daily/2026-06-08-taipei-guava-rain-creative-walk/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-08 images anchored in Taipei's Dihua Street, Huashan 1914, a riverside lounge, and a small balcony before a night market, using guava pink differently by adult age band and keeping the clothes natural for humid June weather.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-08-taipei-guava-rain-creative-walk/01-market-dihua-guava-anime.png" alt="Adult 18-19 Dihua Street market look with fresh guava pink accents">
+        <a class="image-link" href="daily/2026-06-08-taipei-guava-rain-creative-walk/01-market-dihua-guava-anime.webp"><img src="daily/2026-06-08-taipei-guava-rain-creative-walk/01-market-dihua-guava-anime.webp" alt="Adult 18-19 Dihua Street market look with fresh guava pink accents" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Market - Dihua Street</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>market</dd><dt>Style</dt><dd>anime-cel-polished</dd><dt>Pose</dt><dd>crouching-market</dd></dl>
+                  <a class="open-image" href="daily/2026-06-08-taipei-guava-rain-creative-walk/01-market-dihua-guava-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-08-taipei-guava-rain-creative-walk/02-gallery-huashan-open-back-marker.png" alt="Adult early 20s open-back gallery walk at Huashan 1914 in marker sketch style">
+        <a class="image-link" href="daily/2026-06-08-taipei-guava-rain-creative-walk/02-gallery-huashan-open-back-marker.webp"><img src="daily/2026-06-08-taipei-guava-rain-creative-walk/02-gallery-huashan-open-back-marker.webp" alt="Adult early 20s open-back gallery walk at Huashan 1914 in marker sketch style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Gallery - Huashan 1914</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>gallery</dd><dt>Style</dt><dd>marker-sketch</dd><dt>Pose</dt><dd>over-shoulder</dd></dl>
+                  <a class="open-image" href="daily/2026-06-08-taipei-guava-rain-creative-walk/02-gallery-huashan-open-back-marker.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-08-taipei-guava-rain-creative-walk/03-lounge-riverside-smoky-guava-soft-real.png" alt="Adult late 20s Taipei riverside lounge look with smoky rose-guava satin accents">
+        <a class="image-link" href="daily/2026-06-08-taipei-guava-rain-creative-walk/03-lounge-riverside-smoky-guava-soft-real.webp"><img src="daily/2026-06-08-taipei-guava-rain-creative-walk/03-lounge-riverside-smoky-guava-soft-real.webp" alt="Adult late 20s Taipei riverside lounge look with smoky rose-guava satin accents" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Lounge - Riverside</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>lounge</dd><dt>Style</dt><dd>soft-real-fashion-art</dd><dt>Pose</dt><dd>seated-side</dd></dl>
+                  <a class="open-image" href="daily/2026-06-08-taipei-guava-rain-creative-walk/03-lounge-riverside-smoky-guava-soft-real.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-08-taipei-guava-rain-creative-walk/04-home-balcony-guava-watercolor.png" alt="Adult early 20s Taipei balcony look before a night market in watercolor couture style">
+        <a class="image-link" href="daily/2026-06-08-taipei-guava-rain-creative-walk/04-home-balcony-guava-watercolor.webp"><img src="daily/2026-06-08-taipei-guava-rain-creative-walk/04-home-balcony-guava-watercolor.webp" alt="Adult early 20s Taipei balcony look before a night market in watercolor couture style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Home - Night Market Balcony</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>home</dd><dt>Style</dt><dd>watercolor-couture</dd><dt>Pose</dt><dd>stretching-reach</dd></dl>
+                  <a class="open-image" href="daily/2026-06-08-taipei-guava-rain-creative-walk/04-home-balcony-guava-watercolor.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

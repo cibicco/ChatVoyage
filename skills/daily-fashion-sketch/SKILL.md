@@ -72,9 +72,12 @@ single four-panel collage.
 13. Update the monthly log, notes, album, and `index.html`. Album pages should
     be mobile-friendly: use `object-fit: contain`, direct image links,
     `loading` / `decoding` attributes, and an `Open image` link for each image.
-14. Rebuild the album-level browser with `python3 scripts/build_album_index.py`
+14. When old pages or bulk edits are involved, run
+    `python3 scripts/switch_daily_refs_to_webp.py` and
+    `python3 scripts/normalize_album_pages.py`.
+15. Rebuild the album-level browser with `python3 scripts/build_album_index.py`
     when album links change.
-15. Run `python3 scripts/validate_gallery.py` from the Chat Voyage root when that script exists.
+16. Run `python3 scripts/validate_gallery.py` from the Chat Voyage root when that script exists.
 
 ## Reference Reading
 

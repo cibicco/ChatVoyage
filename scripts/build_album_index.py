@@ -7,6 +7,7 @@ from dataclasses import dataclass, field
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
+import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -103,7 +104,12 @@ class IndexParser(HTMLParser):
 def build_html(albums: list[Album]) -> str:
     places = sorted({fig.place for album in albums for fig in album.figures if fig.place})
     categories = sorted({fig.category for album in albums for fig in album.figures if fig.category})
+    months = sorted({album.title[:7] for album in albums if re.match(r"^\d{4}-\d{2}", album.title)}, reverse=True)
     cards = "\n".join(render_card(album) for album in albums)
+    month_buttons = "\n".join(
+        f'          <button type="button" data-filter="{escape(month)}">{escape(month)}</button>'
+        for month in months
+    )
     place_buttons = "\n".join(
         f'          <button type="button" data-filter="{escape(place)}">{escape(place.title())}</button>'
         for place in places
@@ -186,6 +192,23 @@ def build_html(albums: list[Album]) -> str:
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+    }}
+    .search {{
+      width: min(100%, 420px);
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.95rem;
+      padding: 7px 10px;
+    }}
+    .search-controls {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
     }}
     button {{
       min-height: 34px;
@@ -302,6 +325,20 @@ def build_html(albums: list[Album]) -> str:
   <main>
     <div class="filters" aria-label="Album filters">
       <div class="filter-row">
+        <div class="filter-label">Search</div>
+        <div class="search-controls">
+          <input class="search" type="search" id="album-search" placeholder="City, theme, category">
+          <button type="button" id="reset-filters">Reset</button>
+        </div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">Month</div>
+        <div class="filter-buttons" data-filter-group="month">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+{month_buttons}
+        </div>
+      </div>
+      <div class="filter-row">
         <div class="filter-label">Place</div>
         <div class="filter-buttons" data-filter-group="place">
           <button type="button" data-filter="all" aria-pressed="true">All</button>
@@ -322,18 +359,24 @@ def build_html(albums: list[Album]) -> str:
     </div>
   </main>
   <script>
-    const state = {{ place: "all", category: "all" }};
+    const state = {{ month: "all", place: "all", category: "all", query: "" }};
     const cards = Array.from(document.querySelectorAll(".album-card"));
+    const search = document.getElementById("album-search");
+    const reset = document.getElementById("reset-filters");
     const visibleCount = document.getElementById("visible-count");
     const totalCount = document.getElementById("total-count");
     totalCount.textContent = cards.length;
     function matches(card) {{
       return Object.entries(state).every(([key, value]) => {{
+        if (key === "query") {{
+          return !value || (card.dataset.search || "").includes(value);
+        }}
         if (value === "all") return true;
         return (card.dataset[key] || "").split(" ").includes(value);
       }});
     }}
     function update() {{
+      state.query = search.value.trim().toLowerCase();
       let visible = 0;
       cards.forEach((card) => {{
         const show = matches(card);
@@ -354,6 +397,22 @@ def build_html(albums: list[Album]) -> str:
         update();
       }});
     }});
+    search.addEventListener("input", () => {{
+      state.query = search.value.trim().toLowerCase();
+      update();
+    }});
+    reset.addEventListener("click", () => {{
+      state.month = "all";
+      state.place = "all";
+      state.category = "all";
+      search.value = "";
+      document.querySelectorAll("[data-filter-group]").forEach((group) => {{
+        group.querySelectorAll("button").forEach((button) => {{
+          button.setAttribute("aria-pressed", String(button.dataset.filter === "all"));
+        }});
+      }});
+      update();
+    }});
   </script>
 </body>
 </html>
@@ -364,6 +423,8 @@ def render_card(album: Album) -> str:
     places = sorted({fig.place for fig in album.figures if fig.place})
     categories = sorted({fig.category for fig in album.figures if fig.category})
     meta = album.meta_text.lstrip("- ").strip()
+    month = album.title[:7] if re.match(r"^\d{4}-\d{2}", album.title) else ""
+    search = " ".join([album.title, meta, *places, *categories]).lower()
     thumbs = "\n".join(
         f'        <img src="{escape(fig.src)}" alt="{escape(fig.alt)}" loading="lazy" decoding="async">'
         for fig in album.figures[:4]
@@ -373,7 +434,7 @@ def render_card(album: Album) -> str:
         for value in [*places, *categories]
     )
     notes = f'<a href="{escape(album.notes_href)}">Notes</a>' if album.notes_href else ""
-    return f"""      <article class="album-card" data-place="{escape(' '.join(places))}" data-category="{escape(' '.join(categories))}">
+    return f"""      <article class="album-card" data-month="{escape(month)}" data-place="{escape(' '.join(places))}" data-category="{escape(' '.join(categories))}" data-search="{escape(search)}">
         <a class="strip" href="{escape(album.album_href)}" aria-label="{escape(album.title)} album">
 {thumbs}
         </a>

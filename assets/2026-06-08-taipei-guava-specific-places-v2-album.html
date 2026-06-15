@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-08-taipei-guava-specific-places-v2.md">Notes</a>
       <a href="daily/2026-06-08-taipei-guava-specific-places-v2/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-08 v2-short-generation images anchored in Dadaocheng Dihua Street, Huashan 1914, Treasure Hill Artist Village, and Ximending, with guava pink adjusted by adult age band and clothes kept natural for hot humid Taipei after rain.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-08-taipei-guava-specific-places-v2/01-market-dihua-dadaocheng-guava-anime.png" alt="Adult 18-19 Dadaocheng Dihua Street market look with fresh guava pink open shirt">
+        <a class="image-link" href="daily/2026-06-08-taipei-guava-specific-places-v2/01-market-dihua-dadaocheng-guava-anime.webp"><img src="daily/2026-06-08-taipei-guava-specific-places-v2/01-market-dihua-dadaocheng-guava-anime.webp" alt="Adult 18-19 Dadaocheng Dihua Street market look with fresh guava pink open shirt" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Market - Dadaocheng Dihua Street</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>market</dd><dt>Style</dt><dd>anime-cel-polished</dd><dt>Pose</dt><dd>crouching-market</dd></dl>
+                  <a class="open-image" href="daily/2026-06-08-taipei-guava-specific-places-v2/01-market-dihua-dadaocheng-guava-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-08-taipei-guava-specific-places-v2/02-gallery-huashan-1914-open-back-marker.png" alt="Adult early 20s open-back gallery walk at Huashan 1914 in marker sketch style">
+        <a class="image-link" href="daily/2026-06-08-taipei-guava-specific-places-v2/02-gallery-huashan-1914-open-back-marker.webp"><img src="daily/2026-06-08-taipei-guava-specific-places-v2/02-gallery-huashan-1914-open-back-marker.webp" alt="Adult early 20s open-back gallery walk at Huashan 1914 in marker sketch style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Gallery - Huashan 1914</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>gallery</dd><dt>Style</dt><dd>marker-sketch</dd><dt>Pose</dt><dd>over-shoulder</dd></dl>
+                  <a class="open-image" href="daily/2026-06-08-taipei-guava-specific-places-v2/02-gallery-huashan-1914-open-back-marker.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-08-taipei-guava-specific-places-v2/03-lounge-treasure-hill-smoky-guava-soft-real.png" alt="Adult late 20s Treasure Hill Artist Village lounge look with smoky guava satin accents">
+        <a class="image-link" href="daily/2026-06-08-taipei-guava-specific-places-v2/03-lounge-treasure-hill-smoky-guava-soft-real.webp"><img src="daily/2026-06-08-taipei-guava-specific-places-v2/03-lounge-treasure-hill-smoky-guava-soft-real.webp" alt="Adult late 20s Treasure Hill Artist Village lounge look with smoky guava satin accents" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Lounge - Treasure Hill</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>lounge</dd><dt>Style</dt><dd>soft-real-fashion-art</dd><dt>Pose</dt><dd>seated-side</dd></dl>
+                  <a class="open-image" href="daily/2026-06-08-taipei-guava-specific-places-v2/03-lounge-treasure-hill-smoky-guava-soft-real.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-08-taipei-guava-specific-places-v2/04-club-ximending-guava-neon-anime.png" alt="Adult early 20s Ximending humid night club look with guava mesh movement">
+        <a class="image-link" href="daily/2026-06-08-taipei-guava-specific-places-v2/04-club-ximending-guava-neon-anime.webp"><img src="daily/2026-06-08-taipei-guava-specific-places-v2/04-club-ximending-guava-neon-anime.webp" alt="Adult early 20s Ximending humid night club look with guava mesh movement" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Club - Ximending</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>club</dd><dt>Style</dt><dd>anime-soft-cinematic</dd><dt>Pose</dt><dd>dance-motion</dd></dl>
+                  <a class="open-image" href="daily/2026-06-08-taipei-guava-specific-places-v2/04-club-ximending-guava-neon-anime.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

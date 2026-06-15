@@ -70,6 +70,8 @@ Use this checklist after every daily image generation or reorganization.
 - Use album markup that works on mobile: `object-fit: contain`, direct image
   links, `loading` / `decoding` attributes, and an `Open image` link for each
   image.
+- Normalize existing or newly edited album pages when needed:
+  `python3 scripts/normalize_album_pages.py`
 - Add the set to `index.html` with:
   - `data-style`
   - `data-place`
@@ -78,6 +80,9 @@ Use this checklist after every daily image generation or reorganization.
 - album link when available
 - Rebuild the album-level browser when album links change:
   `python3 scripts/build_album_index.py`
+- If references were bulk-edited or old PNG references remain, switch display
+  references to WebP where matching files exist:
+  `python3 scripts/switch_daily_refs_to_webp.py`
 
 ## Validation
 
@@ -91,6 +96,8 @@ The command should report zero errors. It checks:
 
 - every image under `assets/daily/` is represented in `index.html`
 - local album/index links and image references exist
+- HTML display references use WebP when a WebP display copy exists
+- album pages use non-cropping image display and direct image links
 - `data-style`, `data-place`, and `data-category` values have filter buttons
 - index style/category values exist in the prompt preset files
 

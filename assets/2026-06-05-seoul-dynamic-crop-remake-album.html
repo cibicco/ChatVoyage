@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,43 +102,62 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="daily/2026-06-05-seoul-dynamic-crop-remake/">Image Folder</a>
     </nav>
     <h1>Seoul Dynamic Crop Remake</h1>
     <p class="intro">Four 2026-06-05 remake images using the new pose rule: full-body is optional, and crop or motion can lead when it better expresses fashion, mood, and gesture.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-05-seoul-dynamic-crop-remake/01-transit-floor-sit-fan.png" alt="Adult 18-19 subway transit look seated with fan">
+        <a class="image-link" href="daily/2026-06-05-seoul-dynamic-crop-remake/01-transit-floor-sit-fan.webp"><img src="daily/2026-06-05-seoul-dynamic-crop-remake/01-transit-floor-sit-fan.webp" alt="Adult 18-19 subway transit look seated with fan" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Transit - Floor Sit</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>transit</dd><dt>Pose</dt><dd>floor-sit / using-object</dd><dt>Crop</dt><dd>knee-up</dd></dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/01-transit-floor-sit-fan.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-05-seoul-dynamic-crop-remake/02-market-jump-motion-wide.png" alt="Adult early 20s market look jumping over a puddle">
+        <a class="image-link" href="daily/2026-06-05-seoul-dynamic-crop-remake/02-market-jump-motion-wide.webp"><img src="daily/2026-06-05-seoul-dynamic-crop-remake/02-market-jump-motion-wide.webp" alt="Adult early 20s market look jumping over a puddle" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Market - Jump Motion</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>market</dd><dt>Pose</dt><dd>jump-motion</dd><dt>Crop</dt><dd>wide-action</dd></dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/02-market-jump-motion-wide.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-05-seoul-dynamic-crop-remake/03-club-stretching-reach-crop.png" alt="Adult early 20s club look with stretching reach">
+        <a class="image-link" href="daily/2026-06-05-seoul-dynamic-crop-remake/03-club-stretching-reach-crop.webp"><img src="daily/2026-06-05-seoul-dynamic-crop-remake/03-club-stretching-reach-crop.webp" alt="Adult early 20s club look with stretching reach" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Club - Stretching Reach</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>club</dd><dt>Pose</dt><dd>stretching-reach</dd><dt>Crop</dt><dd>waist-up</dd></dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/03-club-stretching-reach-crop.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-05-seoul-dynamic-crop-remake/04-gallery-back-close-crop.png" alt="Adult late 20s gallery look in back three-quarter close crop">
+        <a class="image-link" href="daily/2026-06-05-seoul-dynamic-crop-remake/04-gallery-back-close-crop.webp"><img src="daily/2026-06-05-seoul-dynamic-crop-remake/04-gallery-back-close-crop.webp" alt="Adult late 20s gallery look in back three-quarter close crop" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Gallery - Back Crop</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>gallery</dd><dt>Pose</dt><dd>back-three-quarter</dd><dt>Crop</dt><dd>close-up detail</dd></dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-dynamic-crop-remake/04-gallery-back-close-crop.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

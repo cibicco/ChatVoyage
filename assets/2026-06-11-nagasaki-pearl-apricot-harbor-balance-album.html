@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-11-nagasaki-pearl-apricot-harbor-balance.md">Notes</a>
       <a href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-11 v2-short-generation images testing selectable persona traits, wrapped bottoms, summer pumps/boots, and intentional balance around Dejima, Megane Bridge, Glover Garden, and Nagasaki harbor.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/01-weekend-dejima-wrap-half-pants.png" alt="Adult 18-19 Nagasaki Dejima weekend look with wrap apron panel, half pants, and slingback pumps">
+        <a class="image-link" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/01-weekend-dejima-wrap-half-pants.webp"><img src="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/01-weekend-dejima-wrap-half-pants.webp" alt="Adult 18-19 Nagasaki Dejima weekend look with wrap apron panel, half pants, and slingback pumps" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Weekend - Dejima Canal</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>weekend</dd><dt>Style</dt><dd>anime-fashion-magazine</dd><dt>Pose</dt><dd>using-object</dd></dl>
+                  <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/01-weekend-dejima-wrap-half-pants.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/02-mode-megane-bridge-balance.png" alt="Adult early 20s Megane Bridge mode look balancing on a stone edge with wrap panel and cropped trousers">
+        <a class="image-link" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/02-mode-megane-bridge-balance.webp"><img src="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/02-mode-megane-bridge-balance.webp" alt="Adult early 20s Megane Bridge mode look balancing on a stone edge with wrap panel and cropped trousers" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Mode - Megane Bridge</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>mode</dd><dt>Style</dt><dd>digital-magazine-painting</dd><dt>Pose</dt><dd>walking-stride balance</dd></dl>
+                  <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/02-mode-megane-bridge-balance.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/03-date-glover-wrap-dress-watercolor.png" alt="Adult late 20s Glover Garden date look with wrap dress over cropped trousers and low pumps">
+        <a class="image-link" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/03-date-glover-wrap-dress-watercolor.webp"><img src="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/03-date-glover-wrap-dress-watercolor.webp" alt="Adult late 20s Glover Garden date look with wrap dress over cropped trousers and low pumps" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Date - Glover Garden</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>date</dd><dt>Style</dt><dd>watercolor-couture</dd><dt>Pose</dt><dd>walking-stride</dd></dl>
+                  <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/03-date-glover-wrap-dress-watercolor.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-v2.png" alt="Adult early 20s Nagasaki harbor active look balancing on a boat edge with wrap skort and summer boots">
+        <a class="image-link" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-v2.webp"><img src="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-v2.webp" alt="Adult early 20s Nagasaki harbor active look balancing on a boat edge with wrap skort and summer boots" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Active - Harbor Boat Edge V2</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>active</dd><dt>Style</dt><dd>3d-cg-fashion</dd><dt>Pose</dt><dd>dance-motion balance</dd></dl>
+                  <a class="open-image" href="daily/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-v2.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

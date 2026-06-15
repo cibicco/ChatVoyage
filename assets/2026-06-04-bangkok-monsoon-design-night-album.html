@@ -76,9 +76,22 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
+    }
+
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
     }
 
     figcaption { padding: 12px; }
@@ -104,12 +117,27 @@
     }
 
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/">Image Folder</a>
     </nav>
 
@@ -118,7 +146,7 @@
 
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/01-transit-rail-platform-marker-sketch.png" alt="Transit rail platform fashion marker sketch in Bangkok after rain">
+        <a class="image-link" href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/01-transit-rail-platform-marker-sketch.webp"><img src="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/01-transit-rail-platform-marker-sketch.webp" alt="Transit rail platform fashion marker sketch in Bangkok after rain" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Transit - Rail Platform</h2>
           <dl>
@@ -126,11 +154,12 @@
             <dt>Style</dt><dd>marker-sketch</dd>
             <dt>Place</dt><dd>Bangkok rail platform</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/01-transit-rail-platform-marker-sketch.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/02-gallery-riverside-warehouse-pbr-3d.png" alt="Gallery riverside warehouse fashion look in PBR 3D style">
+        <a class="image-link" href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/02-gallery-riverside-warehouse-pbr-3d.webp"><img src="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/02-gallery-riverside-warehouse-pbr-3d.webp" alt="Gallery riverside warehouse fashion look in PBR 3D style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Gallery - Riverside Warehouse</h2>
           <dl>
@@ -138,11 +167,12 @@
             <dt>Style</dt><dd>pbr-fashion-3d</dd>
             <dt>Place</dt><dd>Bangkok design gallery</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/02-gallery-riverside-warehouse-pbr-3d.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/03-lounge-listening-bar-soft-anime.png" alt="Lounge listening bar look in soft cinematic anime style">
+        <a class="image-link" href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/03-lounge-listening-bar-soft-anime.webp"><img src="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/03-lounge-listening-bar-soft-anime.webp" alt="Lounge listening bar look in soft cinematic anime style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Lounge - Listening Bar</h2>
           <dl>
@@ -150,11 +180,12 @@
             <dt>Style</dt><dd>anime-soft-cinematic</dd>
             <dt>Place</dt><dd>Bangkok listening bar</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/03-lounge-listening-bar-soft-anime.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/04-dance-rain-studio-digital-painting.png" alt="Dance studio fashion look in digital magazine painting style">
+        <a class="image-link" href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/04-dance-rain-studio-digital-painting.webp"><img src="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/04-dance-rain-studio-digital-painting.webp" alt="Dance studio fashion look in digital magazine painting style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Dance - Rain Studio</h2>
           <dl>
@@ -162,6 +193,7 @@
             <dt>Style</dt><dd>digital-magazine-painting</dd>
             <dt>Place</dt><dd>Bangkok rehearsal studio</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/04-dance-rain-studio-digital-painting.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

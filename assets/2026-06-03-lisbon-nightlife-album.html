@@ -78,9 +78,22 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
+    }
+
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
     }
 
     figcaption {
@@ -110,12 +123,27 @@
     dd {
       margin: 0;
     }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="daily/2026-06-03-lisbon-nightlife-mixed-styles/">Image Folder</a>
     </nav>
 
@@ -124,7 +152,7 @@
 
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-03-lisbon-nightlife-mixed-styles/01-night-rooftop-satin-3d.png" alt="Night rooftop satin look in true 3D CG fashion style">
+        <a class="image-link" href="daily/2026-06-03-lisbon-nightlife-mixed-styles/01-night-rooftop-satin-3d.webp"><img src="daily/2026-06-03-lisbon-nightlife-mixed-styles/01-night-rooftop-satin-3d.webp" alt="Night rooftop satin look in true 3D CG fashion style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Night - Rooftop Satin</h2>
           <dl>
@@ -132,11 +160,12 @@
             <dt>Image</dt><dd>3d-cg-fashion</dd>
             <dt>Scene</dt><dd>Lisbon rooftop terrace</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-03-lisbon-nightlife-mixed-styles/01-night-rooftop-satin-3d.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-03-lisbon-nightlife-mixed-styles/02-formal-fado-lace-anime.png" alt="Formal fado lace look in high-definition anime editorial style">
+        <a class="image-link" href="daily/2026-06-03-lisbon-nightlife-mixed-styles/02-formal-fado-lace-anime.webp"><img src="daily/2026-06-03-lisbon-nightlife-mixed-styles/02-formal-fado-lace-anime.webp" alt="Formal fado lace look in high-definition anime editorial style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Formal - Fado Lace</h2>
           <dl>
@@ -144,11 +173,12 @@
             <dt>Image</dt><dd>anime-editorial</dd>
             <dt>Scene</dt><dd>fado room interior</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-03-lisbon-nightlife-mixed-styles/02-formal-fado-lace-anime.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-03-lisbon-nightlife-mixed-styles/03-date-hotel-lounge-illustration.png" alt="Date hotel lounge look in traditional fashion illustration style">
+        <a class="image-link" href="daily/2026-06-03-lisbon-nightlife-mixed-styles/03-date-hotel-lounge-illustration.webp"><img src="daily/2026-06-03-lisbon-nightlife-mixed-styles/03-date-hotel-lounge-illustration.webp" alt="Date hotel lounge look in traditional fashion illustration style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Date - Hotel Lounge</h2>
           <dl>
@@ -156,11 +186,12 @@
             <dt>Image</dt><dd>fashion-illustration</dd>
             <dt>Scene</dt><dd>boutique hotel lounge</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-03-lisbon-nightlife-mixed-styles/03-date-hotel-lounge-illustration.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-03-lisbon-nightlife-mixed-styles/04-travel-dawn-terminal-semi-real.png" alt="Travel dawn terminal look in semi-real digital editorial style">
+        <a class="image-link" href="daily/2026-06-03-lisbon-nightlife-mixed-styles/04-travel-dawn-terminal-semi-real.webp"><img src="daily/2026-06-03-lisbon-nightlife-mixed-styles/04-travel-dawn-terminal-semi-real.webp" alt="Travel dawn terminal look in semi-real digital editorial style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Travel - Dawn Terminal</h2>
           <dl>
@@ -168,6 +199,7 @@
             <dt>Image</dt><dd>semi-real-editorial</dd>
             <dt>Scene</dt><dd>pre-dawn terminal lounge</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-03-lisbon-nightlife-mixed-styles/04-travel-dawn-terminal-semi-real.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

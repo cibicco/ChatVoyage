@@ -11,11 +11,11 @@
 
 ## Images
 
-1. `../assets/daily/2026-05-10-first-set-regenerations/01-street-casual.png`
-2. `../assets/daily/2026-05-10-first-set-regenerations/02-mode-gallery.png`
-3. `../assets/daily/2026-05-10-first-set-regenerations/03-night-dress.png`
-4. `../assets/daily/2026-05-10-first-set-regenerations/04-resort-day.png`
-5. `../assets/daily/2026-05-10-first-set-regenerations/05-mode-gallery-regenerated.png`
-6. `../assets/daily/2026-05-10-first-set-regenerations/06-night-dress-regenerated.png`
-7. `../assets/daily/2026-05-10-first-set-regenerations/07-resort-day-regenerated.png`
+1. `../assets/daily/2026-05-10-first-set-regenerations/01-street-casual.webp`
+2. `../assets/daily/2026-05-10-first-set-regenerations/02-mode-gallery.webp`
+3. `../assets/daily/2026-05-10-first-set-regenerations/03-night-dress.webp`
+4. `../assets/daily/2026-05-10-first-set-regenerations/04-resort-day.webp`
+5. `../assets/daily/2026-05-10-first-set-regenerations/05-mode-gallery-regenerated.webp`
+6. `../assets/daily/2026-05-10-first-set-regenerations/06-night-dress-regenerated.webp`
+7. `../assets/daily/2026-05-10-first-set-regenerations/07-resort-day-regenerated.webp`
 

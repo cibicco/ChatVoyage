@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-11-hiroshima-momiji-light-social.md">Notes</a>
       <a href="daily/2026-06-11-hiroshima-momiji-light-social/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-11 v2-short-generation images testing the new persona and repetition guardrails: Hatchobori / Hondori office walk, theater lobby, Kyobashi River apartment balcony, and Miyajima ferry travel.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-11-hiroshima-momiji-light-social/01-office-hatchobori-shirt-dress-semi-real.png" alt="Adult late 20s Hiroshima office look with ivory shirt dress and momiji vermilion brooch">
+        <a class="image-link" href="daily/2026-06-11-hiroshima-momiji-light-social/01-office-hatchobori-shirt-dress-semi-real.webp"><img src="daily/2026-06-11-hiroshima-momiji-light-social/01-office-hatchobori-shirt-dress-semi-real.webp" alt="Adult late 20s Hiroshima office look with ivory shirt dress and momiji vermilion brooch" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Office - Hatchobori</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>office</dd><dt>Style</dt><dd>semi-real-editorial</dd><dt>Pose</dt><dd>hands-in-pocket</dd></dl>
+                  <a class="open-image" href="daily/2026-06-11-hiroshima-momiji-light-social/01-office-hatchobori-shirt-dress-semi-real.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-11-hiroshima-momiji-light-social/02-theater-aster-plaza-origami-dress-illustration.png" alt="Adult early 20s Hiroshima theater look with vermilion origami pleated overdress">
+        <a class="image-link" href="daily/2026-06-11-hiroshima-momiji-light-social/02-theater-aster-plaza-origami-dress-illustration.webp"><img src="daily/2026-06-11-hiroshima-momiji-light-social/02-theater-aster-plaza-origami-dress-illustration.webp" alt="Adult early 20s Hiroshima theater look with vermilion origami pleated overdress" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Theater - Aster Plaza</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>theater</dd><dt>Style</dt><dd>fashion-illustration</dd><dt>Pose</dt><dd>using-object</dd></dl>
+                  <a class="open-image" href="daily/2026-06-11-hiroshima-momiji-light-social/02-theater-aster-plaza-origami-dress-illustration.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-11-hiroshima-momiji-light-social/03-home-kyobashi-river-scarf-anime.png" alt="Adult 18-19 Hiroshima apartment balcony home look with striped scarf and red earrings">
+        <a class="image-link" href="daily/2026-06-11-hiroshima-momiji-light-social/03-home-kyobashi-river-scarf-anime.webp"><img src="daily/2026-06-11-hiroshima-momiji-light-social/03-home-kyobashi-river-scarf-anime.webp" alt="Adult 18-19 Hiroshima apartment balcony home look with striped scarf and red earrings" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Home - Kyobashi River</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>home</dd><dt>Style</dt><dd>anime-editorial</dd><dt>Pose</dt><dd>close-crop-upper</dd></dl>
+                  <a class="open-image" href="daily/2026-06-11-hiroshima-momiji-light-social/03-home-kyobashi-river-scarf-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-11-hiroshima-momiji-light-social/04-travel-miyajima-ferry-jumpsuit-3d-note.png" alt="Adult early 20s Miyajima ferry travel look with vermilion utility jumpsuit and woven hat">
+        <a class="image-link" href="daily/2026-06-11-hiroshima-momiji-light-social/04-travel-miyajima-ferry-jumpsuit-3d-note.webp"><img src="daily/2026-06-11-hiroshima-momiji-light-social/04-travel-miyajima-ferry-jumpsuit-3d-note.webp" alt="Adult early 20s Miyajima ferry travel look with vermilion utility jumpsuit and woven hat" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Travel - Miyajima Ferry</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>travel</dd><dt>Style</dt><dd>pbr-fashion-3d</dd><dt>Pose</dt><dd>jump-motion</dd></dl>
+                  <a class="open-image" href="daily/2026-06-11-hiroshima-momiji-light-social/04-travel-miyajima-ferry-jumpsuit-3d-note.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

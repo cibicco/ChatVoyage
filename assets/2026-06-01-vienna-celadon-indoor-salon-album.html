@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-01-vienna-celadon-indoor-salon.md">Notes</a>
       <a href="daily/2026-06-01-vienna-celadon-indoor-salon/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-01 v2-short-generation images reducing current-month repetition with a non-Japanese city, mostly indoor places, varied times of day, and office/reception/theater/home styling.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-01-vienna-celadon-indoor-salon/01-office-looshaus-waistcoat-runway-note.png" alt="Adult late 20s Vienna office look with celadon waistcoat and slingback pumps">
+        <a class="image-link" href="daily/2026-06-01-vienna-celadon-indoor-salon/01-office-looshaus-waistcoat-runway-note.webp"><img src="daily/2026-06-01-vienna-celadon-indoor-salon/01-office-looshaus-waistcoat-runway-note.webp" alt="Adult late 20s Vienna office look with celadon waistcoat and slingback pumps" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Office - Looshaus Lobby</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>office</dd><dt>Style</dt><dd>runway-board-illustration</dd><dt>Pose</dt><dd>close-crop-upper</dd></dl>
+                  <a class="open-image" href="daily/2026-06-01-vienna-celadon-indoor-salon/01-office-looshaus-waistcoat-runway-note.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-01-vienna-celadon-indoor-salon/02-formal-palais-ferstel-wrap-anime.png" alt="Adult early 20s Vienna formal reception look with wrap blouse and skirt over trousers">
+        <a class="image-link" href="daily/2026-06-01-vienna-celadon-indoor-salon/02-formal-palais-ferstel-wrap-anime.webp"><img src="daily/2026-06-01-vienna-celadon-indoor-salon/02-formal-palais-ferstel-wrap-anime.webp" alt="Adult early 20s Vienna formal reception look with wrap blouse and skirt over trousers" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Formal - Palais Ferstel Arcade</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>formal</dd><dt>Style</dt><dd>anime-editorial</dd><dt>Pose</dt><dd>using-object</dd></dl>
+                  <a class="open-image" href="daily/2026-06-01-vienna-celadon-indoor-salon/02-formal-palais-ferstel-wrap-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-01-vienna-celadon-indoor-salon/03-theater-musikverein-satin-watercolor.png" alt="Adult late 20s Vienna theater look with smoky pistachio satin dress and organza jacket">
+        <a class="image-link" href="daily/2026-06-01-vienna-celadon-indoor-salon/03-theater-musikverein-satin-watercolor.webp"><img src="daily/2026-06-01-vienna-celadon-indoor-salon/03-theater-musikverein-satin-watercolor.webp" alt="Adult late 20s Vienna theater look with smoky pistachio satin dress and organza jacket" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Theater - Musikverein Foyer</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>theater</dd><dt>Style</dt><dd>watercolor-couture</dd><dt>Pose</dt><dd>adjusting-jacket</dd></dl>
+                  <a class="open-image" href="daily/2026-06-01-vienna-celadon-indoor-salon/03-theater-musikverein-satin-watercolor.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-01-vienna-celadon-indoor-salon/04-home-josefstadt-record-doll-3d-note.png" alt="Adult early 20s Vienna apartment home look with wrap shorts, leggings, and ballet flats">
+        <a class="image-link" href="daily/2026-06-01-vienna-celadon-indoor-salon/04-home-josefstadt-record-doll-3d-note.webp"><img src="daily/2026-06-01-vienna-celadon-indoor-salon/04-home-josefstadt-record-doll-3d-note.webp" alt="Adult early 20s Vienna apartment home look with wrap shorts, leggings, and ballet flats" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Home - Josefstadt Apartment</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>home</dd><dt>Style</dt><dd>doll-like-3d</dd><dt>Pose</dt><dd>floor-sit</dd></dl>
+                  <a class="open-image" href="daily/2026-06-01-vienna-celadon-indoor-salon/04-home-josefstadt-record-doll-3d-note.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

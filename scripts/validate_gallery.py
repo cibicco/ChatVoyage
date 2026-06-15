@@ -125,9 +125,11 @@ def validate() -> list[str]:
     album_files = sorted((ROOT / "assets").glob("*-album.html"))
     html_files = [ROOT / "index.html", ROOT / "albums.html", *album_files]
     missing_refs: list[str] = []
+    non_webp_daily_refs: list[str] = []
     for html in html_files:
+        text = html.read_text(encoding="utf-8")
         refs = RefParser()
-        refs.feed(html.read_text(encoding="utf-8"))
+        refs.feed(text)
         base = html.parent
         for ref in refs.refs:
             if ref.startswith("../"):
@@ -136,8 +138,19 @@ def validate() -> list[str]:
                 target = local_target(ROOT if html.name == "index.html" else base, ref)
             if not target.exists():
                 missing_refs.append(f"{html.relative_to(ROOT)} -> {ref}")
+            if "daily/" in ref and Path(ref).suffix.lower() in IMAGE_SUFFIXES and Path(ref).suffix.lower() != ".webp":
+                non_webp_daily_refs.append(f"{html.relative_to(ROOT)} -> {ref}")
+        if html in album_files:
+            if "object-fit: cover" in text:
+                errors.append(f"album uses object-fit: cover: {html.relative_to(ROOT)}")
+            if "image-link" not in text or "Open image" not in text:
+                errors.append(f"album missing direct image links: {html.relative_to(ROOT)}")
+            if "../albums.html" not in text:
+                errors.append(f"album missing Albums navigation: {html.relative_to(ROOT)}")
     if missing_refs:
         errors.append("missing local refs: " + ", ".join(missing_refs))
+    if non_webp_daily_refs:
+        errors.append("non-webp daily refs in html: " + ", ".join(non_webp_daily_refs))
 
     print(f"daily_images: {len(daily_images)}")
     print(f"daily_source_images: {len(all_daily_images)}")

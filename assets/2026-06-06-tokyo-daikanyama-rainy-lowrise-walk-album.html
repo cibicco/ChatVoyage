@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk.md">Notes</a>
       <a href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-06 images anchored in concrete Daikanyama places: T-SITE, Log Road, Kyu Asakura House slope, and a Sarugakucho listening lounge.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/01-weekend-tsite-bookshop-cel-anime.png" alt="Adult early 20s weekend look at a Daikanyama T-SITE style bookshop courtyard">
+        <a class="image-link" href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/01-weekend-tsite-bookshop-cel-anime.webp"><img src="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/01-weekend-tsite-bookshop-cel-anime.webp" alt="Adult early 20s weekend look at a Daikanyama T-SITE style bookshop courtyard" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Weekend - T-SITE Bookshop</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>weekend</dd><dt>Style</dt><dd>anime-cel-polished</dd><dt>Pose</dt><dd>using-object</dd></dl>
+                  <a class="open-image" href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/01-weekend-tsite-bookshop-cel-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/02-outerwear-log-road-marker-sketch.png" alt="Adult late 20s outerwear look at Log Road Daikanyama">
+        <a class="image-link" href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/02-outerwear-log-road-marker-sketch.webp"><img src="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/02-outerwear-log-road-marker-sketch.webp" alt="Adult late 20s outerwear look at Log Road Daikanyama" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Outerwear - Log Road</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>outerwear</dd><dt>Style</dt><dd>marker-sketch</dd><dt>Pose</dt><dd>walking-stride</dd></dl>
+                  <a class="open-image" href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/02-outerwear-log-road-marker-sketch.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/03-date-kyu-asakura-slope-pbr-3d.png" alt="Adult late 20s date look near Kyu Asakura House in Daikanyama">
+        <a class="image-link" href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/03-date-kyu-asakura-slope-pbr-3d.webp"><img src="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/03-date-kyu-asakura-slope-pbr-3d.webp" alt="Adult late 20s date look near Kyu Asakura House in Daikanyama" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Date - Kyu Asakura Slope</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>date</dd><dt>Style</dt><dd>pbr-fashion-3d</dd><dt>Pose</dt><dd>over-shoulder</dd></dl>
+                  <a class="open-image" href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/03-date-kyu-asakura-slope-pbr-3d.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/04-lounge-sarugakucho-record-soft-real.png" alt="Adult early 20s lounge look in a Sarugakucho listening lounge">
+        <a class="image-link" href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/04-lounge-sarugakucho-record-soft-real.webp"><img src="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/04-lounge-sarugakucho-record-soft-real.webp" alt="Adult early 20s lounge look in a Sarugakucho listening lounge" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Lounge - Sarugakucho Record</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>lounge</dd><dt>Style</dt><dd>soft-real-fashion-art</dd><dt>Pose</dt><dd>seated-side</dd></dl>
+                  <a class="open-image" href="daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/04-lounge-sarugakucho-record-soft-real.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-07-kobe-hydrangea-port-sunday.md">Notes</a>
       <a href="daily/2026-06-07-kobe-hydrangea-port-sunday/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-07 images anchored in Kobe's Motomachi arcade, Kitano slope, Meriken Park waterfront, and Nunobiki Herb Gardens, using hydrangea blue differently by adult age band and keeping the clothes natural for humid June weather.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-07-kobe-hydrangea-port-sunday/01-market-motomachi-periwinkle-anime.png" alt="Adult 18-19 market look in Motomachi Shopping Street with periwinkle hydrangea accents">
+        <a class="image-link" href="daily/2026-06-07-kobe-hydrangea-port-sunday/01-market-motomachi-periwinkle-anime.webp"><img src="daily/2026-06-07-kobe-hydrangea-port-sunday/01-market-motomachi-periwinkle-anime.webp" alt="Adult 18-19 market look in Motomachi Shopping Street with periwinkle hydrangea accents" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Market - Motomachi Arcade</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>market</dd><dt>Style</dt><dd>anime-fashion-magazine</dd><dt>Pose</dt><dd>using-object</dd></dl>
+                  <a class="open-image" href="daily/2026-06-07-kobe-hydrangea-port-sunday/01-market-motomachi-periwinkle-anime.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-07-kobe-hydrangea-port-sunday/02-gallery-kitano-lilac-marker.png" alt="Adult early 20s open-back gallery walk on Kitano Ijinkan slope in marker sketch style">
+        <a class="image-link" href="daily/2026-06-07-kobe-hydrangea-port-sunday/02-gallery-kitano-lilac-marker.webp"><img src="daily/2026-06-07-kobe-hydrangea-port-sunday/02-gallery-kitano-lilac-marker.webp" alt="Adult early 20s open-back gallery walk on Kitano Ijinkan slope in marker sketch style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Gallery - Kitano Slope</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>gallery</dd><dt>Style</dt><dd>marker-sketch</dd><dt>Pose</dt><dd>over-shoulder</dd></dl>
+                  <a class="open-image" href="daily/2026-06-07-kobe-hydrangea-port-sunday/02-gallery-kitano-lilac-marker.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-07-kobe-hydrangea-port-sunday/03-lounge-meriken-smoky-indigo-3d.png" alt="Adult late 20s waterfront lounge look at Meriken Park with smoky indigo hydrangea accents">
+        <a class="image-link" href="daily/2026-06-07-kobe-hydrangea-port-sunday/03-lounge-meriken-smoky-indigo-3d.webp"><img src="daily/2026-06-07-kobe-hydrangea-port-sunday/03-lounge-meriken-smoky-indigo-3d.webp" alt="Adult late 20s waterfront lounge look at Meriken Park with smoky indigo hydrangea accents" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Lounge - Meriken Park</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>lounge</dd><dt>Style</dt><dd>pbr-fashion-3d</dd><dt>Pose</dt><dd>seated-side</dd></dl>
+                  <a class="open-image" href="daily/2026-06-07-kobe-hydrangea-port-sunday/03-lounge-meriken-smoky-indigo-3d.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-07-kobe-hydrangea-port-sunday/04-resort-nunobiki-watercolor.png" alt="Adult early 20s resort day-trip look at Nunobiki Herb Gardens in watercolor couture style">
+        <a class="image-link" href="daily/2026-06-07-kobe-hydrangea-port-sunday/04-resort-nunobiki-watercolor.webp"><img src="daily/2026-06-07-kobe-hydrangea-port-sunday/04-resort-nunobiki-watercolor.webp" alt="Adult early 20s resort day-trip look at Nunobiki Herb Gardens in watercolor couture style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Resort - Nunobiki</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>resort</dd><dt>Style</dt><dd>watercolor-couture</dd><dt>Pose</dt><dd>stretching-reach</dd></dl>
+                  <a class="open-image" href="daily/2026-06-07-kobe-hydrangea-port-sunday/04-resort-nunobiki-watercolor.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

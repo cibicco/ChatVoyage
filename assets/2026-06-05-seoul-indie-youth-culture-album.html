@@ -76,9 +76,22 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
+    }
+
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
     }
 
     figcaption { padding: 12px; }
@@ -104,12 +117,27 @@
     }
 
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="daily/2026-06-05-seoul-indie-youth-culture/">Image Folder</a>
     </nav>
 
@@ -118,7 +146,7 @@
 
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-05-seoul-indie-youth-culture/01-transit-subway-anime-magazine.png" alt="Adult 18-19 subway transit look in anime fashion magazine style">
+        <a class="image-link" href="daily/2026-06-05-seoul-indie-youth-culture/01-transit-subway-anime-magazine.webp"><img src="daily/2026-06-05-seoul-indie-youth-culture/01-transit-subway-anime-magazine.webp" alt="Adult 18-19 subway transit look in anime fashion magazine style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Transit - Subway Passage</h2>
           <dl>
@@ -127,11 +155,12 @@
             <dt>Style</dt><dd>anime-fashion-magazine</dd>
             <dt>Place</dt><dd>Seoul subway</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-indie-youth-culture/01-transit-subway-anime-magazine.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-05-seoul-indie-youth-culture/02-market-hongdae-marker-sketch.png" alt="Adult early 20s Hongdae market look in marker sketch style">
+        <a class="image-link" href="daily/2026-06-05-seoul-indie-youth-culture/02-market-hongdae-marker-sketch.webp"><img src="daily/2026-06-05-seoul-indie-youth-culture/02-market-hongdae-marker-sketch.webp" alt="Adult early 20s Hongdae market look in marker sketch style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Market - Hongdae Canopy</h2>
           <dl>
@@ -140,11 +169,12 @@
             <dt>Style</dt><dd>marker-sketch</dd>
             <dt>Place</dt><dd>Hongdae market</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-indie-youth-culture/02-market-hongdae-marker-sketch.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-05-seoul-indie-youth-culture/03-club-basement-game-3d.png" alt="Adult early 20s basement club look in game cinematic 3D style">
+        <a class="image-link" href="daily/2026-06-05-seoul-indie-youth-culture/03-club-basement-game-3d.webp"><img src="daily/2026-06-05-seoul-indie-youth-culture/03-club-basement-game-3d.webp" alt="Adult early 20s basement club look in game cinematic 3D style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Club - Basement Corridor</h2>
           <dl>
@@ -153,11 +183,12 @@
             <dt>Style</dt><dd>game-cinematic-3d</dd>
             <dt>Place</dt><dd>Hongdae club</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-indie-youth-culture/03-club-basement-game-3d.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-05-seoul-indie-youth-culture/04-gallery-euljiro-watercolor.png" alt="Adult late 20s Euljiro gallery look in watercolor couture style">
+        <a class="image-link" href="daily/2026-06-05-seoul-indie-youth-culture/04-gallery-euljiro-watercolor.webp"><img src="daily/2026-06-05-seoul-indie-youth-culture/04-gallery-euljiro-watercolor.webp" alt="Adult late 20s Euljiro gallery look in watercolor couture style" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Gallery - Euljiro Prints</h2>
           <dl>
@@ -166,6 +197,7 @@
             <dt>Style</dt><dd>watercolor-couture</dd>
             <dt>Place</dt><dd>Euljiro gallery</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-indie-youth-culture/04-gallery-euljiro-watercolor.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

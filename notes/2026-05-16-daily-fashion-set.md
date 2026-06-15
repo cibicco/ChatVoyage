@@ -11,8 +11,8 @@
 
 ## Images
 
-1. `../assets/daily/2026-05-16-daily-fashion-set/01-street-layered-casual.png`
-2. `../assets/daily/2026-05-16-daily-fashion-set/02-mode-urban-separates.png`
-3. `../assets/daily/2026-05-16-daily-fashion-set/03-night-navy-dress.png`
-4. `../assets/daily/2026-05-16-daily-fashion-set/04-resort-cream-separates.png`
+1. `../assets/daily/2026-05-16-daily-fashion-set/01-street-layered-casual.webp`
+2. `../assets/daily/2026-05-16-daily-fashion-set/02-mode-urban-separates.webp`
+3. `../assets/daily/2026-05-16-daily-fashion-set/03-night-navy-dress.webp`
+4. `../assets/daily/2026-05-16-daily-fashion-set/04-resort-cream-separates.webp`
 

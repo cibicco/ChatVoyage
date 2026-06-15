@@ -66,10 +66,23 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
     }
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
     figcaption { padding: 12px; }
     h2 {
       margin: 0 0 6px;
@@ -89,12 +102,27 @@
       font-weight: 600;
     }
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="../notes/2026-06-14-melbourne-wattle-winter-layers.md">Notes</a>
       <a href="daily/2026-06-14-melbourne-wattle-winter-layers/">Image Folder</a>
     </nav>
@@ -102,31 +130,35 @@
     <p class="intro">Four 2026-06-14 v2-short-generation images using Melbourne winter city layers across a laneway, civic hall ceremony, warehouse rehearsal room, and cinema lobby.</p>
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-14-melbourne-wattle-winter-layers/01-street-degraves-laneway-winter-anime-note.png" alt="Adult early 20s Melbourne Degraves laneway street look with wool coat and wattle gold scarf ring">
+        <a class="image-link" href="daily/2026-06-14-melbourne-wattle-winter-layers/01-street-degraves-laneway-winter-anime-note.webp"><img src="daily/2026-06-14-melbourne-wattle-winter-layers/01-street-degraves-laneway-winter-anime-note.webp" alt="Adult early 20s Melbourne Degraves laneway street look with wool coat and wattle gold scarf ring" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Street - Degraves Laneway</h2>
           <dl><dt>Age</dt><dd>20-24</dd><dt>Category</dt><dd>street</dd><dt>Style</dt><dd>anime-soft-cinematic</dd><dt>Pose</dt><dd>walking-stride</dd></dl>
+                  <a class="open-image" href="daily/2026-06-14-melbourne-wattle-winter-layers/01-street-degraves-laneway-winter-anime-note.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-14-melbourne-wattle-winter-layers/02-formal-royal-exhibition-brooch-digital.png" alt="Adult late 20s Melbourne Royal Exhibition formal look with merino dress and wattle gold brooch">
+        <a class="image-link" href="daily/2026-06-14-melbourne-wattle-winter-layers/02-formal-royal-exhibition-brooch-digital.webp"><img src="daily/2026-06-14-melbourne-wattle-winter-layers/02-formal-royal-exhibition-brooch-digital.webp" alt="Adult late 20s Melbourne Royal Exhibition formal look with merino dress and wattle gold brooch" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Formal - Royal Exhibition</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>formal</dd><dt>Style</dt><dd>digital-magazine-painting</dd><dt>Pose</dt><dd>standing-front</dd></dl>
+                  <a class="open-image" href="daily/2026-06-14-melbourne-wattle-winter-layers/02-formal-royal-exhibition-brooch-digital.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-14-melbourne-wattle-winter-layers/03-dance-collingwood-winter-rehearsal-marker.png" alt="Adult 18-19 Melbourne Collingwood rehearsal look with wrap-panel dance pants and wattle gold side tape">
+        <a class="image-link" href="daily/2026-06-14-melbourne-wattle-winter-layers/03-dance-collingwood-winter-rehearsal-marker.webp"><img src="daily/2026-06-14-melbourne-wattle-winter-layers/03-dance-collingwood-winter-rehearsal-marker.webp" alt="Adult 18-19 Melbourne Collingwood rehearsal look with wrap-panel dance pants and wattle gold side tape" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Dance - Collingwood Rehearsal</h2>
           <dl><dt>Age</dt><dd>18-19-adult</dd><dt>Category</dt><dd>dance</dd><dt>Style</dt><dd>marker-sketch</dd><dt>Pose</dt><dd>dance-motion</dd></dl>
+                  <a class="open-image" href="daily/2026-06-14-melbourne-wattle-winter-layers/03-dance-collingwood-winter-rehearsal-marker.webp">Open image</a>
         </figcaption>
       </figure>
       <figure>
-        <img src="daily/2026-06-14-melbourne-wattle-winter-layers/04-date-cinema-nova-winter-semi-real-note.png" alt="Adult late 20s Melbourne Cinema Nova date look with wool pinafore and wattle gold satin hair scarf">
+        <a class="image-link" href="daily/2026-06-14-melbourne-wattle-winter-layers/04-date-cinema-nova-winter-semi-real-note.webp"><img src="daily/2026-06-14-melbourne-wattle-winter-layers/04-date-cinema-nova-winter-semi-real-note.webp" alt="Adult late 20s Melbourne Cinema Nova date look with wool pinafore and wattle gold satin hair scarf" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Date - Cinema Nova</h2>
           <dl><dt>Age</dt><dd>25-29</dd><dt>Category</dt><dd>date</dd><dt>Style</dt><dd>semi-real-editorial</dd><dt>Pose</dt><dd>leaning-wall</dd></dl>
+                  <a class="open-image" href="daily/2026-06-14-melbourne-wattle-winter-layers/04-date-cinema-nova-winter-semi-real-note.webp">Open image</a>
         </figcaption>
       </figure>
     </div>

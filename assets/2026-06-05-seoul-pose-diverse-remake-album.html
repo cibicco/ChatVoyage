@@ -76,9 +76,22 @@
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
+      
+      max-height: 82vh;
+      object-fit: contain;
       background: #eef1f3;
+    }
+
+
+    .image-link {
+      display: block;
+      background: #eef1f3;
+    }
+    .open-image,
+    .open {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
     }
 
     figcaption { padding: 12px; }
@@ -104,12 +117,27 @@
     }
 
     dd { margin: 0; }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 18px, 480px);
+        padding: 18px 0 32px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      img {
+        max-height: 78vh;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <nav>
       <a href="../index.html">Index</a>
+      <a href="../albums.html">Albums</a>
       <a href="daily/2026-06-05-seoul-pose-diverse-remake/">Image Folder</a>
     </nav>
 
@@ -118,7 +146,7 @@
 
     <div class="grid">
       <figure>
-        <img src="daily/2026-06-05-seoul-pose-diverse-remake/01-transit-subway-left-profile.png" alt="Adult 18-19 subway transit look, left profile with fan">
+        <a class="image-link" href="daily/2026-06-05-seoul-pose-diverse-remake/01-transit-subway-left-profile.webp"><img src="daily/2026-06-05-seoul-pose-diverse-remake/01-transit-subway-left-profile.webp" alt="Adult 18-19 subway transit look, left profile with fan" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>01 Transit - Left Profile</h2>
           <dl>
@@ -127,11 +155,12 @@
             <dt>Pose</dt><dd>using-object / left-profile</dd>
             <dt>Style</dt><dd>anime-fashion-magazine</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-pose-diverse-remake/01-transit-subway-left-profile.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-05-seoul-pose-diverse-remake/02-market-jump-motion.png" alt="Adult early 20s market look in jump motion">
+        <a class="image-link" href="daily/2026-06-05-seoul-pose-diverse-remake/02-market-jump-motion.webp"><img src="daily/2026-06-05-seoul-pose-diverse-remake/02-market-jump-motion.webp" alt="Adult early 20s market look in jump motion" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>02 Market - Jump Motion</h2>
           <dl>
@@ -140,11 +169,12 @@
             <dt>Pose</dt><dd>jump-motion / camera</dd>
             <dt>Style</dt><dd>marker-sketch</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-pose-diverse-remake/02-market-jump-motion.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-05-seoul-pose-diverse-remake/03-club-leaning-down.png" alt="Adult early 20s club look leaning down">
+        <a class="image-link" href="daily/2026-06-05-seoul-pose-diverse-remake/03-club-leaning-down.webp"><img src="daily/2026-06-05-seoul-pose-diverse-remake/03-club-leaning-down.webp" alt="Adult early 20s club look leaning down" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>03 Club - Leaning Down</h2>
           <dl>
@@ -153,11 +183,12 @@
             <dt>Pose</dt><dd>leaning-wall / down</dd>
             <dt>Style</dt><dd>game-cinematic-3d</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-pose-diverse-remake/03-club-leaning-down.webp">Open image</a>
         </figcaption>
       </figure>
 
       <figure>
-        <img src="daily/2026-06-05-seoul-pose-diverse-remake/04-gallery-back-three-quarter-crop.png" alt="Adult late 20s gallery look in back three-quarter crop">
+        <a class="image-link" href="daily/2026-06-05-seoul-pose-diverse-remake/04-gallery-back-three-quarter-crop.webp"><img src="daily/2026-06-05-seoul-pose-diverse-remake/04-gallery-back-three-quarter-crop.webp" alt="Adult late 20s gallery look in back three-quarter crop" loading="lazy" decoding="async"></a>
         <figcaption>
           <h2>04 Gallery - Back Crop</h2>
           <dl>
@@ -166,6 +197,7 @@
             <dt>Pose</dt><dd>back-three-quarter / close crop</dd>
             <dt>Style</dt><dd>watercolor-couture</dd>
           </dl>
+                  <a class="open-image" href="daily/2026-06-05-seoul-pose-diverse-remake/04-gallery-back-three-quarter-crop.webp">Open image</a>
         </figcaption>
       </figure>
     </div>
