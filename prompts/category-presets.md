@@ -50,10 +50,10 @@ Select four primary categories that fit today's city, season, theme, and
 requested outfit. Avoid repeating the same four categories by habit. Use each
 selected primary category as the filename prefix:
 
-01-{category}-{look-name}.png
-02-{category}-{look-name}.png
-03-{category}-{look-name}.png
-04-{category}-{look-name}.png
+01-{category}-{look-name}.webp
+02-{category}-{look-name}.webp
+03-{category}-{look-name}.webp
+04-{category}-{look-name}.webp
 ```
 
 Record secondary tags for each image in the monthly generation log. Add a new

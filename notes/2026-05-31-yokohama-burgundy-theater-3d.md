@@ -12,13 +12,13 @@ instead of repeating these four by default.
 
 ## Images
 
-- `01-street-red-brick-knit-bow-3d.png`: reference burgundy off-shoulder knit
+- `01-street-red-brick-knit-bow-3d.webp`: reference burgundy off-shoulder knit
   with bow, black pleated mini skirt, choker, shoulder bag, theater-door step.
-- `02-mode-brick-gallery-tailoring-3d.png`: black long vest, ivory satin blouse,
+- `02-mode-brick-gallery-tailoring-3d.webp`: black long vest, ivory satin blouse,
   burgundy wide trousers, seated gallery-lobby pose.
-- `03-night-red-brick-velvet-3d.png`: burgundy velvet cropped jacket, black satin
+- `03-night-red-brick-velvet-3d.webp`: burgundy velvet cropped jacket, black satin
   dress, opaque tights, wet red-brick arcade.
-- `04-resort-harbor-terrace-knit-3d.png`: burgundy fitted knit, ivory sailor
+- `04-resort-harbor-terrace-knit-3d.webp`: burgundy fitted knit, ivory sailor
   trousers, black cardigan, harbor-terrace bench pose.
 
 ## Result

@@ -263,7 +263,7 @@ Fashion language:
 
 ### Final Files
 
-- `01-weekend-tiong-bahru-camp-shirt-anime.png`
+- `01-weekend-tiong-bahru-camp-shirt-anime.webp`
   - Source file: `ig_0c0e10b5b12b91b2016a2e4726d2088191b5c47b1cb785bb85.png`
   - Primary category: `weekend`
   - Target age band: `18-19-adult`
@@ -287,7 +287,7 @@ Fashion language:
   - Generated prompt summary: short prompt for an adult 18-19 Tiong Bahru weekend look with camp shirt, wrap skort, half-pants, sneakers, blank drink, and citrus hair clip.
   - Visual check: art-deco breezeway, walking pose, camp shirt, wrap skort, sneakers, drink, and citrus details are readable.
   - Result: accepted.
-- `02-office-design-centre-waistcoat-runway.png`
+- `02-office-design-centre-waistcoat-runway.webp`
   - Source file: `ig_0c0e10b5b12b91b2016a2e4776b3dc8191bd26bedf6c61c022.png`
   - Primary category: `office`
   - Target age band: `25-29`
@@ -311,7 +311,7 @@ Fashion language:
   - Generated prompt summary: short prompt for a late-20s Singapore design office look with sleeveless waistcoat, tapered trousers, clipboard, pumps, and pocket square.
   - Visual check: runway-board style, office atrium, tailoring, swatches, pumps, tote, and mango-lime pocket square are readable.
   - Result: accepted.
-- `03-theater-esplanade-organza-watercolor.png`
+- `03-theater-esplanade-organza-watercolor.webp`
   - Source file: `ig_0c0e10b5b12b91b2016a2e47c0248c8191b96f3b74e01c26b3.png`
   - Primary category: `theater`
   - Target age band: `20-24`
@@ -335,7 +335,7 @@ Fashion language:
   - Generated prompt summary: short prompt for an early-20s Esplanade theater look with organza jacket, rib top, bias skirt, beaded bag strap, mules, and ticket envelope.
   - Visual check: watercolor style, performance foyer, jacket adjustment, bias skirt, bag strap, and mules are readable. The waterfront appears through the glass, but the primary scene remains the foyer.
   - Result: accepted.
-- `04-date-joo-chiat-shirt-dress-semi-real-note.png`
+- `04-date-joo-chiat-shirt-dress-semi-real-note.webp`
   - Source file: `ig_0c0e10b5b12b91b2016a2e487646cc81918b1fa79aa175291c.png`
   - Primary category: `date`
   - Target age band: `25-29`
@@ -379,16 +379,16 @@ This run fills 2026-05-28 and deliberately uses a humid non-Japan city without r
 
 ### Final Files
 
-- `01-street-red-brick-knit-bow-3d.png`
+- `01-street-red-brick-knit-bow-3d.webp`
   - Primary category: `street`
   - Secondary tags: `rain`, `theater`, `knit`, `feminine`, `3d-cg-fashion`
-- `02-mode-brick-gallery-tailoring-3d.png`
+- `02-mode-brick-gallery-tailoring-3d.webp`
   - Primary category: `mode`
   - Secondary tags: `rain`, `gallery`, `tailoring`, `satin`, `3d-cg-fashion`
-- `03-night-red-brick-velvet-3d.png`
+- `03-night-red-brick-velvet-3d.webp`
   - Primary category: `night`
   - Secondary tags: `rain`, `theater`, `velvet`, `satin`, `3d-cg-fashion`
-- `04-resort-harbor-terrace-knit-3d.png`
+- `04-resort-harbor-terrace-knit-3d.webp`
   - Primary category: `resort`
   - Secondary tags: `rain`, `harbor`, `waterfront`, `knit`, `3d-cg-fashion`
 

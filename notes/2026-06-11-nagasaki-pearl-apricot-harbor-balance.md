@@ -20,10 +20,10 @@
 
 ## Results
 
-- `01-weekend-dejima-wrap-half-pants.png`: accepted with style note. Dejima canal-side map interaction, half pants plus wrap apron panel, sheer socks, and slingback pumps test the updated bottoms/shoes preference. The output is photo-adjacent rather than anime-magazine styled.
-- `02-mode-megane-bridge-balance.png`: accepted. Megane Bridge stone-edge balance reads as an intentional risky action, with clear foot placement, gaze, and arm position. The wrap panel over cropped trousers and ventilated ankle boots answer the new silhouette and shoe direction.
-- `03-date-glover-wrap-dress-watercolor.png`: accepted. Glover Garden hillside date walk, wrap dress over cropped trousers, bouquet, woven bag, and low block heels read as elegant, personable, and climate-natural.
-- `04-active-harbor-boat-edge-balance-v2.png`: accepted with style note after anatomy regeneration. Nagasaki harbor boat-edge balance is much clearer than the previous ferry jump: the body reads as deliberately balancing, not falling or jumping away, and the regenerated version has two readable arms. It is still photo-adjacent rather than true `3d-cg-fashion`.
+- `01-weekend-dejima-wrap-half-pants.webp`: accepted with style note. Dejima canal-side map interaction, half pants plus wrap apron panel, sheer socks, and slingback pumps test the updated bottoms/shoes preference. The output is photo-adjacent rather than anime-magazine styled.
+- `02-mode-megane-bridge-balance.webp`: accepted. Megane Bridge stone-edge balance reads as an intentional risky action, with clear foot placement, gaze, and arm position. The wrap panel over cropped trousers and ventilated ankle boots answer the new silhouette and shoe direction.
+- `03-date-glover-wrap-dress-watercolor.webp`: accepted. Glover Garden hillside date walk, wrap dress over cropped trousers, bouquet, woven bag, and low block heels read as elegant, personable, and climate-natural.
+- `04-active-harbor-boat-edge-balance-v2.webp`: accepted with style note after anatomy regeneration. Nagasaki harbor boat-edge balance is much clearer than the previous ferry jump: the body reads as deliberately balancing, not falling or jumping away, and the regenerated version has two readable arms. It is still photo-adjacent rather than true `3d-cg-fashion`.
 
 ## Quality Notes
 

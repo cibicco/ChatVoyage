@@ -20,10 +20,10 @@
 
 ## Results
 
-- `01-market-nishiki-hydrangea-cel-anime.png`: accepted. Nishiki Market covered-arcade mood, wrapped snack interaction, open hydrangea-blue shirt, ivory tank, skort over bike shorts, rain sandals, and clear tote are readable. The crouching crop makes the legs prominent, but the market action and opaque bike shorts keep the look adult and garment-focused.
-- `02-gallery-kyocera-museum-open-back-marker.png`: accepted. Kyoto City KYOCERA Museum / Okazaki Park plaza, open-back hydrangea-blue linen halter, carried mesh bolero, culotte shorts, tote, and rainy marker-sketch treatment are readable. The open back is natural for humid museum walking and is not corrected into heavy coverage.
-- `03-lounge-pontocho-kamo-river-soft-real.png`: accepted. Pontocho / Kamo River evening, smoky indigo satin camisole, draped blazer, ivory sheer-over-opaque skirt, silver sandals, and clutch pass the lounge and climate-naturalness checks.
-- `04-transit-kyoto-station-blue-rain-anime.png`: accepted. Kyoto Station glass-and-steel interior, suitcase, hydrangea-blue mesh jacket, black tank, light rain shell, parachute pants, and sneakers fit humid rainy transit.
+- `01-market-nishiki-hydrangea-cel-anime.webp`: accepted. Nishiki Market covered-arcade mood, wrapped snack interaction, open hydrangea-blue shirt, ivory tank, skort over bike shorts, rain sandals, and clear tote are readable. The crouching crop makes the legs prominent, but the market action and opaque bike shorts keep the look adult and garment-focused.
+- `02-gallery-kyocera-museum-open-back-marker.webp`: accepted. Kyoto City KYOCERA Museum / Okazaki Park plaza, open-back hydrangea-blue linen halter, carried mesh bolero, culotte shorts, tote, and rainy marker-sketch treatment are readable. The open back is natural for humid museum walking and is not corrected into heavy coverage.
+- `03-lounge-pontocho-kamo-river-soft-real.webp`: accepted. Pontocho / Kamo River evening, smoky indigo satin camisole, draped blazer, ivory sheer-over-opaque skirt, silver sandals, and clutch pass the lounge and climate-naturalness checks.
+- `04-transit-kyoto-station-blue-rain-anime.webp`: accepted. Kyoto Station glass-and-steel interior, suitcase, hydrangea-blue mesh jacket, black tank, light rain shell, parachute pants, and sneakers fit humid rainy transit.
 
 ## Quality Notes
 

@@ -67,8 +67,9 @@ single four-panel collage.
 12. Save accepted display images under `assets/daily/YYYY-MM-DD-theme/` as
     WebP by default. If the image tool produced PNG files, use
     `python3 scripts/convert_daily_images_to_webp.py <folder>` and point
-    `index.html` plus album pages at the WebP files. Keep PNG originals only as
-    source material unless the user explicitly asks to delete them.
+    `index.html` plus album pages at the WebP files. This project no longer
+    keeps PNG copies after WebP conversion; remove generated PNG files once the
+    matching WebP files and gallery references are verified.
 13. Update the monthly log, notes, album, and `index.html`. Album pages should
     use the current shared album template: mobile-friendly layout,
     `object-fit: contain`, direct image links, `loading` / `decoding`

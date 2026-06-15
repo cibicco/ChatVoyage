@@ -10,22 +10,22 @@ generation log.
 
 ## Images
 
-- `01-red-brick-knit-bow.png`
+- `01-red-brick-knit-bow.webp`
   - Fashion category: `street`
   - Style preset: `anime-editorial`
   - Scene: Yokohama red brick theater district
   - Fashion language: burgundy knit, bow detail, black pleated skirt, romantic city styling
-- `02-brick-gallery-tailoring.png`
+- `02-brick-gallery-tailoring.webp`
   - Fashion category: `mode`
   - Style preset: `anime-editorial`
   - Scene: Yokohama brick gallery
   - Fashion language: gallery tailoring, sharper layered separates, burgundy accent
-- `03-jazz-lounge-velvet.png`
+- `03-jazz-lounge-velvet.webp`
   - Fashion category: `lounge`
   - Style preset: `anime-editorial`
   - Scene: Yokohama jazz lounge
   - Fashion language: velvet, night texture, intimate lounge styling
-- `04-harbor-terrace-knit.png`
+- `04-harbor-terrace-knit.webp`
   - Fashion category: `resort`
   - Style preset: `anime-editorial`
   - Scene: Yokohama harbor terrace

@@ -27,28 +27,28 @@ to copy.
 
 Saved in `assets/daily/2026-06-04-tokyo-indie-youth-culture-v2/`.
 
-- `01-market-vintage-lane-cel-anime.png`
+- `01-market-vintage-lane-cel-anime.webp`
   - Target age band: `18-19-adult`
   - Fashion category: `market`
   - Style preset: `anime-cel-polished`
   - Scene: covered vintage market lane after rain
   - Fashion language: oversized denim chore jacket, butter-yellow rib baby tee, black lace-trim slip skirt over opaque lining, slouch socks, Mary Jane sneakers
   - Person: adult Japanese young woman, youthful soft features, petite build, adult vintage styling
-- `02-club-livehouse-doll-3d.png`
+- `02-club-livehouse-doll-3d.webp`
   - Target age band: `20-24`
   - Fashion category: `club`
   - Style preset: `doll-like-3d`
   - Scene: live-house club lobby after a show
   - Fashion language: sheer black top over opaque bandeau, butter-yellow faux-fur bolero, charcoal cargo skirt, knee-high boots, silver chain necklace
   - Person: adult Japanese woman, early 20s, confident nightlife pose
-- `03-gallery-zine-runway-board.png`
+- `03-gallery-zine-runway-board.webp`
   - Target age band: `25-29`
   - Fashion category: `gallery`
   - Style preset: `runway-board-illustration`
   - Scene: zine gallery / independent bookshop gallery
   - Fashion language: reconstructed butter-yellow utility dress, white mesh long-sleeve top, black belt, cropped olive cargo trousers, platform loafers
   - Person: adult Japanese woman, late 20s, calm creative-worker stance
-- `04-home-after-live-soft-real.png`
+- `04-home-after-live-soft-real.webp`
   - Target age band: `30-34`
   - Fashion category: `home`
   - Style preset: `soft-real-fashion-art`

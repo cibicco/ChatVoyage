@@ -20,10 +20,10 @@
 
 ## Results
 
-- `01-street-degraves-laneway-winter-anime-note.png`: accepted with style note. Degraves-style laneway, cropped wool car coat, knit polo, wrap skirt over trousers, amber scarf ring, satchel, boots, and cup action create a winter street look. The output is slightly photo-adjacent for anime-soft-cinematic.
-- `02-formal-royal-exhibition-brooch-digital.png`: accepted. Royal Exhibition Building-style ceremony, merino column dress, cream bolero, wattle-gold brooch, smoke tights, low pumps, clutch, and program create a polished winter formal look.
-- `03-dance-collingwood-winter-rehearsal-marker.png`: accepted. Collingwood warehouse rehearsal room, merino top, quilted vest, wrap-panel wide dance pants, gold side tape, leg warmers, and dance sneakers create a winter practice look.
-- `04-date-cinema-nova-winter-semi-real-note.png`: accepted with style note. Cinema Nova-style lobby, ribbed turtleneck, wool pinafore, carried leather jacket, gold satin scarf, tights, Mary Janes, and glove adjustment create a winter film-date look. The output leans photo-adjacent but still fits semi-real editorial.
+- `01-street-degraves-laneway-winter-anime-note.webp`: accepted with style note. Degraves-style laneway, cropped wool car coat, knit polo, wrap skirt over trousers, amber scarf ring, satchel, boots, and cup action create a winter street look. The output is slightly photo-adjacent for anime-soft-cinematic.
+- `02-formal-royal-exhibition-brooch-digital.webp`: accepted. Royal Exhibition Building-style ceremony, merino column dress, cream bolero, wattle-gold brooch, smoke tights, low pumps, clutch, and program create a polished winter formal look.
+- `03-dance-collingwood-winter-rehearsal-marker.webp`: accepted. Collingwood warehouse rehearsal room, merino top, quilted vest, wrap-panel wide dance pants, gold side tape, leg warmers, and dance sneakers create a winter practice look.
+- `04-date-cinema-nova-winter-semi-real-note.webp`: accepted with style note. Cinema Nova-style lobby, ribbed turtleneck, wool pinafore, carried leather jacket, gold satin scarf, tights, Mary Janes, and glove adjustment create a winter film-date look. The output leans photo-adjacent but still fits semi-real editorial.
 
 ## Quality Notes
 

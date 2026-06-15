@@ -21,10 +21,10 @@
 
 Saved in `assets/daily/2026-06-10-fukuoka-yuzu-rain-riverside/`.
 
-- `01-weekend-ohori-yuzu-anime.png`: Ohori Park rainy weekend look, `18-19-adult`, fresh lemon-yuzu tank, open linen shirt, skort and sandals
-- `02-gallery-art-museum-open-back-marker.png`: Fukuoka Art Museum gallery look, `20-24`, vivid yuzu open-back halter, carried mesh bolero, culotte shorts
-- `03-resort-castle-ruins-smoky-yuzu-soft-real.png`: Fukuoka Castle ruins rainy resort look, `25-29`, smoky ochre-yuzu satin camisole, draped linen blazer, sheer-over-opaque skirt
-- `04-lounge-nakasu-yatai-river-anime.png`: Nakasu riverside lounge look, `20-24`, light yuzu mesh shirt, black tank, wide wrap pants and sneakers
+- `01-weekend-ohori-yuzu-anime.webp`: Ohori Park rainy weekend look, `18-19-adult`, fresh lemon-yuzu tank, open linen shirt, skort and sandals
+- `02-gallery-art-museum-open-back-marker.webp`: Fukuoka Art Museum gallery look, `20-24`, vivid yuzu open-back halter, carried mesh bolero, culotte shorts
+- `03-resort-castle-ruins-smoky-yuzu-soft-real.webp`: Fukuoka Castle ruins rainy resort look, `25-29`, smoky ochre-yuzu satin camisole, draped linen blazer, sheer-over-opaque skirt
+- `04-lounge-nakasu-yatai-river-anime.webp`: Nakasu riverside lounge look, `20-24`, light yuzu mesh shirt, black tank, wide wrap pants and sneakers
 
 ## Notes
 

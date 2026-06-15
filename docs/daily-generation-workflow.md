@@ -52,9 +52,9 @@ Use this checklist after every daily image generation or reorganization.
 
 - Save final display images under `assets/daily/YYYY-MM-DD-theme/` as WebP
   by default. Use `python3 scripts/convert_daily_images_to_webp.py <folder>`
-  after generation when the image tool produced PNG files. Keep generated PNG
-  originals only when they are needed as source material; do not delete
-  originals unless the user explicitly asks.
+  after generation when the image tool produced PNG files. This project no
+  longer keeps PNG copies after WebP conversion; remove generated PNG files
+  once the matching WebP files and gallery references are verified.
 - Keep four separate images; do not make a collage.
 - Add or update a human-readable note in `notes/YYYY-MM-DD-theme.md`.
 - Add detailed LLM/Codex reuse information to `logs/generation-YYYY-MM.md`.

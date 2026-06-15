@@ -20,10 +20,10 @@
 
 ## Results
 
-- `01-office-looshaus-waistcoat-runway-note.png`: accepted with style note. Looshaus-style office lobby, long waistcoat, cropped trousers, slingback pumps, portfolio, and belt adjustment create a quiet indoor office look. The output is more photo-adjacent than the intended runway-board illustration.
-- `02-formal-palais-ferstel-wrap-anime.png`: accepted. Palais Ferstel-style arcade reception, wrap blouse, pleated skirt over trousers, glass-bead pouch, and coffee-cup gesture create a formal but sociable indoor look.
-- `03-theater-musikverein-satin-watercolor.png`: accepted. Musikverein-style golden foyer, square-neck satin dress, cropped organza jacket, sheer socks, Mary Jane pumps, and program gesture create a theater look without repeating lounge seating.
-- `04-home-josefstadt-record-doll-3d-note.png`: accepted with style note. Josefstadt Altbau apartment salon, floor-sit record selection, satin wrap shorts over leggings, ballet flats, and hair ribbon create an indoor home look. The output is photo-adjacent rather than clearly doll-like 3D.
+- `01-office-looshaus-waistcoat-runway-note.webp`: accepted with style note. Looshaus-style office lobby, long waistcoat, cropped trousers, slingback pumps, portfolio, and belt adjustment create a quiet indoor office look. The output is more photo-adjacent than the intended runway-board illustration.
+- `02-formal-palais-ferstel-wrap-anime.webp`: accepted. Palais Ferstel-style arcade reception, wrap blouse, pleated skirt over trousers, glass-bead pouch, and coffee-cup gesture create a formal but sociable indoor look.
+- `03-theater-musikverein-satin-watercolor.webp`: accepted. Musikverein-style golden foyer, square-neck satin dress, cropped organza jacket, sheer socks, Mary Jane pumps, and program gesture create a theater look without repeating lounge seating.
+- `04-home-josefstadt-record-doll-3d-note.webp`: accepted with style note. Josefstadt Altbau apartment salon, floor-sit record selection, satin wrap shorts over leggings, ballet flats, and hair ribbon create an indoor home look. The output is photo-adjacent rather than clearly doll-like 3D.
 
 ## Quality Notes
 

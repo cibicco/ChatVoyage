@@ -25,10 +25,10 @@
 
 ## Results
 
-- `01-office-hatchobori-shirt-dress-semi-real.png`: accepted. Hiroshima streetcar / office-walk setting, ivory shirt dress, cropped vest, momiji brooch, sheer socks, loafers, and work tote avoid the recent young-market and transit formulas. The person reads bright and self-possessed.
-- `02-theater-aster-plaza-origami-dress-illustration.png`: accepted. Theater-lobby social expression, blank tickets, origami-pleated vermilion overdress, short-sleeve tee, flare trousers, hair barrette, and box bag clearly move away from open-back gallery styling.
-- `03-home-kyobashi-river-scarf-anime.png`: accepted. Home balcony, video-call energy, cropped rugby polo, barrel jeans, striped scarf, hoop earrings, and ring express the new persona strongly. Midriff visibility is treated as fashion/lightness in a home social context, not erotic framing.
-- `04-travel-miyajima-ferry-jumpsuit-3d-note.png`: accepted with style and action-readability notes. Miyajima ferry deck, utility jumpsuit, woven hat cord, duffel, and sneakers avoid station transit and mesh-jacket formulas. However, the `jump-motion` result can read as jumping away from the ferry rather than an intentional ferry-deck action; future ferry or waterside prompts should make the action legible, such as a gangway/deck step, boat-edge balance, railing hold, pier walk, or bag-strap adjustment. It remains more photo-adjacent than ideal for `pbr-fashion-3d`.
+- `01-office-hatchobori-shirt-dress-semi-real.webp`: accepted. Hiroshima streetcar / office-walk setting, ivory shirt dress, cropped vest, momiji brooch, sheer socks, loafers, and work tote avoid the recent young-market and transit formulas. The person reads bright and self-possessed.
+- `02-theater-aster-plaza-origami-dress-illustration.webp`: accepted. Theater-lobby social expression, blank tickets, origami-pleated vermilion overdress, short-sleeve tee, flare trousers, hair barrette, and box bag clearly move away from open-back gallery styling.
+- `03-home-kyobashi-river-scarf-anime.webp`: accepted. Home balcony, video-call energy, cropped rugby polo, barrel jeans, striped scarf, hoop earrings, and ring express the new persona strongly. Midriff visibility is treated as fashion/lightness in a home social context, not erotic framing.
+- `04-travel-miyajima-ferry-jumpsuit-3d-note.webp`: accepted with style and action-readability notes. Miyajima ferry deck, utility jumpsuit, woven hat cord, duffel, and sneakers avoid station transit and mesh-jacket formulas. However, the `jump-motion` result can read as jumping away from the ferry rather than an intentional ferry-deck action; future ferry or waterside prompts should make the action legible, such as a gangway/deck step, boat-edge balance, railing hold, pier walk, or bag-strap adjustment. It remains more photo-adjacent than ideal for `pbr-fashion-3d`.
 
 ## Quality Notes
 

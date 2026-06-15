@@ -21,10 +21,10 @@
 
 ## Results
 
-- `01-weekend-le-jardin-secret-fan-anime-note.png`: accepted with pose note. Le Jardin Secret-style shaded courtyard, short-sleeve white cotton shirt, saffron wrap panel over cropped trousers, fan, sketchbook, woven bag, and mules create a young adult weekend look. The image is seated rather than the planned knee-up using-object crop, but hands, fan, and sketchbook are coherent.
-- `02-mode-gueliz-showroom-vest-runway.png`: accepted. Guéliz design showroom, sleeveless long-line linen vest, compact tee, barrel trousers, saffron belt tabs, loafers, cuff, and pouch create a front-facing mode look that avoids the repeated open-back gallery formula.
-- `03-formal-dar-el-bacha-sash-watercolor.png`: accepted. Dar el Bacha-style museum courtyard reception, light wrap dress, sheer cropped jacket, smoky saffron sash, low slingbacks, clutch, and program card create a polished late-20s formal look. The back-oriented view is natural for jacket adjustment and fabric movement.
-- `04-travel-riad-rooftop-jumpsuit-digital-note.png`: accepted with style note. Riad rooftop, sleeveless utility jumpsuit, carried/tied overshirt, saffron printed scarf on bag, perforated summer boots, and travel-bag action create a relaxed early-20s travel look. The image is more photo-adjacent than requested digital magazine painting.
+- `01-weekend-le-jardin-secret-fan-anime-note.webp`: accepted with pose note. Le Jardin Secret-style shaded courtyard, short-sleeve white cotton shirt, saffron wrap panel over cropped trousers, fan, sketchbook, woven bag, and mules create a young adult weekend look. The image is seated rather than the planned knee-up using-object crop, but hands, fan, and sketchbook are coherent.
+- `02-mode-gueliz-showroom-vest-runway.webp`: accepted. Guéliz design showroom, sleeveless long-line linen vest, compact tee, barrel trousers, saffron belt tabs, loafers, cuff, and pouch create a front-facing mode look that avoids the repeated open-back gallery formula.
+- `03-formal-dar-el-bacha-sash-watercolor.webp`: accepted. Dar el Bacha-style museum courtyard reception, light wrap dress, sheer cropped jacket, smoky saffron sash, low slingbacks, clutch, and program card create a polished late-20s formal look. The back-oriented view is natural for jacket adjustment and fabric movement.
+- `04-travel-riad-rooftop-jumpsuit-digital-note.webp`: accepted with style note. Riad rooftop, sleeveless utility jumpsuit, carried/tied overshirt, saffron printed scarf on bag, perforated summer boots, and travel-bag action create a relaxed early-20s travel look. The image is more photo-adjacent than requested digital magazine painting.
 
 ## Quality Notes
 

@@ -20,10 +20,10 @@
 
 ## Results
 
-- `01-transit-oasis-gardenia-anime.png`: accepted. Oasis 21 / Hisaya-odori rain transit mood, clear umbrella, IC-card gesture, gardenia-white tank, open shirt, skirt-over-bike-shorts, and sandals are readable and climate-natural.
-- `02-gallery-aichi-arts-mineral-white-runway.png`: accepted with note. Aichi Arts Center gallery plaza, mineral-white linen vest, sleeveless knit, wide culotte trousers, and silver mules match the late-20s tone; the output is slightly more finished than a pure runway board.
-- `03-date-shikemichi-satin-soft-real.png`: accepted. Shikemichi canal / white-wall mood, satin camisole, open cardigan, wrap skirt, map interaction, and sandals fit a humid evening date walk.
-- `04-active-osu-arcade-cg-style-note.png`: accepted with style note. Osu covered arcade, wet pavement, gardenia-white mesh vest, sports top, cobalt nylon pants, sneakers, and tied rain shell fit the active category. Regenerated once to push `game-cinematic-3d`; the accepted image remains more photo-adjacent than ideal, so the style deviation is recorded.
+- `01-transit-oasis-gardenia-anime.webp`: accepted. Oasis 21 / Hisaya-odori rain transit mood, clear umbrella, IC-card gesture, gardenia-white tank, open shirt, skirt-over-bike-shorts, and sandals are readable and climate-natural.
+- `02-gallery-aichi-arts-mineral-white-runway.webp`: accepted with note. Aichi Arts Center gallery plaza, mineral-white linen vest, sleeveless knit, wide culotte trousers, and silver mules match the late-20s tone; the output is slightly more finished than a pure runway board.
+- `03-date-shikemichi-satin-soft-real.webp`: accepted. Shikemichi canal / white-wall mood, satin camisole, open cardigan, wrap skirt, map interaction, and sandals fit a humid evening date walk.
+- `04-active-osu-arcade-cg-style-note.webp`: accepted with style note. Osu covered arcade, wet pavement, gardenia-white mesh vest, sports top, cobalt nylon pants, sneakers, and tied rain shell fit the active category. Regenerated once to push `game-cinematic-3d`; the accepted image remains more photo-adjacent than ideal, so the style deviation is recorded.
 
 ## Quality Notes
 

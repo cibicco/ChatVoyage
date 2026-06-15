@@ -21,10 +21,10 @@
 
 Saved in `assets/daily/2026-06-08-taipei-guava-specific-places-v2/`.
 
-- `01-market-dihua-dadaocheng-guava-anime.png`: Dadaocheng Dihua Street market look, `18-19-adult`, fresh guava soda pink, square-neck tank and open seersucker shirt
-- `02-gallery-huashan-1914-open-back-marker.png`: Huashan 1914 gallery walk, `20-24`, vivid guava rose, open-back linen halter and carried mesh bolero
-- `03-lounge-treasure-hill-smoky-guava-soft-real.png`: Treasure Hill Artist Village stair lounge look, `25-29`, smoky rose-guava satin, camisole and draped linen blazer
-- `04-club-ximending-guava-neon-anime.png`: Ximending humid night street-club look, `20-24`, neon guava mesh shirt, black tank, wrap pants, and sneakers
+- `01-market-dihua-dadaocheng-guava-anime.webp`: Dadaocheng Dihua Street market look, `18-19-adult`, fresh guava soda pink, square-neck tank and open seersucker shirt
+- `02-gallery-huashan-1914-open-back-marker.webp`: Huashan 1914 gallery walk, `20-24`, vivid guava rose, open-back linen halter and carried mesh bolero
+- `03-lounge-treasure-hill-smoky-guava-soft-real.webp`: Treasure Hill Artist Village stair lounge look, `25-29`, smoky rose-guava satin, camisole and draped linen blazer
+- `04-club-ximending-guava-neon-anime.webp`: Ximending humid night street-club look, `20-24`, neon guava mesh shirt, black tank, wrap pants, and sneakers
 
 ## Notes
 

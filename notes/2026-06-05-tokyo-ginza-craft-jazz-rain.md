@@ -16,10 +16,10 @@
 
 Saved in `assets/daily/2026-06-05-tokyo-ginza-craft-jazz-rain/`.
 
-- `01-office-rain-arcade-semi-real.png`: office rain-arcade tailoring with glass-blue knit, `25-29`
-- `02-gallery-organza-runway-board.png`: craft-gallery organza vest and wide trousers, `25-29`
-- `03-lounge-jazz-cardigan-soft-anime.png`: jazz lounge satin dress and glass-blue cardigan, `20-24`
-- `04-transit-rain-shell-pbr-3d.png`: rain-shell transit styling with suitcase, `18-19-adult`
+- `01-office-rain-arcade-semi-real.webp`: office rain-arcade tailoring with glass-blue knit, `25-29`
+- `02-gallery-organza-runway-board.webp`: craft-gallery organza vest and wide trousers, `25-29`
+- `03-lounge-jazz-cardigan-soft-anime.webp`: jazz lounge satin dress and glass-blue cardigan, `20-24`
+- `04-transit-rain-shell-pbr-3d.webp`: rain-shell transit styling with suitcase, `18-19-adult`
 
 The first and fourth images are more photo-adjacent than requested, but both
 meet the adult-original-character, category, garment-readability, and no-logo

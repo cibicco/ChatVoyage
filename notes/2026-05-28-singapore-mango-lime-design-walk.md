@@ -20,10 +20,10 @@
 
 ## Results
 
-- `01-weekend-tiong-bahru-camp-shirt-anime.png`: accepted. Tiong Bahru-style shaded street, cotton camp shirt, wrap skort over half-pants, socks, sneakers, blank iced drink, and citrus hair clip create a bright young-adult weekend look that avoids the tank/open-shirt/sandal formula.
-- `02-office-design-centre-waistcoat-runway.png`: accepted. Design office atrium, sleeveless waistcoat, fine short-sleeve knit, tapered trousers, swatch clipboard, slingback pumps, tote, and pocket square create a polished late-20s work-adjacent look for humidity plus indoor air conditioning.
-- `03-theater-esplanade-organza-watercolor.png`: accepted. Esplanade-style performance foyer, square-neck rib top, translucent cropped jacket, bias midi skirt, mango-lime beaded bag strap, blank ticket envelope, and mules create an early-20s theater look. The waterfront appears through the glass, but the primary scene is the performance foyer.
-- `04-date-joo-chiat-shirt-dress-semi-real-note.png`: accepted with style and pose notes. Joo Chiat-style five-foot-way, square-neck shirt dress, mango-lime lacquer belt, carried sheer layer, woven clutch, and sandal gesture create a humid evening date look. The image is more photo-adjacent than requested semi-real digital art, and the sandal-fastening action reads more as a leaning shoe adjustment, but the anatomy and clothing logic are coherent.
+- `01-weekend-tiong-bahru-camp-shirt-anime.webp`: accepted. Tiong Bahru-style shaded street, cotton camp shirt, wrap skort over half-pants, socks, sneakers, blank iced drink, and citrus hair clip create a bright young-adult weekend look that avoids the tank/open-shirt/sandal formula.
+- `02-office-design-centre-waistcoat-runway.webp`: accepted. Design office atrium, sleeveless waistcoat, fine short-sleeve knit, tapered trousers, swatch clipboard, slingback pumps, tote, and pocket square create a polished late-20s work-adjacent look for humidity plus indoor air conditioning.
+- `03-theater-esplanade-organza-watercolor.webp`: accepted. Esplanade-style performance foyer, square-neck rib top, translucent cropped jacket, bias midi skirt, mango-lime beaded bag strap, blank ticket envelope, and mules create an early-20s theater look. The waterfront appears through the glass, but the primary scene is the performance foyer.
+- `04-date-joo-chiat-shirt-dress-semi-real-note.webp`: accepted with style and pose notes. Joo Chiat-style five-foot-way, square-neck shirt dress, mango-lime lacquer belt, carried sheer layer, woven clutch, and sandal gesture create a humid evening date look. The image is more photo-adjacent than requested semi-real digital art, and the sandal-fastening action reads more as a leaning shoe adjustment, but the anatomy and clothing logic are coherent.
 
 ## Quality Notes
 

@@ -17,10 +17,10 @@
 
 Saved in `assets/daily/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk/`.
 
-- `01-weekend-tsite-bookshop-cel-anime.png`: T-SITE-style bookshop courtyard weekend look, `20-24`
-- `02-outerwear-log-road-marker-sketch.png`: Log Road rain outerwear marker sketch, `25-29`
-- `03-date-kyu-asakura-slope-pbr-3d.png`: Kyu Asakura House slope date look, `25-29`
-- `04-lounge-sarugakucho-record-soft-real.png`: Sarugakucho record lounge look, `20-24`
+- `01-weekend-tsite-bookshop-cel-anime.webp`: T-SITE-style bookshop courtyard weekend look, `20-24`
+- `02-outerwear-log-road-marker-sketch.webp`: Log Road rain outerwear marker sketch, `25-29`
+- `03-date-kyu-asakura-slope-pbr-3d.webp`: Kyu Asakura House slope date look, `25-29`
+- `04-lounge-sarugakucho-record-soft-real.webp`: Sarugakucho record lounge look, `20-24`
 
 The third and fourth images are more photo-adjacent than the selected style
 prompts requested, but they meet the adult-original-character, concrete-place,

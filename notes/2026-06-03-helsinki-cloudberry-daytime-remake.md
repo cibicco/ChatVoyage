@@ -20,10 +20,10 @@
 
 ## Results
 
-- `01-weekend-oodi-maker-utility-anime.png`: accepted. Oodi-style library/maker setting, cotton shirt, wrapped utility apron, cropped barrel jeans, amber hair clip, tool pouch, and sketchbook create a young adult daytime weekend look.
-- `02-mode-arabia-studio-runway-board.png`: accepted after one regeneration. Arabia-style ceramics studio, long canvas vest, mock-layer tee, tapered trousers, amber obi belt, loafers, and tray action create a mode/workwear study. The first candidate was rejected for being too photo-adjacent.
-- `03-outerwear-kallio-theater-cape-trench-watercolor.png`: accepted. Kallio black-box theater arrival, cape-back technical trench, pleated skirt over leggings, amber visor accessory, ankle boots, and garment bag create a breezy early-evening outerwear look.
-- `04-active-kalasatama-climbing-game-cinematic-note.png`: accepted with style note. Kalasatama indoor climbing gym, performance top, wrap-panel climbing skort over bike shorts, tied overshirt, amber chalk bag, and climbing shoes create an activity-specific look. The result is more photo-adjacent than the requested game-cinematic 3D.
+- `01-weekend-oodi-maker-utility-anime.webp`: accepted. Oodi-style library/maker setting, cotton shirt, wrapped utility apron, cropped barrel jeans, amber hair clip, tool pouch, and sketchbook create a young adult daytime weekend look.
+- `02-mode-arabia-studio-runway-board.webp`: accepted after one regeneration. Arabia-style ceramics studio, long canvas vest, mock-layer tee, tapered trousers, amber obi belt, loafers, and tray action create a mode/workwear study. The first candidate was rejected for being too photo-adjacent.
+- `03-outerwear-kallio-theater-cape-trench-watercolor.webp`: accepted. Kallio black-box theater arrival, cape-back technical trench, pleated skirt over leggings, amber visor accessory, ankle boots, and garment bag create a breezy early-evening outerwear look.
+- `04-active-kalasatama-climbing-game-cinematic-note.webp`: accepted with style note. Kalasatama indoor climbing gym, performance top, wrap-panel climbing skort over bike shorts, tied overshirt, amber chalk bag, and climbing shoes create an activity-specific look. The result is more photo-adjacent than the requested game-cinematic 3D.
 
 ## Quality Notes
 

@@ -85,6 +85,12 @@ def validate() -> list[str]:
         for p in (ROOT / "assets" / "daily").glob("*/*")
         if p.suffix.lower() in IMAGE_SUFFIXES
     }
+    png_files = sorted(p for p in (ROOT / "assets").rglob("*.png") if p.is_file())
+    if png_files:
+        errors.append(
+            "png files remain in assets: "
+            + ", ".join(str(p.relative_to(ROOT)) for p in png_files)
+        )
     daily_images = {
         p
         for p in all_daily_images

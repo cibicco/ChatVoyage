@@ -23,25 +23,25 @@ to copy a single brand look, celebrity outfit, or exact product.
 
 Saved in `assets/daily/2026-06-03-lisbon-nightlife-mixed-styles/`.
 
-- `01-night-rooftop-satin-3d.png`
+- `01-night-rooftop-satin-3d.webp`
   - Fashion category: `night`
   - Image category: `3d-cg-fashion`
   - Scene: Lisbon rooftop terrace at night
   - Fashion language: liquid satin halter, sheer organza jacket, aubergine wide trousers, metallic belt, lime clutch
   - Person: adult Japanese woman, late 20s, confident rooftop posture
-- `02-formal-fado-lace-anime.png`
+- `02-formal-fado-lace-anime.webp`
   - Fashion category: `formal`
   - Image category: `anime-editorial`
   - Scene: small fado room interior
   - Fashion language: black lace-trim midi slip dress, ivory tuxedo jacket, sheer tights, slingback heels, lime hair pin
   - Person: adult Japanese woman, early 30s, composed seated pose
-- `03-date-hotel-lounge-illustration.png`
+- `03-date-hotel-lounge-illustration.webp`
   - Fashion category: `date`
   - Image category: `fashion-illustration`
   - Scene: boutique hotel lounge
   - Fashion language: ivory lace-trim bias skirt, black satin camisole, sheer smoke-gray blouse, waistcoat, lime wrist scarf
   - Person: adult Japanese woman, mid 20s, warm expression and contrapposto pose
-- `04-travel-dawn-terminal-semi-real.png`
+- `04-travel-dawn-terminal-semi-real.webp`
   - Fashion category: `travel`
   - Image category: `semi-real-editorial`
   - Scene: pre-dawn ferry or train terminal lounge

@@ -28,7 +28,7 @@
 
 ### Final Files
 
-- `01-weekend-dejima-wrap-half-pants.png`
+- `01-weekend-dejima-wrap-half-pants.webp`
   - Source file: `ig_02c3a68c3867558e016a2cafe5f6fc8191a06221afcd118d9f.png`
   - Primary category: `weekend`
   - Target age band: `18-19-adult`
@@ -53,7 +53,7 @@
   - Generated prompt summary: short prompt for an 18-19-adult Dejima weekend look with half pants, wrap panel, slingback pumps, map interaction, and no logos/text.
   - Visual check: outfit, map, canal rail, wet stone, wrap panel, and pumps are readable. The output is more photo-adjacent than the requested anime-fashion-magazine style.
   - Result: accepted with style-deviation note.
-- `02-mode-megane-bridge-balance.png`
+- `02-mode-megane-bridge-balance.webp`
   - Source file: `ig_02c3a68c3867558e016a2cb0539e888191b24ad6fab4a209bf.png`
   - Primary category: `mode`
   - Target age band: `20-24`
@@ -78,7 +78,7 @@
   - Generated prompt summary: short prompt for a 20-24 Megane Bridge mode look balancing on a stone edge with wrap panel, cropped trousers, ventilated boots, and no logos/text.
   - Visual check: balance action, stone edge, bridge, wrap panel, trousers, boots, and folded fan are readable; the action reads as chosen risk.
   - Result: accepted.
-- `03-date-glover-wrap-dress-watercolor.png`
+- `03-date-glover-wrap-dress-watercolor.webp`
   - Source file: `ig_02c3a68c3867558e016a2cb0cc54b48191b07514581d2ff73a.png`
   - Primary category: `date`
   - Target age band: `25-29`
@@ -103,9 +103,9 @@
   - Generated prompt summary: short prompt for a 25-29 Glover Garden date look with wrap dress over trousers, bouquet, low pumps, and no logos/text.
   - Visual check: watercolor style, hill path, harbor view, wrap dress, trousers, bouquet, woven bag, and low pumps are readable.
   - Result: accepted.
-- `04-active-harbor-boat-edge-balance-v2.png`
+- `04-active-harbor-boat-edge-balance-v2.webp`
   - Source file: `ig_02c3a68c3867558e016a2cb5bf07288191976f56dea55b8923.png`
-  - Rejected prior file: `assets/rejected/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-extra-arm-rejected.png` from `ig_02c3a68c3867558e016a2cb160dfe08191b1eab42e4497e6e2.png`; rejected because the first accepted candidate visibly had an extra arm / duplicated arm anatomy.
+  - Rejected prior file: `assets/rejected/2026-06-11-nagasaki-pearl-apricot-harbor-balance/04-active-harbor-boat-edge-balance-extra-arm-rejected.webp` from `ig_02c3a68c3867558e016a2cb160dfe08191b1eab42e4497e6e2.png`; rejected because the first accepted candidate visibly had an extra arm / duplicated arm anatomy.
   - Primary category: `active`
   - Target age band: `20-24`
   - Style family: `3d-cg`
@@ -169,7 +169,7 @@ failure; the indexed image is the regenerated v2.
 
 ### Final Files
 
-- `01-market-nishiki-hydrangea-cel-anime.png`
+- `01-market-nishiki-hydrangea-cel-anime.webp`
   - Source file: `ig_0180e2aaa6928a53016a2c50ca8ee88191bdac6535845ee1fc.png`
   - Primary category: `market`
   - Target age band: `18-19-adult`
@@ -186,7 +186,7 @@ failure; the indexed image is the regenerated v2.
   - Generated prompt summary: short prompt for an adult 18-19 Nishiki Market rainy market look in polished cel anime with hydrangea-blue open shirt, ivory tank, skort over bike shorts, rain sandals, clear tote, and no text/logos.
   - Visual check: matches covered arcade, wrapped snack interaction, rainy floor, hydrangea shirt, tank, skort, bike shorts, sandals, and adult casual styling. The low pose makes legs prominent but does not fail the climate or age guardrails.
   - Result: accepted with crop note.
-- `02-gallery-kyocera-museum-open-back-marker.png`
+- `02-gallery-kyocera-museum-open-back-marker.webp`
   - Source file: `ig_0180e2aaa6928a53016a2c5178c03881919b9bdacca81f64ef.png`
   - Primary category: `gallery`
   - Target age band: `20-24`
@@ -203,7 +203,7 @@ failure; the indexed image is the regenerated v2.
   - Generated prompt summary: short prompt for an adult 20-24 Kyoto City KYOCERA Museum gallery look in marker sketch style with open-back hydrangea-blue linen halter, carried mesh bolero, culotte shorts, tote, and no text/logos.
   - Visual check: matches museum plaza, rainy reflections, marker sketch treatment, open-back halter, carried bolero, tote, and no readable signage.
   - Result: accepted. The open back is climate-natural and category-appropriate.
-- `03-lounge-pontocho-kamo-river-soft-real.png`
+- `03-lounge-pontocho-kamo-river-soft-real.webp`
   - Source file: `ig_0180e2aaa6928a53016a2c51d66f548191b9568f860cbc44bb.png`
   - Primary category: `lounge`
   - Target age band: `25-29`
@@ -220,7 +220,7 @@ failure; the indexed image is the regenerated v2.
   - Generated prompt summary: short prompt for an adult 25-29 Pontocho / Kamo River rainy lounge look in soft-real fashion art with smoky hydrangea satin camisole, draped black linen blazer, ivory sheer-over-opaque skirt, silver sandals, clutch, and no text/logos.
   - Visual check: matches riverside evening, wet stones, warm lantern glow, smoky blue satin, draped blazer, translucent skirt, visible sandals, and adult seated pose.
   - Result: accepted.
-- `04-transit-kyoto-station-blue-rain-anime.png`
+- `04-transit-kyoto-station-blue-rain-anime.webp`
   - Source file: `ig_0180e2aaa6928a53016a2c5282692881918b1471fe1ebea1d2.png`
   - Primary category: `transit`
   - Target age band: `20-24`
@@ -275,7 +275,7 @@ practical.
 
 ### Final Files
 
-- `01-transit-oasis-gardenia-anime.png`
+- `01-transit-oasis-gardenia-anime.webp`
   - Source file: `ig_0180e2aaa6928a53016a2bd76329e08191bfe29deec83084b1.png`
   - Primary category: `transit`
   - Target age band: `18-19-adult`
@@ -292,7 +292,7 @@ practical.
   - Generated prompt summary: short prompt for an adult 18-19 Nagoya Oasis 21 rainy transit look with gardenia-white tank, open shirt, skirt over bike shorts, sandals, clear umbrella, IC-card gesture, and no text/logos.
   - Visual check: matches rain, glass-roof plaza, umbrella, transit object interaction, gardenia-white tank, open shirt, and adult casual styling. The neckline is open but climate-natural and not framed as the sole focus.
   - Result: accepted. Age, climate, no-logo, no-readable-text, and outfit readability gates passed.
-- `02-gallery-aichi-arts-mineral-white-runway.png`
+- `02-gallery-aichi-arts-mineral-white-runway.webp`
   - Source file: `ig_0180e2aaa6928a53016a2bd81fb1e081919dc331fb428af038.png`
   - Primary category: `gallery`
   - Target age band: `25-29`
@@ -309,7 +309,7 @@ practical.
   - Generated prompt summary: short prompt for an adult 25-29 Aichi Arts Center gallery look in runway-board illustration style with mineral-white linen vest, sleeveless knit, navy culottes, silver mules, and no text/logos.
   - Visual check: matches gallery plaza, mineral-white vest, sleeveless shell, wide trousers, and rainy reflections. The output is more finished than a pure runway board but retains construction-line and minimal-background qualities.
   - Result: accepted with style note.
-- `03-date-shikemichi-satin-soft-real.png`
+- `03-date-shikemichi-satin-soft-real.webp`
   - Source file: `ig_0180e2aaa6928a53016a2bd89e49908191a40e31ac6818c330.png`
   - Primary category: `date`
   - Target age band: `20-24`
@@ -326,7 +326,7 @@ practical.
   - Generated prompt summary: short prompt for an adult 20-24 Shikemichi rainy date look in soft-real fashion art with gardenia-white satin camisole, open cardigan, olive wrap skirt, sandals, folded map, and no text/logos.
   - Visual check: matches canal townscape, white plaster walls, wet stones, map interaction, satin camisole, open cardigan, wrap skirt, and visible sandals.
   - Result: accepted. Climate-natural exposure and place specificity passed.
-- `04-active-osu-arcade-cg-style-note.png`
+- `04-active-osu-arcade-cg-style-note.webp`
   - Source file: `ig_0180e2aaa6928a53016a2bda735a7481919f63cd2b2da687c8.png`
   - Primary category: `active`
   - Target age band: `20-24`
@@ -390,7 +390,7 @@ weather.
 
 ### Final Files
 
-- `01-office-hatchobori-shirt-dress-semi-real.png`
+- `01-office-hatchobori-shirt-dress-semi-real.webp`
   - Source file: `ig_0180e2aaa6928a53016a2c9be9f14481919e1786fea17de402.png`
   - Primary category: `office`
   - Target age band: `25-29`
@@ -413,7 +413,7 @@ weather.
   - Generated prompt summary: short prompt for a 25-29 Hiroshima office walk in semi-real editorial style with ivory wrap shirt dress, cropped vest, momiji brooch, sheer socks, loafers, and no logos/text.
   - Visual check: matches office walk, streetcar context, brooch, wrap dress, bright expression, and anti-repeat target. Some wet reflection remains but the garment formula is different.
   - Result: accepted.
-- `02-theater-aster-plaza-origami-dress-illustration.png`
+- `02-theater-aster-plaza-origami-dress-illustration.webp`
   - Source file: `ig_0180e2aaa6928a53016a2c9c8a85408191b68eda9a3e93db70.png`
   - Primary category: `theater`
   - Target age band: `20-24`
@@ -436,7 +436,7 @@ weather.
   - Generated prompt summary: short prompt for a 20-24 Hiroshima theater look in fashion illustration style with vermilion origami overdress, cream tee, flare trousers, blank tickets, red barrette, and no text/logos.
   - Visual check: matches theater lobby, social smile, tickets, pleated overdress, hair accessory, and no readable posters. The set clearly differs from recent gallery formulas.
   - Result: accepted.
-- `03-home-kyobashi-river-scarf-anime.png`
+- `03-home-kyobashi-river-scarf-anime.webp`
   - Source file: `ig_0180e2aaa6928a53016a2c9d22dba88191970b88d5e65b3126.png`
   - Primary category: `home`
   - Target age band: `18-19-adult`
@@ -459,7 +459,7 @@ weather.
   - Generated prompt summary: short prompt for an 18-19 adult Hiroshima balcony home look in anime editorial style with cropped rugby polo, barrel jeans, striped scarf, hoop earrings, video-call energy, and no text/logos.
   - Visual check: matches balcony, river view, video call, scarf, earrings, red striped polo, barrel jeans, lively adult expression. This is the clearest persona test image.
   - Result: accepted.
-- `04-travel-miyajima-ferry-jumpsuit-3d-note.png`
+- `04-travel-miyajima-ferry-jumpsuit-3d-note.webp`
   - Source file: `ig_0180e2aaa6928a53016a2c9dfca6b48191a35a66aa6d51b7e4.png`
   - Primary category: `travel`
   - Target age band: `20-24`
@@ -521,7 +521,7 @@ age-band, and climate checks.
 
 ### Final Files
 
-- `01-weekend-ohori-yuzu-anime.png`
+- `01-weekend-ohori-yuzu-anime.webp`
   - Source file: `ig_01cabbb50c4459a2016a29dc08366c8199b21e8cea01f9f77b.png`
   - Primary category: `weekend`
   - Target age band: `18-19-adult`
@@ -538,7 +538,7 @@ age-band, and climate checks.
   - Generated prompt summary: short prompt for an adult 18-19 Ohori Park rainy weekend walk in anime magazine style with yuzu tank, open linen shirt, skort, sandals, clear umbrella, and no text/logos.
   - Visual check: matches lake path, rain, umbrella, yuzu tank, open shirt, skort, sandals, and adult casual styling. The neckline draws some attention in the composition, but the clothing is climate-natural; no high-neck correction was applied.
   - Result: accepted with note. Climate naturalness, adult styling, no-logo, and no-readable-text gates passed.
-- `02-gallery-art-museum-open-back-marker.png`
+- `02-gallery-art-museum-open-back-marker.webp`
   - Source file: `ig_01cabbb50c4459a2016a29dd5fb3808199922e68180eda4aed.png`
   - Primary category: `gallery`
   - Target age band: `20-24`
@@ -555,7 +555,7 @@ age-band, and climate checks.
   - Generated prompt summary: shortened prompt for an adult 20-24 Fukuoka Art Museum gallery look in marker sketch style with open-back yuzu halter, carried mesh bolero, culotte shorts, sandals, and no text/logos.
   - Visual check: matches rainy museum-adjacent exterior, open-back yuzu top, carried layer, marker sketch language, and no readable signage. First richer prompt failed; shortened prompt succeeded.
   - Result: accepted. Open-back construction, place mood, and climate comfort are readable.
-- `03-resort-castle-ruins-smoky-yuzu-soft-real.png`
+- `03-resort-castle-ruins-smoky-yuzu-soft-real.webp`
   - Source file: `ig_01cabbb50c4459a2016a29ddf1d5b081999bfb3bf7293f60cd.png`
   - Primary category: `resort`
   - Target age band: `25-29`
@@ -572,7 +572,7 @@ age-band, and climate checks.
   - Generated prompt summary: short prompt for an adult 25-29 Fukuoka Castle ruins rainy resort look in soft-real fashion art with smoky yuzu camisole, draped linen blazer, black sheer-over-opaque skirt, mules, and no text/logos.
   - Visual check: matches castle stone wall, wet steps, smoky yuzu satin, draped blazer, seated pose, and humid rain context. It is more photo-adjacent than strongly painterly, so the style deviation is recorded.
   - Result: accepted with note. Place, adult age band, garment readability, and climate logic pass.
-- `04-lounge-nakasu-yatai-river-anime.png`
+- `04-lounge-nakasu-yatai-river-anime.webp`
   - Source file: `ig_01cabbb50c4459a2016a29de9f52048199a49e10f0b82f8e20.png`
   - Primary category: `lounge`
   - Target age band: `20-24`
@@ -630,7 +630,7 @@ placement, and scene context, not by forcing high-neck or heavy clothing.
 
 ### Final Files
 
-- `01-weekend-le-jardin-secret-fan-anime-note.png`
+- `01-weekend-le-jardin-secret-fan-anime-note.webp`
   - Source file: `ig_0c0e10b5b12b91b2016a2de407d55081919497a581ac48b62a.png`
   - Primary category: `weekend`
   - Target age band: `18-19-adult`
@@ -654,7 +654,7 @@ placement, and scene context, not by forcing high-neck or heavy clothing.
   - Generated prompt summary: short prompt for an adult 18-19 Marrakech shaded courtyard look with cotton shirt, saffron wrap panel, cropped trousers, mules, fan, and sketchbook.
   - Visual check: courtyard shade, fan, sketchbook, wrap panel, cropped trousers, mules, and adult styling are readable. It deviates from the planned knee-up crop into a seated pose.
   - Result: accepted with pose-deviation note.
-- `02-mode-gueliz-showroom-vest-runway.png`
+- `02-mode-gueliz-showroom-vest-runway.webp`
   - Source file: `ig_0c0e10b5b12b91b2016a2de44048e481919c4267bed53f9ca4.png`
   - Primary category: `mode`
   - Target age band: `20-24`
@@ -678,7 +678,7 @@ placement, and scene context, not by forcing high-neck or heavy clothing.
   - Generated prompt summary: short prompt for a Guéliz showroom mode look with sleeveless long vest, tee, barrel trousers, saffron belt tabs, loafers, and pouch.
   - Visual check: runway-board style, showroom swatches/garment rack, vest, trousers, loafers, and saffron tabs are readable.
   - Result: accepted.
-- `03-formal-dar-el-bacha-sash-watercolor.png`
+- `03-formal-dar-el-bacha-sash-watercolor.webp`
   - Source file: `ig_0c0e10b5b12b91b2016a2de4a08b30819195a662e1eb955997.png`
   - Primary category: `formal`
   - Target age band: `25-29`
@@ -702,7 +702,7 @@ placement, and scene context, not by forcing high-neck or heavy clothing.
   - Generated prompt summary: short prompt for a Dar el Bacha-style formal courtyard look with wrap dress, sheer jacket, saffron sash, slingbacks, clutch, and program card.
   - Visual check: watercolor style, museum courtyard, sash, sheer jacket, slingbacks, clutch, and reception context are readable.
   - Result: accepted.
-- `04-travel-riad-rooftop-jumpsuit-digital-note.png`
+- `04-travel-riad-rooftop-jumpsuit-digital-note.webp`
   - Source file: `ig_0c0e10b5b12b91b2016a2de53b659c8191bd5ff12fac55cb46.png`
   - Primary category: `travel`
   - Target age band: `20-24`
@@ -765,7 +765,7 @@ age reads through proportion, glossy accessory color, and social travel action.
 
 ### Final Files
 
-- `01-market-dihua-dadaocheng-guava-anime.png`
+- `01-market-dihua-dadaocheng-guava-anime.webp`
   - Source file: `ig_01cabbb50c4459a2016a2658c8d35081999d1d9f8df2a25b02.png`
   - Primary category: `market`
   - Target age band: `18-19-adult`
@@ -782,7 +782,7 @@ age reads through proportion, glossy accessory color, and social travel action.
   - Generated prompt summary: short standalone prompt for an adult 18-19 Dadaocheng Dihua Street market look with square-neck tank, open guava seersucker shirt, skort, sandals, clear umbrella, and no text/logos.
   - Visual check: matches fabric-stall arcade, umbrella, guava shirt, skort, sandals, humid rain setting, and adult market styling. The first generated variant was rejected because the chest opening was stronger than planned for the age band. The accepted version still has visible warm-weather openness, but it is more natural than forcing a high-neck garment in humid Taipei.
   - Result: accepted with note. Climate comfort, adult styling, and no-logo/no-readable-text gates passed; neckline openness is documented rather than hidden.
-- `02-gallery-huashan-1914-open-back-marker.png`
+- `02-gallery-huashan-1914-open-back-marker.webp`
   - Source file: `ig_01cabbb50c4459a2016a2653c66400819983e306f781e8c1d3.png`
   - Primary category: `gallery`
   - Target age band: `20-24`
@@ -799,7 +799,7 @@ age reads through proportion, glossy accessory color, and social travel action.
   - Generated prompt summary: short standalone prompt for an adult 20-24 Huashan 1914 gallery walk in marker sketch style with open-back guava linen halter, carried mesh bolero, culotte shorts, tote, and no text/logos.
   - Visual check: matches red-brick creative park, wet courtyard, marker sketch language, back detail, guava color, and carried layer. The venue is recognizable by architectural cues rather than signage, which is correct under no-readable-text constraints.
   - Result: accepted. Place specificity, open-back construction, and humid-weather comfort are readable.
-- `03-lounge-treasure-hill-smoky-guava-soft-real.png`
+- `03-lounge-treasure-hill-smoky-guava-soft-real.webp`
   - Source file: `ig_01cabbb50c4459a2016a2654a2d6848199b2a0149f328fd078.png`
   - Primary category: `lounge`
   - Target age band: `25-29`
@@ -816,7 +816,7 @@ age reads through proportion, glossy accessory color, and social travel action.
   - Generated prompt summary: short standalone prompt for an adult 25-29 Treasure Hill Artist Village lounge look in soft-real fashion art with smoky guava satin camisole, linen blazer, black sheer-over-opaque skirt, mules, and no text/logos.
   - Visual check: matches hillside stairs, river backdrop, seated pose, smoky guava satin, draped blazer, and warm rain setting. The result is photo-adjacent rather than strongly painterly, so the style deviation is recorded.
   - Result: accepted with note. The image is more semi-real/photo-adjacent than requested but passes place, age, garment, climate, and no-logo/no-readable-text gates.
-- `04-club-ximending-guava-neon-anime.png`
+- `04-club-ximending-guava-neon-anime.webp`
   - Source file: `ig_01cabbb50c4459a2016a265849113081998041869ad2629657.png`
   - Primary category: `club`
   - Target age band: `20-24`
@@ -876,7 +876,7 @@ plausible.
 
 ### Final Files
 
-- `01-market-dihua-guava-anime.png`
+- `01-market-dihua-guava-anime.webp`
   - Source file: `ig_090043582eaf02d1016a263d35d3948191b922f94b8d36d714.png`
   - Primary category: `market`
   - Target age band: `18-19-adult`
@@ -893,7 +893,7 @@ plausible.
   - Generated prompt summary: short standalone prompt for an adult 18-19 Dihua Street market look in cel-shaded anime style with cotton tank, open guava shirt, skort, sandals, pouch, umbrella, and no text/logos.
   - Visual check: matches the market arcade, umbrella, guava shirt, skort, sandals, humid rain setting, and adult styling. The exact Dihua identity is inferred from old arcade/market cues rather than explicit signage, which is acceptable because readable signs were avoided.
   - Result: accepted. Adult styling, humid-weather comfort, garment-readability, no-logo, and no-readable-text gates passed.
-- `02-gallery-huashan-open-back-marker.png`
+- `02-gallery-huashan-open-back-marker.webp`
   - Source file: `ig_090043582eaf02d1016a263e06a2b481919985347b64c3f500.png`
   - Primary category: `gallery`
   - Target age band: `20-24`
@@ -910,7 +910,7 @@ plausible.
   - Generated prompt summary: short standalone prompt for an adult 20-24 Huashan 1914 gallery walk in marker sketch style with open-back guava linen top, carried mesh bolero, culotte shorts, clear pouch, and no text/logos.
   - Visual check: matches open-back construction, carried mesh layer, guava tone, rain-wet creative/gallery entrance mood, and marker-sketch language. The scene reads as brick gallery street frontage more than a specific named venue, acceptable under no-signage constraints.
   - Result: accepted. Open-back construction, marker sketch, and brick creative-park setting are readable.
-- `03-lounge-riverside-smoky-guava-soft-real.png`
+- `03-lounge-riverside-smoky-guava-soft-real.webp`
   - Source file: `ig_090043582eaf02d1016a2640cf1ed88191b07ec1ca1183ef60.png`
   - Primary category: `lounge`
   - Target age band: `25-29`
@@ -927,7 +927,7 @@ plausible.
   - Generated prompt summary: shortened prompt for an adult 25-29 quiet Taipei riverside lounge look in soft-real fashion art with smoky guava camisole, draped linen blazer, sheer-over-opaque skirt, mules, and no text/logos.
   - Visual check: matches late-20s lounge styling, smoky rose-guava satin, draped blazer, seated pose, and warm riverside-night mood. It is photo-adjacent despite the soft-real prompt, so it is accepted with note.
   - Result: accepted with note. The image is photo-adjacent, but passes adult-original-character, climate comfort, garment-readability, no-logo, and no-readable-text gates.
-- `04-home-balcony-guava-watercolor.png`
+- `04-home-balcony-guava-watercolor.webp`
   - Source file: `ig_090043582eaf02d1016a26445667148191ab752ec489605882.png`
   - Primary category: `home`
   - Target age band: `20-24`
@@ -984,7 +984,7 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-market-motomachi-periwinkle-anime.png`
+- `01-market-motomachi-periwinkle-anime.webp`
   - Source file: `ig_090043582eaf02d1016a24a055bc8c819180bca26b35b290c9.png`
   - Primary category: `market`
   - Target age band: `18-19-adult`
@@ -999,7 +999,7 @@ checks were added after inspecting the saved images against the log.
   - Comfort naturalness: cotton tank, open seersucker shirt, skort, flat sandals, and umbrella suit a humid covered arcade after rain
   - Pose family: `using-object`; face left/down; body left-profile three-quarter; eye-level side; full-body crop
   - Result: accepted. Adult styling, humid-weather comfort, no-logo, and no-readable-text gates passed.
-- `02-gallery-kitano-lilac-marker.png`
+- `02-gallery-kitano-lilac-marker.webp`
   - Source file: `ig_090043582eaf02d1016a24a0b61910819193ede412362443b5.png`
   - Primary category: `gallery`
   - Target age band: `20-24`
@@ -1014,7 +1014,7 @@ checks were added after inspecting the saved images against the log.
   - Comfort naturalness: linen blend top, carried mesh bolero, culotte shorts, and rain sandals suit humid Kitano slopes after rain
   - Pose family: `over-shoulder`; face over-shoulder; body back-three-quarter; eye-level diagonal; knee-up crop
   - Result: accepted. Open-back construction and Kitano setting are readable.
-- `03-lounge-meriken-smoky-indigo-3d.png`
+- `03-lounge-meriken-smoky-indigo-3d.webp`
   - Source file: `ig_090043582eaf02d1016a24a11a2a948191bbb26ba310690761.png`
   - Primary category: `lounge`
   - Target age band: `25-29`
@@ -1029,7 +1029,7 @@ checks were added after inspecting the saved images against the log.
   - Comfort naturalness: camisole, draped linen blazer, slit skirt, sheer socks, and mules fit a warm humid waterfront terrace with sea breeze
   - Pose family: `seated-side`; face down-right; right-profile; eye-level side; knee-up crop
   - Result: accepted with note. The image is photo-adjacent despite the PBR prompt, but passes adult-original-character, climate comfort, garment-readability, no-logo, and no-readable-text gates.
-- `04-resort-nunobiki-watercolor.png`
+- `04-resort-nunobiki-watercolor.webp`
   - Source file: `ig_090043582eaf02d1016a24a1eb187c81918a3ccdc5c30ccf62.png`
   - Primary category: `resort`
   - Target age band: `20-24`
@@ -1073,7 +1073,7 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-market-commune-fresh-moss-cel-anime.png`
+- `01-market-commune-fresh-moss-cel-anime.webp`
   - Source file: `ig_090043582eaf02d1016a2420411ba481918766763d5d1a6ec7.png`
   - Primary category: `market`
   - Target age band: `18-19-adult`
@@ -1088,7 +1088,7 @@ checks were added after inspecting the saved images against the log.
   - Comfort naturalness: sleeveless rib fabric, sheer short-sleeve shirt, bike shorts, and sandals fit humid post-rain Tokyo better than heavy layers
   - Pose family: `crouching-market`; face down-left; body three-quarter; high diagonal camera; full-body / low crop
   - Result: accepted after one targeted regeneration. Adult styling, age guardrail, no-logo, and garment-readability gates passed.
-- `02-gallery-spiral-open-back-marker.png`
+- `02-gallery-spiral-open-back-marker.webp`
   - Source file: `ig_090043582eaf02d1016a241e8d398c8191bbbe3c06369c45e3.png`
   - Primary category: `gallery`
   - Target age band: `20-24`
@@ -1103,7 +1103,7 @@ checks were added after inspecting the saved images against the log.
   - Comfort naturalness: airy open back, mesh sleeves, culottes, and sandals suit a humid gallery day after rain
   - Pose family: `over-shoulder`; face over-shoulder; body back-three-quarter; eye-level side; knee-up crop
   - Result: accepted. Age-tone difference, back construction, marker sketch, and concrete gallery setting are readable.
-- `03-lounge-minami-aoyama-smoky-moss-3d.png`
+- `03-lounge-minami-aoyama-smoky-moss-3d.webp`
   - Source file: `ig_090043582eaf02d1016a241ed769888191b337d950e0608edc.png`
   - Primary category: `lounge`
   - Target age band: `25-29`
@@ -1118,7 +1118,7 @@ checks were added after inspecting the saved images against the log.
   - Comfort naturalness: camisole, carried/light blazer, slit skirt, sheer socks, and open-toe mules fit a warm indoor listening bar
   - Pose family: `seated-side`; face down; right-profile; eye-level side; knee-up crop
   - Result: accepted with note. The image is photo-adjacent despite the PBR prompt, but passes adult-original-character, garment-readability, no-logo, and no-readable-text gates.
-- `04-dance-jingumae-electric-moss-digital.png`
+- `04-dance-jingumae-electric-moss-digital.webp`
   - Source file: `ig_090043582eaf02d1016a241f9554e88191b9ac528cd0324e65.png`
   - Primary category: `dance`
   - Target age band: `20-24`
@@ -1159,7 +1159,7 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-weekend-tsite-bookshop-cel-anime.png`
+- `01-weekend-tsite-bookshop-cel-anime.webp`
   - Source file: `ig_0f06d167100f3fca016a234738b29881918f060d80e532bd5a.png`
   - Primary category: `weekend`
   - Target age band: `20-24`
@@ -1171,7 +1171,7 @@ checks were added after inspecting the saved images against the log.
   - Fashion: moss-green cropped cotton cardigan, ivory rib tank, dark indigo barrel-leg jeans, smoke-gray rain flats, ivory canvas tote, clear vinyl book cover
   - Pose family: `using-object`; face left; left-profile three-quarter; eye-level side; knee-up crop
   - Result: accepted. Concrete bookstore courtyard setting, adult styling, and no-readable-text gates passed.
-- `02-outerwear-log-road-marker-sketch.png`
+- `02-outerwear-log-road-marker-sketch.webp`
   - Source file: `ig_0f06d167100f3fca016a234812e48c8191b6c026f548f286f5.png`
   - Primary category: `outerwear`
   - Target age band: `25-29`
@@ -1183,7 +1183,7 @@ checks were added after inspecting the saved images against the log.
   - Fashion: taupe translucent technical trench with moss-green storm flap, white tee, black tailored Bermuda shorts, sheer charcoal knee socks, square-toe loafers
   - Pose family: `walking-stride`; face camera; front-to-right three-quarter; low diagonal; full-body crop
   - Result: accepted. Marker sketch and outerwear silhouette are readable.
-- `03-date-kyu-asakura-slope-pbr-3d.png`
+- `03-date-kyu-asakura-slope-pbr-3d.webp`
   - Source file: `ig_0f06d167100f3fca016a2348e96ef48191b47ad2e382d8ddc2.png`
   - Primary category: `date`
   - Target age band: `25-29`
@@ -1195,7 +1195,7 @@ checks were added after inspecting the saved images against the log.
   - Fashion: moss-green back-tie sleeveless blouse, ivory asymmetric midi skirt, charcoal linen jacket carried over one arm, smoke-gray ankle socks, cream low-heeled sandals
   - Pose family: `over-shoulder`; back-three-quarter; low diagonal; knee-up crop
   - Result: accepted with note. The image is photo-adjacent, but passes adult-original-character, concrete-place, no-logo, and garment-readability gates.
-- `04-lounge-sarugakucho-record-soft-real.png`
+- `04-lounge-sarugakucho-record-soft-real.webp`
   - Source file: `ig_0f06d167100f3fca016a234a86643c8191b31621374da9f696.png`
   - Primary category: `lounge`
   - Target age band: `20-24`
@@ -1233,7 +1233,7 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-office-rain-arcade-semi-real.png`
+- `01-office-rain-arcade-semi-real.webp`
   - Source file: `ig_0f06d167100f3fca016a22b083b4b48191b9501caad5ea0761.png`
   - Primary category: `office`
   - Target age band: `25-29`
@@ -1244,7 +1244,7 @@ checks were added after inspecting the saved images against the log.
   - Fashion: oyster-gray sleeveless longline blazer, glass-blue rib knit shell, charcoal wrap skirt, slingback pumps, structured tote
   - Pose family: `close-crop-upper` / `using-object`; face left; body three-quarter; crop knee-up
   - Result: accepted with note. The image is photo-adjacent, but passes adult-original-character, no-logo, and garment-readability gates.
-- `02-gallery-organza-runway-board.png`
+- `02-gallery-organza-runway-board.webp`
   - Source file: `ig_0f06d167100f3fca016a22b11ef6788191b9fad7e24488cb83.png`
   - Primary category: `gallery`
   - Target age band: `25-29`
@@ -1255,7 +1255,7 @@ checks were added after inspecting the saved images against the log.
   - Fashion: glass-blue translucent organza long vest, ivory high-neck blouse, black wide cropped trousers, silver belt, pointed flats
   - Pose family: `walking-stride`; face camera; body front-to-right three-quarter; full-body crop
   - Result: accepted. The illustration style and garment construction are clear.
-- `03-lounge-jazz-cardigan-soft-anime.png`
+- `03-lounge-jazz-cardigan-soft-anime.webp`
   - Source file: `ig_0f06d167100f3fca016a22b194350c819181674c76cf4b6c18.png`
   - Primary category: `lounge`
   - Target age band: `20-24`
@@ -1266,7 +1266,7 @@ checks were added after inspecting the saved images against the log.
   - Fashion: black satin slip dress with opaque lining, glass-blue mohair cardigan, sheer mesh underlayer, silver chain belt, tights, kitten-heel mules
   - Pose family: `seated-side`; face down-right; side high camera; knee-up crop
   - Result: accepted. Exposure is adult fashion styling and non-erotic.
-- `04-transit-rain-shell-pbr-3d.png`
+- `04-transit-rain-shell-pbr-3d.webp`
   - Source file: `ig_0f06d167100f3fca016a22b27eeef481919f962984f3da2c36.png`
   - Primary category: `transit`
   - Target age band: `18-19-adult`
@@ -1294,25 +1294,25 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-transit-floor-sit-fan.png`
+- `01-transit-floor-sit-fan.webp`
   - Source file: `ig_0ac5662797a250c2016a22074a2df48191ab8a841c58d97390.png`
   - Primary category: `transit`
   - Target age band: `18-19-adult`
   - Pose family: `floor-sit` + `using-object`; crop `knee-up`
   - Result: accepted. Seated crop breaks full-body standing habit.
-- `02-market-jump-motion-wide.png`
+- `02-market-jump-motion-wide.webp`
   - Source file: `ig_0ac5662797a250c2016a220815de708191a5564576ad72e59a.png`
   - Primary category: `market`
   - Target age band: `20-24`
   - Pose family: `jump-motion`; crop `wide-action`
   - Result: accepted. Dynamic jump is the clearest motion variant.
-- `03-club-stretching-reach-crop.png`
+- `03-club-stretching-reach-crop.webp`
   - Source file: `ig_0ac5662797a250c2016a22088566788191975dc4be0c3432e5.png`
   - Primary category: `club`
   - Target age band: `20-24`
   - Pose family: `stretching-reach`; crop `waist-up`
   - Result: accepted. Club exposure was kept lower and garment-focused.
-- `04-gallery-back-close-crop.png`
+- `04-gallery-back-close-crop.webp`
   - Source file: `ig_0ac5662797a250c2016a22092d31348191afe158e9fde7cfc1.png`
   - Primary category: `gallery`
   - Target age band: `25-29`
@@ -1336,25 +1336,25 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-transit-subway-left-profile.png`
+- `01-transit-subway-left-profile.webp`
   - Source file: `ig_0ac5662797a250c2016a2200356b608191a0d743e933c5236b.png`
   - Primary category: `transit`
   - Target age band: `18-19-adult`
   - Pose family: `using-object`; face left; left-profile; eye-level side view
   - Result: accepted. Corrects the repeated right-facing pattern.
-- `02-market-jump-motion.png`
+- `02-market-jump-motion.webp`
   - Source file: `ig_0ac5662797a250c2016a22039ea3348191a3182678beec0fff.png`
   - Primary category: `market`
   - Target age band: `20-24`
   - Pose family: `jump-motion`; face camera; low diagonal; wide-action crop
   - Result: accepted. Dynamic crop intentionally breaks the full-body habit.
-- `03-club-leaning-down.png`
+- `03-club-leaning-down.webp`
   - Source file: `ig_0ac5662797a250c2016a2201de7f508191b60ded91d81edd1c.png`
   - Primary category: `club`
   - Target age band: `20-24`
   - Pose family: `leaning-wall`; face down; low diagonal
   - Result: accepted. Club exposure reduced and kept adult / garment-focused after one rejected attempt.
-- `04-gallery-back-three-quarter-crop.png`
+- `04-gallery-back-three-quarter-crop.webp`
   - Source file: `ig_0ac5662797a250c2016a22042d0d008191883fd7b2e4c0143a.png`
   - Primary category: `gallery`
   - Target age band: `25-29`
@@ -1390,7 +1390,7 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-market-vintage-lane-cel-anime.png`
+- `01-market-vintage-lane-cel-anime.webp`
   - Source file: `ig_0ac5662797a250c2016a21880756d88191becc6fee43937d7d.png`
   - Primary category: `market`
   - Target age band: `18-19-adult`
@@ -1401,7 +1401,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese young woman, realistic youthful face, petite build, adult vintage styling
   - Fashion: oversized denim chore jacket, butter-yellow rib tee, black lace-trim slip skirt over opaque lining, gray slouch socks, Mary Jane sneakers, canvas shoulder bag
   - Result: accepted with note. It is slightly more semi-real than pure cel anime, but useful as a young adult vintage-market direction.
-- `02-club-livehouse-doll-3d.png`
+- `02-club-livehouse-doll-3d.webp`
   - Source file: `ig_0ac5662797a250c2016a21885e90648191937881f73a8b4a03.png`
   - Primary category: `club`
   - Target age band: `20-24`
@@ -1412,7 +1412,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese woman, early 20s, short bob, confident adult nightlife pose
   - Fashion: sheer smoky black top over opaque bandeau, butter-yellow faux-fur bolero, charcoal cargo skirt, knee-high boots, enamel shoulder bag
   - Result: accepted with note. Exposure is adult club fashion styling; no school or underage framing.
-- `03-gallery-zine-runway-board.png`
+- `03-gallery-zine-runway-board.webp`
   - Source file: `ig_0ac5662797a250c2016a2189282f48819181c3b11ac6afd3d9.png`
   - Primary category: `gallery`
   - Target age band: `25-29`
@@ -1423,7 +1423,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese woman, late 20s, blunt medium hair, calm creative-worker stance
   - Fashion: reconstructed butter-yellow utility dress, white mesh long-sleeve top, black belt, cropped olive cargo trousers, platform loafers, clear vinyl tote
   - Result: accepted. Garment structure and layering are readable.
-- `04-home-after-live-soft-real.png`
+- `04-home-after-live-soft-real.webp`
   - Source file: `ig_0ac5662797a250c2016a2189d76994819199f2cd07d937c0f5.png`
   - Primary category: `home`
   - Target age band: `30-34`
@@ -1466,7 +1466,7 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-transit-rail-platform-marker-sketch.png`
+- `01-transit-rail-platform-marker-sketch.webp`
   - Source file: `ig_0ac5662797a250c2016a2180aa08b48191a67907787e772b53.png`
   - Primary category: `transit`
   - Style family: `fashion-illustration`
@@ -1476,7 +1476,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese woman, late 20s, shoulder-length dark hair, slim-athletic build, walking diagonal pose
   - Fashion: cropped water-resistant trench, cobalt rib knit tank, charcoal technical pleated midi skirt, sheer ankle socks, walking sandals, nylon crossbody
   - Result: accepted. The marker sketch language and wet transit setting are clear.
-- `02-gallery-riverside-warehouse-pbr-3d.png`
+- `02-gallery-riverside-warehouse-pbr-3d.webp`
   - Source file: `ig_0ac5662797a250c2016a21812132f88191a054126873ea5076.png`
   - Primary category: `gallery`
   - Style family: `3d-cg`
@@ -1486,7 +1486,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese woman, early 30s, sleek low bun, tall lean build, poised gallery stance
   - Fashion: cobalt sleeveless long vest, ivory asymmetric poplin shirt, cropped trousers, translucent smoky PVC rain skirt overlay, ankle boots, chrome cuff, structured bag
   - Result: accepted. 3D material rendering and garment thickness are readable.
-- `03-lounge-listening-bar-soft-anime.png`
+- `03-lounge-listening-bar-soft-anime.webp`
   - Source file: `ig_0ac5662797a250c2016a2181e90ec081918fbb14324842b8c2.png`
   - Primary category: `lounge`
   - Style family: `anime`
@@ -1496,7 +1496,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese woman, mid-to-late 20s, long wavy dark hair, natural build, seated listening pose
   - Fashion: black satin camisole with opaque lining, cobalt sheer long-sleeve mesh top, charcoal wrap skirt, silver chain belt, kitten-heel mules, beaded pouch
   - Result: regenerated once. The first candidate was too photo-like for the selected anime preset; the final candidate is visibly anime.
-- `04-dance-rain-studio-digital-painting.png`
+- `04-dance-rain-studio-digital-painting.webp`
   - Source file: `ig_0ac5662797a250c2016a2182f84f648191814148bff7bee250.png`
   - Primary category: `dance`
   - Style family: `semi-real-digital`
@@ -1542,7 +1542,7 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-night-rooftop-satin-3d.png`
+- `01-night-rooftop-satin-3d.webp`
   - Source file: `ig_02c652a3c5150617016a1f6ad8ce0c81919f6642635ce2825c.png`
   - Primary category: `night`
   - Image category: `3d-cg-fashion`
@@ -1551,7 +1551,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese woman, late 20s, confident three-quarter rooftop pose
   - Fashion: black liquid-satin halter, sheer organza jacket, aubergine silk taffeta wide trousers, metallic belt, sculptural low heels, lime clutch
   - Result: accepted. Clear 3D CG finish, readable garment construction, no readable brand text.
-- `02-formal-fado-lace-anime.png`
+- `02-formal-fado-lace-anime.webp`
   - Source file: `ig_02c652a3c5150617016a1f6b102b2c8191ab8b784d13a232dd.png`
   - Primary category: `formal`
   - Image category: `anime-editorial`
@@ -1560,7 +1560,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese woman, early 30s, composed seated pose
   - Fashion: black lace-trim midi slip dress over opaque lining, cropped ivory tuxedo jacket, sheer tights, pointed slingbacks, lime hair pin
   - Result: accepted. Anime editorial style is distinct from the 3D image and the lounge illustration.
-- `03-date-hotel-lounge-illustration.png`
+- `03-date-hotel-lounge-illustration.webp`
   - Source file: `ig_02c652a3c5150617016a1f6b4ed9c48191bc21ae6cb18453f5.png`
   - Primary category: `date`
   - Image category: `fashion-illustration`
@@ -1569,7 +1569,7 @@ checks were added after inspecting the saved images against the log.
   - Person: adult Japanese woman, mid 20s, warm expression and gentle contrapposto
   - Fashion: ivory lace-trim bias skirt, black satin camisole, sheer smoke-gray blouse, short tailored waistcoat, ankle-strap heels, lime wrist scarf
   - Result: accepted. Traditional fashion illustration language is clear and useful for future style variation.
-- `04-travel-dawn-terminal-semi-real.png`
+- `04-travel-dawn-terminal-semi-real.webp`
   - Source file: `ig_02c652a3c5150617016a1f6b8bcd8481919c3e906ac5cc9af2.png`
   - Primary category: `travel`
   - Image category: `semi-real-editorial`
@@ -1616,7 +1616,7 @@ checks were added after inspecting the saved images against the log.
 
 ### Final Files
 
-- `01-office-looshaus-waistcoat-runway-note.png`
+- `01-office-looshaus-waistcoat-runway-note.webp`
   - Source file: `ig_02c3a68c3867558e016a2cc55bc9ec8191820279c2ae7ec6c9.png`
   - Primary category: `office`
   - Target age band: `25-29`
@@ -1640,7 +1640,7 @@ checks were added after inspecting the saved images against the log.
   - Generated prompt summary: short prompt for a 25-29 Vienna office lobby look with celadon long waistcoat, cropped trousers, slingback pumps, portfolio, and no logos/text.
   - Visual check: indoor office/lobby, portfolio, waistcoat, cropped trousers, and pumps are readable. It is photo-adjacent and not a clean runway-board illustration.
   - Result: accepted with style-deviation note.
-- `02-formal-palais-ferstel-wrap-anime.png`
+- `02-formal-palais-ferstel-wrap-anime.webp`
   - Source file: `ig_02c3a68c3867558e016a2cc5de0f4c819186df41cb83073a93.png`
   - Primary category: `formal`
   - Target age band: `20-24`
@@ -1664,7 +1664,7 @@ checks were added after inspecting the saved images against the log.
   - Generated prompt summary: short prompt for a 20-24 Palais Ferstel-style formal reception look with wrap blouse, skirt over trousers, pouch, cup, and no logos/text.
   - Visual check: indoor reception, cup gesture, wrap blouse, skirt-over-trousers, pouch, and formal mood are readable.
   - Result: accepted.
-- `03-theater-musikverein-satin-watercolor.png`
+- `03-theater-musikverein-satin-watercolor.webp`
   - Source file: `ig_02c3a68c3867558e016a2cc66c0bb48191a3758b20701cf2f7.png`
   - Primary category: `theater`
   - Target age band: `25-29`
@@ -1688,7 +1688,7 @@ checks were added after inspecting the saved images against the log.
   - Generated prompt summary: short prompt for a 25-29 Musikverein-style theater look with satin column dress, organza jacket, Mary Janes, program, and no logos/text.
   - Visual check: golden foyer, watercolor finish, satin dress, organza jacket, program, and theater styling are readable.
   - Result: accepted.
-- `04-home-josefstadt-record-doll-3d-note.png`
+- `04-home-josefstadt-record-doll-3d-note.webp`
   - Source file: `ig_02c3a68c3867558e016a2cc6c42f848191bdf32f493c4e5d06.png`
   - Primary category: `home`
   - Target age band: `20-24`
@@ -1750,7 +1750,7 @@ photo-adjacent despite illustration/3D prompts.
 
 ### Final Files
 
-- `01-office-vasconcelos-linen-waistcoat-anime.png`
+- `01-office-vasconcelos-linen-waistcoat-anime.webp`
   - Source file: `ig_064504293bdc6095016a2d4256bfec81918457c4fa8f1b84c7.png`
   - Primary category: `office`
   - Target age band: `20-24`
@@ -1774,7 +1774,7 @@ photo-adjacent despite illustration/3D prompts.
   - Generated prompt summary: short prompt for a 20-24 Mexico City library office look with linen waistcoat, cropped trousers, notebook, and coral belt tab.
   - Visual check: library, waistcoat, trousers, notebook, bag, and adult work context are readable. Crop is wider than requested and coral placement is small.
   - Result: accepted with minor crop/color-placement note.
-- `02-ceremony-san-angel-wrap-dress-semi-real.png`
+- `02-ceremony-san-angel-wrap-dress-semi-real.webp`
   - Source file: `ig_064504293bdc6095016a2d42f54860819186e56a7be78d19c4.png`
   - Primary category: `ceremony`
   - Target age band: `25-29`
@@ -1798,7 +1798,7 @@ photo-adjacent despite illustration/3D prompts.
   - Generated prompt summary: short prompt for a 25-29 San Angel courtyard ceremony look with asymmetric wrap dress, coral under-panel, clutch, and pumps.
   - Visual check: courtyard, wrap dress, coral under-panel, pumps, clutch, and adult ceremony mood are readable.
   - Result: accepted.
-- `03-dance-roma-norte-wrap-skort-marker.png`
+- `03-dance-roma-norte-wrap-skort-marker.webp`
   - Source file: `ig_064504293bdc6095016a2d4371d0b88191bbc49d50c42d8f1f.png`
   - Primary category: `dance`
   - Target age band: `18-19-adult`
@@ -1822,9 +1822,9 @@ photo-adjacent despite illustration/3D prompts.
   - Generated prompt summary: short prompt for an adult 18-19 Roma Norte dance studio look with wrap skort, cropped tee, tied warm-up shirt, ribbon, and dance sneakers.
   - Visual check: marker-sketch style, dance studio, wrap skort, ribbon, sneakers, and planted-foot motion are readable.
   - Result: accepted.
-- `04-home-coyoacan-textile-floor-pbr-note.png`
+- `04-home-coyoacan-textile-floor-pbr-note.webp`
   - Source file: `ig_064504293bdc6095016a2d45468e8c819181e7a34d22697338.png`
-  - Rejected source kept in: `assets/rejected/2026-06-02-mexico-city-mamey-coral-creative-weekday/04-home-coyoacan-textile-floor-photo-adjacent-rejected.png`
+  - Rejected source kept in: `assets/rejected/2026-06-02-mexico-city-mamey-coral-creative-weekday/04-home-coyoacan-textile-floor-photo-adjacent-rejected.webp`
   - Primary category: `home`
   - Target age band: `25-29`
   - Style family: `3d-cg`
@@ -1884,7 +1884,7 @@ residual weakness is image 04's style compliance: the project records it as
 
 ### Final Files
 
-- `01-weekend-oodi-maker-utility-anime.png`
+- `01-weekend-oodi-maker-utility-anime.webp`
   - Source file: `ig_064504293bdc6095016a2d5446f2848191bd3b064d0c16d6be.png`
   - Primary category: `weekend`
   - Target age band: `18-19-adult`
@@ -1908,9 +1908,9 @@ residual weakness is image 04's style compliance: the project records it as
   - Generated prompt summary: short prompt for an adult 18-19 Helsinki Oodi maker-library look with cotton shirt, utility apron, barrel jeans, amber hair clip, and sketchbook.
   - Visual check: maker/library setting, utility apron, denim, hair clip, and object action are readable.
   - Result: accepted.
-- `02-mode-arabia-studio-runway-board.png`
+- `02-mode-arabia-studio-runway-board.webp`
   - Source file: `ig_064504293bdc6095016a2d5611dbdc8191857e325c66b5964c.png`
-  - Rejected source kept in: `assets/rejected/2026-06-03-helsinki-cloudberry-daytime-remake/02-mode-arabia-studio-photo-adjacent-rejected.png`
+  - Rejected source kept in: `assets/rejected/2026-06-03-helsinki-cloudberry-daytime-remake/02-mode-arabia-studio-photo-adjacent-rejected.webp`
   - Primary category: `mode`
   - Target age band: `25-29`
   - Style family: `fashion-illustration`
@@ -1933,7 +1933,7 @@ residual weakness is image 04's style compliance: the project records it as
   - Generated prompt summary: regenerated short prompt for a runway-board illustration of a late-20s Helsinki ceramics studio mode look with canvas vest, amber obi belt, tray, and loafers.
   - Visual check: the accepted result reads as fashion illustration with construction callouts, garment structure, tray, and amber belt. The first candidate was too photo-adjacent and was rejected.
   - Result: accepted after one regeneration.
-- `03-outerwear-kallio-theater-cape-trench-watercolor.png`
+- `03-outerwear-kallio-theater-cape-trench-watercolor.webp`
   - Source file: `ig_064504293bdc6095016a2d554db2b0819181d0e53ae6ba5bdd.png`
   - Primary category: `outerwear`
   - Target age band: `20-24`
@@ -1957,7 +1957,7 @@ residual weakness is image 04's style compliance: the project records it as
   - Generated prompt summary: short prompt for a Kallio theater outerwear look with cape trench, pleated skirt over leggings, amber visor accessory, ankle boots, and garment bag.
   - Visual check: watercolor style, theater arrival, trench movement, leggings, boots, and garment bag are readable.
   - Result: accepted.
-- `04-active-kalasatama-climbing-game-cinematic-note.png`
+- `04-active-kalasatama-climbing-game-cinematic-note.webp`
   - Source file: `ig_064504293bdc6095016a2d55a87b5c8191b03bdec675bfdaf7.png`
   - Primary category: `active`
   - Target age band: `20-24`
@@ -2018,7 +2018,7 @@ image 04, which leans photo-adjacent despite the game-cinematic 3D prompt.
 
 ### Final Files
 
-- `01-street-degraves-laneway-winter-anime-note.png`
+- `01-street-degraves-laneway-winter-anime-note.webp`
   - Source file: `ig_064504293bdc6095016a2dcd15c6f081918dbd14c4aa2ae1fa.png`
   - Primary category: `street`
   - Target age band: `20-24`
@@ -2042,7 +2042,7 @@ image 04, which leans photo-adjacent despite the game-cinematic 3D prompt.
   - Generated prompt summary: short prompt for a 20-24 Melbourne laneway street look with wool coat, knit polo, wrap skirt over trousers, scarf ring, boots, and cup.
   - Visual check: winter laneway, coat, trousers, scarf ring, satchel, boots, and walking action are readable. It is slightly photo-adjacent for anime-soft-cinematic.
   - Result: accepted with style-deviation note.
-- `02-formal-royal-exhibition-brooch-digital.png`
+- `02-formal-royal-exhibition-brooch-digital.webp`
   - Source file: `ig_064504293bdc6095016a2dcd79fc388191b1d6856311e5c3b3.png`
   - Primary category: `formal`
   - Target age band: `25-29`
@@ -2066,7 +2066,7 @@ image 04, which leans photo-adjacent despite the game-cinematic 3D prompt.
   - Generated prompt summary: short prompt for a 25-29 Royal Exhibition formal look with merino column dress, bolero, gold brooch, tights, low pumps, and program.
   - Visual check: civic hall, formal winter dress, brooch, tights, low pumps, clutch, and program are readable.
   - Result: accepted.
-- `03-dance-collingwood-winter-rehearsal-marker.png`
+- `03-dance-collingwood-winter-rehearsal-marker.webp`
   - Source file: `ig_064504293bdc6095016a2dce1e365481919d26c3ac57900456.png`
   - Primary category: `dance`
   - Target age band: `18-19-adult`
@@ -2090,7 +2090,7 @@ image 04, which leans photo-adjacent despite the game-cinematic 3D prompt.
   - Generated prompt summary: short prompt for an adult 18-19 Collingwood winter rehearsal look with merino top, quilted vest, wrap dance pants, gold tape, leg warmers, and sneakers.
   - Visual check: marker-sketch style, rehearsal room, winter dance layers, gold side tape, leg warmers, and dynamic pose are readable.
   - Result: accepted.
-- `04-date-cinema-nova-winter-semi-real-note.png`
+- `04-date-cinema-nova-winter-semi-real-note.webp`
   - Source file: `ig_064504293bdc6095016a2dce7ffda48191bbca61d44929d2a3.png`
   - Primary category: `date`
   - Target age band: `25-29`

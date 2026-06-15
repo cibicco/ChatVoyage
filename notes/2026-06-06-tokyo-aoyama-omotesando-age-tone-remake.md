@@ -20,10 +20,10 @@
 
 Saved in `assets/daily/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake/`.
 
-- `01-market-commune-fresh-moss-cel-anime.png`: Commune Aoyama market terrace look, `18-19-adult`, fresh matcha moss, moderate adult exposure
-- `02-gallery-spiral-open-back-marker.png`: Spiral Garden gallery look, `20-24`, washed acidic moss, open-back layered construction
-- `03-lounge-minami-aoyama-smoky-moss-3d.png`: Minami-Aoyama listening-bar lounge look, `25-29`, deep smoky moss, refined camisole and blazer styling
-- `04-dance-jingumae-electric-moss-digital.png`: Jingumae dance-studio street look, `20-24`, electric washed moss, active mesh and motion styling
+- `01-market-commune-fresh-moss-cel-anime.webp`: Commune Aoyama market terrace look, `18-19-adult`, fresh matcha moss, moderate adult exposure
+- `02-gallery-spiral-open-back-marker.webp`: Spiral Garden gallery look, `20-24`, washed acidic moss, open-back layered construction
+- `03-lounge-minami-aoyama-smoky-moss-3d.webp`: Minami-Aoyama listening-bar lounge look, `25-29`, deep smoky moss, refined camisole and blazer styling
+- `04-dance-jingumae-electric-moss-digital.webp`: Jingumae dance-studio street look, `20-24`, electric washed moss, active mesh and motion styling
 
 The first image was regenerated once because the initial 18-19-adult version
 overemphasized the neckline for that age-band guardrail. The accepted version

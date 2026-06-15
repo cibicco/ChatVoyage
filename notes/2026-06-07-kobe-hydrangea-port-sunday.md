@@ -20,10 +20,10 @@
 
 Saved in `assets/daily/2026-06-07-kobe-hydrangea-port-sunday/`.
 
-- `01-market-motomachi-periwinkle-anime.png`: Motomachi arcade market look, `18-19-adult`, fresh periwinkle hydrangea, breathable shopping layers
-- `02-gallery-kitano-lilac-marker.png`: Kitano Ijinkan slope gallery walk, `20-24`, vivid lilac-blue, open-back linen top and carried mesh bolero
-- `03-lounge-meriken-smoky-indigo-3d.png`: Meriken Park waterfront lounge look, `25-29`, smoky indigo hydrangea, camisole and draped linen blazer
-- `04-resort-nunobiki-watercolor.png`: Nunobiki Herb Gardens resort-day look, `20-24`, airy lilac hydrangea, linen slip dress and walking sandals
+- `01-market-motomachi-periwinkle-anime.webp`: Motomachi arcade market look, `18-19-adult`, fresh periwinkle hydrangea, breathable shopping layers
+- `02-gallery-kitano-lilac-marker.webp`: Kitano Ijinkan slope gallery walk, `20-24`, vivid lilac-blue, open-back linen top and carried mesh bolero
+- `03-lounge-meriken-smoky-indigo-3d.webp`: Meriken Park waterfront lounge look, `25-29`, smoky indigo hydrangea, camisole and draped linen blazer
+- `04-resort-nunobiki-watercolor.webp`: Nunobiki Herb Gardens resort-day look, `20-24`, airy lilac hydrangea, linen slip dress and walking sandals
 
 The third image is more photo-adjacent than the selected PBR 3D style prompt,
 but it passes adult-original-character, climate comfort, garment-readability,

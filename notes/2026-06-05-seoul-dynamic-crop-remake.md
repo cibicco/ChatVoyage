@@ -22,7 +22,7 @@ three-quarter fashion poses.
 
 Saved in `assets/daily/2026-06-05-seoul-dynamic-crop-remake/`.
 
-- `01-transit-floor-sit-fan.png`: seated transit image, `18-19-adult`
-- `02-market-jump-motion-wide.png`: jump-motion market image, `20-24`
-- `03-club-stretching-reach-crop.png`: club crop with overhead reach, `20-24`
-- `04-gallery-back-close-crop.png`: back three-quarter gallery crop, `25-29`
+- `01-transit-floor-sit-fan.webp`: seated transit image, `18-19-adult`
+- `02-market-jump-motion-wide.webp`: jump-motion market image, `20-24`
+- `03-club-stretching-reach-crop.webp`: club crop with overhead reach, `20-24`
+- `04-gallery-back-close-crop.webp`: back three-quarter gallery crop, `25-29`

@@ -20,10 +20,10 @@
 
 ## Results
 
-- `01-office-vasconcelos-linen-waistcoat-anime.png`: accepted with minor crop/color note. Biblioteca Vasconcelos-style library interior, linen waistcoat, cropped trousers, notebook, shoulder bag, and coral belt tab create a non-market office/research look. The crop is wider than the requested knee-up and the coral is small, but the fashion construction is clear.
-- `02-ceremony-san-angel-wrap-dress-semi-real.png`: accepted. San Angel courtyard reception, asymmetric wrap dress, coral satin under-panel, capelet, slingback pumps, clutch, and restrained jewelry create a polished late-20s ceremony look.
-- `03-dance-roma-norte-wrap-skort-marker.png`: accepted. Roma Norte dance studio, planted-foot turn, cropped tee, wrap skort over dance shorts, tied warm-up layer, coral hair ribbon and sock trim create a young-adult dance look. The outfit is natural rehearsal clothing for movement and climate; it was not altered to reduce visible skin.
-- `04-home-coyoacan-textile-floor-pbr-note.png`: accepted with style note after one regeneration. Coyoacan rooftop textile corner, floor-sit fabric measuring, square-neck knit shell, barrel trousers, hip-draped coral wrap scarf, and perforated ankle boots create a home fitting look. The final image is still photo-adjacent rather than unmistakably PBR 3D.
+- `01-office-vasconcelos-linen-waistcoat-anime.webp`: accepted with minor crop/color note. Biblioteca Vasconcelos-style library interior, linen waistcoat, cropped trousers, notebook, shoulder bag, and coral belt tab create a non-market office/research look. The crop is wider than the requested knee-up and the coral is small, but the fashion construction is clear.
+- `02-ceremony-san-angel-wrap-dress-semi-real.webp`: accepted. San Angel courtyard reception, asymmetric wrap dress, coral satin under-panel, capelet, slingback pumps, clutch, and restrained jewelry create a polished late-20s ceremony look.
+- `03-dance-roma-norte-wrap-skort-marker.webp`: accepted. Roma Norte dance studio, planted-foot turn, cropped tee, wrap skort over dance shorts, tied warm-up layer, coral hair ribbon and sock trim create a young-adult dance look. The outfit is natural rehearsal clothing for movement and climate; it was not altered to reduce visible skin.
+- `04-home-coyoacan-textile-floor-pbr-note.webp`: accepted with style note after one regeneration. Coyoacan rooftop textile corner, floor-sit fabric measuring, square-neck knit shell, barrel trousers, hip-draped coral wrap scarf, and perforated ankle boots create a home fitting look. The final image is still photo-adjacent rather than unmistakably PBR 3D.
 
 ## Quality Notes
 

@@ -24,28 +24,28 @@ product.
 
 Saved in `assets/daily/2026-06-04-bangkok-monsoon-design-night-mixed-styles/`.
 
-- `01-transit-rail-platform-marker-sketch.png`
+- `01-transit-rail-platform-marker-sketch.webp`
   - Fashion category: `transit`
   - Style family: `fashion-illustration`
   - Style preset: `marker-sketch`
   - Scene: Bangkok rail platform after rain
   - Fashion language: cropped water-resistant trench, cobalt rib tank, technical pleated midi skirt, sheer ankle socks, walking sandals, nylon crossbody
   - Person: adult Japanese woman, late 20s, shoulder-length dark hair, diagonal walking pose
-- `02-gallery-riverside-warehouse-pbr-3d.png`
+- `02-gallery-riverside-warehouse-pbr-3d.webp`
   - Fashion category: `gallery`
   - Style family: `3d-cg`
   - Style preset: `pbr-fashion-3d`
   - Scene: design gallery or converted riverside warehouse
   - Fashion language: cobalt long vest, ivory asymmetric poplin shirt, cropped trousers, translucent rain skirt overlay, ankle boots, structured bag
   - Person: adult Japanese woman, early 30s, sleek low bun, low three-quarter gallery pose
-- `03-lounge-listening-bar-soft-anime.png`
+- `03-lounge-listening-bar-soft-anime.webp`
   - Fashion category: `lounge`
   - Style family: `anime`
   - Style preset: `anime-soft-cinematic`
   - Scene: Bangkok listening bar interior after rain
   - Fashion language: black satin camisole with opaque lining, cobalt sheer mesh top, charcoal wrap skirt, silver chain belt, kitten-heel mules
   - Person: adult Japanese woman, mid-to-late 20s, long wavy hair, seated listening pose
-- `04-dance-rain-studio-digital-painting.png`
+- `04-dance-rain-studio-digital-painting.webp`
   - Fashion category: `dance`
   - Style family: `semi-real-digital`
   - Style preset: `digital-magazine-painting`
