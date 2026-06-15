@@ -1,6 +1,79 @@
 window.CHAT_VOYAGE_ALBUMS = [
   {
     "categories": [
+      "home",
+      "outerwear",
+      "swim",
+      "theater"
+    ],
+    "date": "2026-06-16",
+    "href": "album.html?set=2026-06-16-busan-seaglass-coastal-motion",
+    "imageCount": 4,
+    "images": [
+      {
+        "age": "20-24",
+        "alt": "Adult early 20s Busan F1963 outerwear look with translucent rain anorak, wrap skort, sheer socks, and Mary Jane flats",
+        "category": "outerwear",
+        "label": "01",
+        "place": "busan",
+        "src": "assets/daily/2026-06-16-busan-seaglass-coastal-motion/01-outerwear-f1963-rain-anorak-anime.webp",
+        "style": "anime-cel-polished",
+        "tags": "Cel Anime / Busan / outerwear / 20-24",
+        "title": "01 Outerwear F1963 rain anorak"
+      },
+      {
+        "age": "25-29",
+        "alt": "Adult late 20s Busan Cinema Center theater look with charcoal wrap jumpsuit, sheer knee socks, and sea-glass slingback pumps",
+        "category": "theater",
+        "label": "02",
+        "place": "busan",
+        "src": "assets/daily/2026-06-16-busan-seaglass-coastal-motion/02-theater-cinema-center-wrap-jumpsuit-digital.webp",
+        "style": "digital-magazine-painting",
+        "tags": "Digital Painting / Busan / theater / 25-29",
+        "title": "02 Theater Cinema Center wrap jumpsuit"
+      },
+      {
+        "age": "18-19-adult",
+        "alt": "Adult 18-19 Busan Yeongdo rooftop home look with cropped polo, terry wrap skort, slouch socks, and canvas sneakers",
+        "category": "home",
+        "label": "03",
+        "place": "busan",
+        "src": "assets/daily/2026-06-16-busan-seaglass-coastal-motion/03-home-yeongdo-rooftop-terry-skort-marker.webp",
+        "style": "marker-sketch",
+        "tags": "Marker Sketch / Busan / home / 18-19-adult",
+        "title": "03 Home Yeongdo rooftop terry skort"
+      },
+      {
+        "age": "25-29",
+        "alt": "Adult late 20s Busan Gwangalli paddleboard swim look with one-piece suit, rash jacket, wrap board skirt, and water shoes",
+        "category": "swim",
+        "label": "04",
+        "place": "busan",
+        "src": "assets/daily/2026-06-16-busan-seaglass-coastal-motion/04-swim-gwangalli-paddleboard-soft-real.webp",
+        "style": "soft-real-fashion-art",
+        "tags": "Soft Real Art / Busan / swim / 25-29",
+        "title": "04 Swim Gwangalli paddleboard"
+      }
+    ],
+    "legacyHref": "assets/2026-06-16-busan-seaglass-coastal-motion-album.html",
+    "month": "2026-06",
+    "notesHref": "notes/2026-06-16-busan-seaglass-coastal-motion.md",
+    "places": [
+      "busan"
+    ],
+    "shortTitle": "Busan Seaglass Coastal Motion",
+    "slug": "2026-06-16-busan-seaglass-coastal-motion",
+    "styles": [
+      "anime-cel-polished",
+      "digital-magazine-painting",
+      "marker-sketch",
+      "soft-real-fashion-art"
+    ],
+    "summary": "Busan coastal after-rain set across F1963, Busan Cinema Center, a Yeongdo rooftop terrace, and Gwangalli paddleboard steps.",
+    "title": "2026-06-16 Busan Seaglass Coastal Motion"
+  },
+  {
+    "categories": [
       "active",
       "club",
       "mode",

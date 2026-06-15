@@ -2396,3 +2396,135 @@ old one. The main corrections are: more concrete local activity spaces, more
 intentional legwear and footwear, adult context that is not based on exposure
 or coverage, and a ferry motion that reads as chosen movement rather than an
 accidental jump.
+
+## 2026-06-16 Busan Seaglass Coastal Motion
+
+- Images: 4 final images
+- Generated on: 2026-06-16, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-16-busan-seaglass-coastal-motion/`
+- Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept. Original generated PNGs remain under `$CODEX_HOME/generated_images/`.
+- Album: `album.html?set=2026-06-16-busan-seaglass-coastal-motion`
+- Note: `notes/2026-06-16-busan-seaglass-coastal-motion.md`
+- City / place language: Busan, specifically F1963 cultural complex, Busan Cinema Center, a Yeongdo hillside rooftop terrace, and Gwangalli paddleboard steps
+- Local activity space plan: rainwear culture stop, film-event theater foyer, rooftop home/travel rest, and practical beach paddleboard movement
+- Common mood: humid coastal air after rain, sea-glass color, wet concrete, cinema light, rooftop rest, and controlled water-edge motion
+- Lucky color: sea-glass turquoise
+- Lucky color age tone: clear glossy turquoise for `18-19-adult`, sharper practical turquoise accents for `20-24`, polished or smoky sea-glass accents for `25-29`
+- Climate fit: live weather lookup did not return data. The set uses Busan mid-June seasonal logic: humid coastal air, drizzle risk, sea wind, wet stone, and cool indoor theater air.
+- Categories: `outerwear`, `theater`, `home`, `swim`
+- Age bands: `20-24`, `25-29`, `18-19-adult`, `25-29`
+- Persona direction: fashion-aware adult women whose clothing choices are grounded in place, movement, comfort, social context, and personal taste rather than exposure or coverage correction
+- Skin/coverage comfort plan: visible skin varies naturally by rainwear, theater, home/rest, and swim activity; neither openness nor coverage is treated as the goal
+- Pose families: `adjusting-jacket`, `walking-stride`, `floor-sit`, `walking-stride`
+- Style presets: `anime-cel-polished`, `digital-magazine-painting`, `marker-sketch`, `soft-real-fashion-art`
+- Source scan / reference note: workspace reference files named by the skill were not present. Live weather lookup did not return data. Web fashion/source scan was not used; repo presets, recent notes/logs, and the 6/11 critique were used.
+- Recent set scan: Berlin used `office` / `mode` / `club` / `active`; Melbourne used `street` / `formal` / `dance` / `date`; Kyoto and Nagoya recently used humid rain with `market` / `gallery` / `lounge` / `transit` or close variants. The 6/11 critique emphasized natural clothing by scene, age-band silhouettes beyond color, legwear/footwear variety, and readable risky movement.
+- Cooldown formulas: tank + open shirt + skort + sandals market formula; open-back gallery crop; seated camisole lounge; unclear ferry jump; rain-transit shell as a default formula; wet-reflection-only location signal
+- Hem / legwear / footwear plan: wrap skort with sheer ankle socks and Mary Jane flats; wrap jumpsuit with sheer knee socks and slingback pumps; terry wrap skort with bloomers, slouch socks, and canvas sneakers; one-piece swimwear with wrap board skirt and water shoes
+- Category rotation reason: `outerwear`, `theater`, `home`, and `swim` avoid both the recent warm-weather quartet and Berlin's previous culture-motion categories while staying locally grounded in Busan places
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-outerwear-f1963-rain-anorak-anime.webp`
+  - Source file: `ig_02778cd12d932e8a016a30840b44cc8191ae574e2a22ea291a.png`
+  - Primary category: `outerwear`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `outerwear`, `busan`, `f1963`, `rain`, `anorak`, `wrap-skort`, `mary-jane-flats`, `sea-glass-turquoise`
+  - Place: Busan F1963 cultural complex after drizzle
+  - Person: adult Japanese-centered early-20s woman, curious culture-stop visitor
+  - Persona traits: curious, sharp, sociable, fashion-aware
+  - Fashion: translucent cropped rain anorak with turquoise toggles, white rib shell, dark wrap skort, sheer ankle socks, black Mary Jane flats, compact pouch
+  - Fashion focal point: light rain outerwear and wrap skort with turquoise hardware
+  - Lucky color tone for age: sharp sea-glass toggles and small accessories
+  - Skin/coverage comfort: bare legs and sheer socks fit humid post-rain courtyard walking; the anorak is light rain utility rather than forced coverage
+  - Comfort naturalness: breathable top, short hem, and rain shell respond to wet concrete, covered passage, and coastal humidity
+  - Climate context: Busan mid-June seasonal humidity, after drizzle, covered culture-complex passage and courtyard
+  - Age-band life scene: early-20s culture errand before meeting friends
+  - Age-band silhouette: cropped anorak plus wrap skort, not tank/open-shirt/skort/sandal
+  - Avoid recent formula: not market crouch, not tank plus open shirt plus skort plus sandals, not gallery open-back, not station transit
+  - Pose family: `adjusting-jacket`; face right; body three-quarter; full-body
+  - Movement readability: hood-adjustment and step from cover to courtyard are clear
+  - Generated prompt summary: short prompt for a Busan F1963 rainwear look with translucent anorak, wrap skort, sheer socks, Mary Jane flats, and turquoise toggles.
+  - Visual check: place, rain outerwear, garment layers, leg styling, hand action, and turquoise accents are readable.
+  - Result: accepted.
+- `02-theater-cinema-center-wrap-jumpsuit-digital.webp`
+  - Source file: `ig_02778cd12d932e8a016a3084e704b48191bca965d0da3e3358.png`
+  - Rejected candidate: `ig_02778cd12d932e8a016a3084850ea48191af52df4426056aff.png` because it was too photo-adjacent for `digital-magazine-painting`
+  - Primary category: `theater`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `digital-magazine-painting`
+  - Secondary tags: `theater`, `busan`, `cinema-center`, `wrap-jumpsuit`, `sheer-knee-socks`, `slingback-pumps`, `sea-glass-turquoise`
+  - Place: Busan Cinema Center canopy and performance foyer
+  - Person: adult Japanese-centered late-20s woman, film-event attendee
+  - Persona traits: self-possessed, elegant, sociable, quietly sensual, fashion-aware
+  - Fashion: sleeveless charcoal jumpsuit with side-slit wrap panel, sheer knee socks, sea-glass slingback pumps, carried lightweight bolero, turquoise satin bag, ear cuff, blank ticket envelope
+  - Fashion focal point: wrap jumpsuit, sheer knee socks, and polished turquoise slingback pumps
+  - Lucky color tone for age: polished sea-glass pumps and bag
+  - Skin/coverage comfort: sleeveless linen outside plus carried bolero for indoor air conditioning fits the theater event
+  - Comfort naturalness: the outfit is edited and event-ready without correcting the neckline or arms into heavier coverage
+  - Climate context: Busan humid evening outside, cool theater interior, walking under canopy
+  - Age-band life scene: late-20s film event with friends
+  - Age-band silhouette: wrap jumpsuit and sheer socks rather than lounge camisole or formal dress
+  - Avoid recent formula: not seated camisole lounge, not open-back gallery pose, not museum half-pants mode
+  - Pose family: `walking-stride`; face camera; body left-profile; full-body
+  - Movement readability: ticket envelope, bag adjustment, and stride are clear
+  - Generated prompt summary: regenerated short prompt for a visibly illustrated Busan Cinema Center theater look with wrap jumpsuit, sheer socks, turquoise slingbacks, and carried bolero.
+  - Visual check: painterly style, canopy setting, wrap jumpsuit, sheer socks, turquoise shoes, and ticket are readable.
+  - Result: accepted after one style-focused regeneration.
+- `03-home-yeongdo-rooftop-terry-skort-marker.webp`
+  - Source file: `ig_02778cd12d932e8a016a30857448cc8191aeaaec465f7c1b6d.png`
+  - Primary category: `home`
+  - Target age band: `18-19-adult`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `home`, `busan`, `yeongdo`, `rooftop`, `terry-skort`, `slouch-socks`, `sea-glass-turquoise`
+  - Place: Yeongdo hillside guesthouse rooftop terrace
+  - Person: adult Japanese-centered 18-19 woman, resting during a travel day
+  - Persona traits: bright, relaxed, playful, personable, fashion-aware
+  - Fashion: cropped ribbed polo with turquoise collar stripe, soft terry wrap skort over black bloomers, slouch socks with turquoise edge, worn canvas sneakers, beaded hair clip, mesh laundry pouch
+  - Fashion focal point: terry wrap skort plus slouch socks and hair clip
+  - Lucky color tone for age: clear glossy turquoise in collar stripe, hair clip, socks, and pouch
+  - Skin/coverage comfort: higher skin visibility is natural for a humid rooftop rest/laundry scene and is supported by adult context and garment construction
+  - Comfort naturalness: cotton rib, terry, short hem, socks, sneakers, fan, and rooftop breeze fit a home/travel rest moment
+  - Climate context: Busan humid coastal evening after rain, rooftop terrace, sea wind, wet concrete
+  - Age-band life scene: adult young travel rest and chores, not school or teen-idol framing
+  - Age-band silhouette: cropped polo, terry wrap skort, bloomers, slouch socks
+  - Avoid recent formula: not market crouch, not generic balcony video-call, not tank/open-shirt/skort/sandals
+  - Pose family: `floor-sit`; face down; body front three-quarter; high diagonal
+  - Movement readability: fan, folded map, laundry pouch, and seated weight are clear
+  - Generated prompt summary: short prompt for an adult 18-19 Yeongdo rooftop home look with cropped polo, terry wrap skort, bloomers, slouch socks, sneakers, fan, and laundry context.
+  - Visual check: rooftop/sea context, home action, high skin visibility, legwear, sneakers, fan, laundry, and turquoise accents are readable. Accepted because the exposure belongs to the humid rooftop activity rather than being the image's purpose.
+  - Result: accepted.
+- `04-swim-gwangalli-paddleboard-soft-real.webp`
+  - Source file: `ig_02778cd12d932e8a016a3085b6755c819185041a1c661f9b0e.png`
+  - Primary category: `swim`
+  - Target age band: `25-29`
+  - Style family: `semi-real-digital`
+  - Style preset: `soft-real-fashion-art`
+  - Secondary tags: `swim`, `busan`, `gwangalli`, `paddleboard`, `rash-jacket`, `wrap-board-skirt`, `water-shoes`, `sea-glass-turquoise`
+  - Place: Gwangalli beach paddleboard steps
+  - Person: adult Japanese-centered late-20s woman, practical water-activity participant
+  - Persona traits: relaxed, self-possessed, practical, subtly alluring, fashion-aware
+  - Fashion: matte black athletic one-piece swimsuit with sea-glass side panel, cropped rash jacket pushed to elbows, charcoal wrap board skirt, neoprene water shoes, waterproof waist pouch, small silver earrings
+  - Fashion focal point: sporty one-piece plus wrap board skirt and practical water shoes
+  - Lucky color tone for age: polished sea-glass swim panel, board, pouch, and paddle detail
+  - Skin/coverage comfort: swimwear skin visibility is natural for paddleboarding; rash jacket, board skirt, and water shoes support weather, movement, and wet stone
+  - Comfort naturalness: water gear is practical for wet steps, board balance, sea breeze, and cloudy sun shifts
+  - Climate context: Busan warm humid coastal morning after drizzle, beach steps, waterline, paddleboard movement
+  - Age-band life scene: late-20s water activity, self-possessed and practical
+  - Age-band silhouette: athletic one-piece, rash jacket, wrap board skirt, water shoes
+  - Avoid recent formula: not unclear ferry jump, not resort terrace pose, not swimsuit pin-up, not seated lounge composition
+  - Pose family: `walking-stride`; face down; body three-quarter; wide-action
+  - Movement readability: one foot on wet step, one foot on board, paddle held horizontally for balance; action reads as controlled stepping, not falling
+  - Generated prompt summary: short prompt for a Gwangalli paddleboard swim look with one-piece suit, rash jacket, wrap board skirt, water shoes, and controlled board-step motion.
+  - Visual check: Gwangalli waterline, paddleboard, planted step, paddle balance, swim construction, jacket, board skirt, and water shoes are readable.
+  - Result: accepted.
+
+### Generation Notes
+
+This run applies the 6/11 critique directly: ordinary exposure is not rejected by itself, but every open or covered garment is checked against place, weather, activity, age-band life context, and styling intent. The strongest correction is image 04's water-edge action, which is designed as a readable controlled step rather than an ambiguous leap.
