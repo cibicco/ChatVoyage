@@ -28,6 +28,10 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
   conditioning, rain intensity, venue norms, and activity. Do not default to
   tanks, camisoles, open shirts, mesh, and sandals only because the weather is
   warm or humid.
+- Do not treat normal warm-weather garments as failed variety. Tanks, open
+  shirts, skorts, miniskirts, shorts, sandals, and bare legs can repeat when
+  the full styling formula, place, pose, footwear or legwear, and fashion
+  attitude are different.
 - Treat indoor scenes broadly. Indoor does not mean only rooms, offices,
   meals, cafes, or bars; it can also mean locally specific activity spaces such
   as museums, art museums, galleries, clubs, live houses, theaters, cinemas,
@@ -118,8 +122,12 @@ Fashion direction:
 - age-band silhouette/material/accessory logic: {what differs by age beyond color tone}
 - persona direction: {how brightness, sociability, confidence, and fashion interest show up}
 - fashion focal point: {one or two distinctive styling details, not everything loud at once}
-- avoid recent formula: {recent repeated formula this image does not use}
+- avoid recent formula: {recent repeated full formula this image does not use;
+  do not ban ordinary garments by themselves}
 - outfit focus: {silhouette, garment types, fabric, color accents}
+- legwear and footwear: {bare legs | sheer socks | slouch socks | knee socks |
+  tights | leggings | bike shorts | sandals | loafers | pumps | sneakers |
+  boots; chosen as styling, not only coverage}
 - setting: {specific city place; include locally characteristic indoor or
   activity spaces such as museum, art museum, club, theater, library, atelier,
   station, market hall, covered arcade, sports facility, cafe, bar, room,
@@ -149,6 +157,9 @@ Constraints:
 - do not use tanks, camisoles, open shirts, mesh, or sandals as a default
   climate fix when the city, time, rain, venue, air conditioning, or activity
   would support another natural silhouette
+- do not suppress miniskirts, short skorts, bare legs, socks, tights, sandals,
+  or open tops only because they show skin; accept or reject them based on
+  adult styling, garment construction, climate, venue, pose, and activity
 - do not repeat the recent successful formulas with only a city or lucky-color
   change
 - one complete standalone image, not a collage
@@ -173,6 +184,7 @@ For every final image, record:
 - age-band life scene and silhouette logic
 - persona direction and fashion focal point
 - avoid recent formula
-- fashion language: garment structure, materials, color accents, shoes, and accessories
+- fashion language: garment structure, materials, color accents, shoes,
+  legwear, and accessories
 - person language: age impression, hair, build, pose, and expression
 - result: accepted, regenerated, or accepted with note

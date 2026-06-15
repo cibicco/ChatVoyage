@@ -97,6 +97,9 @@ their taste. Use this as a preference, not a uniform:
 
 - wrap skirts, sarong-like panels, apron skirts, asymmetric skirts, skorts, and
   wrapped dresses
+- pleated mini skirts, cargo minis, tailored minis, bias minis, micro-to-mini
+  skorts with visible construction, and short wrap skirts when the scene,
+  venue, movement, and adult styling support them
 - wide trousers, cropped trousers, barrel jeans, utility pants, culottes,
   tailored shorts, city half pants, and light jumpsuits
 - pumps, slingback pumps, low heels, loafers, mules, sandals, sneakers, flats,
@@ -107,6 +110,12 @@ weather, and movement: short boots, open or perforated leather, mesh panels,
 light soles, slingbacks, low heels, or indoor/air-conditioned venue logic.
 Avoid heavy winter boots, closed formal shoes, or fragile heels when they fight
 humidity, rain, stairs, boats, long walks, or the character's activity.
+
+Legwear is part of the styling, not only a coverage tool. Use bare legs, sheer
+ankle socks, slouch socks, ribbed socks, sport socks, knee socks, sheer
+knee-highs, tights, leggings, bike shorts, bloomers, or safety shorts when
+they support the fashion language. Do not add legwear just to hide skin, and
+do not avoid legwear just to make an outfit feel lighter.
 
 ## Age-Band Expression
 

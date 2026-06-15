@@ -32,6 +32,7 @@ person_language: adult character notes, varied across all four images
 fashion_language: garment structure, silhouette, material, shoes, legwear, accessories
 fashion_focal_point: one or two distinctive styling details per image
 skin_coverage_comfort_plan: how neckline, sleeve, hem, skin visibility, airflow, fabric weight, and layering fit the scene without forcing either coverage or openness
+hem_legwear_footwear_plan: how hem length, bare legs or legwear, and shoes vary as fashion styling rather than as a modesty correction
 comfort_naturalness: why the outfit is plausible for the weather, place, and activity
 variation_axes: what differs across the four images beyond color
 avoid_rules: no logos, readable brand text, exact product/source-photo copy, celebrity copy, school-uniform cues, teen-idol styling, childlike framing
@@ -60,11 +61,12 @@ persona_traits: the selected trait mix for this image
 pose_language: pose family, face direction, body direction, camera angle, hand placement, crop
 movement_readability: clear action, weight, intention, and optional chosen risk, especially for boats, ferries, trains, buses, stations, stairs, platforms, piers, bridges, and water edges
 scene_language: city, specific place, time/weather, background support; indoor scenes should name the kind of local activity space, not collapse to generic rooms or cafes
-fashion_language: garment list, construction, materials, texture, proportion, shoes, legwear, accessories
+fashion_language: garment list, construction, materials, texture, proportion, hem length, shoes, legwear, accessories
 fashion_focal_point: chosen styling point such as color, accessory, fabric, silhouette, shoes, bag, jewelry, hair accessory, layering, or fabric movement
 lucky_color_use: where the daily lucky color appears
 lucky_color_tone_for_age: brightness, saturation, material, and placement for the selected age band
-skin_coverage_comfort: how skin visibility, sheer layers, hem length, neckline, sleeve, or cutout choices feel natural for the category, climate, venue, and action
+skin_coverage_comfort: how skin visibility, sheer layers, hem length, neckline, sleeve, or cutout choices feel natural for the category, climate, venue, and action; do not use skin amount as a pass/fail proxy
+hem_legwear_footwear: mini, midi, trousers, shorts, skort, bare legs, socks, tights, leggings, bike shorts, sandals, pumps, sneakers, boots, or other leg styling chosen for fashion language and activity
 comfort_naturalness: breathable fabric, seasonal weight, movement, footwear, and layering logic
 climate_context: city, season, weather, temperature band, humidity, time of day, indoor/outdoor, wind or air conditioning, rain intensity, venue norms, local activity space, and activity
 age_band_life_scene: what this age band is doing in adult life, not only how old she looks
@@ -102,6 +104,7 @@ style_presets
 source_scan_or_missing_reference_note
 recent_set_scan
 cooldown_formulas
+hem_legwear_footwear_plan
 category_rotation_reason
 prompt_version
 prompt_shape
@@ -121,6 +124,7 @@ final_files:
   fashion_focal_point
   lucky_color_tone_for_age
   skin_coverage_comfort
+  hem_legwear_footwear
   comfort_naturalness
   climate_context
   age_band_life_scene
@@ -184,6 +188,9 @@ recent-set repetition notes and any intentional repeats
 - Each image has one or two clear fashion focal points, such as accessory,
   fabric, silhouette, color placement, shoes, bag, jewelry, hair accessory,
   layering, or fabric movement.
+- Hem, legwear, and footwear are active styling choices. The set should not
+  accidentally suppress miniskirts, skorts, bare legs, socks, tights, sandals,
+  pumps, boots, or other leg styling because of skin-visibility caution.
 - Category, style, age, pose, and crop choices match preset vocabulary.
 - The set varies silhouette, garment construction, material, shoes or legwear,
   exposure balance, setting, pose, and camera direction.
@@ -217,9 +224,10 @@ recent-set repetition notes and any intentional repeats
   temperature band, humidity, rain intensity, indoor/outdoor conditions, wind
   or air conditioning, venue norms, and activity. It must not default to the
   same warm-weather tank/camisole/open-shirt/mesh/sandal formula.
-- Recent successful formulas from the last three to five sets are not repeated
-  without a logged reason. Check category sequence, pose sequence, garment
-  formula, background formula, crop, and lucky-color placement.
+- Recent successful full formulas from the last three to five sets are not
+  repeated without a logged reason. Check category sequence, pose sequence,
+  garment stack, shoes and legwear, background formula, crop, and lucky-color
+  placement. Do not ban a normal garment category by itself.
 - No image depends on a copied source look, readable logo, brand mark, or
   celebrity likeness.
 - The log records the prompt workflow version. If using

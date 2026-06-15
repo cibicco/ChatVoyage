@@ -45,8 +45,9 @@ single four-panel collage.
    - four target age bands and pose families
    - a persona direction from `prompts/persona-presets.md`
    - age-based tone choices for the lucky color
-   - a skin/coverage comfort plan that varies garment openness, airflow,
-     coverage, and layering according to scene needs
+   - a garment openness, hem, legwear, and footwear plan that varies airflow,
+     fabric, neckline, hem length, shoes, socks/tights/bare legs, and layering
+     according to scene needs
    - climate and comfort logic so the outfit is natural for the weather,
      venue, temperature, and activity
    - a local place plan that treats indoor scenes broadly: not only rooms,
@@ -126,7 +127,7 @@ Vary more than color. Across the four prompts, explicitly vary:
 - length and proportion
 - material and texture
 - shoes and legwear
-- skin/coverage comfort
+- garment openness and skin/coverage comfort
 - lucky-color tone by age band
 - lucky-color placement by garment type, not only color of a repeated garment
 - styling attitude
@@ -142,6 +143,12 @@ visibility is not a problem by itself, and low skin visibility is not a quality
 goal by itself. Judge whether the garment construction, neckline, sleeves, hem,
 fabric weight, footwear, and layering feel natural for the city, season,
 weather, temperature, venue, time of day, and activity.
+
+Do not treat ordinary warm-weather pieces as a problem by themselves. Tanks,
+open shirts, camisoles, mesh, sandals, miniskirts, short skorts, shorts, bare
+legs, socks, tights, bike shorts, and visible leg styling are all valid adult
+fashion choices when the full outfit, pose, scene, age band, and activity make
+them natural. Cool down repeated full formulas, not garment categories.
 
 Do not overcorrect into consistently covered looks, and do not force openness
 where it fights the scene. If the daily theme is rain, outerwear, transit, or
@@ -160,6 +167,11 @@ cotton tees, buttoned short-sleeve shirts, airy shirt dresses, sleeveless
 tailoring, light jumpsuits, cropped trousers, washable skirts, technical rain
 pants, sneakers, mules, thin cardigans for air-conditioned interiors, or
 compact outer layers.
+
+Use legwear deliberately as fashion language: bare legs, sheer socks, ribbed
+socks, slouch socks, knee socks, tights, leggings, bike shorts, bloomers, and
+safety shorts can all be correct. They should not be added only as modesty
+patches or removed only to signal openness.
 
 Age bands must differ by more than color tone. For each target age band, vary
 the life scene, silhouette, material logic, accessory logic, and styling

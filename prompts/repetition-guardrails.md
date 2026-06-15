@@ -20,8 +20,11 @@ entries and list the repeated patterns. Check at least:
 - age-band role assignment
 - lucky-color placement
 
-If two or more recent sets used the same formula, the next set should either
-avoid it or record why the repeat is intentional.
+If two or more recent sets used the same full styling formula, the next set
+should either change the composition or record why the repeat is intentional.
+Do not put a normal garment type on cooldown by itself. Cooldown applies to the
+combined formula: garment stack, category, pose, shoes or legwear, place, crop,
+and styling attitude together.
 
 ## Climate Specificity
 
@@ -75,12 +78,17 @@ age_band_accessory_logic:
 
 ## Formula Cooldowns
 
-After a formula appears in two recent sets, put it on cooldown for at least the
-next one or two daily sets unless the user explicitly asks for it.
+After a full formula appears in two recent sets, put that full combination on
+cooldown for at least the next one or two daily sets unless the user explicitly
+asks for it. Do not treat tanks, open shirts, miniskirts, skorts, shorts,
+sandals, bare legs, or visible skin as the problem. They remain valid fashion
+choices when the city, weather, venue, activity, age band, and styling attitude
+support them.
 
 Cooldown examples:
 
-- tank + open short-sleeve shirt + skort or shorts + sandals
+- young market/cafe crouch + tank + open short-sleeve shirt + skort or shorts
+  + flat sandals + clear tote
 - open-back halter + carried mesh bolero + culotte shorts
 - satin camisole + draped blazer + sheer-over-opaque midi skirt
 - black tank + mesh/rain shell + wide pants + sneakers
@@ -103,6 +111,29 @@ labels:
 
 The category choice should change garment construction and life scene, not
 only the background.
+
+## Hem, Legwear, And Footwear Variety
+
+Do not let age or skin-visibility caution erase shorter hems or leg styling.
+Mini skirts, micro-to-mini skorts, short wrap skirts, cargo minis, pleated
+minis, bias minis, city shorts, hot-weather half pants, and dance or active
+skorts are all available adult fashion options when the scene supports them.
+
+Legwear should be an active styling axis, not an afterthought. Consider:
+
+- bare legs when weather and venue make that natural
+- sheer ankle socks, ribbed socks, slouch socks, sport socks, lace-trim socks,
+  or color-pop socks
+- knee socks, sheer knee-highs, mesh socks, patterned tights, opaque tights,
+  leggings, bike shorts, bloomers, or safety shorts when they are part of the
+  outfit construction
+- sandals, mules, loafers, Mary Janes, slingback pumps, low heels, sneakers,
+  short boots, perforated boots, and summer boots according to terrain and
+  activity
+
+Use legwear to change the fashion language: playful, club, office, dance,
+sporty, retro, polished, rainy, winter, or resort. Do not add legwear only as
+a modesty patch, and do not remove it only to signal openness.
 
 ## Local Place Specificity
 

@@ -53,12 +53,19 @@ sleeveless inner layers, sheer rain shells, open-back tops, shorter hems with
 legwear, sandal styling, or carried outer layers when those choices fit the
 scene.
 
+For `18-19-adult`, do not convert adult young styling into automatic coverage.
+Mini skirts, short skorts, bare legs, socks, sandals, cropped tops, open shirts,
+or playful legwear can be natural when the body proportions, context, pose,
+and outfit read as adult fashion rather than underage framing. The check is
+adult context and garment-focused composition, not skin amount.
+
 Do not solve age guardrails by forcing unnaturally covered clothing. Neckline,
 sleeve, hem, fabric weight, and layering should fit the city, season, weather,
 temperature, venue, and the person's activity. In humid or warm weather, use
 natural adult choices such as breathable tanks, scoop or square necklines,
 camisoles with opaque lining, open shirts, mesh layers, sandals, linen, cotton,
-or carried outerwear instead of defaulting to high-neck tops or heavy layers.
+short skirts, skorts, shorts, legwear, or carried outerwear instead of
+defaulting to high-neck tops or heavy layers.
 
 ## Age-Based Color Tone
 
