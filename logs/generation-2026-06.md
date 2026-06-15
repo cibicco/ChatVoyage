@@ -2261,3 +2261,138 @@ Japan/rain/waterfront imagery. Clothing naturalness is evaluated by Berlin
 early-summer weather, venue norms, indoor climate, and activity: visible skin
 appears where the garment and motion call for it, and covered pieces appear
 where work, museum, or club utility makes them natural.
+
+## 2026-06-11 Hiroshima Momiji Human Context Remake
+
+- Images: 4 final images
+- Generated on: 2026-06-16, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-11-hiroshima-momiji-human-context-remake/`
+- Display format: WebP converted from generated PNG sources with `scripts/convert_daily_images_to_webp.py --quality 82`; project PNG copies were removed after WebP verification. Original generated PNGs remain under `$CODEX_HOME/generated_images/`.
+- Album: `assets/2026-06-11-hiroshima-momiji-human-context-remake-album.html`
+- Note: `notes/2026-06-11-hiroshima-momiji-human-context-remake.md`
+- City / place language: Hiroshima, specifically Hondori covered arcade, Hiroshima City Museum of Contemporary Art foyer, Yokogawa cinema neighborhood lobby, and Ujina Port ferry gangway
+- Local activity space plan: covered arcade errand, museum/gallery activity space, independent-cinema night outing, and harbor transit/gangway action
+- Common mood: post-rain Hiroshima humidity, light social movement, and clearer adult human context than the earlier 6/11 Hiroshima set
+- Lucky color: momiji vermilion
+- Lucky color age tone: clear small accents for `18-19-adult`, bright glossy active vermilion for `20-24`, and deeper polished vermilion for `25-29`
+- Climate fit: warm humid June after rain. Outfit choices respond to covered walking, air conditioning, rainy night cinema, and wet harbor movement rather than a generic warm-weather formula.
+- Categories: `weekend`, `gallery`, `theater`, `transit`
+- Age bands: `18-19-adult`, `25-29`, `20-24`, `20-24`
+- Persona direction: adult women with agency, fashion interest, comfort, social context, boundaries, and distinctive styling details
+- Skin/coverage comfort plan: open or visible skin appears only where the garment, weather, and activity support it; coverage is not used as a default age guardrail
+- Pose families: `using-object`, `walking-stride`, `seated-side`, `back-three-quarter`
+- Style presets: `anime-fashion-magazine`, `marker-sketch`, `digital-magazine-painting`, `game-cinematic-3d`
+- Source scan / reference note: Web sources were not used. Workspace-level reference files named by the skill were not present; repo prompt presets, skill instructions, and existing 6/11 visual inspection were used.
+- Recent set scan: the earlier Hiroshima 6/11 set had generic office/theater/home readings and a ferry image whose action could read as jumping away from the boat. Recent sets also repeated warm-weather tank/open-shirt/skort/sandal, open-back gallery crop, seated camisole lounge, and rain-reflection place formulas.
+- Cooldown formulas: older shirt-dress office walk, origami theater overdress, home video-call balcony, unclear ferry jump, market/cafe tank-open-shirt skort sandals, open-back gallery over-shoulder, and seated camisole lounge
+- Hem / legwear / footwear plan: pleated mini with sheer ankle socks and Mary Jane sneakers; tailored mini with sheer knee-highs and slingbacks; wrap mini with bike shorts, patterned tights, and ankle boots; wrap skort with bike shorts, sport socks, and perforated summer boots
+- Category rotation reason: `weekend`, `gallery`, `theater`, and `transit` keep the day locally grounded while changing the activity, silhouette, and movement from the weaker original Hiroshima set
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-weekend-hondori-pleated-mini-anime.webp`
+  - Source file: `ig_0d4e016bd3b1b5b5016a3025bdd3348191a8f085443a92f5ba.png`
+  - Primary category: `weekend`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `weekend`, `hiroshima`, `hondori`, `covered-arcade`, `pleated-mini`, `mary-janes`, `momiji-vermilion`
+  - Place: Hiroshima, Hondori covered shopping arcade after rain
+  - Person: adult Japanese-centered 18-19 woman, young adult errand before meeting friends
+  - Persona traits: lively, personable, playful, fashion-aware
+  - Fashion: cropped white tee, short-sleeve box shirt, charcoal pleated mini, sheer ankle socks, black Mary Jane sneakers, crossbody bag, vermilion hair clip and bag charm
+  - Fashion focal point: pleated mini with sheer socks and Mary Jane sneakers
+  - Lucky color tone for age: clear vermilion hair and bag accents
+  - Skin/coverage comfort: cropped tee and short skirt fit covered humid walking; the outfit is garment-focused and not school-uniform coded on the main figure
+  - Comfort naturalness: breathable cotton, short hem, socks, and sneakers suit a rainy covered arcade errand
+  - Climate context: Hiroshima warm humid June evening after rain, covered arcade, walking and card-holder action
+  - Age-band life scene: adult young errand and friend meet-up
+  - Age-band silhouette: cropped tee, box shirt, pleated mini, ankle socks
+  - Avoid recent formula: not market/cafe crouch with tank, open shirt, skort, and sandals
+  - Pose family: `using-object`; face left; body three-quarter; full-body
+  - Movement readability: transit-card and bag-strap handling are clear
+  - Generated prompt summary: short prompt for an adult 18-19 Hondori arcade look with cropped tee, box shirt, pleated mini, socks, Mary Janes, and vermilion charms.
+  - Visual check: arcade place, outfit, leg styling, bag action, and vermilion accents are readable. Background passersby have school-like silhouettes, but the subject remains adult and non-uniform-coded.
+  - Result: accepted after one regeneration for background text.
+- `02-gallery-moca-tailored-mini-marker.webp`
+  - Source file: `ig_0d4e016bd3b1b5b5016a302651ae9c8191b7c281924eae5864.png`
+  - Primary category: `gallery`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `marker-sketch`
+  - Secondary tags: `gallery`, `hiroshima`, `museum`, `tailored-mini`, `knee-socks`, `slingbacks`, `momiji-vermilion`
+  - Place: Hiroshima City Museum of Contemporary Art foyer
+  - Person: adult Japanese-centered late-20s woman, museum/design-event visitor
+  - Persona traits: self-possessed, sharp, quietly sensual, fashion-aware
+  - Fashion: sleeveless black linen waistcoat, opaque ivory square-neck knit tank, smoke-gray tailored mini, sheer black knee-high socks, ivory slingbacks, structured bag with deep vermilion lining, carried cardigan
+  - Fashion focal point: tailored mini with sheer knee-high socks and slingback pumps
+  - Lucky color tone for age: deep polished vermilion lining and hair cord
+  - Skin/coverage comfort: sleeveless tailoring and carried cardigan fit humid outdoor arrival and air-conditioned museum interior
+  - Comfort naturalness: light tailoring and low shoes support museum stairs without forcing heaviness
+  - Climate context: Hiroshima humid June, air-conditioned museum foyer, walking down a shallow step
+  - Age-band life scene: late-20s design-event or museum visit
+  - Age-band silhouette: tailored mini and waistcoat, edited accessories
+  - Avoid recent formula: not open-back gallery over-shoulder or long dress
+  - Pose family: `walking-stride`; face camera; body left-profile; low diagonal full-body
+  - Movement readability: stair descent and carried layer are clear
+  - Generated prompt summary: short prompt for a late-20s Hiroshima MOCA marker-sketch look with sleeveless waistcoat, tailored mini, knee socks, slingbacks, and deep vermilion accents.
+  - Visual check: marker sketch, museum stairs, tailored mini, knee socks, slingbacks, bag, and cardigan are readable.
+  - Result: accepted.
+- `03-theater-yokogawa-wrap-mini-digital.webp`
+  - Source file: `ig_0d4e016bd3b1b5b5016a3026e51644819188293422354e2129.png`
+  - Primary category: `theater`
+  - Target age band: `20-24`
+  - Style family: `semi-real-digital`
+  - Style preset: `digital-magazine-painting`
+  - Secondary tags: `theater`, `hiroshima`, `yokogawa`, `cinema`, `wrap-mini`, `bike-shorts`, `patterned-tights`, `momiji-vermilion`
+  - Place: Hiroshima Yokogawa cinema neighborhood lobby at rainy night
+  - Person: adult Japanese-centered early-20s woman, film outing before meeting friends
+  - Persona traits: curious, sociable, mischievous, fashion-aware
+  - Fashion: dark teal ribbed sleeveless top, translucent charcoal rain shirt tied at the waist, glossy momiji vermilion short wrap skirt, visible black bike shorts, patterned sheer tights, black patent low-heel ankle boots, ear cuff
+  - Fashion focal point: vermilion wrap mini over visible bike shorts plus patterned tights and patent ankle boots
+  - Lucky color tone for age: glossy vermilion wrap skirt
+  - Skin/coverage comfort: sleeveless top, rain shirt, tights, and boots fit humid rain outside and air-conditioned cinema inside
+  - Comfort naturalness: outfit supports walking, sitting, rain, and indoor cool air without treating exposure as the goal
+  - Climate context: Hiroshima rainy June night, cinema lobby, seated side pose
+  - Age-band life scene: early-20s film night and social plan
+  - Age-band silhouette: wrap mini, visible bike shorts, patterned tights, compact rain layer
+  - Avoid recent formula: not lounge seated camisole or generic bar pose
+  - Pose family: `seated-side`; face down; body three-quarter; full-body
+  - Movement readability: seated ticket read and visible shoes/legwear are clear
+  - Generated prompt summary: short prompt for a Yokogawa cinema look with ribbed sleeveless top, rain shirt, vermilion wrap mini, bike shorts, patterned tights, and ankle boots.
+  - Visual check: cinema/lobby night, rain outside, wrap skirt, tights, boots, ticket, and seated action are readable.
+  - Result: accepted.
+- `04-transit-ujina-gangway-wrap-skort-3d.webp`
+  - Source file: `ig_0d4e016bd3b1b5b5016a3028c7241c81918efe76f5e550c6d8.png`
+  - Primary category: `transit`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `game-cinematic-3d`
+  - Secondary tags: `transit`, `hiroshima`, `ujina-port`, `ferry`, `gangway`, `wrap-skort`, `bike-shorts`, `summer-boots`, `momiji-vermilion`
+  - Place: Hiroshima Ujina Port ferry deck and gangway after rain
+  - Person: adult Japanese-centered early-20s woman, ferry traveler with confident balance
+  - Persona traits: daring, relaxed, sociable, self-possessed, fashion-aware
+  - Fashion: ecru rib tank, technical cropped vest, momiji vermilion wrap skort with utility flap, black bike shorts, ribbed sport socks, perforated white summer ankle boots, navy duffel
+  - Fashion focal point: wrap skort movement with visible bike shorts, sport socks, and perforated summer boots
+  - Lucky color tone for age: bright active vermilion as the travel garment
+  - Skin/coverage comfort: sleeveless tank, technical vest, skort, socks, and perforated boots suit humid harbor air, wind, and wet deck grip
+  - Comfort naturalness: the outfit is light but practical for ferry boarding and wet surfaces
+  - Climate context: Hiroshima humid harbor late afternoon after rain, ferry deck/gangway, wind and wet footing
+  - Age-band life scene: early-20s harbor transit/travel
+  - Age-band silhouette: wrap skort and technical vest instead of jumpsuit
+  - Avoid recent formula: not unclear ferry jump or straw-hat jumpsuit
+  - Pose family: `back-three-quarter`; face over-shoulder; low side wide-action
+  - Movement readability: one foot is planted on deck/gangway, one hand holds the rail, and the bag strap hand explains the motion; it reads as controlled stepping
+  - Generated prompt summary: short prompt for a Ujina Port ferry gangway look with opaque tank, technical vest, vermilion wrap skort, bike shorts, sport socks, perforated boots, and controlled step action.
+  - Visual check: harbor/ferry setting, gangway step, rail hold, wrap skort, bike shorts, socks, and boots are readable. The accepted image reads more anime/game-key-art than strict 3D, but avoids the earlier photo-adjacent ambiguity.
+  - Result: accepted after two style-focused regenerations.
+
+### Generation Notes
+
+This run remakes the weaker Hiroshima 2026-06-11 set rather than deleting the
+old one. The main corrections are: more concrete local activity spaces, more
+intentional legwear and footwear, adult context that is not based on exposure
+or coverage, and a ferry motion that reads as chosen movement rather than an
+accidental jump.
