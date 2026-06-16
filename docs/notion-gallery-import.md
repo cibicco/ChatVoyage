@@ -109,7 +109,10 @@ Do not commit the real token. Put it in `.notion.env`, which is ignored by git:
 ```sh
 NOTION_TOKEN=secret_xxx
 NOTION_PARENT_PAGE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+NOTION_DATABASE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+NOTION_DATA_SOURCE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 NOTION_VERSION=2022-06-28
+NOTION_DATA_SOURCE_VERSION=2026-03-11
 ```
 
 ## Dry Run
@@ -132,10 +135,46 @@ python3 scripts/notion_upload_gallery.py --limit 40 --confirm-upload
 The script creates a Notion database under the parent page and uploads each
 image to the database's `Image` property.
 
-The script is intentionally dry-run by default and creates a new database when
-`--confirm-upload` is used. A future version should add existing-database
-append/update support with duplicate detection by `Source path` or
-`Batch ID` + `Variant`.
+The script is intentionally dry-run by default. Without `--sync-existing`, it
+creates a new database when `--confirm-upload` is used. With
+`--sync-existing`, it updates existing rows matched by `Source path`; add
+`--append-missing` only when missing rows should be uploaded into the existing
+data source.
+
+## Existing Database Sync
+
+For the current `Chat Voyage Images` trial database, use the image data source
+directly. This avoids Notion's multi-data-source dashboard surface.
+
+Current IDs:
+
+- Database ID: `381ecca2-7ba4-81b5-b327-fc2e5a8a55ac`
+- Image data source ID: `381ecca2-7ba4-8124-965d-000b2171071a`
+- Empty table data source ID created during UI exploration:
+  `381ecca2-7ba4-8047-a3d2-000bb4298c01`
+
+Dry-run matching existing rows:
+
+```sh
+python3 scripts/notion_upload_gallery.py \
+  --limit 40 \
+  --sync-existing \
+  --data-source-id 381ecca2-7ba4-8124-965d-000b2171071a
+```
+
+Apply metadata updates to existing rows:
+
+```sh
+python3 scripts/notion_upload_gallery.py \
+  --limit 40 \
+  --sync-existing \
+  --data-source-id 381ecca2-7ba4-8124-965d-000b2171071a \
+  --confirm-upload
+```
+
+This mode updates matched pages by `Source path` and does not reupload images.
+Use `--append-missing` only when adding new generated images to the existing
+Notion data source.
 
 ## 2026-06-16 Trial Result
 
@@ -145,6 +184,12 @@ append/update support with duplicate detection by `Source path` or
 - Uploaded rows: 40
 - Uploaded image bytes: about 8.1 MB
 - Source range: latest 10 album sets, 2026-06-16 through 2026-06-09
+- UI update: the gallery view was restored from the accidental dashboard
+  surface, renamed `Images Only`, set to page-cover card previews, medium
+  cards, media fit on, popup page opening, sorted by `Date` descending and
+  `Image No` ascending.
+- Data source dry-run after the dashboard incident matched 40 existing rows and
+  found 0 missing rows.
 
 The token used for upload was shared in the chat during setup. Rotate or
 regenerate the Notion connection token after the trial if continuing the

@@ -14,10 +14,12 @@
 - DB表示をGalleryに変更し、カードに画像が見える状態を確認した。
 - ChatGPT案を現状に照合し、採用すべき `Status` / `Batch ID` / `Variant` / `Theme` / `Scene` / `Prompt Short` / file size / dimensions などを次回以降のNotion投入スキーマへ追加した。
 - `docs/notion-gallery-import.md` に現状DB向けのプロパティ設計、推奨ビュー、軽量ページ本文テンプレート、命名規則を追記した。
+- Notion UI上で `Images Only` Gallery viewを復旧し、page cover preview、medium cards、media fit、popup opening、`Date` desc + `Image No` asc を設定した。
+- `scripts/notion_upload_gallery.py` に既存データソース同期モードを追加し、画像本体を再アップロードせず `Source path` 照合で既存ページを更新できるようにした。
 
 ### 課題
 - setup中にtokenがチャット上で共有されたため、継続運用する場合はNotion側でtokenを再発行/rotateするのが安全。
-- 既存40件に追加プロパティを後付けで埋める既存DB同期処理は未実装。今のスクリプトは新規DB作成・新規ページ投入が主対象。
+- 既存40件への実メタデータ更新は、外部SaaSへの追加メタデータ送信として明示承認待ち。dry-runでは matched 40 / missing 0 を確認済み。
 
 ## 2026-06-16 アルバム好みフィードバック追加
 

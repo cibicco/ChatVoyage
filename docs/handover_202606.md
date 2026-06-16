@@ -18,12 +18,17 @@
 - Notion DB表示をGalleryに変更し、カードプレビューで画像が見える状態を確認。
 - ChatGPT案を現状DBに照合し、`Chat Voyage Images` を維持したまま、次回以降の投入スキーマに `Status` / `Batch ID` / `Variant` / `Theme` / `Scene` / `Prompt Short` / `Model` / `Aspect Ratio` / `File Size MB` / `Width` / `Height` を追加。
 - 新規Notionページ本文は `Prompt` / `Scene` / `Review Notes` の軽量テンプレートにした。
-- `docs/notion-gallery-import.md` に推奨ビュー、プロパティ一覧、命名規則、既存DB同期の未実装事項を追記。
+- `docs/notion-gallery-import.md` に推奨ビュー、プロパティ一覧、命名規則、既存データソース同期手順を追記。
+- Notion UIで誤ってダッシュボード/空テーブルデータソース面を開いたが、`Images Only` Gallery viewへ復旧した。
+- `Images Only` は page cover card preview、medium cards、media fit on、popup page opening、`Date` desc + `Image No` asc の並びに設定済み。
+- 既存DB同期用に `scripts/notion_upload_gallery.py` へ `--sync-existing`, `--data-source-id`, `--append-missing` を追加。既存行は `Source path` で照合する。
 
 ### 実行結果
 - Notion parent page: `Chat Voyage`
 - Notion database: `Chat Voyage Images`
 - Database ID: `381ecca2-7ba4-81b5-b327-fc2e5a8a55ac`
+- Image data source ID: `381ecca2-7ba4-8124-965d-000b2171071a`
+- Empty table data source ID created during UI exploration: `381ecca2-7ba4-8047-a3d2-000bb4298c01`
 - Uploaded rows: 40
 - Uploaded image bytes: about 8.1 MB
 - Source range: 2026-06-16 through 2026-06-09
@@ -46,11 +51,14 @@ python3 scripts/notion_upload_gallery.py --limit 40 --confirm-upload
 - `PYTHONPYCACHEPREFIX=.tmp/pycache python3 -m py_compile scripts/notion_upload_gallery.py` は成功。
 - `python3 scripts/validate_gallery.py`: `errors: 0`
 - `git diff --check`: 問題なし。
+- `python3 scripts/notion_upload_gallery.py --limit 40 --sync-existing --data-source-id 381ecca2-7ba4-8124-965d-000b2171071a`:
+  matched 40, missing 0, append_requested false.
 
 ### 注意
 - Notion token は `.notion.env` に保存し、gitignore済み。
 - token はチャット上で共有されたため、継続運用する場合はNotion側で再発行/rotateするのが安全。
-- 既存40件のNotionページに追加プロパティ値を後付けで埋める処理はまだない。次にやるなら既存DB append/update modeと、`Source path` または `Batch ID` + `Variant` による重複検出を追加する。
+- dry-run時に、足りないdata sourceプロパティ定義だけがNotionへ追加される副作用が一度発生した。スクリプトは修正済みで、以降dry-runではプロパティ追加も行わない。
+- 既存40件のNotionページへ追加プロパティ値を後付けする実更新は、外部SaaSへのメタデータ送信として承認が必要。`--confirm-upload` 付き実行はまだ未実施。
 
 ## 2026-06-16 Album preference feedback
 
