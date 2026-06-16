@@ -1,5 +1,43 @@
 # handover_202606
 
+## 2026-06-16 Album preference feedback
+
+### 背景/目的
+ユーザから「アルバムにユーザの好みフィードバックを取ってはどうか」「好みは、絵柄、人、服装、とかかな」と提案があり、アルバムを閲覧だけでなく次回生成の判断材料を集める場所として拡張した。
+
+### 判断
+- サーバ保存は導入せず、静的サイトのまま `localStorage` に画像単位の好みを保存する。
+- 画像ごとに全体評価 `Love` / `Good` / `Pass`、好み次元タグ、自由メモを保存する。
+- 好み次元は `art-style`, `person`, `outfit` を主軸にし、`color`, `silhouette`, `pose`, `place`, `vibe` を補助軸にする。
+- 将来の生成へ渡しやすいよう、アルバム全体のフィードバックを JSON export できるようにした。
+
+### 変更内容
+- `album.html` の右ペインに Preference feedback UI を追加。
+- `assets/album-page.js` に `chat-voyage-feedback-v1` localStorage 保存、サムネイル状態表示、JSON export を追加。
+- `assets/album-page.css` にフィードバックUIとサムネイル状態表示のスタイルを追加。
+- `scripts/build_album_catalog.py` を更新し、再生成してもフィードバックUIが残るようにした。
+- `scripts/validate_gallery.py` でアルバムシェルのフィードバック機能マーカーを検証するようにした。
+- `docs/daily-generation-workflow.md` と `skills/daily-fashion-sketch/SKILL.md` に、exported album preference feedback を日次生成前に確認する運用を追加した。
+- installed skill copy `/Users/allegro/.codex/skills/daily-fashion-sketch/SKILL.md` は repo copy と同期済み。
+
+### 検証
+実施済み:
+
+```sh
+python3 scripts/build_album_catalog.py
+node --check assets/album-page.js
+python3 scripts/validate_gallery.py
+git diff --check
+```
+
+結果:
+- `build_album_catalog.py`: `albums: 34`, `changed: 1`
+- `validate_gallery.py`: `daily_images: 139`, `index_figures: 139`, `legacy_album_pages: 34`, `errors: 0`
+- repo copy と installed copy の `daily-fashion-sketch/SKILL.md` は `cmp` 一致
+
+### 未実施
+- in-app browser での `file://` 実表示確認。Browser policy が `file:///Users/allegro/Applications/ChatVoyage/album.html?...` への遷移をブロックしたため、迂回せず未実施とした。
+
 ## 2026-06-16 Album product rebuild
 
 ### 背景/目的

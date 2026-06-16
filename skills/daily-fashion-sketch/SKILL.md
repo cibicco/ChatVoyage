@@ -55,6 +55,9 @@ single four-panel collage.
      as museums, art museums, galleries, clubs, live houses, theaters, cinemas,
      libraries, ateliers, sports facilities, public halls, stations, markets,
      and covered arcades when they fit the set
+   - exported album preference feedback when available, using `art-style`,
+     `person`, and `outfit` as primary preference dimensions, and `color`,
+     `silhouette`, `pose`, `place`, and `vibe` as supporting evidence
    - the variation axes across all four images
    - a recent-set repetition check using `prompts/repetition-guardrails.md`
    - the required parameter map from `prompts/parameter-checklist.md`
@@ -76,6 +79,8 @@ single four-panel collage.
     The product-facing album view is the unified `album.html` shell backed by
     `assets/album-data.js`; legacy `assets/YYYY-MM-DD-theme-album.html` files
     are compatibility redirects only.
+    If album preference feedback influenced the set, record the dimensions
+    used and whether the result was meant to preserve, vary, or avoid them.
 14. When old pages or bulk edits are involved, run
     `python3 scripts/switch_daily_refs_to_webp.py` and
     `python3 scripts/build_album_catalog.py`.

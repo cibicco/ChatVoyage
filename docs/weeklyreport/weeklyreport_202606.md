@@ -1,5 +1,25 @@
 # weeklyreport_202606
 
+## 2026-06-16 アルバム好みフィードバック追加
+
+### 背景/目的
+アルバムを閲覧するだけでなく、次回生成へ反映できるユーザの好みを画像単位で残せるようにした。好みの主軸はユーザ指摘に合わせて、絵柄・人・服装に置いた。
+
+### 成果
+- 単一アルバムビューアに `Love` / `Good` / `Pass` の評価、好み次元タグ、自由メモを追加した。
+- 好みタグは `art-style`, `person`, `outfit` を主軸にし、`color`, `silhouette`, `pose`, `place`, `vibe` を補助軸にした。
+- フィードバックは `localStorage` の `chat-voyage-feedback-v1` に保存し、JSONとして export できるようにした。
+- サムネイルにフィードバック済み状態を表示し、見返し時にどの画像へ反応を残したか分かるようにした。
+- 日次生成 workflow と `daily-fashion-sketch` skill に、exported album preference feedback を参照する運用を追加した。
+
+### 検証
+- `node --check assets/album-page.js`
+- `python3 scripts/validate_gallery.py`: `errors: 0`
+- `git diff --check`
+
+### 課題
+- in-app browser の `file://` 遷移が Browser policy でブロックされたため、実ブラウザでのクリック保存確認は未実施。
+
 ## 2026-06-16 アルバム体験の再設計
 
 ### 背景/目的

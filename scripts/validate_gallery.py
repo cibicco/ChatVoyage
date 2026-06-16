@@ -203,6 +203,10 @@ def validate() -> list[str]:
                 'data-stage-image',
                 'data-thumbnail-strip',
                 'data-image-grid',
+                'data-feedback-export',
+                'data-feedback-score',
+                'data-feedback-tag',
+                'data-feedback-note',
             ]
             for feature in required_album_page_features:
                 if feature not in text:

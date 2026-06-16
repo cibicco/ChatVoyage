@@ -35,7 +35,10 @@ select {
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
@@ -78,12 +81,16 @@ button:focus-visible {
 
 .album-tools {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
   justify-content: flex-end;
   margin: -6px 0 18px;
 }
 
 .album-select-field {
   display: grid;
+  flex: 0 1 520px;
   gap: 5px;
   width: min(100%, 520px);
   color: var(--muted);
@@ -103,6 +110,18 @@ button:focus-visible {
   font-weight: 520;
   text-transform: none;
   padding: 8px 10px;
+}
+
+.feedback-export {
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 .eyebrow {
@@ -308,6 +327,135 @@ dd {
   font-size: 0.88rem;
 }
 
+.feedback-panel {
+  display: grid;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.feedback-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.feedback-heading h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.feedback-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.feedback-score {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.feedback-score button {
+  min-width: 0;
+  min-height: 34px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 0.88rem;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.feedback-score button:last-child {
+  border-right: 0;
+}
+
+.feedback-score button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 760;
+}
+
+.feedback-tags {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 8px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.feedback-tags legend,
+.feedback-note span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.feedback-tags legend {
+  margin-bottom: 4px;
+}
+
+.feedback-tags label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+  min-height: 28px;
+  color: var(--ink);
+  font-size: 0.88rem;
+}
+
+.feedback-tags input {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  accent-color: var(--accent);
+}
+
+.feedback-note {
+  display: grid;
+  gap: 5px;
+}
+
+.feedback-note textarea {
+  width: 100%;
+  min-height: 70px;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 8px 10px;
+}
+
+.feedback-reset {
+  justify-self: start;
+  min-height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 0.86rem;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
 .thumbnail-strip {
   display: flex;
   gap: 10px;
@@ -317,6 +465,7 @@ dd {
 }
 
 .thumbnail {
+  position: relative;
   display: grid;
   grid-template-columns: 54px minmax(2.2em, auto);
   gap: 8px;
@@ -335,6 +484,30 @@ dd {
   border-color: var(--accent-strong);
   box-shadow: 0 0 0 2px rgba(17, 105, 119, 0.18);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.thumbnail.has-feedback::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #63717c;
+  box-shadow: 0 0 0 2px var(--panel);
+}
+
+.thumbnail[data-feedback-state="love"]::after {
+  background: #bf4c43;
+}
+
+.thumbnail[data-feedback-state="like"]::after {
+  background: var(--accent);
+}
+
+.thumbnail[data-feedback-state="pass"]::after {
+  background: #7a6a41;
 }
 
 .thumbnail img {
@@ -441,6 +614,15 @@ figcaption {
 
   .site-nav {
     margin-bottom: 16px;
+  }
+
+  .album-tools {
+    justify-content: stretch;
+  }
+
+  .album-select-field,
+  .feedback-export {
+    width: 100%;
   }
 
   .album-stats {

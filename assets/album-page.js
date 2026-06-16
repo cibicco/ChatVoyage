@@ -1,4 +1,7 @@
 (() => {
+  const FEEDBACK_STORAGE_KEY = "chat-voyage-feedback-v1";
+  const SCORE_VALUES = new Set(["love", "like", "pass"]);
+
   const albums = window.CHAT_VOYAGE_ALBUMS || [];
   const root = document.querySelector("[data-album-viewer]");
   if (!root || !albums.length) return;
@@ -32,11 +35,20 @@
   const next = root.querySelector("[data-album-next]");
   const previousAlbum = root.querySelector("[data-prev-album]");
   const nextAlbum = root.querySelector("[data-next-album]");
+  const exportFeedbackButton = document.querySelector("[data-feedback-export]");
+  const feedbackStatus = root.querySelector("[data-feedback-status]");
+  const scoreButtons = Array.from(root.querySelectorAll("[data-feedback-score]"));
+  const tagInputs = Array.from(root.querySelectorAll("[data-feedback-tag]"));
+  const noteInput = root.querySelector("[data-feedback-note]");
+  const resetFeedbackButton = root.querySelector("[data-feedback-reset]");
+  let feedbackStorageMode = "local";
+  let feedbackStore = readFeedbackStore();
 
   hydrateHeader();
   renderThumbnails();
   renderGrid();
   renderNeighbors();
+  bindFeedbackControls();
   setActive(active);
   syncCanonicalUrl();
 
@@ -101,6 +113,7 @@
 
       button.append(img, label);
       button.addEventListener("click", () => setActive(index));
+      applyFeedbackState(button, image);
       thumbnailStrip.appendChild(button);
     });
   }
@@ -171,6 +184,203 @@
       thumb.setAttribute("aria-pressed", String(thumbIndex === active));
       if (thumbIndex === active && focusThumb) focusWithoutScroll(thumb);
     });
+    renderFeedback();
+  }
+
+  function bindFeedbackControls() {
+    scoreButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", "false");
+      button.addEventListener("click", () => {
+        const score = button.dataset.feedbackScore || "";
+        const currentFeedback = getCurrentFeedback();
+        updateCurrentFeedback({
+          score: currentFeedback.score === score ? "" : score,
+        });
+      });
+    });
+
+    tagInputs.forEach((input) => {
+      input.addEventListener("change", () => {
+        const currentFeedback = getCurrentFeedback();
+        const tags = new Set(currentFeedback.tags);
+        if (input.checked) tags.add(input.value);
+        else tags.delete(input.value);
+        updateCurrentFeedback({ tags: Array.from(tags).sort() });
+      });
+    });
+
+    noteInput?.addEventListener("input", () => {
+      updateCurrentFeedback({ note: noteInput.value }, false);
+    });
+
+    resetFeedbackButton?.addEventListener("click", () => {
+      const key = getCurrentFeedbackKey();
+      if (!key) return;
+      const nextStore = { ...feedbackStore };
+      delete nextStore[key];
+      writeFeedbackStore(nextStore);
+      renderFeedback();
+      renderFeedbackIndicators();
+    });
+
+    exportFeedbackButton?.addEventListener("click", exportFeedback);
+  }
+
+  function getCurrentFeedbackKey() {
+    const image = images[active];
+    return image ? getFeedbackKey(album, image) : "";
+  }
+
+  function getFeedbackKey(item, image) {
+    return `${item.slug}/${image.src}`;
+  }
+
+  function getCurrentFeedback() {
+    return normalizeFeedback(feedbackStore[getCurrentFeedbackKey()]);
+  }
+
+  function updateCurrentFeedback(updates, rerender = true) {
+    const key = getCurrentFeedbackKey();
+    if (!key) return;
+    const nextFeedback = normalizeFeedback({
+      ...getCurrentFeedback(),
+      ...updates,
+      updatedAt: new Date().toISOString(),
+    });
+    const nextStore = { ...feedbackStore };
+    if (hasFeedback(nextFeedback)) nextStore[key] = nextFeedback;
+    else delete nextStore[key];
+    writeFeedbackStore(nextStore);
+    if (rerender) renderFeedback();
+    else renderFeedbackStatus(nextFeedback);
+    renderFeedbackIndicators();
+  }
+
+  function renderFeedback() {
+    const feedback = getCurrentFeedback();
+    scoreButtons.forEach((button) => {
+      const selected = button.dataset.feedbackScore === feedback.score;
+      button.setAttribute("aria-pressed", String(selected));
+    });
+    tagInputs.forEach((input) => {
+      input.checked = feedback.tags.includes(input.value);
+    });
+    if (noteInput && noteInput.value !== feedback.note) {
+      noteInput.value = feedback.note;
+    }
+    renderFeedbackStatus(feedback);
+  }
+
+  function renderFeedbackStatus(feedback) {
+    if (!feedbackStatus) return;
+    if (!hasFeedback(feedback)) {
+      feedbackStatus.textContent = "Not saved";
+      return;
+    }
+    feedbackStatus.textContent = feedbackStorageMode === "local" ? "Saved locally" : "Saved for this tab";
+  }
+
+  function renderFeedbackIndicators() {
+    thumbnailStrip.querySelectorAll("[data-album-thumb]").forEach((thumb, index) => {
+      applyFeedbackState(thumb, images[index]);
+    });
+  }
+
+  function applyFeedbackState(element, image) {
+    const feedback = normalizeFeedback(feedbackStore[getFeedbackKey(album, image)]);
+    const activeFeedback = hasFeedback(feedback);
+    element.classList.toggle("has-feedback", activeFeedback);
+    if (feedback.score) element.dataset.feedbackState = feedback.score;
+    else delete element.dataset.feedbackState;
+  }
+
+  function normalizeFeedback(value) {
+    const feedback = value && typeof value === "object" ? value : {};
+    const score = SCORE_VALUES.has(feedback.score) ? feedback.score : "";
+    const allowedTags = new Set(tagInputs.map((input) => input.value));
+    const tags = Array.isArray(feedback.tags)
+      ? feedback.tags.filter((tag) => allowedTags.has(tag)).sort()
+      : [];
+    const note = typeof feedback.note === "string" ? feedback.note : "";
+    const updatedAt = typeof feedback.updatedAt === "string" ? feedback.updatedAt : "";
+    return { score, tags, note, updatedAt };
+  }
+
+  function hasFeedback(feedback) {
+    return Boolean(feedback.score || feedback.tags.length || feedback.note.trim());
+  }
+
+  function readFeedbackStore() {
+    try {
+      const raw = window.localStorage?.getItem(FEEDBACK_STORAGE_KEY);
+      if (!raw) return {};
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === "object" ? parsed : {};
+    } catch {
+      feedbackStorageMode = "memory";
+      return {};
+    }
+  }
+
+  function writeFeedbackStore(nextStore) {
+    feedbackStore = nextStore;
+    try {
+      window.localStorage?.setItem(FEEDBACK_STORAGE_KEY, JSON.stringify(nextStore));
+      feedbackStorageMode = "local";
+    } catch {
+      feedbackStorageMode = "memory";
+    }
+  }
+
+  function exportFeedback() {
+    const entries = Object.entries(feedbackStore)
+      .map(([key, value]) => {
+        const feedback = normalizeFeedback(value);
+        if (!hasFeedback(feedback)) return null;
+        const found = findImageByFeedbackKey(key);
+        return {
+          key,
+          albumSlug: found.album?.slug || key.split("/")[0] || "",
+          albumTitle: found.album?.title || "",
+          imageIndex: found.index >= 0 ? found.index + 1 : null,
+          imageSrc: found.image?.src || "",
+          imageTitle: found.image?.title || "",
+          imageAge: found.image?.age || "",
+          imageCategory: found.image?.category || "",
+          imageStyle: found.image?.style || "",
+          imagePlace: found.image?.place || "",
+          ...feedback,
+        };
+      })
+      .filter(Boolean);
+
+    const payload = {
+      version: 1,
+      source: "Chat Voyage album",
+      exportedAt: new Date().toISOString(),
+      storageKey: FEEDBACK_STORAGE_KEY,
+      entryCount: entries.length,
+      entries,
+    };
+
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `chat-voyage-feedback-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 0);
+  }
+
+  function findImageByFeedbackKey(key) {
+    for (const item of albums) {
+      const albumImages = item.images || [];
+      const index = albumImages.findIndex((image) => getFeedbackKey(item, image) === key);
+      if (index >= 0) return { album: item, image: albumImages[index], index };
+    }
+    return { album: null, image: null, index: -1 };
   }
 
   function createCaption(image) {

@@ -19,6 +19,7 @@
         <span>Album</span>
         <select id="album-select"></select>
       </label>
+      <button class="feedback-export" type="button" data-feedback-export>Export feedback</button>
     </div>
     <p class="eyebrow">Chat Voyage Album</p>
     <div class="title-block">
@@ -52,6 +53,33 @@
           <a data-prev-album href="#"></a>
           <a data-next-album href="#"></a>
         </div>
+        <section class="feedback-panel" data-feedback aria-label="Preference feedback">
+          <div class="feedback-heading">
+            <h2>Preference</h2>
+            <p data-feedback-status>Not saved</p>
+          </div>
+          <div class="feedback-score" role="group" aria-label="Image preference">
+            <button type="button" data-feedback-score="love">Love</button>
+            <button type="button" data-feedback-score="like">Good</button>
+            <button type="button" data-feedback-score="pass">Pass</button>
+          </div>
+          <fieldset class="feedback-tags">
+            <legend>Dimension</legend>
+            <label><input type="checkbox" value="art-style" data-feedback-tag> Art style</label>
+            <label><input type="checkbox" value="person" data-feedback-tag> Person</label>
+            <label><input type="checkbox" value="outfit" data-feedback-tag> Outfit</label>
+            <label><input type="checkbox" value="color" data-feedback-tag> Color</label>
+            <label><input type="checkbox" value="silhouette" data-feedback-tag> Silhouette</label>
+            <label><input type="checkbox" value="pose" data-feedback-tag> Pose</label>
+            <label><input type="checkbox" value="place" data-feedback-tag> Place</label>
+            <label><input type="checkbox" value="vibe" data-feedback-tag> Vibe</label>
+          </fieldset>
+          <label class="feedback-note">
+            <span>Note</span>
+            <textarea rows="3" data-feedback-note></textarea>
+          </label>
+          <button class="feedback-reset" type="button" data-feedback-reset>Clear image</button>
+        </section>
       </aside>
     </section>
 

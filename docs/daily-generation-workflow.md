@@ -20,6 +20,9 @@ Use this checklist after every daily image generation or reorganization.
 - Scan the last three to five daily notes or monthly log entries and write down
   repeated category, pose, garment, background, crop, and lucky-color placement
   formulas before choosing the new set.
+- Check exported album preference feedback when available. Treat `art-style`,
+  `person`, and `outfit` as the primary preference dimensions, with `color`,
+  `silhouette`, `pose`, `place`, and `vibe` as supporting evidence.
 - Decide climate fit from city, season, time of day, weather, temperature band,
   humidity, indoor/outdoor conditions, wind or air conditioning, rain intensity,
   venue norms, and activity. Do not default to one warm-weather formula.
@@ -66,6 +69,8 @@ Use this checklist after every daily image generation or reorganization.
   reason, climate context, age-band life scene, age-band silhouette, and the
   anti-repeat instruction for each accepted image.
 - Record the persona direction and fashion focal point for each accepted image.
+- If album feedback influenced the set, record which preference dimensions were
+  used and whether the result was meant to preserve, vary, or avoid them.
 - Add the set to `index.html` with an `album.html?set=YYYY-MM-DD-theme`
   album link. The product-facing album view is the unified `album.html` shell
   backed by `assets/album-data.js`, not a separate full HTML page per set.
