@@ -1,5 +1,47 @@
 # handover_202606
 
+## 2026-06-16 Notion gallery trial
+
+### 背景/目的
+ユーザから「今のアルバムにこだわりはない」「Notionでもよいのでは」と相談があり、Notionを閲覧用データベースとして試験投入した。
+
+### 判断
+- 粒度は画像1枚 = Notion 1レコード。
+- 初回対象は最新10セット、合計40枚。
+- Notion内の親ページ `Chat Voyage` に `mcp` connection を追加し、APIからDBを作成した。
+
+### 変更内容
+- `.gitignore` に `.notion.env` と `.tmp/` を追加。
+- `.notion.env.example` を追加。
+- `scripts/notion_upload_gallery.py` を追加。dry-run既定で、`--confirm-upload` のときだけNotionへ送信する。
+- `docs/notion-gallery-import.md` を追加。設定手順、dry-run、upload手順、試験結果を記録。
+
+### 実行結果
+- Notion parent page: `Chat Voyage`
+- Notion database: `Chat Voyage Images`
+- Database ID: `381ecca2-7ba4-81b5-b327-fc2e5a8a55ac`
+- Uploaded rows: 40
+- Uploaded image bytes: about 8.1 MB
+- Source range: 2026-06-16 through 2026-06-09
+
+### 検証
+実施済み:
+
+```sh
+PYTHONPYCACHEPREFIX=.tmp/pycache python3 -m py_compile scripts/notion_upload_gallery.py
+python3 scripts/notion_upload_gallery.py --limit 40
+python3 scripts/notion_upload_gallery.py --limit 40 --confirm-upload
+```
+
+結果:
+- dry-run は40件を選択し、合計約8.1MBと表示。
+- upload は `done: uploaded 40 images to Notion database 'Chat Voyage Images'` で完了。
+- in-app browser で `Chat Voyage Images` database を開き、行とプロパティが表示されることを確認。
+
+### 注意
+- Notion token は `.notion.env` に保存し、gitignore済み。
+- token はチャット上で共有されたため、継続運用する場合はNotion側で再発行/rotateするのが安全。
+
 ## 2026-06-16 Album preference feedback
 
 ### 背景/目的

@@ -1,5 +1,20 @@
 # weeklyreport_202606
 
+## 2026-06-16 Notion閲覧DB試験
+
+### 背景/目的
+既存アルバムUIにこだわらず、Notionを画像閲覧・好み記録用のデータベースとして使えるか試した。
+
+### 成果
+- Notionに親ページ `Chat Voyage` を作成し、`mcp` connection を追加した。
+- `Chat Voyage Images` database をAPIで作成した。
+- 最新10セット、合計40枚のWebP画像とメタデータをNotionへ投入した。
+- `scripts/notion_upload_gallery.py` を追加し、dry-run既定、`--confirm-upload` 時のみ外部送信する形にした。
+- in-app browser でNotion databaseの表示を確認した。
+
+### 課題
+- setup中にtokenがチャット上で共有されたため、継続運用する場合はNotion側でtokenを再発行/rotateするのが安全。
+
 ## 2026-06-16 アルバム好みフィードバック追加
 
 ### 背景/目的
