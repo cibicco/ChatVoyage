@@ -1,6 +1,14 @@
 # Notion Gallery Import
 
 This workflow uploads a small Chat Voyage sample to a private Notion database.
+It was a trial and is no longer the primary Chat Voyage publishing path.
+
+## Current Decision
+
+Notion is not the main Chat Voyage viewing or review surface. Keep this document
+as a record of the trial and as a reference only if Notion is revisited later.
+Use the static album site, preferably published through GitHub Pages, as the
+primary browsing surface.
 
 ## Scope
 

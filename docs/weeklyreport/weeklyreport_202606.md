@@ -5,6 +5,9 @@
 ### 背景/目的
 既存アルバムUIにこだわらず、Notionを画像閲覧・好み記録用のデータベースとして使えるか試した。
 
+### 2026-06-17 判断更新
+Notionは運用本線から外す。画像閲覧は既存の静的アルバムUIをGitHub Pages等で公開する方針に寄せる。Notion試験の成果物は記録として残すが、日次運用では使わない。
+
 ### 成果
 - Notionに親ページ `Chat Voyage` を作成し、`mcp` connection を追加した。
 - `Chat Voyage Images` database をAPIで作成した。
@@ -20,6 +23,16 @@
 ### 課題
 - setup中にtokenがチャット上で共有されたため、継続運用する場合はNotion側でtokenを再発行/rotateするのが安全。
 - 既存40件への実メタデータ更新は、外部SaaSへの追加メタデータ送信として明示承認待ち。dry-runでは matched 40 / missing 0 を確認済み。
+- Notion継続をやめるため、既存40件への実メタデータ更新は行わない。
+
+## 2026-06-17 GitHub Pages方針
+
+### 背景/目的
+Notionは画像管理DBとして試したが、Chat Voyageの既存静的アルバムUIを活かす方が素直と判断した。
+
+### 成果
+- `docs/github-pages-workflow.md` を追加し、Pagesを閲覧面、repoを正本、localStorageを軽い個人フィードバックとして扱う方針を記録した。
+- 現在の容量は `assets/` 約30MB、`assets/daily/` 約29MBで、静的公開には十分小さいことを確認した。
 
 ## 2026-06-16 アルバム好みフィードバック追加
 

@@ -5,6 +5,9 @@
 ### 背景/目的
 ユーザから「今のアルバムにこだわりはない」「Notionでもよいのでは」と相談があり、Notionを閲覧用データベースとして試験投入した。
 
+### 2026-06-17 判断更新
+ユーザ判断によりNotion運用は中止。以後の主導線は既存の静的アルバムUIをGitHub Pages等で公開する方向に寄せる。Notion関連スクリプトと文書は試験記録として残すが、日次運用の本線ではない。
+
 ### 判断
 - 粒度は画像1枚 = Notion 1レコード。
 - 初回対象は最新10セット、合計40枚。
@@ -58,7 +61,22 @@ python3 scripts/notion_upload_gallery.py --limit 40 --confirm-upload
 - Notion token は `.notion.env` に保存し、gitignore済み。
 - token はチャット上で共有されたため、継続運用する場合はNotion側で再発行/rotateするのが安全。
 - dry-run時に、足りないdata sourceプロパティ定義だけがNotionへ追加される副作用が一度発生した。スクリプトは修正済みで、以降dry-runではプロパティ追加も行わない。
-- 既存40件のNotionページへ追加プロパティ値を後付けする実更新は、外部SaaSへのメタデータ送信として承認が必要。`--confirm-upload` 付き実行はまだ未実施。
+- 既存40件のNotionページへ追加プロパティ値を後付けする実更新は未実施。Notion運用中止により実行しない。
+
+## 2026-06-17 GitHub Pages publishing direction
+
+### 背景/目的
+NotionはレビューDBとして試したが、既存の `index.html` / `albums.html` / `album.html` / WebP / CSS / JS をそのまま静的サイトとして見せる方がChat Voyageには合うと判断した。
+
+### 変更内容
+- `docs/github-pages-workflow.md` を追加。
+- GitHub Pagesを閲覧面、repositoryを正本、album UIのlocalStorage feedbackを軽い個人レビューとして扱う方針を記録。
+- `assets/` 約30MB、`assets/daily/` 約29MBを確認。
+
+### 次にやるなら
+- GitHub remote / repository visibility / Pages公開元を確認。
+- Pagesを有効化し、`/index.html`, `/albums.html`, `/album.html?set=...` の実表示を確認。
+- 公開範囲が問題ないか確認。public Pagesなら画像も公開扱い。
 
 ## 2026-06-16 Album preference feedback
 
