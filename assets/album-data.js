@@ -1,6 +1,79 @@
 window.CHAT_VOYAGE_ALBUMS = [
   {
     "categories": [
+      "ceremony",
+      "dance",
+      "date",
+      "weekend"
+    ],
+    "date": "2026-06-17",
+    "href": "album.html?set=2026-06-17-barcelona-citrus-coral-city-day",
+    "imageCount": 4,
+    "images": [
+      {
+        "age": "18-19-adult",
+        "alt": "Adult 18-19 Barcelona El Born weekend look with citrus-coral polo, wrap mini skirt, ankle socks, and sneakers",
+        "category": "weekend",
+        "label": "01",
+        "place": "barcelona",
+        "src": "assets/daily/2026-06-17-barcelona-citrus-coral-city-day/01-weekend-el-born-coral-polo-anime.webp",
+        "style": "anime-editorial",
+        "tags": "Anime / Barcelona / weekend / 18-19-adult",
+        "title": "01 Weekend El Born coral polo"
+      },
+      {
+        "age": "25-29",
+        "alt": "Adult late 20s Barcelona Sant Pau ceremony look with sleeveless ivory waistcoat dress, coral slingback pumps, and ceramic cuff",
+        "category": "ceremony",
+        "label": "02",
+        "place": "barcelona",
+        "src": "assets/daily/2026-06-17-barcelona-citrus-coral-city-day/02-ceremony-sant-pau-waistcoat-runway.webp",
+        "style": "runway-board-illustration",
+        "tags": "Runway Board / Barcelona / ceremony / 25-29",
+        "title": "02 Ceremony Sant Pau waistcoat"
+      },
+      {
+        "age": "20-24",
+        "alt": "Adult early 20s Barcelona Gracia rooftop date look with one-shoulder top, coral scarf belt, wrap mini skirt, sheer knee-highs, and summer boots",
+        "category": "date",
+        "label": "03",
+        "place": "barcelona",
+        "src": "assets/daily/2026-06-17-barcelona-citrus-coral-city-day/03-date-gracia-rooftop-wrap-skirt-soft-real.webp",
+        "style": "soft-real-fashion-art",
+        "tags": "Soft Real Art / Barcelona / date / 20-24",
+        "title": "03 Date Gracia rooftop wrap skirt"
+      },
+      {
+        "age": "20-24",
+        "alt": "Adult early 20s Barcelona Poble-sec dance rehearsal look with coral mesh wrap top, cropped trousers, wrap panel, knee socks, and dance sneakers",
+        "category": "dance",
+        "label": "04",
+        "place": "barcelona",
+        "src": "assets/daily/2026-06-17-barcelona-citrus-coral-city-day/04-dance-poble-sec-wrap-trouser-3d.webp",
+        "style": "game-cinematic-3d",
+        "tags": "Game Cinematic 3D / Barcelona / dance / 20-24",
+        "title": "04 Dance Poble-sec wrap trouser"
+      }
+    ],
+    "legacyHref": "assets/2026-06-17-barcelona-citrus-coral-city-day-album.html",
+    "month": "2026-06",
+    "notesHref": "notes/2026-06-17-barcelona-citrus-coral-city-day.md",
+    "places": [
+      "barcelona"
+    ],
+    "shortTitle": "Barcelona Citrus Coral City Day",
+    "slug": "2026-06-17-barcelona-citrus-coral-city-day",
+    "styles": [
+      "anime-editorial",
+      "game-cinematic-3d",
+      "runway-board-illustration",
+      "soft-real-fashion-art"
+    ],
+    "summary": "Barcelona city-day set across El Born, Hospital de Sant Pau, a Gracia rooftop terrace, and a Poble-sec dance studio.",
+    "title": "2026-06-17 Barcelona Citrus Coral City Day"
+  },
+  {
+    "categories": [
       "home",
       "outerwear",
       "swim",

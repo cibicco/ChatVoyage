@@ -2528,3 +2528,117 @@ accidental jump.
 ### Generation Notes
 
 This run applies the 6/11 critique directly: ordinary exposure is not rejected by itself, but every open or covered garment is checked against place, weather, activity, age-band life context, and styling intent. The strongest correction is image 04's water-edge action, which is designed as a readable controlled step rather than an ambiguous leap.
+
+## 2026-06-17 Barcelona Citrus Coral City Day
+
+- Images: 4 final images
+- Generated on: 2026-06-17, Asia/Tokyo
+- Saved in: `assets/daily/2026-06-17-barcelona-citrus-coral-city-day/`
+- Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept. Original generated PNGs remain under `$CODEX_HOME/generated_images/`.
+- Album: `album.html?set=2026-06-17-barcelona-citrus-coral-city-day`
+- Note: `notes/2026-06-17-barcelona-citrus-coral-city-day.md`
+- City / place language: Barcelona, specifically El Born / Santa Caterina roofline, Hospital de Sant Pau, a Gracia rooftop terrace, and a Poble-sec dance rehearsal studio
+- Local activity space plan: warm city walk, daytime ceremony/reception, blue-hour rooftop date, and open-window dance rehearsal
+- Common mood: dry warm stone, tiled shade, modernist courtyard light, blue-hour terrace air, and rehearsal movement
+- Lucky color: citrus coral
+- Lucky color age tone: clear sporty coral for `18-19-adult`, brighter satin/mesh coral for `20-24`, and polished ceramic/shoe coral for `25-29`
+- Climate fit: live weather lookup did not return data. The set uses Barcelona mid-June seasonal logic: strong sun, shaded streets, warm evening terrace air, and cooler interiors.
+- Categories: `weekend`, `ceremony`, `date`, `dance`
+- Age bands: `18-19-adult`, `25-29`, `20-24`, `20-24`
+- Persona direction: fashion-aware adult women whose styling is grounded in place, activity, material, movement, and personal taste rather than in exposure or coverage correction
+- Skin/coverage comfort plan: short hems, open shoulders, sheer socks, and mesh are accepted only where the city, venue, weather logic, and activity support them; warm-weather looks are not converted into forced high-neck or heavy layering
+- Pose families: `using-object`, `walking-stride`, `leaning-wall`, `dance-motion`
+- Style presets: `anime-editorial`, `runway-board-illustration`, `soft-real-fashion-art`, `game-cinematic-3d`
+- Source scan / reference note: workspace reference files named by the skill were not present. Live weather lookup did not return data. Web fashion/source scan was not used; repo presets, recent notes/logs, and repetition critiques were used.
+- Recent set scan: Busan used coastal rain/water and `outerwear` / `theater` / `home` / `swim`; Berlin used culture/work/night movement; Melbourne used winter layers. This set avoids the market/gallery/lounge/transit quartet and the tank/open-shirt/skort/sandal formula.
+- Cooldown formulas: market crouch plus object inspection; tank plus open shirt plus skort plus sandals; seated camisole lounge; open-back gallery over-shoulder crop; unclear ferry/water-edge jump; wet reflection as the only location signal
+- Hem / legwear / footwear plan: wrap mini with safety shorts and sneakers; waistcoat dress with sheer knee-highs and slingback pumps; mini wrap skirt with smoky knee-highs and perforated summer boots; cropped dance trousers with wrap panel, knee socks, and split-sole sneakers
+- Category rotation reason: `weekend`, `ceremony`, `date`, and `dance` provide a practical daytime anchor, formal/social anchor, romantic/social night anchor, and movement anchor without repeating the last two daily category mixes
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-weekend-el-born-coral-polo-anime.webp`
+  - Source file: `ig_0a3c8a2119ff5cb5016a31c74decd481919f4181d593f6f4d5.png`
+  - Rejected candidate: `ig_0a3c8a2119ff5cb5016a31c57452f48191b086e4b14edaaf02.png` because it was too photo-adjacent for the requested anime-editorial style
+  - Primary category: `weekend`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-editorial`
+  - Secondary tags: `weekend`, `barcelona`, `el-born`, `santa-caterina`, `wrap-mini`, `safety-shorts`, `sneakers`, `citrus-coral`
+  - Place: El Born pedestrian street near the Santa Caterina roofline
+  - Person: adult Japanese-centered 18-19 woman, warm city-walk traveler
+  - Persona traits: bright, playful, sociable, fashion-aware
+  - Fashion: cropped citrus-coral football-knit polo, white cotton wrap mini, black safety shorts visible through movement, sheer ankle socks, off-white sneakers, bead hair clip, compact pouch
+  - Fashion focal point: sporty coral top plus wrap-mini construction with socks and sneakers
+  - Lucky color tone for age: clear sporty coral in the polo, fan, sock edge, and accessories
+  - Skin/coverage comfort: short hem and bare legs are natural for a warm shaded city walk and are supported by adult context, safety shorts, and practical sneakers
+  - Comfort naturalness: breathable cotton/knit, fan, pouch, and walking shoes fit the place and activity
+  - Avoid recent formula: not tank plus open shirt plus skort plus sandals, not market crouch, not school-uniform-coded
+  - Pose family: `using-object`; face left; body three-quarter; full-body
+  - Visual check: stronger 2D illustration style, El Born / Santa Caterina roofline cue, fan, wrap mini, socks, sneakers, and coral placement are readable.
+  - Result: accepted after one style-focused regeneration.
+- `02-ceremony-sant-pau-waistcoat-runway.webp`
+  - Source file: `ig_0a3c8a2119ff5cb5016a31c5d347948191a8f0fe2fd5b105f8.png`
+  - Primary category: `ceremony`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `ceremony`, `barcelona`, `sant-pau`, `waistcoat-dress`, `sheer-knee-highs`, `slingback-pumps`, `citrus-coral`
+  - Place: Hospital de Sant Pau modernist courtyard
+  - Person: adult Japanese-centered late-20s woman, reception guest
+  - Persona traits: self-possessed, elegant, sociable, fashion-critical
+  - Fashion: sleeveless ivory linen waistcoat dress, carried lightweight bolero, sheer knee-high socks, low citrus-coral slingback pumps, coral ceramic cuff, cream clutch
+  - Fashion focal point: waistcoat-dress tailoring with coral slingbacks and ceramic cuff
+  - Lucky color tone for age: polished coral in slingback pumps and ceramic jewelry
+  - Skin/coverage comfort: sleeveless linen and carried bolero fit a warm courtyard and cooler interior without forcing high-neck coverage
+  - Comfort naturalness: low heels, clutch, and carried layer support a reception walk across stone and tile
+  - Avoid recent formula: not generic hotel formalwear, not heavy winter shoes, not over-covered guardrail styling
+  - Pose family: `walking-stride`; face camera; body right-profile; full-body
+  - Visual check: modernist courtyard, waistcoat dress, carried bolero, coral shoes, and ceremony polish are readable.
+  - Result: accepted.
+- `03-date-gracia-rooftop-wrap-skirt-soft-real.webp`
+  - Source file: `ig_0a3c8a2119ff5cb5016a31c649886881919057bb75fa12f3a0.png`
+  - Primary category: `date`
+  - Target age band: `20-24`
+  - Style family: `semi-real-digital`
+  - Style preset: `soft-real-fashion-art`
+  - Secondary tags: `date`, `barcelona`, `gracia`, `rooftop`, `one-shoulder`, `wrap-mini`, `knee-highs`, `summer-boots`, `citrus-coral`
+  - Place: Gracia neighborhood rooftop terrace at blue hour
+  - Person: adult Japanese-centered early-20s woman, rooftop date before dinner
+  - Persona traits: curious, personable, mischievous, quietly sensual, fashion-aware
+  - Fashion: one-shoulder black rib knit top with opaque lining, citrus-coral satin scarf belt, charcoal mini wrap skirt, matte bike shorts, sheer smoky knee-high socks, perforated dark summer ankle boots, woven shoulder bag
+  - Fashion focal point: one-shoulder top with coral scarf belt, wrap mini, knee-highs, and summer boots
+  - Lucky color tone for age: bright satin coral tied at the hip
+  - Skin/coverage comfort: open shoulder, short hem, and sheer socks fit a warm terrace and stair movement; perforated boots are chosen as summer footwear, not winter bulk
+  - Comfort naturalness: rooftop date, tiled parapet, bag, and low boots support the social scene and mobility
+  - Avoid recent formula: not satin camisole lounge, not seated looking down, not generic bar
+  - Pose family: `leaning-wall`; face over-shoulder; body back-three-quarter; knee-up/full-body
+  - Visual check: rooftop terrace, over-shoulder pose, scarf belt, wrap skirt, knee-highs, and summer boots are readable.
+  - Result: accepted.
+- `04-dance-poble-sec-wrap-trouser-3d.webp`
+  - Source file: `ig_0a3c8a2119ff5cb5016a31c7d2560c8191b925b9c568a2fe76.png`
+  - Rejected candidate: `ig_0a3c8a2119ff5cb5016a31c6cf64c481918a761fa871e81fe5.png` because it was too photo-adjacent and less clearly stylized/PBR
+  - Primary category: `dance`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `game-cinematic-3d`
+  - Secondary tags: `dance`, `barcelona`, `poble-sec`, `rehearsal`, `mesh-wrap-top`, `wrap-trouser`, `knee-socks`, `dance-sneakers`, `citrus-coral`
+  - Place: Poble-sec dance rehearsal studio near Montjuic
+  - Person: adult Japanese-centered early-20s woman, open-window rehearsal participant
+  - Persona traits: lively, daring, relaxed, self-possessed, fashion-aware
+  - Fashion: citrus-coral stretch mesh wrap top over opaque black bandeau, slate-blue cropped dance trousers, asymmetric wrap skirt panel, ribbed coral knee socks, black split-sole dance sneakers, silver hoops, coral hair cord
+  - Fashion focal point: mesh wrap top and asymmetric dance-trouser panel with coral knee socks
+  - Lucky color tone for age: bright coral in mesh, socks, and hair cord
+  - Skin/coverage comfort: mesh and open midriff are natural for warm rehearsal movement and are supported by opaque lining, trousers, socks, and dance sneakers
+  - Comfort naturalness: fan, open windows, planted foot, and split-sole sneakers support the rehearsal setting
+  - Avoid recent formula: not club DJ, not lounge pose, not swim, not extra-limb dance blur
+  - Pose family: `dance-motion`; face down-right; body front three-quarter; wide-action
+  - Movement readability: one foot planted, one knee lifted, and arms curved for balance make the turn legible.
+  - Visual check: rehearsal room, fan/open-window feel, dance motion, wrap panel, knee socks, and split-sole sneakers are readable. The accepted image still has some photographic finish, but it is more stylized/PBR than the first candidate and keeps body construction coherent.
+  - Result: accepted after one style-focused regeneration.
+
+### Generation Notes
+
+This run continues the correction away from exposure-based pass/fail language. The strongest practical distinction is that each image has a different life scene and silhouette: weekend walk, ceremony, rooftop date, and dance rehearsal. The 18-19-adult image allows a short skirt because the adult context, walking activity, safety shorts, and practical shoes are legible; it is not treated as either inherently good or inherently suspect.
