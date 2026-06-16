@@ -15,6 +15,10 @@
 - `.notion.env.example` を追加。
 - `scripts/notion_upload_gallery.py` を追加。dry-run既定で、`--confirm-upload` のときだけNotionへ送信する。
 - `docs/notion-gallery-import.md` を追加。設定手順、dry-run、upload手順、試験結果を記録。
+- Notion DB表示をGalleryに変更し、カードプレビューで画像が見える状態を確認。
+- ChatGPT案を現状DBに照合し、`Chat Voyage Images` を維持したまま、次回以降の投入スキーマに `Status` / `Batch ID` / `Variant` / `Theme` / `Scene` / `Prompt Short` / `Model` / `Aspect Ratio` / `File Size MB` / `Width` / `Height` を追加。
+- 新規Notionページ本文は `Prompt` / `Scene` / `Review Notes` の軽量テンプレートにした。
+- `docs/notion-gallery-import.md` に推奨ビュー、プロパティ一覧、命名規則、既存DB同期の未実装事項を追記。
 
 ### 実行結果
 - Notion parent page: `Chat Voyage`
@@ -37,10 +41,16 @@ python3 scripts/notion_upload_gallery.py --limit 40 --confirm-upload
 - dry-run は40件を選択し、合計約8.1MBと表示。
 - upload は `done: uploaded 40 images to Notion database 'Chat Voyage Images'` で完了。
 - in-app browser で `Chat Voyage Images` database を開き、行とプロパティが表示されることを確認。
+- Gallery viewで画像カードが見えることを確認。
+- スキーマ拡張後のdry-run `python3 scripts/notion_upload_gallery.py --limit 4` は成功。
+- `PYTHONPYCACHEPREFIX=.tmp/pycache python3 -m py_compile scripts/notion_upload_gallery.py` は成功。
+- `python3 scripts/validate_gallery.py`: `errors: 0`
+- `git diff --check`: 問題なし。
 
 ### 注意
 - Notion token は `.notion.env` に保存し、gitignore済み。
 - token はチャット上で共有されたため、継続運用する場合はNotion側で再発行/rotateするのが安全。
+- 既存40件のNotionページに追加プロパティ値を後付けで埋める処理はまだない。次にやるなら既存DB append/update modeと、`Source path` または `Batch ID` + `Variant` による重複検出を追加する。
 
 ## 2026-06-16 Album preference feedback
 

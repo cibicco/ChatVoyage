@@ -34,12 +34,22 @@ class ImageRecord:
     date: str
     set_title: str
     set_slug: str
+    batch_id: str
     image_no: int
+    variant: int
     city: str
     place: str
     category: str
     art_style: str
     age_band: str
+    theme: str
+    scene: str
+    prompt_short: str
+    file_size_mb: float
+    width: int
+    height: int
+    aspect_ratio: str
+    model: str
     album_url: str
 
 
@@ -107,20 +117,37 @@ def latest_records(limit: int) -> list[ImageRecord]:
             if not source_path:
                 continue
             image_path = ROOT / source_path
+            width, height = image_dimensions(image_path)
+            title = str(image.get("title") or image_path.stem)
+            category = str(image.get("category", ""))
+            art_style = str(image.get("style", ""))
+            age_band = str(image.get("age", ""))
+            city = city_from_album(album)
+            scene = scene_from_image(album, image)
             records.append(
                 ImageRecord(
-                    name=f"{album.get('date', '')} {image.get('label') or index:>02} {image.get('title') or image_path.stem}",
+                    name=f"{album.get('date', '')} / v{index:02d} / {city} - {title}",
                     image_path=image_path,
                     source_path=source_path,
                     date=str(album.get("date", "")),
                     set_title=str(album.get("title", "")),
                     set_slug=str(album.get("slug", "")),
+                    batch_id=str(album.get("slug") or album.get("date") or ""),
                     image_no=index,
-                    city=city_from_album(album),
+                    variant=index,
+                    city=city,
                     place=str(image.get("place", "")),
-                    category=str(image.get("category", "")),
-                    art_style=str(image.get("style", "")),
-                    age_band=str(image.get("age", "")),
+                    category=category,
+                    art_style=art_style,
+                    age_band=age_band,
+                    theme=str(album.get("summary") or album.get("shortTitle") or album.get("title") or ""),
+                    scene=scene,
+                    prompt_short=prompt_short(category, age_band, art_style, scene),
+                    file_size_mb=file_size_mb(image_path),
+                    width=width,
+                    height=height,
+                    aspect_ratio=aspect_ratio(width, height),
+                    model="",
                     album_url=str(album.get("href", "")),
                 )
             )
@@ -145,6 +172,46 @@ def city_from_album(album: dict[str, object]) -> str:
     short_title = str(album.get("shortTitle") or album.get("title") or "")
     parts = short_title.split()
     return parts[0] if parts else ""
+
+
+def scene_from_image(album: dict[str, object], image: dict[str, object]) -> str:
+    title = str(image.get("title") or "")
+    alt = str(image.get("alt") or "")
+    summary = str(album.get("summary") or "")
+    return " / ".join(part for part in [title, alt, summary] if part)
+
+
+def prompt_short(category: str, age_band: str, art_style: str, scene: str) -> str:
+    parts = [part for part in [age_band, category, art_style, scene] if part]
+    return " | ".join(parts)[:1900]
+
+
+def file_size_mb(path: Path) -> float:
+    if not path.exists():
+        return 0.0
+    return round(path.stat().st_size / 1024 / 1024, 3)
+
+
+def image_dimensions(path: Path) -> tuple[int, int]:
+    if not path.exists():
+        return (0, 0)
+    try:
+        from PIL import Image
+
+        with Image.open(path) as image:
+            return image.size
+    except Exception:
+        return (0, 0)
+
+
+def aspect_ratio(width: int, height: int) -> str:
+    if width <= 0 or height <= 0:
+        return ""
+    if width == height:
+        return "1:1"
+    if width > height:
+        return "landscape"
+    return "portrait"
 
 
 def print_preview(records: list[ImageRecord]) -> None:
@@ -225,13 +292,24 @@ class NotionClient:
                 "Name": {"title": [{"type": "text", "text": {"content": record.name}}]},
                 "Image": {"files": [file_value]},
                 "Date": {"date": {"start": record.date} if record.date else None},
+                "Status": {"select": {"name": "Generated"}},
                 "Set": {"rich_text": [{"type": "text", "text": {"content": record.set_title}}]},
+                "Batch ID": {"rich_text": [{"type": "text", "text": {"content": record.batch_id}}]},
                 "Image No": {"number": record.image_no},
+                "Variant": {"number": record.variant},
                 "City": {"rich_text": [{"type": "text", "text": {"content": record.city}}]},
                 "Place": {"rich_text": [{"type": "text", "text": {"content": record.place}}]},
                 "Category": {"select": {"name": record.category} if record.category else None},
                 "Art style": {"select": {"name": record.art_style} if record.art_style else None},
                 "Age band": {"select": {"name": record.age_band} if record.age_band else None},
+                "Theme": {"rich_text": [{"type": "text", "text": {"content": record.theme[:1900]}}]},
+                "Scene": {"rich_text": [{"type": "text", "text": {"content": record.scene[:1900]}}]},
+                "Prompt Short": {"rich_text": [{"type": "text", "text": {"content": record.prompt_short}}]},
+                "Model": {"select": {"name": record.model} if record.model else None},
+                "Aspect Ratio": {"select": {"name": record.aspect_ratio} if record.aspect_ratio else None},
+                "File Size MB": {"number": record.file_size_mb},
+                "Width": {"number": record.width or None},
+                "Height": {"number": record.height or None},
                 "Rating": {"select": None},
                 "Preference": {"multi_select": []},
                 "Note": {"rich_text": []},
@@ -239,6 +317,7 @@ class NotionClient:
                 "Album URL": {"url": record.album_url or None},
                 "Set slug": {"rich_text": [{"type": "text", "text": {"content": record.set_slug}}]},
             },
+            "children": page_children(record),
         }
         return self.json_request("POST", "/pages", payload)
 
@@ -293,16 +372,42 @@ def database_properties() -> dict[str, object]:
         "Name": {"title": {}},
         "Image": {"files": {}},
         "Date": {"date": {}},
+        "Status": {
+            "select": {
+                "options": [
+                    {"name": "Generated", "color": "gray"},
+                    {"name": "Keep", "color": "green"},
+                    {"name": "Reject", "color": "red"},
+                    {"name": "Favorite", "color": "pink"},
+                    {"name": "Posted", "color": "blue"},
+                ]
+            }
+        },
         "Set": {"rich_text": {}},
+        "Batch ID": {"rich_text": {}},
         "Image No": {"number": {"format": "number"}},
+        "Variant": {"number": {"format": "number"}},
         "City": {"rich_text": {}},
         "Place": {"rich_text": {}},
         "Category": {"select": {}},
         "Art style": {"select": {}},
         "Age band": {"select": {}},
+        "Theme": {"rich_text": {}},
+        "Scene": {"rich_text": {}},
+        "Prompt Short": {"rich_text": {}},
+        "Model": {"select": {}},
+        "Aspect Ratio": {"select": {}},
+        "File Size MB": {"number": {"format": "number"}},
+        "Width": {"number": {"format": "number"}},
+        "Height": {"number": {"format": "number"}},
         "Rating": {
             "select": {
                 "options": [
+                    {"name": "5", "color": "red"},
+                    {"name": "4", "color": "pink"},
+                    {"name": "3", "color": "yellow"},
+                    {"name": "2", "color": "blue"},
+                    {"name": "1", "color": "gray"},
                     {"name": "Love", "color": "red"},
                     {"name": "Good", "color": "green"},
                     {"name": "Pass", "color": "gray"},
@@ -328,6 +433,30 @@ def database_properties() -> dict[str, object]:
         "Album URL": {"url": {}},
         "Set slug": {"rich_text": {}},
     }
+
+
+def page_children(record: ImageRecord) -> list[dict[str, object]]:
+    return [
+        notion_heading("Prompt"),
+        notion_paragraph(record.prompt_short or "Full prompt is not available in album metadata yet."),
+        notion_heading("Scene"),
+        notion_paragraph(record.scene or record.theme),
+        notion_heading("Review Notes"),
+        notion_paragraph(""),
+    ]
+
+
+def notion_heading(text: str) -> dict[str, object]:
+    return {
+        "object": "block",
+        "type": "heading_2",
+        "heading_2": {"rich_text": [{"type": "text", "text": {"content": text}}]},
+    }
+
+
+def notion_paragraph(text: str) -> dict[str, object]:
+    rich_text = [{"type": "text", "text": {"content": text[:1900]}}] if text else []
+    return {"object": "block", "type": "paragraph", "paragraph": {"rich_text": rich_text}}
 
 
 if __name__ == "__main__":

@@ -11,9 +11,13 @@
 - 最新10セット、合計40枚のWebP画像とメタデータをNotionへ投入した。
 - `scripts/notion_upload_gallery.py` を追加し、dry-run既定、`--confirm-upload` 時のみ外部送信する形にした。
 - in-app browser でNotion databaseの表示を確認した。
+- DB表示をGalleryに変更し、カードに画像が見える状態を確認した。
+- ChatGPT案を現状に照合し、採用すべき `Status` / `Batch ID` / `Variant` / `Theme` / `Scene` / `Prompt Short` / file size / dimensions などを次回以降のNotion投入スキーマへ追加した。
+- `docs/notion-gallery-import.md` に現状DB向けのプロパティ設計、推奨ビュー、軽量ページ本文テンプレート、命名規則を追記した。
 
 ### 課題
 - setup中にtokenがチャット上で共有されたため、継続運用する場合はNotion側でtokenを再発行/rotateするのが安全。
+- 既存40件に追加プロパティを後付けで埋める既存DB同期処理は未実装。今のスクリプトは新規DB作成・新規ページ投入が主対象。
 
 ## 2026-06-16 アルバム好みフィードバック追加
 
