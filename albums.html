@@ -52,17 +52,23 @@
         <button class="reset-button" type="button" id="reset-filters">Reset</button>
       </div>
 
-      <div class="filter-row" data-filter-group="month">
-        <div class="filter-label">Month</div>
-        <div class="filter-buttons">
+      <details class="filter-drawer" data-filter-drawer open>
+        <summary>
+          <span>Filters</span>
+          <span data-filter-summary>All filters</span>
+        </summary>
+        <div class="filter-body">
+          <div class="filter-row" data-filter-group="month">
+            <div class="filter-label">Month</div>
+            <div class="filter-buttons">
           <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="2026-06" aria-pressed="false"><span class="filter-text">2026-06</span><span class="filter-count">26</span></button>
           <button type="button" data-filter="2026-05" aria-pressed="false"><span class="filter-text">2026-05</span><span class="filter-count">9</span></button>
-        </div>
-      </div>
-      <div class="filter-row" data-filter-group="place">
-        <div class="filter-label">Place</div>
-        <div class="filter-buttons">
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="place">
+            <div class="filter-label">Place</div>
+            <div class="filter-buttons">
           <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="bangkok" aria-pressed="false"><span class="filter-text">Bangkok</span><span class="filter-count">1</span></button>
           <button type="button" data-filter="barcelona" aria-pressed="false"><span class="filter-text">Barcelona</span><span class="filter-count">1</span></button>
@@ -88,11 +94,11 @@
           <button type="button" data-filter="unspecified" aria-pressed="false"><span class="filter-text">Unspecified</span><span class="filter-count">3</span></button>
           <button type="button" data-filter="vienna" aria-pressed="false"><span class="filter-text">Vienna</span><span class="filter-count">1</span></button>
           <button type="button" data-filter="yokohama" aria-pressed="false"><span class="filter-text">Yokohama</span><span class="filter-count">2</span></button>
-        </div>
-      </div>
-      <div class="filter-row" data-filter-group="category">
-        <div class="filter-label">Category</div>
-        <div class="filter-buttons">
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="category">
+            <div class="filter-label">Category</div>
+            <div class="filter-buttons">
           <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="active" aria-pressed="false"><span class="filter-text">Active</span><span class="filter-count">5</span></button>
           <button type="button" data-filter="ceremony" aria-pressed="false"><span class="filter-text">Ceremony</span><span class="filter-count">2</span></button>
@@ -115,11 +121,11 @@
           <button type="button" data-filter="transit" aria-pressed="false"><span class="filter-text">Transit</span><span class="filter-count">8</span></button>
           <button type="button" data-filter="travel" aria-pressed="false"><span class="filter-text">Travel</span><span class="filter-count">3</span></button>
           <button type="button" data-filter="weekend" aria-pressed="false"><span class="filter-text">Weekend</span><span class="filter-count">9</span></button>
-        </div>
-      </div>
-      <div class="filter-row" data-filter-group="style">
-        <div class="filter-label">Style</div>
-        <div class="filter-buttons">
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="style">
+            <div class="filter-label">Style</div>
+            <div class="filter-buttons">
           <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="3d-cg-fashion" aria-pressed="false"><span class="filter-text">3D CG Fashion</span><span class="filter-count">3</span></button>
           <button type="button" data-filter="anime-cel-polished" aria-pressed="false"><span class="filter-text">Anime Cel Polished</span><span class="filter-count">9</span></button>
@@ -136,8 +142,10 @@
           <button type="button" data-filter="semi-real-editorial" aria-pressed="false"><span class="filter-text">Semi Real Editorial</span><span class="filter-count">6</span></button>
           <button type="button" data-filter="soft-real-fashion-art" aria-pressed="false"><span class="filter-text">Soft Real Fashion Art</span><span class="filter-count">9</span></button>
           <button type="button" data-filter="watercolor-couture" aria-pressed="false"><span class="filter-text">Watercolor Couture</span><span class="filter-count">10</span></button>
+            </div>
+          </div>
         </div>
-      </div>
+      </details>
 
       <div class="result-bar">
         <p class="count" aria-live="polite"><span id="visible-count">35</span> / <span id="total-count">35</span> albums</p>

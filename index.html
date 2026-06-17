@@ -144,8 +144,9 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fill, 180px);
       gap: 14px;
+      justify-content: start;
     }
 
     figure {
@@ -154,6 +155,15 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       overflow: hidden;
+    }
+
+    figure:focus-visible {
+      outline: 2px solid var(--active);
+      outline-offset: 3px;
+    }
+
+    figure img {
+      cursor: zoom-in;
     }
 
     img {
@@ -193,6 +203,112 @@
       color: var(--accent);
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
+    }
+
+    body.is-lightbox-open {
+      overflow: hidden;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      grid-template-columns: 56px minmax(0, 1fr) 56px;
+      gap: 12px;
+      background: rgba(14, 18, 20, 0.94);
+      color: #fff;
+      padding: 14px;
+    }
+
+    .lightbox[hidden] {
+      display: none;
+    }
+
+    .lightbox-bar {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .lightbox-count {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 0.86rem;
+      font-weight: 760;
+    }
+
+    .lightbox-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .lightbox-actions a,
+    .lightbox-actions button,
+    .lightbox-nav {
+      min-height: 38px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 7px 10px;
+    }
+
+    .lightbox-actions a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .lightbox-nav {
+      align-self: center;
+      min-width: 44px;
+      min-height: 58px;
+      cursor: pointer;
+    }
+
+    .lightbox-prev {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .lightbox-next {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .lightbox img {
+      grid-column: 2;
+      grid-row: 2;
+      align-self: center;
+      justify-self: center;
+      display: block;
+      width: auto;
+      max-width: 100%;
+      max-height: calc(100vh - 160px);
+      aspect-ratio: auto;
+      object-fit: contain;
+      background: transparent;
+    }
+
+    .lightbox-caption {
+      grid-column: 2;
+      display: grid;
+      gap: 4px;
+      max-width: 760px;
+      justify-self: center;
+      color: rgba(255, 255, 255, 0.74);
+      text-align: center;
+    }
+
+    .lightbox-caption strong {
+      color: #fff;
     }
 
     @media (max-width: 640px) {
@@ -259,6 +375,32 @@
 
       .tags {
         font-size: 0.76rem;
+      }
+
+      .lightbox {
+        grid-template-columns: 42px minmax(0, 1fr) 42px;
+        gap: 8px;
+        padding: 10px;
+      }
+
+      .lightbox-actions {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .lightbox-nav {
+        min-width: 38px;
+        min-height: 48px;
+        padding: 6px 8px;
+      }
+
+      .lightbox img {
+        max-height: calc(100vh - 190px);
+      }
+
+      .lightbox-caption {
+        grid-column: 1 / -1;
+        font-size: 0.86rem;
       }
     }
   </style>
@@ -749,6 +891,20 @@
     </section>
   </main>
 
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Image preview">
+    <div class="lightbox-bar">
+      <p class="lightbox-count"><span data-lightbox-current>1</span> / <span data-lightbox-total>0</span></p>
+      <div class="lightbox-actions">
+        <a data-lightbox-open href="#">Open original</a>
+        <button type="button" data-lightbox-close aria-label="Close preview">Close</button>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">&lt;</button>
+    <img data-lightbox-image alt="">
+    <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">&gt;</button>
+    <div class="lightbox-caption" data-lightbox-caption></div>
+  </div>
+
   <script>
     const filters = {
       style: "all",
@@ -761,8 +917,22 @@
     const visibleCount = document.getElementById("visible-count");
     const totalCount = document.getElementById("total-count");
     const empty = document.querySelector(".empty");
+    const lightbox = document.querySelector("[data-lightbox]");
+    const lightboxImage = document.querySelector("[data-lightbox-image]");
+    const lightboxCaption = document.querySelector("[data-lightbox-caption]");
+    const lightboxCurrent = document.querySelector("[data-lightbox-current]");
+    const lightboxTotal = document.querySelector("[data-lightbox-total]");
+    const lightboxOpen = document.querySelector("[data-lightbox-open]");
+    const lightboxClose = document.querySelector("[data-lightbox-close]");
+    const lightboxPrev = document.querySelector("[data-lightbox-prev]");
+    const lightboxNext = document.querySelector("[data-lightbox-next]");
+    let activeFigure = -1;
+    let lightboxActive = false;
 
     totalCount.textContent = figures.length;
+    figures.forEach((figure) => {
+      figure.tabIndex = 0;
+    });
 
     function matches(figure) {
       return Object.entries(filters).every(([key, value]) => {
@@ -786,6 +956,66 @@
 
       visibleCount.textContent = count;
       empty.classList.toggle("is-hidden", count !== 0);
+      if (lightboxActive) renderLightbox();
+    }
+
+    function visibleFigures() {
+      return figures.filter((figure) => !figure.classList.contains("is-hidden"));
+    }
+
+    function figureCaption(figure) {
+      const strong = figure.querySelector("figcaption strong")?.textContent || "";
+      const tags = figure.querySelector(".tags")?.textContent || "";
+      return { strong, tags };
+    }
+
+    function openLightbox(figure) {
+      const visible = visibleFigures();
+      activeFigure = visible.indexOf(figure);
+      if (activeFigure < 0) activeFigure = figures.indexOf(figure);
+      if (activeFigure < 0) return;
+      lightboxActive = true;
+      lightbox.hidden = false;
+      document.body.classList.add("is-lightbox-open");
+      renderLightbox();
+      lightboxClose.focus();
+    }
+
+    function closeLightbox() {
+      lightboxActive = false;
+      lightbox.hidden = true;
+      document.body.classList.remove("is-lightbox-open");
+      const figure = visibleFigures()[activeFigure];
+      if (figure) figure.focus();
+    }
+
+    function moveLightbox(delta) {
+      const visible = visibleFigures();
+      if (!visible.length) return;
+      activeFigure = (activeFigure + delta + visible.length) % visible.length;
+      renderLightbox();
+    }
+
+    function renderLightbox() {
+      const visible = visibleFigures();
+      const figure = visible[activeFigure];
+      if (!figure) {
+        closeLightbox();
+        return;
+      }
+      const image = figure.querySelector("img");
+      const caption = figureCaption(figure);
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt || "";
+      lightboxOpen.href = image.src;
+      lightboxCurrent.textContent = String(activeFigure + 1);
+      lightboxTotal.textContent = String(visible.length);
+      lightboxCaption.replaceChildren();
+      const title = document.createElement("strong");
+      title.textContent = caption.strong || image.alt || "Image";
+      const meta = document.createElement("span");
+      meta.textContent = caption.tags;
+      lightboxCaption.append(title, meta);
     }
 
     document.querySelectorAll("[data-filter-group]").forEach((group) => {
@@ -802,6 +1032,30 @@
 
         applyFilters();
       });
+    });
+
+    figures.forEach((figure) => {
+      figure.addEventListener("click", () => openLightbox(figure));
+      figure.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openLightbox(figure);
+        }
+      });
+    });
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightboxPrev.addEventListener("click", () => moveLightbox(-1));
+    lightboxNext.addEventListener("click", () => moveLightbox(1));
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (!lightboxActive) return;
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowLeft") moveLightbox(-1);
+      if (event.key === "ArrowRight") moveLightbox(1);
     });
 
     applyFilters();

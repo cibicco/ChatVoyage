@@ -29,6 +29,8 @@
   const activeFilters = document.getElementById("active-filters");
   const emptyState = document.getElementById("empty-state");
   const albums = document.getElementById("albums");
+  const filterDrawer = document.querySelector("[data-filter-drawer]");
+  const filterSummary = document.querySelector("[data-filter-summary]");
 
   cards.forEach((card, index) => {
     card.dataset.originalIndex = String(index);
@@ -137,6 +139,21 @@
       chip.textContent = `${groupLabels[group] || group}: ${label}`;
       activeFilters.appendChild(chip);
     });
+    renderFilterSummary(entries);
+  }
+
+  function renderFilterSummary(entries) {
+    if (!filterSummary) return;
+    if (!entries.length) {
+      filterSummary.textContent = "All filters";
+      return;
+    }
+    filterSummary.textContent = entries
+      .map(([group, value]) => {
+        const label = group === "query" ? value : selectedFilterLabel(group, value);
+        return `${groupLabels[group] || group}: ${label}`;
+      })
+      .join(", ");
   }
 
   function syncUrl() {
@@ -185,6 +202,9 @@
       : "grid";
     search.value = state.query;
     sort.value = state.sort;
+    if (filterDrawer && window.matchMedia("(max-width: 640px)").matches) {
+      filterDrawer.open = false;
+    }
   }
 
   document.querySelectorAll("[data-filter-group]").forEach((groupEl) => {

@@ -342,34 +342,42 @@ def build_album_browser(albums: list[Album]) -> str:
         <button class="reset-button" type="button" id="reset-filters">Reset</button>
       </div>
 
-      <div class="filter-row" data-filter-group="month">
-        <div class="filter-label">Month</div>
-        <div class="filter-buttons">
+      <details class="filter-drawer" data-filter-drawer open>
+        <summary>
+          <span>Filters</span>
+          <span data-filter-summary>All filters</span>
+        </summary>
+        <div class="filter-body">
+          <div class="filter-row" data-filter-group="month">
+            <div class="filter-label">Month</div>
+            <div class="filter-buttons">
 {filter_button("all", "All", pressed=True, count=len(albums))}
 {month_buttons}
-        </div>
-      </div>
-      <div class="filter-row" data-filter-group="place">
-        <div class="filter-label">Place</div>
-        <div class="filter-buttons">
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="place">
+            <div class="filter-label">Place</div>
+            <div class="filter-buttons">
 {filter_button("all", "All", pressed=True, count=len(albums))}
 {place_buttons}
-        </div>
-      </div>
-      <div class="filter-row" data-filter-group="category">
-        <div class="filter-label">Category</div>
-        <div class="filter-buttons">
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="category">
+            <div class="filter-label">Category</div>
+            <div class="filter-buttons">
 {filter_button("all", "All", pressed=True, count=len(albums))}
 {category_buttons}
-        </div>
-      </div>
-      <div class="filter-row" data-filter-group="style">
-        <div class="filter-label">Style</div>
-        <div class="filter-buttons">
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="style">
+            <div class="filter-label">Style</div>
+            <div class="filter-buttons">
 {filter_button("all", "All", pressed=True, count=len(albums))}
 {style_buttons}
+            </div>
+          </div>
         </div>
-      </div>
+      </details>
 
       <div class="result-bar">
         <p class="count" aria-live="polite"><span id="visible-count">{len(albums)}</span> / <span id="total-count">{len(albums)}</span> albums</p>
@@ -503,6 +511,7 @@ def build_album_shell() -> str:
       <a href="index.html">Gallery</a>
       <a href="albums.html">Albums</a>
     </nav>
+    <p class="not-found-notice" data-not-found-notice hidden></p>
     <div class="album-tools">
       <label class="album-select-field" for="album-select">
         <span>Album</span>
@@ -582,6 +591,19 @@ def build_album_shell() -> str:
       <div class="grid" data-image-grid></div>
     </section>
   </main>
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Image preview">
+    <div class="lightbox-bar">
+      <p class="lightbox-count"><span data-lightbox-current>1</span> / <span data-lightbox-total>0</span></p>
+      <div class="lightbox-actions">
+        <a data-lightbox-open href="#">Open original</a>
+        <button type="button" data-lightbox-close aria-label="Close preview">Close</button>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">&lt;</button>
+    <img data-lightbox-image alt="">
+    <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">&gt;</button>
+    <div class="lightbox-caption" data-lightbox-caption></div>
+  </div>
   <script src="assets/album-data.js"></script>
   <script src="assets/album-page.js"></script>
 </body>

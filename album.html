@@ -14,6 +14,7 @@
       <a href="index.html">Gallery</a>
       <a href="albums.html">Albums</a>
     </nav>
+    <p class="not-found-notice" data-not-found-notice hidden></p>
     <div class="album-tools">
       <label class="album-select-field" for="album-select">
         <span>Album</span>
@@ -93,6 +94,19 @@
       <div class="grid" data-image-grid></div>
     </section>
   </main>
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Image preview">
+    <div class="lightbox-bar">
+      <p class="lightbox-count"><span data-lightbox-current>1</span> / <span data-lightbox-total>0</span></p>
+      <div class="lightbox-actions">
+        <a data-lightbox-open href="#">Open original</a>
+        <button type="button" data-lightbox-close aria-label="Close preview">Close</button>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">&lt;</button>
+    <img data-lightbox-image alt="">
+    <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">&gt;</button>
+    <div class="lightbox-caption" data-lightbox-caption></div>
+  </div>
   <script src="assets/album-data.js"></script>
   <script src="assets/album-page.js"></script>
 </body>

@@ -70,6 +70,17 @@ textarea:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
+.not-found-notice {
+  margin: 0 0 14px;
+  border: 1px solid #d8b287;
+  border-radius: 8px;
+  background: #fff7ec;
+  color: #764312;
+  font-size: 0.92rem;
+  font-weight: 650;
+  padding: 9px 11px;
+}
+
 .site-nav {
   display: flex;
   flex-wrap: wrap;
@@ -205,6 +216,7 @@ h1 {
   display: grid;
   place-items: center;
   min-height: inherit;
+  cursor: zoom-in;
 }
 
 .stage-image {
@@ -574,6 +586,121 @@ figcaption {
   padding: 12px;
 }
 
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-columns: 56px minmax(0, 1fr) 56px;
+  gap: 12px;
+  background: rgba(14, 18, 20, 0.94);
+  color: #fff;
+  padding: 14px;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.is-lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox-bar {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lightbox-count {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.86rem;
+  font-weight: 760;
+}
+
+.lightbox-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lightbox-actions a,
+.lightbox-actions button,
+.lightbox-nav {
+  min-height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 7px 10px;
+}
+
+.lightbox-actions a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.lightbox-nav {
+  align-self: center;
+  min-width: 44px;
+  min-height: 58px;
+  cursor: pointer;
+}
+
+.lightbox-prev {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.lightbox-next {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.lightbox img {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 160px);
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  grid-column: 2;
+  display: grid;
+  gap: 7px;
+  max-width: 760px;
+  justify-self: center;
+  color: rgba(255, 255, 255, 0.74);
+  text-align: center;
+}
+
+.lightbox-caption h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.lightbox-caption dl {
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.lightbox-caption dt {
+  color: #fff;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 2.7rem;
@@ -600,7 +727,8 @@ figcaption {
 
 @media (max-width: 640px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.55rem;
+    line-height: 1.08;
   }
 
   .album-header,
@@ -609,15 +737,17 @@ figcaption {
   }
 
   .album-header {
-    padding-top: 18px;
+    padding: 12px 0 10px;
   }
 
   .site-nav {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 
   .album-tools {
+    gap: 8px;
     justify-content: stretch;
+    margin: 0 0 10px;
   }
 
   .album-select-field,
@@ -627,10 +757,64 @@ figcaption {
 
   .album-stats {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .album-stats div {
+    padding: 7px;
+  }
+
+  .album-stats dt {
+    font-size: 0.68rem;
+  }
+
+  .album-stats dd {
+    overflow: hidden;
+    font-size: 0.82rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .eyebrow {
+    display: none;
+  }
+
+  .title-block {
+    gap: 10px;
+  }
+
+  .intro {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-top: 8px;
+    font-size: 0.9rem;
   }
 
   .album-viewer {
-    padding-top: 14px;
+    padding-top: 10px;
+  }
+
+  .viewer {
+    gap: 10px;
+  }
+
+  .stage-image {
+    max-height: 70vh;
+  }
+
+  .viewer-panel {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .feedback-tags {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbnail-strip {
+    padding: 10px 0 14px;
   }
 
   .thumbnail {
@@ -645,5 +829,35 @@ figcaption {
   .grid {
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+
+  .lightbox {
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .lightbox-bar {
+    align-items: start;
+  }
+
+  .lightbox-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .lightbox-nav {
+    min-width: 38px;
+    min-height: 48px;
+    padding: 6px 8px;
+  }
+
+  .lightbox img {
+    max-height: calc(100vh - 190px);
+  }
+
+  .lightbox-caption {
+    grid-column: 1 / -1;
+    font-size: 0.86rem;
   }
 }

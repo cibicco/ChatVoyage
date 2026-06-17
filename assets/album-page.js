@@ -9,6 +9,7 @@
   const params = new URLSearchParams(location.search);
   const requestedSlug = params.get("set");
   let albumIndex = albums.findIndex((item) => item.slug === requestedSlug);
+  const requestedAlbumMissing = Boolean(requestedSlug && albumIndex < 0);
   if (albumIndex < 0) albumIndex = 0;
 
   const album = albums[albumIndex];
@@ -21,6 +22,7 @@
   const place = document.getElementById("album-place");
   const summary = document.getElementById("album-summary");
   const select = document.getElementById("album-select");
+  const notFoundNotice = document.querySelector("[data-not-found-notice]");
   const stageImage = root.querySelector("[data-stage-image]");
   const stageLink = root.querySelector("[data-stage-link]");
   const caption = root.querySelector("[data-viewer-caption]");
@@ -41,6 +43,16 @@
   const tagInputs = Array.from(root.querySelectorAll("[data-feedback-tag]"));
   const noteInput = root.querySelector("[data-feedback-note]");
   const resetFeedbackButton = root.querySelector("[data-feedback-reset]");
+  const lightbox = document.querySelector("[data-lightbox]");
+  const lightboxImage = document.querySelector("[data-lightbox-image]");
+  const lightboxCaption = document.querySelector("[data-lightbox-caption]");
+  const lightboxCurrent = document.querySelector("[data-lightbox-current]");
+  const lightboxTotal = document.querySelector("[data-lightbox-total]");
+  const lightboxOpen = document.querySelector("[data-lightbox-open]");
+  const lightboxClose = document.querySelector("[data-lightbox-close]");
+  const lightboxPrev = document.querySelector("[data-lightbox-prev]");
+  const lightboxNext = document.querySelector("[data-lightbox-next]");
+  let lightboxActive = false;
   let feedbackStorageMode = "local";
   let feedbackStore = readFeedbackStore();
 
@@ -49,7 +61,8 @@
   renderGrid();
   renderNeighbors();
   bindFeedbackControls();
-  setActive(active);
+  bindLightboxControls();
+  setActive(active, false, false);
   syncCanonicalUrl();
 
   select?.addEventListener("change", () => {
@@ -58,13 +71,24 @@
 
   previous?.addEventListener("click", () => setActive(active - 1, true));
   next?.addEventListener("click", () => setActive(active + 1, true));
+  stageLink?.addEventListener("click", (event) => {
+    event.preventDefault();
+    openLightbox(active);
+  });
 
   document.addEventListener("keydown", (event) => {
     const tag = event.target?.tagName;
     if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
     if (event.altKey || event.ctrlKey || event.metaKey) return;
-    if (event.key === "ArrowLeft") setActive(active - 1, true);
-    if (event.key === "ArrowRight") setActive(active + 1, true);
+    if (event.key === "Escape" && lightboxActive) closeLightbox();
+    if (event.key === "ArrowLeft") {
+      if (lightboxActive) moveLightbox(-1);
+      else setActive(active - 1, true);
+    }
+    if (event.key === "ArrowRight") {
+      if (lightboxActive) moveLightbox(1);
+      else setActive(active + 1, true);
+    }
   });
 
   function hydrateHeader() {
@@ -88,6 +112,11 @@
     if (album.notesHref) {
       notesLink.href = album.notesHref;
       notesLink.hidden = false;
+    }
+
+    if (requestedAlbumMissing && notFoundNotice) {
+      notFoundNotice.hidden = false;
+      notFoundNotice.textContent = `Requested album "${requestedSlug}" was not found. Showing the latest album.`;
     }
   }
 
@@ -127,6 +156,10 @@
       const link = document.createElement("a");
       link.className = "image-link";
       link.href = image.src;
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        openLightbox(index);
+      });
 
       const img = document.createElement("img");
       img.src = image.src;
@@ -169,7 +202,7 @@
     link.textContent = `${label}: ${item.shortTitle || item.title}`;
   }
 
-  function setActive(index, focusThumb = false) {
+  function setActive(index, focusThumb = false, updateHash = true) {
     if (!images.length) return;
     active = (index + images.length) % images.length;
     const image = images[active];
@@ -179,12 +212,62 @@
     openLink.href = image.src;
     current.textContent = String(active + 1);
     caption.replaceChildren(createCaption(image));
+    if (updateHash) updateImageHash();
 
     thumbnailStrip.querySelectorAll("[data-album-thumb]").forEach((thumb, thumbIndex) => {
       thumb.setAttribute("aria-pressed", String(thumbIndex === active));
       if (thumbIndex === active && focusThumb) focusWithoutScroll(thumb);
     });
     renderFeedback();
+  }
+
+  function updateImageHash() {
+    const query = `?set=${encodeURIComponent(album.slug)}`;
+    const nextUrl = `${location.pathname}${query}#image-${active + 1}`;
+    history.replaceState(null, "", nextUrl);
+  }
+
+  function bindLightboxControls() {
+    lightboxClose?.addEventListener("click", closeLightbox);
+    lightboxPrev?.addEventListener("click", () => moveLightbox(-1));
+    lightboxNext?.addEventListener("click", () => moveLightbox(1));
+    lightbox?.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+  }
+
+  function openLightbox(index) {
+    if (!lightbox || !images.length) return;
+    lightboxActive = true;
+    lightbox.hidden = false;
+    document.body.classList.add("is-lightbox-open");
+    setActive(index, true);
+    renderLightbox();
+    lightboxClose?.focus();
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightboxActive = false;
+    lightbox.hidden = true;
+    document.body.classList.remove("is-lightbox-open");
+    thumbnailStrip.querySelector(`[data-index="${active}"]`)?.focus();
+  }
+
+  function moveLightbox(delta) {
+    setActive(active + delta, true);
+    renderLightbox();
+  }
+
+  function renderLightbox() {
+    const image = images[active];
+    if (!image || !lightboxImage) return;
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt || "";
+    if (lightboxOpen) lightboxOpen.href = image.src;
+    if (lightboxCurrent) lightboxCurrent.textContent = String(active + 1);
+    if (lightboxTotal) lightboxTotal.textContent = String(images.length);
+    lightboxCaption?.replaceChildren(createCaption(image));
   }
 
   function bindFeedbackControls() {
@@ -417,7 +500,7 @@
   }
 
   function syncCanonicalUrl() {
-    if (requestedSlug === album.slug) return;
+    if (requestedAlbumMissing || requestedSlug === album.slug) return;
     const nextUrl = `${location.pathname}?set=${album.slug}${location.hash}`;
     history.replaceState(null, "", nextUrl);
   }
