@@ -201,16 +201,50 @@
         width: min(100% - 18px, 520px);
       }
 
+      header {
+        padding: 24px 0 16px;
+      }
+
+      nav {
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 2.35rem;
+      }
+
+      .intro {
+        font-size: 0.94rem;
+      }
+
+      .filters {
+        padding: 14px 0 6px;
+        gap: 8px;
+      }
+
       .filter-row {
-        grid-template-columns: 1fr;
-        gap: 6px;
+        grid-template-columns: 66px minmax(0, 1fr);
+        gap: 8px;
+        align-items: center;
+      }
+
+      .filter-label {
+        padding-top: 0;
+        font-size: 0.72rem;
       }
 
       .filter-buttons {
         flex-wrap: nowrap;
         overflow-x: auto;
-        padding-bottom: 6px;
+        gap: 6px;
+        padding-bottom: 4px;
         scrollbar-width: thin;
+      }
+
+      button {
+        min-height: 30px;
+        padding: 5px 9px;
+        font-size: 0.84rem;
       }
 
       .grid {
