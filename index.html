@@ -1014,7 +1014,7 @@
       const title = document.createElement("strong");
       title.textContent = caption.strong || image.alt || "Image";
       const meta = document.createElement("span");
-      meta.textContent = caption.tags;
+      meta.textContent = caption.tags ? `\n${caption.tags}` : "";
       lightboxCaption.append(title, meta);
     }
 
