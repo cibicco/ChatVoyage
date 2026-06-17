@@ -474,7 +474,11 @@
 
     const rows = [
       ["Age", image.age],
-      ["Category", image.category],
+      ["Legacy", image.category],
+      ["Occasion", image.occasion],
+      ["Venue", image.venue],
+      ["Activity", image.activity],
+      ["Outfit", image.outfit],
       ["Style", image.style],
       ["Place", image.place],
     ].filter(([, value]) => value);

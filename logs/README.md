@@ -23,6 +23,7 @@ Record operational details that help future generation:
 - illustration style and quality/result notes
 - fashion language and reusable variation ideas
 - selected primary category for each image
+- metadata axes for each image: occasion, venue, activity, and outfit
 - secondary tags for each image: weather, season, fashion direction, place, materials, and visual style
 - missing reference files or source-scan notes
 - prompt workflow version, such as `v1-full-detail` or `v2-short-generation`
@@ -34,6 +35,7 @@ Keep human-facing theme summaries in `notes/`. Keep detailed implementation and 
 
 ```text
 - Primary category: {one slug from prompts/category-presets.md}
+- Metadata axes: occasion={why this outfit exists}, venue={place type}, activity={what she is doing}, outfit={garment structure}
 - Target age band: {18-19-adult | 20-24 | 25-29}
 - Style preset: {one slug from prompts/style-presets.md}
 - Pose family: {one slug from prompts/pose-presets.md}

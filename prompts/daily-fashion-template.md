@@ -180,6 +180,8 @@ Constraints:
 For every final image, record:
 
 - fashion category: selected category slug
+- metadata axes: occasion, venue, activity, and outfit inferred from the actual
+  prompt/result
 - target age band: selected age band from `age-presets.md`
 - style family: broad family from `style-presets.md`
 - style preset: exact style preset slug

@@ -2,11 +2,15 @@
   const app = document.querySelector("[data-album-app]");
   if (!app) return;
 
-  const groups = ["month", "place", "category", "style"];
+  const groups = ["month", "place", "category", "occasion", "venue", "activity", "outfit", "style"];
   const groupLabels = {
     month: "Month",
     place: "Place",
-    category: "Category",
+    category: "Legacy",
+    occasion: "Occasion",
+    venue: "Venue",
+    activity: "Activity",
+    outfit: "Outfit",
     style: "Style",
     query: "Search",
   };
@@ -14,6 +18,10 @@
     month: "all",
     place: "all",
     category: "all",
+    occasion: "all",
+    venue: "all",
+    activity: "all",
+    outfit: "all",
     style: "all",
     query: "",
     sort: "newest",

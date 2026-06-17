@@ -23,6 +23,10 @@ class GalleryParser(HTMLParser):
             "style": set(),
             "place": set(),
             "category": set(),
+            "occasion": set(),
+            "venue": set(),
+            "activity": set(),
+            "outfit": set(),
         }
         self.refs: list[str] = []
         self._filter_group: str | None = None
@@ -53,6 +57,10 @@ class GalleryParser(HTMLParser):
                     "style": data.get("data-style"),
                     "place": data.get("data-place"),
                     "category": data.get("data-category"),
+                    "occasion": data.get("data-occasion"),
+                    "venue": data.get("data-venue"),
+                    "activity": data.get("data-activity"),
+                    "outfit": data.get("data-outfit"),
                 }
             )
         if tag in {"a", "img", "script", "link"}:
@@ -158,12 +166,15 @@ def validate() -> list[str]:
     if missing_album_sections:
         errors.append("index sections missing album links: " + ", ".join(missing_album_sections))
 
-    for group in ("style", "place", "category"):
+    for group in ("style", "place", "category", "occasion", "venue", "activity", "outfit"):
         data_values = {f[group] for f in parser.figures if f.get(group)}
         filter_values = parser.filters.get(group, set()) - {"all"}
         missing_filters = sorted(data_values - filter_values)
         if missing_filters:
             errors.append(f"missing {group} filter buttons: {missing_filters}")
+        missing_data = sum(1 for f in parser.figures if not f.get(group))
+        if missing_data:
+            errors.append(f"figures missing {group} metadata: {missing_data}")
 
     style_presets = preset_values(ROOT / "prompts" / "style-presets.md", r"^## `([^`]+)`")
     category_presets = preset_values(ROOT / "prompts" / "category-presets.md", r"^- `([^`]+)`:")
@@ -221,6 +232,10 @@ def validate() -> list[str]:
         elif html.name == "albums.html":
             required_album_browser_features = [
                 'data-filter-group="style"',
+                'data-filter-group="occasion"',
+                'data-filter-group="venue"',
+                'data-filter-group="activity"',
+                'data-filter-group="outfit"',
                 'id="album-sort"',
                 'data-view-option="grid"',
                 'id="active-filters"',
@@ -264,6 +279,9 @@ def validate() -> list[str]:
                 errors.append(f"album data has non-canonical hrefs: {bad_hrefs}")
             for album in album_data:
                 for image in album.get("images", []):
+                    for key in ("occasion", "venue", "activity", "outfit"):
+                        if not image.get(key):
+                            errors.append(f"album data image missing {key}: {album.get('slug')} / {image.get('src')}")
                     src = str(image.get("src", ""))
                     if not src:
                         errors.append(f"album data image missing src: {album.get('slug')}")

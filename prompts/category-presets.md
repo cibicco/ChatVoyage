@@ -33,6 +33,30 @@ setting, posture, and styling attitude.
 - `market`: flea market, food market, bookstore market, or local shopping styling
 - `transit`: train, ferry, airport, station, night bus, taxi stand, or arrival/departure styling
 
+## Metadata Axes
+
+The historical `fashion category` slug is kept as a filename and compatibility
+label, but it mixes several concepts. For browsing and review, also record
+these four independent axes for each image:
+
+- `occasion`: why this outfit exists in the person's day, such as everyday,
+  creative-culture, night-out, social-date, formal-event, work, travel,
+  movement, leisure, home, or weather-layer.
+- `venue`: the type of place, such as city-outdoor, market-retail,
+  museum-gallery, dining-bar, music-club, event-venue, workplace, transit-hub,
+  home-interior, waterfront-resort, or studio-sports.
+- `activity`: what she is doing, such as city-walk, shopping, viewing-design,
+  dining-drinks, dancing, performance-going, attending-event, working, moving,
+  relaxing, holiday, sport-practice, or weather-walk.
+- `outfit`: the garment structure, such as casual-separates, tailoring, dress,
+  skirt-skort, trousers-shorts, outerwear-layer, swimwear, activewear, or
+  eveningwear.
+
+These axes should be inferred from the actual prompt and accepted image, not
+copied blindly from the category. For example, `gallery` usually means
+creative-culture / museum-gallery / viewing-design, but the outfit can still
+be tailoring, dress, skirt-skort, or casual-separates depending on the image.
+
 ## Secondary Tag Vocabulary
 
 Secondary tags add search context without replacing the primary category.

@@ -69,6 +69,9 @@ Use this checklist after every daily image generation or reorganization.
   reason, climate context, age-band life scene, age-band silhouette, and the
   anti-repeat instruction for each accepted image.
 - Record the persona direction and fashion focal point for each accepted image.
+- Record the four browsing metadata axes for each accepted image: `occasion`,
+  `venue`, `activity`, and `outfit`. Keep `data-category` as the historical
+  filename/category slug, but do not rely on it as the only browsing axis.
 - If album feedback influenced the set, record which preference dimensions were
   used and whether the result was meant to preserve, vary, or avoid them.
 - Add the set to `index.html` with an `album.html?set=YYYY-MM-DD-theme`
@@ -82,6 +85,10 @@ Use this checklist after every daily image generation or reorganization.
   - `data-style`
   - `data-place`
   - `data-category`
+  - `data-occasion`
+  - `data-venue`
+  - `data-activity`
+  - `data-outfit`
   - note link
 - album link using `album.html?set=...`
 - If old sections are missing album links, run the unified catalog builder:
@@ -108,7 +115,8 @@ The command should report zero errors. It checks:
 - every `index.html` set has an album link
 - the album browser exposes style filtering, sorting, view switching, active
   filters, and linked CSS/JS assets
-- `data-style`, `data-place`, and `data-category` values have filter buttons
+- `data-style`, `data-place`, `data-category`, `data-occasion`,
+  `data-venue`, `data-activity`, and `data-outfit` values have filter buttons
 - index style/category values exist in the prompt preset files
 
 ## Skill Maintenance

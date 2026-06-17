@@ -10,8 +10,11 @@ import json
 from pathlib import Path
 import re
 
+from gallery_metadata import classify_image, labelize_metadata
+
 
 ROOT = Path(__file__).resolve().parents[1]
+ASSET_VERSION = "20260618-meta"
 
 SPECIAL_LABEL_PARTS = {
     "3d": "3D",
@@ -199,6 +202,14 @@ def album_styles(album: Album) -> list[str]:
     return sorted({fig.style for fig in album.figures if fig.style})
 
 
+def figure_metadata(fig: Figure):
+    return classify_image(fig.category, fig.title, fig.tags_text, fig.alt, fig.src)
+
+
+def album_metadata_values(album: Album, key: str) -> list[str]:
+    return sorted({getattr(figure_metadata(fig), key) for fig in album.figures})
+
+
 def figure_title(fig: Figure) -> str:
     if fig.title:
         return fig.title
@@ -221,6 +232,7 @@ def album_to_dict(album: Album) -> dict[str, object]:
     places = album_places(album)
     images = []
     for index, fig in enumerate(album.figures, start=1):
+        metadata = figure_metadata(fig)
         images.append(
             {
                 "label": f"{index:02d}",
@@ -231,6 +243,10 @@ def album_to_dict(album: Album) -> dict[str, object]:
                 "style": fig.style,
                 "place": fig.place,
                 "category": fig.category,
+                "occasion": metadata.occasion,
+                "venue": metadata.venue,
+                "activity": metadata.activity,
+                "outfit": metadata.outfit,
                 "age": figure_age(fig),
             }
         )
@@ -247,13 +263,17 @@ def album_to_dict(album: Album) -> dict[str, object]:
         "places": places,
         "categories": categories,
         "styles": styles,
+        "occasions": album_metadata_values(album, "occasion"),
+        "venues": album_metadata_values(album, "venue"),
+        "activities": album_metadata_values(album, "activity"),
+        "outfits": album_metadata_values(album, "outfit"),
         "imageCount": len(album.figures),
         "images": images,
     }
 
 
 def filter_button(value: str, label: str | None = None, pressed: bool = False, count: int = 0) -> str:
-    label = label or labelize(value)
+    label = label or labelize_metadata(value)
     return (
         f'          <button type="button" data-filter="{escape(value)}" '
         f'aria-pressed="{str(pressed).lower()}">'
@@ -266,6 +286,10 @@ def build_album_browser(albums: list[Album]) -> str:
     places = sorted({place for album in albums for place in album_places(album)})
     categories = sorted({category for album in albums for category in album_categories(album)})
     styles = sorted({style for album in albums for style in album_styles(album)})
+    occasions = sorted({value for album in albums for value in album_metadata_values(album, "occasion")})
+    venues = sorted({value for album in albums for value in album_metadata_values(album, "venue")})
+    activities = sorted({value for album in albums for value in album_metadata_values(album, "activity")})
+    outfits = sorted({value for album in albums for value in album_metadata_values(album, "outfit")})
     months = sorted({album_month(album.title) for album in albums if album_month(album.title)}, reverse=True)
     total_images = sum(len(album.figures) for album in albums)
     latest_date = album_date(albums[0].title) if albums else ""
@@ -282,6 +306,22 @@ def build_album_browser(albums: list[Album]) -> str:
         filter_button(category, count=sum(1 for album in albums if category in album_categories(album)))
         for category in categories
     )
+    occasion_buttons = "\n".join(
+        filter_button(occasion, count=sum(1 for album in albums if occasion in album_metadata_values(album, "occasion")))
+        for occasion in occasions
+    )
+    venue_buttons = "\n".join(
+        filter_button(venue, count=sum(1 for album in albums if venue in album_metadata_values(album, "venue")))
+        for venue in venues
+    )
+    activity_buttons = "\n".join(
+        filter_button(activity, count=sum(1 for album in albums if activity in album_metadata_values(album, "activity")))
+        for activity in activities
+    )
+    outfit_buttons = "\n".join(
+        filter_button(outfit, count=sum(1 for album in albums if outfit in album_metadata_values(album, "outfit")))
+        for outfit in outfits
+    )
     style_buttons = "\n".join(
         filter_button(style, count=sum(1 for album in albums if style in album_styles(album)))
         for style in styles
@@ -295,7 +335,7 @@ def build_album_browser(albums: list[Album]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f6f7">
   <title>Chat Voyage Albums</title>
-  <link rel="stylesheet" href="assets/album-browser.css">
+  <link rel="stylesheet" href="assets/album-browser.css?v={ASSET_VERSION}">
 </head>
 <body>
   <a class="skip-link" href="#albums">Skip to albums</a>
@@ -323,7 +363,7 @@ def build_album_browser(albums: list[Album]) -> str:
       <div class="control-row control-row-main">
         <label class="search-field" for="album-search">
           <span>Search</span>
-          <input type="search" id="album-search" placeholder="City, theme, style, category">
+          <input type="search" id="album-search" placeholder="City, venue, activity, outfit, style">
         </label>
         <label class="select-field" for="album-sort">
           <span>Sort</span>
@@ -363,10 +403,38 @@ def build_album_browser(albums: list[Album]) -> str:
             </div>
           </div>
           <div class="filter-row" data-filter-group="category">
-            <div class="filter-label">Category</div>
+            <div class="filter-label">Legacy</div>
             <div class="filter-buttons">
 {filter_button("all", "All", pressed=True, count=len(albums))}
 {category_buttons}
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="occasion">
+            <div class="filter-label">Occasion</div>
+            <div class="filter-buttons">
+{filter_button("all", "All", pressed=True, count=len(albums))}
+{occasion_buttons}
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="venue">
+            <div class="filter-label">Venue</div>
+            <div class="filter-buttons">
+{filter_button("all", "All", pressed=True, count=len(albums))}
+{venue_buttons}
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="activity">
+            <div class="filter-label">Activity</div>
+            <div class="filter-buttons">
+{filter_button("all", "All", pressed=True, count=len(albums))}
+{activity_buttons}
+            </div>
+          </div>
+          <div class="filter-row" data-filter-group="outfit">
+            <div class="filter-label">Outfit</div>
+            <div class="filter-buttons">
+{filter_button("all", "All", pressed=True, count=len(albums))}
+{outfit_buttons}
             </div>
           </div>
           <div class="filter-row" data-filter-group="style">
@@ -391,7 +459,7 @@ def build_album_browser(albums: list[Album]) -> str:
     </section>
   </main>
 
-  <script src="assets/album-browser.js"></script>
+  <script src="assets/album-browser.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 """
@@ -401,6 +469,10 @@ def render_card(album: Album, *, is_latest: bool, index: int) -> str:
     places = album_places(album)
     categories = album_categories(album)
     styles = album_styles(album)
+    occasions = album_metadata_values(album, "occasion")
+    venues = album_metadata_values(album, "venue")
+    activities = album_metadata_values(album, "activity")
+    outfits = album_metadata_values(album, "outfit")
     meta = clean_meta(album)
     date = album_date(album.title)
     month = album_month(album.title)
@@ -413,6 +485,10 @@ def render_card(album: Album, *, is_latest: bool, index: int) -> str:
             *places,
             *categories,
             *styles,
+            *occasions,
+            *venues,
+            *activities,
+            *outfits,
             *[fig.alt for fig in album.figures if fig.alt],
             *[fig.tags_text for fig in album.figures if fig.tags_text],
         ]
@@ -427,7 +503,7 @@ def render_card(album: Album, *, is_latest: bool, index: int) -> str:
     summary = truncate(meta, 150)
     meta_html = f'<p class="summary">{escape(summary)}</p>' if summary else ""
 
-    return f"""      <article class="album-card" data-index="{index}" data-title="{title.lower()}" data-date="{escape(date)}" data-month="{escape(month)}" data-city="{escape(city.lower())}" data-place="{escape(' '.join(places))}" data-category="{escape(' '.join(categories))}" data-style="{escape(' '.join(styles))}" data-image-count="{image_count}" data-search="{escape(search)}">
+    return f"""      <article class="album-card" data-index="{index}" data-title="{title.lower()}" data-date="{escape(date)}" data-month="{escape(month)}" data-city="{escape(city.lower())}" data-place="{escape(' '.join(places))}" data-category="{escape(' '.join(categories))}" data-occasion="{escape(' '.join(occasions))}" data-venue="{escape(' '.join(venues))}" data-activity="{escape(' '.join(activities))}" data-outfit="{escape(' '.join(outfits))}" data-style="{escape(' '.join(styles))}" data-image-count="{image_count}" data-search="{escape(search)}">
         <a class="thumb-grid" href="{escape(href)}" aria-label="{title} album">
 {thumbs}
         </a>
@@ -495,14 +571,14 @@ def build_album_data(albums: list[Album]) -> str:
 
 
 def build_album_shell() -> str:
-    return """<!doctype html>
+    return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f6f7">
   <title>Chat Voyage Album</title>
-  <link rel="stylesheet" href="assets/album-page.css">
+  <link rel="stylesheet" href="assets/album-page.css?v={ASSET_VERSION}">
 </head>
 <body>
   <a class="skip-link" href="#images">Skip to images</a>
@@ -604,8 +680,8 @@ def build_album_shell() -> str:
     <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">&gt;</button>
     <div class="lightbox-caption" data-lightbox-caption></div>
   </div>
-  <script src="assets/album-data.js"></script>
-  <script src="assets/album-page.js"></script>
+  <script src="assets/album-data.js?v={ASSET_VERSION}"></script>
+  <script src="assets/album-page.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 """

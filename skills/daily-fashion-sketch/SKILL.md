@@ -41,6 +41,9 @@ single four-panel collage.
    - one lucky color
    - one city theme
    - four selected fashion categories from `category-presets.md`
+   - four browsing metadata axes per image: `occasion`, `venue`, `activity`,
+     and `outfit`, inferred from the actual person, place, action, and garment
+     structure rather than copied blindly from the legacy category
    - one shared visual style or two to four mixed styles from `style-presets.md`
    - four target age bands and pose families
    - a persona direction from `prompts/persona-presets.md`
@@ -76,6 +79,9 @@ single four-panel collage.
     once the matching WebP files and gallery references are verified.
 13. Update the monthly log, notes, album catalog, and `index.html`.
     `index.html` album links should use `album.html?set=YYYY-MM-DD-theme`.
+    Keep the historical `data-category` slug for filenames and compatibility,
+    but also add `data-occasion`, `data-venue`, `data-activity`, and
+    `data-outfit` for browsing and review.
     The product-facing album view is the unified `album.html` shell backed by
     `assets/album-data.js`; legacy `assets/YYYY-MM-DD-theme-album.html` files
     are compatibility redirects only.
@@ -228,6 +234,10 @@ Before accepting the set, check:
   and any repeated formula was avoided or explicitly justified.
 - Selected `data-style` and `data-category` values exist in the Chat Voyage
   prompt presets when working in that project.
+- Browsing metadata is present and conceptually separated: `data-category`
+  remains the legacy slug, while `data-occasion`, `data-venue`,
+  `data-activity`, and `data-outfit` describe why the outfit exists, where it
+  is, what she is doing, and the garment structure.
 - The shared daily mood is present but subtle.
 - The lucky color appears in each image, with different intensity or placement.
 - The lucky color tone reflects the target age band, not only the shared daily
