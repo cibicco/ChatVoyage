@@ -1,35 +1,48 @@
 # Chat Voyage
 
-Chat Voyage is a small creative project space for daily fashion-image explorations.
+Chat Voyage is a static gallery archive for daily fashion-image explorations:
+four-image sets, city-specific styling notes, prompt presets, and lightweight
+album review UI.
 
-The name means "traveling cat" in French. The current direction is an anime-leaning fashion character series that travels through daily themes, city moods, and outfit references.
+The current gallery is built from plain HTML, CSS, JavaScript, and WebP image
+assets. It is intended to run directly on GitHub Pages or any static file host.
+
+## Browse
+
+- `index.html`: chronological image gallery with filters
+- `albums.html`: album browser
+- `album.html?set=2026-06-17-barcelona-citrus-coral-city-day`: single-album viewer
+
+The album viewer stores preference feedback in browser `localStorage`. Feedback
+is local to the browser and is not synced to a server.
 
 ## Structure
 
-- `assets/daily/`: generated daily image sets
-- `notes/`: direction notes and source context
-- `prompts/`: prompt notes or reusable prompt fragments
+- `assets/daily/`: generated WebP daily image sets
+- `assets/album-data.js`: generated album catalog consumed by the album UI
+- `notes/`: daily direction notes and review notes
+- `logs/`: monthly generation logs
+- `prompts/`: reusable prompt presets and guardrails
+- `scripts/`: gallery build, conversion, and validation scripts
+- `docs/`: workflow and handover documentation
+- `skills/`: project-tracked copy of the daily generation skill
 
-## Current Set
+## Daily Workflow
 
-- `assets/daily/2026-05-16-celford-regina-noela/`
-  - CELFORD / Regina / Noela inspired feminine separates
-  - adult Japanese anime character direction
-  - no logos, no exact product copies
+After adding or regenerating a daily set:
 
-## Daily Sets
+```sh
+python3 scripts/build_album_catalog.py
+python3 scripts/validate_gallery.py
+git status --short --branch
+```
 
-- `assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/`
-  - Kanazawa rainy craft modern set
-  - translucent rain workwear, lacquer mode, velvet teahouse night, ryokan terrace resort
-- `assets/daily/2026-05-24-fukuoka-coral-urban-resort/`
-  - Fukuoka early-summer coral urban resort set
-  - sporty mesh, linen mode, satin night, crochet beach styling
-- `assets/daily/2026-05-10-first-set-regenerations/`
-  - first four-image trial set plus three regenerated variants
-- `assets/daily/2026-05-16-daily-fashion-set/`
-  - earlier 2026-05-16 street/mode/night/resort daily set
-- `assets/daily/2026-05-16-celford-regina-noela/`
-  - later 2026-05-16 polished feminine separates set
+Generated display images should be WebP. Project PNG copies are intentionally
+not kept.
 
-Open `index.html` in a browser to view the local gallery.
+## GitHub Pages
+
+This repository can be published from the `main` branch root. The repository
+must be public, or the GitHub account/organization must support private Pages.
+
+See `docs/github-pages-workflow.md` for the current publishing notes.
