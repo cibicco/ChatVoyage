@@ -528,7 +528,23 @@ h2 a:hover {
   }
 
   [data-view="list"] .album-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(124px, 0.34fr) minmax(0, 1fr);
+    grid-template-rows: none;
+  }
+
+  [data-view="list"] .thumb-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-self: stretch;
+  }
+
+  [data-view="list"] .thumb-grid img {
+    aspect-ratio: 1 / 1.18;
+  }
+
+  [data-view="list"] .album-content {
+    align-content: start;
+    gap: 8px;
+    padding: 12px;
   }
 }
 
@@ -618,5 +634,25 @@ h2 a:hover {
 
   .thumb-grid img {
     aspect-ratio: 4 / 5;
+  }
+
+  [data-view="list"] .album-card {
+    grid-template-columns: 116px minmax(0, 1fr);
+  }
+
+  [data-view="list"] .album-kicker,
+  [data-view="list"] .tag-groups {
+    display: none;
+  }
+
+  [data-view="list"] .summary {
+    -webkit-line-clamp: 3;
+    font-size: 0.84rem;
+  }
+
+  [data-view="list"] .primary-link,
+  [data-view="list"] .secondary-link {
+    min-height: 28px;
+    font-size: 0.84rem;
   }
 }
