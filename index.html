@@ -35,7 +35,7 @@
     }
 
     header {
-      padding: 24px 0 16px;
+      padding: 18px 0 12px;
       border-bottom: 1px solid var(--line);
     }
 
@@ -49,16 +49,16 @@
 
     h1 {
       margin: 0 0 8px;
-      font-size: clamp(2rem, 3vw, 3rem);
+      font-size: clamp(1.9rem, 2.7vw, 2.75rem);
       line-height: 1.05;
       letter-spacing: 0;
     }
 
     .intro {
       margin: 0;
-      max-width: 720px;
+      max-width: 640px;
       color: var(--muted);
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     .filters {
@@ -87,8 +87,10 @@
       flex-wrap: nowrap;
       gap: 6px;
       overflow-x: auto;
-      padding-bottom: 2px;
+      padding: 0 18px 2px 0;
       scrollbar-width: thin;
+      -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent);
+      mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent);
     }
 
     .filter-buttons button {
@@ -366,7 +368,7 @@
       }
 
       header {
-        padding: 24px 0 16px;
+        padding: 14px 0 10px;
       }
 
       nav {
@@ -378,7 +380,7 @@
       }
 
       .intro {
-        font-size: 0.94rem;
+        font-size: 0.9rem;
       }
 
       .filters {
@@ -459,7 +461,7 @@
       <a href="albums.html">Albums</a>
     </nav>
     <h1>Chat Voyage</h1>
-    <p class="intro">Daily fashion image sets for original adult Japanese characters, organized by date, theme, fashion category, image style, and place.</p>
+    <p class="intro">Daily fashion image sets organized by date, place, style, and scene.</p>
   </header>
 
   <main>
@@ -518,7 +520,7 @@
       </div>
 
       <details class="advanced-filters">
-        <summary><span>More filters</span><span class="advanced-filter-hint">Scene / Venue / Activity / Outfit / Legacy</span></summary>
+        <summary><span>Details</span><span class="advanced-filter-hint">Scene / Venue / Activity / Outfit</span></summary>
         <div class="advanced-filter-body">
       <div class="filter-row">
         <div class="filter-label">Legacy</div>
