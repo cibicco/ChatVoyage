@@ -35,7 +35,7 @@
     }
 
     header {
-      padding: 40px 0 24px;
+      padding: 24px 0 16px;
       border-bottom: 1px solid var(--line);
     }
 
@@ -43,50 +43,52 @@
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
-      margin-bottom: 18px;
+      margin-bottom: 8px;
       color: var(--muted);
     }
 
     h1 {
       margin: 0 0 8px;
-      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-size: clamp(2rem, 3vw, 3rem);
       line-height: 1.05;
       letter-spacing: 0;
     }
 
     .intro {
       margin: 0;
-      max-width: 760px;
+      max-width: 720px;
       color: var(--muted);
       font-size: 1rem;
     }
 
     .filters {
-      padding: 22px 0 8px;
+      padding: 14px 0 8px;
       display: grid;
-      gap: 14px;
+      gap: 8px;
       border-bottom: 1px solid var(--line);
     }
 
     .filter-row {
       display: grid;
-      grid-template-columns: 86px 1fr;
-      gap: 10px;
-      align-items: start;
+      grid-template-columns: 74px minmax(0, 1fr);
+      gap: 8px;
+      align-items: center;
     }
 
     .filter-label {
-      padding-top: 7px;
       color: var(--muted);
-      font-size: 0.86rem;
+      font-size: 0.75rem;
       font-weight: 600;
       text-transform: uppercase;
     }
 
     .filter-buttons {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+      flex-wrap: nowrap;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      scrollbar-width: thin;
     }
 
     .filter-buttons button {
@@ -95,15 +97,61 @@
     }
 
     button {
-      min-height: 34px;
+      min-height: 30px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--panel);
       color: var(--ink);
       font: inherit;
-      font-size: 0.9rem;
+      font-size: 0.84rem;
       cursor: pointer;
-      padding: 6px 10px;
+      padding: 5px 9px;
+    }
+
+    .advanced-filters {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+      border-top: 1px solid var(--line);
+      padding-top: 8px;
+    }
+
+    .advanced-filters summary {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 32px;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: 0.86rem;
+      font-weight: 650;
+      list-style: none;
+    }
+
+    .advanced-filters summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .advanced-filters summary::after {
+      content: "+";
+      color: var(--muted);
+      font-weight: 760;
+    }
+
+    .advanced-filters[open] summary::after {
+      content: "-";
+    }
+
+    .advanced-filter-hint {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .advanced-filter-body {
+      display: grid;
+      gap: 8px;
     }
 
     button[aria-pressed="true"] {
@@ -119,7 +167,7 @@
     }
 
     section {
-      padding: 32px 0;
+      padding: 24px 0;
       border-bottom: 1px solid var(--line);
       content-visibility: auto;
       contain-intrinsic-size: 900px;
@@ -497,6 +545,9 @@
         </div>
       </div>
 
+      <details class="advanced-filters">
+        <summary><span>More filters</span><span class="advanced-filter-hint">Occasion / Venue / Activity / Outfit</span></summary>
+        <div class="advanced-filter-body">
       <div class="filter-row">
         <div class="filter-label">Occasion</div>
         <div class="filter-buttons" data-filter-group="occasion">
@@ -568,6 +619,8 @@
           <button type="button" data-filter="trousers-shorts">Trousers / Shorts (5)</button>
         </div>
       </div>
+        </div>
+      </details>
 
       <p class="count" aria-live="polite">Showing <span id="visible-count">143</span> / <span id="total-count">143</span></p>
     </div>
