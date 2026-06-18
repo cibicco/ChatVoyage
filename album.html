@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f6f7">
   <title>Chat Voyage Album</title>
-  <link rel="stylesheet" href="assets/album-page.css?v=20260618-view">
+  <link rel="stylesheet" href="assets/album-page.css?v=20260618-ja-ui">
 </head>
 <body>
-  <a class="skip-link" href="#images">Skip to images</a>
+  <a class="skip-link" href="#images">画像へ</a>
   <header class="album-header">
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Gallery</a>
@@ -20,15 +20,15 @@
         <span>Album</span>
         <select id="album-select"></select>
       </label>
-      <button class="feedback-export" type="button" data-feedback-export>Export feedback</button>
+      <button class="feedback-export" type="button" data-feedback-export>フィードバックを書き出す</button>
     </div>
     <p class="eyebrow">Chat Voyage Album</p>
     <div class="title-block">
       <h1 id="album-title">Album</h1>
       <dl class="album-stats" aria-label="Album summary">
-        <div><dt>Date</dt><dd id="album-date"></dd></div>
-        <div><dt>Images</dt><dd id="album-count"></dd></div>
-        <div><dt>Place</dt><dd id="album-place"></dd></div>
+        <div><dt>日付</dt><dd id="album-date"></dd></div>
+        <div><dt>画像</dt><dd id="album-count"></dd></div>
+        <div><dt>場所</dt><dd id="album-place"></dd></div>
       </dl>
     </div>
     <p class="intro" id="album-summary"></p>
@@ -45,69 +45,69 @@
         <p class="viewer-count"><span data-current-image>1</span> / <span data-total-images>0</span></p>
         <div class="viewer-caption" data-viewer-caption></div>
         <div class="viewer-actions">
-          <button type="button" data-album-prev aria-label="Previous image">&lt;</button>
-          <button type="button" data-album-next aria-label="Next image">&gt;</button>
-          <a class="open-image" data-open-image href="#">Open image</a>
-          <a class="notes-link" data-notes-link href="#" hidden>Notes</a>
+          <button type="button" data-album-prev aria-label="前の画像">&lt;</button>
+          <button type="button" data-album-next aria-label="次の画像">&gt;</button>
+          <a class="open-image" data-open-image href="#">画像を開く</a>
+          <a class="notes-link" data-notes-link href="#" hidden>メモ</a>
         </div>
         <div class="album-neighbors" aria-label="Nearby albums">
           <a data-prev-album href="#"></a>
           <a data-next-album href="#"></a>
         </div>
-        <section class="feedback-panel" data-feedback aria-label="Preference feedback">
+        <section class="feedback-panel" data-feedback aria-label="好みフィードバック">
           <div class="feedback-heading">
-            <h2>Preference</h2>
-            <p data-feedback-status>Not saved</p>
+            <h2>好み</h2>
+            <p data-feedback-status>未保存</p>
           </div>
-          <div class="feedback-score" role="group" aria-label="Image preference">
-            <button type="button" data-feedback-score="love">Love</button>
-            <button type="button" data-feedback-score="like">Good</button>
-            <button type="button" data-feedback-score="pass">Pass</button>
+          <div class="feedback-score" role="group" aria-label="画像の好み">
+            <button type="button" data-feedback-score="love">好き</button>
+            <button type="button" data-feedback-score="like">良い</button>
+            <button type="button" data-feedback-score="pass">見送り</button>
           </div>
           <fieldset class="feedback-tags">
-            <legend>Dimension</legend>
-            <label><input type="checkbox" value="art-style" data-feedback-tag> Art style</label>
-            <label><input type="checkbox" value="person" data-feedback-tag> Person</label>
-            <label><input type="checkbox" value="outfit" data-feedback-tag> Outfit</label>
-            <label><input type="checkbox" value="color" data-feedback-tag> Color</label>
-            <label><input type="checkbox" value="silhouette" data-feedback-tag> Silhouette</label>
-            <label><input type="checkbox" value="pose" data-feedback-tag> Pose</label>
-            <label><input type="checkbox" value="place" data-feedback-tag> Place</label>
-            <label><input type="checkbox" value="vibe" data-feedback-tag> Vibe</label>
+            <legend>軸</legend>
+            <label><input type="checkbox" value="art-style" data-feedback-tag> 絵柄</label>
+            <label><input type="checkbox" value="person" data-feedback-tag> 人</label>
+            <label><input type="checkbox" value="outfit" data-feedback-tag> 服装</label>
+            <label><input type="checkbox" value="color" data-feedback-tag> 色</label>
+            <label><input type="checkbox" value="silhouette" data-feedback-tag> シルエット</label>
+            <label><input type="checkbox" value="pose" data-feedback-tag> ポーズ</label>
+            <label><input type="checkbox" value="place" data-feedback-tag> 場所</label>
+            <label><input type="checkbox" value="vibe" data-feedback-tag> 雰囲気</label>
           </fieldset>
           <label class="feedback-note">
-            <span>Note</span>
+            <span>メモ</span>
             <textarea rows="3" data-feedback-note></textarea>
           </label>
-          <button class="feedback-reset" type="button" data-feedback-reset>Clear image</button>
+          <button class="feedback-reset" type="button" data-feedback-reset>この画像の記録を消す</button>
         </section>
       </aside>
     </section>
 
     <div class="thumbnail-strip" data-thumbnail-strip role="list" aria-label="Album thumbnails"></div>
 
-    <section class="overview" id="images" aria-label="Images">
+    <section class="overview" id="images" aria-label="画像">
       <div class="section-heading">
-        <h2>Images</h2>
+        <h2>画像</h2>
         <p data-image-total></p>
       </div>
       <div class="grid" data-image-grid></div>
     </section>
   </main>
-  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Image preview">
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="画像プレビュー">
     <div class="lightbox-bar">
       <p class="lightbox-count"><span data-lightbox-current>1</span> / <span data-lightbox-total>0</span></p>
       <div class="lightbox-actions">
-        <a data-lightbox-open href="#">Open original</a>
-        <button type="button" data-lightbox-close aria-label="Close preview">Close</button>
+        <a data-lightbox-open href="#">原寸を開く</a>
+        <button type="button" data-lightbox-close aria-label="プレビューを閉じる">閉じる</button>
       </div>
     </div>
-    <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">&lt;</button>
+    <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="前の画像">&lt;</button>
     <img data-lightbox-image alt="">
-    <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">&gt;</button>
+    <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="次の画像">&gt;</button>
     <div class="lightbox-caption" data-lightbox-caption></div>
   </div>
-  <script src="assets/album-data.js?v=20260618-view"></script>
-  <script src="assets/album-page.js?v=20260618-view"></script>
+  <script src="assets/album-data.js?v=20260618-ja-ui"></script>
+  <script src="assets/album-page.js?v=20260618-ja-ui"></script>
 </body>
 </html>

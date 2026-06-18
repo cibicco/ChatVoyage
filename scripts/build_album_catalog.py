@@ -14,7 +14,7 @@ from gallery_metadata import classify_image, labelize_metadata
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSET_VERSION = "20260618-view"
+ASSET_VERSION = "20260618-ja-ui"
 
 SPECIAL_LABEL_PARTS = {
     "3d": "3D",
@@ -338,7 +338,7 @@ def build_album_browser(albums: list[Album]) -> str:
   <link rel="stylesheet" href="assets/album-browser.css?v={ASSET_VERSION}">
 </head>
 <body>
-  <a class="skip-link" href="#albums">Skip to albums</a>
+  <a class="skip-link" href="#albums">アルバムへ</a>
   <header class="page-header">
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Gallery</a>
@@ -350,10 +350,10 @@ def build_album_browser(albums: list[Album]) -> str:
         <h1>Albums</h1>
       </div>
       <dl class="stats" aria-label="Album summary">
-        <div><dt>Albums</dt><dd>{len(albums)}</dd></div>
-        <div><dt>Images</dt><dd>{total_images}</dd></div>
-        <div><dt>Places</dt><dd>{len(places)}</dd></div>
-        <div><dt>Latest</dt><dd>{escape(latest_date)}</dd></div>
+        <div><dt>アルバム</dt><dd>{len(albums)}</dd></div>
+        <div><dt>画像</dt><dd>{total_images}</dd></div>
+        <div><dt>場所</dt><dd>{len(places)}</dd></div>
+        <div><dt>最新</dt><dd>{escape(latest_date)}</dd></div>
       </dl>
     </div>
   </header>
@@ -362,85 +362,85 @@ def build_album_browser(albums: list[Album]) -> str:
     <section class="controls" aria-label="Album controls">
       <div class="control-row control-row-main">
         <label class="search-field" for="album-search">
-          <span>Search</span>
-          <input type="search" id="album-search" placeholder="City, venue, activity, outfit, style">
+          <span>検索</span>
+          <input type="search" id="album-search" placeholder="都市・場所・動き・服装・絵柄">
         </label>
         <label class="select-field" for="album-sort">
-          <span>Sort</span>
+          <span>並び順</span>
           <select id="album-sort">
-            <option value="newest">Newest first</option>
-            <option value="oldest">Oldest first</option>
-            <option value="city">City</option>
-            <option value="title">Title</option>
-            <option value="images">Image count</option>
+            <option value="newest">新しい順</option>
+            <option value="oldest">古い順</option>
+            <option value="city">都市</option>
+            <option value="title">タイトル</option>
+            <option value="images">画像数</option>
           </select>
         </label>
         <div class="view-toggle" aria-label="View mode">
-          <button type="button" data-view-option="grid" aria-pressed="true">Grid</button>
-          <button type="button" data-view-option="list" aria-pressed="false">List</button>
+          <button type="button" data-view-option="grid" aria-pressed="true">グリッド</button>
+          <button type="button" data-view-option="list" aria-pressed="false">リスト</button>
         </div>
-        <button class="reset-button" type="button" id="reset-filters">Reset</button>
+        <button class="reset-button" type="button" id="reset-filters">リセット</button>
       </div>
 
       <details class="filter-drawer" data-filter-drawer open>
         <summary>
-          <span>Filters</span>
-          <span data-filter-summary>All filters</span>
+          <span>フィルタ</span>
+          <span data-filter-summary>すべて</span>
         </summary>
         <div class="filter-body">
           <div class="filter-row" data-filter-group="month">
-            <div class="filter-label">Month</div>
+            <div class="filter-label">月</div>
             <div class="filter-buttons">
-{filter_button("all", "All", pressed=True, count=len(albums))}
+{filter_button("all", "すべて", pressed=True, count=len(albums))}
 {month_buttons}
             </div>
           </div>
           <div class="filter-row" data-filter-group="place">
-            <div class="filter-label">Place</div>
+            <div class="filter-label">都市</div>
             <div class="filter-buttons">
-{filter_button("all", "All", pressed=True, count=len(albums))}
+{filter_button("all", "すべて", pressed=True, count=len(albums))}
 {place_buttons}
             </div>
           </div>
           <div class="filter-row" data-filter-group="category">
-            <div class="filter-label">Legacy</div>
+            <div class="filter-label">旧カテゴリ</div>
             <div class="filter-buttons">
-{filter_button("all", "All", pressed=True, count=len(albums))}
+{filter_button("all", "すべて", pressed=True, count=len(albums))}
 {category_buttons}
             </div>
           </div>
           <div class="filter-row" data-filter-group="occasion">
-            <div class="filter-label">Occasion</div>
+            <div class="filter-label">場面</div>
             <div class="filter-buttons">
-{filter_button("all", "All", pressed=True, count=len(albums))}
+{filter_button("all", "すべて", pressed=True, count=len(albums))}
 {occasion_buttons}
             </div>
           </div>
           <div class="filter-row" data-filter-group="venue">
-            <div class="filter-label">Venue</div>
+            <div class="filter-label">場所</div>
             <div class="filter-buttons">
-{filter_button("all", "All", pressed=True, count=len(albums))}
+{filter_button("all", "すべて", pressed=True, count=len(albums))}
 {venue_buttons}
             </div>
           </div>
           <div class="filter-row" data-filter-group="activity">
-            <div class="filter-label">Activity</div>
+            <div class="filter-label">行動</div>
             <div class="filter-buttons">
-{filter_button("all", "All", pressed=True, count=len(albums))}
+{filter_button("all", "すべて", pressed=True, count=len(albums))}
 {activity_buttons}
             </div>
           </div>
           <div class="filter-row" data-filter-group="outfit">
-            <div class="filter-label">Outfit</div>
+            <div class="filter-label">服装</div>
             <div class="filter-buttons">
-{filter_button("all", "All", pressed=True, count=len(albums))}
+{filter_button("all", "すべて", pressed=True, count=len(albums))}
 {outfit_buttons}
             </div>
           </div>
           <div class="filter-row" data-filter-group="style">
-            <div class="filter-label">Style</div>
+            <div class="filter-label">絵柄</div>
             <div class="filter-buttons">
-{filter_button("all", "All", pressed=True, count=len(albums))}
+{filter_button("all", "すべて", pressed=True, count=len(albums))}
 {style_buttons}
             </div>
           </div>
@@ -448,12 +448,12 @@ def build_album_browser(albums: list[Album]) -> str:
       </details>
 
       <div class="result-bar">
-        <p class="count" aria-live="polite"><span id="visible-count">{len(albums)}</span> / <span id="total-count">{len(albums)}</span> albums</p>
+        <p class="count" aria-live="polite"><span id="visible-count">{len(albums)}</span> / <span id="total-count">{len(albums)}</span> 件</p>
         <div class="active-filters" id="active-filters" aria-label="Active filters"></div>
       </div>
     </section>
 
-    <p class="empty-state" id="empty-state" hidden>No albums match the current filters.</p>
+    <p class="empty-state" id="empty-state" hidden>条件に合うアルバムがありません。</p>
     <section class="albums" id="albums" aria-label="Album results">
 {cards}
     </section>
@@ -497,7 +497,7 @@ def render_card(album: Album, *, is_latest: bool, index: int) -> str:
     thumbs = "\n".join(render_thumb(fig, album.title) for fig in album.figures[:4])
     place_tags = "\n".join(render_tag(place, "place") for place in places[:2])
     category_tags = "\n".join(render_tag(category, "category") for category in categories[:4])
-    notes = f'<a class="secondary-link" href="{escape(album.notes_href)}">Notes</a>' if album.notes_href else ""
+    notes = f'<a class="secondary-link" href="{escape(album.notes_href)}">メモ</a>' if album.notes_href else ""
     title = escape(album.title)
     href = album_href(album)
     summary = truncate(meta, 150)
@@ -511,7 +511,7 @@ def render_card(album: Album, *, is_latest: bool, index: int) -> str:
           <div class="album-kicker">
             <span>{escape(date)}</span>
             <span>{escape(city)}</span>
-            <span>{image_count} images</span>
+            <span>{image_count}枚</span>
           </div>
           <div class="title-row">
             <h2><a href="{escape(href)}">{title}</a></h2>
@@ -523,7 +523,7 @@ def render_card(album: Album, *, is_latest: bool, index: int) -> str:
             <div class="tag-group">{category_tags}</div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="{escape(href)}">Open</a>
+            <a class="primary-link" href="{escape(href)}">見る</a>
             {notes}
           </div>
         </div>
@@ -546,11 +546,11 @@ def render_badges(album: Album, *, is_latest: bool) -> str:
     badges: list[str] = []
     title = album.title.lower()
     if is_latest:
-        badges.append("Latest")
+        badges.append("最新")
     if "remake" in title or " v2" in title or "-v2" in title or "regeneration" in title:
-        badges.append("Remake")
+        badges.append("再生成")
     if len(album.figures) != 4:
-        badges.append(f"{len(album.figures)} images")
+        badges.append(f"{len(album.figures)}枚")
     if not badges:
         return ""
     return '<div class="badges">' + "".join(f'<span class="badge">{escape(badge)}</span>' for badge in badges) + "</div>"
@@ -581,7 +581,7 @@ def build_album_shell() -> str:
   <link rel="stylesheet" href="assets/album-page.css?v={ASSET_VERSION}">
 </head>
 <body>
-  <a class="skip-link" href="#images">Skip to images</a>
+  <a class="skip-link" href="#images">画像へ</a>
   <header class="album-header">
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Gallery</a>
@@ -593,15 +593,15 @@ def build_album_shell() -> str:
         <span>Album</span>
         <select id="album-select"></select>
       </label>
-      <button class="feedback-export" type="button" data-feedback-export>Export feedback</button>
+      <button class="feedback-export" type="button" data-feedback-export>フィードバックを書き出す</button>
     </div>
     <p class="eyebrow">Chat Voyage Album</p>
     <div class="title-block">
       <h1 id="album-title">Album</h1>
       <dl class="album-stats" aria-label="Album summary">
-        <div><dt>Date</dt><dd id="album-date"></dd></div>
-        <div><dt>Images</dt><dd id="album-count"></dd></div>
-        <div><dt>Place</dt><dd id="album-place"></dd></div>
+        <div><dt>日付</dt><dd id="album-date"></dd></div>
+        <div><dt>画像</dt><dd id="album-count"></dd></div>
+        <div><dt>場所</dt><dd id="album-place"></dd></div>
       </dl>
     </div>
     <p class="intro" id="album-summary"></p>
@@ -618,66 +618,66 @@ def build_album_shell() -> str:
         <p class="viewer-count"><span data-current-image>1</span> / <span data-total-images>0</span></p>
         <div class="viewer-caption" data-viewer-caption></div>
         <div class="viewer-actions">
-          <button type="button" data-album-prev aria-label="Previous image">&lt;</button>
-          <button type="button" data-album-next aria-label="Next image">&gt;</button>
-          <a class="open-image" data-open-image href="#">Open image</a>
-          <a class="notes-link" data-notes-link href="#" hidden>Notes</a>
+          <button type="button" data-album-prev aria-label="前の画像">&lt;</button>
+          <button type="button" data-album-next aria-label="次の画像">&gt;</button>
+          <a class="open-image" data-open-image href="#">画像を開く</a>
+          <a class="notes-link" data-notes-link href="#" hidden>メモ</a>
         </div>
         <div class="album-neighbors" aria-label="Nearby albums">
           <a data-prev-album href="#"></a>
           <a data-next-album href="#"></a>
         </div>
-        <section class="feedback-panel" data-feedback aria-label="Preference feedback">
+        <section class="feedback-panel" data-feedback aria-label="好みフィードバック">
           <div class="feedback-heading">
-            <h2>Preference</h2>
-            <p data-feedback-status>Not saved</p>
+            <h2>好み</h2>
+            <p data-feedback-status>未保存</p>
           </div>
-          <div class="feedback-score" role="group" aria-label="Image preference">
-            <button type="button" data-feedback-score="love">Love</button>
-            <button type="button" data-feedback-score="like">Good</button>
-            <button type="button" data-feedback-score="pass">Pass</button>
+          <div class="feedback-score" role="group" aria-label="画像の好み">
+            <button type="button" data-feedback-score="love">好き</button>
+            <button type="button" data-feedback-score="like">良い</button>
+            <button type="button" data-feedback-score="pass">見送り</button>
           </div>
           <fieldset class="feedback-tags">
-            <legend>Dimension</legend>
-            <label><input type="checkbox" value="art-style" data-feedback-tag> Art style</label>
-            <label><input type="checkbox" value="person" data-feedback-tag> Person</label>
-            <label><input type="checkbox" value="outfit" data-feedback-tag> Outfit</label>
-            <label><input type="checkbox" value="color" data-feedback-tag> Color</label>
-            <label><input type="checkbox" value="silhouette" data-feedback-tag> Silhouette</label>
-            <label><input type="checkbox" value="pose" data-feedback-tag> Pose</label>
-            <label><input type="checkbox" value="place" data-feedback-tag> Place</label>
-            <label><input type="checkbox" value="vibe" data-feedback-tag> Vibe</label>
+            <legend>軸</legend>
+            <label><input type="checkbox" value="art-style" data-feedback-tag> 絵柄</label>
+            <label><input type="checkbox" value="person" data-feedback-tag> 人</label>
+            <label><input type="checkbox" value="outfit" data-feedback-tag> 服装</label>
+            <label><input type="checkbox" value="color" data-feedback-tag> 色</label>
+            <label><input type="checkbox" value="silhouette" data-feedback-tag> シルエット</label>
+            <label><input type="checkbox" value="pose" data-feedback-tag> ポーズ</label>
+            <label><input type="checkbox" value="place" data-feedback-tag> 場所</label>
+            <label><input type="checkbox" value="vibe" data-feedback-tag> 雰囲気</label>
           </fieldset>
           <label class="feedback-note">
-            <span>Note</span>
+            <span>メモ</span>
             <textarea rows="3" data-feedback-note></textarea>
           </label>
-          <button class="feedback-reset" type="button" data-feedback-reset>Clear image</button>
+          <button class="feedback-reset" type="button" data-feedback-reset>この画像の記録を消す</button>
         </section>
       </aside>
     </section>
 
     <div class="thumbnail-strip" data-thumbnail-strip role="list" aria-label="Album thumbnails"></div>
 
-    <section class="overview" id="images" aria-label="Images">
+    <section class="overview" id="images" aria-label="画像">
       <div class="section-heading">
-        <h2>Images</h2>
+        <h2>画像</h2>
         <p data-image-total></p>
       </div>
       <div class="grid" data-image-grid></div>
     </section>
   </main>
-  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Image preview">
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="画像プレビュー">
     <div class="lightbox-bar">
       <p class="lightbox-count"><span data-lightbox-current>1</span> / <span data-lightbox-total>0</span></p>
       <div class="lightbox-actions">
-        <a data-lightbox-open href="#">Open original</a>
-        <button type="button" data-lightbox-close aria-label="Close preview">Close</button>
+        <a data-lightbox-open href="#">原寸を開く</a>
+        <button type="button" data-lightbox-close aria-label="プレビューを閉じる">閉じる</button>
       </div>
     </div>
-    <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">&lt;</button>
+    <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="前の画像">&lt;</button>
     <img data-lightbox-image alt="">
-    <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">&gt;</button>
+    <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="次の画像">&gt;</button>
     <div class="lightbox-caption" data-lightbox-caption></div>
   </div>
   <script src="assets/album-data.js?v={ASSET_VERSION}"></script>

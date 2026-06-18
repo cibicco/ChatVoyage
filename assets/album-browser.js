@@ -4,15 +4,15 @@
 
   const groups = ["month", "place", "category", "occasion", "venue", "activity", "outfit", "style"];
   const groupLabels = {
-    month: "Month",
-    place: "Place",
-    category: "Legacy",
-    occasion: "Occasion",
-    venue: "Venue",
-    activity: "Activity",
-    outfit: "Outfit",
-    style: "Style",
-    query: "Search",
+    month: "月",
+    place: "都市",
+    category: "旧カテゴリ",
+    occasion: "場面",
+    venue: "場所",
+    activity: "行動",
+    outfit: "服装",
+    style: "絵柄",
+    query: "検索",
   };
   const state = {
     month: "all",
@@ -153,7 +153,7 @@
   function renderFilterSummary(entries) {
     if (!filterSummary) return;
     if (!entries.length) {
-      filterSummary.textContent = "All filters";
+      filterSummary.textContent = "すべて";
       return;
     }
     filterSummary.textContent = entries

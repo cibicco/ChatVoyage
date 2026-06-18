@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f6f7">
   <title>Chat Voyage Albums</title>
-  <link rel="stylesheet" href="assets/album-browser.css?v=20260618-view">
+  <link rel="stylesheet" href="assets/album-browser.css?v=20260618-ja-ui">
 </head>
 <body>
-  <a class="skip-link" href="#albums">Skip to albums</a>
+  <a class="skip-link" href="#albums">アルバムへ</a>
   <header class="page-header">
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Gallery</a>
@@ -20,10 +20,10 @@
         <h1>Albums</h1>
       </div>
       <dl class="stats" aria-label="Album summary">
-        <div><dt>Albums</dt><dd>35</dd></div>
-        <div><dt>Images</dt><dd>143</dd></div>
-        <div><dt>Places</dt><dd>24</dd></div>
-        <div><dt>Latest</dt><dd>2026-06-17</dd></div>
+        <div><dt>アルバム</dt><dd>35</dd></div>
+        <div><dt>画像</dt><dd>143</dd></div>
+        <div><dt>場所</dt><dd>24</dd></div>
+        <div><dt>最新</dt><dd>2026-06-17</dd></div>
       </dl>
     </div>
   </header>
@@ -32,44 +32,44 @@
     <section class="controls" aria-label="Album controls">
       <div class="control-row control-row-main">
         <label class="search-field" for="album-search">
-          <span>Search</span>
-          <input type="search" id="album-search" placeholder="City, venue, activity, outfit, style">
+          <span>検索</span>
+          <input type="search" id="album-search" placeholder="都市・場所・動き・服装・絵柄">
         </label>
         <label class="select-field" for="album-sort">
-          <span>Sort</span>
+          <span>並び順</span>
           <select id="album-sort">
-            <option value="newest">Newest first</option>
-            <option value="oldest">Oldest first</option>
-            <option value="city">City</option>
-            <option value="title">Title</option>
-            <option value="images">Image count</option>
+            <option value="newest">新しい順</option>
+            <option value="oldest">古い順</option>
+            <option value="city">都市</option>
+            <option value="title">タイトル</option>
+            <option value="images">画像数</option>
           </select>
         </label>
         <div class="view-toggle" aria-label="View mode">
-          <button type="button" data-view-option="grid" aria-pressed="true">Grid</button>
-          <button type="button" data-view-option="list" aria-pressed="false">List</button>
+          <button type="button" data-view-option="grid" aria-pressed="true">グリッド</button>
+          <button type="button" data-view-option="list" aria-pressed="false">リスト</button>
         </div>
-        <button class="reset-button" type="button" id="reset-filters">Reset</button>
+        <button class="reset-button" type="button" id="reset-filters">リセット</button>
       </div>
 
       <details class="filter-drawer" data-filter-drawer open>
         <summary>
-          <span>Filters</span>
-          <span data-filter-summary>All filters</span>
+          <span>フィルタ</span>
+          <span data-filter-summary>すべて</span>
         </summary>
         <div class="filter-body">
           <div class="filter-row" data-filter-group="month">
-            <div class="filter-label">Month</div>
+            <div class="filter-label">月</div>
             <div class="filter-buttons">
-          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
+          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">すべて</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="2026-06" aria-pressed="false"><span class="filter-text">2026-06</span><span class="filter-count">26</span></button>
           <button type="button" data-filter="2026-05" aria-pressed="false"><span class="filter-text">2026-05</span><span class="filter-count">9</span></button>
             </div>
           </div>
           <div class="filter-row" data-filter-group="place">
-            <div class="filter-label">Place</div>
+            <div class="filter-label">都市</div>
             <div class="filter-buttons">
-          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
+          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">すべて</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="bangkok" aria-pressed="false"><span class="filter-text">Bangkok</span><span class="filter-count">1</span></button>
           <button type="button" data-filter="barcelona" aria-pressed="false"><span class="filter-text">Barcelona</span><span class="filter-count">1</span></button>
           <button type="button" data-filter="berlin" aria-pressed="false"><span class="filter-text">Berlin</span><span class="filter-count">1</span></button>
@@ -97,9 +97,9 @@
             </div>
           </div>
           <div class="filter-row" data-filter-group="category">
-            <div class="filter-label">Legacy</div>
+            <div class="filter-label">旧カテゴリ</div>
             <div class="filter-buttons">
-          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
+          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">すべて</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="active" aria-pressed="false"><span class="filter-text">Active</span><span class="filter-count">5</span></button>
           <button type="button" data-filter="ceremony" aria-pressed="false"><span class="filter-text">Ceremony</span><span class="filter-count">2</span></button>
           <button type="button" data-filter="club" aria-pressed="false"><span class="filter-text">Club</span><span class="filter-count">6</span></button>
@@ -124,9 +124,9 @@
             </div>
           </div>
           <div class="filter-row" data-filter-group="occasion">
-            <div class="filter-label">Occasion</div>
+            <div class="filter-label">場面</div>
             <div class="filter-buttons">
-          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
+          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">すべて</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="creative-culture" aria-pressed="false"><span class="filter-text">Creative Culture</span><span class="filter-count">29</span></button>
           <button type="button" data-filter="everyday" aria-pressed="false"><span class="filter-text">Everyday</span><span class="filter-count">26</span></button>
           <button type="button" data-filter="formal-event" aria-pressed="false"><span class="filter-text">Formal Event</span><span class="filter-count">6</span></button>
@@ -141,9 +141,9 @@
             </div>
           </div>
           <div class="filter-row" data-filter-group="venue">
-            <div class="filter-label">Venue</div>
+            <div class="filter-label">場所</div>
             <div class="filter-buttons">
-          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
+          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">すべて</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="city-outdoor" aria-pressed="false"><span class="filter-text">City Outdoor</span><span class="filter-count">18</span></button>
           <button type="button" data-filter="dining-bar" aria-pressed="false"><span class="filter-text">Dining / Bar</span><span class="filter-count">23</span></button>
           <button type="button" data-filter="event-venue" aria-pressed="false"><span class="filter-text">Event Venue</span><span class="filter-count">10</span></button>
@@ -158,9 +158,9 @@
             </div>
           </div>
           <div class="filter-row" data-filter-group="activity">
-            <div class="filter-label">Activity</div>
+            <div class="filter-label">行動</div>
             <div class="filter-buttons">
-          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
+          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">すべて</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="attending-event" aria-pressed="false"><span class="filter-text">Attending Event</span><span class="filter-count">6</span></button>
           <button type="button" data-filter="city-walk" aria-pressed="false"><span class="filter-text">City Walk</span><span class="filter-count">17</span></button>
           <button type="button" data-filter="dancing" aria-pressed="false"><span class="filter-text">Dancing</span><span class="filter-count">11</span></button>
@@ -177,9 +177,9 @@
             </div>
           </div>
           <div class="filter-row" data-filter-group="outfit">
-            <div class="filter-label">Outfit</div>
+            <div class="filter-label">服装</div>
             <div class="filter-buttons">
-          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
+          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">すべて</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="activewear" aria-pressed="false"><span class="filter-text">Activewear</span><span class="filter-count">4</span></button>
           <button type="button" data-filter="casual-separates" aria-pressed="false"><span class="filter-text">Casual Separates</span><span class="filter-count">23</span></button>
           <button type="button" data-filter="dress" aria-pressed="false"><span class="filter-text">Dress</span><span class="filter-count">8</span></button>
@@ -192,9 +192,9 @@
             </div>
           </div>
           <div class="filter-row" data-filter-group="style">
-            <div class="filter-label">Style</div>
+            <div class="filter-label">絵柄</div>
             <div class="filter-buttons">
-          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">All</span><span class="filter-count">35</span></button>
+          <button type="button" data-filter="all" aria-pressed="true"><span class="filter-text">すべて</span><span class="filter-count">35</span></button>
           <button type="button" data-filter="3d-cg-fashion" aria-pressed="false"><span class="filter-text">3D CG Fashion</span><span class="filter-count">3</span></button>
           <button type="button" data-filter="anime-cel-polished" aria-pressed="false"><span class="filter-text">Anime Cel Polished</span><span class="filter-count">9</span></button>
           <button type="button" data-filter="anime-editorial" aria-pressed="false"><span class="filter-text">Anime Editorial</span><span class="filter-count">10</span></button>
@@ -216,12 +216,12 @@
       </details>
 
       <div class="result-bar">
-        <p class="count" aria-live="polite"><span id="visible-count">35</span> / <span id="total-count">35</span> albums</p>
+        <p class="count" aria-live="polite"><span id="visible-count">35</span> / <span id="total-count">35</span> 件</p>
         <div class="active-filters" id="active-filters" aria-label="Active filters"></div>
       </div>
     </section>
 
-    <p class="empty-state" id="empty-state" hidden>No albums match the current filters.</p>
+    <p class="empty-state" id="empty-state" hidden>条件に合うアルバムがありません。</p>
     <section class="albums" id="albums" aria-label="Album results">
       <article class="album-card" data-index="0" data-title="2026-06-17 barcelona citrus coral city day" data-date="2026-06-17" data-month="2026-06" data-city="barcelona" data-place="barcelona" data-category="ceremony dance date weekend" data-occasion="everyday formal-event movement social-date" data-venue="city-outdoor dining-bar event-venue studio-sports" data-activity="attending-event city-walk dancing dining-drinks" data-outfit="outerwear-layer skirt-skort" data-style="anime-editorial game-cinematic-3d runway-board-illustration soft-real-fashion-art" data-image-count="4" data-search="2026-06-17 barcelona citrus coral city day barcelona city-day set across el born, hospital de sant pau, a gracia rooftop terrace, and a poble-sec dance studio. barcelona ceremony dance date weekend anime-editorial game-cinematic-3d runway-board-illustration soft-real-fashion-art everyday formal-event movement social-date city-outdoor dining-bar event-venue studio-sports attending-event city-walk dancing dining-drinks outerwear-layer skirt-skort adult 18-19 barcelona el born weekend look with citrus-coral polo, wrap mini skirt, ankle socks, and sneakers adult late 20s barcelona sant pau ceremony look with sleeveless ivory waistcoat dress, coral slingback pumps, and ceramic cuff adult early 20s barcelona gracia rooftop date look with one-shoulder top, coral scarf belt, wrap mini skirt, sheer knee-highs, and summer boots adult early 20s barcelona poble-sec dance rehearsal look with coral mesh wrap top, cropped trousers, wrap panel, knee socks, and dance sneakers anime / barcelona / weekend / 18-19-adult runway board / barcelona / ceremony / 25-29 soft real art / barcelona / date / 20-24 game cinematic 3d / barcelona / dance / 20-24">
         <a class="thumb-grid" href="album.html?set=2026-06-17-barcelona-citrus-coral-city-day" aria-label="2026-06-17 Barcelona Citrus Coral City Day album">
@@ -234,11 +234,11 @@
           <div class="album-kicker">
             <span>2026-06-17</span>
             <span>Barcelona</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-17-barcelona-citrus-coral-city-day">2026-06-17 Barcelona Citrus Coral City Day</a></h2>
-<div class="badges"><span class="badge">Latest</span></div>
+<div class="badges"><span class="badge">最新</span></div>
           </div>
 <p class="summary">Barcelona city-day set across El Born, Hospital de Sant Pau, a Gracia rooftop terrace, and a Poble-sec dance studio.</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -249,8 +249,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-17-barcelona-citrus-coral-city-day">Open</a>
-            <a class="secondary-link" href="notes/2026-06-17-barcelona-citrus-coral-city-day.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-17-barcelona-citrus-coral-city-day">見る</a>
+            <a class="secondary-link" href="notes/2026-06-17-barcelona-citrus-coral-city-day.md">メモ</a>
           </div>
         </div>
       </article>
@@ -265,7 +265,7 @@
           <div class="album-kicker">
             <span>2026-06-16</span>
             <span>Busan</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-16-busan-seaglass-coastal-motion">2026-06-16 Busan Seaglass Coastal Motion</a></h2>
@@ -280,8 +280,8 @@
 <span class="tag tag-category">Theater</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-16-busan-seaglass-coastal-motion">Open</a>
-            <a class="secondary-link" href="notes/2026-06-16-busan-seaglass-coastal-motion.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-16-busan-seaglass-coastal-motion">見る</a>
+            <a class="secondary-link" href="notes/2026-06-16-busan-seaglass-coastal-motion.md">メモ</a>
           </div>
         </div>
       </article>
@@ -296,7 +296,7 @@
           <div class="album-kicker">
             <span>2026-06-15</span>
             <span>Berlin</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-15-berlin-linden-green-culture-motion">2026-06-15 Berlin Linden Green Culture Motion</a></h2>
@@ -311,8 +311,8 @@
 <span class="tag tag-category">Office</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-15-berlin-linden-green-culture-motion">Open</a>
-            <a class="secondary-link" href="notes/2026-06-15-berlin-linden-green-culture-motion.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-15-berlin-linden-green-culture-motion">見る</a>
+            <a class="secondary-link" href="notes/2026-06-15-berlin-linden-green-culture-motion.md">メモ</a>
           </div>
         </div>
       </article>
@@ -327,7 +327,7 @@
           <div class="album-kicker">
             <span>2026-06-14</span>
             <span>Melbourne</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-14-melbourne-wattle-winter-layers">2026-06-14 Melbourne Wattle Winter Layers</a></h2>
@@ -342,8 +342,8 @@
 <span class="tag tag-category">Street</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-14-melbourne-wattle-winter-layers">Open</a>
-            <a class="secondary-link" href="notes/2026-06-14-melbourne-wattle-winter-layers.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-14-melbourne-wattle-winter-layers">見る</a>
+            <a class="secondary-link" href="notes/2026-06-14-melbourne-wattle-winter-layers.md">メモ</a>
           </div>
         </div>
       </article>
@@ -358,7 +358,7 @@
           <div class="album-kicker">
             <span>2026-06-13</span>
             <span>Kyoto</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-13-kyoto-hydrangea-rain-walk">2026-06-13 Kyoto Hydrangea Rain Walk</a></h2>
@@ -373,8 +373,8 @@
 <span class="tag tag-category">Transit</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-13-kyoto-hydrangea-rain-walk">Open</a>
-            <a class="secondary-link" href="notes/2026-06-13-kyoto-hydrangea-rain-walk.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-13-kyoto-hydrangea-rain-walk">見る</a>
+            <a class="secondary-link" href="notes/2026-06-13-kyoto-hydrangea-rain-walk.md">メモ</a>
           </div>
         </div>
       </article>
@@ -389,7 +389,7 @@
           <div class="album-kicker">
             <span>2026-06-12</span>
             <span>Nagoya</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-12-nagoya-gardenia-rain-arcade">2026-06-12 Nagoya Gardenia Rain Arcade</a></h2>
@@ -404,8 +404,8 @@
 <span class="tag tag-category">Transit</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-12-nagoya-gardenia-rain-arcade">Open</a>
-            <a class="secondary-link" href="notes/2026-06-12-nagoya-gardenia-rain-arcade.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-12-nagoya-gardenia-rain-arcade">見る</a>
+            <a class="secondary-link" href="notes/2026-06-12-nagoya-gardenia-rain-arcade.md">メモ</a>
           </div>
         </div>
       </article>
@@ -420,11 +420,11 @@
           <div class="album-kicker">
             <span>2026-06-11</span>
             <span>Hiroshima</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-11-hiroshima-momiji-human-context-remake">2026-06-11 Hiroshima Momiji Human Context Remake</a></h2>
-<div class="badges"><span class="badge">Remake</span></div>
+<div class="badges"><span class="badge">再生成</span></div>
           </div>
 <p class="summary">remake set across Hondori arcade, Hiroshima City Museum of Contemporary Art, Yokogawa cinema, and Ujina Port ferry gangway.</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -435,8 +435,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-11-hiroshima-momiji-human-context-remake">Open</a>
-            <a class="secondary-link" href="notes/2026-06-11-hiroshima-momiji-human-context-remake.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-11-hiroshima-momiji-human-context-remake">見る</a>
+            <a class="secondary-link" href="notes/2026-06-11-hiroshima-momiji-human-context-remake.md">メモ</a>
           </div>
         </div>
       </article>
@@ -451,7 +451,7 @@
           <div class="album-kicker">
             <span>2026-06-11</span>
             <span>Nagasaki</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-11-nagasaki-pearl-apricot-harbor-balance">2026-06-11 Nagasaki Pearl Apricot Harbor Balance</a></h2>
@@ -466,8 +466,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-11-nagasaki-pearl-apricot-harbor-balance">Open</a>
-            <a class="secondary-link" href="notes/2026-06-11-nagasaki-pearl-apricot-harbor-balance.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-11-nagasaki-pearl-apricot-harbor-balance">見る</a>
+            <a class="secondary-link" href="notes/2026-06-11-nagasaki-pearl-apricot-harbor-balance.md">メモ</a>
           </div>
         </div>
       </article>
@@ -482,7 +482,7 @@
           <div class="album-kicker">
             <span>2026-06-11</span>
             <span>Hiroshima</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-11-hiroshima-momiji-light-social">2026-06-11 Hiroshima Momiji Light Social</a></h2>
@@ -497,8 +497,8 @@
 <span class="tag tag-category">Travel</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-11-hiroshima-momiji-light-social">Open</a>
-            <a class="secondary-link" href="notes/2026-06-11-hiroshima-momiji-light-social.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-11-hiroshima-momiji-light-social">見る</a>
+            <a class="secondary-link" href="notes/2026-06-11-hiroshima-momiji-light-social.md">メモ</a>
           </div>
         </div>
       </article>
@@ -513,7 +513,7 @@
           <div class="album-kicker">
             <span>2026-06-10</span>
             <span>Fukuoka</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-10-fukuoka-yuzu-rain-riverside">2026-06-10 Fukuoka Yuzu Rain Riverside</a></h2>
@@ -528,8 +528,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-10-fukuoka-yuzu-rain-riverside">Open</a>
-            <a class="secondary-link" href="notes/2026-06-10-fukuoka-yuzu-rain-riverside.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-10-fukuoka-yuzu-rain-riverside">見る</a>
+            <a class="secondary-link" href="notes/2026-06-10-fukuoka-yuzu-rain-riverside.md">メモ</a>
           </div>
         </div>
       </article>
@@ -544,7 +544,7 @@
           <div class="album-kicker">
             <span>2026-06-09</span>
             <span>Marrakech</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-09-marrakech-saffron-courtyard-design">2026-06-09 Marrakech Saffron Courtyard Design</a></h2>
@@ -559,8 +559,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-09-marrakech-saffron-courtyard-design">Open</a>
-            <a class="secondary-link" href="notes/2026-06-09-marrakech-saffron-courtyard-design.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-09-marrakech-saffron-courtyard-design">見る</a>
+            <a class="secondary-link" href="notes/2026-06-09-marrakech-saffron-courtyard-design.md">メモ</a>
           </div>
         </div>
       </article>
@@ -575,11 +575,11 @@
           <div class="album-kicker">
             <span>2026-06-08</span>
             <span>Taipei</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-08-taipei-guava-specific-places-v2">2026-06-08 Taipei Guava Specific Places V2</a></h2>
-<div class="badges"><span class="badge">Remake</span></div>
+<div class="badges"><span class="badge">再生成</span></div>
           </div>
 <p class="summary">v2-short-generation remake with concrete Taipei places: Dadaocheng Dihua Street, Huashan 1914, Treasure Hill Artist Village, and Ximending.</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -590,8 +590,8 @@
 <span class="tag tag-category">Market</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-08-taipei-guava-specific-places-v2">Open</a>
-            <a class="secondary-link" href="notes/2026-06-08-taipei-guava-specific-places-v2.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-08-taipei-guava-specific-places-v2">見る</a>
+            <a class="secondary-link" href="notes/2026-06-08-taipei-guava-specific-places-v2.md">メモ</a>
           </div>
         </div>
       </article>
@@ -606,7 +606,7 @@
           <div class="album-kicker">
             <span>2026-06-08</span>
             <span>Taipei</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-08-taipei-guava-rain-creative-walk">2026-06-08 Taipei Guava Rain Creative Walk</a></h2>
@@ -621,8 +621,8 @@
 <span class="tag tag-category">Market</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-08-taipei-guava-rain-creative-walk">Open</a>
-            <a class="secondary-link" href="notes/2026-06-08-taipei-guava-rain-creative-walk.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-08-taipei-guava-rain-creative-walk">見る</a>
+            <a class="secondary-link" href="notes/2026-06-08-taipei-guava-rain-creative-walk.md">メモ</a>
           </div>
         </div>
       </article>
@@ -637,7 +637,7 @@
           <div class="album-kicker">
             <span>2026-06-07</span>
             <span>Kobe</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-07-kobe-hydrangea-port-sunday">2026-06-07 Kobe Hydrangea Port Sunday</a></h2>
@@ -652,8 +652,8 @@
 <span class="tag tag-category">Resort</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-07-kobe-hydrangea-port-sunday">Open</a>
-            <a class="secondary-link" href="notes/2026-06-07-kobe-hydrangea-port-sunday.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-07-kobe-hydrangea-port-sunday">見る</a>
+            <a class="secondary-link" href="notes/2026-06-07-kobe-hydrangea-port-sunday.md">メモ</a>
           </div>
         </div>
       </article>
@@ -668,11 +668,11 @@
           <div class="album-kicker">
             <span>2026-06-06</span>
             <span>Tokyo</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-06-tokyo-aoyama-omotesando-age-tone-remake">2026-06-06 Tokyo Aoyama Omotesando Age Tone Remake</a></h2>
-<div class="badges"><span class="badge">Remake</span></div>
+<div class="badges"><span class="badge">再生成</span></div>
           </div>
 <p class="summary">moss-green remake with explicit age-tone and exposure variation across Commune Aoyama, Spiral Garden, Minami-Aoyama lounge, and Jingumae dance street.</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -683,8 +683,8 @@
 <span class="tag tag-category">Market</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-06-tokyo-aoyama-omotesando-age-tone-remake">Open</a>
-            <a class="secondary-link" href="notes/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-06-tokyo-aoyama-omotesando-age-tone-remake">見る</a>
+            <a class="secondary-link" href="notes/2026-06-06-tokyo-aoyama-omotesando-age-tone-remake.md">メモ</a>
           </div>
         </div>
       </article>
@@ -699,7 +699,7 @@
           <div class="album-kicker">
             <span>2026-06-06</span>
             <span>Tokyo</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-06-tokyo-daikanyama-rainy-lowrise-walk">2026-06-06 Tokyo Daikanyama Rainy Lowrise Walk</a></h2>
@@ -714,8 +714,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-06-tokyo-daikanyama-rainy-lowrise-walk">Open</a>
-            <a class="secondary-link" href="notes/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-06-tokyo-daikanyama-rainy-lowrise-walk">見る</a>
+            <a class="secondary-link" href="notes/2026-06-06-tokyo-daikanyama-rainy-lowrise-walk.md">メモ</a>
           </div>
         </div>
       </article>
@@ -730,7 +730,7 @@
           <div class="album-kicker">
             <span>2026-06-05</span>
             <span>Tokyo</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-05-tokyo-ginza-craft-jazz-rain">2026-06-05 Tokyo Ginza Craft Jazz Rain</a></h2>
@@ -745,8 +745,8 @@
 <span class="tag tag-category">Transit</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-05-tokyo-ginza-craft-jazz-rain">Open</a>
-            <a class="secondary-link" href="notes/2026-06-05-tokyo-ginza-craft-jazz-rain.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-05-tokyo-ginza-craft-jazz-rain">見る</a>
+            <a class="secondary-link" href="notes/2026-06-05-tokyo-ginza-craft-jazz-rain.md">メモ</a>
           </div>
         </div>
       </article>
@@ -761,11 +761,11 @@
           <div class="album-kicker">
             <span>2026-06-05</span>
             <span>Seoul</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-05-seoul-dynamic-crop-remake">2026-06-05 Seoul Dynamic Crop Remake</a></h2>
-<div class="badges"><span class="badge">Remake</span></div>
+<div class="badges"><span class="badge">再生成</span></div>
           </div>
 <p class="summary">dynamic crop remake; full-body optional, with floor-sit, jump, reach, and close crop.</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -776,8 +776,8 @@
 <span class="tag tag-category">Transit</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-05-seoul-dynamic-crop-remake">Open</a>
-            <a class="secondary-link" href="logs/generation-2026-06.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-05-seoul-dynamic-crop-remake">見る</a>
+            <a class="secondary-link" href="logs/generation-2026-06.md">メモ</a>
           </div>
         </div>
       </article>
@@ -792,11 +792,11 @@
           <div class="album-kicker">
             <span>2026-06-05</span>
             <span>Seoul</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-05-seoul-pose-diverse-remake">2026-06-05 Seoul Pose Diverse Remake</a></h2>
-<div class="badges"><span class="badge">Remake</span></div>
+<div class="badges"><span class="badge">再生成</span></div>
           </div>
 <p class="summary">pose-diverse remake with side profile, jump motion, leaning, and close crop.</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -807,8 +807,8 @@
 <span class="tag tag-category">Transit</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-05-seoul-pose-diverse-remake">Open</a>
-            <a class="secondary-link" href="logs/generation-2026-06.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-05-seoul-pose-diverse-remake">見る</a>
+            <a class="secondary-link" href="logs/generation-2026-06.md">メモ</a>
           </div>
         </div>
       </article>
@@ -823,7 +823,7 @@
           <div class="album-kicker">
             <span>2026-06-05</span>
             <span>Seoul</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-05-seoul-indie-youth-culture">2026-06-05 Seoul Indie Youth Culture</a></h2>
@@ -838,8 +838,8 @@
 <span class="tag tag-category">Transit</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-05-seoul-indie-youth-culture">Open</a>
-            <a class="secondary-link" href="logs/generation-2026-06.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-05-seoul-indie-youth-culture">見る</a>
+            <a class="secondary-link" href="logs/generation-2026-06.md">メモ</a>
           </div>
         </div>
       </article>
@@ -854,11 +854,11 @@
           <div class="album-kicker">
             <span>2026-06-04</span>
             <span>Tokyo</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-04-tokyo-indie-youth-culture-v2">2026-06-04 Tokyo Indie Youth Culture V2</a></h2>
-<div class="badges"><span class="badge">Remake</span></div>
+<div class="badges"><span class="badge">再生成</span></div>
           </div>
 <p class="summary">remake with broader young adult sources and explicit age bands.</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -869,8 +869,8 @@
 <span class="tag tag-category">Market</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-04-tokyo-indie-youth-culture-v2">Open</a>
-            <a class="secondary-link" href="logs/generation-2026-06.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-04-tokyo-indie-youth-culture-v2">見る</a>
+            <a class="secondary-link" href="logs/generation-2026-06.md">メモ</a>
           </div>
         </div>
       </article>
@@ -885,7 +885,7 @@
           <div class="album-kicker">
             <span>2026-06-04</span>
             <span>Bangkok</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-04-bangkok-monsoon-design-night">2026-06-04 Bangkok Monsoon Design Night</a></h2>
@@ -900,8 +900,8 @@
 <span class="tag tag-category">Transit</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-04-bangkok-monsoon-design-night">Open</a>
-            <a class="secondary-link" href="logs/generation-2026-06.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-04-bangkok-monsoon-design-night">見る</a>
+            <a class="secondary-link" href="logs/generation-2026-06.md">メモ</a>
           </div>
         </div>
       </article>
@@ -916,11 +916,11 @@
           <div class="album-kicker">
             <span>2026-06-03</span>
             <span>Helsinki</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-03-helsinki-cloudberry-daytime-remake">2026-06-03 Helsinki Cloudberry Daytime Remake</a></h2>
-<div class="badges"><span class="badge">Remake</span></div>
+<div class="badges"><span class="badge">再生成</span></div>
           </div>
 <p class="summary">daytime remake across an Oodi-style maker library, Arabia-style ceramics studio, Kallio theater arrival, and Kalasatama indoor climbing gym.</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -931,8 +931,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-03-helsinki-cloudberry-daytime-remake">Open</a>
-            <a class="secondary-link" href="notes/2026-06-03-helsinki-cloudberry-daytime-remake.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-03-helsinki-cloudberry-daytime-remake">見る</a>
+            <a class="secondary-link" href="notes/2026-06-03-helsinki-cloudberry-daytime-remake.md">メモ</a>
           </div>
         </div>
       </article>
@@ -947,7 +947,7 @@
           <div class="album-kicker">
             <span>2026-06-03</span>
             <span>Lisbon</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-03-lisbon-nightlife">2026-06-03 Lisbon Nightlife Mixed Styles</a></h2>
@@ -962,8 +962,8 @@
 <span class="tag tag-category">Travel</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-03-lisbon-nightlife">Open</a>
-            <a class="secondary-link" href="logs/generation-2026-06.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-03-lisbon-nightlife">見る</a>
+            <a class="secondary-link" href="logs/generation-2026-06.md">メモ</a>
           </div>
         </div>
       </article>
@@ -978,7 +978,7 @@
           <div class="album-kicker">
             <span>2026-06-02</span>
             <span>Mexico City</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-02-mexico-city-mamey-coral-creative-weekday">2026-06-02 Mexico City Mamey Coral Creative Weekday</a></h2>
@@ -993,8 +993,8 @@
 <span class="tag tag-category">Office</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-02-mexico-city-mamey-coral-creative-weekday">Open</a>
-            <a class="secondary-link" href="notes/2026-06-02-mexico-city-mamey-coral-creative-weekday.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-02-mexico-city-mamey-coral-creative-weekday">見る</a>
+            <a class="secondary-link" href="notes/2026-06-02-mexico-city-mamey-coral-creative-weekday.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1009,7 +1009,7 @@
           <div class="album-kicker">
             <span>2026-06-01</span>
             <span>Vienna</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-06-01-vienna-celadon-indoor-salon">2026-06-01 Vienna Celadon Indoor Salon</a></h2>
@@ -1024,8 +1024,8 @@
 <span class="tag tag-category">Theater</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-06-01-vienna-celadon-indoor-salon">Open</a>
-            <a class="secondary-link" href="notes/2026-06-01-vienna-celadon-indoor-salon.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-06-01-vienna-celadon-indoor-salon">見る</a>
+            <a class="secondary-link" href="notes/2026-06-01-vienna-celadon-indoor-salon.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1040,7 +1040,7 @@
           <div class="album-kicker">
             <span>2026-05-31</span>
             <span>Sapporo</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-31-sapporo-lilac-tram">2026-05-31 Sapporo Lilac Tram Literary Prep</a></h2>
@@ -1055,8 +1055,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-31-sapporo-lilac-tram">Open</a>
-            <a class="secondary-link" href="logs/generation-2026-05.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-31-sapporo-lilac-tram">見る</a>
+            <a class="secondary-link" href="logs/generation-2026-05.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1071,7 +1071,7 @@
           <div class="album-kicker">
             <span>2026-05-31</span>
             <span>Yokohama</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-31-yokohama-burgundy-theater-3d">2026-05-31 Yokohama Burgundy Theater 3D</a></h2>
@@ -1086,8 +1086,8 @@
 <span class="tag tag-category">Street</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-31-yokohama-burgundy-theater-3d">Open</a>
-            <a class="secondary-link" href="notes/2026-05-31-yokohama-burgundy-theater-3d.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-31-yokohama-burgundy-theater-3d">見る</a>
+            <a class="secondary-link" href="notes/2026-05-31-yokohama-burgundy-theater-3d.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1102,7 +1102,7 @@
           <div class="album-kicker">
             <span>2026-05-28</span>
             <span>Singapore</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-28-singapore-mango-lime-design-walk">2026-05-28 Singapore Mango-Lime Design Walk</a></h2>
@@ -1117,8 +1117,8 @@
 <span class="tag tag-category">Weekend</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-28-singapore-mango-lime-design-walk">Open</a>
-            <a class="secondary-link" href="notes/2026-05-28-singapore-mango-lime-design-walk.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-28-singapore-mango-lime-design-walk">見る</a>
+            <a class="secondary-link" href="notes/2026-05-28-singapore-mango-lime-design-walk.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1133,7 +1133,7 @@
           <div class="album-kicker">
             <span>2026-05-27</span>
             <span>Kanazawa</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-27-kanazawa">2026-05-27 Kanazawa Verdigris Craft Modern</a></h2>
@@ -1148,8 +1148,8 @@
 <span class="tag tag-category">Street</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-27-kanazawa">Open</a>
-            <a class="secondary-link" href="notes/2026-05-27-kanazawa-verdigris-craft-modern.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-27-kanazawa">見る</a>
+            <a class="secondary-link" href="notes/2026-05-27-kanazawa-verdigris-craft-modern.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1164,7 +1164,7 @@
           <div class="album-kicker">
             <span>2026-05-27</span>
             <span>Yokohama</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-27-yokohama-burgundy-theater-romance">2026-05-27 Yokohama Burgundy Theater Romance</a></h2>
@@ -1179,8 +1179,8 @@
 <span class="tag tag-category">Street</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-27-yokohama-burgundy-theater-romance">Open</a>
-            <a class="secondary-link" href="notes/2026-05-27-yokohama-burgundy-theater-romance.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-27-yokohama-burgundy-theater-romance">見る</a>
+            <a class="secondary-link" href="notes/2026-05-27-yokohama-burgundy-theater-romance.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1195,7 +1195,7 @@
           <div class="album-kicker">
             <span>2026-05-24</span>
             <span>Fukuoka</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-24-fukuoka-coral-urban-resort">2026-05-24 Fukuoka Coral Urban Resort</a></h2>
@@ -1210,8 +1210,8 @@
 <span class="tag tag-category">Street</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-24-fukuoka-coral-urban-resort">Open</a>
-            <a class="secondary-link" href="notes/2026-05-24-fukuoka-coral-urban-resort.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-24-fukuoka-coral-urban-resort">見る</a>
+            <a class="secondary-link" href="notes/2026-05-24-fukuoka-coral-urban-resort.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1226,7 +1226,7 @@
           <div class="album-kicker">
             <span>2026-05-16</span>
             <span>Unspecified</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-16-celford-regina-noela-separates">2026-05-16 CELFORD / Regina / Noela Separates</a></h2>
@@ -1241,8 +1241,8 @@
 <span class="tag tag-category">Street</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-16-celford-regina-noela-separates">Open</a>
-            <a class="secondary-link" href="notes/2026-05-16-celford-regina-noela.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-16-celford-regina-noela-separates">見る</a>
+            <a class="secondary-link" href="notes/2026-05-16-celford-regina-noela.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1257,7 +1257,7 @@
           <div class="album-kicker">
             <span>2026-05-16</span>
             <span>Unspecified</span>
-            <span>4 images</span>
+            <span>4枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-16-daily-fashion-set">2026-05-16 Daily Fashion Set</a></h2>
@@ -1272,8 +1272,8 @@
 <span class="tag tag-category">Street</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-16-daily-fashion-set">Open</a>
-            <a class="secondary-link" href="notes/2026-05-16-daily-fashion-set.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-16-daily-fashion-set">見る</a>
+            <a class="secondary-link" href="notes/2026-05-16-daily-fashion-set.md">メモ</a>
           </div>
         </div>
       </article>
@@ -1288,11 +1288,11 @@
           <div class="album-kicker">
             <span>2026-05-10</span>
             <span>Unspecified</span>
-            <span>7 images</span>
+            <span>7枚</span>
           </div>
           <div class="title-row">
             <h2><a href="album.html?set=2026-05-10-first-set-and-regenerations">2026-05-10 First Set and Regenerations</a></h2>
-<div class="badges"><span class="badge">Remake</span><span class="badge">7 images</span></div>
+<div class="badges"><span class="badge">再生成</span><span class="badge">7枚</span></div>
           </div>
 <p class="summary">initial four-image set plus three regenerated variants</p>
           <div class="tag-groups" aria-label="Album metadata">
@@ -1303,14 +1303,14 @@
 <span class="tag tag-category">Street</span></div>
           </div>
           <div class="album-actions">
-            <a class="primary-link" href="album.html?set=2026-05-10-first-set-and-regenerations">Open</a>
-            <a class="secondary-link" href="notes/2026-05-10-first-set-regenerations.md">Notes</a>
+            <a class="primary-link" href="album.html?set=2026-05-10-first-set-and-regenerations">見る</a>
+            <a class="secondary-link" href="notes/2026-05-10-first-set-regenerations.md">メモ</a>
           </div>
         </div>
       </article>
     </section>
   </main>
 
-  <script src="assets/album-browser.js?v=20260618-view"></script>
+  <script src="assets/album-browser.js?v=20260618-ja-ui"></script>
 </body>
 </html>

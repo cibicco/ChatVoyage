@@ -99,7 +99,7 @@
     place.textContent = (album.places || []).map(labelize).join(", ");
     summary.textContent = album.summary || "";
     total.textContent = String(images.length);
-    imageTotal.textContent = `${images.length} images`;
+    imageTotal.textContent = `${images.length}枚`;
 
     albums.forEach((item) => {
       const option = document.createElement("option");
@@ -116,7 +116,7 @@
 
     if (requestedAlbumMissing && notFoundNotice) {
       notFoundNotice.hidden = false;
-      notFoundNotice.textContent = `Requested album "${requestedSlug}" was not found. Showing the latest album.`;
+      notFoundNotice.textContent = `指定されたアルバム "${requestedSlug}" が見つかりません。最新のアルバムを表示しています。`;
     }
   }
 
@@ -129,7 +129,7 @@
       button.dataset.albumThumb = "";
       button.dataset.index = String(index);
       button.setAttribute("aria-pressed", String(index === active));
-      button.setAttribute("aria-label", `Show image ${index + 1}: ${image.title || image.alt}`);
+      button.setAttribute("aria-label", `${index + 1}枚目を表示: ${image.title || image.alt}`);
 
       const img = document.createElement("img");
       img.src = image.src;
@@ -176,7 +176,7 @@
       const open = document.createElement("a");
       open.className = "open-image";
       open.href = image.src;
-      open.textContent = "Open image";
+      open.textContent = "画像を開く";
       figcaption.appendChild(open);
 
       link.appendChild(img);
@@ -188,8 +188,8 @@
   function renderNeighbors() {
     const newer = albums[albumIndex - 1];
     const older = albums[albumIndex + 1];
-    setNeighbor(previousAlbum, newer, "Previous album");
-    setNeighbor(nextAlbum, older, "Next album");
+    setNeighbor(previousAlbum, newer, "前のアルバム");
+    setNeighbor(nextAlbum, older, "次のアルバム");
   }
 
   function setNeighbor(link, item, label) {
@@ -357,10 +357,10 @@
   function renderFeedbackStatus(feedback) {
     if (!feedbackStatus) return;
     if (!hasFeedback(feedback)) {
-      feedbackStatus.textContent = "Not saved";
+      feedbackStatus.textContent = "未保存";
       return;
     }
-    feedbackStatus.textContent = feedbackStorageMode === "local" ? "Saved locally" : "Saved for this tab";
+    feedbackStatus.textContent = feedbackStorageMode === "local" ? "このブラウザに保存済み" : "このタブに保存済み";
   }
 
   function renderFeedbackIndicators() {
@@ -473,14 +473,14 @@
     fragment.appendChild(heading);
 
     const rows = [
-      ["Age", image.age],
-      ["Legacy", image.category],
-      ["Occasion", image.occasion],
-      ["Venue", image.venue],
-      ["Activity", image.activity],
-      ["Outfit", image.outfit],
-      ["Style", image.style],
-      ["Place", image.place],
+      ["年齢", image.age],
+      ["旧カテゴリ", image.category],
+      ["場面", image.occasion],
+      ["場所", image.venue],
+      ["行動", image.activity],
+      ["服装", image.outfit],
+      ["絵柄", image.style],
+      ["都市", image.place],
     ].filter(([, value]) => value);
     if (rows.length) {
       const dl = document.createElement("dl");
@@ -488,7 +488,7 @@
         const dt = document.createElement("dt");
         dt.textContent = key;
         const dd = document.createElement("dd");
-        dd.textContent = key === "Age" ? value : labelize(value);
+        dd.textContent = key === "年齢" ? value : labelize(value);
         dl.append(dt, dd);
       });
       fragment.appendChild(dl);
