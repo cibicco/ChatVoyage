@@ -53,11 +53,16 @@ single four-panel collage.
      according to scene needs
    - climate and comfort logic so the outfit is natural for the weather,
      venue, temperature, and activity
-   - a local place plan that treats indoor scenes broadly: not only rooms,
-     work, meals, cafes, or bars, but also city-specific activity spaces such
-     as museums, art museums, galleries, clubs, live houses, theaters, cinemas,
-     libraries, ateliers, sports facilities, public halls, stations, markets,
-     and covered arcades when they fit the set
+   - a local place plan that prioritizes visible local atmosphere over the
+     indoor/outdoor distinction. Cafes, workshops, night bars, pools, beaches,
+     mountains, cultural facilities, markets, stations, terraces, studios,
+     and streets are all valid when the image can show the city's light,
+     architecture, materials, weather, landscape, objects, or social rhythm.
+     Indoor scenes should still be broad: not only rooms, work, meals, cafes,
+     or bars, but also city-specific activity spaces such as museums, art
+     museums, galleries, clubs, live houses, theaters, cinemas, libraries,
+     ateliers, sports facilities, public halls, stations, markets, and covered
+     arcades when they fit the set.
    - exported album preference feedback when available, using `art-style`,
      `person`, and `outfit` as primary preference dimensions, and `color`,
      `silhouette`, `pose`, `place`, and `vibe` as supporting evidence
@@ -197,13 +202,18 @@ attitude. Do not repeatedly assign the same role such as young market casual,
 early-20s open-back gallery, late-20s seated camisole lounge, and early-20s
 mesh transit unless that repeat is intentional and logged.
 
-Indoor and activity scenes should be locally specific. Indoor does not mean
-only ordinary rooms, work, meals, cafes, or bars. Use city- or region-specific
-activity spaces such as museums, art museums, galleries, clubs, live houses,
-theaters, cinemas, libraries, ateliers, sports facilities, public halls,
-stations, markets, covered arcades, baths, or performance foyers when they fit
-the date and category. The place should affect outfit construction, footwear,
-layering, pose, object interaction, and time-of-day behavior.
+Places should make local atmosphere visible. Indoor or outdoor is secondary:
+cafes, workshops, night bars, pools, beaches, mountains, cultural facilities,
+markets, stations, terraces, studios, and streets can all work when the image
+shows the city's light, architecture, materials, weather, landscape, objects,
+or social rhythm. Indoor and activity scenes should still be locally specific.
+Indoor does not mean only ordinary rooms, work, meals, cafes, or bars. Use
+city- or region-specific activity spaces such as museums, art museums,
+galleries, clubs, live houses, theaters, cinemas, libraries, ateliers, sports
+facilities, public halls, stations, markets, covered arcades, baths, or
+performance foyers when they fit the date and category. The place should
+affect outfit construction, footwear, layering, pose, object interaction, and
+time-of-day behavior.
 
 Full-body is allowed but not required. Use knee-up, waist-up, close-up detail,
 wide-action, seated, back three-quarter, jumping, reaching, leaning, or object
@@ -251,8 +261,10 @@ Before accepting the set, check:
 - Climate fit reflects city, season, time of day, rain intensity, indoor or
   outdoor setting, wind or air conditioning, venue norms, and activity instead
   of defaulting to tanks, camisoles, mesh, open shirts, and sandals.
-- Indoor or activity places are concrete and locally characteristic, not only
-  generic rooms, work, meals, cafes, bars, or interchangeable interiors.
+- Places are concrete and locally characteristic, not generic interiors or
+  generic streets with city names attached. Indoor or outdoor both work when
+  local atmosphere is visible through light, architecture, materials, weather,
+  landscape, objects, or social rhythm.
 - No single source, brand look, celebrity outfit, or reference image is reproduced.
 - Backgrounds support the outfit context without overpowering the figure.
 - No visible text, watermark, logo imitation, or brand mark is requested.

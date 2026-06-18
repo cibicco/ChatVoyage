@@ -143,7 +143,7 @@ Use legwear to change the fashion language: playful, club, office, dance,
 sporty, retro, polished, rainy, winter, or resort. Do not add legwear only as
 a modesty patch, and do not remove it only to signal openness.
 
-## Local Place Specificity
+## Local Atmosphere And Place Specificity
 
 Do not treat indoor variety as only ordinary rooms, work, meals, cafes, or
 bars. Use local activity spaces when they fit the date and category:
@@ -155,10 +155,17 @@ bars. Use local activity spaces when they fit the date and category:
 - sports facilities, dance studios, climbing gyms, pools, baths, stations,
   markets, covered arcades, and transit halls
 
+Outdoor or semi-outdoor places are equally useful: beaches, harbors, mountain
+paths, pools, terraces, night streets, markets, shrine or temple approaches,
+arcades, parks, and transit edges can all work when they reveal the local
+atmosphere.
+
 The place should feel characteristic of the city or region, not a generic
-interior with the city name attached. The local place choice should also affect
-outfit construction, footwear, layer logic, pose, object interaction, and
-time-of-day behavior.
+interior or generic street with the city name attached. Prefer locations where
+the image can show local light, architecture, landscape, materials, objects,
+weather, or social rhythm. The local place choice should also affect outfit
+construction, footwear, layer logic, pose, object interaction, and time-of-day
+behavior.
 
 ## Prompt V2 Anti-Template Rule
 

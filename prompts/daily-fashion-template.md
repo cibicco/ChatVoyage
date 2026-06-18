@@ -33,6 +33,11 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
   shirts, skorts, miniskirts, shorts, sandals, and bare legs can repeat when
   the full styling formula, place, pose, footwear or legwear, and fashion
   attitude are different.
+- Choose places where the local atmosphere is visible. Indoor or outdoor is
+  secondary; the place can be a cafe, workshop, night bar, pool, beach,
+  mountain path, cultural facility, market, station, terrace, studio, or
+  street if the image can show the city's light, architecture, materials,
+  signage-free visual cues, weather, landscape, objects, or social rhythm.
 - Treat indoor scenes broadly. Indoor does not mean only rooms, offices,
   meals, cafes, or bars; it can also mean locally specific activity spaces such
   as museums, art museums, galleries, clubs, live houses, theaters, cinemas,
@@ -63,8 +68,9 @@ Use the selected category slug as each filename prefix. Existing sets using
 ## Input Layers
 
 1. Daily direction: date seed, city, weather, seasonal mood, place language,
-   and fashion language. Place language should include concrete local settings,
-   including locally specific indoor or activity spaces when they fit the day.
+   and fashion language. Place language should include concrete local settings
+   whose atmosphere is visible, including locally specific indoor, outdoor, or
+   activity spaces when they fit the day.
 2. Visual style: choose a style family and exact preset from
    `style-presets.md`, such as `anime-editorial`, `pbr-fashion-3d`,
    `marker-sketch`, or `digital-magazine-painting`.
@@ -131,9 +137,10 @@ Fashion direction:
 - legwear and footwear: {bare legs | sheer socks | slouch socks | knee socks |
   tights | leggings | bike shorts | sandals | loafers | pumps | sneakers |
   boots; chosen as styling, not only coverage}
-- setting: {specific city place; include locally characteristic indoor or
-  activity spaces such as museum, art museum, club, theater, library, atelier,
-  station, market hall, covered arcade, sports facility, cafe, bar, room,
+- setting: {specific city place where local atmosphere is visible; include
+  locally characteristic indoor or outdoor spaces such as museum, art museum,
+  club, night bar, theater, library, atelier, station, market hall, covered
+  arcade, sports facility, pool, beach, mountain path, cafe, workshop,
   workplace, restaurant, terrace, or street when appropriate}
 
 Constraints:
@@ -154,10 +161,13 @@ Constraints:
 - do not justify clothing openness or coverage only through youth, brightness,
   liveliness, sensuality, or modesty; ground it in the person's actual
   situation, comfort, taste, movement, venue, and activity
-- indoor settings should be concrete local places, not only generic rooms,
-  offices, meals, cafes, or bars; museums, art museums, clubs, live houses,
-  theaters, libraries, ateliers, sports facilities, public halls, stations,
-  markets, and covered arcades can be used when characteristic of the city
+- settings should be concrete local places, not only generic rooms, offices,
+  meals, cafes, or bars. The image should make local atmosphere legible through
+  architecture, light, weather, landscape, materials, objects, or social
+  activity. Museums, art museums, clubs, live houses, theaters, libraries,
+  ateliers, sports facilities, pools, beaches, mountain paths, public halls,
+  stations, markets, and covered arcades can be used when characteristic of
+  the city or region.
 - do not use high necklines, heavy layers, long sleeves, or closed shoes as a
   default guardrail fix when they do not fit the climate, venue, or activity
 - do not use tanks, camisoles, open shirts, mesh, or sandals as a default
@@ -186,8 +196,9 @@ For every final image, record:
 - style family: broad family from `style-presets.md`
 - style preset: exact style preset slug
 - pose family: selected pose family from `pose-presets.md`
-- place: city and specific local scene type, including any locally distinctive
-  indoor/activity space when relevant
+- place: city and specific local scene type whose atmosphere is visible,
+  including any locally distinctive indoor, outdoor, or activity space when
+  relevant
 - climate context: city, season, time, weather, humidity, venue, and activity
 - age-band life scene and silhouette logic
 - persona direction and fashion focal point
