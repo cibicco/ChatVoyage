@@ -14,7 +14,7 @@ from gallery_metadata import classify_image, labelize_metadata
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSET_VERSION = "20260618-ja-ui"
+ASSET_VERSION = "20260618-lightbox"
 
 SPECIAL_LABEL_PARTS = {
     "3d": "3D",

@@ -678,7 +678,7 @@ figcaption {
 .lightbox-caption {
   grid-column: 2;
   display: grid;
-  gap: 7px;
+  gap: 5px;
   max-width: 760px;
   justify-self: center;
   color: rgba(255, 255, 255, 0.74);
@@ -692,13 +692,15 @@ figcaption {
   line-height: 1.25;
 }
 
-.lightbox-caption dl {
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.74);
-}
-
-.lightbox-caption dt {
-  color: #fff;
+.lightbox-meta {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.86rem;
+  line-height: 1.35;
 }
 
 @media (max-width: 900px) {
@@ -853,11 +855,24 @@ figcaption {
   }
 
   .lightbox img {
-    max-height: calc(100vh - 190px);
+    max-height: calc(100vh - 142px);
   }
 
   .lightbox-caption {
     grid-column: 1 / -1;
-    font-size: 0.86rem;
+    gap: 4px;
+  }
+
+  .lightbox-caption h2 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 0.92rem;
+  }
+
+  .lightbox-meta {
+    -webkit-line-clamp: 1;
+    font-size: 0.8rem;
   }
 }

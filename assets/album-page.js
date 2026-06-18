@@ -267,7 +267,7 @@
     if (lightboxOpen) lightboxOpen.href = image.src;
     if (lightboxCurrent) lightboxCurrent.textContent = String(active + 1);
     if (lightboxTotal) lightboxTotal.textContent = String(images.length);
-    lightboxCaption?.replaceChildren(createCaption(image));
+    lightboxCaption?.replaceChildren(createLightboxCaption(image));
   }
 
   function bindFeedbackControls() {
@@ -492,6 +492,30 @@
         dl.append(dt, dd);
       });
       fragment.appendChild(dl);
+    }
+    return fragment;
+  }
+
+  function createLightboxCaption(image) {
+    const fragment = document.createDocumentFragment();
+    const heading = document.createElement("h2");
+    heading.textContent = image.title || image.alt || "Image";
+    fragment.appendChild(heading);
+
+    const meta = [
+      image.age,
+      image.category && labelize(image.category),
+      image.venue && labelize(image.venue),
+      image.outfit && labelize(image.outfit),
+      image.style && labelize(image.style),
+      image.place && labelize(image.place),
+    ].filter(Boolean);
+
+    if (meta.length) {
+      const list = document.createElement("p");
+      list.className = "lightbox-meta";
+      list.textContent = meta.join(" / ");
+      fragment.appendChild(list);
     }
     return fragment;
   }
