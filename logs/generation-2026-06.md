@@ -2642,3 +2642,135 @@ This run applies the 6/11 critique directly: ordinary exposure is not rejected b
 ### Generation Notes
 
 This run continues the correction away from exposure-based pass/fail language. The strongest practical distinction is that each image has a different life scene and silhouette: weekend walk, ceremony, rooftop date, and dance rehearsal. The 18-19-adult image allows a short skirt because the adult context, walking activity, safety shorts, and practical shoes are legible; it is not treated as either inherently good or inherently suspect.
+
+## 2026-06-18 Hong Kong Orchid Chrome Activity Interiors
+
+- Images: 4 final images
+- Generated on: 2026-06-19, Asia/Tokyo, for the 2026-06-18 date seed
+- Saved in: `assets/daily/2026-06-18-hong-kong-orchid-chrome-activity-interiors/`
+- Display format: WebP written directly from generated PNG sources at quality 82; project PNG copies were not kept. Original generated PNGs remain under `$CODEX_HOME/generated_images/`.
+- Album: `album.html?set=2026-06-18-hong-kong-orchid-chrome-activity-interiors`
+- Note: `notes/2026-06-18-hong-kong-orchid-chrome-activity-interiors.md`
+- City / place language: Hong Kong, specifically a Sheung Wan print studio, Yau Ma Tei Theatre rehearsal foyer, a Kwun Tong bouldering gym, and the Hong Kong Space Museum planetarium lobby
+- Local activity space plan: creative work studio, performance foyer, indoor sport practice, and planetarium date instead of the recent market/gallery/lounge/transit pattern
+- Common mood: humid Hong Kong rain outside and cool activity interiors inside
+- Lucky color: orchid chrome
+- Lucky color age tone: clear lilac sport accents for `18-19-adult`, sharper chrome-lilac accessories for `20-24`, polished orchid metallics for `25-29`
+- Climate fit: the set uses Hong Kong June humidity and rain logic plus air-conditioned interiors; sleeveless tops, cropped trousers, dress slits, short active hems, socks, mules, slingbacks, climbing shoes, and loafers are selected by activity and venue rather than exposure amount.
+- Categories: `office`, `theater`, `active`, `date`
+- Age bands: `20-24`, `25-29`, `18-19-adult`, `20-24`
+- Persona direction: fashion-aware adult women whose clothing choices are grounded in work, performance-going, sport practice, date-night curiosity, comfort, and personal taste
+- Skin/coverage comfort plan: visible skin varies by sleeveless tailoring, evening dress, climbing skort, and sleeveless half-pants date look; neither openness nor coverage is treated as the goal
+- Pose families: `using-object`, `adjusting-jacket`, `stretching-reach`, `hands-in-pocket`
+- Style presets: `anime-fashion-magazine`, `runway-board-illustration`, `anime-cel-polished`, `anime-soft-cinematic`
+- Source scan / reference note: workspace reference files named by the skill were not present. Web weather/source scan was attempted but did not provide useful structured data in-session; repo presets, recent logs, and repetition guardrails were used.
+- Recent set scan: Barcelona used `weekend` / `ceremony` / `date` / `dance`; Busan used `outerwear` / `theater` / `home` / `swim`; Berlin used `office` / `mode` / `club` / `active`. This set keeps some category vocabulary overlap but changes the actual scene grammar to activity interiors and avoids the old warm-weather quartet.
+- Cooldown formulas: market crouch plus object inspection; tank plus open shirt plus skort plus sandals; seated camisole lounge; open-back gallery pose; rooftop date wrap-mini repeat; transit rain-shell default
+- Hem / legwear / footwear plan: cropped barrel trousers with sheer ankle socks and silver mules; satin column dress with sheer knee-highs and metallic slingback pumps; cargo mini skort over bike shorts with sport socks and climbing shoes; tailored city half pants with translucent wrap panel, ribbed socks, and silver loafers
+- Category rotation reason: `office`, `theater`, `active`, and `date` create work, performance, sport, and social activity roles while using different Hong Kong interiors and avoiding market/gallery/lounge/transit as the default set
+- Prompt version: `v2-short-generation`
+- Prompt shape: short prompt, detailed log
+
+### Final Files
+
+- `01-office-sheung-wan-print-studio-anime.webp`
+  - Source file: `ig_098c5f405b64613f016a3470f18b6c8191981259f5f5a78933.png`
+  - Primary category: `office`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-fashion-magazine`
+  - Secondary tags: `office`, `hong-kong`, `sheung-wan`, `print-studio`, `utility-waistcoat`, `cropped-trousers`, `silver-mules`, `orchid-chrome`
+  - Place: Sheung Wan independent print studio / risograph workspace
+  - Person: adult Japanese-centered early-20s creative worker
+  - Persona traits: curious, sharp, personable, fashion-aware
+  - Fashion: smoke-gray utility waistcoat, ivory square-neck tank, cropped black barrel trousers, sheer lilac ankle socks, silver mules, chrome-lilac belt pouch
+  - Fashion focal point: utility waistcoat plus cropped trousers and chrome-lilac accessories
+  - Lucky color tone for age: clear chrome-lilac socks, pouch, and print accents
+  - Skin/coverage comfort: sleeveless top is natural for an air-conditioned studio and humid rainy exterior; cropped trousers and socks avoid repeating a skirt/sandal formula
+  - Comfort naturalness: paper handling, studio equipment, rain outside, and mules support the workday scene
+  - Climate context: Hong Kong June humidity and rain outside, cool studio interior
+  - Age-band life scene: early-career creative work before meeting friends
+  - Age-band silhouette: utility waistcoat and cropped trousers
+  - Avoid recent formula: not market crouch, not tank plus open shirt plus skort plus sandals, not gallery open-back
+  - Pose family: `using-object`
+  - Movement readability: holding prints and adjusting pouch are clear
+  - Generated prompt summary: short prompt for a Sheung Wan print-studio office look with utility waistcoat, cropped trousers, lilac socks, silver mules, and rain outside.
+  - Visual check: studio, rain, work action, trousers, socks, mules, and orchid chrome accents are readable.
+  - Result: accepted.
+- `02-theater-yau-ma-tei-orchid-wrap-runway.webp`
+  - Source file: `ig_098c5f405b64613f016a34716f33a081918e23a5e7ad7a3e04.png`
+  - Primary category: `theater`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Secondary tags: `theater`, `hong-kong`, `yau-ma-tei`, `satin-dress`, `organza-jacket`, `sheer-knee-highs`, `slingback-pumps`, `orchid-chrome`
+  - Place: Yau Ma Tei Theatre rehearsal foyer
+  - Person: adult Japanese-centered late-20s performance-goer
+  - Persona traits: self-possessed, elegant, sociable, quietly alluring, fashion-aware
+  - Fashion: black satin column dress, orchid chrome wrap panel, cropped translucent organza jacket, sheer knee-high socks, metallic slingback pumps, clutch
+  - Fashion focal point: satin dress, orchid wrap panel, sheer knee-highs, and metallic pumps
+  - Lucky color tone for age: polished metallic orchid in the wrap panel, earrings, and shoes
+  - Skin/coverage comfort: sleeveless satin and walking slit fit humid arrival and cool theater interior; the organza jacket is a light layer, not forced coverage
+  - Comfort naturalness: low pumps, ticket envelope, and carried jacket support a performance-going evening
+  - Climate context: humid rainy evening outside, air-conditioned theater foyer
+  - Age-band life scene: late-20s performance date or friend outing
+  - Age-band silhouette: polished evening column with wrap panel
+  - Avoid recent formula: not seated camisole lounge, not generic bar, not open-back gallery
+  - Pose family: `adjusting-jacket`
+  - Movement readability: jacket lift and ticket hand are clear
+  - Generated prompt summary: short prompt for a Yau Ma Tei Theatre runway-board look with satin dress, orchid wrap panel, organza jacket, knee-highs, and slingbacks.
+  - Visual check: theater foyer, instrument cases, ticket, jacket action, dress slit, knee-highs, and pumps are readable.
+  - Result: accepted.
+- `03-active-kwun-tong-bouldering-cel.webp`
+  - Source file: `ig_098c5f405b64613f016a3471eb4d488191b30dca6d5aeea0c0.png`
+  - Primary category: `active`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-cel-polished`
+  - Secondary tags: `active`, `hong-kong`, `kwun-tong`, `bouldering`, `technical-tee`, `cargo-skort`, `bike-shorts`, `climbing-shoes`, `orchid-chrome`
+  - Place: Kwun Tong indoor bouldering gym
+  - Person: adult Japanese-centered 18-19 hobby climber
+  - Persona traits: bright, daring, practical, playful, self-possessed, fashion-aware
+  - Fashion: technical tee with orchid piping, black cargo mini skort over bike shorts, gray-purple sport socks, climbing shoes, orchid chalk bag, braided hair cord
+  - Fashion focal point: cargo mini skort, bike shorts, sport socks, climbing shoes, and chalk bag
+  - Lucky color tone for age: clear sporty orchid in piping, socks, chalk bag, and hair cord
+  - Skin/coverage comfort: short hem and visible legs fit climbing movement and gym heat; bike shorts and climbing shoes make the construction practical and adult
+  - Comfort naturalness: stretch fabrics, chalk bag, crash mat, and climbing shoes support the sport activity
+  - Climate context: humid rain outside, cool indoor gym, active movement
+  - Age-band life scene: adult young hobby practice with friends after errands
+  - Age-band silhouette: active mini skort over bike shorts
+  - Avoid recent formula: not market crouch, not open shirt plus skort plus sandals, not dance rehearsal knee-sock formula
+  - Pose family: `stretching-reach`
+  - Movement readability: one foot is on a low wall hold, one foot is on the mat, and the reaching hand makes controlled practice clear
+  - Generated prompt summary: short prompt for a Kwun Tong bouldering look with technical tee, cargo skort, bike shorts, socks, climbing shoes, and chalk bag.
+  - Visual check: bouldering wall, planted feet, reaching hand, sport outfit, and adult hobby context are readable.
+  - Result: accepted.
+- `04-date-space-museum-half-pants-anime.webp`
+  - Source file: `ig_098c5f405b64613f016a34731ed4188191969a1a71bfa47878.png`
+  - Rejected candidate: `ig_098c5f405b64613f016a3472734394819185a98c85a59c9eac.png` because it was too photo-adjacent for the intended illustrated style
+  - Primary category: `date`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-soft-cinematic`
+  - Secondary tags: `date`, `hong-kong`, `space-museum`, `planetarium`, `half-pants`, `wrap-panel`, `ribbed-socks`, `silver-loafers`, `orchid-chrome`
+  - Place: Hong Kong Space Museum planetarium lobby
+  - Person: adult Japanese-centered early-20s planetarium date-night visitor
+  - Persona traits: curious, quietly confident, playful, self-possessed, fashion-aware
+  - Fashion: ivory sleeveless blouse, charcoal tailored city half pants, translucent orchid wrap overskirt panel, ribbed dusty-orchid ankle socks, silver loafers, crescent shoulder bag, compact umbrella
+  - Fashion focal point: half pants plus translucent wrap panel, socks, loafers, and chrome buttons
+  - Lucky color tone for age: dusty orchid in socks and translucent wrap panel, small chrome buttons
+  - Skin/coverage comfort: sleeveless blouse and half pants fit cool interior plus humid rainy harbor walk; socks and loafers support museum walking
+  - Comfort naturalness: blank ticket, umbrella strap, and rain-lit harbor explain the date-night activity
+  - Climate context: humid rainy evening outside, cool planetarium lobby, short harbor walk afterward
+  - Age-band life scene: early-20s museum date after an evening show
+  - Age-band silhouette: tailored half pants with translucent wrap panel
+  - Avoid recent formula: not lounge seated camisole, not rooftop date wrap mini, not transit hall rain shell
+  - Pose family: `hands-in-pocket`
+  - Movement readability: looking down at shoes while holding a ticket and umbrella reads as a quiet pause after the show
+  - Generated prompt summary: regenerated short prompt for a Space Museum date look with sleeveless blouse, half pants, orchid wrap panel, socks, loafers, and compact umbrella.
+  - Visual check: planetarium dome, harbor rain glow, half pants, wrap panel, socks, loafers, and date-night ticket are readable. The accepted image remains polished and slightly photo-influenced, but it is more illustrated than the first candidate and coherent as a fashion image.
+  - Result: accepted after one style-focused regeneration.
+
+### Generation Notes
+
+This run completes the empty 2026-06-18 Hong Kong set. The user asked for a different scene direction, so the set avoids generic food/drink, market, gallery, lounge, and transit patterns and instead uses local activity interiors. The main correction is that clothing naturalness is tied to humidity, air conditioning, workplace/performance/sport/date context, and footwear/legwear logic rather than skin visibility.

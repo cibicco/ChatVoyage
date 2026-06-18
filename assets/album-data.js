@@ -1,6 +1,119 @@
 window.CHAT_VOYAGE_ALBUMS = [
   {
     "activities": [
+      "dining-drinks",
+      "performance-going",
+      "sport-practice",
+      "working"
+    ],
+    "categories": [
+      "active",
+      "date",
+      "office",
+      "theater"
+    ],
+    "date": "2026-06-18",
+    "href": "album.html?set=2026-06-18-hong-kong-orchid-chrome-activity-interiors",
+    "imageCount": 4,
+    "images": [
+      {
+        "activity": "working",
+        "age": "20-24",
+        "alt": "Adult early 20s Hong Kong Sheung Wan print studio office look with utility waistcoat, cropped barrel trousers, lilac socks, and silver mules",
+        "category": "office",
+        "label": "01",
+        "occasion": "work",
+        "outfit": "outerwear-layer",
+        "place": "hong-kong",
+        "src": "assets/daily/2026-06-18-hong-kong-orchid-chrome-activity-interiors/01-office-sheung-wan-print-studio-anime.webp",
+        "style": "anime-fashion-magazine",
+        "tags": "Anime Magazine / Hong Kong / office / 20-24",
+        "title": "01 Office Sheung Wan print studio",
+        "venue": "workplace"
+      },
+      {
+        "activity": "performance-going",
+        "age": "25-29",
+        "alt": "Adult late 20s Hong Kong Yau Ma Tei Theatre look with black satin dress, orchid chrome wrap panel, sheer knee-highs, and metallic slingback pumps",
+        "category": "theater",
+        "label": "02",
+        "occasion": "creative-culture",
+        "outfit": "dress",
+        "place": "hong-kong",
+        "src": "assets/daily/2026-06-18-hong-kong-orchid-chrome-activity-interiors/02-theater-yau-ma-tei-orchid-wrap-runway.webp",
+        "style": "runway-board-illustration",
+        "tags": "Runway Board / Hong Kong / theater / 25-29",
+        "title": "02 Theater Yau Ma Tei orchid wrap",
+        "venue": "event-venue"
+      },
+      {
+        "activity": "sport-practice",
+        "age": "18-19-adult",
+        "alt": "Adult 18-19 Hong Kong Kwun Tong bouldering look with technical tee, cargo mini skort, bike shorts, sport socks, climbing shoes, and orchid chalk bag",
+        "category": "active",
+        "label": "03",
+        "occasion": "movement",
+        "outfit": "skirt-skort",
+        "place": "hong-kong",
+        "src": "assets/daily/2026-06-18-hong-kong-orchid-chrome-activity-interiors/03-active-kwun-tong-bouldering-cel.webp",
+        "style": "anime-cel-polished",
+        "tags": "Cel Anime / Hong Kong / active / 18-19-adult",
+        "title": "03 Active Kwun Tong bouldering",
+        "venue": "studio-sports"
+      },
+      {
+        "activity": "dining-drinks",
+        "age": "20-24",
+        "alt": "Adult early 20s Hong Kong Space Museum date look with sleeveless blouse, tailored half pants, translucent orchid wrap panel, ribbed socks, and silver loafers",
+        "category": "date",
+        "label": "04",
+        "occasion": "social-date",
+        "outfit": "tailoring",
+        "place": "hong-kong",
+        "src": "assets/daily/2026-06-18-hong-kong-orchid-chrome-activity-interiors/04-date-space-museum-half-pants-anime.webp",
+        "style": "anime-soft-cinematic",
+        "tags": "Soft Anime / Hong Kong / date / 20-24",
+        "title": "04 Date Space Museum half pants",
+        "venue": "dining-bar"
+      }
+    ],
+    "legacyHref": "assets/2026-06-18-hong-kong-orchid-chrome-activity-interiors-album.html",
+    "month": "2026-06",
+    "notesHref": "notes/2026-06-18-hong-kong-orchid-chrome-activity-interiors.md",
+    "occasions": [
+      "creative-culture",
+      "movement",
+      "social-date",
+      "work"
+    ],
+    "outfits": [
+      "dress",
+      "outerwear-layer",
+      "skirt-skort",
+      "tailoring"
+    ],
+    "places": [
+      "hong-kong"
+    ],
+    "shortTitle": "Hong Kong Orchid Chrome Activity Interiors",
+    "slug": "2026-06-18-hong-kong-orchid-chrome-activity-interiors",
+    "styles": [
+      "anime-cel-polished",
+      "anime-fashion-magazine",
+      "anime-soft-cinematic",
+      "runway-board-illustration"
+    ],
+    "summary": "Hong Kong activity-interior set across a Sheung Wan print studio, Yau Ma Tei Theatre rehearsal foyer, a Kwun Tong bouldering gym, and the Hong Kong Space Museum planetarium lobby.",
+    "title": "2026-06-18 Hong Kong Orchid Chrome Activity Interiors",
+    "venues": [
+      "dining-bar",
+      "event-venue",
+      "studio-sports",
+      "workplace"
+    ]
+  },
+  {
+    "activities": [
       "attending-event",
       "city-walk",
       "dancing",
