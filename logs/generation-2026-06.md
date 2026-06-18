@@ -648,7 +648,7 @@ placement, and scene context, not by forcing high-neck or heavy clothing.
   - Climate context: Marrakech June dry heat, shaded courtyard, seated/object interaction
   - Age-band life scene: adult 18-19 traveler on a design/courtyard morning
   - Age-band silhouette: playful wrap panel over cropped trousers, not a teen-idol or exposure-led look
-  - Avoid recent formula: not rainy Japan market crouch, not tank/open-shirt/skort/sandal, not wet waterfront
+  - Avoid recent formula: not rainy Japan covered-market crouch with rib tank, loose open shirt, utility skort over bike shorts, flat rain sandals, and clear tote; not wet waterfront
   - Pose family: `using-object`; planned face left, body three-quarter, eye-level knee-up; final reads as seated object interaction
   - Movement readability: fan and sketchbook use are clear
   - Generated prompt summary: short prompt for an adult 18-19 Marrakech shaded courtyard look with cotton shirt, saffron wrap panel, cropped trousers, mules, fan, and sketchbook.
@@ -2148,7 +2148,7 @@ call for them, not as an age or skin-visibility correction.
 - Style presets: `runway-board-illustration`, `anime-fashion-magazine`, `game-cinematic-3d`, `marker-sketch`
 - Source scan / reference note: local project reference files were not present in the workspace. Local presets, recent logs, and light Berlin climate/place context were used: Berlin climate, Hamburger Bahnhof, Tempelhofer Feld, and Kreuzberg club culture. Setting names are broad place language only, not copied signage or exact interiors.
 - Recent set scan: recent additions emphasize Melbourne winter layers, Marrakech dry courtyard/showroom, Helsinki maker/climbing, Mexico City creative weekday, and repeated Japan/rain/water/market-gallery-lounge-transit formulas
-- Cooldown formulas: market/gallery/lounge/transit quartet, open-back gallery crop, seated satin lounge, warm-weather tank/open-shirt/skort/sandal formula, waterfront or rain reflection place logic, climbing skort activewear
+- Cooldown formulas: market/gallery/lounge/transit quartet, open-back gallery crop, seated satin lounge, covered-market rib tank plus loose open shirt plus utility skort over bike shorts plus flat rain sandals plus clear tote, waterfront or rain reflection place logic, and the specific climbing-gym skort activewear formula from the recent set
 - Category rotation reason: `office`, `mode`, `club`, and `active` create a Berlin culture/activity route without returning to the recent default quartet or repeating Melbourne's winter `street/formal/dance/date`
 - Prompt version: `v2-short-generation`
 - Prompt shape: short prompt, detailed log
@@ -2246,8 +2246,8 @@ call for them, not as an age or skin-visibility correction.
   - Comfort naturalness: cotton and half pants support wind and motion without forcing a tank/cami formula
   - Climate context: Berlin early summer, outdoor runway park, wind and longboard push-off
   - Age-band life scene: adult young friend-group park activity
-  - Age-band silhouette: rugby polo and wrapped half pants rather than tank/skort/sandals
-  - Avoid recent formula: not young market tank/skort/sandals, not climbing skort, not dance rehearsal layers
+  - Age-band silhouette: rugby polo and wrapped half pants rather than the recent covered-market tank/open-shirt/skort look
+  - Avoid recent formula: not the young covered-market tank/open-shirt/skort with flat rain sandals and clear tote, not the previous climbing-gym skort activewear formula, not dance rehearsal layers
   - Pose family: `jump-motion`; face right; body front twist; wide-action
   - Movement readability: planted foot on longboard, pushing foot, balanced arms, and open runway setting are clear
   - Generated prompt summary: short prompt for an adult 18-19 Tempelhofer Feld active look with cropped rugby polo, wrapped half pants, linden pouch, socks, sneakers, and longboard action.
@@ -2283,7 +2283,7 @@ where work, museum, or club utility makes them natural.
 - Pose families: `using-object`, `walking-stride`, `seated-side`, `back-three-quarter`
 - Style presets: `anime-fashion-magazine`, `marker-sketch`, `digital-magazine-painting`, `game-cinematic-3d`
 - Source scan / reference note: Web sources were not used. Workspace-level reference files named by the skill were not present; repo prompt presets, skill instructions, and existing 6/11 visual inspection were used.
-- Recent set scan: the earlier Hiroshima 6/11 set had generic office/theater/home readings and a ferry image whose action could read as jumping away from the boat. Recent sets also repeated warm-weather tank/open-shirt/skort/sandal, open-back gallery crop, seated camisole lounge, and rain-reflection place formulas.
+- Recent set scan: the earlier Hiroshima 6/11 set had generic office/theater/home readings and a ferry image whose action could read as jumping away from the boat. Recent sets also repeated the covered-market rib tank plus loose open shirt plus utility skort over bike shorts plus flat rain sandals plus clear tote formula, open-back gallery crop, seated camisole lounge, and rain-reflection place formulas.
 - Cooldown formulas: older shirt-dress office walk, origami theater overdress, home video-call balcony, unclear ferry jump, market/cafe tank-open-shirt skort sandals, open-back gallery over-shoulder, and seated camisole lounge
 - Hem / legwear / footwear plan: pleated mini with sheer ankle socks and Mary Jane sneakers; tailored mini with sheer knee-highs and slingbacks; wrap mini with bike shorts, patterned tights, and ankle boots; wrap skort with bike shorts, sport socks, and perforated summer boots
 - Category rotation reason: `weekend`, `gallery`, `theater`, and `transit` keep the day locally grounded while changing the activity, silhouette, and movement from the weaker original Hiroshima set
@@ -2444,8 +2444,8 @@ accidental jump.
   - Comfort naturalness: breathable top, short hem, and rain shell respond to wet concrete, covered passage, and coastal humidity
   - Climate context: Busan mid-June seasonal humidity, after drizzle, covered culture-complex passage and courtyard
   - Age-band life scene: early-20s culture errand before meeting friends
-  - Age-band silhouette: cropped anorak plus wrap skort, not tank/open-shirt/skort/sandal
-  - Avoid recent formula: not market crouch, not tank plus open shirt plus skort plus sandals, not gallery open-back, not station transit
+  - Age-band silhouette: cropped anorak plus wrap skort, not the covered-market tank/open-shirt utility skort formula
+  - Avoid recent formula: not market crouch, not rib tank plus loose open shirt plus utility skort over bike shorts plus flat rain sandals plus clear tote, not gallery open-back, not station transit
   - Pose family: `adjusting-jacket`; face right; body three-quarter; full-body
   - Movement readability: hood-adjustment and step from cover to courtyard are clear
   - Generated prompt summary: short prompt for a Busan F1963 rainwear look with translucent anorak, wrap skort, sheer socks, Mary Jane flats, and turquoise toggles.
@@ -2494,7 +2494,7 @@ accidental jump.
   - Climate context: Busan humid coastal evening after rain, rooftop terrace, sea wind, wet concrete
   - Age-band life scene: adult young travel rest and chores, not school or teen-idol framing
   - Age-band silhouette: cropped polo, terry wrap skort, bloomers, slouch socks
-  - Avoid recent formula: not market crouch, not generic balcony video-call, not tank/open-shirt/skort/sandals
+  - Avoid recent formula: not market crouch, not generic balcony video-call, not the covered-market tank/open-shirt utility skort plus flat rain sandals formula
   - Pose family: `floor-sit`; face down; body front three-quarter; high diagonal
   - Movement readability: fan, folded map, laundry pouch, and seated weight are clear
   - Generated prompt summary: short prompt for an adult 18-19 Yeongdo rooftop home look with cropped polo, terry wrap skort, bloomers, slouch socks, sneakers, fan, and laundry context.
@@ -2550,8 +2550,8 @@ This run applies the 6/11 critique directly: ordinary exposure is not rejected b
 - Pose families: `using-object`, `walking-stride`, `leaning-wall`, `dance-motion`
 - Style presets: `anime-editorial`, `runway-board-illustration`, `soft-real-fashion-art`, `game-cinematic-3d`
 - Source scan / reference note: workspace reference files named by the skill were not present. Live weather lookup did not return data. Web fashion/source scan was not used; repo presets, recent notes/logs, and repetition critiques were used.
-- Recent set scan: Busan used coastal rain/water and `outerwear` / `theater` / `home` / `swim`; Berlin used culture/work/night movement; Melbourne used winter layers. This set avoids the market/gallery/lounge/transit quartet and the tank/open-shirt/skort/sandal formula.
-- Cooldown formulas: market crouch plus object inspection; tank plus open shirt plus skort plus sandals; seated camisole lounge; open-back gallery over-shoulder crop; unclear ferry/water-edge jump; wet reflection as the only location signal
+- Recent set scan: Busan used coastal rain/water and `outerwear` / `theater` / `home` / `swim`; Berlin used culture/work/night movement; Melbourne used winter layers. This set avoids the market/gallery/lounge/transit quartet and recent full formulas, not the garment categories themselves.
+- Cooldown formulas: covered-market crouch plus rib tank plus loose short-sleeve open shirt plus utility skort over bike shorts plus flat rain sandals plus clear tote; seated camisole lounge plus draped blazer; open-back gallery over-shoulder crop; unclear ferry/water-edge jump; wet reflection as the only location signal
 - Hem / legwear / footwear plan: wrap mini with safety shorts and sneakers; waistcoat dress with sheer knee-highs and slingback pumps; mini wrap skirt with smoky knee-highs and perforated summer boots; cropped dance trousers with wrap panel, knee socks, and split-sole sneakers
 - Category rotation reason: `weekend`, `ceremony`, `date`, and `dance` provide a practical daytime anchor, formal/social anchor, romantic/social night anchor, and movement anchor without repeating the last two daily category mixes
 - Prompt version: `v2-short-generation`
@@ -2575,7 +2575,7 @@ This run applies the 6/11 critique directly: ordinary exposure is not rejected b
   - Lucky color tone for age: clear sporty coral in the polo, fan, sock edge, and accessories
   - Skin/coverage comfort: short hem and bare legs are natural for a warm shaded city walk and are supported by adult context, safety shorts, and practical sneakers
   - Comfort naturalness: breathable cotton/knit, fan, pouch, and walking shoes fit the place and activity
-  - Avoid recent formula: not tank plus open shirt plus skort plus sandals, not market crouch, not school-uniform-coded
+  - Avoid recent formula: not the covered-market crouch with loose open shirt, utility skort over bike shorts, flat rain sandals, and clear tote; not school-uniform-coded
   - Pose family: `using-object`; face left; body three-quarter; full-body
   - Visual check: stronger 2D illustration style, El Born / Santa Caterina roofline cue, fan, wrap mini, socks, sneakers, and coral placement are readable.
   - Result: accepted after one style-focused regeneration.
@@ -2665,7 +2665,7 @@ This run continues the correction away from exposure-based pass/fail language. T
 - Style presets: `anime-fashion-magazine`, `runway-board-illustration`, `anime-cel-polished`, `anime-soft-cinematic`
 - Source scan / reference note: workspace reference files named by the skill were not present. Web weather/source scan was attempted but did not provide useful structured data in-session; repo presets, recent logs, and repetition guardrails were used.
 - Recent set scan: Barcelona used `weekend` / `ceremony` / `date` / `dance`; Busan used `outerwear` / `theater` / `home` / `swim`; Berlin used `office` / `mode` / `club` / `active`. This set keeps some category vocabulary overlap but changes the actual scene grammar to activity interiors and avoids the old warm-weather quartet.
-- Cooldown formulas: market crouch plus object inspection; tank plus open shirt plus skort plus sandals; seated camisole lounge; open-back gallery pose; rooftop date wrap-mini repeat; transit rain-shell default
+- Cooldown formulas: covered-market crouch plus rib tank plus loose short-sleeve open shirt plus utility skort over bike shorts plus flat rain sandals plus clear tote; seated lounge camisole plus draped blazer; open-back gallery pose; rooftop date wrap-mini plus over-shoulder terrace pose; transit rain-shell default. These are full styling formulas, not bans on skorts, sandals, tanks, or open shirts.
 - Hem / legwear / footwear plan: cropped barrel trousers with sheer ankle socks and silver mules; satin column dress with sheer knee-highs and metallic slingback pumps; cargo mini skort over bike shorts with sport socks and climbing shoes; tailored city half pants with translucent wrap panel, ribbed socks, and silver loafers
 - Category rotation reason: `office`, `theater`, `active`, and `date` create work, performance, sport, and social activity roles while using different Hong Kong interiors and avoiding market/gallery/lounge/transit as the default set
 - Prompt version: `v2-short-generation`
@@ -2691,7 +2691,7 @@ This run continues the correction away from exposure-based pass/fail language. T
   - Climate context: Hong Kong June humidity and rain outside, cool studio interior
   - Age-band life scene: early-career creative work before meeting friends
   - Age-band silhouette: utility waistcoat and cropped trousers
-  - Avoid recent formula: not market crouch, not tank plus open shirt plus skort plus sandals, not gallery open-back
+  - Avoid recent formula: not the covered-market crouch with loose open shirt, utility skort over bike shorts, flat rain sandals, and clear tote; not gallery open-back
   - Pose family: `using-object`
   - Movement readability: holding prints and adjusting pouch are clear
   - Generated prompt summary: short prompt for a Sheung Wan print-studio office look with utility waistcoat, cropped trousers, lilac socks, silver mules, and rain outside.
@@ -2739,7 +2739,7 @@ This run continues the correction away from exposure-based pass/fail language. T
   - Climate context: humid rain outside, cool indoor gym, active movement
   - Age-band life scene: adult young hobby practice with friends after errands
   - Age-band silhouette: active mini skort over bike shorts
-  - Avoid recent formula: not market crouch, not open shirt plus skort plus sandals, not dance rehearsal knee-sock formula
+  - Avoid recent formula: not the covered-market crouch with loose open shirt, utility skort over bike shorts, flat rain sandals, and clear tote; not the previous dance rehearsal knee-sock formula
   - Pose family: `stretching-reach`
   - Movement readability: one foot is on a low wall hold, one foot is on the mat, and the reaching hand makes controlled practice clear
   - Generated prompt summary: short prompt for a Kwun Tong bouldering look with technical tee, cargo skort, bike shorts, socks, climbing shoes, and chalk bag.

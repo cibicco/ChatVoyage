@@ -26,6 +26,14 @@ Do not put a normal garment type on cooldown by itself. Cooldown applies to the
 combined formula: garment stack, category, pose, shoes or legwear, place, crop,
 and styling attitude together.
 
+When recording the repeated formula, do not shorten it to a broad garment
+category such as "skort + sandals" or "tank + open shirt." That loses the
+fashion information. Name the actual construction and styling relationship:
+for example, "covered-market crouch + rib tank + loose short-sleeve open shirt
++ charcoal utility skort over bike shorts + flat rain sandals + clear tote."
+Another skort with different fabric, hem, volume, legwear, footwear, place,
+movement, and attitude is a different fashion decision and remains available.
+
 ## Climate Specificity
 
 Do not reduce climate naturalness to "warm and humid means tank, camisole,
@@ -87,8 +95,8 @@ support them.
 
 Cooldown examples:
 
-- young market/cafe crouch + tank + open short-sleeve shirt + skort or shorts
-  + flat sandals + clear tote
+- young covered-market crouch + rib tank + loose short-sleeve open shirt +
+  charcoal utility skort over bike shorts + flat rain sandals + clear tote
 - open-back halter + carried mesh bolero + culotte shorts
 - satin camisole + draped blazer + sheer-over-opaque midi skirt
 - black tank + mesh/rain shell + wide pants + sneakers

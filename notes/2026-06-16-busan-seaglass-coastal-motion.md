@@ -24,7 +24,7 @@
 - Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept.
 - Prompt version: `v2-short-generation`
 - Source notes: external workspace reference files named by the skill were not present. Live weather lookup did not return data. Web fashion/source scan was not used; repo prompt presets, recent notes/logs, and 6/11 critique were used.
-- Recent-set repetition notes: recent sets used Berlin culture-motion, Melbourne winter layers, Kyoto/Nagoya humid rain, and Hiroshima/Nagasaki 6/11 remakes. This set avoids the recent tank/open-shirt/skort/sandal market formula, open-back gallery crop, seated camisole lounge composition, unclear ferry jump, and wet-reflection-only place formula.
+- Recent-set repetition notes: recent sets used Berlin culture-motion, Melbourne winter layers, Kyoto/Nagoya humid rain, and Hiroshima/Nagasaki 6/11 remakes. This set avoids the covered-market formula of rib tank plus loose open short-sleeve shirt plus utility skort over bike shorts plus flat rain sandals plus clear tote, plus open-back gallery crop, seated camisole lounge composition, unclear ferry jump, and wet-reflection-only place formula. This is not a ban on skorts, sandals, tanks, or open shirts.
 
 ## Results
 

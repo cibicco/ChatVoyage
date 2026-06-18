@@ -24,7 +24,7 @@
 - Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept.
 - Prompt version: `v2-short-generation`
 - Source notes: external workspace reference files named by the skill were not present. Live weather lookup did not return data. Web fashion/source scan was not used; repo prompt presets, recent notes/logs, and recent repetition critiques were used.
-- Recent-set repetition notes: this set avoids the tank plus open shirt plus skort plus sandals market formula, open-back gallery crop, seated camisole lounge composition, unclear vehicle/water-edge jump, and wet-reflection-only place signal.
+- Recent-set repetition notes: this set avoids the covered-market formula of rib tank plus loose open short-sleeve shirt plus utility skort over bike shorts plus flat rain sandals plus clear tote, along with open-back gallery crop, seated camisole lounge composition, unclear vehicle/water-edge jump, and wet-reflection-only place signal. This is not a ban on skorts, sandals, tanks, or open shirts.
 
 ## Results
 

@@ -16,7 +16,7 @@
 - style_presets: `anime-fashion-magazine`, `runway-board-illustration`, `anime-cel-polished`, `anime-soft-cinematic`
 - saved_path: `assets/daily/2026-06-18-hong-kong-orchid-chrome-activity-interiors/`
 - prompt_version: `v2-short-generation`
-- recent_set_repetition_notes: avoided the recent market/gallery/lounge/transit quartet, the tank plus open shirt plus skort plus sandals formula, seated camisole lounge, rooftop date wrap-mini repeat, and transit rain-shell default.
+- recent_set_repetition_notes: avoided recent full formulas such as covered-market crouch plus rib tank plus loose open shirt plus utility skort over bike shorts plus flat rain sandals plus clear tote; seated lounge camisole plus draped blazer; rooftop date wrap-mini plus over-shoulder terrace pose; and transit rain-shell default. Skorts, sandals, tanks, and open shirts remain valid when the construction, footwear, legwear, place, movement, and styling attitude differ.
 
 ## Results
 
