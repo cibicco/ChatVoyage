@@ -41,8 +41,11 @@ python3 scripts/validate_gallery.py
 git status --short --branch
 ```
 
-Generated display images should be WebP. Project PNG copies are intentionally
-not kept.
+Generated display images should be WebP. Generated originals and project-local
+PNG copies are project materials: do not delete them automatically. Decide
+explicitly whether they should be retained in place, moved to an archive, or
+deleted after confirming that the canonical gallery uses the WebP display
+copies.
 
 ## GitHub Pages
 
