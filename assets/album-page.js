@@ -1,8 +1,9 @@
 (() => {
   const FEEDBACK_STORAGE_KEY = "chat-voyage-feedback-v1";
-  const SCORE_VALUES = new Set(["love", "like", "pass"]);
+  const SCORE_VALUES = new Set(["love", "neutral"]);
 
   const albums = window.CHAT_VOYAGE_ALBUMS || [];
+  const albumGroups = window.CHAT_VOYAGE_ALBUM_GROUPS || null;
   const root = document.querySelector("[data-album-viewer]");
   if (!root || !albums.length) return;
 
@@ -22,7 +23,10 @@
   const place = document.getElementById("album-place");
   const summary = document.getElementById("album-summary");
   const select = document.getElementById("album-select");
+  const prevAlbumLink = document.querySelector("[data-prev-album]");
+  const nextAlbumLink = document.querySelector("[data-next-album]");
   const notFoundNotice = document.querySelector("[data-not-found-notice]");
+  const stage = root.querySelector(".stage");
   const stageImage = root.querySelector("[data-stage-image]");
   const stageLink = root.querySelector("[data-stage-link]");
   const caption = root.querySelector("[data-viewer-caption]");
@@ -35,8 +39,6 @@
   const grid = root.querySelector("[data-image-grid]");
   const previous = root.querySelector("[data-album-prev]");
   const next = root.querySelector("[data-album-next]");
-  const previousAlbum = root.querySelector("[data-prev-album]");
-  const nextAlbum = root.querySelector("[data-next-album]");
   const exportFeedbackButton = document.querySelector("[data-feedback-export]");
   const feedbackStatus = root.querySelector("[data-feedback-status]");
   const scoreButtons = Array.from(root.querySelectorAll("[data-feedback-score]"));
@@ -59,7 +61,6 @@
   hydrateHeader();
   renderThumbnails();
   renderGrid();
-  renderNeighbors();
   bindFeedbackControls();
   bindLightboxControls();
   setActive(active, false, false);
@@ -97,17 +98,12 @@
     date.textContent = album.date || "";
     count.textContent = String(images.length);
     place.textContent = (album.places || []).map(labelize).join(", ");
-    summary.textContent = album.summary || "";
+    summary.textContent = japaneseAlbumSummary(album);
     total.textContent = String(images.length);
     imageTotal.textContent = `${images.length}枚`;
 
-    albums.forEach((item) => {
-      const option = document.createElement("option");
-      option.value = item.href;
-      option.textContent = item.title;
-      option.selected = item.slug === album.slug;
-      select.appendChild(option);
-    });
+    renderAlbumSelect();
+    renderAlbumNeighbors();
 
     if (album.notesHref) {
       notesLink.href = album.notesHref;
@@ -118,6 +114,64 @@
       notFoundNotice.hidden = false;
       notFoundNotice.textContent = `指定されたアルバム "${requestedSlug}" が見つかりません。最新のアルバムを表示しています。`;
     }
+  }
+
+  function renderAlbumSelect() {
+    if (!select) return;
+    select.replaceChildren();
+    const bySlug = new Map(albums.map((item) => [item.slug, item]));
+    const used = new Set();
+
+    if (albumGroups && typeof albumGroups === "object") {
+      const characterGroups = albumGroups.character || {};
+      Object.entries(characterGroups)
+        .sort(([left], [right]) => labelize(left).localeCompare(labelize(right)))
+        .forEach(([character, slugs]) => {
+          if (!Array.isArray(slugs)) return;
+          appendAlbumGroup(`Character Albums / ${labelize(character)}`, slugs, bySlug, used);
+        });
+      appendAlbumGroup("Daily Albums", albumGroups.daily || [], bySlug, used);
+    }
+
+    const remaining = albums.filter((item) => !used.has(item.slug));
+    if (remaining.length) {
+      appendAlbumGroup("Other Albums", remaining.map((item) => item.slug), bySlug, used);
+    }
+  }
+
+  function appendAlbumGroup(label, slugs, bySlug, used) {
+    const group = document.createElement("optgroup");
+    group.label = label;
+    slugs.forEach((slug) => {
+      const item = bySlug.get(slug);
+      if (!item || used.has(item.slug)) return;
+      appendAlbumOption(group, item);
+      used.add(item.slug);
+    });
+    if (group.children.length) select.appendChild(group);
+  }
+
+  function appendAlbumOption(parent, item) {
+    const option = document.createElement("option");
+    option.value = item.href;
+    option.textContent = item.title;
+    option.selected = item.slug === album.slug;
+    parent.appendChild(option);
+  }
+
+  function renderAlbumNeighbors() {
+    if (!albums.length) return;
+    const prevAlbum = albums[(albumIndex - 1 + albums.length) % albums.length];
+    const nextAlbum = albums[(albumIndex + 1) % albums.length];
+    hydrateAlbumNeighbor(prevAlbumLink, prevAlbum, "前のアルバム");
+    hydrateAlbumNeighbor(nextAlbumLink, nextAlbum, "次のアルバム");
+  }
+
+  function hydrateAlbumNeighbor(link, item, label) {
+    if (!link || !item) return;
+    link.href = item.href;
+    link.title = `${label}: ${item.shortTitle || item.title}`;
+    link.setAttribute("aria-label", `${label}: ${item.shortTitle || item.title}`);
   }
 
   function renderThumbnails() {
@@ -131,16 +185,10 @@
       button.setAttribute("aria-pressed", String(index === active));
       button.setAttribute("aria-label", `${index + 1}枚目を表示: ${image.title || image.alt}`);
 
-      const img = document.createElement("img");
-      img.src = image.src;
-      img.alt = "";
-      img.loading = "lazy";
-      img.decoding = "async";
-
       const label = document.createElement("span");
       label.textContent = image.label || String(index + 1).padStart(2, "0");
 
-      button.append(img, label);
+      button.appendChild(label);
       button.addEventListener("click", () => setActive(index));
       applyFeedbackState(button, image);
       thumbnailStrip.appendChild(button);
@@ -151,7 +199,7 @@
     grid.replaceChildren();
     images.forEach((image, index) => {
       const figure = document.createElement("figure");
-      figure.id = `image-${index + 1}`;
+      figure.id = `gallery-image-${index + 1}`;
 
       const link = document.createElement("a");
       link.className = "image-link";
@@ -185,30 +233,15 @@
     });
   }
 
-  function renderNeighbors() {
-    const newer = albums[albumIndex - 1];
-    const older = albums[albumIndex + 1];
-    setNeighbor(previousAlbum, newer, "前のアルバム");
-    setNeighbor(nextAlbum, older, "次のアルバム");
-  }
-
-  function setNeighbor(link, item, label) {
-    if (!item) {
-      link.hidden = true;
-      return;
-    }
-    link.hidden = false;
-    link.href = item.href;
-    link.textContent = `${label}: ${item.shortTitle || item.title}`;
-  }
-
   function setActive(index, focusThumb = false, updateHash = true) {
     if (!images.length) return;
     active = (index + images.length) % images.length;
     const image = images[active];
     stageImage.src = image.src;
     stageImage.alt = image.alt || "";
+    applyImageSize(stageImage, image);
     stageLink.href = image.src;
+    stage.id = `image-${active + 1}`;
     openLink.href = image.src;
     current.textContent = String(active + 1);
     caption.replaceChildren(createCaption(image));
@@ -231,6 +264,10 @@
     lightboxClose?.addEventListener("click", closeLightbox);
     lightboxPrev?.addEventListener("click", () => moveLightbox(-1));
     lightboxNext?.addEventListener("click", () => moveLightbox(1));
+    lightboxImage?.addEventListener("click", (event) => {
+      event.stopPropagation();
+      moveLightbox(1);
+    });
     lightbox?.addEventListener("click", (event) => {
       if (event.target === lightbox) closeLightbox();
     });
@@ -264,6 +301,7 @@
     if (!image || !lightboxImage) return;
     lightboxImage.src = image.src;
     lightboxImage.alt = image.alt || "";
+    applyImageSize(lightboxImage, image);
     if (lightboxOpen) lightboxOpen.href = image.src;
     if (lightboxCurrent) lightboxCurrent.textContent = String(active + 1);
     if (lightboxTotal) lightboxTotal.textContent = String(images.length);
@@ -379,7 +417,8 @@
 
   function normalizeFeedback(value) {
     const feedback = value && typeof value === "object" ? value : {};
-    const score = SCORE_VALUES.has(feedback.score) ? feedback.score : "";
+    let score = SCORE_VALUES.has(feedback.score) ? feedback.score : "";
+    if (feedback.score === "like") score = "neutral";
     const allowedTags = new Set(tagInputs.map((input) => input.value));
     const tags = Array.isArray(feedback.tags)
       ? feedback.tags.filter((tag) => allowedTags.has(tag)).sort()
@@ -472,28 +511,51 @@
     heading.textContent = image.title || image.alt || "Image";
     fragment.appendChild(heading);
 
+    const descriptionParts = splitImageDescription(image.alt || "");
+    appendCaptionSection(fragment, "服装", descriptionParts.outfit, "caption-outfit");
+
     const rows = [
-      ["年齢", image.age],
-      ["旧カテゴリ", image.category],
-      ["場面", image.occasion],
-      ["場所", image.venue],
-      ["行動", image.activity],
-      ["服装", image.outfit],
-      ["絵柄", image.style],
-      ["都市", image.place],
+      ["場所", image.locationDetail || image.venue, Boolean(image.locationDetail)],
+      ["行動", image.activity, false],
+      ["場面", image.occasion, false],
+      ["絵柄", image.style, false],
     ].filter(([, value]) => value);
     if (rows.length) {
       const dl = document.createElement("dl");
-      rows.forEach(([key, value]) => {
+      rows.forEach(([key, value, raw]) => {
         const dt = document.createElement("dt");
         dt.textContent = key;
         const dd = document.createElement("dd");
-        dd.textContent = key === "年齢" ? value : labelize(value);
+        dd.textContent = raw ? value : labelize(value);
         dl.append(dt, dd);
       });
       fragment.appendChild(dl);
     }
     return fragment;
+  }
+
+  function applyImageSize(element, image) {
+    if (!element || !image) return;
+    if (image.width && image.height) {
+      element.width = image.width;
+      element.height = image.height;
+    } else {
+      element.removeAttribute("width");
+      element.removeAttribute("height");
+    }
+  }
+
+  function appendCaptionSection(fragment, label, value, className) {
+    if (!value) return;
+    const section = document.createElement("section");
+    section.className = "caption-section";
+    const heading = document.createElement("h3");
+    heading.textContent = label;
+    const body = document.createElement("p");
+    body.className = className;
+    body.textContent = value;
+    section.append(heading, body);
+    fragment.appendChild(section);
   }
 
   function createLightboxCaption(image) {
@@ -503,12 +565,10 @@
     fragment.appendChild(heading);
 
     const meta = [
-      image.age,
-      image.category && labelize(image.category),
       image.venue && labelize(image.venue),
-      image.outfit && labelize(image.outfit),
+      image.activity && labelize(image.activity),
+      image.occasion && labelize(image.occasion),
       image.style && labelize(image.style),
-      image.place && labelize(image.place),
     ].filter(Boolean);
 
     if (meta.length) {
@@ -518,6 +578,167 @@
       fragment.appendChild(list);
     }
     return fragment;
+  }
+
+  function cleanImageDescription(value) {
+    return value
+      .replace(/^Shino,\s*adult\s+(?:\d+|\d+-year-old)(?:\s+recurring character)?,\s*/i, "Shino ")
+      .replace(/^Young Shino,\s*age\s+\d+,\s*/i, "Young Shino ")
+      .replace(/^(?:Adult\s+(?:\d+(?:-\d+)?|early[-\s]?\d+s|mid[-\s]?\d+s|late[-\s]?\d+s)|Early[-\s]?\d+s|Mid[-\s]?\d+s|Late[-\s]?\d+s)\s+Japanese-centered woman\s+/i, "Japanese-centered woman ")
+      .replace(/^(?:Adult\s+(?:\d+(?:-\d+)?|early[-\s]?\d+s|mid[-\s]?\d+s|late[-\s]?\d+s)|Early[-\s]?\d+s|Mid[-\s]?\d+s|Late[-\s]?\d+s)\s+/i, "")
+      .trim();
+  }
+
+  function splitImageDescription(value) {
+    const cleaned = cleanImageDescription(value);
+    if (!cleaned) return { scene: "", outfit: "" };
+    const match = cleaned.match(/\b(?:while\s+wearing|wearing)\b/i);
+    if (!match) return { scene: truncateText(cleaned, 130), outfit: "" };
+    const before = cleaned.slice(0, match.index).replace(/,\s*$/, "").trim();
+    const after = cleaned.slice(match.index + match[0].length).replace(/^[\s,]+/, "").trim();
+    return {
+      scene: truncateText(compactScene(before), 125),
+      outfit: truncateText(compactOutfit(after), 170),
+    };
+  }
+
+  function compactScene(value) {
+    return value
+      .replace(/^Japanese-centered woman\s+/i, "")
+      .replace(/^woman\s+/i, "")
+      .replace(/^Shino\s+/i, "Shino ")
+      .replace(/\s+with\s+[^.]+$/i, "")
+      .replace(/,\s*$/i, "")
+      .trim();
+  }
+
+  function compactOutfit(value) {
+    return value
+      .replace(/\s+(?:while|as)\s+.+$/i, "")
+      .replace(/\s+/g, " ")
+      .replace(/\ban?\s+/gi, "")
+      .trim();
+  }
+
+  function truncateText(value, limit) {
+    if (!value || value.length <= limit) return value;
+    const shortened = value.slice(0, limit - 1).trimEnd();
+    const boundary = Math.max(shortened.lastIndexOf(","), shortened.lastIndexOf(" "));
+    return `${shortened.slice(0, boundary > 40 ? boundary : shortened.length).trimEnd()}…`;
+  }
+
+  function japaneseAlbumSummary(item) {
+    if (item.summaryJa) return item.summaryJa;
+    const city = (item.places || []).map(japanesePlace).filter(Boolean).join("、");
+    const imageScenes = uniqueValues((item.images || []).map(japaneseSceneLabel)).slice(0, 4);
+    const sceneText = imageScenes.length ? `構成は${imageScenes.join("、")}。` : "";
+    const colorText = themePhrase(item);
+    return `${city || "各地"}のアルバム。${colorText}${sceneText}`.trim();
+  }
+
+  function themePhrase(item) {
+    const title = `${item.shortTitle || item.title || ""}`.toLowerCase();
+    const themes = [
+      ["shikuwasa lime", "色の軸はシークワーサーライム。"],
+      ["tezontle coral", "色の軸はテソントレコーラル。"],
+      ["milky blue", "色の軸はミルキーブルー。"],
+      ["moss", "色の軸はモスグリーン。"],
+      ["indigo", "色の軸はインディゴ。"],
+      ["sea glass", "色の軸はシーグラスグリーン。"],
+      ["malbec", "色の軸はマルベックプラム。"],
+      ["wattle", "色の軸はワトルイエロー。"],
+      ["rhubarb", "色の軸はルバーブレッド。"],
+      ["lotus", "色の軸はロータスピンク。"],
+      ["sumac", "色の軸はスマックレッド。"],
+      ["azulejo", "色の軸はアズレージョブルー。"],
+    ];
+    return themes.find(([key]) => title.includes(key))?.[1] || "";
+  }
+
+  function japaneseSceneLabel(image) {
+    const venueMap = {
+      "city-outdoor": "街歩き",
+      "museum-gallery": "ミュージアム",
+      "dining-bar": "飲食店",
+      "event-venue": "イベント会場",
+      "home-interior": "室内",
+      "market-retail": "マーケット",
+      "workplace": "仕事場",
+      "transit": "移動",
+      "beach-waterfront": "海辺",
+      "library-bookstore": "本と資料",
+      "garden-park": "公園",
+      "studio": "スタジオ",
+    };
+    const activityMap = {
+      "city-walk": "街歩き",
+      "viewing-design": "鑑賞",
+      "dancing": "ダンス",
+      "dining-drinks": "食事",
+      "holiday": "休日",
+      "shopping": "買い物",
+      "working": "仕事",
+      "commuting": "移動",
+      "relaxing": "休憩",
+      "attending-event": "イベント",
+      "reading": "読書",
+      "swimming": "水辺",
+    };
+    return venueMap[image.venue] || activityMap[image.activity] || labelize(image.occasion || image.venue || image.activity || "画像");
+  }
+
+  function uniqueValues(values) {
+    const seen = new Set();
+    return values.filter((value) => {
+      if (!value || seen.has(value)) return false;
+      seen.add(value);
+      return true;
+    });
+  }
+
+  function japanesePlace(value) {
+    const normalized = labelize(value);
+    const map = {
+      "Fictional Port City": "架空の港町",
+      "Mexico City": "メキシコシティ",
+      "Sao Paulo": "サンパウロ",
+      "Buenos Aires": "ブエノスアイレス",
+      "Kuala Lumpur": "クアラルンプール",
+      "Hong Kong": "香港",
+      Naha: "那覇",
+      Reykjavik: "レイキャビク",
+      Yakushima: "屋久島",
+      Lagos: "ラゴス",
+      Vancouver: "バンクーバー",
+      Madrid: "マドリード",
+      Istanbul: "イスタンブール",
+      Hanoi: "ハノイ",
+      Copenhagen: "コペンハーゲン",
+      Sydney: "シドニー",
+      Osaka: "大阪",
+      Tokyo: "東京",
+      Seoul: "ソウル",
+      Helsinki: "ヘルシンキ",
+      Lisbon: "リスボン",
+      Vienna: "ウィーン",
+      Sapporo: "札幌",
+      Yokohama: "横浜",
+      Singapore: "シンガポール",
+      Kanazawa: "金沢",
+      Fukuoka: "福岡",
+      Marrakech: "マラケシュ",
+      Taipei: "台北",
+      Kobe: "神戸",
+      Kyoto: "京都",
+      Nagoya: "名古屋",
+      Hiroshima: "広島",
+      Nagasaki: "長崎",
+      Melbourne: "メルボルン",
+      Berlin: "ベルリン",
+      Busan: "釜山",
+      Barcelona: "バルセロナ",
+    };
+    return map[normalized] || normalized;
   }
 
   function initialImageIndex(length) {

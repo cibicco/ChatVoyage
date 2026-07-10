@@ -122,10 +122,31 @@ Avoid heavy winter boots, closed formal shoes, or fragile heels when they fight
 humidity, rain, stairs, boats, long walks, or the character's activity.
 
 Legwear is part of the styling, not only a coverage tool. Use bare legs, sheer
-ankle socks, slouch socks, ribbed socks, sport socks, knee socks, sheer
-knee-highs, tights, leggings, bike shorts, bloomers, or safety shorts when
-they support the fashion language. Do not add legwear just to hide skin, and
-do not avoid legwear just to make an outfit feel lighter.
+ankle socks, opaque ankle socks, ribbed socks, slouch socks, sport socks,
+lace-trim socks, color-pop socks, knee socks, sheer knee-highs, mesh
+knee-highs, thin stockings, back-seam stockings, patterned tights, opaque
+tights, fishnet or micro-net stockings, stirrup tights, leggings, bike shorts,
+bloomers, or safety shorts when they support the fashion language. Do not add
+legwear just to hide skin, and do not avoid legwear just to make an outfit
+feel lighter.
+
+Do not let sheer socks become the default finishing move. The drift to avoid
+is not only short sheer ankle socks, but also the repeated below-knee sheer
+sock band. If sheer socks are used, choose the length deliberately: ankle
+length near the ankle, or over-knee / thigh-high hosiery above the knee. Avoid
+ambiguous below-knee sheer high socks when recent images already use them
+often. Rotate to bare legs, opaque socks, ribbed socks, slouch socks, sport
+socks, lace socks, stockings, tights, fishnets, over-knee socks, thigh-high
+stockings, leggings, or no hosiery at all depending on the shoe, venue,
+weather, and activity.
+
+Do not make high legwear automatically sheer. If a look uses over-knee or
+thigh-high styling, decide whether it should be opaque knit, ribbed cotton,
+wool, colored opaque stocking, matte dance tight, back-seam stocking,
+lace-top stocking, micro fishnet, patterned tight, stirrup tight, glossy stage
+tight, sporty tube sock, or sheer hosiery. The material should express the
+person, venue, season, and outfit construction rather than defaulting to
+transparent fabric.
 
 ## Age-Band Expression
 

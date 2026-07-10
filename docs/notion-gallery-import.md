@@ -96,7 +96,8 @@ Post-review comments and next-generation instructions.
 - Batch ID: existing Chat Voyage set slug, e.g.
   `2026-06-16-busan-seaglass-coastal-motion`
 - Image file: keep the existing Chat Voyage WebP filename under
-  `assets/daily/YYYY-MM-DD-slug/`.
+  `assets/albums/daily/YYYY/MM/YYYY-MM-DD-slug/` or
+  `assets/albums/characters/<character>/YYYY/MM/YYYY-MM-DD-slug/`.
 
 The generated filenames are more descriptive than the generic
 `YYYY-MM-DD-fashion-01-v01.webp` pattern, so the repo filenames remain the

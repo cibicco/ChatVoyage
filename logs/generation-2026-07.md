@@ -1,0 +1,615 @@
+# ChatVoyage Generation Log - 2026-07
+
+## 2026-07-06 Montreal Maple Amber Monday Life
+
+- Date seed: 2026-07-06
+- Images: 4 final images
+- Generated on: 2026-07-06, Asia/Tokyo
+- Saved in: `assets/albums/daily/2026/07/2026-07-06-montreal-maple-amber-monday-life/`
+- Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept.
+- Album: `album.html?set=2026-07-06-montreal-maple-amber-monday-life`
+- Note: `notes/albums/daily/2026/07/2026-07-06-montreal-maple-amber-monday-life.md`
+- City / place language: Montreal, using Mile End print-studio / old brick storefront, Plateau exterior stair residential street, Mile End small live-music bar doorway, and Plateau triplex balcony / kitchen doorway.
+- Weather capture method: Open-Meteo city geocoding followed by Open-Meteo forecast.
+  - Geocoding endpoint: `https://geocoding-api.open-meteo.com/v1/search`
+  - Forecast endpoint: `https://api.open-meteo.com/v1/forecast`
+  - Selected Montreal geocode: Montreal, Canada, latitude 45.50884, longitude -73.58781, timezone `America/Toronto`.
+  - Requested daily variables: `weather_code`, `temperature_2m_max`, `temperature_2m_min`, `precipitation_sum`, `rain_sum`, `sunshine_duration`, `wind_speed_10m_max`.
+  - Requested hourly variables: `temperature_2m`, `relative_humidity_2m`, `precipitation`, `rain`, `weather_code`, `wind_speed_10m`, `is_day`.
+  - Source caveat: Open-Meteo forecast is a gridded/model weather source, so it is generation-grade weather context rather than exact street-level observation.
+- Weather result: Montreal on 2026-07-06 was forecast overcast, 15.1-28.6 C, precipitation 0.0 mm, rain 0.0 mm, sunshine about 13.0 hours, and max 10 m wind 14.5 km/h.
+- Fashion source scan: used current broad fashion search lightly for Bermuda shorts, capri trousers with ballet flats, white top plus denim, red/burgundy flats, and understated night styling. These were translated into ordinary Monday-life looks rather than mode/editorial styling. User-provided visual reference was used only as a pants-construction cue for image 03: loose parachute pants, side lace-up / lattice vent panels, and gathered cuffs; it was not used to copy the character, pose, hair, bag, monochrome rendering, or blank background.
+- Common mood: Montreal brick, exterior stairs, dry cloudy summer, old storefronts, warm doorway lamps, and maple amber.
+- Lucky color: maple amber.
+- Categories: `office`, `street`, `music-night`, `home`
+- Browsing metadata: `work/workplace/working/tailoring`, `everyday/city-outdoor/city-walk/trousers-shorts`, `music-night/music-club/listening-music/casual-separates`, `home/home-interior/relaxing/casual-separates`.
+- Age bands: `25-29`, `18-19-adult`, `20-24`, `25-29`
+- Style presets: `anime-tv-slice-of-life`, `marker-sketch`, `soft-real-fashion-art`, `anime-manga-ink`
+- Effective style plan: slice-of-life work threshold, loose marker stair scene, restrained soft-real blue-hour music doorway, and manga-ink watercolor balcony.
+- Local activity space plan: print-studio work threshold, exterior stair waiting, small music-bar entrance, and balcony laundry/fabric task.
+- Lifestyle snapshot plan: all four are lived moments; none are pure outfit-board displays.
+- Action-first pose plan: carrying paper proofs while turning toward a coworker; seated exterior-stair waiting while checking a key ring; pausing at a music-bar doorway while acknowledging being seen; folding a lightweight shirt over the balcony rail.
+- Attention mix plan: coworker/social gaze, friend/social gaze, near-camera acknowledgement, and task/fabric gaze.
+- Prompt version: `v2-short-generation`
+- Prompt shape: one built-in `image_gen` call per image, with Open-Meteo weather, concrete Montreal places, fashion-source detail translated into daily clothes, and anti-logo instructions. The night image deliberately aims for "seen at a bar/music venue" without becoming flashy clubwear or mode.
+- Recent-set scan: 7/5 Sapporo used cool wind, park/gallery/active/bookstore; 7/4 Naha used humid arcade/museum/night/resort; 7/3 Mexico City used rain culture/dance/theater/transit; 7/2 Porto used station/market/gallery/waterfront; 7/1 Reykjavik used pool/swim. Character day Shino albums remain excluded from the normal novelty pool.
+- Effective style cooldowns: avoids another all-anime glossy set, wet-reflection finish, pool/swim advertising, and mode/runway-board look.
+- Screen-grammar cooldowns: no four standing city poses; uses work-threshold turn, stair seated wait, social doorway pause, and partial balcony task crop.
+
+### Final Files
+
+- `01-office-mile-end-print-studio-capri.webp`
+  - Source file: `ig_0bae8e0b68166752016a4ae4fabdd081919c999cd5a208bdfe.png`
+  - Previous display WebP archived: `assets/archive/2026-07-06-montreal-maple-amber-monday-life/revisions/01-office-mile-end-print-studio-capri-previous.webp`
+  - Primary category: `office`
+  - Target age band: `25-29`
+  - Style preset: `anime-tv-slice-of-life`
+  - Place: Mile End print-studio worktable, brick wall, high window, and paper proof trays
+  - Fashion: sleeveless ivory linen waistcoat, white ribbed tank, slate blue-gray capri trousers, maple-amber wrist scarf, almond brown ballet flats, silver hoops, simple watch
+  - Visual check: accepted replacement; the previous doorway/street-threshold composition felt familiar. The accepted version uses a diagonal tabletop crop, both hands, paper proofs, and print-studio tools, making the work/making action stronger.
+- `02-street-plateau-stair-bermuda-flats.webp`
+  - Source file: `ig_0af7ad82b22cf662016a4adcc3652881918244a3e3f184c139.png`
+  - Primary category: `street`
+  - Target age band: `18-19-adult`
+  - Style preset: `marker-sketch`
+  - Place: Plateau Montreal residential street with exterior staircases
+  - Fashion: white cropped short-sleeve tee, maple-amber plaid overshirt tied at waist, washed denim knee-length Bermuda shorts, cream rib socks, burgundy-red ballet flats, black crossbody pouch, hair clip
+  - Visual check: accepted; exterior stair and key-ring action keep it adult, social, and lived rather than a standing street snap.
+- `03-music-night-mile-end-bar-laceup-parachute.webp`
+  - Source file: `ig_09ca1064d21d9bb8016a4ae84aa74c8191811ed469e1d9c40b.png`
+  - Previous display WebP archived: `assets/archive/2026-07-06-montreal-maple-amber-monday-life/revisions/03-music-night-mile-end-bar-amber-denim-previous.webp`
+  - Light lace-up parachute revision archived: `assets/archive/2026-07-06-montreal-maple-amber-monday-life/revisions/03-music-night-mile-end-bar-laceup-parachute-light-previous.webp`
+  - Rejected intermediate source: `ig_0bae8e0b68166752016a4ae58b7d6081919e1b157f17701d2e.png` had a stronger brand-mark risk on the sneakers, so it was not used.
+  - Primary category: `music-night`
+  - Target age band: `20-24`
+  - Style preset: `soft-real-fashion-art`
+  - Place: Mile End small live-music bar entrance
+  - Fashion: black fine-rib sleeveless square-neck knit, deep charcoal-black loose parachute trousers with black cord lace-up side lattice openings and narrow flashes of bare skin, gathered cuffs, maple-amber satin scarf belt, carried tobacco-brown shirt jacket, plain black low sneakers, small black shoulder bag, amber glass earrings
+  - Visual check: accepted replacement; the previous dark straight jeans were too familiar, and the light lace-up parachute version had less dark-bar tension. The accepted version keeps exposure low overall but uses the trouser side openings to show skin deliberately, which matches the "seen / being seen" music-bar outfit idea without becoming flashy clubwear or mode.
+- `04-home-plateau-balcony-mesh-cardigan.webp`
+  - Source file: `ig_0af7ad82b22cf662016a4addd71dfc81919856d143280bd0c5.png`
+  - Primary category: `home`
+  - Target age band: `25-29`
+  - Style preset: `anime-manga-ink`
+  - Place: Plateau Montreal triplex balcony and kitchen doorway
+  - Fashion: oatmeal ribbed sleeveless knit, soft charcoal A-line cotton skirt, maple-amber mesh cardigan draped over shoulders, dark brown leather house sandals, amber hair clip, delicate ring
+  - Visual check: accepted; doorway crop, kitchen light, balcony rail, and fabric-folding action create a home-life axis missing from recent July sets.
+
+## 2026-07-05 Sapporo Lavender Gray Cool Wind
+
+- Date seed: 2026-07-05
+- Images: 4 final images
+- Generated on: 2026-07-05, Asia/Tokyo
+- Saved in: `assets/albums/daily/2026/07/2026-07-05-sapporo-lavender-gray-cool-wind/`
+- Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept.
+- Album: `album.html?set=2026-07-05-sapporo-lavender-gray-cool-wind`
+- Note: `notes/albums/daily/2026/07/2026-07-05-sapporo-lavender-gray-cool-wind.md`
+- City / place language: Sapporo, using Horomitoge-style lavender hillside, Sapporo Art Park-style sculpture garden, Moerenuma Park-style open lawn and glass pyramid area, and Tanukikoji-style covered arcade bookstore threshold.
+- Weather capture method: Open-Meteo city geocoding followed by Open-Meteo forecast.
+  - Geocoding endpoint: `https://geocoding-api.open-meteo.com/v1/search`
+  - Forecast endpoint: `https://api.open-meteo.com/v1/forecast`
+  - Selected Sapporo geocode: Sapporo, Japan, latitude 43.06667, longitude 141.35, timezone `Asia/Tokyo`.
+  - Requested daily variables: `weather_code`, `temperature_2m_max`, `temperature_2m_min`, `precipitation_sum`, `rain_sum`, `sunshine_duration`, `wind_speed_10m_max`.
+  - Requested hourly variables: `temperature_2m`, `relative_humidity_2m`, `precipitation`, `rain`, `weather_code`, `wind_speed_10m`, `is_day`.
+  - Source caveat: Open-Meteo forecast is a gridded/model weather source, so it is generation-grade weather context rather than exact street-level observation.
+- Weather result: Sapporo on 2026-07-05 was forecast overcast, 14.8-24.5 C, precipitation 0.0 mm, rain 0.0 mm, sunshine about 12.6 hours, and max 10 m wind 20.9 km/h.
+- Common mood: lavender gray, cool cloud, Hokkaido green, dry pavement, and steady wind.
+- Lucky color: lavender gray.
+- Categories: `weekend`, `gallery`, `active`, `bookstore`
+- Browsing metadata: `leisure/garden-park/holiday/casual-separates`, `creative-culture/museum-gallery/viewing-design/tailoring`, `movement/garden-park/sport-practice/activewear`, `everyday/library-bookstore/reading-browsing/casual-separates`.
+- Age bands: `18-19-adult`, `25-29`, `20-24`, `25-29`
+- Style presets: `anime-watercolor-soft`, `runway-board-illustration`, `anime-pop-graphic`, `anime-tv-slice-of-life`
+- Effective style plan: watercolor lavender hillside, runway-board sculpture garden, pop-graphic windy park, and slice-of-life arcade bookstore.
+- Local activity space plan: lavender hillside shoe adjustment, sculpture garden swatch study, windbreaker movement on an open lawn, and covered arcade bookstore threshold.
+- Lifestyle snapshot plan: 01, 03, and 04 are lived moments; 02 is the deliberate fashion-board culture anchor.
+- Action-first pose plan: tying a sneaker in a low crouch beside lavender; seated swatch comparison; walking sideways in a gust while pulling a windbreaker sleeve cuff; tucking books into a tote while responding to a friend.
+- Adult age judgment note: the low crouching 18-19-adult image is accepted as an adult lifestyle pose. It should not be rejected merely for youthful Asian adult appearance or for being less like a standing fashion view.
+- Prompt version: `v2-short-generation`
+- Prompt shape: one built-in `image_gen` call per image, with Open-Meteo weather, concrete Sapporo places, cool-wind clothing logic, and anti-logo instructions. Image 03 was revised after review to remove the repeated shorts-over-bike-shorts formula while preserving the active half-pants feeling.
+
+### Final Files
+
+- `01-weekend-horomitoge-lavender-lace-watercolor.webp`
+  - Source file: `ig_034efab419330069016a4a58f7aac48191822f3dec13a3cd34.png`
+  - Primary category: `weekend`
+  - Target age band: `18-19-adult`
+  - Style preset: `anime-watercolor-soft`
+  - Place: Horomitoge Lavender Garden-style hillside in Sapporo
+  - Visual check: accepted; the low crouch is a useful adult lifestyle pose and breaks standing-view drift.
+- `02-gallery-artpark-swatch-runway-board.webp`
+  - Source file: `ig_034efab419330069016a4a59bfba748191a98389ad6eab14b4.png`
+  - Primary category: `gallery`
+  - Target age band: `25-29`
+  - Style preset: `runway-board-illustration`
+  - Place: Sapporo Art Park-style outdoor sculpture garden and museum approach
+  - Visual check: accepted; seated bench, forest edge, and sculpture garden make the place concrete.
+- `03-active-moerenuma-windbreaker-pop.webp`
+  - Source file: `ig_0f11e26dfbcf4d3a016a4ad1266bbc8191a95198dfffd791c1.png`
+  - Previous display WebP archived: `assets/archive/2026-07-05-sapporo-lavender-gray-cool-wind/shorts-layer-revision/03-active-moerenuma-windbreaker-pop-previous.webp`
+  - Jogger-pants revision archived: `assets/archive/2026-07-05-sapporo-lavender-gray-cool-wind/shorts-layer-revision/03-active-moerenuma-windbreaker-pop-jogger-revision.webp`
+  - Clean-hem half-pants revision archived: `assets/archive/2026-07-05-sapporo-lavender-gray-cool-wind/shorts-layer-revision/03-active-moerenuma-windbreaker-pop-clean-hem-revision.webp`
+  - Primary category: `active`
+  - Target age band: `20-24`
+  - Style preset: `anime-pop-graphic`
+  - Place: Moerenuma Park-style open lawn and glass pyramid area
+  - Visual check: accepted replacement; windbreaker action and open-lawn context make the cool wind readable. The bottom is single-layer graphite knee-length active half pants with side slits, avoiding the repeated short outer bottom over black bike/safety/dance shorts formula while keeping the active feel. The side slit is treated as a movement/sport detail rather than a defect.
+- `04-bookstore-tanukikoji-cardigan-slice.webp`
+  - Source file: `ig_034efab419330069016a4a5ae5e2448191821dd30a3ecc357e.png`
+  - Primary category: `bookstore`
+  - Target age band: `25-29`
+  - Style preset: `anime-tv-slice-of-life`
+  - Place: Tanukikoji covered arcade-style Sapporo bookstore threshold
+  - Visual check: accepted; sheltered evening bookstore action keeps the set from becoming only parks or city streets.
+
+## 2026-07-04 Naha Shikuwasa Lime Humid Saturday
+
+- Images: 4 final images
+- Generated on: 2026-07-04, Asia/Tokyo
+- Saved in: `assets/albums/daily/2026/07/2026-07-04-naha-shikuwasa-lime-humid-saturday/`
+- Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept.
+- Album: `album.html?set=2026-07-04-naha-shikuwasa-lime-humid-saturday`
+- Note: `notes/albums/daily/2026/07/2026-07-04-naha-shikuwasa-lime-humid-saturday.md`
+- City / place language: Naha, using Kokusai-dori / Heiwa-dori arcade shade, Okinawa Prefectural Museum and Art Museum / Okimu-style courtyard with pale stone walls, deep overhangs, glass doors, plaza tiles, outdoor sculpture, and subtropical trees, Sakurazaka theater/live-house lane with slope, exterior stairs, unreadable flyer clusters, cables, warm lamps, and potted plants, and Naminoue beach/seawall as public atmosphere anchors.
+- Local activity space plan: shaded shopping arcade, concrete museum threshold, sloped night music lane, and seawall beach pause. The set avoids generic cafe/bar/gallery defaults.
+- Common mood: limestone-white heat, arcade shade, Ryukyu craft color, theater-lane night, and sea breeze.
+- Lucky color: shikuwasa lime.
+- Lucky color age tone: `18-19-adult` uses fresh lime as scarf belt, bag detail, and hair clip; `20-24` uses electric lime mesh and sole edging; `25-29` uses airy lime as sash, earrings, anklet, or swim bodysuit.
+- Climate fit: Naha early-July hot/humid logic. Outfits use breathable sleeveless cotton, cropped trousers, mesh overshirt, capri dance pants, swim bodysuit, gauze shirt, sandals, and sea-wind layers according to shade, museum air conditioning, night movement, and post-swim seawall activity.
+- Categories: `street`, `mode`, `disco`, `resort`
+- Browsing metadata: `everyday/city-outdoor/city-walk/trousers-shorts`, `creative-culture/museum-gallery/viewing-design/tailoring`, `night-out/music-club/dancing/activewear`, `leisure/waterfront-resort/relaxing/swimwear`.
+- Age bands: `18-19-adult`, `25-29`, `20-24`, `25-29`
+- Persona direction: four different adult Japanese-centered women with distinct daily purpose: arcade errand response, museum mode pause with swatches, night music step toward a friend, and seawall post-swim rest.
+- Persona traits: bright/practical/personable; quietly confident/elegant/sharp; sociable/daring/playful/self-possessed; relaxed/self-possessed/quietly happy/adult editorial sensual.
+- Skin coverage comfort plan: skin visibility is situational and climate-led. Sleeveless shirt, structured tunic, mesh overshirt, capri pants, swim bodysuit, gauze shirt, wrap sarong, socks, and sandals fit humidity, shade, air conditioning, night movement, or post-swim sea wind.
+- Hem / legwear / footwear plan: Bermuda shorts with ribbed ankle socks and fisherman sandals; cropped balloon trousers with low wedge sandals and no hosiery; capri dance pants with micro fishnet ankle socks and wedge sneakers; wrap sarong with bare legs and waterproof slides.
+- Effective style variant: `anime-tv-slice-of-life`, `runway-board-illustration`, `game-cinematic-3d`, `watercolor-couture`
+- Style execution plan: thin-line slice-of-life anime with dry arcade morning; construction-line runway board with paper white and concrete Okimu entrance/courtyard cues; stylized 3D night render with lime rim light and Sakurazaka slope geometry; pale watercolor seawall sunset with paper grain.
+- Time/weather rendering plan: hot humid Saturday is retained while the set shifts from shaded morning arcade to museum afternoon, warm night lane, and sunset sea breeze.
+- Source scan or missing reference note: project reference files were missing in this worktree (`fashion_reference_chatgpt_simple.xlsx`, `source_list_chatgpt_complete.md`, `fashion_reference_image_guardrails.md`, `project_reference_image_plan.md`). Web/source scan used broad Naha and place context plus current summer trend snippets; no specific outfit, brand, product, photo, or readable mark was copied.
+  - Naha / climate context: `https://en.wikipedia.org/wiki/Naha`
+  - Okinawa Prefectural Museum context: `https://en.wikipedia.org/wiki/Okinawa_Prefectural_Museum`
+  - Sakurazaka Theater context: `https://sakura-zaka.com/`
+  - Vogue Bermuda shorts summer context: `https://www.vogue.com/article/bermuda-shorts-summer-outfits`
+  - Byrdie summer sneaker trend context: `https://www.byrdie.com/summer-sneaker-trends-12006302`
+- Recent-set scan: 7/3 Mexico City used all-anime rainy culture/transit; 6/29 Lagos used office/active/theater/market in rain; 6/28 Vancouver used transit/gallery/music-night/swim waterfront; 6/27 Buenos Aires used market/bookstore/bar/theater winter interiors; 6/26 Sao Paulo used weekend/outerwear/dance/date mild winter motion. Character day Shino albums remain excluded from the normal novelty pool.
+- Effective style recent scan: 7/3 deliberately tested anime substyle separation. This 7/4 set rotates families and visible finishes instead of repeating all-anime rain/culture grammar.
+- Character album separation: normal Chat Voyage daily exploration; no character day album is included.
+- Cooldown formulas: ferry/cable transit window, market crouch, quiet gallery note-taking, seated bar conversation, wet pavement as the main place cue, studio rehearsal, short or below-knee sheer-sock drift, and four centered full-body outfit displays are avoided.
+- Effective style cooldowns: all-anime set finish, glossy fashion-magazine anime, dense semi-real rain painting, and wet-reflection street default are avoided.
+- Screen-grammar cooldowns: no four centered full-body displays; uses arcade strap adjustment, sparse fashion-board pause, diagonal night movement, and seated seawall sandal detail.
+- Hem / legwear / footwear plan: legwear and footwear are styling decisions rather than modesty corrections.
+- Composition variation axes: off-center arcade lifestyle view, full-body runway-board study, low diagonal 3D night motion, and seated side watercolor seawall crop.
+- Lifestyle snapshot plan: 01, 03, and 04 are lived moments; 02 is the one deliberate fashion-board anchor.
+- Category rotation reason: `street/mode/disco/resort` creates city errand, editorial culture, night movement, and sea destination without repeating the recent category quartets.
+- Prompt version: `v2-short-generation`
+- Prompt shape: one built-in `image_gen` call per image, short prompt with detailed anti-repeat and effective-style instructions. Image 03 was regenerated once for style correction, then images 02 and 03 were regenerated after review to make the places concrete rather than vague.
+- Place-specificity revision: previous display WebPs for 02 and 03 were preserved under `assets/archive/2026-07-04-naha-shikuwasa-lime-humid-saturday/place-specificity-revision/`.
+
+### Final Files
+
+- `01-street-heiwadori-lime-scarf-slice.webp`
+  - Source file: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_0aba884b818779ab016a4876ba5ad081918b0f3872efd290dc.png`
+  - Primary category: `street`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-tv-slice-of-life`
+  - Effective style variant: dry slice-of-life anime
+  - Style execution check: line-based anime, muted arcade background, and dry morning light are visible; the crop is more full-body than the prompt target.
+  - Time/weather rendering check: humid morning shade reads through the covered arcade and light outfit.
+  - Secondary tags: `naha`, `heiwadori`, `street`, `bermuda-shorts`, `shikuwasa-lime`
+  - Place: Kokusai-dori / Heiwa-dori covered shopping arcade
+  - Person: adult 18-19 Japanese-centered woman, bright, practical, personable, responding to someone off frame
+  - Fashion: ivory sleeveless cotton camp shirt, black Bermuda city shorts with wrap-front panel, shikuwasa-lime scarf belt, ribbed ankle socks, fisherman sandals, woven tote, lime details
+  - Fashion focal point: Bermuda proportion plus lime scarf belt and sandal/sock styling
+  - Lucky color tone for age: fresh lime scarf belt and small accessories
+  - Skin coverage comfort: sleeveless cotton and shorts fit hot shaded walking without turning coverage into a guardrail
+  - Hem / legwear / footwear: Bermuda shorts, ribbed ankle socks, black fisherman sandals
+  - Comfort naturalness: practical for humid arcade walking and carrying errands
+  - Climate context: Naha hot humid Saturday morning, shaded arcade, walking and shopping
+  - Age band life scene: adult young weekend errand with social response
+  - Age band silhouette: relaxed but structured shorts and sleeveless shirt
+  - Avoid recent formula: not cable/ferry transit, not wet city walk, not market crouch
+  - Avoid recent screen grammar: strap and bag action rather than centered polished three-quarter pose
+  - Avoid recent effective style: not glossy anime magazine or all-anime rainy finish
+  - Pose family: `using-object`
+  - Attention target: near-camera / off-frame person
+  - Snapshot mode: `lifestyle-snapshot`
+  - Movement readability: strap adjustment and off-frame response are clear
+  - Generated prompt summary: slice-of-life anime Naha arcade errand with Bermuda shorts and lime scarf belt
+  - Visual check: accepted with crop deviation.
+  - Result: accepted.
+- `02-mode-okimu-lime-sash-runway-board.webp`
+  - Source file: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_0dcfc10e4826aa6a016a489849a6b48191addfec71abe524e7.png`
+  - Previous display WebP archived: `assets/archive/2026-07-04-naha-shikuwasa-lime-humid-saturday/place-specificity-revision/02-mode-okimu-lime-sash-runway-board-previous.webp`
+  - Primary category: `mode`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `runway-board-illustration`
+  - Effective style variant: sparse runway-board fashion illustration
+  - Style execution check: paper white, construction line, precise silhouette, pale stone walls, deep overhangs, glass doors, plaza tiles, outdoor sculpture, and subtropical trees distinguish it from a vague white gallery.
+  - Time/weather rendering check: bright museum threshold, hard plaza shadow, and air-conditioned destination logic are clear.
+  - Secondary tags: `naha`, `okimu`, `museum`, `mode`, `lime-sash`
+  - Place: Okinawa Prefectural Museum and Art Museum / Okimu-style courtyard and lobby threshold with visible entrance/courtyard structure
+  - Person: late-20s Japanese-centered woman, quietly confident, elegant, sharp, checking a textile swatch folder
+  - Fashion: ivory sleeveless square-neck tunic with side vents, charcoal cropped balloon trousers, lime organza waist sash, white wedge sandals, black cuff, lime enamel earrings
+  - Fashion focal point: sculptural tunic, balloon trousers, and controlled lime sash
+  - Lucky color tone for age: airy lime sash and polished enamel details
+  - Skin coverage comfort: structured sleeveless cotton and cropped trousers fit hot plaza plus museum air
+  - Hem / legwear / footwear: cropped trousers, bare ankles, low wedge sandals
+  - Comfort naturalness: museum threshold supports edited tailoring and light sandals
+  - Climate context: hot humid afternoon, outdoor plaza and indoor air conditioning
+  - Age band life scene: late-20s design/culture pause
+  - Age band silhouette: long tunic over balloon trousers
+  - Avoid recent formula: not quiet gallery note-taking, not seated cafe/bar
+  - Avoid recent screen grammar: full-body board is intentional as one anchor, not repeated across the set
+  - Avoid recent effective style: not anime, not semi-real wet city painting
+  - Pose family: `standing-front` / `using-object`
+  - Attention target: viewer-aware near-camera gaze
+  - Snapshot mode: `fashion-editorial`
+  - Movement readability: swatch-folder hold and museum-entry pause are clear
+  - Generated prompt summary: runway-board Okimu museum entrance courtyard with sculptural tunic, lime sash, textile folder, and concrete public-architecture cues
+  - Visual check: accepted after place-specificity regeneration.
+  - Result: accepted replacement.
+- `03-disco-sakurazaka-lime-mesh-3d.webp`
+  - Source file: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_0dcfc10e4826aa6a016a489895db14819190b51963b33ba8dc.png`
+  - Rejected prior source PNG: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_0aba884b818779ab016a4877c2b9ac81919879423d18de9011.png`
+  - Previous display WebP archived: `assets/archive/2026-07-04-naha-shikuwasa-lime-humid-saturday/place-specificity-revision/03-disco-sakurazaka-lime-mesh-3d-previous.webp`
+  - Primary category: `disco`
+  - Target age band: `20-24`
+  - Style family: `3d-cg`
+  - Style preset: `game-cinematic-3d`
+  - Effective style variant: game-cinematic 3D night motion
+  - Style execution check: accepted after place-specificity regeneration. It remains realistic-leaning, but the sloped lane, exterior stairs, compact venue entry, unreadable flyers, overhead cables, and warm lamps keep the scene concrete instead of generic.
+  - Time/weather rendering check: warm humid night lighting and dry sloped pavement replace rainy wet-pavement visuals.
+  - Secondary tags: `naha`, `sakurazaka`, `disco`, `3d`, `lime-mesh`
+  - Place: Sakurazaka-style theater / live-house lane with slope, exterior stairs, venue entry, flyers, cables, and potted subtropical plants
+  - Person: early-20s Japanese-centered woman, sociable, daring, playful, self-possessed, stepping toward an off-frame friend
+  - Fashion: black asymmetric halter top, shikuwasa-lime mesh short-sleeve overshirt, charcoal capri dance pants with side slits, micro fishnet ankle socks, black wedge sneakers with lime sole edge, hip pouch
+  - Fashion focal point: lime mesh overshirt and capri dance-pant movement
+  - Lucky color tone for age: electric lime mesh and sneaker edge
+  - Skin coverage comfort: mesh and capris suit humid night movement and crowded lane walking
+  - Hem / legwear / footwear: capri dance pants, micro fishnet ankle socks, wedge sneakers
+  - Comfort naturalness: secure shoes and compact pouch support night movement
+  - Climate context: hot humid Naha night, outdoor music lane, dancing and walking
+  - Age band life scene: early adult music-night social movement
+  - Age band silhouette: asymmetrical top, open mesh layer, capri active shape
+  - Avoid recent formula: not retro OVA dance hall, not live-bar dance circle, not studio rehearsal
+  - Avoid recent screen grammar: diagonal action and off-frame friend attention rather than centered pose
+  - Avoid recent effective style: not anime, not rain-night OVA, not glossy bokeh
+  - Pose family: `dance-motion`
+  - Attention target: off-frame friend
+  - Snapshot mode: `lifestyle-snapshot`
+  - Movement readability: one foot planted and side-step action read as intentional
+  - Generated prompt summary: game-cinematic 3D Sakurazaka sloped night lane with venue entrance, exterior stairs, lime mesh, and capri dance pants
+  - Visual check: accepted replacement; location is much less vague, while the render remains realistic-leaning.
+  - Result: accepted replacement.
+- `04-resort-naminoue-sandal-watercolor.webp`
+  - Source file: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_0aba884b818779ab016a4878e04aac819188be064f3deaddf0.png`
+  - Primary category: `resort`
+  - Target age band: `25-29`
+  - Style family: `fashion-illustration`
+  - Style preset: `watercolor-couture`
+  - Effective style variant: airy seawall watercolor
+  - Style execution check: pale wash, paper texture, thin line, and sea breeze separate it from semi-real waterfront painting.
+  - Time/weather rendering check: sunset heat and sea wind are visible; no rainy transit/window grammar.
+  - Secondary tags: `naha`, `naminoue`, `resort`, `watercolor`, `swim-bodysuit`
+  - Place: Naminoue Beach / Naminoue seawall
+  - Person: late-20s Japanese-centered woman, relaxed, self-possessed, quietly happy, fixing a sandal strap after swimming
+  - Fashion: shikuwasa-lime one-piece swimsuit as bodysuit, open white gauze shirt, washed charcoal wrap sarong skirt, bare legs, black slide sandals, lime-bead anklet, straw tote
+  - Fashion focal point: lime swim bodysuit under gauze shirt and sandal/anklet detail
+  - Lucky color tone for age: saturated lime bodysuit softened by gauze and sunset wash
+  - Skin coverage comfort: swim bodysuit, gauze shirt, wrap skirt, and slides are natural after swimming and walking by the seawall
+  - Hem / legwear / footwear: wrap sarong, bare legs, waterproof slides
+  - Comfort naturalness: good for humid sunset, wet hair, and sea breeze
+  - Climate context: Naha hot humid sunset, beach/seawall, post-swim rest
+  - Age band life scene: late-20s seaside pause with friend implied
+  - Age band silhouette: swim bodysuit plus airy open shirt and wrap skirt
+  - Avoid recent formula: not Vancouver pool-deck watercolor, not ferry transit, not standing full-body
+  - Avoid recent screen grammar: seated side seawall sandal adjustment rather than centered pool pose
+  - Avoid recent effective style: not dense semi-real waterfront scene
+  - Pose family: `seated-side` / `looking-down`
+  - Attention target: water / path of movement
+  - Snapshot mode: `lifestyle-snapshot`
+  - Movement readability: sandal strap adjustment reads clearly
+  - Generated prompt summary: watercolor Naminoue seawall post-swim sandal adjustment with lime bodysuit and gauze shirt
+  - Visual check: accepted.
+  - Result: accepted.
+
+## 2026-07-01 Reykjavik Milky Blue Geothermal Pool
+
+- Images: 4 final images
+- Generated on: 2026-07-04, Asia/Tokyo, for date seed 2026-07-01
+- Saved in: `assets/albums/daily/2026/07/2026-07-01-reykjavik-milky-blue-geothermal-pool/`
+- Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept.
+- Album: `album.html?set=2026-07-01-reykjavik-milky-blue-geothermal-pool`
+- Note: `notes/albums/daily/2026/07/2026-07-01-reykjavik-milky-blue-geothermal-pool.md`
+- City / place language: Reykjavik pool day, using Laugardalslaug-style outdoor public pool, Reykjavik / Karsnes harbor-style oceanfront geothermal lagoon, Sundholl Reykjavik-style historic pool deck, and old harbor pool-bag transit.
+- Common mood: cool July air, geothermal steam, pool tiles, ocean wind, wet hair, wool wraps, and harbor light.
+- Lucky color: milky geothermal blue.
+- Categories: `swim`, `resort`, `outerwear`, `transit`
+- Browsing metadata: `leisure/studio-sports/sport-practice/swimwear`, `leisure/waterfront-resort/relaxing/swimwear`, `weather-layer/studio-sports/weather-walk/outerwear-layer`, `travel/city-outdoor/moving/casual-separates`.
+- Age bands: `20-24`, `25-29`, `25-29`, `18-19-adult`
+- Persona direction: four different adult Japanese-centered women with situated pool life: lap-pool preparation, oceanfront hot-water pause, practical post-swim layering, and harbor walk after the pool.
+- Swimwear plan: waterwear is intentionally more prominent because existing normal daily swim outputs are relatively sparse. Two images are direct swimwear looks, one is a swimsuit-as-bodysuit post-swim layer, and one is a pool-bag transit outfit.
+- Climate fit: exact 2026-07-01 Reykjavik weather was not used. The set assumes cool July air, geothermal warm water, steam, wet pavement, and wind-sensitive layers.
+- Source scan note: Reykjavik public swimming pool and geothermal bathing references informed the pool lanes, hot tubs, steam, oceanfront lagoon, and post-swim layering logic. Prompts avoid readable signage, logos, exact commercial-resort copying, and source-photo compositions.
+- Source links: Laugardalslaug official page `https://reykjavik.is/en/laugardalslaug-pool`; Sky Lagoon / oceanfront geothermal bathing context `https://www.skylagoon.com/`.
+- Recent-set scan: 6/30 Yakushima used forest, wood, guesthouse, and beach; 7/4 Naha used arcade/museum/night lane/seawall; 7/3 Mexico City used library/dance/cinema/transit. This set avoids another city-street route and focuses on pool culture, water, locker-room layers, and harbor wind.
+- Effective style plan: `anime-cel-clean` for the public pool, `soft-real-fashion-art` for the lagoon, `marker-sketch` for post-swim layering, and `anime-tv-slice-of-life` for harbor transit.
+- Effective style cooldowns: avoids all-watercolor continuation after Yakushima and avoids glossy swimsuit advertising by using activity-first poses.
+- Screen-grammar cooldowns: no four standing swimsuit poses. Uses seated goggles, waist-deep wrap gathering, bench-side trouser layering, and walking with a mesh pool bag.
+- Prompt version: `v2-short-generation`
+- Prompt shape: one built-in `image_gen` call per image, short prompt with concrete pool/place cues, cool-weather comfort logic, and anti-logo instructions.
+
+### Final Files
+
+- `01-swim-laugardalslaug-goggles-cel.webp`
+  - Source file: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_041d0d1e444fee48016a48b2e7ee548191838aec915cf09c81.png`
+  - Primary category: `swim`
+  - Metadata axes: leisure / studio-sports / sport-practice / swimwear
+  - Style preset: `anime-cel-clean`
+  - Target age band: `20-24`
+  - Place: Laugardalslaug-style Reykjavik public geothermal pool.
+  - Fashion: milky blue athletic one-piece swimsuit, smoky gray pool robe, waterproof slide sandals, towel loop, and silver studs.
+  - Pose family: seated pool-edge / using-object.
+  - Attention target: goggles and pool lane.
+  - Result: accepted.
+- `02-resort-karsnes-lagoon-wrap-soft-real.webp`
+  - Source file: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_041d0d1e444fee48016a48b3381c988191ba387760d158102b.png`
+  - Primary category: `resort`
+  - Metadata axes: leisure / waterfront-resort / relaxing / swimwear
+  - Style preset: `soft-real-fashion-art`
+  - Target age band: `25-29`
+  - Place: Reykjavik / Karsnes harbor-style oceanfront geothermal lagoon.
+  - Fashion: deep teal milky-blue ribbed high-neck one-piece swimsuit, cream wool wrap, black waterproof sandals, matte silver earrings, and wet low-knot hair.
+  - Pose family: waist-deep wrap gathering / ocean gaze.
+  - Attention target: towel hook and ocean.
+  - Result: accepted.
+- `03-outerwear-sundholl-layering-marker.webp`
+  - Source file: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_041d0d1e444fee48016a48b381a10c81919f730f6af0a1706a.png`
+  - Primary category: `outerwear`
+  - Metadata axes: weather-layer / studio-sports / weather-walk / outerwear-layer
+  - Style preset: `marker-sketch`
+  - Target age band: `25-29`
+  - Place: Sundholl Reykjavik-style historic pool deck.
+  - Fashion: charcoal long hooded rain coat, milky blue square-neck swimsuit as bodysuit, ivory towel scarf, black technical trousers, waterproof clogs, and compact wet pouch.
+  - Pose family: bench-side layering / using-object.
+  - Attention target: trousers and wet pouch.
+  - Result: accepted.
+- `04-transit-old-harbor-pool-bag-slice.webp`
+  - Source file: `/Users/allegro/.codex/generated_images/019f2b0c-401c-74b1-b644-a126caa86bee/ig_041d0d1e444fee48016a48b42b3f2881918db01a2dcefdba68.png`
+  - Primary category: `transit`
+  - Metadata axes: travel / city-outdoor / moving / casual-separates
+  - Style preset: `anime-tv-slice-of-life`
+  - Target age band: `18-19-adult`
+  - Place: Reykjavik old harbor waterfront path after a neighborhood pool visit.
+  - Fashion: pale milky-blue swimsuit as bodysuit, cream fisherman-knit cardigan, slate nylon wrap skirt over bike shorts, white sport socks, black waterproof sneakers, beanie, mesh pool bag, towel, and swimsuit pouch.
+  - Pose family: walking into wind / carrying-object.
+  - Attention target: off-frame friend and harbor wind.
+  - Result: accepted.
+
+## 2026-07-03 Mexico City Tezontle Coral Style Study
+
+- Images: 4 final images
+- Generated on: 2026-07-03, Asia/Tokyo
+- Saved in: `assets/albums/daily/2026/07/2026-07-03-mexico-city-tezontle-coral-style-study/`
+- Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept.
+- Album: `album.html?set=2026-07-03-mexico-city-tezontle-coral-style-study`
+- Note: `notes/albums/daily/2026/07/2026-07-03-mexico-city-tezontle-coral-style-study.md`
+- City / place language: Mexico City, using Biblioteca Vasconcelos-style library space, Salon Los Angeles-style dance hall, Cineteca Nacional-style cinema walkway, and Cablebus-style aerial-transit cabin as loose visual anchors.
+- Local activity space plan: cultural-public-library work prep, dance-hall practice, film-archive night exit, and aerial transit cabin. The set avoids generic cafe/bar/gallery defaults.
+- Common mood: Mexico City rainy-season culture day, after-rain light, social movement, and lived fashion detail.
+- Lucky color: tezontle coral.
+- Lucky color age tone: `18-19-adult` uses a fresh coral card holder, skort stitch, and sock stripe; `20-24` uses sharper coral accessories and shoe edging; `25-29` uses edited coral as a tote strap or enamel earring.
+- Climate fit: July rainy-season city logic. The outfits use breathable sleeveless tailoring, open bolero movement, translucent rain shell, ankle boots, skort, socks, and rain sandals according to indoor air, rain outside, dance motion, cinema steps, and transit cabin humidity.
+- Categories: `office`, `dance`, `theater`, `travel`
+- Browsing metadata: `work/workplace/working/tailoring`, `movement/music-club/dancing/skirt-skort`, `night-out/event-venue/performance-going/eveningwear`, `travel/transit-hub/moving/skirt-skort`.
+- Age bands: `25-29`, `20-24`, `25-29`, `18-19-adult`
+- Persona direction: four different adult Japanese-centered women with distinct daily purpose: leaving library work prep, dance-hall turn before friends arrive, post-screening rainy exit, and young-adult transit detail.
+- Persona traits: self-possessed/curious/fashion-literate; sociable/daring/playful; elegant/sharp/quietly confident; bright/curious/practical.
+- Skin coverage comfort plan: skin visibility is treated as situational. Sleeveless top layers, wrap mini skort, sheer knee-highs, sleeveless dress, translucent shell, cropped tee, and rain sandals fit the venue, movement, humidity, or rain context rather than serving as exposure or coverage targets.
+- Hem / legwear / footwear plan: cropped trousers with sheer ankle socks and slingbacks; wrap mini skort with sheer knee-highs and low dance heels; wrap midi dress with sheer tights and ankle boots; short wrap skort with socks and rain sandals.
+- Effective style variant: `anime-cel-clean`, `anime-manga-ink`, `anime-90s-ova`, `anime-watercolor-soft`
+- Style execution plan: clean cel with dense but line-readable library geometry; manga ink with hatching, selective coral, and wide diagonal motion; retro OVA cel shadows with analog grain and night color separation; watercolor wash with paper grain, pale rain, cabin window reflection, and partial-body detail.
+- Time/weather rendering plan: rainy-season weather is retained, but the set changes morning after-rain diffuse light, warm evening dance-hall lamps, night rain outside a cinema walkway, and late-afternoon cable-car drizzle.
+- Source scan or missing reference note: live web snippets were not reliably captured in this run. The real place names were used as loose atmosphere anchors from existing project knowledge. Exact signage, logos, commercial products, precise architecture copies, and source-photo compositions were avoided.
+- Recent-set scan: 6/21 Sydney used ferry/library/theater/Bondi winter harbor; 6/22 Copenhagen used bike repair/design courtyard/Nyhavn/harbor bath; 6/23 Hanoi used office/market/date/theater in rain with cel, watercolor, and marker revisions. Character day Shino albums remain excluded from the normal novelty pool.
+- Effective style recent scan: 6/23 introduced cel, watercolor, and marker variation after a same-ish review. This 7/3 set tests deeper anime substyle separation by making line, shading, texture, density, and time/light differ across all four images.
+- Character album separation: normal Chat Voyage daily exploration; character day albums remain out of this pool.
+- Cooldown formulas: market crouch with open shirt/skort/rain sandals, gallery over-shoulder open-back, seated lounge camisole, wet city walk, and ferry/transit full-body display are avoided.
+- Effective style cooldowns: high-density semi-real wet street painting, single glossy anime magazine finish, and wet pavement reflection as the main place cue are avoided or limited.
+- Screen-grammar cooldowns: no four centered full-body displays; uses table work action, wide dance crop, side/back cinema step, and close-detail cabin view.
+- Hem / legwear / footwear plan: legwear and shoes are active styling decisions rather than modesty corrections.
+- Composition variation axes: high diagonal library table crop, low wide dance action, side/back night step, and close lower-body transit detail.
+- Lifestyle snapshot plan: all four images are lived moments; full body is not required.
+- Category rotation reason: `office/dance/theater/travel` creates work, movement, night culture, and transit detail while avoiding another market/gallery/lounge/transit default quartet.
+- Prompt version: `v2-short-generation`
+- Prompt shape: one built-in `image_gen` call per image, short prompt with detailed anti-repeat and effective-style instructions.
+
+### Final Files
+
+- `01-office-vasconcelos-bookstrap-cel-clean.webp`
+  - Source file: `ig_02425660d7e0a4e4016a4731b1b334819197a19b9497cc3d44.png`
+  - Primary category: `office`
+  - Target age band: `25-29`
+  - Style family: `anime`
+  - Style preset: `anime-cel-clean`
+  - Effective style variant: clean cel anime
+  - Style execution check: clean line and cel shading work; background is more detailed than planned, but still line-readable and not semi-real.
+  - Time/weather rendering check: morning after-rain light and wet exterior visible through the library architecture.
+  - Secondary tags: `mexico-city`, `biblioteca-vasconcelos`, `tailoring`, `bookstrap`, `tezontle-coral`
+  - Place: Biblioteca Vasconcelos-style public library space
+  - Person: late-20s Japanese-centered woman, self-possessed and curious, preparing notes before leaving
+  - Fashion: charcoal sleeveless waistcoat, white ribbed scoop-neck knit tank, cropped slate trousers, sheer ankle socks, black slingback pumps, structured tote with tezontle coral strap
+  - Fashion focal point: coral tote strap and sleeveless tailoring over rib knit
+  - Lucky color tone for age: edited coral strap against restrained tailoring
+  - Skin coverage comfort: sleeveless tailoring and scoop-neck knit fit mild indoor air and post-rain walking
+  - Hem / legwear / footwear: cropped trousers, sheer ankle socks, slingback pumps
+  - Comfort naturalness: good for library work prep, air-conditioned interior, and damp pavement outside
+  - Climate context: Mexico City rainy season, morning after rain, indoor library with damp light outside
+  - Age band life scene: late-20s cultural-work preparation
+  - Age band silhouette: tailored vest and cropped trousers
+  - Avoid recent formula: not market crouch, not gallery open-back, not lounge camisole, not wet street reflection
+  - Avoid recent screen grammar: high table angle and hands on notebook/bag rather than centered full-body pose
+  - Avoid recent effective style: not glossy anime magazine or semi-real rain painting
+  - Pose family: `using-object`
+  - Snapshot mode: `work-or-making`
+  - Movement readability: notebook and bag action clearly read as leaving or preparing
+  - Generated prompt summary: clean cel anime library work-prep moment with sleeveless tailoring and a coral tote strap
+  - Visual check: accepted with mild background-density deviation.
+  - Result: accepted.
+- `02-dance-salon-los-angeles-ink-turn.webp`
+  - Source file: `ig_02425660d7e0a4e4016a47325a3d348191817963fef4a06c7a.png`
+  - Primary category: `dance`
+  - Target age band: `20-24`
+  - Style family: `anime`
+  - Style preset: `anime-manga-ink`
+  - Effective style variant: manga ink with selective color
+  - Style execution check: black line, hatching, sparse warm gray, and selective coral clearly differ from recent polished color anime.
+  - Time/weather rendering check: indoor evening dance hall, rain implied by day context rather than wet street visuals.
+  - Secondary tags: `mexico-city`, `salon-los-angeles`, `dance`, `manga-ink`, `wrap-mini`
+  - Place: Salon Los Angeles-style dance hall
+  - Person: early-20s Japanese-centered woman, sociable, daring, playful, in controlled dance motion
+  - Fashion: asymmetric black wrap mini skort over dance shorts, sheer smoke knee-high socks, coral-edged low dance heels, ivory sleeveless blouse, open black bolero, coral bead earrings, slim wrist ribbon
+  - Fashion focal point: wrap mini skort, sheer knee-high socks, coral-edged dance heels, and coral scarf/accessory movement
+  - Lucky color tone for age: sharper coral accessories and shoe edging
+  - Skin coverage comfort: active dance movement supports the open sleeveless top and short skort construction
+  - Hem / legwear / footwear: wrap mini skort, sheer knee-high socks, low dance heels
+  - Comfort naturalness: dance hall warmth and movement make the outfit plausible
+  - Climate context: Mexico City rainy-season evening, warm indoor dance hall
+  - Age band life scene: early adult social dance before friends arrive
+  - Age band silhouette: dynamic short wrap and legwear
+  - Avoid recent formula: not market crouch, not seated lounge, not gallery over-shoulder
+  - Avoid recent screen grammar: wide low diagonal action crop rather than centered portrait
+  - Avoid recent effective style: not glossy anime or semi-real rain; manga ink and selective color dominate
+  - Pose family: `dance-motion`
+  - Snapshot mode: `lifestyle-snapshot`
+  - Movement readability: planted foot, lifted heel, extended arms, and diagonal hem make the dance turn clear
+  - Generated prompt summary: manga-ink dance-hall turn with wrap mini skort, sheer knee-highs, and coral accents
+  - Visual check: accepted; this is the strongest effective-style break in the set.
+  - Result: accepted.
+- `03-theater-cineteca-ova-earring.webp`
+  - Source file: `ig_02425660d7e0a4e4016a47330ef2708191bccbaee13eaa8a2e.png`
+  - Primary category: `theater`
+  - Target age band: `25-29`
+  - Style family: `anime`
+  - Style preset: `anime-90s-ova`
+  - Effective style variant: retro 1990s OVA night frame
+  - Style execution check: deep cel shadows, analog grain, saturated night blues, and warm lamp pools are visible.
+  - Time/weather rendering check: night rain remains outside the cinema walkway, but wet reflection is secondary to gesture and outfit.
+  - Secondary tags: `mexico-city`, `cineteca`, `ova`, `rain-shell`, `coral-earring`
+  - Place: Cineteca Nacional-style covered cinema walkway
+  - Person: late-20s Japanese-centered woman, elegant, sharp, quietly confident, leaving a screening
+  - Fashion: smoky navy sleeveless wrap midi dress, translucent open rain shell, coral enamel drop earring, silver belt, sheer charcoal tights, black low-heeled ankle boots, compact clutch, folded umbrella
+  - Fashion focal point: coral earring against dark palette and translucent rain shell over wrap dress
+  - Lucky color tone for age: deeper coral enamel earring
+  - Skin coverage comfort: sleeveless dress plus translucent shell works for humid covered walkway and rain outside
+  - Hem / legwear / footwear: wrap midi slit, sheer tights, low ankle boots
+  - Comfort naturalness: boots and umbrella fit damp cinema steps
+  - Climate context: Mexico City rainy-season night, covered outdoor cinema walkway after storm
+  - Age band life scene: late-20s post-screening night exit
+  - Age band silhouette: polished wrap dress and rain shell
+  - Avoid recent formula: not seated lounge camisole, not gallery open-back, not full-body wet street walk
+  - Avoid recent screen grammar: side/back stepping view and earring adjustment instead of front fashion display
+  - Avoid recent effective style: not manga ink, not glossy anime magazine, not semi-real rain painting
+  - Pose family: `walking-stride`
+  - Snapshot mode: `relationship-moment` / `night-out`
+  - Movement readability: step down from walkway and umbrella hold are coherent
+  - Generated prompt summary: retro OVA rainy cinema exit with wrap midi, rain shell, boots, umbrella, and coral earring
+  - Visual check: accepted; wet pavement is present but not the primary visual device.
+  - Result: accepted.
+- `04-travel-cablebus-watercolor-strap.webp`
+  - Source file: `ig_02425660d7e0a4e4016a4733b83fe08191a33f453d9c51a807.png`
+  - Primary category: `travel`
+  - Target age band: `18-19-adult`
+  - Style family: `anime`
+  - Style preset: `anime-watercolor-soft`
+  - Effective style variant: watercolor-soft anime
+  - Style execution check: pale wash, paper grain, thin line, rain-specked glass, and soft city view are clear.
+  - Time/weather rendering check: late-afternoon drizzle is shown through cabin window and reflection rather than through wet street walking.
+  - Secondary tags: `mexico-city`, `cablebus`, `watercolor`, `skort`, `rain-sandal`
+  - Place: Mexico City Cablebus-style cabin
+  - Person: adult 18-19 Japanese-centered woman, bright, curious, practical, adjusting a sandal strap during transit
+  - Fashion: pale gray cropped cotton tee, sage sleeveless utility vest, coral-stitched short wrap skort over safety shorts, white ankle socks with coral stripe, flat black rain sandals, compact nylon crossbody pouch, hair clip, coral card holder
+  - Fashion focal point: coral skort stitch, socks with rain sandals, utility vest, and card holder
+  - Lucky color tone for age: fresh coral in small functional details
+  - Skin coverage comfort: breathable tee, vest, short skort, socks, and sandals fit humid enclosed transit and short station walks
+  - Hem / legwear / footwear: short wrap skort, visible safety shorts, ankle socks, rain sandals
+  - Comfort naturalness: sandal adjustment is plausible during a cable-car ride
+  - Climate context: Mexico City rainy-season late afternoon, enclosed cable-car cabin, light rain
+  - Age band life scene: adult college-age travel between neighborhoods
+  - Age band silhouette: practical short skort and utility vest without school cues
+  - Avoid recent formula: not ferry full-body travel pose, not wet street walk, not open shirt plus tank plus skort default
+  - Avoid recent screen grammar: close lower-body and reflection detail rather than centered portrait
+  - Avoid recent effective style: not dense rain painting, not glossy anime, not retro OVA
+  - Pose family: `looking-down` / `using-object`
+  - Snapshot mode: `transit-errand` / `partial-detail`
+  - Movement readability: hand on sandal strap and card holder show a clear in-transit adjustment
+  - Generated prompt summary: watercolor anime Cablebus cabin detail with skort, socks, rain sandals, and coral card holder
+  - Visual check: accepted; partial crop and watercolor finish make it distinct from earlier transit images.
+  - Result: accepted.
+
+The set intentionally uses one broad family, anime, while splitting the effective finish. This is a test of the new `effective_style_variant` workflow after the user's review that recent images felt too familiar.
+# 2026-07-02 Porto Azulejo River Wind
+
+- Date seed: 2026-07-02
+- Images: 4 final images
+- Generated on: 2026-07-05, Asia/Tokyo
+- Saved in: `assets/albums/daily/2026/07/2026-07-02-porto-azulejo-river-wind/`
+- Display format: WebP converted directly from generated PNG sources at quality 82; project PNG copies were not kept.
+- Album: `album.html?set=2026-07-02-porto-azulejo-river-wind`
+- Note: `notes/albums/daily/2026/07/2026-07-02-porto-azulejo-river-wind.md`
+- City / place language: Porto, using Sao Bento-style azulejo rail hall, Mercado do Bolhao-style market arcade, Serralves-style contemporary museum garden, and Foz do Douro-style waterfront promenade.
+- Weather capture method: Open-Meteo city geocoding followed by Open-Meteo archive.
+  - Geocoding endpoint: `https://geocoding-api.open-meteo.com/v1/search`
+  - Past-weather endpoint: `https://archive-api.open-meteo.com/v1/archive`
+  - Selected Porto geocode: Porto, Portugal, latitude 41.1485, longitude -8.61097, timezone `Europe/Lisbon`.
+  - Selected Sapporo comparison geocode: Sapporo, Japan, latitude 43.06667, longitude 141.35, timezone `Asia/Tokyo`.
+  - Requested daily variables: `weather_code`, `temperature_2m_max`, `temperature_2m_min`, `precipitation_sum`, `rain_sum`, `sunshine_duration`, `wind_speed_10m_max`.
+  - Requested hourly variables: `temperature_2m`, `relative_humidity_2m`, `precipitation`, `rain`, `weather_code`, `wind_speed_10m`, `is_day`.
+  - Source caveat: Open-Meteo archive is a gridded/model weather archive, so it is generation-grade weather context rather than exact street-level observation.
+- Weather result: Porto on 2026-07-02 was mainly clear, 23.1-36.7 C, precipitation 0.0 mm, sunshine about 14.8 hours, and max 10 m wind 28.5 km/h. Sapporo on the same date was overcast, 14.7-24.5 C, precipitation 0.0 mm, sunshine about 13.5 hours, and max 10 m wind 11.3 km/h. The Porto set fits the dry/no-rain result, though the actual heat was stronger than the initial climate assumption.
+- Common mood: dry white sun, blue tile, warm stone shade, and river-to-ocean wind.
+- Lucky color: azulejo blue.
+- Categories: `transit`, `market`, `gallery`, `resort`
+- Browsing metadata: `travel/transit-hub/moving/trousers-shorts`, `everyday/market-retail/shopping/skirt-skort`, `creative-culture/museum-gallery/viewing-design/tailoring`, `leisure/waterfront-resort/relaxing/casual-separates`.
+- Age bands: `20-24`, `20-24`, `25-29`, `25-29`
+- Style presets: `anime-cel-clean`, `anime-tv-slice-of-life`, `runway-board-illustration`, `soft-real-fashion-art`
+- Effective style plan: clean cel station tile scene, slice-of-life market arcade, runway-board museum garden, and warm soft-real waterfront wind.
+- Local activity space plan: station ticket check, market purchase, museum sketchbook/fabric comparison, and windy waterfront pause.
+- Lifestyle snapshot plan: 01, 02, and 04 are lived moments; 03 is the deliberate fashion-board anchor.
+- Action-first pose plan: checking a ticket while lifting a tote; receiving peaches and bread from a vendor; comparing a sketchbook and fabric swatch; holding down a windblown linen shirt by the seawall.
+- Prompt version: `v2-short-generation`
+- Prompt shape: one built-in `image_gen` call per image; 02 was regenerated once. After review, the initial lower crouching 18-19-adult market candidate is considered a viable adult pose variation, and the earlier "youth/pose risk" rationale is not a good standard because it can bias against Asian adult youthful appearance.
+
+### Final Files
+
+- `01-transit-saobento-ticket-cel-clean.webp`
+  - Source file: `ig_0dbb5ffbadd1d34f016a4a4efc8ddc819198a455c7b7747764.png`
+  - Primary category: `transit`
+  - Target age band: `20-24`
+  - Style preset: `anime-cel-clean`
+  - Place: Sao Bento Station-style Porto rail hall with azulejo tile walls
+  - Visual check: accepted; station tile wall and platform opening make the place clear.
+- `02-market-bolhao-peaches-slice.webp`
+  - Source file: `ig_05c6e547df1b92b8016a4a516d38f48191ba1117e72ff7a87b.png`
+  - Initial viable candidate source file: `ig_0dbb5ffbadd1d34f016a4a4f81dbe48191880bc1b07bb6fe0e.png`
+  - Primary category: `market`
+  - Target age band: `20-24`
+  - Style preset: `anime-tv-slice-of-life`
+  - Place: Mercado do Bolhao-style Porto market arcade
+  - Visual check: accepted replacement; market arcade and stall action are clear. The initial lower crouch is also valid as an adult market/lifestyle pose and should not be rejected merely for youthful Asian appearance or for being less like a standing fashion view.
+- `03-gallery-serralves-sash-runway-board.webp`
+  - Source file: `ig_0dbb5ffbadd1d34f016a4a50120f8081919c137b837c0af891.png`
+  - Primary category: `gallery`
+  - Target age band: `25-29`
+  - Style preset: `runway-board-illustration`
+  - Place: Serralves Museum and park-style Porto contemporary art garden
+  - Visual check: accepted; museum garden and fashion-board construction are distinct.
+- `04-resort-foz-wind-linen-soft-real.webp`
+  - Source file: `ig_0dbb5ffbadd1d34f016a4a509950688191977a18e58803ceec.png`
+  - Primary category: `resort`
+  - Target age band: `25-29`
+  - Style preset: `soft-real-fashion-art`
+  - Place: Foz do Douro-style Porto waterfront promenade
+  - Visual check: accepted; windy linen and waterfront replace swimwear so it does not overlap with 7/1.

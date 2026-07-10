@@ -37,7 +37,7 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
   secondary; the place can be a cafe, workshop, night bar, pool, beach,
   mountain path, cultural facility, market, station, terrace, studio, or
   street if the image can show the city's light, architecture, materials,
-  signage-free visual cues, weather, landscape, objects, or social rhythm.
+  weather, landscape, objects, signage, or social rhythm.
 - Treat indoor scenes broadly. Indoor does not mean only rooms, offices,
   meals, cafes, or bars; it can also mean locally specific activity spaces such
   as museums, art museums, galleries, clubs, live houses, theaters, cinemas,
@@ -45,6 +45,14 @@ Use this as the shared prompt scaffold for Chat Voyage daily sets.
   covered arcades. Choose places that are characteristic of the city or region
   rather than generic interiors.
 - Brand names may be used only as loose mood references; do not reproduce logos, readable marks, exact products, or source-photo compositions.
+- Real named places are allowed and often preferred. Do not weaken a concrete
+  location into a generic "inspired by" interior or street when the user wants
+  to see that city's world. Use the real place name in planning, notes, and
+  logs, and show the place through recognizable public architecture, light,
+  materials, landscape, objects, crowd behavior, and activity. The restriction
+  is against logo/trademark reproduction, readable brand marks, exact product
+  copying, and copying one source-photo composition; it is not a restriction
+  against specific places, lived scenes, or local signage-like atmosphere.
 
 ## Category Selection
 
@@ -168,6 +176,10 @@ Constraints:
   ateliers, sports facilities, pools, beaches, mountain paths, public halls,
   stations, markets, and covered arcades can be used when characteristic of
   the city or region.
+- if a real local place is selected, keep the prompt anchored to that place
+  instead of diluting it into a generic lookalike. Avoid copying a particular
+  photo, logo, or readable trademark, but keep venue-specific architecture,
+  routes, weather, social use, objects, and activity visible.
 - do not use high necklines, heavy layers, long sleeves, or closed shoes as a
   default guardrail fix when they do not fit the climate, venue, or activity
 - do not use tanks, camisoles, open shirts, mesh, or sandals as a default

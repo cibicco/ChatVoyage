@@ -1,3 +1,5 @@
 .DS_Store
 .notion.env
 .tmp/
+__pycache__/
+*.pyc

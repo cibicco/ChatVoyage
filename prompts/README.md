@@ -14,6 +14,10 @@ Keep prompts specific enough to force visible fashion variation, but avoid exact
 - `category-presets.md`: reusable category vocabulary; select four categories for each daily set.
 - `pose-presets.md`: pose, face direction, body direction, camera angle, and hand-placement vocabulary.
 - `style-presets.md`: reusable visual style switches, separate from daily theme and outfit instructions.
+- `character-album-policy.md`: shared policy for date-based albums where a
+  recurring character goes to places and enjoys a story day.
+- `character-shino.md`: Shino identity, route, place, gaze, and palette
+  guardrails for albums marked with `data-character="shino"`.
 
 ## Sync Check
 

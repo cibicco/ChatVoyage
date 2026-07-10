@@ -10,7 +10,7 @@
 - Common mood: early-summer sea breeze, craft texture, playful urban resort energy
 - Lucky color: coral pink
 - Illustration style: high-definition anime editorial fashion illustration, full-body single-character images
-- Output folder: `assets/daily/2026-05-24-fukuoka-coral-urban-resort/`
+- Output folder: `assets/albums/daily/2026/05/2026-05-24-fukuoka-coral-urban-resort/`
 - Source generation folder: `/Users/allegro/.codex/generated_images/019e37f9-36a6-7c21-8d8c-47943b92f3fb/`
 
 ### Reference Context
@@ -50,7 +50,7 @@ Fashion language:
 
 #### 01 Street Sport Mesh Coral
 
-- Saved as: `assets/daily/2026-05-24-fukuoka-coral-urban-resort/01-street-sport-mesh-coral.webp`
+- Saved as: `assets/albums/daily/2026/05/2026-05-24-fukuoka-coral-urban-resort/01-street-sport-mesh-coral.webp`
 - Source file: `ig_0f61ad8d8770a737016a122db33d548191862430103a93d78a.png`
 - Role: street / holiday daytime
 - Place: Fukuoka canal park, Ohori-to-Momochi mood
@@ -62,7 +62,7 @@ Fashion language:
 
 #### 02 Mode Linen Gallery Coral
 
-- Saved as: `assets/daily/2026-05-24-fukuoka-coral-urban-resort/02-mode-linen-gallery-coral.webp`
+- Saved as: `assets/albums/daily/2026/05/2026-05-24-fukuoka-coral-urban-resort/02-mode-linen-gallery-coral.webp`
 - Source file: `ig_0f61ad8d8770a737016a122e104b4c8191b5577b2ffaf40208.png`
 - Role: mode / editorial complete look
 - Place: Fukuoka museum or contemporary gallery corridor
@@ -74,7 +74,7 @@ Fashion language:
 
 #### 03 Night Satin Riverside Coral
 
-- Saved as: `assets/daily/2026-05-24-fukuoka-coral-urban-resort/03-night-satin-riverside-coral.webp`
+- Saved as: `assets/albums/daily/2026/05/2026-05-24-fukuoka-coral-urban-resort/03-night-satin-riverside-coral.webp`
 - Source file: `ig_0f61ad8d8770a737016a122e6e545c8191bf695a718382d23d.png`
 - Role: night / event / gloss
 - Place: Nakasu riverside night, small jazz bar or lounge exterior
@@ -86,7 +86,7 @@ Fashion language:
 
 #### 04 Resort Crochet Beach Coral
 
-- Saved as: `assets/daily/2026-05-24-fukuoka-coral-urban-resort/04-resort-crochet-beach-coral.webp`
+- Saved as: `assets/albums/daily/2026/05/2026-05-24-fukuoka-coral-urban-resort/04-resort-crochet-beach-coral.webp`
 - Source file: `ig_0f61ad8d8770a737016a122ece454c81919f11f09c72bd125b.png`
 - Role: resort / swim / playful
 - Place: Itoshima-style beach cafe terrace near Fukuoka
@@ -127,7 +127,7 @@ To create a different set from this log, keep the four-role structure but change
 - Common mood: rainy Kanazawa, craft texture, quiet workwear, refined Japanese street realism
 - Lucky color: verdigris green
 - Illustration style: high-definition anime editorial fashion illustration, full-body single-character images
-- Output folder: `assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/`
+- Output folder: `assets/albums/daily/2026/05/2026-05-27-kanazawa/`
 - Album file: `assets/2026-05-27-kanazawa-album.html`
 - Source generation folder: `/Users/allegro/.codex/generated_images/019e37f9-36a6-7c21-8d8c-47943b92f3fb/`
 
@@ -180,7 +180,7 @@ Fashion language:
 
 #### 01 Street Rain Workwear Verdigris
 
-- Saved as: `assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/01-street-rain-workwear-verdigris.webp`
+- Saved as: `assets/albums/daily/2026/05/2026-05-27-kanazawa/01-street-rain-workwear-verdigris.webp`
 - Source file: `ig_0f61ad8d8770a737016a15ba7ab6648191929a0703fe11e01c.png`
 - Role: street / holiday daytime
 - Place: Kanazawa stone gallery lane after rain
@@ -192,7 +192,7 @@ Fashion language:
 
 #### 02 Mode Lacquer Museum Verdigris
 
-- Saved as: `assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/02-mode-lacquer-museum-verdigris.webp`
+- Saved as: `assets/albums/daily/2026/05/2026-05-27-kanazawa/02-mode-lacquer-museum-verdigris.webp`
 - Source file: `ig_0f61ad8d8770a737016a15bac6d0c881918b38f9f536c4c893.png`
 - Role: mode / editorial complete look
 - Place: Kanazawa contemporary museum corridor
@@ -204,7 +204,7 @@ Fashion language:
 
 #### 03 Night Velvet Teahouse Verdigris
 
-- Saved as: `assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/03-night-velvet-teahouse-verdigris.webp`
+- Saved as: `assets/albums/daily/2026/05/2026-05-27-kanazawa/03-night-velvet-teahouse-verdigris.webp`
 - Source file: `ig_0f61ad8d8770a737016a15bb66ac748191b72072c48cd4a458.png`
 - Role: night / event / gloss
 - Place: Kanazawa tea district night street after rain
@@ -216,7 +216,7 @@ Fashion language:
 
 #### 04 Resort Ryokan Terrace Verdigris
 
-- Saved as: `assets/daily/2026-05-27-kanazawa-verdigris-craft-modern/04-resort-ryokan-terrace-verdigris.webp`
+- Saved as: `assets/albums/daily/2026/05/2026-05-27-kanazawa/04-resort-ryokan-terrace-verdigris.webp`
 - Source file: `ig_0f61ad8d8770a737016a15bbe580e88191a9ec6b00c2c37dd1.png`
 - Role: resort / terrace / playful
 - Place: Kanazawa ryokan garden terrace after rain
@@ -240,9 +240,9 @@ Fashion language:
 
 - Images: 4 final images
 - Generated on: 2026-06-14, Asia/Tokyo
-- Saved in: `assets/daily/2026-05-28-singapore-mango-lime-design-walk/`
+- Saved in: `assets/albums/daily/2026/05/2026-05-28-singapore-mango-lime-design-walk/`
 - Album: `assets/2026-05-28-singapore-mango-lime-design-walk-album.html`
-- Note: `notes/2026-05-28-singapore-mango-lime-design-walk.md`
+- Note: `notes/albums/daily/2026/05/2026-05-28-singapore-mango-lime-design-walk.md`
 - City / place language: Singapore, specifically Tiong Bahru art-deco breezeway, National Design Centre-style design office atrium, Esplanade-style performance foyer, and Joo Chiat shophouse five-foot-way
 - Common mood: humid design city, shaded arcades, citrus brightness, and social polish
 - Lucky color: mango-lime
@@ -367,7 +367,7 @@ This run fills 2026-05-28 and deliberately uses a humid non-Japan city without r
 ## 2026-05-31 Yokohama Burgundy Theater 3D
 
 - Images: 4 final images
-- Saved in: `assets/daily/2026-05-31-yokohama-burgundy-theater-3d/`
+- Saved in: `assets/albums/daily/2026/05/2026-05-31-yokohama-burgundy-theater-3d/`
 - Album: `assets/2026-05-31-yokohama-burgundy-theater-3d-album.html`
 - City / place language: Yokohama red-brick theater district after rain, brick gallery lobby, wet night arcade, harbor terrace
 - Visual style: `3d-cg-fashion`; true stylized 3D CG fashion render, not merely 3D-like illustration

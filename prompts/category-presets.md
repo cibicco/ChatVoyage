@@ -23,6 +23,9 @@ setting, posture, and styling attitude.
 - `active`: sporty, technical, outdoor, dance, or athleisure styling
 - `club`: DJ, dance floor, late-night party, or music-event styling
 - `lounge`: bar, hotel lounge, cocktail room, listening bar, or quiet night-out styling
+- `music-night`: live music, listening room, concert bar, jazz room, or late music social styling where listening and talking matter more than dancing
+- `bar`: wine bar, cocktail bar, standing bar, cafe bar, or night-drink social styling without requiring a dance floor
+- `disco`: disco, DJ floor, retro club night, or nightlife styling where dancing, light, and rhythm are the main context
 - `theater`: theater, concert, fado, live house, opera, or performance-going styling
 - `gallery`: museum, art fair, exhibition opening, or design-event styling
 - `ceremony`: wedding guest, reception, award dinner, or formal daytime event styling
@@ -31,6 +34,7 @@ setting, posture, and styling attitude.
 - `outerwear`: coat, jacket, cape, leather, trench, or outer-layer-focused styling
 - `dance`: dance lesson, rehearsal, club movement, or performance-practice styling
 - `market`: flea market, food market, bookstore market, or local shopping styling
+- `bookstore`: bookstore, library-shop, reading room, zine fair, or literary retail styling
 - `transit`: train, ferry, airport, station, night bus, taxi stand, or arrival/departure styling
 
 ## Metadata Axes
@@ -40,14 +44,16 @@ label, but it mixes several concepts. For browsing and review, also record
 these four independent axes for each image:
 
 - `occasion`: why this outfit exists in the person's day, such as everyday,
-  creative-culture, night-out, social-date, formal-event, work, travel,
-  movement, leisure, home, or weather-layer.
+  creative-culture, night-out, music-night, bar-night, social-date,
+  formal-event, work, travel, movement, leisure, home, or weather-layer.
 - `venue`: the type of place, such as city-outdoor, market-retail,
-  museum-gallery, dining-bar, music-club, event-venue, workplace, transit-hub,
-  home-interior, waterfront-resort, or studio-sports.
+  museum-gallery, dining-bar, music-club, disco-floor, bookstore-library,
+  event-venue, workplace, transit-hub, home-interior, waterfront-resort, or
+  studio-sports.
 - `activity`: what she is doing, such as city-walk, shopping, viewing-design,
-  dining-drinks, dancing, performance-going, attending-event, working, moving,
-  relaxing, holiday, sport-practice, or weather-walk.
+  dining-drinks, listening-music, talking, dancing, performance-going,
+  attending-event, reading-browsing, working, moving, relaxing, holiday,
+  sport-practice, or weather-walk.
 - `outfit`: the garment structure, such as casual-separates, tailoring, dress,
   skirt-skort, trousers-shorts, outerwear-layer, swimwear, activewear, or
   eveningwear.
@@ -63,7 +69,7 @@ Secondary tags add search context without replacing the primary category.
 
 - Weather / season: `rain`, `snow`, `summer`, `winter`, `early-autumn`
 - Fashion direction: `retro`, `craft`, `minimal`, `feminine`, `workwear`, `tailoring`
-- Place: `gallery`, `harbor`, `theater`, `cafe`, `ryokan`, `waterfront`, `club`, `lounge`, `terminal`, `hotel`, `museum`, `home`, `pool`, `market`
+- Place: `gallery`, `harbor`, `theater`, `cafe`, `ryokan`, `waterfront`, `club`, `music-night`, `bar`, `disco`, `lounge`, `terminal`, `hotel`, `museum`, `home`, `pool`, `market`, `bookstore`
 - Materials: `knit`, `velvet`, `satin`, `linen`, `denim`, `technical`
 - Visual style: use one preset slug from `style-presets.md`
 
@@ -90,8 +96,10 @@ For ordinary daily generation, choose four categories with this balance:
 
 - 1 practical or daytime anchor: `street`, `office`, `weekend`, `travel`, `market`, or `transit`
 - 1 editorial or high-completion anchor: `mode`, `gallery`, `formal`, `ceremony`, or `outerwear`
-- 1 social or nightlife anchor: `night`, `date`, `club`, `lounge`, or `theater`
-- 1 movement, rest, or destination anchor: `resort`, `active`, `dance`, `home`, or `swim`
+- 1 social or nightlife anchor: `night`, `date`, `club`, `lounge`,
+  `music-night`, `bar`, `disco`, or `theater`
+- 1 movement, rest, culture, or destination anchor: `resort`, `active`,
+  `dance`, `home`, `swim`, or `bookstore`
 
 This is a balance rule, not a fixed category list. If the user gives a theme
 such as nightlife, winter coats, resort, or home party, bias the random draw

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chat Voyage Shino Album"
+  short_description: "Chat Voyage専用の紫乃アルバム生成と整理"
+  default_prompt: "Use $shino-album-generation for a Chat Voyage Shino fixed-character album."

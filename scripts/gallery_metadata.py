@@ -6,6 +6,8 @@ from dataclasses import dataclass
 
 
 LABELS = {
+    "daily": "Daily",
+    "character": "Character Day",
     "everyday": "Everyday",
     "creative-culture": "Creative Culture",
     "night-out": "Night Out",

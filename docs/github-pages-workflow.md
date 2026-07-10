@@ -16,8 +16,8 @@ GitHub Pages is the preferred publishing path for Chat Voyage browsing.
 ## Why Pages
 
 - The current site is already static.
-- Current image assets are small enough for Pages: `assets/` is about 30 MB and
-  `assets/daily/` is about 29 MB as of 2026-06-17.
+- Current image assets are small enough for Pages; the album image tree now
+  lives under `assets/albums/` with daily and character collections separated.
 - The existing album UI and localStorage feedback can run without an application
   server.
 

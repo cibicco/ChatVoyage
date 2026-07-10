@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Switch Chat Voyage daily image references to WebP when the WebP exists."""
+"""Switch Chat Voyage album image references to WebP when the WebP exists."""
 
 from __future__ import annotations
 
@@ -8,7 +8,9 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REF_PATTERN = re.compile(r"((?:\.\./)?assets/daily/[^\"')\s]+?|daily/[^\"')\s]+?)\.(png|jpg|jpeg)")
+REF_PATTERN = re.compile(
+    r"((?:\.\./)?assets/(?:daily|albums)/[^\"')\s]+?|(?:daily|albums)/[^\"')\s]+?)\.(png|jpg|jpeg)"
+)
 
 
 def webp_exists(ref: str, base: Path) -> bool:
@@ -17,7 +19,7 @@ def webp_exists(ref: str, base: Path) -> bool:
         path = (base / candidate).resolve()
     elif candidate.startswith("assets/"):
         path = ROOT / candidate
-    elif candidate.startswith("daily/"):
+    elif candidate.startswith(("daily/", "albums/")):
         path = ROOT / "assets" / candidate
     else:
         return False
@@ -44,7 +46,8 @@ def main() -> int:
         ROOT / "albums.html",
         ROOT / "album.html",
         ROOT / "assets" / "album-data.js",
-        *sorted((ROOT / "notes").glob("*.md")),
+        *sorted((ROOT / "data" / "albums").rglob("*.json")),
+        *sorted((ROOT / "notes").rglob("*.md")),
         *sorted((ROOT / "logs").glob("generation-*.md")),
     ]
     changed = [p.relative_to(ROOT) for p in targets if p.exists() and switch_file(p)]

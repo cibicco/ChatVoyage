@@ -3,6 +3,22 @@
 Use one pose family per image. Choose poses before writing the outfit prompt so
 the set does not collapse into four similar standing three-quarter views.
 
+## Action-First Pose Planning
+
+Do not start from pose labels alone. First decide what she is doing in her
+day, then choose the pose family that makes that action visible. The strongest
+sets feel varied because each image has a different life verb: walking through
+a corridor while responding to someone, warming up on a studio floor, pausing
+on a rooftop to look over the city, adjusting clothing at home, carrying
+groceries, greeting a friend, packing a bag, checking fabric, practicing,
+waiting, returning home, or stepping through weather.
+
+Record the action as a short verb phrase before assigning `pose_family`.
+`standing-front`, `seated-side`, `back-three-quarter`, and similar labels are
+implementation details. They should not become the creative starting point.
+When the action is clear, full body, face visibility, direct camera contact,
+and centered composition become optional rather than default requirements.
+
 ## Pose Families
 
 - `standing-front`: front-facing standing pose, garment front readable
@@ -31,6 +47,23 @@ For a four-image set, specify all of these independently:
 - camera angle: `eye-level`, `low`, `high`, `side`, or `diagonal`
 - hand placement: object interaction, pocket, collar, bag strap, table, railing, or free motion
 - crop: `full-body`, `knee-up`, `waist-up`, `close-up-detail`, or `wide-action`
+
+Also specify the attention target:
+
+- toward viewer: camera contact, near-camera glance, or a look that openly
+  acknowledges being seen
+- toward person: looking at a friend, coworker, staff member, dance partner, or
+  someone implied just outside the frame
+- toward task: looking at hands, shoes, object, fabric, phone, book, ticket, or
+  the path of movement
+- toward place: looking out a window, across water, through a venue, at a
+  stage, into rain, or along a street
+
+For a four-image set, avoid both extremes: do not make all four women look at
+the viewer, and do not make all four avoid the viewer. A good default is one
+direct or near-camera acknowledgement, one person-to-person/social gaze, one
+task gaze, and one place or reflection gaze. If the set intentionally breaks
+that balance, record why.
 
 Default four-image mix:
 
@@ -68,6 +101,11 @@ Useful action patterns:
 ## Avoid Rules
 
 - Do not let all four images face the same direction.
+- Do not let all four images make direct camera contact.
+- Do not let all four images avoid the viewer completely.
+- Do not make every gaze private/task-only; include at least one social or
+  viewer-aware attention direction unless the daily concept explicitly needs
+  solitude.
 - Do not use four standing three-quarter poses in one set.
 - Do not hide shoes or hands in every image.
 - Do not sacrifice garment readability for extreme action.

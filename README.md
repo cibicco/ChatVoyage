@@ -18,9 +18,12 @@ is local to the browser and is not synced to a server.
 
 ## Structure
 
-- `assets/daily/`: generated WebP daily image sets
+- `assets/albums/daily/YYYY/MM/`: normal daily WebP image sets
+- `assets/albums/characters/<character>/YYYY/MM/`: character-day WebP image sets
+- `data/albums/daily/YYYY/MM/`: canonical JSON metadata for normal daily albums
+- `data/albums/characters/<character>/YYYY/MM/`: canonical JSON metadata for character albums
 - `assets/album-data.js`: generated album catalog consumed by the album UI
-- `notes/`: daily direction notes and review notes
+- `notes/albums/`: human-readable direction notes and review notes
 - `logs/`: monthly generation logs
 - `prompts/`: reusable prompt presets and guardrails
 - `scripts/`: gallery build, conversion, and validation scripts
@@ -29,7 +32,8 @@ is local to the browser and is not synced to a server.
 
 ## Daily Workflow
 
-After adding or regenerating a daily set:
+After adding or regenerating a daily or character set, update its JSON source
+under `data/albums/`, then rebuild:
 
 ```sh
 python3 scripts/build_album_catalog.py

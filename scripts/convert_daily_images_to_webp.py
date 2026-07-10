@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create WebP display copies for Chat Voyage daily image folders."""
+"""Create WebP display copies for Chat Voyage album image folders."""
 
 from __future__ import annotations
 

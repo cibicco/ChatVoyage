@@ -19,10 +19,47 @@ style_preset: anime-editorial | pbr-fashion-3d | ...
 Use these pools for random or date-seeded selection. Avoid repeating the same
 family more than two daily sets in a row unless the user requests it.
 
-- Anime family: `anime-editorial`, `anime-cel-polished`, `anime-soft-cinematic`, `anime-fashion-magazine`
+- Anime family: `anime-editorial`, `anime-cel-polished`, `anime-soft-cinematic`, `anime-fashion-magazine`, `anime-cel-clean`, `anime-tv-slice-of-life`, `anime-manga-ink`, `anime-90s-ova`, `anime-watercolor-soft`, `anime-pop-graphic`, `anime-lofi-sketch`, `anime-cinematic-night`, `anime-comic-panel`
 - 3D CG family: `3d-cg-fashion`, `pbr-fashion-3d`, `game-cinematic-3d`, `doll-like-3d`
 - Fashion illustration family: `fashion-illustration`, `runway-board-illustration`, `marker-sketch`, `watercolor-couture`
 - Semi-real digital family: `semi-real-editorial`, `digital-magazine-painting`, `soft-real-fashion-art`
+
+## Effective Style Controls
+
+Do not rely on `style_preset` names alone. Before generation, choose an
+`effective_style_variant` and make the visible rendering differences explicit:
+
+- line language: thick contour, thin contour, sketch line, manga ink, no line,
+  construction line, or painterly edge
+- shading: flat cel, two-step cel, soft gradient, marker blocks, watercolor
+  wash, graphite value, or digital paint
+- background density: blank paper, minimal props, simplified local setting,
+  detailed local setting, cinematic scene, or full environmental painting
+- texture: clean digital, paper grain, marker bleed, watercolor bloom, screen
+  tone, pencil, or PBR material
+- color logic: flat poster color, muted slice-of-life palette, high-contrast
+  night color, limited monochrome, soft wash, or glossy editorial color
+- time/light expression: morning flat light, overcast diffuse light, indoor
+  lamp pools, night neon, rainy reflection, or dry interior with weather
+  hinted outside
+
+Weather can stay the same across a daily set. If the day is rainy, do not
+invent sun only for variety. Instead vary the time of day, rain intensity,
+indoor/outdoor condition, light source, background density, and rendering
+medium. A rainy set can include morning after-rain cel anime, pale afternoon
+watercolor drizzle, a dry indoor marker sketch with rain hinted outside, and a
+semi-real wet street threshold without feeling repetitive.
+
+If two images use the same family, their effective styles must still differ in
+at least three visible axes, such as line language, shading, background
+density, texture, and time/light expression.
+
+## Anime Effective Variants
+
+Use these when selecting anime styles. They are stable style slugs and can be
+recorded as `style_preset` when the image should be browsed by that exact
+anime look. If compatibility needs an older preset, record the older preset in
+`data-style` and record this value as `effective_style_variant` in logs.
 
 ## `3d-cg-fashion`
 
@@ -70,6 +107,15 @@ cel shading, detailed garment textures, polished character design, and
 fashion-editorial composition. Not a 3D render and not a real photo.
 ```
 
+## `anime-cel-clean`
+
+```text
+Clean flat cel-anime fashion image. Strong readable contour lines, flat color
+blocks, simple two-step shadows, minimal gradients, simplified but local
+background, and clear outfit shapes. Avoid semi-real skin, painterly hair,
+cinematic bokeh, and dense digital rain rendering.
+```
+
 ## `anime-cel-polished`
 
 ```text
@@ -78,12 +124,84 @@ shadow shapes, crisp color blocks, and precise garment details. Mature
 character design; not school-uniform coded, not chibi, not a 3D render.
 ```
 
+## `anime-tv-slice-of-life`
+
+```text
+Adult slice-of-life TV anime look. Natural everyday expressions, modest
+background detail, soft but still line-based character art, readable local
+props, and restrained color. Use for lived moments, errands, work breaks,
+home, transit, or quiet social scenes. Avoid glossy fashion-magazine polish.
+```
+
 ## `anime-soft-cinematic`
 
 ```text
 Soft cinematic anime fashion image with atmospheric lighting, gentle gradients,
 refined adult character design, and detailed fabrics. Keep the outfit fully
 readable and avoid overly dreamy blur.
+```
+
+## `anime-manga-ink`
+
+```text
+Manga-ink fashion image. Black ink linework, selective spot color or limited
+palette, screen-tone or hatch shadows, strong composition, and garment folds
+read through line rather than full rendering. Background can be sparse and
+graphic. No full-color semi-real painting.
+```
+
+## `anime-90s-ova`
+
+```text
+Retro 1990s OVA-inspired anime fashion frame. Strong cel shadows, slightly
+grainy analog texture, dramatic but readable lighting, mature adult character
+design, and bolder color separation. Use for night, club, theater, rain, or
+city movement when a stronger mood is needed. Avoid modern glossy digital
+fashion-magazine finish.
+```
+
+## `anime-watercolor-soft`
+
+```text
+Anime character design with soft watercolor-like background and gentle wash.
+Character remains line-based and outfit-readable, while the setting uses pale
+bleeds, paper grain, and loose local shapes. Use for rain, lake, weekend, home,
+or reflective scenes. Avoid dense semi-real rendering.
+```
+
+## `anime-pop-graphic`
+
+```text
+Graphic pop anime fashion image. Poster-like flat shapes, bold color blocking,
+clean silhouettes, minimal shadows, simplified background, and playful
+composition. Use when color, accessories, or silhouette should feel fresh and
+visibly different from painterly editorial work.
+```
+
+## `anime-lofi-sketch`
+
+```text
+Loose low-fidelity anime sketch. Visible rough pencil or digital sketch lines,
+light wash, imperfect but intentional strokes, and airy background. Use for
+daily life, preparation, home, or partial-body snapshots. Avoid polished
+magazine lighting and highly finished hair/skin.
+```
+
+## `anime-cinematic-night`
+
+```text
+Anime night-scene fashion image with controlled cinematic lighting, clear line
+art, limited glow, and readable garment shapes. Use sparingly; do not let
+every rainy or night image become a dark glossy semi-real street scene.
+```
+
+## `anime-comic-panel`
+
+```text
+Anime comic-panel fashion image. Strong cropped composition, graphic panel-like
+framing, motion lines or sparse environmental cues, and outfit details carried
+by line, pose, and silhouette. No text balloons, captions, readable text, or
+mock manga page layout unless explicitly requested.
 ```
 
 ## `anime-fashion-magazine`

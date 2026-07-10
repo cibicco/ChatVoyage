@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f6f7">
   <title>Chat Voyage Album</title>
-  <link rel="stylesheet" href="assets/album-page.css?v=20260618-lightbox">
+  <link rel="stylesheet" href="assets/album-page.css?v=20260706-ux-review-10">
 </head>
 <body>
   <a class="skip-link" href="#images">画像へ</a>
@@ -20,7 +20,11 @@
         <span>Album</span>
         <select id="album-select"></select>
       </label>
-      <button class="feedback-export" type="button" data-feedback-export>フィードバックを書き出す</button>
+      <div class="album-neighbor-controls" aria-label="前後のアルバム">
+        <a class="album-neighbor-button" data-prev-album href="#" aria-label="前のアルバム">&lt;</a>
+        <a class="album-neighbor-button" data-next-album href="#" aria-label="次のアルバム">&gt;</a>
+      </div>
+      <button class="feedback-export" type="button" data-feedback-export>全フィードバックを書き出す</button>
     </div>
     <p class="eyebrow">Chat Voyage Album</p>
     <div class="title-block">
@@ -43,17 +47,13 @@
       </div>
       <aside class="viewer-panel">
         <p class="viewer-count"><span data-current-image>1</span> / <span data-total-images>0</span></p>
-        <div class="viewer-caption" data-viewer-caption></div>
         <div class="viewer-actions">
           <button type="button" data-album-prev aria-label="前の画像">&lt;</button>
           <button type="button" data-album-next aria-label="次の画像">&gt;</button>
           <a class="open-image" data-open-image href="#">画像を開く</a>
           <a class="notes-link" data-notes-link href="#" hidden>メモ</a>
         </div>
-        <div class="album-neighbors" aria-label="Nearby albums">
-          <a data-prev-album href="#"></a>
-          <a data-next-album href="#"></a>
-        </div>
+        <div class="viewer-caption" data-viewer-caption></div>
         <section class="feedback-panel" data-feedback aria-label="好みフィードバック">
           <div class="feedback-heading">
             <h2>好み</h2>
@@ -61,8 +61,7 @@
           </div>
           <div class="feedback-score" role="group" aria-label="画像の好み">
             <button type="button" data-feedback-score="love">好き</button>
-            <button type="button" data-feedback-score="like">良い</button>
-            <button type="button" data-feedback-score="pass">見送り</button>
+            <button type="button" data-feedback-score="neutral">それほどでもない</button>
           </div>
           <fieldset class="feedback-tags">
             <legend>軸</legend>
@@ -84,7 +83,7 @@
       </aside>
     </section>
 
-    <div class="thumbnail-strip" data-thumbnail-strip role="list" aria-label="Album thumbnails"></div>
+    <div class="thumbnail-strip" data-thumbnail-strip role="list" aria-label="画像ナビゲーション"></div>
 
     <section class="overview" id="images" aria-label="画像">
       <div class="section-heading">
@@ -107,7 +106,7 @@
     <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="次の画像">&gt;</button>
     <div class="lightbox-caption" data-lightbox-caption></div>
   </div>
-  <script src="assets/album-data.js?v=20260618-lightbox"></script>
-  <script src="assets/album-page.js?v=20260618-lightbox"></script>
+  <script src="assets/album-data.js?v=20260706-ux-review-10"></script>
+  <script src="assets/album-page.js?v=20260706-ux-review-10"></script>
 </body>
 </html>
