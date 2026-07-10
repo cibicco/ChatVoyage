@@ -1,5 +1,13 @@
 # handover_202607
 
+## 2026-07-11 Pages follow-up / mobile verification / Shino reference review
+
+- `main` をGitHubへpushし、GitHub Pagesがcanonical構造の302画像・67アルバム版へ更新されたことを本番URLで確認した。
+- desktop幅とiPhone相当の390px幅で `index.html`、`albums.html`、`album.html` を確認した。画像参照切れとページ全体の横overflowはなく、個別アルバムの画像送りも動作した。
+- 390px幅では画像一覧の最上位 `すべて / 日常 / キャラクター` が横スクロールに隠れたため、collection filterだけ折り返して全表示するよう修正した。物理iPhoneでのSafari確認は残る。
+- repository全体を再走査した結果、PNGは0件だった。handover内の「PNGコピーが残る」は移行前時点の履歴であり、現在状態ではない。表示画像はWebPに揃っているが、今後追加される生成原本を明示承認なしに削除しない方針は継続する。
+- `2026-06-14-18` の `03` / `08` / `09` を現行character core、人物設定、採用基準、scene protocol、6/19画像と比較した。3枚ともalbum採用は維持するが、`current_growth_core` には昇格しない。`03`と`09`は特定シーン・衣装への引っ張りが強いため将来の`current_support`候補、`08`は長いラボコートが現行仕事設定とずれるためalbum-onlyとする。
+
 ## 2026-07-11 Album UX / canonical data migration / closeout commit
 
 ### 背景/目的
